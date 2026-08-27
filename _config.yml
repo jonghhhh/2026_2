@@ -1,0 +1,6 @@
+title: 2026 2학기
+description: 경희대학교 미디어학과 2026년 2학기 수업 자료
+theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
