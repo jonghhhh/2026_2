@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1주차 · 경제뉴스의 성격과 역할 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 1주차 강의자료 — 경제뉴스는 현실을 반영하는가, 구성하는가. 현실반영론과 현실구성론, 비대칭 보도, 이벤트지향 보도, 미디어 맬라디, 랠리 효과.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendardv1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* ============ 토큰 ============ */
+:root{
+  --navy:#0d2244;
+  --blue:#1a4b8c;
+  --blue-mid:#2f6bb5;
+  --blue-pale:#e8eef5;
+  --border:#c8d6e5;
+  --bg-soft:#f4f7fb;
+  --paper:#ffffff;
+  --ink:#1c2634;
+  --ink-soft:#5a6779;
+  --ink-faint:#8492a6;
+  --amber:#b45309;
+  --amber-bg:#fdf6ec;
+  --amber-bd:#e9c893;
+  --teal:#0f766e;
+  --teal-bg:#eefaf7;
+  --teal-bd:#a5d9d1;
+  --rose:#a4303f;
+  --rose-bg:#fdf1f2;
+  --rose-bd:#e8b9be;
+  --sidebar-w:290px;
+  --maxw:820px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:16.5px;
+  line-height:1.78;
+  -webkit-text-size-adjust:100%;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+
+/* ============ 레이아웃 ============ */
+.layout{display:flex;align-items:flex-start}
+
+/* --- 사이드바 --- */
+#sidebar{
+  width:var(--sidebar-w);
+  flex:0 0 var(--sidebar-w);
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow-y:auto;
+  background:var(--navy);
+  color:#dbe5f2;
+  padding:26px 0 40px;
+}
+#sidebar::-webkit-scrollbar{width:7px}
+#sidebar::-webkit-scrollbar-thumb{background:#2c4a76;border-radius:4px}
+.sb-brand{padding:0 22px 18px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:14px}
+.sb-course{font-size:11.5px;letter-spacing:.14em;color:#7fa7d6;font-weight:700;text-transform:uppercase}
+.sb-title{font-size:19px;font-weight:800;color:#fff;line-height:1.4;margin-top:8px}
+.sb-nav{padding:0 12px}
+.sb-label{font-size:10.5px;letter-spacing:.16em;color:#6d90bd;font-weight:700;padding:14px 10px 7px}
+.sb-nav a{
+  display:flex;gap:9px;align-items:baseline;
+  padding:7px 10px;margin-bottom:1px;
+  color:#c3d3e8;text-decoration:none;
+  font-size:14px;line-height:1.45;
+  border-radius:6px;border-left:3px solid transparent;
+  transition:background .13s,color .13s,border-color .13s;
+}
+.sb-nav a .n{font-size:11px;font-weight:700;color:#6d90bd;min-width:15px;font-variant-numeric:tabular-nums}
+.sb-nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.sb-nav a.active{background:rgba(93,150,220,.2);color:#fff;border-left-color:#5d96dc;font-weight:600}
+.sb-nav a.active .n{color:#9fc4ee}
+.sb-foot{padding:20px 22px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.14);font-size:12.5px}
+.sb-foot a{color:#9fc4ee;text-decoration:none;display:block;padding:3px 0}
+.sb-foot a:hover{text-decoration:underline;color:#fff}
+
+/* --- 본문 --- */
+main{flex:1 1 auto;min-width:0;padding:0 40px 100px;display:flex;justify-content:center}
+.wrap{width:100%;max-width:var(--maxw)}
+
+/* ============ 표지 ============ */
+.hero{
+  margin:0 -40px 46px;
+  padding:52px 40px 42px;
+  background:linear-gradient(120deg,#0d2244,#1a4b8c 62%,#2f6bb5);
+  color:#fff;
+}
+.hero-inner{max-width:var(--maxw);margin:0 auto}
+.hero .eyebrow{font-size:12.5px;letter-spacing:.16em;color:#a9c9ee;font-weight:700}
+.hero h1{font-size:clamp(28px,4.6vw,40px);line-height:1.25;margin:14px 0 10px;font-weight:800;letter-spacing:-.02em}
+.hero .sub{font-size:17px;color:#cfe0f5;font-weight:500;line-height:1.6}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.hero-facts span{
+  font-size:13px;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.22);
+  padding:5px 12px;border-radius:20px;color:#e6effa;
+}
+
+/* ============ 섹션 ============ */
+section{scroll-margin-top:24px;margin-bottom:56px}
+h2{
+  font-size:24px;font-weight:800;color:var(--navy);
+  letter-spacing:-.02em;line-height:1.35;
+  margin:0 0 6px;padding-top:6px;
+}
+h2 .num{
+  display:inline-block;font-size:13px;font-weight:800;color:#fff;
+  background:var(--blue);border-radius:5px;
+  padding:2px 8px;margin-right:10px;vertical-align:3px;
+  font-variant-numeric:tabular-nums;
+}
+.h2rule{height:3px;background:linear-gradient(90deg,var(--blue),var(--border) 62%,transparent);margin:12px 0 22px;border-radius:2px}
+h3{font-size:18.5px;font-weight:750;color:var(--navy);margin:32px 0 10px;line-height:1.45;letter-spacing:-.01em}
+h4{font-size:15.5px;font-weight:700;color:var(--blue);margin:22px 0 8px;letter-spacing:-.01em}
+p{margin:0 0 13px}
+.lede{font-size:17.5px;color:var(--ink-soft);line-height:1.72;margin-bottom:22px}
+
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+li>ul,li>ol{margin-top:6px;margin-bottom:4px}
+li::marker{color:var(--blue-mid)}
+ul ul li::marker{color:var(--ink-faint)}
+strong{font-weight:700;color:var(--navy)}
+em{font-style:normal;color:var(--navy);font-weight:650}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid #b9cde6}
+a:hover{border-bottom-color:var(--blue)}
+code{
+  font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,monospace;
+  font-size:.88em;background:var(--blue-pale);color:var(--navy);
+  padding:1.5px 6px;border-radius:4px;
+}
+.cite{font-size:13px;color:var(--ink-faint);font-weight:500}
+
+/* ============ 콜아웃 ============ */
+.box{border-radius:10px;padding:17px 20px;margin:20px 0;border:1px solid;border-left-width:5px}
+.box>*:first-child{margin-top:0}
+.box>*:last-child{margin-bottom:0}
+.box .bt{font-size:12.5px;font-weight:800;letter-spacing:.06em;display:block;margin-bottom:8px}
+.key{background:var(--amber-bg);border-color:var(--amber-bd);border-left-color:var(--amber)}
+.key .bt{color:var(--amber)}
+.easy{background:var(--teal-bg);border-color:var(--teal-bd);border-left-color:var(--teal)}
+.easy .bt{color:var(--teal)}
+.warn{background:var(--rose-bg);border-color:var(--rose-bd);border-left-color:var(--rose)}
+.warn .bt{color:var(--rose)}
+.note{background:var(--bg-soft);border-color:var(--border);border-left-color:var(--blue)}
+.note .bt{color:var(--blue)}
+
+.pull{
+  margin:28px 0;padding:24px 26px;border-radius:12px;
+  background:var(--navy);color:#eaf1fa;text-align:center;
+}
+.pull .q{font-size:21px;font-weight:800;line-height:1.5;color:#fff;letter-spacing:-.01em}
+.pull .a{font-size:14.5px;color:#a9c9ee;margin-top:10px;line-height:1.65}
+
+/* ============ 개념 카드 ============ */
+.terms{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:13px;margin:20px 0}
+.term{background:var(--bg-soft);border:1px solid var(--border);border-radius:10px;padding:14px 16px;min-width:0}
+.term dt{font-size:15px;font-weight:750;color:var(--navy);margin-bottom:5px;line-height:1.4}
+.term dt .en{display:block;font-size:11.5px;font-weight:600;color:var(--ink-faint);letter-spacing:.02em;margin-top:2px}
+.term dd{margin:0;font-size:14px;color:var(--ink-soft);line-height:1.62}
+.term dd .ez{display:block;margin-top:7px;padding-top:7px;border-top:1px dashed var(--border);color:var(--teal);font-weight:600}
+
+/* ============ 대조 2단 ============ */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:20px 0}
+.duo>div{border:1px solid var(--border);border-radius:10px;padding:16px 18px;background:#fff;min-width:0}
+.duo>div.a{border-top:4px solid var(--blue-mid)}
+.duo>div.b{border-top:4px solid var(--amber)}
+.duo h5{margin:0 0 4px;font-size:16px;font-weight:750;color:var(--navy)}
+.duo .tag{font-size:11.5px;color:var(--ink-faint);font-weight:600;letter-spacing:.04em;display:block;margin-bottom:10px}
+.duo ul{padding-left:19px;margin-bottom:0;font-size:14.5px}
+.duo li{margin-bottom:7px;line-height:1.6}
+
+/* ============ 표 ============ */
+.tw{overflow-x:auto;margin:20px 0;border:1px solid var(--border);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;background:#fff;min-width:480px}
+th{background:var(--blue);color:#fff;font-weight:700;text-align:left;padding:11px 14px;line-height:1.45;font-size:14px}
+td{padding:10px 14px;border-top:1px solid var(--border);vertical-align:top;line-height:1.6}
+tbody tr:nth-child(even){background:var(--bg-soft)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700;color:var(--blue)}
+
+/* ============ 수치 카드 ============ */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin:22px 0}
+.stat{border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:9px;padding:14px 16px;background:#fff;min-width:0}
+.stat .v{font-size:27px;font-weight:800;color:var(--navy);line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .l{font-size:13.5px;color:var(--ink-soft);margin-top:7px;line-height:1.5}
+.stat .s{font-size:11.5px;color:var(--ink-faint);margin-top:5px}
+.stat.neg{border-left-color:var(--rose)}
+.stat.neg .v{color:var(--rose)}
+.stat.pos{border-left-color:var(--teal)}
+.stat.pos .v{color:var(--teal)}
+
+/* ============ 사례 박스 ============ */
+.case{border:1px solid var(--border);border-radius:11px;overflow:hidden;margin:22px 0;background:#fff}
+.case-h{background:var(--blue-pale);padding:11px 18px;border-bottom:1px solid var(--border)}
+.case-h .k{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--blue)}
+.case-h .t{font-size:16.5px;font-weight:750;color:var(--navy);margin-top:2px;line-height:1.4}
+.case-b{padding:16px 20px}
+.case-b>*:first-child{margin-top:0}
+.case-b>*:last-child{margin-bottom:0}
+
+/* ============ 단계 ============ */
+.steps{list-style:none;padding:0;margin:20px 0;counter-reset:st}
+.steps li{
+  counter-increment:st;position:relative;
+  padding:0 0 16px 44px;margin:0;
+  border-left:2px solid var(--border);margin-left:14px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:counter(st);position:absolute;left:-15px;top:-2px;
+  width:28px;height:28px;border-radius:50%;
+  background:var(--blue);color:#fff;
+  font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps li b{display:block;color:var(--navy);font-size:15.5px;margin-bottom:3px}
+
+/* ============ 질문 ============ */
+.qs{list-style:none;padding:0;margin:18px 0;counter-reset:q}
+.qs li{
+  counter-increment:q;position:relative;padding:13px 16px 13px 48px;
+  border:1px solid var(--border);border-radius:9px;margin-bottom:10px;background:var(--bg-soft);
+}
+.qs li::before{
+  content:"Q" counter(q);position:absolute;left:14px;top:13px;
+  font-size:12.5px;font-weight:800;color:#fff;background:var(--blue);
+  border-radius:5px;padding:2px 6px;
+}
+.qs li b{color:var(--navy)}
+
+/* ============ 인포그래픽 ============ */
+.info{border:1px solid var(--border);border-radius:12px;background:#fff;margin:24px 0;overflow:hidden}
+.info-h{background:var(--navy);color:#fff;padding:11px 18px}
+.info-h .k{font-size:10.5px;letter-spacing:.14em;color:#9fc4ee;font-weight:800}
+.info-h .t{font-size:16px;font-weight:750;line-height:1.4;margin-top:2px}
+.info-b{padding:18px 20px}
+.info-b>*:first-child{margin-top:0}
+.info-b>*:last-child{margin-bottom:0}
+.info-f{background:var(--bg-soft);border-top:1px solid var(--border);padding:10px 18px;font-size:13px;color:var(--ink-soft);line-height:1.6}
+
+/* 가로 막대 */
+.bars{margin:4px 0}
+.brow{display:grid;grid-template-columns:96px 1fr auto;gap:12px;align-items:center;margin-bottom:11px}
+.brow .bl{font-size:14px;font-weight:700;color:var(--navy);text-align:right;line-height:1.3}
+.brow .bt2{height:26px;background:var(--blue-pale);border-radius:5px;overflow:hidden}
+.brow .bf{height:100%;background:linear-gradient(90deg,#1a4b8c,#4a86cf);border-radius:5px}
+.brow .bf.warm{background:linear-gradient(90deg,#b45309,#e0a458)}
+.brow .bf.rose{background:linear-gradient(90deg,#a4303f,#d4737f)}
+.brow .bf.teal{background:linear-gradient(90deg,#0f766e,#4fada4)}
+.brow .bv{font-size:13.5px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:52px}
+
+/* 스펙트럼 축 */
+.spec{margin:6px 0 2px}
+.spec-line{position:relative;height:10px;border-radius:6px;margin:26px 0 8px}
+.spec-line.a{background:linear-gradient(90deg,#0f766e,#c8d6e5 48%,#a4303f)}
+.spec-line.b{background:linear-gradient(90deg,#1a4b8c,#c8d6e5 50%,#b45309)}
+.spec-line i{position:absolute;top:-7px;width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--navy);transform:translateX(-50%);
+  font-style:normal;font-size:11px;font-weight:800;color:var(--navy);display:flex;align-items:center;justify-content:center}
+.spec-ends{display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;color:var(--ink-soft)}
+.spec-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+.spec-notes div{font-size:13.5px;line-height:1.55;border-top:3px solid var(--border);padding-top:8px;color:var(--ink-soft);min-width:0}
+.spec-notes div b{display:block;color:var(--navy);font-size:13px;margin-bottom:2px}
+
+/* 100% 누적 막대 */
+.stack{display:flex;height:34px;border-radius:6px;overflow:hidden;margin:8px 0 6px;border:1px solid var(--border)}
+.stack span{display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:800;color:#fff;white-space:nowrap}
+.stack .pos{background:#0f766e}
+.stack .neu{background:#b9c6d6;color:var(--navy)}
+.stack .neg{background:#a4303f}
+.stack-l{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-soft);margin-bottom:14px}
+.stack-l i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+/* 3열 비교 */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.tri>div{border:1px solid var(--border);border-radius:10px;padding:14px 15px;background:#fff;min-width:0}
+.tri h5{margin:0 0 3px;font-size:15.5px;font-weight:750;color:var(--navy)}
+.tri .tag{display:block;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--ink-faint);margin-bottom:9px}
+.tri ul{padding-left:17px;margin:0;font-size:13.5px}
+.tri li{margin-bottom:6px;line-height:1.55}
+.tri.c1>div{border-top:4px solid #1a4b8c}
+.tri.c2>div{border-top:4px solid #b45309}
+.tri.c3>div{border-top:4px solid #0f766e}
+
+/* ============ 도식 ============ */
+figure{margin:24px 0}
+figure svg,figure img{display:block;width:100%;height:auto;max-width:100%}
+figure img{border:1px solid var(--border);border-radius:11px;background:#fff;padding:14px}
+figcaption{font-size:13px;color:var(--ink-faint);text-align:center;margin-top:10px;line-height:1.6}
+
+/* ============ 참고문헌 ============ */
+.refs{font-size:14px;line-height:1.68}
+.refs h4{margin-top:20px}
+.refs ul{list-style:none;padding-left:0}
+.refs li{padding-left:20px;text-indent:-20px;margin-bottom:7px;color:var(--ink-soft)}
+.refs li b{color:var(--navy)}
+
+/* ============ 상단 진행바 · 모바일 ============ */
+#bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#2f6bb5,#7fb0e8);width:0;z-index:60;transition:width .1s linear}
+#topbar{display:none}
+#burger{display:none}
+#scrim{display:none}
+#totop{
+  position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  background:var(--navy);color:#fff;border:none;cursor:pointer;font-size:19px;
+  box-shadow:0 3px 14px rgba(13,34,68,.32);opacity:0;pointer-events:none;transition:opacity .2s;z-index:55;
+}
+#totop.on{opacity:.92;pointer-events:auto}
+#totop:hover{opacity:1}
+
+@media (max-width:980px){
+  body{font-size:16px}
+  .layout{display:block}
+  #sidebar{
+    position:fixed;left:0;top:0;z-index:70;
+    height:100dvh;width:284px;flex:none;
+    transform:translateX(-100%);transition:transform .24s ease;
+    box-shadow:2px 0 22px rgba(0,0,0,.28);
+  }
+  #sidebar.open{transform:none}
+  #scrim{display:block;position:fixed;inset:0;background:rgba(10,20,38,.5);z-index:65;opacity:0;pointer-events:none;transition:opacity .24s}
+  #scrim.on{opacity:1;pointer-events:auto}
+  #topbar{
+    display:flex;align-items:center;gap:12px;
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);padding:9px 14px;
+  }
+  #burger{
+    display:flex;flex-direction:column;justify-content:center;gap:4.5px;
+    width:38px;height:38px;padding:9px;border:1px solid var(--border);
+    border-radius:8px;background:#fff;cursor:pointer;flex:none;
+  }
+  #burger span{display:block;height:2px;background:var(--navy);border-radius:2px}
+  #topbar .tt{font-size:14px;font-weight:750;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  main{padding:0 18px 80px}
+  .hero{margin:0 -18px 34px;padding:36px 20px 30px}
+  .duo{grid-template-columns:1fr}
+  .tri{grid-template-columns:1fr}
+  .brow{grid-template-columns:80px 1fr auto;gap:9px}
+  .brow .bl{font-size:13px}
+  h2{font-size:21px}
+  .pull .q{font-size:18px}
+  section{margin-bottom:44px}
+}
+@media print{
+  #sidebar,#topbar,#totop,#bar,#scrim{display:none!important}
+  main{padding:0}
+  .hero{margin:0 0 30px;background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{page-break-inside:auto;margin-bottom:30px}
+  h2,h3{page-break-after:avoid}
+  .box,.case,.duo,figure{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">1주차 · 경제뉴스의 성격과 역할</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">1주차<br>경제뉴스의 성격과 역할</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 열 가지 개념</span></a>
+
+    <div class="sb-label">1회차</div>
+    <a href="#s2"><span class="n">02</span><span>경제뉴스란 무엇인가</span></a>
+    <a href="#s3"><span class="n">03</span><span>반영론 vs 구성론</span></a>
+    <a href="#s4"><span class="n">04</span><span>현실의 선택</span></a>
+    <a href="#s5"><span class="n">05</span><span>현실의 해석</span></a>
+    <a href="#s6"><span class="n">06</span><span>신문·방송·뉴미디어</span></a>
+
+    <div class="sb-label">2회차</div>
+    <a href="#s7"><span class="n">07</span><span>정파성과 편향 보도</span></a>
+    <a href="#s8"><span class="n">08</span><span>경제뉴스 효과이론</span></a>
+    <a href="#s9"><span class="n">09</span><span>좋은 경제뉴스의 조건</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s11"><span class="n">11</span><span>참고문헌</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">📊 경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 1. 도구 — 경제뉴스를 읽는 법 · 1주차</div>
+    <h1>경제뉴스는 현실을<br>반영하는가, 구성하는가</h1>
+    <div class="sub">경제뉴스의 성격과 역할</div>    
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">이 강의가 <strong>경제학과 수업이 아니라 미디어학과 수업인 이유</strong>가 이 주차에 다 들어 있음. 나머지 14주는 지표를 배우지만, <em>왜 그 지표를 의심해야 하는지</em>는 이 주차에서만 배움.</p>
+
+  <div class="pull">
+    <div class="q">"경제뉴스는 경제를 보도할 뿐 아니라,<br>경제를 만든다."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>왜 이 문장이 특별한가</h3>
+  <ul>
+    <li><strong>날씨 뉴스</strong>는 날씨를 바꾸지 못함. 태풍 보도가 태풍의 경로를 바꾸지 않음.</li>
+    <li><strong>스포츠 뉴스</strong>도 마찬가지. 경기 결과는 이미 확정된 사실임.</li>
+    <li>그러나 <strong>경제 뉴스는 경제를 바꿈</strong>. 보도가 심리를 움직이고, 심리가 소비·투자·예금 인출이라는 <em>실제 행동</em>으로 이어짐.</li>
+    <li>극단적 예 — "은행이 위험하다"는 보도가 실제 <strong>예금 인출(뱅크런)</strong>을 부름. 보도 자체가 부실을 현실로 만듦.</li>
+    <li>따라서 경제 기사에는 <em>다른 분야보다 무거운 책임</em>이 따름.</li>
+  </ul>
+
+  <div class="box note">
+    <span class="bt">📚 이 주차의 자료</span>
+    <ul style="margin-bottom:0">
+      <li><b>지정 리딩</b> — 이완수(2012) 『경제와 커뮤니케이션』(시간의물레) 1~3장. 이 주차의 주 출처임.</li>
+      <li><b>실무 참고</b> — 박지수(2019) 『어려웠던 경제기사가 술술 읽힙니다』(메이트북스)</li>
+      <li><b>데이터</b> — <a href="../data.html">경제 데이터 분석실</a> · 지표 발표 일정 · 경제지표 사전(1,000개)</li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">학기 전체 설계도</span>
+    <p style="margin-bottom:0"><strong>이해 → 분석 → 비판 → 재구성</strong>의 네 단계임. 1~7주차가 '이해', 9~15주차가 '분석·비판', <strong>경제뉴스 비평</strong>이 '재구성'에 해당함. 오늘은 그 전체 지도를 펼치는 시간임.</p>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 열 가지 개념</h2>
+  <div class="h2rule"></div>
+  <p class="lede">낯선 용어부터 먼저 정리함. 외우지 말고, <strong>각 개념마다 사례 하나씩</strong> 붙여 이해할 것.</p>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>거울 모델 · 현실반영론<span class="en">mirror model / news reporting</span></dt>
+      <dd>뉴스는 현실을 비추는 거울이라는 입장. 경제뉴스는 통계와 지표에 근거하므로 비교적 객관적이라고 봄.</dd>
+    </dl>
+    <dl class="term">
+      <dt>현실구성론<span class="en">news making</span></dt>
+      <dd>현실을 전부 보도하는 것은 불가능함. 고르고 해석하는 순간 재구성됨.
+        <span class="ez">쉽게 — 같은 경기를 봐도 중계진마다 하이라이트가 다름.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>의제설정<span class="en">agenda-setting</span></dt>
+      <dd>언론이 무엇을 자주·크게 다루느냐가, 대중이 무엇을 중요하다고 여기는지를 정함.
+        <span class="ez">쉽게 — "무엇을 생각할지"가 아니라 "무엇에 대해 생각할지"를 정함.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>프레이밍<span class="en">framing</span></dt>
+      <dd>같은 사실을 어떤 틀에 넣어 말하느냐의 문제.
+        <span class="ez">쉽게 — "실업률 안정" vs "청년 체감실업률 심각" — 같은 날, 같은 통계.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>비대칭 보도<span class="en">asymmetric coverage</span></dt>
+      <dd>좋은 소식보다 나쁜 소식이 훨씬 많이 보도되는 경향. 언론계 격언 <b>"bad news is good news"</b>.</dd>
+    </dl>
+    <dl class="term">
+      <dt>이벤트지향 보도 · 의제추종<span class="en">event-driven / agenda-following</span></dt>
+      <dd>발표가 있어야만 기사가 나오고, 보도자료 첫 문장을 그대로 받아쓰는 관행.</dd>
+    </dl>
+    <dl class="term">
+      <dt>미디어 맬라디<span class="en">media malady</span></dt>
+      <dd>언론이 나쁘게 보도하면 실제 경제가 나빠짐.
+        <span class="ez">쉽게 — "불황"이라는 말이 반복되면 사람들이 지갑을 닫음.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>카토나 가설<span class="en">Katonian hypothesis</span></dt>
+      <dd>사람들의 경제심리가 실제 경제상황을 움직인다는 주장. 심리경제학자 조지 카토나(1964).</dd>
+    </dl>
+    <dl class="term">
+      <dt>랠리 효과<span class="en">rally effect</span></dt>
+      <dd>전쟁·국가적 위기에는 오히려 대통령에게 우호적으로 보도되는 현상.</dd>
+    </dl>
+    <dl class="term">
+      <dt>해석 공동체<span class="en">interpretive community</span></dt>
+      <dd>기자와 전문가 집단이 서로 참조하며 같은 해석 틀을 공유하게 되는 것.
+        <span class="ez">쉽게 — 다른 신문인데 왜 인용되는 전문가 이름이 겹치는가.</span></dd>
+    </dl>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">💡 개념 지도 — 세 덩어리로 묶어 기억할 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>① 무엇이 기사가 되는가(선택)</b> — 의제설정, 해석 공동체, 이벤트지향 보도</li>
+      <li><b>② 어떻게 말해지는가(해석)</b> — 프레이밍, 비대칭 보도, 정파성</li>
+      <li><b>③ 그 결과 무엇이 벌어지는가(효과)</b> — 미디어 맬라디, 카토나 가설, 랠리 효과</li>
+    </ul>
+  </div>
+
+  <h3>개념 총괄표 — 사례와 확인법까지 한 장에</h3>
+  <div class="tw">
+  <table>
+    <thead><tr>
+      <th style="width:15%">개념</th><th style="width:9%">묶음</th><th style="width:26%">대표 사례</th>
+      <th style="width:32%">기사에서 확인하는 법</th><th style="width:18%">다시 다루는 주차</th>
+    </tr></thead>
+    <tbody>
+      <tr><td><b>현실반영론</b></td><td>선택</td><td>통계청 수치를 그대로 옮긴 리드 문장</td><td>수치에 <b>출처·기준시점·단위</b>가 붙어 있는가</td><td>2주차 통계와 지표</td></tr>
+      <tr><td><b>현실구성론</b></td><td>선택</td><td>"시민들의 시름이 깊다"</td><td>주어가 <b>불특정 집단</b>인가. 근거 수치가 있는가</td><td>전 주차 공통</td></tr>
+      <tr><td><b>의제설정</b></td><td>선택</td><td>주가 기사가 실질임금 기사보다 압도적으로 많음</td><td>같은 기간 <b>보도 건수</b>를 세어 비교함</td><td>5·11주차</td></tr>
+      <tr><td><b>해석 공동체</b></td><td>선택</td><td>다른 신문인데 인용 전문가가 겹침</td><td>3~5개 매체의 <b>인용 취재원 명단</b>을 대조함</td><td>13주차 기업보도</td></tr>
+      <tr><td><b>이벤트지향 보도</b></td><td>선택</td><td>보도자료 첫 문장이 5개 매체에 그대로 등장</td><td>보도자료 <b>리드와 기사 리드</b>를 나란히 붙임</td><td>3·6·9주차</td></tr>
+      <tr><td><b>프레이밍</b></td><td>해석</td><td>"실업률 안정" vs "청년 체감실업률 심각"</td><td><b>형용사·부사</b>에 동그라미. 비교 기준을 확인함</td><td>5·14주차</td></tr>
+      <tr><td><b>비대칭 보도</b></td><td>해석</td><td>방송 3사 경제뉴스 긍정 3% · 부정 37%</td><td>같은 지표의 <b>상승 기사와 하락 기사 수</b>를 셈</td><td>5·7주차</td></tr>
+      <tr><td><b>정파성 편향</b></td><td>해석</td><td>부동산 위기 보도량이 정권 따라 2배 차이</td><td>기사 하나가 아니라 <b>기간 전체 분포</b>를 봄</td><td>11·14주차</td></tr>
+      <tr><td><b>미디어 맬라디</b></td><td>효과</td><td>'불황' 논조가 소비를 위축시킴</td><td>보도 논조와 <b>소비자심리지수(CCSI)</b>를 겹쳐 봄</td><td>4주차 경제심리</td></tr>
+      <tr><td><b>카토나 가설</b></td><td>효과</td><td>2~4개월 전 경제심리로 실적 예측 가능</td><td>심리지표가 <b>실물지표보다 앞서는지</b> 시차 확인</td><td>4주차 경제심리</td></tr>
+      <tr><td><b>랠리 효과</b></td><td>효과</td><td>1997년 외환위기 — 최악인데 보도는 긍정적</td><td>위기 시점 <b>전후 논조 변화</b>를 추적함</td><td>7주차 경제위기</td></tr>
+      <tr><td><b>비매개 경험 효과</b></td><td>효과</td><td>장바구니 물가는 뉴스 없이도 앎</td><td>그 지표가 <b>내 경험으로 검증 가능한지</b> 확인함</td><td>6주차 물가</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>경제뉴스란 무엇인가</h2>
+  <div class="h2rule"></div>
+
+  <h3>성격 — 무엇을 다루는가</h3>
+  <ul>
+    <li>경제주체인 <strong>정부 · 기업 · 소비자</strong>의 경제활동과 그로 인한 경제 현상을 다룸</li>
+    <li>범위가 매우 넓음</li>
+  </ul>
+
+  <div class="duo">
+    <div class="a">
+      <h5>미시적 이슈</h5>
+      <span class="tag">개별 주체 · 개별 시장</span>
+      <ul>
+        <li>물가와 생산</li>
+        <li>개별 기업 동향, 실적, 신제품</li>
+        <li>채용과 인사</li>
+        <li>부동산 실거래가</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>거시적 이슈</h5>
+      <span class="tag">국가 · 국제 단위</span>
+      <ul>
+        <li>국내외 경기변동</li>
+        <li>경제 정책(재정·통화)</li>
+        <li>외환시세(환율), 경상수지</li>
+        <li>국내총생산(GDP)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>역할 — 세 방향으로 작동함</h3>
+  <ol class="steps">
+    <li><b>대중의 경제 현실 인식에 영향</b>
+      사람들이 "지금 경기가 어떤가"를 판단하는 근거의 상당 부분이 뉴스임.</li>
+    <li><b>실제 경제상황에 영향</b>
+      물가·고용·투자·금융 같은 <em>실물 변수 자체</em>가 보도에 따라 움직임. <b>뉴스가 현실을 바꿈.</b></li>
+    <li><b>정치적·정책적 의사결정에 영향</b>
+      대통령 지지도, 선거, 정책의 채택과 폐기에 개입함.</li>
+  </ol>
+
+  <div class="box key">
+    <span class="bt">2번이 이 강의의 핵심 전제임</span>
+    <ul style="margin-bottom:0">
+      <li>다른 분야 저널리즘에는 이 고리가 <b>없음</b>. 사건·사고 보도는 이미 벌어진 일을 전함.</li>
+      <li>경제 보도는 <b>아직 벌어지지 않은 일을 앞당기거나 막을 수 있음</b>.</li>
+      <li>이것이 경제기자에게 특별한 윤리적 부담을 지우는 이유임. → 뒤의 <a href="#s8">08. 효과이론</a>에서 정면으로 다룸.</li>
+    </ul>
+  </div>
+
+  <h3>실무자가 먼저 알려주는 여덟 가지 <span class="cite">(박지수, 2019)</span></h3>
+  <ol>
+    <li><strong>언론사는 이윤을 추구하는, 광고에 민감한 기업임.</strong> 비영리 공익기관이 아님.</li>
+    <li>대중의 <strong>관심을 끌기 좋은 제목과 내용</strong>에 주의할 것. 제목은 기자가 아니라 편집자가 다는 경우가 많음.</li>
+    <li>보도된 내용은 <strong>이미 한발 늦음</strong>. 시장 참여자는 이미 알고 반응한 뒤임.</li>
+    <li>기사라고 <strong>100% 정확하지 않음</strong>. 마감 시간과 오탈자, 단위 오류가 실재함.</li>
+    <li>반복되는 <strong>시즌성 뉴스</strong>에 주의할 것 — 연초 전망, 명절 물가, 여름 휴가철, 연말 결산.</li>
+    <li><strong>누군가의 이익</strong>을 위한 뉴스에 주의할 것 — 특정 종목·업종·정책의 홍보가 기사 형태로 옴.</li>
+    <li>경제의 <strong>답은 하나가 아님</strong>. 같은 지표를 두고 정반대 전망이 공존하는 것이 정상임.</li>
+    <li><strong>그럼에도 경제뉴스 정보는 매우 유용함.</strong></li>
+  </ol>
+
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>두 개의 대립하는 관점</h2>
+  <div class="h2rule"></div>
+  <p class="lede">경제저널리즘 연구의 가장 오래된 논쟁임. <strong>뉴스는 거울인가, 창작물인가.</strong></p>
+
+  <div class="duo">
+    <div class="a">
+      <h5>현실반영론</h5>
+      <span class="tag">거울 모델 · NEWS REPORTING</span>
+      <ul>
+        <li>경제뉴스는 <b>통계자료와 지표에 기초</b>하므로 경제현실을 비교적 객관적으로 반영함</li>
+        <li>경제뉴스는 경제상황과 상당히 일치함 <span class="cite">(Nadeau et al., 1999)</span></li>
+        <li>전반적 경제현실과 추세를 잘 반영함 <span class="cite">(Behr &amp; Iyengar, 1985; Wu et al., 2002)</span></li>
+        <li>경기가 나쁠 때 부정적 뉴스가 늘고, 좋을 때 긍정적 뉴스가 늚 <span class="cite">(Fogarty, 2005)</span></li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>현실구성론</h5>
+      <span class="tag">NEWS MAKING</span>
+      <ul>
+        <li>경제 현상을 <b>있는 그대로 모두</b> 보도하는 것은 불가능함</li>
+        <li>경제 정보와 이슈는 <b>선택과 해석으로 재구성</b>됨</li>
+        <li>확인할 것 ① — 뉴스가치 판단에 의한 선택인가, <b>언론사 이익에 부합하는 선택</b>인가?</li>
+        <li>확인할 것 ② — 대중의 이해를 돕는 균형된 해석인가, <b>전문가를 동원한 편향된 해석</b>인가?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 강의의 입장 — 둘 다 부분적으로 옳음</span>
+    <p style="margin-bottom:0">한쪽을 고르는 것이 목적이 아님. 중요한 것은 <strong>어디까지가 반영이고 어디부터가 구성인지 매번 확인하는 습관</strong>임. 한 기사 안에서도 문장마다 다름.</p>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">판정 연습 · 5분</div>
+      <div class="t">아래 세 문장을 '반영'과 '구성'으로 나눠 볼 것</div>
+    </div>
+    <div class="case-b">
+      <div class="tw">
+      <table>
+        <thead><tr><th style="width:52%">문장</th><th style="width:14%">판정</th><th>근거</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>"9월 소비자물가는 전년 동월 대비 2.1% 올랐다"</td>
+            <td><b style="color:#0f766e">반영</b></td>
+            <td>통계청 공표치를 그대로 옮김. 검증 가능함.</td>
+          </tr>
+          <tr>
+            <td>"물가가 두 달째 2%대에 머물며 <em>안정세</em>를 보였다"</td>
+            <td><b style="color:#b45309">경계</b></td>
+            <td>'2%대 두 달'은 사실. 그러나 <b>'안정세'는 해석</b>임. 누가 안정이라 판정했는가.</td>
+          </tr>
+          <tr>
+            <td>"장바구니 물가는 여전히 높아 <em>시민들의 시름이 깊다</em>"</td>
+            <td><b style="color:#a4303f">구성</b></td>
+            <td><b>누구의 시름인가. 몇 명인가.</b> 근거 없이 감정을 부여함.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">💡 판별 요령</span>
+        <ul style="margin-bottom:0">
+          <li><b>수치와 출처</b>가 붙어 있으면 반영에 가까움.</li>
+          <li><b>형용사·부사</b>가 붙는 순간 해석이 시작됨 — 안정, 여전히, 급등, 소폭, 우려, 불안.</li>
+          <li><b>주어가 불특정 집단</b>이면 구성일 확률이 높음 — 시민들, 전문가들, 시장은, 업계는.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">반영–구성 스펙트럼 — 문장은 한 칸씩 옮겨감</div>
+    </div>
+    <div class="info-b">
+      <div class="spec">
+        <div class="spec-line a">
+          <i style="left:8%">①</i><i style="left:38%">②</i><i style="left:70%">③</i><i style="left:94%">④</i>
+        </div>
+        <div class="spec-ends"><span>← 반영 · 검증 가능</span><span>구성 · 검증 불가 →</span></div>
+      </div>
+      <div class="spec-notes">
+        <div><b>① 수치 인용</b>"전년 동월 대비 2.1% 상승"<br>출처·기준시점·단위가 명시됨</div>
+        <div><b>② 수치 + 비교</b>"두 달째 2%대"<br>비교 기준의 선택이 개입함</div>
+        <div><b>③ 평가어 부착</b>"안정세를 보였다"<br>판정 주체가 숨겨짐</div>
+        <div><b>④ 감정 부여</b>"시름이 깊다"<br>근거 없는 집단 심리 서술</div>
+      </div>
+    </div>
+    <div class="info-f">
+      <b>읽는 법</b> — 한 기사 안에서도 문장마다 위치가 다름. 기사 전체를 '반영이다 / 구성이다'로 뭉뚱그리지 말고 <b>문장 단위로 어디에 놓이는지</b> 표시할 것. ③·④가 많을수록 원자료 확인이 필요함.
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>경제 현실의 <em>선택</em> — 무엇이 기사가 되는가</h2>
+  <div class="h2rule"></div>
+
+  <div class="box note">
+    <span class="bt">🔎 왜 선택이 불가피한가</span>
+    <ul style="margin-bottom:0">
+      <li>경제 지표(성장·물가·금리·환율·고용)를 제대로 이해하려면 <strong>다변수 시계열 분석</strong>이 필요함. 복잡하고 어려운 과제임.</li>
+      <li>기자에게도 어려움. 그래서 언론과 전문가 집단이 상호작용하며 <strong>해석 공동체</strong>를 형성함 <span class="cite">(Berkowitz &amp; TerKeurst, 1999)</span>.</li>
+      <li>구성원들이 선택과 해석을 공유하면서 <strong>대중이 동의할 만한 의미체계</strong>를 구축함.</li>
+      <li>부작용 — <em>다른 신문인데 논리와 인용 전문가가 겹침.</em> 다양성이 아니라 수렴이 일어남.</li>
+    </ul>
+  </div>
+
+  <h3>(1) 특정 지표가 더 크게, 더 자주 보도됨</h3>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">경제지표별 보도량 순위 — 무엇이 '기사가 되는' 지표인가</div>
+    </div>
+    <div class="info-b">
+      <div class="bars">
+        <div class="brow"><div class="bl">주가</div><div class="bt2"><div class="bf" style="width:100%"></div></div><div class="bv">1위</div></div>
+        <div class="brow"><div class="bl">환율</div><div class="bt2"><div class="bf" style="width:80%"></div></div><div class="bv">2위</div></div>
+        <div class="brow"><div class="bl">금리</div><div class="bt2"><div class="bf" style="width:62%"></div></div><div class="bv">3위</div></div>
+        <div class="brow"><div class="bl">실업률</div><div class="bt2"><div class="bf" style="width:44%"></div></div><div class="bv">4위</div></div>
+        <div class="brow"><div class="bl">소비자물가</div><div class="bt2"><div class="bf" style="width:28%"></div></div><div class="bv">5위</div></div>
+      </div>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">💡 순위를 가르는 세 가지 조건</span>
+        <ul style="margin-bottom:0">
+          <li><b>갱신 주기</b> — 매일 바뀌는 지표가 매달 바뀌는 지표를 이김.</li>
+          <li><b>가시성</b> — 오르내림이 즉시 눈에 보이는가.</li>
+          <li><b>이해관계자 수</b> — 클릭이 나오는가.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      막대 길이는 <b>순위를 시각화한 상대적 표현</b>이며 실제 보도 건수 비율이 아님. 순위 자체는 이완수(2012)의 분석 결과임.
+    </div>
+  </div>
+
+  <p>순위별 이유를 뜯어보면 다음과 같음 <span class="cite">(이완수, 2012)</span>.</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:10%">순위</th><th style="width:26%">지표</th><th>왜 이 순위인가</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>주가</b></td><td>매일 숫자가 바뀜 → 기사거리가 매일 생김. 오르내림이 즉시 눈에 보임. 이해관계자가 많고 클릭이 잘 나옴.</td></tr>
+      <tr><td class="num">2</td><td><b>환율</b></td><td>역시 실시간으로 변동함. 수출입·해외여행·유학 등 체감 접점이 넓음.</td></tr>
+      <tr><td class="num">3</td><td><b>금리</b></td><td>대출·예금과 직결됨. 다만 기준금리 결정일 중심으로 몰림.</td></tr>
+      <tr><td class="num">4</td><td><b>실업률</b></td><td>월 1회 발표. 발표일에 집중되고 그 외에는 조용함.</td></tr>
+      <tr><td class="num">5</td><td><b>소비자물가</b></td><td>월 1회 발표. 체감과 통계의 괴리 때문에 논쟁이 붙을 때만 커짐.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">뒤집어 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><strong>주가는 국민 다수의 삶을 가장 잘 보여주는 지표인가?</strong></li>
+      <li>주식을 보유하지 않은 가구에게 코스피 지수의 상승은 무엇인가.</li>
+      <li>반대로 <b>전월세 가격</b>이나 <b>실질임금</b>은 훨씬 많은 사람의 삶을 좌우하지만 보도량은 적음.</li>
+      <li>정리 — <em>보도량 순위는 '중요도 순위'가 아니라 '기사 만들기 쉬운 순서'에 가까움.</em></li>
+    </ul>
+  </div>
+
+  <h3>(2) 상승과 하락에 따라 차별적으로 뉴스화됨</h3>
+  <div class="duo">
+    <div class="b">
+      <h5>오를 때 많이 보도됨</h5>
+      <span class="tag">상승 = 나쁜 소식인 지표</span>
+      <ul>
+        <li><b>소비자물가</b> — 오르면 생활고</li>
+        <li><b>실업률</b> — 오르면 고용 위기</li>
+      </ul>
+    </div>
+    <div class="a">
+      <h5>내릴 때 많이 보도됨</h5>
+      <span class="tag">하락 = 나쁜 소식인 지표</span>
+      <ul>
+        <li><b>주가</b> — 내리면 투자 손실</li>
+        <li><b>환율</b> — 급변하면 시장 불안</li>
+        <li><b>금리</b> — 방향 전환 자체가 사건</li>
+      </ul>
+    </div>
+  </div>
+  <ul>
+    <li>공통점 — 지표가 <strong>유지될 때</strong>보다 <strong>움직일 때</strong> 훨씬 많이 보도됨 <span class="cite">(이완수, 2012)</span>.</li>
+    <li>더 정확히는, <em>나쁜 방향으로 움직일 때</em> 많이 보도됨. 방향에 따라 뉴스가치가 비대칭임.</li>
+  </ul>
+
+  <h4>지표 × 방향 뉴스가치 매트릭스</h4>
+  <div class="tw">
+  <table>
+    <thead><tr>
+      <th style="width:20%">지표</th><th style="width:20%">상승할 때</th><th style="width:20%">하락할 때</th>
+      <th style="width:16%">유지될 때</th><th>보도되지 않아 생기는 사각지대</th>
+    </tr></thead>
+    <tbody>
+      <tr><td><b>소비자물가</b></td><td><b style="color:#a4303f">크게 보도</b><br><span class="cite">생활고 프레임</span></td><td><span style="color:#8492a6">작게 보도</span></td><td><span style="color:#8492a6">거의 없음</span></td><td>물가가 내려도 <b>이미 오른 수준은 그대로</b>라는 사실</td></tr>
+      <tr><td><b>실업률</b></td><td><b style="color:#a4303f">크게 보도</b><br><span class="cite">고용 위기 프레임</span></td><td><span style="color:#8492a6">작게 보도</span></td><td><span style="color:#8492a6">거의 없음</span></td><td><b>구직 단념자 증가</b>로 인한 실업률 하락 착시</td></tr>
+      <tr><td><b>주가</b></td><td>보도 <span class="cite">호황 프레임</span></td><td><b style="color:#a4303f">크게 보도</b><br><span class="cite">손실 프레임</span></td><td><span style="color:#8492a6">거의 없음</span></td><td>주식 <b>미보유 가구</b>에게 지수 변동이 갖는 의미</td></tr>
+      <tr><td><b>환율</b></td><td><b style="color:#a4303f">급등 시 보도</b></td><td><b style="color:#a4303f">급락 시 보도</b></td><td><span style="color:#8492a6">거의 없음</span></td><td><b>완만한 추세적 절하</b>가 누적시키는 수입물가 부담</td></tr>
+      <tr><td><b>금리</b></td><td>인상 결정일 보도</td><td>인하 결정일 보도</td><td><span style="color:#8492a6">동결은 작게</span></td><td><b>동결의 이유</b>와 그것이 보내는 신호</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box key">
+    <span class="bt">이 표에서 가장 중요한 열</span>
+    <p style="margin-bottom:0">맨 오른쪽 <strong>'사각지대'</strong> 열임. 보도되지 않는 것은 <em>존재하지 않는 것처럼</em> 취급됨. 좋은 비평은 <b>기사에 있는 것</b>이 아니라 <b>기사에 없는 것</b>을 지적함.</p>
+  </div>
+  <div class="box warn">
+    <span class="bt">→ 5주차 예고 · 고용과 일자리</span>
+    <p style="margin-bottom:0"><strong>실업률은 오를 때만 기사가 됨.</strong> 내려갈 때 생기는 착시 — 구직 단념자가 늘어 실업률이 '개선'되는 경우 — 는 거의 검증되지 않음. 통계는 개선인데 현실은 악화인 상황이 그대로 통과함.</p>
+  </div>
+
+  <h3>(3) 경기 국면에 따라 선택이 달라짐 <span class="cite">(이완수·신명환, 2020)</span></h3>
+  <div class="duo">
+    <div class="b">
+      <h5>경기 수축기</h5>
+      <span class="tag">자주 보도되는 의제</span>
+      <ul><li>경기 동향</li><li>경제 정책</li><li>금융</li></ul>
+      <p style="font-size:14px;color:#5a6779;margin:10px 0 0">→ <b>"누가 해결할 것인가"</b>에 관심이 쏠림. 정부와 중앙은행이 주인공이 됨.</p>
+    </div>
+    <div class="a">
+      <h5>경기 확장기</h5>
+      <span class="tag">자주 보도되는 의제</span>
+      <ul><li>주가</li><li>물가</li><li>무역수지</li></ul>
+      <p style="font-size:14px;color:#5a6779;margin:10px 0 0">→ <b>"얼마나 벌었는가"</b>에 관심이 쏠림. 시장과 기업이 주인공이 됨.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>경제 현실의 <em>해석</em> — 프레임과 논조</h2>
+  <div class="h2rule"></div>
+
+  <h3>(1) 비대칭 보도 — '나쁜 뉴스가 좋은 뉴스'</h3>
+  <ul>
+    <li>부정적 뉴스가 긍정적 뉴스보다 많음. <strong>"bad news is good news"</strong>라는 전통적 저널리즘 태도가 유지됨.</li>
+    <li>경기가 좋을 때는 조용하다가 나빠지면 집중 보도함 <span class="cite">(Fogarty, 2005; Shah et al., 1999)</span>.</li>
+    <li>불황기에는 부정적 뉴스를 상대적으로 강조함 <span class="cite">(Wu et al., 2002)</span>.</li>
+    <li>경제 상황이 호전되어도 부정적 뉴스는 오히려 늚 <span class="cite">(Hetherington, 1996)</span>.</li>
+  </ul>
+
+  <h4>해외 — 숫자로 확인함</h4>
+  <div class="stats">
+    <div class="stat neg">
+      <div class="v">63%</div>
+      <div class="l">미국 신문 경제뉴스(1989~1994)의 <b>부정적 논조</b> 비율</div>
+      <div class="s">Rattliff, 2001 (이완수, 2012에서 재인용)</div>
+    </div>
+    <div class="stat neg">
+      <div class="v">95 → 85</div>
+      <div class="l">경제지표의 <b>95%가 긍정적</b>이었으나, 언론은 <b>85%의 지표를 부정적</b>으로 보도</div>
+      <div class="s">미국 응용경제연구소, 1984 (이완수, 2012에서 재인용)</div>
+    </div>
+    <div class="stat neg">
+      <div class="v">4,500 / 5,300</div>
+      <div class="l">미국 TV 경제뉴스(1982~1987) 중 <b>부정적 보도</b> 건수</div>
+      <div class="s">Glassman, 1993</div>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">핵심 사례 · 오늘 가장 중요함</div>
+      <div class="t">미국 CBS, 1983년 6월 — 실업률이 내린 날의 실직자 뉴스</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>그날은 <strong>실업률이 하락한 날</strong>이었음. 지표만 보면 좋은 소식임.</li>
+        <li>그런데 방송은 <strong>실직자 이야기를 집중적으로</strong> 내보냄.</li>
+        <li>강조된 메시지는 <em>"실업률이 여전히 높다"</em>였음 <span class="cite">(Brown, 1984)</span>.</li>
+      </ul>
+      <h4 style="margin-top:18px">같은 발표, 두 개의 기사 — 무엇이 갈렸는가</h4>
+      <div class="tw">
+      <table>
+        <thead><tr><th style="width:22%">구성 요소</th><th style="width:39%">기사 A — 개선 프레임</th><th style="width:39%">기사 B — 위기 프레임 <span class="cite">(CBS가 택한 쪽)</span></th></tr></thead>
+        <tbody>
+          <tr><td><b>비교 기준</b></td><td>전월 대비 → <b>하락</b></td><td>절대 수준 → <b>여전히 높음</b></td></tr>
+          <tr><td><b>인용 취재원</b></td><td>정부 관계자 · 경제 분석가</td><td><b>실직 당사자</b> · 구직자</td></tr>
+          <tr><td><b>화면·사진</b></td><td>통계 그래프의 하향 곡선</td><td>고용지원센터 대기줄</td></tr>
+          <tr><td><b>제목 동사</b></td><td>"내렸다 · 개선됐다"</td><td>"여전하다 · 그늘 깊다"</td></tr>
+          <tr><td><b>사실 왜곡</b></td><td><b style="color:#0f766e">없음</b></td><td><b style="color:#0f766e">없음</b></td></tr>
+          <tr><td>→ <b>독자의 인식</b></td><td>"고용이 나아지고 있다"</td><td>"고용 위기가 계속되고 있다"</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">이 사례가 보여주는 것</span>
+        <ul style="margin-bottom:0">
+          <li><strong>같은 지표로 정반대 기사를 쓸 수 있음.</strong> 어떤 사실도 조작되지 않았음.</li>
+          <li>선택된 것은 <b>비교 기준</b>임 — '전월 대비'로 보면 개선, '수준'으로 보면 여전히 높음.</li>
+          <li>이것은 왜곡인가, 통계가 못 보는 현실을 드러낸 것인가? → <a href="#s10">토론 질문 2번</a>에서 다룸.</li>
+          <li>5주차 고용 주차의 예고편임.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h4>국내 — 더 부정적임</h4>
+  <ul>
+    <li>국내 언론은 경제현실을 대체로 부정적으로 보도함 <span class="cite">(이완수, 2007; 이완수·박재영, 2008; 이완수·오민홍, 2011)</span>.</li>
+    <li>국내 <strong>방송 3사 경제뉴스</strong> — 긍정 논조 <strong>3%</strong>, 부정 논조 <strong>37%</strong>
+      <ul><li>"경기침체 · 장기불황 · 도산위기 · 극도의 불경기" 같은 용어로 <em>위기감과 비관론을 조성</em>했음 <span class="cite">(이기현·이동훈, 2004)</span>.</li></ul>
+    </li>
+    <li>한국 경제에 대해 <strong>미국·영국·중국 언론보다 국내 언론이 더 부정적</strong>으로 평가·전망했음 <span class="cite">(반현·김남이·노혜정, 2010)</span>.</li>
+  </ul>
+  <div class="box key">
+    <span class="bt">스스로 생각해 볼 것</span>
+    <p style="margin-bottom:0"><strong>왜 우리가 우리를 더 나쁘게 보는가?</strong> 가설을 세워볼 것 — ① 자국 경제에 대한 정보량이 많아 문제도 더 많이 보임 ② 정파적 대립이 경제 평가에 투영됨 ③ 위기 담론이 정책 압박 수단으로 쓰임 ④ 독자의 체감경기와 눈높이를 맞추려는 관행.</p>
+  </div>
+
+  <h3>(2) 그런데 기업 뉴스는 정반대임</h3>
+  <div class="stats">
+    <div class="stat pos">
+      <div class="v">62.64%</div>
+      <div class="l">기업 뉴스 <b>154,876건</b> 중 <b>긍정적</b> 보도 비율</div>
+      <div class="s">이승윤·백강희·이종혁, 2023 · 한국언론학보 67(1), 185–229</div>
+    </div>
+  </div>
+  <ul>
+    <li>기업 광고를 주요 수익원으로 삼는 언론사는 <strong>기업 비판과 위험 예고에 부실</strong>함 <span class="cite">(이나연·백강희, 2016)</span>.</li>
+    <li>인터넷 기반 신생 언론사가 늘고 시장 경쟁이 심해지면서 <strong>기업의 언론에 대한 영향력이 강화</strong>되었음 <span class="cite">(유세경·금희조, 1999)</span>.</li>
+  </ul>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">논조의 비대칭 — 같은 언론사가 거시와 기업을 정반대로 다룸</div>
+    </div>
+    <div class="info-b">
+      <h4 style="margin-top:0">① 국내 방송 3사 <b>경제뉴스</b> 논조 <span class="cite">이기현·이동훈, 2004</span></h4>
+      <div class="stack">
+        <span class="pos" style="width:3%"></span>
+        <span class="neu" style="width:60%">중립 · 기타 60%</span>
+        <span class="neg" style="width:37%">부정 37%</span>
+      </div>
+      <div class="stack-l">
+        <span><i style="background:#0f766e"></i>긍정 <b>3%</b></span>
+        <span><i style="background:#b9c6d6"></i>중립·기타</span>
+        <span><i style="background:#a4303f"></i>부정 <b>37%</b></span>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft)">부정이 긍정의 <b>12배</b>가 넘음. "경기침체·장기불황·도산위기·극도의 불경기" 같은 용어로 위기감을 조성했음.</p>
+
+      <h4>② 국내 <b>기업뉴스</b> 154,876건 논조 <span class="cite">이승윤·백강희·이종혁, 2023</span></h4>
+      <div class="stack">
+        <span class="pos" style="width:62.64%">긍정 62.64%</span>
+        <span class="neg" style="width:37.36%">그 외 37.36%</span>
+      </div>
+      <div class="stack-l">
+        <span><i style="background:#0f766e"></i>긍정 <b>62.64%</b></span>
+        <span><i style="background:#a4303f"></i>중립·부정</span>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft);margin-bottom:0">거시경제는 부정으로 기울고, 기업은 긍정으로 기울음. <b>방향이 정반대임.</b></p>
+    </div>
+    <div class="info-f">
+      두 연구는 대상·시기·코딩 방식이 달라 <b>수치를 직접 뺄셈할 수는 없음</b>. 그러나 <b>기울어진 방향이 서로 반대</b>라는 점은 두 연구 모두에서 일관되게 확인됨.
+    </div>
+  </div>
+
+  <div class="pull">
+    <div class="q">왜 거시경제는 부정적으로,<br>개별 기업은 긍정적으로 보도되는가?</div>
+    <div class="a">오늘의 핵심 질문. 답이 아니라 <b>세 개의 힌트</b>를 먼저 줌.</div>
+  </div>
+
+  <ol class="steps">
+    <li><b>힌트 1 — 광고주가 누구인가</b>
+      거시경제는 광고를 사지 않음. <em>'경기'는 언론사에 돈을 주지 않지만 삼성과 현대는 줌.</em></li>
+    <li><b>힌트 2 — 출입처가 어디인가</b>
+      기업 출입기자는 그 기업과 <em>계속 일해야 함</em>. 관계가 끊기면 취재원을 잃음. 한 번의 비판이 1년의 정보 접근을 막을 수 있음.</li>
+    <li><b>힌트 3 — 비판의 대상이 특정되는가</b>
+      <em>"경기가 나쁘다"는 아무도 고소하지 않음.</em> 그러나 "A사 회계에 문제가 있다"는 즉시 법적 위험이 됨.</li>
+  </ol>
+
+  <h4>거시 보도와 기업 보도 — 조건이 완전히 다름</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">조건</th><th style="width:39%">거시경제 보도</th><th style="width:39%">개별 기업 보도</th></tr></thead>
+    <tbody>
+      <tr><td><b>비판 대상</b></td><td>불특정 — '경기', '정부'</td><td>특정 — 실명이 드러난 기업</td></tr>
+      <tr><td><b>광고 관계</b></td><td>없음. 경기는 광고를 사지 않음</td><td><b>직접적</b>. 주요 광고주인 경우가 많음</td></tr>
+      <tr><td><b>취재원 관계</b></td><td>1회성 — 학자·연구기관 코멘트</td><td><b>지속적</b>. 출입기자가 계속 상대해야 함</td></tr>
+      <tr><td><b>법적 위험</b></td><td>거의 없음</td><td><b>큼</b> — 명예훼손·손해배상 소송 가능</td></tr>
+      <tr><td><b>정보 접근</b></td><td>공개 통계로 가능 (ECOS·KOSIS)</td><td>기업 제공 정보 의존도가 높음. 공시(DART)는 최소한만</td></tr>
+      <tr><td>→ <b>결과 논조</b></td><td><b style="color:#a4303f">부정으로 기울음</b></td><td><b style="color:#0f766e">긍정으로 기울음</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box warn">
+    <span class="bt">→ 12~13주차 예고</span>
+    <p style="margin-bottom:0">기업과 주식 주차에서 <strong>재무제표·공시(DART)</strong>를 직접 열어보며 이 문제를 정면으로 다룸. '실적 호조' 기사와 실제 재무제표가 어긋나는 사례를 확인함.</p>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>신문과 방송, 그리고 그 다음</h2>
+  <div class="h2rule"></div>
+
+  <h3>무엇을 고르는가 — 선택</h3>
+  <ul>
+    <li>신문은 방송보다 <strong>경제정책</strong>에 주목함.</li>
+    <li>방송은 신문보다 <strong>물가 · 금리 · 환율</strong>에 주목함 <span class="cite">(이완수·신명환, 2020)</span>.</li>
+    <li>TV는 있는 그대로 보여주면 되지만, 신문은 경제 상황을 <strong>의미구조화</strong>함 <span class="cite">(이완수, 2012)</span>.</li>
+  </ul>
+  <div class="box easy">
+    <span class="bt">💡 왜 이렇게 갈리는가</span>
+    <ul style="margin-bottom:0">
+      <li>방송은 <b>시간</b>이 제약임 → 시청자가 즉시 이해하는 <b>체감 지표</b>를 고름.</li>
+      <li>신문은 <b>지면과 시간</b>의 여유가 상대적으로 큼 → 배경 설명이 필요한 <b>정책 의제</b>를 다룰 수 있음.</li>
+    </ul>
+  </div>
+
+  <h3>어떻게 말하는가 — 해석</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>해외 연구의 결론</h5>
+      <span class="tag">방송이 더 부정적</span>
+      <ul>
+        <li>방송이 신문보다 더 자극적·부정적임 <span class="cite">(Glassman, 1993; Hester &amp; Gibson, 2003)</span></li>
+        <li>미국 TV 경제뉴스(1982~1987) 5,300개 중 <b>4,500개가 부정적</b></li>
+        <li>방송은 내용보다 <b>스타일</b>, 이슈 속성보다 <b>개인적 특성</b>, 정보적 소구보다 <b>감정적 소구</b>에 의존함 <span class="cite">(Coleman &amp; Banning, 2006)</span></li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>국내 연구의 결론</h5>
+      <span class="tag">신문이 더 부정적 — 반대 결과</span>
+      <ul>
+        <li>신문(조선일보·동아일보)의 논조가 방송(KBS·SBS)보다 <b>더 부정적</b>이었음 <span class="cite">(이완수·박재영, 2008)</span></li>
+        <li>기업 보도에서는 <b>신문이 방송보다 친기업적</b>이었음 <span class="cite">(이승윤·백강희·이종혁, 2023)</span></li>
+      </ul>
+      <p style="font-size:14px;color:#5a6779;margin:10px 0 0">→ 국내 신문의 <b>강한 정파적 논조</b>가 매체 특성보다 더 크게 작용한 것으로 해석됨.</p>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">세 갈래 매체 지형 — 신문 · 방송 · 디지털 채널</div>
+    </div>
+    <div class="info-b">
+      <div class="tri c1">
+        <div>
+          <h5>신문</h5>
+          <span class="tag">활자 · 지면</span>
+          <ul>
+            <li>주목 의제 — <b>경제정책</b></li>
+            <li>서술 방식 — 경제 상황을 <b>의미구조화</b>함</li>
+            <li>국내 특징 — <b>정파적 논조가 가장 강함</b></li>
+            <li>기업 보도 — <b>친기업적</b> 경향</li>
+          </ul>
+        </div>
+        <div style="border-top-color:#b45309">
+          <h5>방송</h5>
+          <span class="tag">영상 · 시간 제약</span>
+          <ul>
+            <li>주목 의제 — <b>물가 · 금리 · 환율</b></li>
+            <li>서술 방식 — 내용보다 <b>스타일</b>, 정보보다 <b>감정 소구</b></li>
+            <li>해외 연구 — 신문보다 <b>더 부정적</b></li>
+            <li>국내 연구 — 신문보다 <b>덜 부정적</b> (반대 결과)</li>
+          </ul>
+        </div>
+        <div style="border-top-color:#0f766e">
+          <h5>디지털 채널</h5>
+          <span class="tag">유튜브 · 뉴스레터 · 인플루언서</span>
+          <ul>
+            <li>주목 의제 — <b>주식 · 부동산 · 재테크</b></li>
+            <li>서술 방식 — <b>썸네일·제목의 강한 소구</b></li>
+            <li>게이트키퍼 — 편집국이 아니라 <b>알고리즘</b></li>
+            <li>이해관계 — 광고주와의 거리가 <b>불투명</b>함</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="info-f">
+      <b>주의</b> — 신문·방송 항목은 인용한 연구들의 실증 결과임. <b>디지털 채널 항목은 확립된 실증 연구가 아직 부족한 영역</b>으로, 이 강의에서 학생들이 직접 검증해 볼 가설임.
+    </div>
+  </div>
+
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>정치성향에 따른 편향 보도</h2>
+  <div class="h2rule"></div>
+  <p class="lede">언론이 정파성에 따라 동일 사안을 다르게 이해·평가하고, 극단적 입장으로 보도함 <span class="cite">(최영재, 2004)</span>.</p>
+
+  <h3>선택의 편향 — 무엇을 기사로 삼는가</h3>
+  <ul>
+    <li>진보 정부(김대중·노무현)와 보수 정부(이명박·박근혜) 모두 <strong>최빈 의제는 경기동향</strong>이었음.
+      <ul>
+        <li>다만 진보 정부 시기엔 <strong>주가</strong> 의제가, 보수 정부 시기엔 <strong>물가</strong> 의제가 상대적으로 자주 보도됨 <span class="cite">(이완수·신명환, 2020)</span>.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">핵심 사례 · 가장 선명함</div>
+      <div class="t">부동산 위기 보도 — 같은 신문이 정권에 따라 빈도를 바꿈</div>
+    </div>
+    <div class="case-b">
+      <div class="tw">
+      <table>
+        <thead><tr><th style="width:24%">매체</th><th>보도 패턴</th></tr></thead>
+        <tbody>
+          <tr><td><b>조선일보</b></td><td>부동산 위기를 <b>이명박 정부보다 노무현 정부 때 2배가량 많이</b> 보도함</td></tr>
+          <tr><td><b>한겨레신문</b></td><td>반대로 <b>노무현 정부보다 이명박 정부 시기에 2배 넘게</b> 보도함</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><span class="cite">(김수정·김은이, 2014)</span></p>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">이 사례가 보여주는 것</span>
+        <ul style="margin-bottom:0">
+          <li><strong>같은 신문사가, 같은 주제를, 정권에 따라 다른 빈도로 다룸.</strong></li>
+          <li>개별 기사만 보면 사실 관계에 문제가 없을 수 있음. <em>편향은 '기사 하나'가 아니라 '기사의 분포'에 있음.</em></li>
+          <li>따라서 편향을 확인하려면 <b>한 기사가 아니라 기간 전체의 보도량</b>을 세어야 함. → 11주차 부동산 주차에서 다시 씀.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>해석의 편향 — 어떻게 평가하는가</h3>
+  <ul>
+    <li>부정적 경제뉴스는 <strong>대통령 지지도와 부적(負的) 상관</strong>을 보임 <span class="cite">(Blood &amp; Phillips, 1997)</span>.</li>
+    <li>경기가 좋든 나쁘든 <strong>대통령 인기가 높으면 덜 비판적, 떨어지면 더 비판적</strong>임 <span class="cite">(Entman, 1989)</span>.</li>
+    <li>미국 부시 시기 감세로 경제성장률이 올랐지만 경제뉴스는 비호의적이었음 — 미국 주류 언론이 보수 정권에 비판적이었기 때문임 <span class="cite">(Eshbaugh-Soha &amp; Peake, 2005)</span>.</li>
+  </ul>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">국내 사례</div>
+      <div class="t">노무현 정부 — "경기확장기인데 왜 경제뉴스는 부정적이었나"</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>부정적 경제뉴스와 대통령 지지도가 <strong>극단적 부적 상관</strong>을 보였음.</li>
+        <li><strong>경기확장기에도</strong> 경제뉴스는 부정적이었음 <span class="cite">(이완수, 2012)</span>.</li>
+        <li>노무현 대통령은 <em>"경제가 괜찮은데 언론이 위기를 조장하고 상황을 왜곡한다"</em>고 비판했음 <span class="cite">(이완수·심재철, 2007)</span>.</li>
+      </ul>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">대통령의 그 주장은 검증 가능한가</span>
+        <ul style="margin-bottom:0">
+          <li>무엇을 보면 판정할 수 있는가?</li>
+          <li>필요한 것 ① — 같은 기간의 <b>객관적 경제지표 시계열</b>(성장률·고용률·물가)</li>
+          <li>필요한 것 ② — 같은 기간의 <b>경제뉴스 논조 시계열</b>(긍정/부정 코딩)</li>
+          <li>필요한 것 ③ — 둘 사이의 <b>시차와 방향</b> 검정. 뉴스가 먼저인가, 지표가 먼저인가.</li>
+          <li>이것이 바로 이완수·심재철(2017)이 시계열 분석으로 검정한 문제임. <b>주장은 데이터로 판정 가능함.</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h4>정책별 정파성 사례</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">정책 의제</th><th>보도 양상</th><th style="width:24%">출처</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>4대강 사업</b></td>
+        <td>한겨레·경향은 지속적으로 문제 제기. 동아는 적극 찬성, 조선·중앙은 정부 입장을 대변하거나 홍보하는 논조를 보임.</td>
+        <td><span class="cite">권지현·안차수, 2016</span></td>
+      </tr>
+      <tr>
+        <td><b>한미 FTA</b></td>
+        <td>보수·진보 언론이 각각 <b>자기 성향에 부합하는 프레임</b>을 집중 사용함.</td>
+        <td><span class="cite">이종혁·길우영, 2018</span></td>
+      </tr>
+      <tr>
+        <td><b>소득주도성장</b></td>
+        <td>조선·중앙은 <b>경제적 손실·획득 프레임</b>으로 부정적 영향을 강조. 한겨레·경향은 <b>책임귀인 프레임</b>으로 보수 세력의 반대를 조명함.</td>
+        <td><span class="cite">김은정 등, 2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box warn">
+    <span class="bt">→ 14주차 예고</span>
+    <p style="margin-bottom:0">소득주도성장 사례는 <b>소득분배와 인구</b> 주차에서 다시 씀. 같은 통계(지니계수·5분위 배율)를 두고 정반대 결론이 나오는 과정을 직접 재현함.</p>
+  </div>
+
+  <h3>기업 보도의 정파성</h3>
+  <ul>
+    <li>보수 언론이 진보 언론보다 <strong>친기업적</strong>이며, 기업의 불법 행위에 대한 <strong>의혹-수사 보도에서도 덜 비판적</strong>이었음 <span class="cite">(이승윤·백강희·이종혁, 2023)</span>.</li>
+  </ul>
+  <h4>기업 보도의 7가지 차원 <span class="cite">(이승윤·백강희·이종혁, 2023)</span></h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">차원</th><th>내용</th><th style="width:22%">다시 다루는 주차</th></tr></thead>
+    <tbody>
+      <tr><td>상품-판매</td><td>신제품 출시, 판매 실적</td><td>—</td></tr>
+      <tr><td>경제-정책</td><td>규제, 세제, 산업정책과 기업의 관계</td><td>14주차 정부재정</td></tr>
+      <tr><td>기술-신제품</td><td>연구개발, 특허, 기술 경쟁</td><td>—</td></tr>
+      <tr><td>투자-사업</td><td>설비투자, 신사업 진출, M&amp;A</td><td>12주차</td></tr>
+      <tr><td>경영-지분</td><td>지배구조, 지분 변동, 승계</td><td>12주차 재무제표·공시</td></tr>
+      <tr><td><b>인사-채용</b></td><td>채용 계획, 구조조정, 임원 인사</td><td><b>5주차 고용</b></td></tr>
+      <tr><td><b>의혹-수사</b></td><td>불법 행위 의혹, 수사·재판</td><td><b>13주차 기업보도 비평</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>경제뉴스는 무엇을 하는가 — 효과이론 총정리</h2>
+  <div class="h2rule"></div>
+  <p class="lede">이완수·심재철(2017)의 <strong>경제커뮤니케이션 효과이론 모형</strong>을 뼈대로 함. 개념이 많음. <em>외우지 말고 각 개념마다 사례 하나씩 붙여 이해할 것.</em></p>
+
+  <figure>
+    <img src="econ_effect_model.png" alt="경제커뮤니케이션 효과이론 모형구조 — 경제뉴스·경제 현실인식·경제상황·대통령 경제 리더십 네 요소 사이의 효과 경로 도식">
+    <figcaption>화살표에 붙은 이름 하나하나가 이 절에서 다룰 개념임.</figcaption>
+  </figure>
+
+  <div class="box key">
+    <span class="bt">이 도식을 읽는 법</span>
+    <ul style="margin-bottom:0">
+      <li>네 개의 상자는 <b>경제뉴스 · 경제 현실인식 · 경제상황 · 대통령 경제 리더십</b>임.</li>
+      <li>화살표는 <b>한 방향이 아니라 서로 맞물림</b>. 경제상황이 뉴스를 만들고(이벤트지향 보도), 뉴스가 다시 경제상황을 바꿈(미디어 맬라디).</li>
+      <li>가장 중요한 것은 <b>경제뉴스 → 경제상황</b>과 <b>경제 현실인식 → 경제상황</b>으로 되돌아오는 화살표임. 다른 분야 저널리즘에는 이 되먹임 고리가 없음.</li>
+      <li>오늘 이해해야 할 것은 개념의 개수가 아니라 <em>이 되먹임 구조</em>임.</li>
+    </ul>
+  </div>
+
+  <h3>(1) 뉴스 → 인식</h3>
+
+  <h4>소비자 반영 보도</h4>
+  <ul><li>언론이 경제 현실을 있는 그대로 반영한다는 입장. 앞서 본 <strong>거울 모형</strong>임.</li></ul>
+
+  <h4>프레이밍 <span class="cite">framing</span></h4>
+  <ul>
+    <li>불황 헤드라인이 <strong>소비자 심리에 부정적 영향</strong>을 줌 <span class="cite">(Blood &amp; Phillips, 1995)</span>.</li>
+    <li>뉴욕타임스의 불황 뉴스가 <strong>국가경제에 대한 국민 인식</strong>에 영향을 주었음 <span class="cite">(Wu et al., 2002)</span>.</li>
+  </ul>
+
+  <h4>이벤트지향 보도 · 의제추종 <span class="cite">event-driven / agenda-following</span></h4>
+  <ul>
+    <li>언론이 경제상황을 <strong>수동적으로 반영</strong>해 보도함 <span class="cite">(Blood &amp; Phillips, 1995)</span>.</li>
+    <li>정부·기업·경제전문기관 발표를 <strong>사후적으로 인용</strong>하는 데 그침 <span class="cite">(이완수, 2015; Schiffrin, 2011)</span>.</li>
+  </ul>
+  <div class="box key">
+    <span class="bt">이것이 이 강의가 겨냥하는 문제임</span>
+    <ul>
+      <li>발표가 없으면 기사도 없음. <strong>취재가 아니라 대기임.</strong></li>
+      <li>보도자료 첫 문장을 그대로 받아쓰는 관행이 굳어짐.</li>
+    </ul>
+    <p><b>확인법 — 오늘 바로 해볼 수 있음</b></p>
+    <ol style="margin-bottom:0">
+      <li>최근 지표 발표일을 하나 고름(예: 통계청 소비자물가 동향, 고용 동향).</li>
+      <li>그날 <b>5개 매체</b>의 기사를 나란히 붙임.</li>
+      <li><b>첫 문장(리드)이 얼마나 비슷한지</b> 대조함.</li>
+      <li>원천 보도자료의 <b>요약문 첫 문장</b>과도 대조함.</li>
+    </ol>
+    <p style="margin:10px 0 0"><em>즉시 드러남.</em> 이 확인 절차가 경제뉴스 비평의 기본기임.</p>
+  </div>
+
+  <h4>비매개 경험 효과 <span class="cite">non-mediated experience effect</span></h4>
+  <ul>
+    <li>미디어를 거치지 않고 <strong>일상 경험</strong>으로 경제 현실을 평가함 <span class="cite">(Linden, 1982)</span>.</li>
+    <li><strong>돌출성(obtrusiveness)</strong>이 높은 이슈일수록 미디어의 의제설정 효과가 <strong>약해짐</strong> <span class="cite">(Zucker, 1978; Soroka, 2003; Lee, 2004)</span>.</li>
+  </ul>
+  <div class="duo">
+    <div class="a">
+      <h5>돌출성 <b>높음</b></h5>
+      <span class="tag">직접 경험 가능 → 보도 효과 약함</span>
+      <ul>
+        <li>장바구니 물가</li>
+        <li>주유비 · 교통비</li>
+        <li>전월세 · 관리비</li>
+        <li>내 월급과 취업 여부</li>
+      </ul>
+      <p style="font-size:14px;color:#5a6779;margin:10px 0 0">→ 뉴스가 없어도 앎. <b>그래서 물가 보도는 사람들을 잘 못 속임.</b> "물가가 안정됐다"는 기사와 체감이 어긋나면 <em>기사 쪽이 불신됨.</em></p>
+    </div>
+    <div class="b">
+      <h5>돌출성 <b>낮음</b></h5>
+      <span class="tag">직접 경험 불가 → 보도 효과 강함</span>
+      <ul>
+        <li>경상수지 · 국제수지</li>
+        <li>통화량(M1, M2)</li>
+        <li>외환보유액</li>
+        <li>국가채무비율</li>
+      </ul>
+      <p style="font-size:14px;color:#5a6779;margin:10px 0 0">→ 경험으로 알 수 없음. <b>그래서 보도가 인식을 거의 다 정함.</b> 숫자의 크기가 좋은지 나쁜지조차 기사가 알려주는 대로 받아들임.</p>
+    </div>
+  </div>
+  <div class="info">
+    <div class="info-h">
+      <div class="t">돌출성 축 — 내가 검증할 수 있는 지표인가</div>
+    </div>
+    <div class="info-b">
+      <div class="spec">
+        <div class="spec-line b">
+          <i style="left:5%">물가</i><i style="left:24%">고용</i><i style="left:50%">금리</i><i style="left:74%">GDP</i><i style="left:95%">통화</i>
+        </div>
+        <div class="spec-ends"><span>← 돌출성 높음 · 직접 경험 가능</span><span>돌출성 낮음 · 경험 불가 →</span></div>
+      </div>
+      <div class="spec-notes">
+        <div><b>장바구니·주유비</b>매일 지갑에서 확인함. 기사가 "안정"이라 해도 안 믿음</div>
+        <div><b>내 취업·월급</b>본인과 주변으로 확인함. 통계와 체감의 괴리가 논쟁이 됨</div>
+        <div><b>대출·예금 금리</b>대출이 있으면 체감, 없으면 추상적임. 중간 지대</div>
+        <div><b>성장률·경상수지</b>경험할 방법이 없음. 좋은지 나쁜지도 기사가 알려줌</div>
+        <div><b>통화량·외환보유액</b>완전히 매개됨. <b>보도가 인식을 거의 다 정함</b></div>
+      </div>
+    </div>
+    <div class="info-f">
+      축 위의 배치는 <b>개념 이해를 돕기 위한 강의용 배열</b>이며 측정치가 아님. 돌출성이 높을수록 의제설정 효과가 약해진다는 명제는 Zucker(1978)·Soroka(2003)·Lee(2004)의 연구에 근거함.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 대비가 이 절에서 가장 중요함</span>
+    <p style="margin-bottom:0">기사를 읽을 때 먼저 스스로 확인할 것 — <strong>"이 지표는 내가 검증할 수 있는가?"</strong> 검증 불가능한 지표일수록 <em>기사의 해석을 그대로 받아들일 위험</em>이 큼. 그런 기사일수록 원자료(ECOS·KOSIS)로 직접 가야 함.</p>
+  </div>
+
+  <h3>(2) 인식 → 현실 — 뉴스가 경제를 만듦</h3>
+
+  <h4>미디어 맬라디 <span class="cite">media malady</span></h4>
+  <ul>
+    <li>언론이 부정적으로 보도하면 <strong>실제 경제상황이 나빠짐</strong> <span class="cite">(Blood &amp; Phillips, 1995)</span>.</li>
+    <li>'불황' · '침체' 같은 부정적 논조가 <strong>사람들의 소비를 위축</strong>시킴 <span class="cite">(Doms &amp; Morin, 2004)</span>.</li>
+    <li>작동 경로 — 보도량과 논조가 소비자 심리를 움직이고, 심리가 실제 <b>지출 결정</b>을 바꿈.</li>
+  </ul>
+
+  <h4>카토나 가설 <span class="cite">Katonian hypothesis</span></h4>
+  <ul>
+    <li>심리경제학자 <strong>조지 카토나(George Katona, 1964)</strong> — 사람들의 <strong>경제심리가 실제 경제상황에 영향</strong>을 준다고 주장함.
+      <ul><li>카토나는 미시간대 조사연구센터(SRC)에서 소비자심리 조사를 설계한 인물임. 오늘날 <b>미시간대 소비자심리지수</b>의 기원임.</li></ul>
+    </li>
+    <li>관련 개념 — <strong>신념충격</strong>(belief shocks) <span class="cite">(Salyer &amp; Sheffrin, 1998)</span>, <strong>자기이행기대</strong>(self-fulfilling expectation) <span class="cite">(Lischka, 2015)</span>.</li>
+    <li><strong>2~4개월 전 경제심리로 실제 경제성과를 사전 예측</strong>할 수 있음 <span class="cite">(Wu et al., 2002)</span>.</li>
+  </ul>
+  <div class="box warn">
+    <span class="bt">→ 4주차 예고 · 경기순환과 경제심리</span>
+    <p style="margin-bottom:0">한국은행 <strong>소비자심리지수(CCSI)</strong>와 <strong>기업경기실사지수(BSI)</strong>가 왜 <em>경기선행지표</em>로 쓰이는지가 여기서 이미 설명됨. 심리가 앞서 움직이고 실물이 따라오기 때문임. 그리고 그 심리를 움직이는 요인 중 하나가 <b>보도</b>임.</p>
+  </div>
+
+  <h3>(3) 뉴스 → 정치</h3>
+
+  <h4>프라이밍 효과 <span class="cite">priming effect</span></h4>
+  <ul>
+    <li>보도 속성에 따라 사람들의 <strong>정치적 인식과 태도가 결정됨</strong> <span class="cite">(Iyengar &amp; Kinder, 1987)</span>.</li>
+    <li>경제뉴스는 <strong>대통령 지지도 평가의 주요 잣대</strong>로 강력하게 작용함 <span class="cite">(Eshbaugh-Soha &amp; Peake, 2005)</span>.</li>
+    <li>의제설정과의 차이 — 의제설정은 <b>"무엇에 대해 생각할지"</b>, 프라이밍은 <b>"무엇을 기준으로 판단할지"</b>를 정함.</li>
+  </ul>
+
+  <h4>적대적 보도 <span class="cite">adversarial press</span></h4>
+  <ul>
+    <li>경제 상황과 <strong>관계없이</strong> 특정 정부의 경제 이슈를 부정적으로 다룸 <span class="cite">(Stevenson et al., 1991)</span>.</li>
+    <li>사례 — 걸프전 당시 미 언론이 부시 대통령의 외교 대신 <strong>경제</strong>에 집중하고 이를 부정적으로 다뤄 지지도가 추락함 <span class="cite">(Blood &amp; Phillips, 1995)</span>.</li>
+  </ul>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">핵심 개념 · 오늘 가장 흥미로움</div>
+      <div class="t">랠리 효과 <span style="font-weight:600;font-size:14px;color:#5a6779">rally effect</span></div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>전쟁·경제위기 같은 <strong>국가적 위기</strong>에서는 대통령의 국정수행능력을 <strong>더 우호적으로</strong> 평가해 보도함 <span class="cite">(Mueller, 1970; Chatagnier, 2012)</span>.</li>
+        <li>Mueller(1970)가 미국 대통령 지지율 연구에서 제시한 개념임. 위기 사건이 <b>국제적이고, 대통령이 직접 관련되며, 극적이고 초점이 뚜렷할 때</b> 강하게 나타남.</li>
+      </ul>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">한국 사례 — 1997년 외환위기</span>
+        <ul style="margin-bottom:0">
+          <li><strong>경제는 극단적으로 나빴지만 언론 보도는 거꾸로 긍정적</strong>이었음 <span class="cite">(이완수·박재영, 2011)</span>.</li>
+          <li>비대칭 보도의 논리(나쁘면 더 많이 비판)와 <b>정반대</b>임.</li>
+          <li>왜 그런가? — 가설을 세워볼 것 → <a href="#s10">토론 질문 6번</a>.</li>
+          <li>7주차 <b>경제위기와 극복</b>에서 당시 보도를 직접 읽으며 검증함.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>효과이론 총괄표 — 13개 개념 한 장 정리</h3>
+  <div class="tw">
+  <table>
+    <thead><tr>
+      <th style="width:11%">경로</th><th style="width:19%">개념</th><th style="width:32%">한 줄 정의</th>
+      <th style="width:24%">기억할 사례</th><th style="width:14%">주요 출처</th>
+    </tr></thead>
+    <tbody>
+      <tr><td rowspan="4" style="background:#e8eef5;font-weight:700;color:#0d2244">뉴스<br>→ 인식</td>
+        <td><b>소비자 반영 보도</b></td><td>언론이 경제 현실을 있는 그대로 반영함</td><td>거울 모형 그 자체</td><td><span class="cite">Blood &amp; Phillips, 1995</span></td></tr>
+      <tr><td><b>프레이밍</b></td><td>같은 사실을 어떤 틀에 넣느냐가 인식을 바꿈</td><td>NYT 불황 뉴스 → 국가경제 인식 변화</td><td><span class="cite">Wu et al., 2002</span></td></tr>
+      <tr><td><b>이벤트지향 보도</b></td><td>발표를 사후 인용하는 데 그침 (의제추종)</td><td>보도자료 리드가 5개 매체에 그대로</td><td><span class="cite">이완수, 2015; Schiffrin, 2011</span></td></tr>
+      <tr><td><b>비매개 경험 효과</b></td><td>돌출성 높은 이슈는 뉴스 없이 직접 경험으로 판단됨</td><td>장바구니 물가 vs 경상수지</td><td><span class="cite">Zucker, 1978; Lee, 2004</span></td></tr>
+
+      <tr><td rowspan="2" style="background:#fdf6ec;font-weight:700;color:#b45309">인식<br>→ 현실</td>
+        <td><b>미디어 맬라디</b></td><td>부정 보도가 <b>실제 경제를 악화</b>시킴</td><td>'불황'·'침체' 논조 → 소비 위축</td><td><span class="cite">Blood &amp; Phillips, 1995; Doms &amp; Morin, 2004</span></td></tr>
+      <tr><td><b>카토나 가설</b></td><td>경제심리가 실제 경제상황을 움직임</td><td>2~4개월 전 심리로 실적 예측 가능</td><td><span class="cite">Katona, 1964; Wu et al., 2002</span></td></tr>
+
+      <tr><td rowspan="7" style="background:#f4f7fb;font-weight:700;color:#1a4b8c">뉴스<br>→ 정치</td>
+        <td><b>프라이밍 효과</b></td><td>보도 속성이 정치 판단의 <b>기준</b>을 정함</td><td>경제뉴스가 대통령 지지도의 잣대가 됨</td><td><span class="cite">Iyengar &amp; Kinder, 1987</span></td></tr>
+      <tr><td><b>적대적 보도</b></td><td>경제 상황과 무관하게 특정 정부를 부정적으로 다룸</td><td>걸프전기 부시 대통령 지지도 추락</td><td><span class="cite">Stevenson et al., 1991</span></td></tr>
+      <tr><td><b>랠리 효과</b></td><td>국가적 위기에 오히려 <b>우호적</b>으로 보도함</td><td>1997년 한국 외환위기</td><td><span class="cite">Mueller, 1970; 이완수·박재영, 2011</span></td></tr>
+      <tr><td><b>경제승인 효과</b></td><td>경제 인식이 대통령 평가·선거를 좌우함</td><td>현재 평가보다 <b>미래 전망</b>이 더 중요함</td><td><span class="cite">Erikson et al., 2000</span></td></tr>
+      <tr><td><b>대통령 영향 효과</b></td><td>대통령 호감이 경제를 긍정 평가하게 만듦 <em>(인과 역방향)</em></td><td>지지자일수록 경기를 좋게 평가함</td><td><span class="cite">Blood &amp; Phillips, 1995</span></td></tr>
+      <tr><td><b>구조적 요인</b></td><td>실제 경제 지표가 지지도 수준을 결정함 <em>(보도가 아니라 실물이 원인)</em></td><td>성장률·실업률이 곧 지지율</td><td><span class="cite">Blood &amp; Phillips, 1995</span></td></tr>
+      <tr><td><b>밴드웨건 효과</b></td><td>선거 직후 기대감으로 경기가 일시 개선됨</td><td>새 정부 출범 직후의 심리 반등</td><td><span class="cite">Spiers, 1993</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">💡 이 절을 세 문장으로 압축하면</span>
+    <ol style="margin-bottom:0">
+      <li>뉴스는 <b>인식</b>을 만듦 — 프레이밍, 이벤트지향 보도.</li>
+      <li>인식은 <b>현실</b>을 만듦 — 미디어 맬라디, 카토나 가설.</li>
+      <li>인식은 <b>정치</b>도 만듦 — 프라이밍, 랠리 효과, 경제승인 효과.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>좋은 경제뉴스의 조건</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:8%">#</th><th style="width:18%">기준</th><th>확인할 것</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>정확성</b></td><td>현실과 맞는가. 지표의 정의·기준시점·단위가 정확한가.</td></tr>
+      <tr><td class="num">2</td><td><b>균형성</b></td><td>정파성·편향성을 경계했는가. 반대 견해가 실렸는가.</td></tr>
+      <tr><td class="num">3</td><td><b>공정성</b></td><td>자의적·의도적 선택과 해석을 경계했는가. 유리한 숫자만 골랐는가.</td></tr>
+      <tr><td class="num">4</td><td><b>심층성</b></td><td>지표를 <b>시공간적으로 확장 해석</b>했는가. 현상을 넘어 <b>원인 · 예상 · 대책</b>까지 갔는가.</td></tr>
+      <tr><td class="num">5</td><td><b>환경감시</b></td><td>비판적 태도로 잠재적 위험을 예방하고 <b>경고음</b>을 울렸는가.</td></tr>
+      <tr><td class="num">6</td><td><b>공론장 조성</b></td><td>이해하기 쉽게, 재미있게, 관여도 높게, 대화거리가 되도록 썼는가. <b>전문가만의 정보 독점</b>을 막았는가.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">⚠ 4번과 5번이 실제로 가장 지켜지지 않음</span>
+    <ul style="margin-bottom:0">
+      <li><b>심층성 없는 기사의 전형</b> — <em>숫자 나열 + 전문가 코멘트 한 줄 + 끝.</em>
+        <ul><li>"전년 대비 X% 상승했다. 전문가는 '당분간 이런 흐름이 이어질 것'이라고 말했다." 여기서 끝나는 기사가 다수임.</li>
+        <li>빠진 것 — <b>왜 올랐는가(원인), 앞으로 어떻게 되는가(예상), 무엇을 해야 하는가(대책).</b></li></ul>
+      </li>
+      <li><b>환경감시 실패의 전형</b> — <em>위기가 터진 뒤에야 "예고된 위기였다"고 씀.</em>
+        <ul><li>사전에 경고한 기사가 있었는지 <b>날짜로 확인</b>하면 대부분 없음. → 7주차에서 실제로 확인함.</li></ul>
+      </li>
+    </ul>
+  </div>
+
+  <h3>경제뉴스 이용자의 역할 — 이 강의의 설계도</h3>
+  <ol class="steps">
+    <li><b>이해</b> — 지표가 무엇을 셌고 어떻게 측정했는지 앎. <span class="cite">1~7주차</span></li>
+    <li><b>분석</b> — 기사의 서술이 원자료와 일치하는지 대조함. <span class="cite">9~15주차</span></li>
+    <li><b>비판</b> — 무엇이 선택되고 무엇이 빠졌는지, 어떤 프레임이 쓰였는지 명명함. <span class="cite">9~15주차</span></li>
+    <li><b>재구성</b> — 더 나은 기사로 다시 씀. <span class="cite">경제뉴스 비평</span></li>
+  </ol>
+</section>
+
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>현실반영론 vs 현실구성론</b>
+      뉴스는 거울인가 창작물인가. <em>어디까지가 반영인지 매번 확인함.</em></li>
+    <li><b>비대칭 보도</b>
+      거시경제는 부정적으로, <em>개별 기업은 긍정적으로</em> 보도됨. 광고·출입처·법적 위험이 원인으로 지목됨.</li>
+    <li><b>이벤트지향 보도(의제추종)</b>
+      보도자료를 사후 인용하는 데 그치는 관행. 첫 문장 대조로 즉시 확인됨.</li>
+    <li><b>미디어 맬라디 / 카토나 가설</b>
+      <em>보도가 심리를 바꾸고, 심리가 경제를 바꿈.</em> 4주차 경제심리지표의 이론적 근거임.</li>
+    <li><b>랠리 효과</b>
+      국가적 위기에는 오히려 우호적으로 보도됨. 1997년 한국 외환위기가 사례임.</li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "통계에 기반한 기사는 객관적이다"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 숫자는 객관적일 수 있어도 <strong>어느 숫자를 골랐는가</strong>는 선택임.</li>
+      <li>같은 보도자료에서 <em>"3% 상승"</em>과 <em>"전월 대비 둔화"</em>를 <b>둘 다</b> 뽑아낼 수 있음.</li>
+      <li>기준을 바꾸면 방향이 바뀜 — 전년 동월 대비 / 전월 대비 / 누적 / 계절조정 여부.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "언론이 부정적인 건 비판 기능 때문이니 좋은 것이다"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 부정 보도가 <strong>일관되게 특정 영역에만 쏠린다면</strong> 그것은 비판이 아니라 편향임.</li>
+      <li>거시는 부정, 기업은 긍정이라는 <em>비대칭 자체</em>가 문제임.</li>
+      <li>진짜 비판 기능이라면 <b>권력이 큰 쪽</b>을 향해야 하는데, 실제로는 반대로 작동함.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "미디어 맬라디는 언론 탓하기다"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 언론을 비난하자는 개념이 아니라, <strong>경제 보도에 실물 효과가 있다</strong>는 실증적 발견임.</li>
+      <li>그래서 요구되는 것은 <em>침묵이 아니라 정확한 서술</em>임.</li>
+      <li>나쁜 소식을 줄이라는 뜻이 아니라, <b>과장하지 말고 맥락과 함께 쓰라</b>는 뜻임.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>왜 거시경제는 부정적으로, 개별 기업은 긍정적으로 보도되는가?</b><br>광고 · 출입처 · 법적 위험 중 무엇이 가장 큰 이유라고 보는가. 근거를 들어 순위를 매길 것.</li>
+    <li><b>1983년 CBS 사례</b> — 실업률이 내렸는데 실직자 이야기를 집중 보도했음.<br>이것은 <b>왜곡인가, 아니면 통계가 못 보는 현실을 보여준 것인가?</b></li>
+    <li><b>돌출성(obtrusiveness) 개념으로 설명해 볼 것.</b><br>왜 <b>물가 기사</b>는 사람들을 잘 못 속이고, <b>국제수지 기사</b>는 인식을 거의 다 정하는가.</li>
+    <li><b>미디어 맬라디가 사실이라면, 언론은 나쁜 소식을 덜 써야 하는가?</b><br>그렇게 하면 무엇을 잃는가. 환경감시 기능과 어떻게 충돌하는가.</li>
+    <li><b>경제 유튜브와 뉴스레터는 신문·방송 중 어느 쪽에 가까운가?</b><br>게이트키핑이 사라진 자리에 무엇이 들어왔는가.</li>
+    <li><b>1997년 외환위기 때 보도가 긍정적이었던 이유</b>로 어떤 가설을 세울 수 있는가?<br>후보 — 국가적 결집 / '금 모으기' 서사 / 정권 교체 직후의 기대 / 비판 대상의 모호함.<br>그리고 <b>오늘 한국 경제에서 '나쁜데 긍정적으로 보도되는' 영역</b>이 있는가?</li>
+  </ol>
+
+  <h3>학기 로드맵 — 1주차 개념이 다시 등장하는 곳</h3>
+  <p>오늘 배운 개념은 <strong>이번 주로 끝나지 않음.</strong> 나머지 14주에 각각 어떤 지표와 함께 다시 나오는지 미리 확인할 것.</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:9%">주차</th><th style="width:26%">주제</th><th style="width:30%">다시 쓰는 1주차 개념</th><th>구체적 연결</th></tr></thead>
+    <tbody>
+      <tr><td class="num">2</td><td>경제 통계와 지표</td><td>현실반영론의 한계</td><td>"객관적 통계"가 어떻게 만들어지는지 <b>측정 과정</b>을 뜯어봄</td></tr>
+      <tr><td class="num">3</td><td>국민생산과 소득 (GDP)</td><td>이벤트지향 보도 · 돌출성</td><td>GDP는 <b>경험 불가 지표</b>. 보도가 인식을 거의 다 정함</td></tr>
+      <tr><td class="num">4</td><td>경기순환과 경제심리</td><td><b>미디어 맬라디 · 카토나 가설</b></td><td>CCSI·BSI가 왜 <b>경기선행지표</b>인지의 이론적 근거</td></tr>
+      <tr><td class="num">5</td><td>고용과 일자리</td><td><b>비대칭 보도 · 프레이밍</b></td><td>1983 CBS 사례의 확장. 실업률 하락의 <b>착시</b>를 검증함</td></tr>
+      <tr><td class="num">6</td><td>물가</td><td><b>돌출성 · 체감과 통계의 괴리</b></td><td>물가 기사가 왜 잘 안 먹히는지를 지표로 확인함</td></tr>
+      <tr><td class="num">7</td><td>경제 위기와 극복</td><td><b>랠리 효과 · 환경감시 실패</b></td><td>1997년 외환위기 보도를 직접 읽고 논조를 판정함</td></tr>
+      <tr><td class="num">9</td><td>통화</td><td>돌출성 최저 · 이벤트지향</td><td>통화량 기사는 <b>전적으로 매개됨</b>. 해석 공동체 확인</td></tr>
+      <tr><td class="num">10</td><td>금리와 채권</td><td>선택 편향 (결정일 집중)</td><td>금통위 <b>동결의 의미</b>가 왜 보도되지 않는지</td></tr>
+      <tr><td class="num">11</td><td>가계 — 부동산·가계부채</td><td><b>정파성 편향</b></td><td>조선·한겨레 부동산 보도량 비교를 <b>직접 재현</b>함</td></tr>
+      <tr><td class="num">12</td><td>기업과 주식 (1) 재무제표·공시</td><td>기업 뉴스 긍정 편향</td><td>DART 공시와 '실적 호조' 기사를 대조함</td></tr>
+      <tr><td class="num">13</td><td>기업과 주식 (2) 주가·기업보도</td><td><b>광고주 효과 · 의혹-수사 차원</b></td><td>기업 비판 보도가 왜 약한지를 사례로 확인함</td></tr>
+      <tr><td class="num">14</td><td>정부재정 + 소득분배·인구</td><td><b>프레임 대결</b></td><td>소득주도성장 사례. 같은 통계로 정반대 결론을 만들어 봄</td></tr>
+      <tr><td class="num">15</td><td>무역·환율·관세</td><td>돌출성 · 선택 편향</td><td>환율은 <b>급변할 때만</b> 기사가 되는 문제를 다룸</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">🔭 최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>AI 생성 기사</b>가 실적·시황 보도에 실제로 쓰이고 있음. 속보성 숫자 기사의 자동화가 빠르게 진행됐음.
+        <ul><li>생각해 볼 것 — 자동 생성 기사는 <em>이벤트지향 보도의 완성인가, 아니면 기자를 해석에 집중하게 하는가?</em></li></ul>
+      </li>
+      <li><b>경제 뉴스레터·유튜브의 영향력</b>이 커지며 전통 언론의 의제설정 독점이 약해졌음. 다만 <b>원천 자료(보도자료·통계)는 그대로</b>이므로, 이벤트지향 보도 문제는 오히려 확산됐음.</li>
+      <li><b>알고리즘 추천</b>이 새로운 게이트키퍼가 되었음. 어떤 경제뉴스가 많이 읽히는지는 이제 <em>편집국이 아니라 피드</em>가 정함.</li>
+      <li>국내 연구는 <b>기업 뉴스의 긍정 편향</b>과 <b>정파성</b>을 계속 확인하고 있음. 수십만 건 단위의 대규모 텍스트 분석(BERT 등 딥러닝 적용)이 표준이 되었음.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>참고문헌</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>이완수 (2012).</b> 『경제와 커뮤니케이션』. 시간의물레. — <b>이 주차의 주 출처. 1~3장.</b></li>
+      <li><b>박지수 (2019).</b> 『어려웠던 경제기사가 술술 읽힙니다』. 메이트북스.</li>
+    </ul>
+
+    <h4>국내 연구</h4>
+    <ul>
+      <li>이완수·심재철 (2017). 경제커뮤니케이션 효과이론에 대한 실증적 분석: 한국경제 시계열 변수 간의 위계, 방향, 강도, 지속성 검정. <b>『한국언론학보』 61(1)</b>, 36–77.</li>
+      <li>이승윤·백강희·이종혁 (2023). 언론의 정치 성향에 따른 기업 보도 태도의 차이와 기업인 경기평가 심리에 미치는 영향 분석: BERT 기반 딥러닝 모형을 적용한 빅데이터 분석. <b>『한국언론학보』 67(1)</b>, 185–229. <span class="cite">기업뉴스 154,876건 분석</span></li>
+      <li>이완수·신명환 (2020). 정권별·경기국면별 경제 의제 선택 연구.</li>
+      <li>이완수·박재영 (2008; 2011). 경제뉴스 논조의 매체 간 비교 / 외환위기기 보도 분석.</li>
+      <li>이완수·심재철 (2007). 경제뉴스와 대통령 지지도 관계 분석.</li>
+      <li>이완수 (2015). 경제뉴스의 의제추종 관행 연구.</li>
+      <li>이나연·백강희 (2016). 광고주와 기업 비판 보도의 관계.</li>
+      <li>김수정·김은이 (2014). 부동산 위기 보도의 정파성 분석.</li>
+      <li>김은정 등 (2019). 소득주도성장 보도의 프레임 분석.</li>
+      <li>이종혁·길우영 (2018). 한미FTA 보도 프레임 연구.</li>
+      <li>권지현·안차수 (2016). 4대강 사업 보도 분석.</li>
+      <li>이기현·이동훈 (2004). 방송 3사 경제뉴스 논조 분석.</li>
+      <li>반현·김남이·노혜정 (2010). 국내외 언론의 한국경제 평가 비교.</li>
+      <li>최영재 (2004). 언론의 정파성 연구.</li>
+      <li>유세경·금희조 (1999). 언론 시장 경쟁과 기업의 영향력.</li>
+      <li>이완수 (2007); 이완수·오민홍 (2011). 국내 경제보도의 부정적 논조.</li>
+    </ul>
+
+    <h4>해외 연구</h4>
+    <ul>
+      <li>Blood, D. J., &amp; Phillips, P. C. B. (1995; 1997). Recession headline news, consumer sentiment, and presidential popularity. <span class="cite">미디어 맬라디 · 경제승인 효과</span></li>
+      <li>Katona, G. (1964). <i>The Mass Consumption Society</i>. McGraw-Hill. <span class="cite">카토나 가설</span></li>
+      <li>Doms, M., &amp; Morin, N. (2004). Consumer Sentiment, the Economy, and the News Media. <i>FRB San Francisco Working Paper</i> 2004-09.</li>
+      <li>Fogarty, B. J. (2005). Determining economic news coverage. <i>IJPOR</i>. <span class="cite">비대칭 보도</span></li>
+      <li>Shah, D. V., et al. (1999); Hetherington, M. J. (1996). <span class="cite">비대칭 보도</span></li>
+      <li>Nadeau, R., et al. (1999); Behr, R. L., &amp; Iyengar, S. (1985). <span class="cite">현실반영론</span></li>
+      <li>Wu, H. D., Stevenson, R. L., Chen, H.-C., &amp; Güner, Z. N. (2002). The conditioned impact of recession news. <i>IJPOR</i>.</li>
+      <li>Rattliff (2001); Glassman, J. K. (1993). <span class="cite">부정 논조 실증 — 이완수(2012)에서 재인용</span></li>
+      <li>Berkowitz, D., &amp; TerKeurst, J. V. (1999). Community as interpretive community: Rethinking the journalist–source relationship. <i>Journal of Communication, 49</i>(3), 125–136. <span class="cite">해석 공동체</span></li>
+      <li>Zucker, H. G. (1978); Soroka, S. (2003); Lee, G.-H. (2004). <span class="cite">돌출성과 의제설정</span></li>
+      <li>Linden, F. (1982). The consumer as forecaster. <i>Public Opinion Quarterly, 46</i>(3), 353–360. <span class="cite">비매개 경험 · 소비자 기대</span></li>
+      <li>Iyengar, S., &amp; Kinder, D. R. (1987). <i>News That Matters</i>. University of Chicago Press. <span class="cite">프라이밍</span></li>
+      <li>Mueller, J. E. (1970). Presidential popularity from Truman to Johnson. <i>American Political Science Review, 64</i>(1), 18–34. <span class="cite">랠리 효과</span></li>
+      <li>Chatagnier, J. T. (2012). <span class="cite">랠리 효과</span></li>
+      <li>Entman, R. M. (1989); Eshbaugh-Soha, M., &amp; Peake, J. S. (2005); Stevenson, R. L., et al. (1991).</li>
+      <li>Erikson, R. S., MacKuen, M. B., &amp; Stimson, J. A. (2000). Bankers or peasants revisited: Economic expectations and presidential approval. <i>Electoral Studies, 19</i>(2–3), 295–312. <span class="cite">경제승인 효과</span></li>
+      <li>Salyer, K. D., &amp; Sheffrin, S. M. (1998); Lischka, J. A. (2015); Spiers, R. (1993).</li>
+      <li>Hester, J. B., &amp; Gibson, R. (2003); Coleman, R., &amp; Banning, S. (2006).</li>
+      <li>Schiffrin, A. (2011). <i>Bad News: How America's Business Press Missed the Story of the Century</i>. The New Press. <span class="cite">의제추종</span></li>
+      <li>Brown, M. (1984). <span class="cite">CBS 1983년 6월 실업률 보도 사례 — 이완수(2012)에서 재인용</span></li>
+    </ul>
+
+    <h4>실무 · 웹 자료</h4>
+    <ul>
+      <li><a href="https://journalistsresource.org/economics/business-reporting/" target="_blank" rel="noopener">Business reporting: Semester-long course</a> — The Journalist's Resource (Harvard Kennedy School)</li>
+      <li><a href="https://www.journalist.or.kr/news/section4.html?p_num=4" target="_blank" rel="noopener">한국기자협회 윤리강령 및 실천요강</a></li>
+      <li><a href="https://businessjournalism.org" target="_blank" rel="noopener">Reynolds Center for Business Journalism</a></li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">한국은행 경제통계시스템 ECOS</a> · <a href="https://kosis.kr" target="_blank" rel="noopener">통계청 KOSIS</a> · <a href="https://dart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 1주차 강의자료</b><br>
+  경희대학교 미디어학과 · 이종혁 (<a href="mailto:jonghhhh@khu.ac.kr">jonghhhh@khu.ac.kr</a>) · 정경대 교수회관 620호<br>
+  주 출처: 이완수(2012) 『경제와 커뮤니케이션』, 시간의물레</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script>
+(function(){
+  var sidebar = document.getElementById('sidebar');
+  var scrim   = document.getElementById('scrim');
+  var burger  = document.getElementById('burger');
+  var bar     = document.getElementById('bar');
+  var totop   = document.getElementById('totop');
+  var links   = Array.prototype.slice.call(document.querySelectorAll('#nav a'));
+  var secs    = links.map(function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
+
+  /* 모바일 드로어 */
+  function close(){ sidebar.classList.remove('open'); scrim.classList.remove('on'); }
+  burger.addEventListener('click', function(){
+    sidebar.classList.toggle('open');
+    scrim.classList.toggle('on', sidebar.classList.contains('open'));
+  });
+  scrim.addEventListener('click', close);
+  links.forEach(function(a){ a.addEventListener('click', function(){ if(innerWidth<=980) close(); }); });
+  addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  /* 진행바 · 맨위로 */
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var y = scrollY;
+    bar.style.width = (h>0 ? (y/h*100) : 0) + '%';
+    totop.classList.toggle('on', y > 500);
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+  totop.addEventListener('click', function(){ scrollTo({top:0, behavior:'smooth'}); });
+
+  /* 스크롤 스파이 — 현재 위치보다 위에 있는 마지막 섹션 */
+  var ticking = false;
+  function spy(){
+    var y = scrollY + innerHeight*0.28;
+    var idx = 0;
+    for (var i=0;i<secs.length;i++){
+      if (secs[i] && secs[i].offsetTop <= y) idx = i;
+    }
+    links.forEach(function(a,i){ a.classList.toggle('active', i===idx); });
+    // 활성 항목이 사이드바 밖이면 스크롤해 보이게 함(데스크톱만)
+    if (innerWidth > 980){
+      var a = links[idx];
+      var top = a.offsetTop, bot = top + a.offsetHeight;
+      if (top < sidebar.scrollTop || bot > sidebar.scrollTop + sidebar.clientHeight){
+        sidebar.scrollTop = top - sidebar.clientHeight/2;
+      }
+    }
+    ticking = false;
+  }
+  addEventListener('scroll', function(){
+    if(!ticking){ ticking = true; requestAnimationFrame(spy); }
+  }, {passive:true});
+  spy();
+})();
+</script>
+</body>
+</html>
