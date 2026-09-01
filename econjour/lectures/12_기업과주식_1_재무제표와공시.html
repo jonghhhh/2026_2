@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12주차 · 기업과 주식 (1) 재무제표와 공시 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 12주차 강의자료 — 공시와 재무제표 읽는 법, 영업이익과 순이익의 구별, 흑자도산, 이자보상배율, DART 활용법.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">12주차 · 재무제표와 공시</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">12주차<br>기업과 주식 (1)<br>재무제표와 공시</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 기업과 공시</div>
+    <a href="#s2"><span class="n">02</span><span>기업이라는 조직</span></a>
+    <a href="#s3"><span class="n">03</span><span>공시 — 기자가 읽는 문서</span></a>
+    <a href="#s4"><span class="n">04</span><span>재무제표 세 장</span></a>
+    <a href="#s5"><span class="n">05</span><span>영업이익과 당기순이익</span></a>
+    <a href="#s6"><span class="n">06</span><span>흑자도산</span></a>
+
+    <div class="sb-label">2회차 · DART 사용법</div>
+    <a href="#s7"><span class="n">07</span><span>어디서 찾나</span></a>
+    <a href="#s8"><span class="n">08</span><span>DART에서 확인할 것</span></a>
+    <a href="#s9"><span class="n">09</span><span>성장성 · 수익성 · 안정성</span></a>
+    <a href="#s10"><span class="n">10</span><span>기업 저널리즘</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s11"><span class="n">11</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s12"><span class="n">12</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 5. 경제 주체 — 가계·기업·정부 · 12주차</div>
+    <h1>기업 기사의 모든 숫자는<br>DART에서 직접 확인할 수 있음</h1>
+    <div class="sub">기업과 주식 (1) — 재무제표와 공시</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">기업 기사의 <strong>원천 자료</strong>인 공시와 재무제표를 직접 열어보는 주차임. 경제 기자가 가장 자주 쓰는 실무 도구가 <strong>DART</strong>임.</p>
+
+  <div class="pull">
+    <div class="q">"기업 기사의 모든 숫자는<br>DART에서 직접 확인할 수 있음."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">1주차의 회수 지점</span>
+    <ul style="margin-bottom:0">
+      <li>1주차에서 배웠듯 거시경제는 부정적으로, <strong>개별 기업은 긍정적으로</strong> 보도됨. <em>기업뉴스의 62.64%가 긍정 논조였음</em>(이승윤·백강희·이종혁, 2023).</li>
+      <li><strong>왜 그런가는 13주차에서 다룸.</strong> 이번 주에는 먼저 <b>검증 도구</b>를 손에 쥠.</li>
+    </ul>
+  </div>
+
+  <h3>여는 질문</h3>
+  <div class="anat">
+    <div class="s">"○○전자 3분기 영업이익 ○조 원, 시장 예상치 상회"</div>
+    <div class="g">
+      <div class="c"><div class="n">질문 1</div><div class="q">이 숫자는 어디서 나왔는가</div><div class="d">회사가 발표한 것인가, 누가 계산한 것인가</div></div>
+      <div class="c"><div class="n">질문 2</div><div class="q">"시장 예상치"는 누가 만든 숫자인가</div><div class="d">증권사 애널리스트 전망치의 평균임</div></div>
+      <div class="c"><div class="n">질문 3</div><div class="q">기자는 어디서 직접 확인하는가</div><div class="d"><b>DART</b>. 오늘 그것을 배움</div></div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">"시장 예상치(컨센서스)"의 정체</span>
+    <ul style="margin-bottom:0">
+      <li>증권사 애널리스트들의 전망치 <strong>평균</strong>임.</li>
+      <li>확인할 것 — <b>누가 집계했는가</b>, <b>몇 명의 전망인가</b>, <b>전망치의 분산은 얼마인가.</b></li>
+      <li><strong>컨센서스 분산이 크면 "예상치 상회"라는 말 자체가 불안정함.</strong> <em>평균은 같아도 전망이 크게 엇갈렸다는 뜻이기 때문임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>재무상태표<span class="en">statement of financial position</span></dt>
+      <dd><b>어느 시점</b>의 재산 상태임.
+        <span class="ez">2주차의 stock에 해당함.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>손익계산서<span class="en">income statement</span></dt>
+      <dd><b>일정 기간</b>의 성과임.
+        <span class="ez">2주차의 flow에 해당함.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>현금흐름표<span class="en">cash flow statement</span></dt>
+      <dd><b>돈이 실제로 오갔는가</b>를 보여줌.</dd>
+    </dl>
+    <dl class="term">
+      <dt>영업이익<span class="en">operating profit</span></dt>
+      <dd><b>본업으로 번 돈</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>당기순이익<span class="en">net income</span></dt>
+      <dd>이자·환차손익·자산매각까지 다 반영한 <b>최종 결과</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>연결 · 별도 재무제표<span class="en">consolidated / separate</span></dt>
+      <dd><b>연결</b>은 자회사까지 합친 것, <b>별도</b>는 그 회사만임.
+        <span class="ez">주의 — 규모가 크게 다름. 기사가 어느 것을 썼는지 확인할 것.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>감사의견<span class="en">audit opinion</span></dt>
+      <dd>적정 / 한정 / 부적정 / 의견거절. <b>적정이 아니면 즉시 기사거리임.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>이자보상배율<span class="en">ICR</span></dt>
+      <dd>영업이익 ÷ 이자비용.
+        <span class="ez">주의 — 1 미만이면 영업이익으로 이자도 못 냄.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>영업활동 현금흐름<span class="en">CFO</span></dt>
+      <dd>본업에서 <b>실제로 들어온 현금</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>매출채권·재고자산 회전율<span class="en">turnover ratio</span></dt>
+      <dd><b>안 팔렸는데 매출로 잡히지 않았는가</b>를 보는 지표임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>컨센서스<span class="en">consensus</span></dt>
+      <dd>증권사 애널리스트 전망치의 평균. <b>"시장 예상치"의 정체</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>주석<span class="en">notes</span></dt>
+      <dd>재무제표에 붙는 설명. <b>본문 숫자보다 여기에 기사가 있음.</b></dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>기업이라는 조직</h2>
+  <div class="h2rule"></div>
+
+  <p>재화·서비스를 생산하여 이윤을 창출하는 경제적 조직임. 유형은 개인기업 / 합명·합자회사 / 유한책임회사 / <b>주식회사</b>로 나뉨.</p>
+
+  <h3>주식회사의 지배구조 — 기업 기사에 반드시 나오는 네 기관</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">기관</th><th>역할</th></tr></thead>
+    <tbody>
+      <tr><td><b>주주총회</b></td><td>최고 의사결정 기구. 정관 변경, <b>이사·감사 선임</b>, 배당 결정</td></tr>
+      <tr><td><b>이사회</b></td><td>기본 정책·전략 결정, <b>대표이사 선임</b>. <b>사외이사</b> 제도 포함</td></tr>
+      <tr><td><b>대표이사(CEO)</b></td><td>경영 집행 책임자. 이사회 위임을 받아 운영함</td></tr>
+      <tr><td><b>감사·감사위원회</b></td><td>회계, 내부통제, 경영 감시. <b>상장사는 감사위원회가 필수임</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 표에서 나오는 기사들</span>
+    <ul style="margin-bottom:0">
+      <li><b>"주총 표대결"</b>, <b>"사외이사 독립성 논란"</b>, <b>"행동주의 펀드의 이사 선임 요구"</b> — 전부 이 표에서 나옴.</li>
+      <li><strong>3월 정기 주주총회 시즌은 기업 기사의 최대 성수기임.</strong></li>
+      <li><b>의결권 대리행사 권유 공시</b>(DART)를 보면 <em>누가 무엇을 요구하는지 미리 알 수 있음.</em></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">기업의 목표와 이해관계자</span>
+    <ul style="margin-bottom:0">
+      <li><b>목표</b> — <b>성장 · 수익 · 안정.</b> <em>한국은행 기업경영분석의 3대 지표와 정확히 대응함.</em></li>
+      <li><b>이해관계자</b> — 주주 / 경영진 / <b>직원</b> / 고객 / 공급업체 / 지역사회 / 정부·규제기관</li>
+      <li><strong>기업 기사는 대부분 주주와 경영진의 시각으로 쓰임.</strong> <em>직원·공급업체·지역사회의 시각으로 쓴 기업 기사를 본 적 있는가.</em> → 5주차 노동 보도와 연결됨.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>공시 — 기자가 실제로 읽는 문서</h2>
+  <div class="h2rule"></div>
+
+  <h3>정기 공시</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">문서</th><th style="width:28%">제출 시기</th><th>무엇이 있는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>사업보고서</b></td><td>사업연도 종료 후 <b>90일 이내</b><br><span class="cite">12월 결산이면 3월 말</span></td><td>1년 전체. 사업 내용, 재무제표, <b>임직원 현황·보수</b>, 계열회사, 주주 현황</td></tr>
+      <tr><td>반기보고서</td><td>반기 종료 후 45일 이내</td><td>상반기 실적</td></tr>
+      <tr><td>분기보고서</td><td>분기 종료 후 45일 이내</td><td>분기 실적</td></tr>
+      <tr><td><b>감사보고서</b></td><td>사업보고서 제출 전</td><td><b>감사의견</b> — 적정 / 한정 / 부적정 / 의견거절</td></tr>
+      <tr><td>기업지배구조보고서</td><td>연 1회</td><td>이사회 운영, 주주권 보호</td></tr>
+      <tr><td>지속가능경영보고서</td><td>연 1회</td><td>ESG 관련 사항</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>수시 공시 (주요사항보고서) — 기사가 되는 지점</h3>
+  <ul>
+    <li>유상증자 · 무상증자</li>
+    <li><b>전환사채(CB) · 신주인수권부사채(BW) 발행</b></li>
+    <li>자사주 취득 · 처분</li>
+    <li>합병 · 분할, 영업양수도</li>
+    <li><b>소송</b></li>
+    <li>감자, 부도 · 회생절차</li>
+    <li>최대주주 변경</li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">공시가 곧 기사임</span>
+    <ul style="margin-bottom:0">
+      <li>경제부 기업 담당 기자의 하루는 <strong>DART 공시 확인으로 시작함.</strong></li>
+      <li><strong>장 마감 후나 주말 직전에 나오는 공시가 특히 중요함</strong> — <em>왜 그 시간에 냈는지가 기사거리임.</em></li>
+      <li>금요일 오후에 올라온 불리한 공시는 <b>주목을 피하려는 것</b>일 수 있음.</li>
+      <li>확인 방법 — <b>요일·시간대별 공시 분포</b>를 세어 봄. 패턴이 보이면 그 자체가 기사임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>재무제표 세 장</h2>
+  <div class="h2rule"></div>
+  <p class="lede">구성은 재무상태표 · 손익계산서 · 현금흐름표 · 자본변동표 · <strong>주석</strong>임. <em>앞의 세 장과 주석만 읽으면 됨.</em></p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">세 장이 각각 무엇을 보여주는가</div>
+    </div>
+    <div class="info-b">
+      <div class="tri c1" style="margin-top:0">
+        <div>
+          <h5>재무상태표</h5>
+          <span class="tag">어느 시점 · stock</span>
+          <ul>
+            <li><b>자산 = 부채 + 자본</b></li>
+            <li>자산 — 유동자산(현금·매출채권·재고) + 비유동자산</li>
+            <li>부채 — 유동부채(1년 이내) + 비유동부채</li>
+            <li>자본 — 자본금 + 자본잉여금 + 이익잉여금</li>
+          </ul>
+        </div>
+        <div>
+          <h5>손익계산서</h5>
+          <span class="tag">일정 기간 · flow</span>
+          <ul>
+            <li>매출액에서 시작해 단계별로 뺌</li>
+            <li><b>영업이익</b> — 본업으로 번 돈</li>
+            <li><b>당기순이익</b> — 최종적으로 남은 돈</li>
+            <li>둘 사이에 <b>영업외손익</b>이 있음</li>
+          </ul>
+        </div>
+        <div>
+          <h5>현금흐름표</h5>
+          <span class="tag">실제 현금</span>
+          <ul>
+            <li><b>영업활동(CFO)</b> — 본업에서 실제 들어온 현금</li>
+            <li>투자활동 — 설비·지분 투자. <b>보통 마이너스가 정상임</b></li>
+            <li>재무활동 — 차입·상환·증자·배당</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="info-f">
+      2주차에서 배운 <b>flow와 stock의 구분</b>이 여기서 그대로 쓰임. 재무상태표는 "○월 ○일 현재", 손익계산서는 "○분기 중"임.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">주석 — 기자가 실제로 특종을 찾는 곳</span>
+    <ul style="margin-bottom:0">
+      <li>담긴 것 — 우발부채, <b>소송</b>, 특수관계자 거래, 회계정책 변경, 담보 제공, 약정사항.</li>
+      <li><strong>본문 숫자보다 주석에 기사가 있음.</strong></li>
+      <li>시간이 없다면 두 항목만 볼 것 — <b>"특수관계자 거래"</b>와 <b>"우발부채 및 약정사항"</b>. <em>대부분의 위험이 여기서 보임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>영업이익과 당기순이익 — 기업 기사 최다 오류</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">손익계산서는 위에서 아래로 빼 내려감</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 330" role="img" aria-label="매출액에서 당기순이익까지의 손익계산서 단계 도식">
+          <rect x="120" y="14" width="520" height="34" rx="5" fill="#1a4b8c"/>
+          <text x="140" y="36" font-size="13.5" font-weight="700" fill="#fff">매출액</text>
+
+          <text x="140" y="66" font-size="12.5" fill="#a4303f">− 매출원가</text>
+          <rect x="120" y="74" width="440" height="34" rx="5" fill="#3a6cb0"/>
+          <text x="140" y="96" font-size="13.5" font-weight="700" fill="#fff">매출총이익</text>
+
+          <text x="140" y="126" font-size="12.5" fill="#a4303f">− 판매비와관리비</text>
+          <rect x="120" y="134" width="330" height="38" rx="5" fill="#0f766e"/>
+          <text x="140" y="158" font-size="14.5" font-weight="800" fill="#fff">영업이익</text>
+          <text x="470" y="158" font-size="13" font-weight="700" fill="#0f766e">본업으로 번 돈</text>
+
+          <text x="140" y="190" font-size="12.5" fill="#b45309">± 영업외손익 — 이자 · 환차손익 · 자산처분손익</text>
+          <rect x="120" y="198" width="290" height="34" rx="5" fill="#5a8fc9"/>
+          <text x="140" y="220" font-size="13.5" font-weight="700" fill="#fff">세전이익</text>
+
+          <text x="140" y="250" font-size="12.5" fill="#a4303f">− 법인세</text>
+          <rect x="120" y="258" width="250" height="38" rx="5" fill="#0d2244"/>
+          <text x="140" y="282" font-size="14.5" font-weight="800" fill="#fff">당기순이익</text>
+          <text x="390" y="282" font-size="13" font-weight="700" fill="#0d2244">최종적으로 남은 돈</text>
+
+          <text x="120" y="318" font-size="12.5" fill="#8492a6">막대 길이는 금액이 단계마다 줄어드는 것을 나타낸 도식임</text>
+        </svg>
+      </figure>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">"순이익 급증"이 공장 하나 팔아서 생긴 것일 수 있음</span>
+        <ul style="margin-bottom:0">
+          <li><b>영업이익</b>은 본업으로 번 돈임.</li>
+          <li><b>순이익</b>은 환율·이자·<strong>일회성 자산 매각</strong>까지 다 반영한 최종 결과임.</li>
+          <li>따라서 <strong>반드시 영업이익과 함께 봄.</strong> 그리고 <b>영업외손익 내역</b>을 확인함.</li>
+          <li>확인 요령 — <em>영업이익과 순이익의 방향이 다른 분기</em>를 찾아보면 무슨 일이 있었는지 바로 드러남.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      기사에 "이익"이라고만 쓰여 있으면 <b>어느 이익인지 반드시 확인할 것.</b> 두 숫자는 방향까지 다를 수 있음.
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>흑자도산 — 손익은 흑자인데 현금이 없음</h2>
+  <div class="h2rule"></div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">현금흐름표를 보는 이유</div>
+      <div class="t">손익계산서는 흑자인데 영업활동 현금흐름이 마이너스인 회사</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>매출은 장부에 잡혔지만 <strong>돈은 못 받은</strong> 상태임. 매출채권이 급증함.</li>
+        <li>장부상으로는 이익이 났는데 <em>실제로 쓸 현금이 없어 부도가 남.</em> 이것이 <b>흑자도산</b>임.</li>
+      </ul>
+      <div class="tw">
+      <table>
+        <thead><tr><th style="width:32%">확인 지표</th><th style="width:24%">움직임</th><th>무엇을 뜻하는가</th></tr></thead>
+        <tbody>
+          <tr><td><b>매출채권회전율</b></td><td>하락</td><td>회수가 <b>느려지고</b> 있음</td></tr>
+          <tr><td><b>재고자산회전율</b></td><td>하락</td><td><b>안 팔리고 쌓이고</b> 있음</td></tr>
+          <tr><td><b>현금전환주기(CCC)</b></td><td>증가</td><td>돈이 <b>묶이는 기간</b>이 길어졌음</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">분식회계 탐지의 첫 단서이기도 함</span>
+        <p style="margin-bottom:0">7주차에서 본 <b>Enron·WorldCom</b> 사례가 정확히 이 유형이었음. <em>매출은 늘었다는데 현금이 안 들어오면 의심할 것.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>어디서 찾나 — 네 개의 창구</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">사이트</th><th style="width:40%">성격</th><th>누가 쓰나</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://dart.fss.or.kr" target="_blank" rel="noopener"><b>DART 전자공시시스템</b></a></td><td><b>가장 완전한 공식 문서.</b> 상세 공시와 <b>주석</b></td><td><b>기자, 회계 분석가, 연구자</b></td></tr>
+      <tr><td><a href="https://kind.krx.co.kr" target="_blank" rel="noopener">KIND 한국거래소 공시채널</a></td><td>정형화된 재무제표 조회, XBRL 표준 뷰어</td><td>중급 사용자</td></tr>
+      <tr><td><a href="https://finance.naver.com" target="_blank" rel="noopener">네이버 금융</a></td><td>빠른 파악, 보기 쉬운 요약·시각화</td><td>초보자, 개인 투자자</td></tr>
+      <tr><td><a href="https://comp.fnguide.com" target="_blank" rel="noopener">FnGuide</a></td><td>재무·투자지표·<b>컨센서스</b>·업종 비교를 시계열로</td><td>실무 분석</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>DART 실전 경로 — 여섯 단계</h3>
+  <ol class="steps">
+    <li><b>회사명 검색</b>
+      공시 목록이 뜸.</li>
+    <li><b>정기공시 체크</b>
+      사업보고서 또는 분기보고서를 고름.</li>
+    <li><b>「III. 재무에 관한 사항」</b>
+      좌측 목차에서 선택함. 재무제표가 여기 있음.</li>
+    <li><b>「II. 사업의 내용」</b>
+      사업 구조, <b>매출 구성</b>, 시장 점유율을 확인함.</li>
+    <li><b>「VIII. 임원 및 직원 등에 관한 사항」</b>
+      <b>직원 수, 평균 근속연수, 1인 평균 급여</b>가 여기 있음.</li>
+    <li><b>「XI. 그 밖에 투자자 보호를 위하여 필요한 사항」</b>
+      <b>소송, 제재</b> 내역을 확인함.</li>
+  </ol>
+
+  <div class="box key">
+    <span class="bt">사업보고서의 직원 현황은 5주차와 12주차를 잇는 다리임</span>
+    <ul style="margin-bottom:0">
+      <li><b>남녀별 직원 수, 평균 근속연수, 1인 평균 급여액, 기간제 근로자 수</b>가 전부 나옴.</li>
+      <li><strong>"채용 ○만 명 계획" 보도자료와 실제 직원 수 증감을 대조하면 그 자체가 기사임.</strong></li>
+      <li>이것이 <em>학생이 가장 쉽게 만들 수 있는 독자적 기사임.</em> 회사가 발표한 계획과 보고서에 적힌 숫자를 나란히 놓기만 하면 됨.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>DART에서 확인할 것</h2>
+  <div class="h2rule"></div>
+  <p class="lede">기업 한 곳의 분기보고서를 열었을 때 <strong>무엇을 채우고 무엇을 물어야 하는지</strong> 정리함.</p>
+
+  <h3>채울 숫자</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">항목</th><th style="width:22%">어디에 있나</th><th>왜 보는가</th></tr></thead>
+    <tbody>
+      <tr><td>매출액</td><td>손익계산서</td><td>규모의 변화</td></tr>
+      <tr><td><b>영업이익</b></td><td>손익계산서</td><td><b>본업이 돈을 벌고 있는가</b></td></tr>
+      <tr><td><b>당기순이익</b></td><td>손익계산서</td><td>영업이익과 방향이 같은가</td></tr>
+      <tr><td><b>영업활동 현금흐름</b></td><td>현금흐름표</td><td><b>이익이 현금으로 들어왔는가</b></td></tr>
+      <tr><td>부채비율</td><td>재무상태표에서 계산</td><td>재무 안정성</td></tr>
+      <tr><td><b>이자보상배율</b></td><td>영업이익 ÷ 이자비용</td><td><b>이자를 낼 수 있는가</b></td></tr>
+      <tr><td><b>직원 수</b></td><td>「VIII. 임원 및 직원」</td><td>→ 5주차 고용과 연결</td></tr>
+      <tr><td>1인 평균 급여</td><td>「VIII. 임원 및 직원」</td><td>임금 기사의 근거</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>확인해야 할 다섯 가지</h3>
+  <ol class="qs">
+    <li><b>영업이익과 순이익의 방향이 다른가?</b><br>다르다면 <b>영업외손익</b>에서 무슨 일이 있었는가.</li>
+    <li><b>순이익은 늘었는데 영업활동 현금흐름은 어떤가?</b><br>매출채권이 늘지 않았는가.</li>
+    <li><b>직원 수 증감이 그 회사의 채용 발표와 일치하는가?</b><br>→ 5주차 고용</li>
+    <li><b>주석에서 소송·우발부채·특수관계자 거래를 찾았는가?</b></li>
+    <li><b>연결인가 별도인가?</b><br>규모가 크게 다름.</li>
+  </ol>
+
+  <div class="box easy">
+    <span class="bt">같은 회사, 같은 분기로 세 개의 리드를 써 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li>① <b>실적</b> 각도 ② <b>고용</b> 각도 ③ <b>재무 위험</b> 각도</li>
+      <li>세 리드가 <strong>같은 회사, 같은 분기</strong>에 대한 것임을 확인할 것.</li>
+      <li>그리고 스스로 답해 볼 것 — <em>어느 리드가 가장 많이 읽히겠는가. 어느 리드가 가장 중요한가.</em></li>
+      <li><strong>둘이 다르다면 그것이 이 강의의 주제임.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>성장성 · 수익성 · 안정성</h2>
+  <div class="h2rule"></div>
+
+  <p>한국은행 <b>「기업경영분석」</b>은 외부감사 대상 법인을 대상으로 기업의 재무 상태를 분석함. 상장기업은 <b>DART의 분기·반기보고서</b> 자료를 입수해 분석하고, 비상장기업은 표본 설문으로 보완함.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:20%">지표군</th><th style="width:30%">무엇을 평가하는가</th><th>대표 지표</th></tr></thead>
+    <tbody>
+      <tr><td><b>성장성</b></td><td>지속적인 성장 가능성</td><td>매출증가율, 총자산증가율, 이익증가율</td></tr>
+      <tr><td><b>수익성</b></td><td>이익 창출 능력</td><td>영업이익률, <b>ROE</b>, ROA, ROIC</td></tr>
+      <tr><td><b>안정성</b></td><td>채무상환능력·재무 안정성</td><td>부채비율, <b>이자보상배율</b>, 유동비율</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">이자보상배율 — 금리 상승기의 핵심 지표</span>
+    <ul style="margin-bottom:0">
+      <li><code>이자보상배율 = 영업이익 ÷ 이자비용</code></li>
+      <li><strong>1 미만이면 영업이익으로 이자도 못 냄.</strong> 흔히 말하는 <b>좀비기업</b>임.</li>
+      <li><b>3년 연속 1 미만</b>이면 한계기업으로 분류하는 것이 통례임. <em>기사에서 이 기준을 밝혀야 함.</em></li>
+      <li><strong>금리 상승기(10주차)에 이 지표 기사가 급증함.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>기업 저널리즘</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:28%">1주차 개념</th><th>기업 보도에서 어떻게 나타나는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>기업뉴스의 긍정 편향</b><br><span class="cite">이승윤 등, 2023</span></td><td>기업뉴스의 <b>62.64%가 긍정 논조</b>였음. 거시경제 보도의 부정 편향과 <b>정반대임</b></td></tr>
+      <tr><td><b>광고주 영향</b><br><span class="cite">이나연·백강희, 2016</span></td><td>기업 광고를 주요 수익원으로 삼는 언론사가 <b>기업 비판과 위험 예고에 부실함</b></td></tr>
+      <tr><td><b>매체별 차이</b><br><span class="cite">이승윤 등, 2023</span></td><td>보수 언론이 더 친기업적이며 <b>의혹-수사 보도에서도 덜 비판적</b>이었음. 신문이 방송보다 친기업적이었음</td></tr>
+      <tr><td><b>이벤트지향 보도</b></td><td>실적 발표 기사는 대부분 <b>회사 IR 자료 요약</b>임. <em>DART 원문과 주석을 확인한 기사는 소수임</em></td></tr>
+      <tr><td><b>환경감시 실패</b></td><td>Enron·WorldCom(7주차)과 국내 분식회계 사건에서 언론은 <b>사후에야</b> 다뤘음</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 강의의 차별화 지점이 정확히 여기임</span>
+    <ul style="margin-bottom:0">
+      <li>실적 기사 대부분이 <strong>회사가 준 자료를 요약한 것임.</strong></li>
+      <li><strong>DART 원문과 주석을 확인한 기사는 소수임.</strong></li>
+      <li>물어볼 것 — <em>공시에 이미 신호가 있었는가. 있었다면 왜 못 봤는가.</em></li>
+      <li>1주차에서 배운 <b>환경감시 기능</b>이 기업 보도에서 어떻게 작동하는지 확인하는 지점임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>재무제표 세 장</b>
+      재무상태표(시점) / 손익계산서(기간) / 현금흐름표(실제 현금).</li>
+    <li><b>영업이익과 당기순이익</b>
+      <em>"순이익 급증"이 공장 판 돈일 수 있음.</em> 영업외손익을 확인함.</li>
+    <li><b>흑자도산</b>
+      손익은 흑자인데 <em>영업활동 현금흐름은 마이너스임.</em> 매출채권·재고 회전율을 봄.</li>
+    <li><b>이자보상배율</b>
+      1 미만이면 <em>영업이익으로 이자도 못 냄.</em> 금리 상승기의 핵심 지표임.</li>
+    <li><b>DART 사업보고서의 직원 현황</b>
+      고용 기사와 기업 기사를 잇는 다리임.</li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "순이익 ○○% 급증"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>영업이익과 혼동했음.</strong> 일회성 자산 매각이나 환차익일 수 있음.</li>
+      <li><b>확인할 것</b> — 영업이익, <b>영업외손익 내역</b>.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "사상 최대 실적"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>명목 매출은 물가·환율로도 늘어남.</strong> 3주차 "역대 최대"의 함정과 같음.</li>
+      <li><b>확인할 것</b> — <b>영업이익률</b>, 환율 효과, 비교 기준(전분기비인지 전년동기비인지).</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "흑자 전환"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>현금흐름을 보지 않았음.</strong> 흑자도산이 가능함.</li>
+      <li><b>확인할 것</b> — <b>영업활동 현금흐름</b>, 매출채권·재고 증감.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">기업 기사 추가 점검 세 가지</span>
+    <ul style="margin-bottom:0">
+      <li><b>연결 재무제표인가 별도 재무제표인가</b> — 규모가 크게 다름.</li>
+      <li>회계 기준 변경이나 사업부 매각으로 <b>과거 수치가 소급 수정</b>되지 않았는가.</li>
+      <li><b>감사의견은 적정인가.</b></li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>기업뉴스의 62.64%가 긍정 논조임. 거시경제 보도와 정반대임. 왜인가?</b><br>광고주 / 출입처 / 법적 위험 / 정보 접근 중 무엇이 가장 큰 이유인가.</li>
+    <li><b>"시장 예상치 상회"라는 표현은 누구의 기준인가?</b><br>컨센서스 분산이 크면 이 표현은 무엇을 뜻하는가.</li>
+    <li><b>기업 기사는 주주와 경영진의 시각으로 쓰임.</b><br>직원·공급업체·지역사회의 시각으로 쓴 기업 기사를 본 적 있는가. 왜 드문가.</li>
+    <li><b>금요일 저녁이나 연휴 직전에 올라온 불리한 공시를 어떻게 다뤄야 하는가?</b><br>공시 시점 자체를 기사로 쓸 수 있는가.</li>
+    <li><b>"채용 ○만 명 계획" 발표와 실제 직원 수 증감이 다르다면 이것은 기사인가?</b><br>기업의 반론은 무엇일 것 같은가.</li>
+    <li><b>주석에 기사가 있다고 했음. 그런데 주석은 길고 어려움.</b><br>기자가 시간 안에 읽으려면 어디부터 봐야 하는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>주주환원</b>(배당성향·자사주 매입) 관련 공시와 기사가 크게 늘었음. <em>배당성향·자사주 취득률·주주환원율이 실무 어휘가 되었음.</em> → 13주차</li>
+      <li><b>한계기업·좀비기업</b> 논의가 금리 수준과 맞물려 반복됨. <b>이자보상배율 3년 연속 1 미만</b>이 표준 기준임.</li>
+      <li><b>AI 관련 설비투자</b>가 기업 재무의 핵심 변수가 되었음. 감가상각비 증가 속도와 <b>잉여현금흐름</b> 악화 여부가 검증 포인트임. → 7주차</li>
+      <li><b>회계 부정·내부통제</b> 관련 공시가 강화되는 추세임. <em>감사의견 변형(한정·의견거절)은 즉시 기사거리가 됨.</em></li>
+      <li><b>XBRL 표준화</b>로 재무 데이터의 기계 판독이 쉬워졌음. <strong>여러 기업을 한꺼번에 비교하는 데이터 기사</strong>가 가능해졌음.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 12 ───────── -->
+<section id="s12">
+  <h2><span class="num">12</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>실무 도구</h4>
+    <ul>
+      <li><a href="https://dart.fss.or.kr" target="_blank" rel="noopener"><b>DART 전자공시시스템</b></a> — <b>공시 알림 서비스 신청을 권함</b></li>
+      <li><a href="https://kind.krx.co.kr" target="_blank" rel="noopener">KIND</a> · <a href="https://data.krx.co.kr" target="_blank" rel="noopener">KRX 정보데이터시스템</a></li>
+      <li><a href="https://comp.fnguide.com" target="_blank" rel="noopener">FnGuide 기업정보</a> · <a href="https://bigfinance.co.kr" target="_blank" rel="noopener">빅파이낸스</a></li>
+      <li><a href="https://finance.naver.com" target="_blank" rel="noopener">네이버 금융</a> — 빠른 파악용</li>
+    </ul>
+
+    <h4>통계 · 보고서</h4>
+    <ul>
+      <li>한국은행 「기업경영분석」 (분기·연간) — 성장성·수익성·안정성. <a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a></li>
+      <li>금융감독원 「금융통계월보」 · <a href="https://www.fss.or.kr" target="_blank" rel="noopener">금융감독원</a></li>
+      <li><a href="https://www.ftc.go.kr" target="_blank" rel="noopener">공정거래위원회</a> — 기업집단 현황, 계열사·내부거래</li>
+      <li><b>경제지표 사전</b> 13절 「기업가치·수익성·재무·실적」. <a href="../data.html">경제 데이터 분석실</a></li>
+    </ul>
+
+    <h4>읽기</h4>
+    <ul>
+      <li>곽해선 (2023). 『경제기사 궁금증 300문 300답』. 혜다 — 기업·회계 편</li>
+      <li><a href="https://journalism.nyu.edu/graduate/programs/business-and-economic-reporting/curriculum/" target="_blank" rel="noopener">Business &amp; Economic Reporting Curriculum</a> — NYU Journalism. 회계·기업재무 교육 사례</li>
+    </ul>
+
+    <h4>1주차 이론 연결</h4>
+    <ul>
+      <li>이승윤·백강희·이종혁 (2023). 『한국언론학보』 67(1), 185–229. <span class="cite">기업뉴스 154,876건 · 긍정 62.64%</span></li>
+      <li>이나연·백강희 (2016). <span class="cite">광고주와 기업 비판 보도</span></li>
+      <li>유세경·금희조 (1999). <span class="cite">언론 시장 경쟁과 기업의 영향력</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 12주차 강의자료</b><br>
+  주 출처: DART 전자공시시스템 · 경제지표 사전 13절</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="11_가계_부동산과가계부채.html">11주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

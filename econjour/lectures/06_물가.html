@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6주차 · 물가 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 6주차 강의자료 — 소비자물가지수와 근원물가, 체감물가와 통계물가의 괴리, 수요견인과 비용인상, 생산자물가와 전이 사슬, 미국 CPI와 core PCE.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">6주차 · 물가</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">6주차<br>물가</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 물가를 측정하는 법</div>
+    <a href="#s2"><span class="n">02</span><span>물가와 물가지수</span></a>
+    <a href="#s3"><span class="n">03</span><span>수요견인과 비용인상</span></a>
+    <a href="#s4"><span class="n">04</span><span>소비자물가지수는 하나가 아님</span></a>
+    <a href="#s5"><span class="n">05</span><span>체감물가와의 괴리</span></a>
+    <a href="#s6"><span class="n">06</span><span>생산자물가와 전이 사슬</span></a>
+
+    <div class="sb-label">2회차 · 미국 물가와 저널리즘</div>
+    <a href="#s7"><span class="n">07</span><span>미국 CPI와 core PCE</span></a>
+    <a href="#s8"><span class="n">08</span><span>최근 물가 논점</span></a>
+    <a href="#s9"><span class="n">09</span><span>보도자료와 통계</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s11"><span class="n">11</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 2. 거시 지표 — 생산·경기·고용·물가 · 6주차</div>
+    <h1>물가 상승률이 낮아졌다는 말은<br>가격이 내렸다는 뜻이 아님</h1>
+    <div class="sub">물가</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">물가는 <strong>돌출성이 가장 높은 경제 이슈</strong>임. 사람들이 미디어를 거치지 않고 <em>직접 체감함.</em> 1주차에서 배운 <a href="01_경제뉴스의성격과역할.html">비매개 경험 효과</a>가 가장 강하게 작동하는 영역임.</p>
+
+  <div class="pull">
+    <div class="q">"물가 상승률이 낮아졌다는 말은<br>가격이 내렸다는 뜻이 아님."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">그래서 물가 기사는 늘 불신받음</span>
+    <ul style="margin-bottom:0">
+      <li>물가는 <strong>사람들이 뉴스 없이도 아는 지표</strong>임. 매일 지갑에서 확인하기 때문임.</li>
+      <li>그래서 <b>"통계 물가"와 "체감 물가"의 괴리</b>가 늘 기사가 됨.</li>
+      <li><strong>그 괴리를 설명하는 것이 이 주차의 핵심임.</strong> 괴리를 지적만 하고 끝나는 기사는 절반만 쓴 것임.</li>
+    </ul>
+  </div>
+
+  <h3>여는 질문</h3>
+  <div class="anat">
+    <div class="s">"소비자물가 상승률 2.0% … 물가 안정세"</div>
+    <div class="g">
+      <div class="c"><div class="n">질문 1</div><div class="q">지난 1년간 물가가 2% 올랐다고 느끼는가</div><div class="d">거의 아무도 그렇게 느끼지 않음</div></div>
+      <div class="c"><div class="n">질문 2</div><div class="q">통계가 틀린 것인가, 체감이 틀린 것인가</div><div class="d">둘 다 틀리지 않았음. 측정하는 것이 다름</div></div>
+      <div class="c"><div class="n">질문 3</div><div class="q">지난 3년간은 얼마나 올랐는가</div><div class="d">연 3% + 2.5% + 2%면 <b>누적 약 7.7%</b>임</div></div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">매년 상승률은 낮아졌는데 가격 수준은 계속 올랐음</span>
+    <p style="margin-bottom:0">이것이 오늘의 핵심 구별임. 2주차에서 배운 <strong>"수준과 변화율을 함께 봄"</strong>이 여기서 실제로 부딪힘. <em>상승률이 둔화돼도 가격은 계속 오르는 중임.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>물가지수<span class="en">price index</span></dt>
+      <dd>여러 상품 가격을 <b>중요도로 가중평균</b>해 기준시점을 100으로 놓은 값.
+        <span class="ez">쉽게 — "내가 자주 사는 것"과 "지수의 가중치"는 다름. 오늘의 모든 괴리가 여기서 나옴.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>CPI<span class="en">소비자물가지수</span></dt>
+      <dd>가계가 구입하는 재화·서비스의 가격 수준. <b>국가데이터처</b>가 조사함.</dd>
+    </dl>
+    <dl class="term">
+      <dt>PPI<span class="en">생산자물가지수</span></dt>
+      <dd>국내 생산자가 국내 시장에 출하하는 재화·서비스. <b>한국은행</b>이 조사함.</dd>
+    </dl>
+    <dl class="term">
+      <dt>근원물가<span class="en">core inflation</span></dt>
+      <dd>변동성이 큰 품목을 <b>빼고</b> 본 물가. 기조적 흐름을 보려는 것임.
+        <span class="ez">주의 — 한국에는 두 가지가 있음.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>생활물가지수<span class="en">CPI for living necessities</span></dt>
+      <dd>자주 사고 지출 비중이 큰 품목만 모은 지수. <b>체감 물가에 가장 가까움.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>신선식품지수<span class="en">fresh food index</span></dt>
+      <dd>채소·과일·어개. 기상에 따라 널뜀.</dd>
+    </dl>
+    <dl class="term">
+      <dt>수요견인<span class="en">demand-pull</span></dt>
+      <dd>총수요가 늘어 물가가 오름.
+        <span class="ez">쉽게 — 살 사람이 많아서 값이 오름.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>비용인상<span class="en">cost-push</span></dt>
+      <dd>원자재·임금 등 공급측 비용이 올라 물가가 오름.
+        <span class="ez">쉽게 — 만드는 값이 올라서 값이 오름.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>스태그플레이션<span class="en">stagflation</span></dt>
+      <dd>물가는 오르는데 경기는 침체. <b>필립스 곡선이 깨진 상태</b>임. → 5주차·7주차</dd>
+    </dl>
+    <dl class="term">
+      <dt>기대인플레이션<span class="en">inflation expectations</span></dt>
+      <dd>사람들이 예상하는 미래 물가상승률. 설문으로 측정함.</dd>
+    </dl>
+    <dl class="term">
+      <dt>BEI<span class="en">손익분기 인플레이션율</span></dt>
+      <dd>명목국채와 물가연동국채의 수익률 차이로 추정한 <b>시장의 기대인플레이션</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>물가확산지수 · 절사평균<span class="en">IDI / trimmed mean</span></dt>
+      <dd><b>얼마나 넓게 올랐는지</b>, <b>극단값을 빼면 얼마인지</b>를 보는 보조 지표임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>물가와 물가지수</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><strong>물가</strong> — 거래되는 재화·서비스의 요금을 <b>경제생활에서 차지하는 중요도를 고려해 평균</b>한 종합적 가격 수준임. 핵심어는 <em>가중평균.</em></li>
+    <li><strong>물가지수</strong> — 기준연도 물가수준을 <b>100</b>으로 해 지수화한 것임.</li>
+    <li><strong>물가지수의 증가율 = 물가상승률 = 인플레이션율</strong></li>
+  </ul>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">지수</th><th style="width:44%">무엇을 측정하는가</th><th>기관</th></tr></thead>
+    <tbody>
+      <tr><td><b>소비자물가지수(CPI)</b></td><td>가계가 구입하는 재화·서비스의 가격수준</td><td>국가데이터처</td></tr>
+      <tr><td><b>생산자물가지수(PPI)</b></td><td>국내 생산자가 국내 시장에 출하하는 재화·서비스</td><td>한국은행</td></tr>
+      <tr><td><b>수출입물가지수</b></td><td>수출·수입 상품의 가격수준 → <b>교역조건</b></td><td>한국은행</td></tr>
+      <tr><td>GDP디플레이터</td><td>국내 생산 전체. <em>수입품 가격은 직접 포함하지 않음</em></td><td>한국은행 <span class="cite">→ 3주차</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>세 가지 상태</h3>
+  <div class="tri c1">
+    <div>
+      <h5>인플레이션</h5>
+      <span class="tag">물가 상승</span>
+      <ul><li>일반적인 상태임</li><li>적정 수준은 정책 목표로 정해짐</li></ul>
+    </div>
+    <div>
+      <h5>디플레이션</h5>
+      <span class="tag">물가 하락</span>
+      <ul><li>대개 <b>경기 침체를 동반함</b></li><li>소비를 미루게 만들어 더 나빠짐</li></ul>
+    </div>
+    <div>
+      <h5>스태그플레이션</h5>
+      <span class="tag">물가 상승 + 경기 침체</span>
+      <ul><li><b>필립스 곡선이 깨진 상태</b>임</li><li>정책 수단이 서로 충돌함</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>수요견인과 비용인상 — 처방이 정반대임</h2>
+  <div class="h2rule"></div>
+  <p class="lede">물가가 오르는 원인은 크게 둘임. <strong>어느 쪽이냐에 따라 처방이 완전히 달라짐.</strong></p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">같은 물가 상승, 정반대의 대책</div>
+    </div>
+    <div class="info-b">
+      <div class="duo" style="margin-top:0">
+        <div class="a">
+          <h5>수요견인 demand-pull</h5>
+          <span class="tag">살 사람이 많아서 오름</span>
+          <ul>
+            <li>총수요 증가가 원인임</li>
+            <li>사례 — 보복소비, 재정 부양, 자산가격 상승에 따른 소비 확대</li>
+            <li><b>금리 인상이 들음.</b> 수요를 눌러 물가를 잡음</li>
+          </ul>
+        </div>
+        <div class="b">
+          <h5>비용인상 cost-push</h5>
+          <span class="tag">만드는 값이 올라서 오름</span>
+          <ul>
+            <li>공급측 비용 상승이 원인임</li>
+            <li>사례 — 오일쇼크, 에너지 가격 급등, 관세, 물류비 급등</li>
+            <li><b>금리를 올려도 물가는 안 잡히고 경기만 죽음</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">원유값이 오른 것을 금리로 어떻게 하겠는가</span>
+        <p style="margin-bottom:0"><strong>"물가가 왜 올랐나"를 쓰지 않은 물가 기사는 대책을 논할 수 없음.</strong> 그런데 대부분의 기사가 <em>상승률만 쓰고 원인은 쓰지 않음.</em></p>
+      </div>
+    </div>
+    <div class="info-f">
+      실제로는 두 요인이 <b>섞여 있는 경우가 많음.</b> 그래서 어느 쪽이 우세한지를 따지는 것이 분석의 핵심임.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">어느 쪽인지 판별하는 힌트</span>
+    <ul style="margin-bottom:0">
+      <li><b>물가확산지수(IDI)</b>를 봄 — 전체 품목 중 <em>가격이 오른 품목의 비중</em>임.</li>
+      <li><strong>넓게 올랐음</strong> → 수요견인 쪽에 가까움.</li>
+      <li><strong>몇몇 품목만 폭등</strong> → 비용인상·공급충격 쪽에 가까움.</li>
+      <li>함께 볼 것 — <b>절사평균(TMI)</b>과 <b>가중중위수(WMI)</b>. 극단값을 걷어내면 얼마인지 보여줌.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>소비자물가지수는 하나가 아님</h2>
+  <div class="h2rule"></div>
+  <p class="lede">국가데이터처가 재화·서비스 바스켓으로 <strong>헤드라인 CPI</strong>를 만들고, 목적에 따라 <strong>여러 부분 지수</strong>를 함께 냄.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">세부 지수</th><th style="width:34%">무엇을 빼거나 모으는가</th><th>어디에 쓰는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>농산물 및 석유류 제외</b></td><td>계절 요인·일시적 충격을 제외함</td><td><b>국내 기준 근원물가</b></td></tr>
+      <tr><td><b>식료품 및 에너지 제외</b></td><td>축산물·수산물·가공식품·전기료·난방비까지 제외함</td><td><b>OECD 기준 근원물가.</b> 국제 비교용</td></tr>
+      <tr><td><b>생활물가지수</b></td><td>구입 빈도·지출 비중이 높은 품목만 모음</td><td><b>체감 물가</b>를 설명함</td></tr>
+      <tr><td><b>신선식품지수</b></td><td>기상·계절에 따라 변동이 큰 어류·채소·과일</td><td>단기 급등락의 원인 파악</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">근원물가가 두 개라는 사실을 반드시 확인할 것</span>
+    <ul style="margin-bottom:0">
+      <li>기사가 <b>"근원물가"</b>라고만 쓰면 <strong>어느 쪽인지 알 수 없음.</strong> 두 숫자는 다름.</li>
+      <li>국제 비교를 할 때는 <b>OECD 기준(식료품·에너지 제외)</b>을 써야 함.</li>
+      <li>확인 위치 — 소비자물가동향 보도자료에 <em>두 지수가 나란히</em> 실려 있음.</li>
+    </ul>
+  </div>
+
+  <h3>분류 성격별</h3>
+  <ul>
+    <li><b>지출목적별</b> — 교통·오락·보건 등 소비 지출 목적에 따라 나눔.</li>
+    <li><b>품목성질별</b> — 농축수산물 · 공업제품 · <b>개인서비스</b> · <b>공공서비스</b> · 집세</li>
+    <li><b>자가주거비 포함 지수</b> — 별도로 작성됨. 기본 지수에는 포함되지 않음.</li>
+  </ul>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">한국 CPI 논쟁의 핵심</div>
+      <div class="t">한국 CPI에는 자가주거비가 기본 지수에 포함되지 않음</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>그래서 <strong>집값이 올라도 헤드라인 CPI는 잘 오르지 않음.</strong></li>
+        <li>한국 CPI에 들어가는 주거 관련 항목은 주로 <b>집세지수(전세·월세)</b>임.</li>
+        <li><b>미국 CPI는 자가주거비(OER)가 큰 비중</b>을 차지함.</li>
+        <li>따라서 <strong>한미 CPI를 직접 비교하면 안 됨.</strong> 2주차에서 배운 <em>"국가 간 정의 차이를 확인함"</em>의 대표 사례임.</li>
+      </ul>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">"물가 안정"과 "집값 폭등"이 동시에 성립하는 이유</span>
+        <p style="margin-bottom:0">두 문장이 <strong>동시에 사실일 수 있음.</strong> 집값이 헤드라인 CPI에 거의 반영되지 않기 때문임. → 11주차 부동산과 반드시 연결해 읽을 것.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>기조적 물가를 보는 보조 지표</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">지표</th><th style="width:36%">어떻게 계산하는가</th><th>무엇을 알려주는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>물가확산지수(IDI)</b></td><td>전체 품목 중 <b>가격이 오른 품목의 비중</b></td><td>상승이 얼마나 <b>넓게</b> 퍼졌는가</td></tr>
+      <tr><td><b>절사평균(TMI)</b></td><td>극단적으로 오르내린 품목을 <b>양쪽에서 잘라내고</b> 계산</td><td>극단값을 뺀 기조적 상승률</td></tr>
+      <tr><td><b>가중중위수(WMI)</b></td><td>가중치 누적의 <b>중앙에 있는 품목</b>의 변동률</td><td>가운데 품목이 얼마나 올랐는가</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">근원물가와 무엇이 다른가</span>
+    <ul style="margin-bottom:0">
+      <li><b>근원물가</b>는 <strong>품목을 빼는</strong> 방식임. 식료품·에너지를 아예 제외함.</li>
+      <li><b>절사평균·가중중위수</b>는 <strong>극단값을 자르는</strong> 방식임. 어느 품목인지 미리 정하지 않음.</li>
+      <li>이 셋은 <em>"근원물가에서 뺀 품목이 사실 가장 중요한 것 아니냐"</em>는 반론에 답하는 도구임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>체감물가와의 괴리 — 다섯 가지 이유</h2>
+  <div class="h2rule"></div>
+
+  <ol class="steps">
+    <li><b>가중치가 다름</b>
+      내가 자주 사는 것(식품·외식)의 가중치가 전체 바스켓에서는 작음. <em>라면값이 20% 올라도 라면의 가중치는 전체의 1%도 안 됨.</em></li>
+    <li><b>자가주거비가 빠져 있음</b>
+      주거비 상승이 헤드라인에 덜 반영됨.</li>
+    <li><b>오른 품목만 기억함</b>
+      내린 품목(통신요금·가전·항공권)은 <em>인식되지 않음.</em></li>
+    <li><b>누적과 증가율을 혼동함</b>
+      <strong>"상승률 둔화"는 가격이 내렸다는 뜻이 아님.</strong> 여전히 오르는 중이고 속도만 줄었음.</li>
+    <li><b>품질조정 때문</b>
+      성능이 좋아진 제품은 가격이 올라도 지수상 상승분이 작게 잡힘. <em>스마트폰 값이 올라도 성능 향상분을 빼면 '가격 상승'이 줄어듦.</em></li>
+  </ol>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">4번이 결정적임 — 상승률이 둔화돼도 가격은 계속 오름</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 12px">
+        <svg viewBox="0 0 760 280" role="img" aria-label="물가 상승률 둔화와 가격 수준 상승의 관계 그래프">
+          <!-- 위: 상승률 막대 -->
+          <text x="30" y="26" font-size="14" font-weight="800" fill="#a4303f">매년 상승률 — 낮아지는 중</text>
+          <rect x="70" y="42" width="80" height="52" rx="4" fill="#e8b9be"/>
+          <text x="110" y="74" text-anchor="middle" font-size="14" font-weight="800" fill="#7d2531">3.0%</text>
+          <rect x="180" y="52" width="80" height="42" rx="4" fill="#eecacd"/>
+          <text x="220" y="79" text-anchor="middle" font-size="14" font-weight="800" fill="#7d2531">2.5%</text>
+          <rect x="290" y="60" width="80" height="34" rx="4" fill="#f5dcde"/>
+          <text x="330" y="83" text-anchor="middle" font-size="14" font-weight="800" fill="#7d2531">2.0%</text>
+          <text x="110" y="112" text-anchor="middle" font-size="12" fill="#5a6779">1년차</text>
+          <text x="220" y="112" text-anchor="middle" font-size="12" fill="#5a6779">2년차</text>
+          <text x="330" y="112" text-anchor="middle" font-size="12" fill="#5a6779">3년차</text>
+
+          <!-- 아래: 누적 수준 계단 -->
+          <text x="430" y="26" font-size="14" font-weight="800" fill="#0f766e">가격 수준 — 계속 오르는 중</text>
+          <line x1="450" y1="112" x2="740" y2="112" stroke="#c8d6e5" stroke-width="1.4"/>
+          <rect x="460" y="88" width="60" height="24" rx="3" fill="#c8d6e5"/>
+          <text x="490" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2244">100</text>
+          <rect x="535" y="76" width="60" height="36" rx="3" fill="#a5d9d1"/>
+          <text x="565" y="99" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2244">103.0</text>
+          <rect x="610" y="64" width="60" height="48" rx="3" fill="#6cbfb3"/>
+          <text x="640" y="93" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2244">105.6</text>
+          <rect x="685" y="52" width="55" height="60" rx="3" fill="#0f766e"/>
+          <text x="712" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">107.7</text>
+          <text x="490" y="130" text-anchor="middle" font-size="12" fill="#5a6779">기준</text>
+          <text x="565" y="130" text-anchor="middle" font-size="12" fill="#5a6779">1년 뒤</text>
+          <text x="640" y="130" text-anchor="middle" font-size="12" fill="#5a6779">2년 뒤</text>
+          <text x="712" y="130" text-anchor="middle" font-size="12" fill="#5a6779">3년 뒤</text>
+
+          <!-- 결론 -->
+          <rect x="30" y="158" width="700" height="102" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="52" y="186" font-size="14" font-weight="800" fill="#b45309">왼쪽만 보면 "물가가 안정됐다"</text>
+          <text x="52" y="212" font-size="14" font-weight="800" fill="#b45309">오른쪽을 보면 "3년 새 7.7% 올랐다"</text>
+          <text x="52" y="240" font-size="13.5" fill="#5a6779">둘 다 사실임. <tspan font-weight="700" fill="#0d2244">기사가 왼쪽만 쓰면 독자는 분노함.</tspan></text>
+        </svg>
+      </figure>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">정직한 보도의 실무 요령</span>
+        <ul style="margin-bottom:0">
+          <li><strong>누적 물가 수준(지수 자체)을 함께 보여주는 것</strong>이 정직한 보도임.</li>
+          <li>한 줄이면 됨 — <em>"○○년을 100으로 하면 지금은 ○○임."</em></li>
+          <li>이 한 줄로 <b>독자의 체감과 통계가 만남.</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      3%·2.5%·2%는 <b>설명을 위한 예시 수치</b>임. 누적값은 복리로 계산한 것임(1.03 × 1.025 × 1.02 ≈ 1.077).
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>생산자물가와 전이 사슬</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><strong>생산자물가지수(PPI)</strong> — 국내 생산자가 국내 시장에 공급하는 재화·서비스의 가격 변동임.</li>
+    <li><b>한국은행</b>이 조사하며, <em>CPI보다 조사 품목이 많음.</em></li>
+    <li><strong>CPI에 선행하는 경향</strong>이 있음 → 기사거리 — <em>"생산자물가 상승, 소비자물가로 전이될까"</em></li>
+  </ul>
+
+  <h3>가격이 전달되는 단계 — 빵으로 보기</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:10%">단계</th><th style="width:18%">주체</th><th style="width:22%">생산물</th><th style="width:14%">가격</th><th>측정 지수</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>농부</td><td>밀</td><td class="num">100</td><td><b>원재료 PPI</b></td></tr>
+      <tr><td class="num">2</td><td>제분공장</td><td>밀가루</td><td class="num">150</td><td><b>중간재 PPI</b></td></tr>
+      <tr><td class="num">3</td><td>빵공장</td><td>식빵(도매)</td><td class="num">300</td><td><b>최종재 PPI</b></td></tr>
+      <tr><td class="num">4</td><td>빵가게</td><td>식빵(소매)</td><td class="num">400</td><td><b>소비자 CPI</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul>
+    <li><b>국내공급물가지수(DSPI)</b> — 원재료·중간재·최종재 <b>생산단계별로</b> 구분 측정함. 물가 파급 과정을 추적할 수 있음. <em>수입품도 포함하므로 수입 원자재 충격을 잡아냄.</em></li>
+    <li><b>총산출물가지수(TOPI)</b> — 국내 출하에 <b>수출까지</b> 포함함.</li>
+  </ul>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">비용인상 인플레이션의 추적 경로</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 12px">
+        <svg viewBox="0 0 760 230" role="img" aria-label="국제 원자재 가격에서 소비자물가까지의 전이 경로 도식">
+          <rect x="20" y="30" width="150" height="60" rx="9" fill="#0d2244"/>
+          <text x="95" y="55" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">국제 원자재</text>
+          <text x="95" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">또는 환율 상승</text>
+
+          <rect x="215" y="30" width="140" height="60" rx="9" fill="#e8eef5" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="285" y="57" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0d2244">수입물가</text>
+          <text x="285" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">수입물가지수</text>
+
+          <rect x="400" y="30" width="140" height="60" rx="9" fill="#e8eef5" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="470" y="57" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0d2244">생산자물가</text>
+          <text x="470" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">원재료→중간재→최종재</text>
+
+          <rect x="585" y="30" width="155" height="60" rx="9" fill="#fdf1f2" stroke="#a4303f" stroke-width="2"/>
+          <text x="662" y="57" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a4303f">소비자물가</text>
+          <text x="662" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">CPI</text>
+
+          <line x1="174" y1="60" x2="207" y2="60" stroke="#8492a6" stroke-width="2.2"/>
+          <polygon points="212,60 203,55 203,65" fill="#8492a6"/>
+          <line x1="359" y1="60" x2="392" y2="60" stroke="#8492a6" stroke-width="2.2"/>
+          <polygon points="397,60 388,55 388,65" fill="#8492a6"/>
+          <line x1="544" y1="60" x2="577" y2="60" stroke="#8492a6" stroke-width="2.2"/>
+          <polygon points="582,60 573,55 573,65" fill="#8492a6"/>
+
+          <rect x="20" y="120" width="720" height="92" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="42" y="148" font-size="13.5" font-weight="800" fill="#b45309">이 사슬을 읽을 때 두 가지를 반드시 붙일 것</text>
+          <text x="42" y="174" font-size="13.5" fill="#5a6779">① <tspan font-weight="700" fill="#0d2244">시차가 있음.</tspan> 원재료에서 소비자까지 몇 달이 걸림.</text>
+          <text x="42" y="198" font-size="13.5" fill="#5a6779">② <tspan font-weight="700" fill="#0d2244">전이가 100%가 되지는 않음.</tspan> 기업이 마진을 줄여 흡수하기도 함.</text>
+        </svg>
+      </figure>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">환율이 이 사슬의 출발점에 있음</span>
+        <p style="margin-bottom:0"><strong>원화가 약해지면 국제 가격이 그대로여도 수입물가는 오름.</strong> 그래서 물가 기사는 환율 기사이기도 함. → 15주차 무역과 환율</p>
+      </div>
+    </div>
+    <div class="info-f">
+      이 사슬을 <b>시차와 함께</b> 그릴 수 있으면 물가 기사의 절반은 쓴 것임. "PPI가 올랐으니 곧 CPI도 오른다"는 기사는 <b>시차를 밝혀야 함.</b>
+    </div>
+  </div>
+
+  <h3>수출입물가지수</h3>
+  <ul>
+    <li>수출·수입 상품의 가격 변동을 측정함. <b>한국은행</b>이 조사함.</li>
+    <li>용도별 분류 — <b>원재료</b>(원유·철광석), <b>중간재</b>(반도체 칩·철강), <b>자본재</b>(기계 설비·서버), <b>소비재</b>(스마트폰·가전·의류)</li>
+    <li>활용 — 수입원가 부담, <b>교역조건</b>, 수출채산성. → 3주차 실질 GNI, 15주차 무역</li>
+    <li>관련 지표 — <b>순상품교역조건지수(NBTT)</b>, <b>소득교역조건지수(ITT)</b></li>
+  </ul>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>미국 CPI와 core PCE</h2>
+  <div class="h2rule"></div>
+  <p class="lede">한국 기사에 미국 물가지표가 자주 등장함. <strong>어느 지표인지에 따라 의미가 달라짐.</strong></p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">구분</th><th style="width:39%">CPI</th><th>PCE (개인소비지출 물가지수)</th></tr></thead>
+    <tbody>
+      <tr><td><b>기관</b></td><td>미국 BLS</td><td>미국 BEA</td></tr>
+      <tr><td><b>대상</b></td><td>소비자가 <b>직접 구매</b>한 상품·서비스</td><td>가정·비영리단체를 <b>위해</b> 구매된 상품·서비스</td></tr>
+      <tr><td><b>간접 지출</b></td><td>미포함</td><td><b>포함</b> — 고용주가 낸 의료보험료 등</td></tr>
+      <tr><td><b>관점</b></td><td>by consumers</td><td>on behalf of consumers</td></tr>
+      <tr><td><b>바스켓 비중</b></td><td><b>주택비</b> 비중이 큼</td><td><b>의료비</b> 비중이 큼</td></tr>
+      <tr><td><b>바스켓 교체</b></td><td>주기적으로 갱신</td><td>더 자주 갱신 → <b>소비 대체효과</b>를 잘 반영함</td></tr>
+      <tr><td><b>수준</b></td><td colspan="2">CPI가 PCE보다 <b>다소 높게</b> 측정되는 경향이 있음</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">연준은 core PCE를 중시함</span>
+    <ul style="margin-bottom:0">
+      <li>미 연준 FOMC는 식료품·에너지를 제외한 <strong>core PCE</strong>를 중시함.</li>
+      <li>뉴스 가치로만 보면 "미국 CPI 발표"가 크지만, <em>금리 결정에는 core PCE가 더 중요함.</em></li>
+      <li>따라서 <strong>"미국 물가 3%"가 CPI인지 core PCE인지에 따라 연준의 반응이 달라짐.</strong></li>
+      <li>→ 5주차 <b>이중책무</b>, 9~10주차 통화·금리와 연결됨.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">발표 시점</span>
+    <ul style="margin-bottom:0">
+      <li><b>미국 CPI</b> — 매월 중순 (미 동부 오전)</li>
+      <li><b>미국 PCE</b> — 매월 말. 개인소득·지출 보고서에 포함됨</li>
+      <li><b>유로존 HICP</b> — 매월. 속보치 → 확정치 순으로 나옴</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>최근 물가 논점</h2>
+  <div class="h2rule"></div>
+
+  <h3>관세는 어떻게 물가가 되는가</h3>
+  <ul>
+    <li>경로 — <b>수입 관세 부과 → 수입물가 상승 → 생산자물가 상승 → 소비자물가 상승</b></li>
+    <li>한국에 미치는 경로 세 가지 — ① 대미 수출품의 <b>가격 경쟁력</b> ② 공급망 재편에 따른 <b>원가</b> ③ <b>환율</b></li>
+    <li><strong>주의</strong> — 전가율이 100%가 아니며 <em>시차가 있음.</em> 기사에서 "관세 = 물가 상승"으로 단순화하지 말 것.</li>
+    <li>→ 15주차 무역·환율에서 다시 다룸.</li>
+  </ul>
+
+  <h3>기대인플레이션의 고착</h3>
+  <ul>
+    <li><strong>기대가 고착되면 실제 물가가 따라감.</strong> 임금 협상과 가격 책정에 반영되기 때문임.</li>
+    <li>측정 두 가지 — <b>설문</b>(한국은행 소비자동향조사의 기대인플레이션율), <b>시장</b>(BEI)</li>
+    <li>→ 4주차 심리지표, 10주차 금리와 연결됨.</li>
+  </ul>
+
+  <h3>서비스 물가와 임금</h3>
+  <ul>
+    <li><b>임금 상승 → 개인서비스 물가</b>(외식·미용·학원·수리)로 이어짐.</li>
+    <li>서비스 물가는 한번 오르면 <strong>잘 내려가지 않음(하방경직성)</strong>.</li>
+    <li>그래서 <em>헤드라인이 내려도 체감이 바뀌지 않음.</em></li>
+    <li>→ 5주차 실질임금·단위노동비용(ULC), 필립스 곡선과 연결됨.</li>
+  </ul>
+
+  <div class="box note">
+    <span class="bt">그 밖에 지켜볼 것</span>
+    <ul style="margin-bottom:0">
+      <li>기후 변화와 <b>신선식품 물가</b>의 변동성 확대</li>
+      <li>데이터센터 전력 수요와 <b>전기요금</b>. 전기요금은 공공서비스 물가 항목임</li>
+      <li>공공요금이 정책적으로 억제되면 <strong>물가지수에는 나타나지 않고 공기업 부채로 이연됨.</strong> → 14주차 재정과 연결되는 소재임</li>
+      <li><b>집세지수</b>와 실제 주거비 체감의 괴리 → 11주차</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">인용된 전문가의 입장을 읽는 훈련</span>
+    <p style="margin-bottom:0">물가를 두고 <em>"돈을 많이 풀면 물가가 오른다"</em>는 쪽과 <em>"수요가 부족한 게 문제니 정부가 써야 한다"</em>는 쪽이 오래 대립해 왔음. <strong>물가 기사에 인용되는 전문가가 어느 쪽인지 보면 결론이 예측됨.</strong> 학파 논쟁의 실제 장면은 7주차 경제위기에서 사례로 다룸.</p>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <h3>국내</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:22%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>「소비자물가동향」</b></td><td>국가데이터처 · <b>매월 1~2일</b></td><td>헤드라인 CPI, <b>근원물가 2종</b>, 생활물가지수, 신선식품지수, 지출목적별·품목성질별</td></tr>
+      <tr><td><b>「생산자물가지수」</b></td><td>한국은행 · 매월 중순</td><td>PPI, 국내공급물가, 총산출물가</td></tr>
+      <tr><td><b>「수출입물가지수 및 무역지수」</b></td><td>한국은행 · 매월 중순</td><td>수출입물가, 물량지수, <b>교역조건</b></td></tr>
+      <tr><td>「소비자동향조사」</td><td>한국은행 · 매월 하순</td><td><b>기대인플레이션율</b></td></tr>
+      <tr><td>국민소득</td><td>한국은행 · 분기</td><td><b>GDP디플레이터</b> <span class="cite">→ 3주차</span></td></tr>
+      <tr><td><b>금융통화위원회 통화정책방향</b></td><td>한국은행 · 연 8회</td><td><b>물가안정목표 대비 평가</b> <span class="cite">→ 9~10주차</span></td></tr>
+      <tr><td>「최근 경제동향(그린북)」</td><td>재정경제부 · 매월 중순</td><td>정부의 물가 진단</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>해외</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">자료</th><th style="width:24%">기관 · 주기</th><th>왜 보는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>CPI</b></td><td>미국 BLS · 매월 중순</td><td>뉴스 가치가 가장 큼</td></tr>
+      <tr><td><b>PCE · core PCE</b></td><td>미국 BEA · 매월 말</td><td><b>연준이 실제로 보는 지표</b></td></tr>
+      <tr><td>FOMC 성명·경제전망(SEP)</td><td>미국 Fed · 연 8회 / 분기</td><td>물가 전망과 금리 경로</td></tr>
+      <tr><td>HICP</td><td>Eurostat · 매월</td><td>유로존 비교</td></tr>
+      <tr><td>국제 유가 (WTI·브렌트·두바이)</td><td>실시간</td><td>비용인상 압력의 출발점</td></tr>
+      <tr><td>FAO 식량가격지수</td><td>매월</td><td>식료품 물가의 국제 선행 신호</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">소비자물가동향에서 직접 찾아볼 여섯 가지</span>
+    <ol style="margin-bottom:0">
+      <li><b>근원물가 두 가지</b> — 두 숫자가 얼마나 다른가.</li>
+      <li><b>생활물가지수</b> 상승률 — 헤드라인보다 높은가 낮은가. 얼마나 차이 나는가.</li>
+      <li><b>신선식품지수</b> — 이번 달 헤드라인을 끌어올렸는가 끌어내렸는가.</li>
+      <li><b>지출목적별</b> — 어느 항목이 가장 많이 올랐는가.</li>
+      <li><b>품목성질별</b> — 공업제품 vs <b>개인서비스</b> vs 공공서비스. 어디가 문제인가.</li>
+      <li><b>집세지수</b> — 주거비는 얼마나 올랐는가.</li>
+    </ol>
+    <p style="margin:10px 0 0">그리고 판정할 것 — <strong>이번 달 물가는 수요견인인가 비용인상인가.</strong> 헤드라인 CPI 하나만 쓴 기사와 <em>결론이 같은가.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>상승률과 가격 하락은 다름</b>
+      "물가 상승률 둔화"는 <em>여전히 오르는 중, 속도만 줄었다</em>는 뜻임.</li>
+    <li><b>근원물가는 두 개</b>
+      농산물·석유류 제외(국내), 식료품·에너지 제외(OECD). <em>어느 쪽인지 밝혀야 함.</em></li>
+    <li><b>자가주거비가 빠져 있음</b>
+      한국 CPI는 집값을 거의 담지 못함. <em>한미 CPI 직접 비교는 하지 말 것.</em></li>
+    <li><b>수요견인과 비용인상</b>
+      <em>처방이 정반대임.</em> 원인을 쓰지 않은 물가 기사는 대책을 논할 수 없음.</li>
+    <li><b>전이 사슬</b>
+      국제 원자재·환율 → 수입물가 → PPI → CPI. <em>시차가 있고 100% 전이되지 않음.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "물가 상승률 둔화, 안정세"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>상승률 둔화는 가격 하락이 아님.</strong></li>
+      <li><b>확인할 것</b> — 지수 수준(누적), 2~3년 전 대비 상승률.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — 헤드라인 CPI만 쓴 기사</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 근원물가·생활물가·신선식품을 보지 않았음. <em>유가 급락이 헤드라인을 눌렀을 수 있음.</em></li>
+      <li><b>확인할 것</b> — 근원물가 두 종류, 생활물가지수, 물가확산지수.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "체감물가와 괴리"만 지적하고 끝나는 기사</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>왜 괴리가 생기는지 설명하지 않았음.</strong></li>
+      <li><b>확인할 것</b> — 05절의 다섯 가지 이유. 가중치, 자가주거비, 선택적 기억, 누적, 품질조정.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">물가 기사 추가 점검 네 가지</span>
+    <ul style="margin-bottom:0">
+      <li><b>기저효과</b> — 작년 같은 달 유가가 폭등했다면 올해는 저절로 낮게 나옴. → 2주차</li>
+      <li><b>전월비인가 전년동월비인가</b></li>
+      <li>물가 상승의 <b>원인</b>(수요견인/비용인상)을 밝혔는가</li>
+      <li><b>미국 CPI와 한국 CPI를 직접 비교</b>하지 않았는가. 자가주거비 처리가 다름</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>"물가 상승률이 2%대로 안정됐다"와 "장바구니 물가는 여전히 부담" — 둘 다 사실임.</b><br>기자는 어느 쪽을 제목으로 뽑아야 하는가. 둘 다 담는 제목은 가능한가.</li>
+    <li><b>한국 CPI에 자가주거비를 넣어야 하는가?</b><br>넣으면 무엇이 좋아지고 무엇이 어려워지는가. 국제비교와 시계열 단절 문제는 어떻게 하는가.</li>
+    <li><b>근원물가는 "빼는" 방식, 절사평균은 "자르는" 방식임.</b><br>근원물가에서 뺀 식료품·에너지가 서민에게 가장 중요한 품목이라는 비판을 어떻게 볼 것인가.</li>
+    <li><b>물가는 돌출성이 가장 높은 이슈라 의제설정 효과가 약함.</b><br>그렇다면 물가 기사는 무엇을 해야 하는가. 정보 전달인가, 해석 제공인가.</li>
+    <li><b>매년 반복되는 시즌성 물가 기사를 작년 기사와 나란히 놓아 볼 것.</b><br>구조가 같다면 그것은 관성인가, 필요한 반복인가.</li>
+    <li><b>정부가 "물가가 안정됐다"고 발표했는데 국민이 믿지 않음.</b><br>이것은 통계의 문제인가, 소통의 문제인가, 언론의 문제인가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>기조적 물가 지표</b>(절사평균·가중중위수·물가확산지수)의 활용이 국제적으로 늘고 있음. 미국 클리블랜드 연준의 절사평균 CPI가 대표적임. <em>"근원물가만으로는 부족하다"는 인식의 산물임.</em></li>
+      <li><b>관세의 물가 전가 연구</b>가 급증했음. 전가율이 100%가 아니며 시차가 있다는 점이 반복 확인됨.</li>
+      <li><b>서비스 물가의 하방경직성</b>이 주요 논점임. 재화 물가는 내려도 서비스 물가는 잘 내리지 않음.</li>
+      <li><b>주거비 측정 방식</b>을 둘러싼 국제 논쟁이 계속됨. 유로존 HICP도 자가주거비 포함 여부를 오래 논의해 왔음.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』</b> — 물가 편. <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a></li>
+      <li><b>경제지표 사전</b> 4절 「물가·인플레이션·가격」. <a href="../data.html">경제 데이터 분석실</a>에서 열람</li>
+      <li>빈센트(김두언) (2023). 『경제지표를 읽는 시간』. 위즈덤하우스 — 물가 편</li>
+    </ul>
+
+    <h4>통계 원전</h4>
+    <ul>
+      <li><a href="https://mods.go.kr" target="_blank" rel="noopener">국가데이터처</a> — 「소비자물가동향」 보도자료, 소비자물가조사 안내</li>
+      <li><a href="https://kosis.kr" target="_blank" rel="noopener">KOSIS</a> — CPI 품목별 시계열</li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — 생산자물가, 수출입물가, 기대인플레이션</li>
+      <li><a href="https://www.index.go.kr" target="_blank" rel="noopener">지표누리</a> — 소비자물가상승률 추이</li>
+    </ul>
+
+    <h4>해외</h4>
+    <ul>
+      <li><a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener">미국 BLS · CPI</a> · <a href="https://www.bea.gov" target="_blank" rel="noopener">미국 BEA · PCE</a></li>
+      <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — CPI, core PCE, <b>5년 BEI(기대인플레이션)</b></li>
+      <li><a href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener">Eurostat Euro Indicators</a> — HICP</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 6주차 강의자료</b><br>
+  주 출처: 국가데이터처 「소비자물가동향」 · 경제지표 사전 4절</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="05_고용과일자리.html">5주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

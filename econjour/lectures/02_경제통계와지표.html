@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2주차 · 경제 통계와 지표 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 2주차 강의자료 — 명목과 실질, flow와 stock, 속보·잠정·확정, 원계열과 계절조정, 전월비와 전년동월비, 기저효과, 확산지수의 100.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">2주차 · 경제 통계와 지표</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">2주차<br>경제 통계와 지표</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 열두 가지 개념</span></a>
+
+    <div class="sb-label">1회차 · 통계의 문법</div>
+    <a href="#s2"><span class="n">02</span><span>통계의 세 가지 기준</span></a>
+    <a href="#s3"><span class="n">03</span><span>속보 · 잠정 · 확정</span></a>
+    <a href="#s4"><span class="n">04</span><span>지표 · 지수 · 100의 함정</span></a>
+
+    <div class="sb-label">2회차 · 숫자가 튀는 이유</div>
+    <a href="#s5"><span class="n">05</span><span>원계열과 계절조정</span></a>
+    <a href="#s6"><span class="n">06</span><span>기저효과</span></a>
+    <a href="#s7"><span class="n">07</span><span>확인할 열 가지</span></a>
+
+    <div class="sb-label">도구</div>
+    <a href="#s8"><span class="n">08</span><span>어디서 받나</span></a>
+    <a href="#s9"><span class="n">09</span><span>기관 명칭 변경</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s11"><span class="n">11</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 1. 도구 — 경제뉴스를 읽는 법 · 2주차</div>
+    <h1>숫자 하나를 쓰기 전에<br>무엇과 비교된 값인지 확인함</h1>
+    <div class="sub">경제 통계와 지표</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">이 주차는 <strong>학기 전체의 연장통</strong>임. 나머지 13주가 다루는 지표를 <em>읽는 문법</em>이 여기 다 들어 있음. 오늘 배우는 네 가지가 <strong>경제기사 오독의 최대 원인</strong>임.</p>
+
+  <div class="pull">
+    <div class="q">"숫자 하나를 쓰기 전에,<br>그 숫자가 무엇과 비교된 값인지부터 확인함."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>여는 질문 — 이 짧은 문장에 무엇이 빠졌는가</h3>
+
+  <div class="anat">
+    <div class="s">"3분기 성장률 0.6%"</div>
+    <div class="g">
+      <div class="c"><div class="n">선택 1</div><div class="q">실질인가 명목인가</div><div class="d">물가 효과를 뺐는지 여부</div></div>
+      <div class="c"><div class="n">선택 2</div><div class="q">전기비인가 전년동기비인가</div><div class="d">직전 분기와 비교인지, 작년 같은 분기와 비교인지</div></div>
+      <div class="c"><div class="n">선택 3</div><div class="q">원계열인가 계절조정인가</div><div class="d">명절·날씨 요인을 걷어냈는지 여부</div></div>
+      <div class="c"><div class="n">선택 4</div><div class="q">속보치인가 잠정치인가</div><div class="d">나중에 수정될 숫자인지 여부</div></div>
+      <div class="c"><div class="n">선택 5</div><div class="q">어느 기준년의 실질값인가</div><div class="d">기준년이 바뀌면 과거 성장률도 바뀜</div></div>
+    </div>
+  </div>
+
+  <ul>
+    <li><strong>다섯 중 하나만 바꿔도 숫자와 제목이 달라짐.</strong></li>
+    <li>그런데 <em>대부분의 기사는 이 중 어느 것도 밝히지 않음</em>. 밝히지 않아도 문장이 성립하기 때문임.</li>
+    <li>오늘 수업이 끝나면 이 문장으로 다시 돌아옴. <a href="#s10">10. 정리</a>에서 다섯 가지를 모두 답할 수 있어야 함.</li>
+  </ul>
+
+  <div class="box note">
+    <span class="bt">이 주차의 자료</span>
+    <ul style="margin-bottom:0">
+      <li><b>주 출처</b> — 한국은행 『알기 쉬운 경제지표 해설』. 이 주차 내용의 사실상 원천임.</li>
+      <li><b>용어</b> — 경제지표 사전 1,000개. <a href="../data.html">경제 데이터 분석실</a>에서 열 수 있음.</li>
+      <li><b>데이터</b> — ECOS · KOSIS. 접근 경로는 <a href="#s8">08. 어디서 받나</a>에 정리했음.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 열두 가지 개념</h2>
+  <div class="h2rule"></div>
+  <p class="lede">낯선 용어부터 먼저 정리함. 외우지 말고 <strong>각 개념마다 사례 하나씩</strong> 붙여 이해할 것.</p>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>지표<span class="en">indicator</span></dt>
+      <dd>경제 현상을 수치로 나타낸 <b>개별 통계</b>. 실업률, 수출액, 국고채 10년물 금리.</dd>
+    </dl>
+    <dl class="term">
+      <dt>지수<span class="en">index</span></dt>
+      <dd>기준시점을 100으로 놓고 변화를 비교하기 쉽게 만든 값. 소비자물가지수, 코스피.
+        <span class="ez">쉽게 — 지표는 낱개, 지수는 기준점을 정해 환산한 값임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>명목<span class="en">nominal</span></dt>
+      <dd>측정 당시 가격 그대로 계산한 값. 물가 변동이 그대로 들어 있음.</dd>
+    </dl>
+    <dl class="term">
+      <dt>실질<span class="en">real</span></dt>
+      <dd>물가 효과를 제거한 값.
+        <span class="ez">쉽게 — 작년 100만 원, 올해 105만 원. 물가가 5% 올랐다면 실질로는 그대로임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>유량<span class="en">flow</span></dt>
+      <dd>일정 <b>기간</b> 동안 발생한 양. 표기는 "2026년 2분기 중".</dd>
+    </dl>
+    <dl class="term">
+      <dt>저량<span class="en">stock</span></dt>
+      <dd>특정 <b>시점</b>의 잔액. 표기는 "2026년 8월 말 현재".
+        <span class="ez">쉽게 — 월급은 flow, 통장 잔고는 stock.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>속보치 · 잠정치 · 확정치<span class="en">flash / preliminary / final</span></dt>
+      <dd>같은 통계가 <b>여러 번, 다른 숫자로</b> 발표됨. 뒤로 갈수록 정확해짐.</dd>
+    </dl>
+    <dl class="term">
+      <dt>원계열<span class="en">original series</span></dt>
+      <dd>가공하지 않은 있는 그대로의 값. 명절·방학·날씨 요인이 그대로 들어 있음.</dd>
+    </dl>
+    <dl class="term">
+      <dt>계절조정<span class="en">seasonally adjusted, SA</span></dt>
+      <dd>매년 반복되는 요인을 통계적으로 걷어낸 값.
+        <span class="ez">쉽게 — 매년 1월에 취업자가 주는 것은 경기가 아니라 겨울 때문임. 그걸 빼고 봄.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>전월비 · 전년동월비<span class="en">MoM / YoY</span></dt>
+      <dd>지난달과 비교하는가, 작년 같은 달과 비교하는가. <b>비교 대상이 다르면 방향도 달라질 수 있음.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>기저효과<span class="en">base effect</span></dt>
+      <dd>비교 대상인 작년 값 때문에 올해 증감률이 부풀거나 쪼그라드는 현상.
+        <span class="ez">쉽게 — 작년이 바닥이면 올해는 저절로 '급증'이 됨.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>확산지수<span class="en">diffusion index</span></dt>
+      <dd>100 또는 50이 <b>판단 기준선</b>인 지수. BSI·CSI는 100, PMI는 50.
+        <span class="ez">주의 — 일반 지수의 100(기준시점)과 의미가 완전히 다름.</span></dd>
+    </dl>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">개념 지도 — 네 덩어리로 묶어 기억할 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>① 무엇을 측정했는가</b> — 지표 / 지수, 명목 / 실질, flow / stock</li>
+      <li><b>② 언제 측정했는가</b> — 속보 / 잠정 / 확정</li>
+      <li><b>③ 무엇과 비교했는가</b> — 전월비 / 전년동월비, 기저효과</li>
+      <li><b>④ 어떻게 가공했는가</b> — 원계열 / 계절조정</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>통계의 종류 — 세 가지 기준</h2>
+  <div class="h2rule"></div>
+  <p class="lede">통계를 나누는 기준은 셋임. <strong>무엇을 측정했는가 · 물가를 뺐는가 · 언제를 측정했는가.</strong></p>
+
+  <h3>(1) 무엇을 측정하는가 — 실물통계와 금융통계</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>실물통계</h5>
+      <span class="tag">생산과 거래의 결과</span>
+      <ul>
+        <li>국민소득, 물가, 생산량, 고용, 수출입</li>
+        <li>발표 기관 — <b>국가데이터처, 한국은행, 산업통상부, 고용노동부</b></li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>금융통계</h5>
+      <span class="tag">돈의 양과 가격</span>
+      <ul>
+        <li>통화량, 금리, 환율</li>
+        <li>발표 기관 — <b>한국은행, 금융위원회·금융감독원, 한국거래소</b></li>
+      </ul>
+    </div>
+  </div>
+  <div class="box key">
+    <span class="bt">실무 요령</span>
+    <p style="margin-bottom:0"><strong>"이 숫자는 누가 만들었는가"</strong>를 먼저 확인하면 원자료를 어디서 찾을지 바로 알 수 있음. 실물이면 국가데이터처·한국은행, 금융이면 한국은행·한국거래소로 감.</p>
+  </div>
+
+  <h3>(2) 물가를 뺐는가 — 명목과 실질</h3>
+  <ul>
+    <li><strong>명목</strong> — 측정 당시 가격 그대로임. 물가 상승분이 그대로 들어 있음.</li>
+    <li><strong>실질</strong> — 물가 변동을 제거해 수정한 값임. <em>물량의 변화만 남음.</em></li>
+  </ul>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">기사에서 가장 자주 문제가 되는 지점</div>
+      <div class="t">"역대 최대 매출" · "사상 최대 수출" · "역대급 예산"</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>이런 표현은 대부분 <strong>명목값</strong>임.</li>
+        <li>경제 규모가 커지고 물가가 오르면 명목값은 <em>거의 매년 사상 최대</em>가 됨. 뉴스가 아님.</li>
+        <li>확인법 — <b>실질인지 먼저 보고</b>, 명목이면 <b>GDP 대비 비율</b>이나 <b>실질 증가율</b>로 바꿔 봄.</li>
+        <li>대개 그렇게 바꾸면 <em>'역대급'이 사라짐.</em></li>
+      </ul>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">함께 알아둘 지표 — GDP디플레이터</span>
+        <p style="margin-bottom:0"><strong>명목 GDP ÷ 실질 GDP × 100</strong>으로 계산함(기준연도가 100). 국내에서 생산된 모든 재화·서비스를 대상으로 하므로 <b>가장 포괄적인 물가지수</b>로 불림. 가계 구입 품목만 담는 소비자물가지수(CPI)와 대비됨. 다만 <em>수입품 가격은 빠져 있음.</em> → 3주차·6주차에서 다시 씀.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>(3) 언제를 측정하는가 — flow와 stock</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>유량 flow</h5>
+      <span class="tag">일정 기간 동안의 양</span>
+      <ul>
+        <li>국민소득, 국채 발행액, 수출액, 재정적자</li>
+        <li>표기 — <b>"2026년 2분기 <em>중</em>"</b></li>
+        <li>기간을 바꾸면 값이 달라짐</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>저량 stock</h5>
+      <span class="tag">특정 시점의 잔액</span>
+      <ul>
+        <li>통화량(M2), 국채 발행잔액, 외환보유액, 국가채무</li>
+        <li>표기 — <b>"2026년 8월 말 <em>현재</em>"</b></li>
+        <li>시점을 찍어야 값이 정해짐</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">flow와 stock 혼동은 실제 오보로 이어짐</span>
+    <ul style="margin-bottom:0">
+      <li><b>"국가채무 ○조 원 증가"</b> — flow. 1년치 증가분임.</li>
+      <li><b>"국가채무 ○조 원"</b> — stock. 누적 잔액임.</li>
+      <li>두 문장은 <strong>자릿수가 다름.</strong> 그런데 제목에서는 자주 뒤섞임.</li>
+      <li>같은 함정 — <b>가계부채 증가액 vs 가계부채 잔액</b>(11주차), <b>재정적자 vs 국가채무</b>(14주차).</li>
+    </ul>
+  </div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">기준</th><th style="width:38%">한쪽</th><th style="width:38%">다른 쪽</th></tr></thead>
+    <tbody>
+      <tr><td><b>무엇을 측정</b></td><td>실물통계 — 생산·고용·물가</td><td>금융통계 — 통화·금리·환율</td></tr>
+      <tr><td><b>물가 제거</b></td><td>명목 — 가격 변화 포함</td><td>실질 — 물량 변화만</td></tr>
+      <tr><td><b>측정 시기</b></td><td>flow — 기간 중의 양</td><td>stock — 시점의 잔액</td></tr>
+      <tr><td>→ <b>기사 확인법</b></td><td colspan="2">보도자료 표 제목에 <b>(명목) (실질) (계절조정) (기간 중) (말 현재)</b>가 표기돼 있음. 기사에 빠졌을 뿐임.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>같은 통계가 여러 번 발표됨</h2>
+  <div class="h2rule"></div>
+  <p class="lede">경제통계는 <strong>한 번 발표되고 끝나지 않음</strong>. 같은 분기의 성장률이 최소 세 번, 기준년 개편까지 치면 그 이상 바뀜.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:16%">구분</th><th style="width:40%">무엇인가</th><th>GDP의 경우</th></tr></thead>
+    <tbody>
+      <tr><td><b>속보치</b><br><span class="cite">flash</span></td><td>그때까지 나온 통계로 추세를 고려해 <b>추정</b>해 발표함</td><td>분기 종료 후 <b>28일 이내</b><br>「○년 ○분기 실질 국내총생산(속보)」</td></tr>
+      <tr><td><b>잠정치</b><br><span class="cite">preliminary</span></td><td>분기 마지막 달 결과까지 정확히 반영함</td><td>분기 종료 후 <b>70일 이내</b><br>「○년 ○분기 국민소득(잠정)」</td></tr>
+      <tr><td><b>확정치</b><br><span class="cite">final</span></td><td>기초통계가 완비된 상태에서 작성함</td><td>해당 연도 종료 후 <b>내후년 6월</b><br>「○년 국민계정(확정)」</td></tr>
+      <tr><td><b>수정치</b><br><span class="cite">revised</span></td><td>통계 개편 등으로 변경된 수치임</td><td><b>기준년 개편</b> 시 과거 계열 <b>전체</b>가 수정됨</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>연간 국민계정의 순서</h4>
+  <ol class="steps">
+    <li><b>국민소득(잠정) 연간</b>
+      연도 종료 후 <b>3개월 이내</b> 발표함. 연간 GDP와 1인당 GNI가 여기서 나옴.</li>
+    <li><b>국민계정(잠정)</b>
+      연도 종료 후 <b>6개월 이내</b> 발표함.</li>
+    <li><b>국민계정(확정)</b>
+      <b>내후년 6월</b>에 발표함. 이 시점에야 그 해의 숫자가 확정됨.</li>
+  </ol>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">같은 분기 성장률이 확정되기까지 — 최소 2년 반</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0">
+        <svg viewBox="0 0 760 190" role="img" aria-label="속보치에서 확정치까지의 발표 시점 도식">
+          <line x1="40" y1="96" x2="720" y2="96" stroke="#c8d6e5" stroke-width="3"/>
+          <!-- 마커 -->
+          <circle cx="90" cy="96" r="11" fill="#1a4b8c"/>
+          <circle cx="255" cy="96" r="11" fill="#2f6bb5"/>
+          <circle cx="440" cy="96" r="11" fill="#b45309"/>
+          <circle cx="650" cy="96" r="11" fill="#0f766e"/>
+          <!-- 라벨 위 -->
+          <text x="90" y="58" text-anchor="middle" font-size="14" font-weight="800" fill="#0d2244">속보</text>
+          <text x="90" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">+28일</text>
+          <text x="255" y="58" text-anchor="middle" font-size="14" font-weight="800" fill="#0d2244">잠정</text>
+          <text x="255" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">+70일</text>
+          <text x="440" y="58" text-anchor="middle" font-size="14" font-weight="800" fill="#b45309">국민계정(잠정)</text>
+          <text x="440" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">익년 6월</text>
+          <text x="650" y="58" text-anchor="middle" font-size="14" font-weight="800" fill="#0f766e">확정</text>
+          <text x="650" y="76" text-anchor="middle" font-size="11.5" fill="#5a6779">내후년 6월</text>
+          <!-- 라벨 아래 -->
+          <text x="90" y="126" text-anchor="middle" font-size="12" fill="#5a6779">기사가</text>
+          <text x="90" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#a4303f">여기 몰림</text>
+          <text x="255" y="126" text-anchor="middle" font-size="12" fill="#5a6779">후속 기사</text>
+          <text x="255" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#a4303f">거의 없음</text>
+          <text x="650" y="126" text-anchor="middle" font-size="12" fill="#5a6779">이때 비로소</text>
+          <text x="650" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e">숫자가 확정됨</text>
+          <!-- 구간 표시 -->
+          <path d="M90,168 L650,168" stroke="#8492a6" stroke-width="1.4" stroke-dasharray="4 4"/>
+          <text x="370" y="184" text-anchor="middle" font-size="12" fill="#8492a6">이 구간 내내 숫자가 바뀔 수 있음</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      가로축은 시간 흐름을 <b>개념적으로</b> 나타낸 것이며 실제 간격에 비례하지 않음. 발표 시점은 한국은행 공표 기준임.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">기자 원칙 두 가지</span>
+    <ol style="margin-bottom:0">
+      <li>속보치로 쓴 기사에는 <strong>"속보치이며 수정될 수 있다"</strong>를 반드시 넣음.</li>
+      <li>잠정치가 나오면 <strong>후속 기사를 씀.</strong></li>
+    </ol>
+    <p style="margin:10px 0 0">실제로는 2번이 거의 지켜지지 않음. <em>그래서 이것 자체가 좋은 비평 소재임.</em> 속보치 기사 제목과 잠정치를 나란히 놓으면 바로 드러남.</p>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">기준년 개편 — 과거 성장률 자체가 바뀜</span>
+    <ul style="margin-bottom:0">
+      <li>한국은행은 수년 주기로 <strong>국민계정 기준년을 개편</strong>함. 산업 구조와 가격 구조 변화를 반영하기 위함임.</li>
+      <li>개편이 되면 <em>과거 계열 전체가 다시 계산됨.</em> 어제까지 2.0%였던 성장률이 2.3%가 되기도 함.</li>
+      <li>따라서 <b>"몇 년 만의 최저 성장"</b> 같은 기사는 개편 후에도 성립하는지 다시 확인해야 함.</li>
+      <li>주기는 <b>약 5년</b>임. 가장 최근은 <b>2020년 기준년 개편</b>으로, 2024년에 이뤄졌음.</li>
+      <li>그 결과 2023년 명목 GDP가 <b>2,236조 원에서 2,401조 원으로</b>, 1인당 GNI가 <b>33,745달러에서 36,194달러로</b> 바뀌었음. <em>경제가 좋아진 것이 아니라 계산 기준이 바뀐 것임.</em></li>
+      <li>과거 기사는 <strong>그 시점의 기준으로 쓰인 것임.</strong> 지금 기준으로 읽으면 틀린 문장이 됨. → 3주차에서 실제 계열로 확인함.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>지표와 지수 — 100의 두 가지 의미</h2>
+  <div class="h2rule"></div>
+
+  <h3>지표와 지수는 다름</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>지표 indicator</h5>
+      <span class="tag">개별 통계 그 자체</span>
+      <ul>
+        <li>통화지표 — M2</li>
+        <li>금리지표 — 국고채 10년물 금리</li>
+        <li>고용지표 — 실업률</li>
+        <li>단위가 그대로 있음 (%, 원, 명)</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>지수 index</h5>
+      <span class="tag">기준시점을 100으로 환산</span>
+      <ul>
+        <li>소비자물가지수</li>
+        <li>경기종합지수</li>
+        <li>코스피지수</li>
+        <li>단위가 없음. <b>기준과의 비율</b>일 뿐임</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">가장 위험한 혼동 — 지수의 100은 두 가지 의미가 있음</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 6px">
+        <svg viewBox="0 0 760 300" role="img" aria-label="일반 지수의 100과 확산지수의 기준선 비교 도식">
+          <!-- 가운데 구분선 -->
+          <line x1="385" y1="18" x2="385" y2="196" stroke="#dbe4ee" stroke-width="1.5"/>
+
+          <!-- ══ 왼쪽: 일반 지수 ══ -->
+          <text x="30" y="26" font-size="14.5" font-weight="800" fill="#0d2244">일반 지수 — 100은 그냥 기준시점</text>
+
+          <!-- 눈금 라벨 (막대 위) -->
+          <text x="140" y="50" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1a4b8c">100</text>
+          <text x="257" y="50" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1a4b8c">115</text>
+
+          <!-- 막대 -->
+          <rect x="30" y="60" width="330" height="34" rx="5" fill="#e8eef5" stroke="#c8d6e5"/>
+          <line x1="140" y1="56" x2="140" y2="98" stroke="#1a4b8c" stroke-width="2.5"/>
+          <circle cx="257" cy="77" r="7" fill="#1a4b8c"/>
+
+          <!-- 눈금 설명 (막대 아래) -->
+          <text x="140" y="116" text-anchor="middle" font-size="11.5" fill="#5a6779">기준연도</text>
+          <text x="257" y="116" text-anchor="middle" font-size="11.5" fill="#5a6779">올해</text>
+
+          <!-- 설명 -->
+          <text x="30" y="152" font-size="13" fill="#5a6779">"소비자물가지수 115" =</text>
+          <text x="30" y="171" font-size="13" fill="#5a6779">기준연도보다 <tspan font-weight="700" fill="#0d2244">15% 비쌈</tspan>.</text>
+          <text x="30" y="192" font-size="13" fill="#5a6779">100 자체에 <tspan font-weight="700" fill="#0d2244">좋다·나쁘다가 없음.</tspan></text>
+
+          <!-- ══ 오른쪽: 확산지수 ══ -->
+          <text x="410" y="26" font-size="14.5" font-weight="800" fill="#b45309">확산지수 — 100·50은 판단 기준선</text>
+
+          <!-- 눈금 라벨 (막대 위) -->
+          <text x="570" y="50" text-anchor="middle" font-size="12.5" font-weight="800" fill="#a4303f">기준선</text>
+
+          <!-- 막대 -->
+          <rect x="410" y="60" width="160" height="34" rx="5" fill="#f7dcdf"/>
+          <rect x="570" y="60" width="160" height="34" rx="5" fill="#dcefec"/>
+          <rect x="410" y="60" width="320" height="34" rx="5" fill="none" stroke="#c8d6e5"/>
+          <line x1="570" y1="56" x2="570" y2="98" stroke="#a4303f" stroke-width="2.5"/>
+          <text x="490" y="82" text-anchor="middle" font-size="12.5" font-weight="700" fill="#a4303f">비관 우세</text>
+          <text x="650" y="82" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0f766e">낙관 우세</text>
+
+          <!-- 눈금 설명 (막대 아래) -->
+          <text x="570" y="116" text-anchor="middle" font-size="11.5" fill="#5a6779">여기가 갈림길</text>
+
+          <!-- 설명 -->
+          <text x="410" y="152" font-size="13" fill="#5a6779"><tspan font-weight="700" fill="#0d2244">BSI · CSI는 100</tspan>이 기준선임.</text>
+          <text x="410" y="171" font-size="13" fill="#5a6779"><tspan font-weight="700" fill="#0d2244">PMI는 50</tspan>이 기준선임.</text>
+          <text x="410" y="192" font-size="13" fill="#5a6779">아래로 내려가면 <tspan font-weight="700" fill="#0d2244">위축임.</tspan></text>
+
+          <!-- ══ 하단 경고 ══ -->
+          <rect x="30" y="218" width="700" height="64" rx="8" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="50" y="244" font-size="13.5" font-weight="800" fill="#b45309">기사에서 "지수가 100 아래로 떨어졌다"를 볼 때</text>
+          <text x="50" y="267" font-size="13.5" fill="#5a6779">어느 100인지 반드시 확인함. 헷갈리면 기사가 통째로 틀림.</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      BSI는 <b>(긍정 응답 업체수 − 부정 응답 업체수) ÷ 전체 응답 업체수 × 100 + 100</b>으로 계산함. 범위는 0~200임. 한국은행이 2024년 8월부터 함께 내는 <b>기업심리지수(CBSI)</b>는 같은 100이라도 뜻이 다름 — <em>응답의 균형점이 아니라 장기평균이 100임.</em> 소비자심리지수(CCSI)도 장기평균을 100으로 표준화한 것이며, 그 기준 구간은 <em>해마다 갱신됨.</em>
+    </div>
+  </div>
+
+  <h3>변동률 세 가지</h3>
+  <div class="tri c1">
+    <div>
+      <h5>전기(월)비</h5>
+      <span class="tag">직전 기간과 비교</span>
+      <ul>
+        <li>최근 흐름 파악에 씀</li>
+        <li>반드시 <b>계절조정치(SA)</b> 사용</li>
+        <li>안 그러면 명절이 경기로 둔갑함</li>
+      </ul>
+    </div>
+    <div>
+      <h5>전년동기(월)비</h5>
+      <span class="tag">작년 같은 시점과 비교</span>
+      <ul>
+        <li>추세 파악에 씀</li>
+        <li><b>원계열</b> 사용</li>
+        <li>계절성이 자동 상쇄됨</li>
+      </ul>
+    </div>
+    <div>
+      <h5>전년 대비</h5>
+      <span class="tag">연간 단위 비교</span>
+      <ul>
+        <li>연간 실적 비교에 씀</li>
+        <li>1년치를 통째로 비교함</li>
+        <li>분기 흐름은 보이지 않음</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">외울 것 — 이 강의에서 가장 자주 쓰는 규칙</span>
+    <ul style="margin-bottom:0">
+      <li><strong>전년동기(월)비 → 원계열</strong>. 같은 달끼리 비교하므로 계절 요인이 자동 상쇄됨.</li>
+      <li><strong>전기(월)비 → 계절조정치(SA)</strong>. 안 하면 명절·방학 효과가 경기 변동으로 둔갑함.</li>
+      <li>거꾸로 쓴 기사가 실제로 자주 나옴. → <a href="#s5">05</a>에서 그 결과를 봄.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>원계열과 계절조정</h2>
+  <div class="h2rule"></div>
+  <p class="lede">시계열 통계는 네 가지 요인이 겹쳐 만들어짐. <strong>목적에 따라 어떤 요인을 걷어낼지 정함.</strong></p>
+
+  <h3>시계열의 네 가지 구성 요인</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:17%">요인</th><th style="width:33%">무엇인가</th><th>한국의 사례</th></tr></thead>
+    <tbody>
+      <tr><td><b>추세</b><br><span class="cite">Trend</span></td><td>경제 규모 성장에 따른 장기 상승·하강</td><td>인구·자본이 늘면서 생산이 장기적으로 증가함</td></tr>
+      <tr><td><b>순환</b><br><span class="cite">Cycle</span></td><td>경기 확장과 수축이 교대로 발생함</td><td>제1~11순환 평균 <b>주기 53개월</b>(확장 33개월 · 수축 20개월). 현재 제12순환기이며 <b>정점은 아직 미설정</b>임 <span class="cite">국가데이터처 기준순환일</span></td></tr>
+      <tr><td><b>계절</b><br><span class="cite">Seasonal</span></td><td>대개 1년 주기로 반복되는 변동</td><td><b>설·추석</b>, 방학, 김장철, 12월 소비, 3월 입학, 여름 휴가</td></tr>
+      <tr><td><b>불규칙</b><br><span class="cite">Irregular</span></td><td>예측 불가능한 변동</td><td>파업, 재해, 팬데믹, 대형 공장 화재, 조업일수 차이</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">한국에서 계절조정이 특히 까다로운 이유</span>
+    <ul style="margin-bottom:0">
+      <li><strong>설과 추석은 음력 명절임.</strong> 양력 날짜가 매년 바뀜.</li>
+      <li>어떤 해는 설이 1월에, 어떤 해는 2월에 옴. <em>그 달의 조업일수와 소비가 통째로 달라짐.</em></li>
+      <li>그래서 <b>1~2월 통계가 매년 요동침.</b> 이 시기 기사는 특히 조심해서 읽어야 함.</li>
+      <li>보도자료가 <b>"설 명절 요인을 감안하면"</b>이라는 단서를 다는 이유가 이것임.</li>
+      <li>사용 기법 — 국가데이터처는 <b>X-13ARIMA-SEATS</b>, 한국은행은 여기에 한국의 명절·공휴일 효과 보정을 더한 <b>BOK-X-13ARIMA-SEATS</b>를 씀.</li>
+    </ul>
+  </div>
+
+  <h3>왜 매년 1월에 "고용 쇼크" 기사가 나오는가</h3>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">같은 통계, 다른 결론 — 원계열과 계절조정</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 6px">
+        <svg viewBox="0 0 760 300" role="img" aria-label="원계열과 계절조정 계열의 개념 비교 그래프">
+          <!-- 축 -->
+          <line x1="60" y1="250" x2="730" y2="250" stroke="#c8d6e5" stroke-width="1.6"/>
+          <line x1="60" y1="30" x2="60" y2="250" stroke="#c8d6e5" stroke-width="1.6"/>
+          <text x="46" y="40" text-anchor="end" font-size="11" fill="#8492a6">많음</text>
+          <text x="46" y="248" text-anchor="end" font-size="11" fill="#8492a6">적음</text>
+          <!-- 월 라벨 -->
+          <text x="105" y="270" text-anchor="middle" font-size="11" fill="#8492a6">1월</text>
+          <text x="217" y="270" text-anchor="middle" font-size="11" fill="#8492a6">7월</text>
+          <text x="329" y="270" text-anchor="middle" font-size="11" font-weight="700" fill="#a4303f">1월</text>
+          <text x="441" y="270" text-anchor="middle" font-size="11" fill="#8492a6">7월</text>
+          <text x="553" y="270" text-anchor="middle" font-size="11" font-weight="700" fill="#a4303f">1월</text>
+          <text x="665" y="270" text-anchor="middle" font-size="11" fill="#8492a6">7월</text>
+          <!-- 1월 강조 세로선 -->
+          <line x1="105" y1="30" x2="105" y2="250" stroke="#e8b9be" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="329" y1="30" x2="329" y2="250" stroke="#e8b9be" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="553" y1="30" x2="553" y2="250" stroke="#e8b9be" stroke-width="1" stroke-dasharray="3 3"/>
+          <!-- 원계열: 톱니 -->
+          <polyline points="105,205 161,150 217,132 273,158 329,215 385,140 441,122 497,148 553,203 609,128 665,110 721,136"
+                    fill="none" stroke="#a4303f" stroke-width="2.6"/>
+          <!-- 계절조정: 완만 상승 -->
+          <polyline points="105,178 161,174 217,170 273,166 329,163 385,158 441,152 497,148 553,143 609,138 665,132 721,127"
+                    fill="none" stroke="#1a4b8c" stroke-width="2.8" stroke-dasharray="0"/>
+          <!-- 1월 골짜기 표시 -->
+          <circle cx="329" cy="215" r="5.5" fill="#a4303f"/>
+          <circle cx="553" cy="203" r="5.5" fill="#a4303f"/>
+          <!-- 범례 -->
+          <rect x="470" y="34" width="250" height="52" rx="7" fill="#fff" stroke="#c8d6e5"/>
+          <line x1="484" y1="52" x2="512" y2="52" stroke="#a4303f" stroke-width="2.6"/>
+          <text x="520" y="56" font-size="12.5" font-weight="700" fill="#0d2244">원계열</text>
+          <line x1="484" y1="72" x2="512" y2="72" stroke="#1a4b8c" stroke-width="2.8"/>
+          <text x="520" y="76" font-size="12.5" font-weight="700" fill="#0d2244">계절조정 계열</text>
+        </svg>
+      </figure>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">두 선이 말하는 것이 정반대임</span>
+        <ul style="margin-bottom:0">
+          <li><b>원계열(붉은 선)</b> — <b>1월이 해마다 연중 최저점</b>임. 전월비로 쓰면 <em>"고용 쇼크"</em>가 됨.</li>
+          <li><b>계절조정(파란 선)</b> — 같은 기간에 <em>완만하게 개선</em>되고 있음.</li>
+          <li>이유는 경기가 아니라 <strong>건설·농림어업 일자리가 겨울에 줄기 때문</strong>임. 두 업종만으로 감소분 대부분이 설명됨.</li>
+          <li>같은 자료로 <b>정반대 기사</b>가 나옴. 어느 계열을 썼는지가 갈림길임.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      위 그래프는 <b>개념을 보여주기 위한 도식</b>이며 실제 취업자 수 수치가 아님. 실제 계열은 KOSIS에서 원계열과 계절조정 계열을 각각 받아 확인할 것.
+    </div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">기사에서 확인하는 법</span>
+    <ul style="margin-bottom:0">
+      <li>보도자료 <b>표 제목</b>에 <code>(계절조정)</code> 표기가 있는지 봄. 있으면 계절조정 계열임.</li>
+      <li>기사가 <b>전월비</b>를 쓰면서 계절조정을 언급하지 않으면 <em>의심할 것.</em></li>
+      <li>같은 보도자료 안에 <b>전월비와 전년동월비가 나란히</b> 실려 있는 경우가 많음. 기자가 <em>하나만 고른 것</em>임.</li>
+    </ul>
+  </div>
+
+  <h4>다른 분야에서도 같은 일이 벌어짐</h4>
+  <ul>
+    <li><strong>소매판매액지수</strong> — 12월과 1월에 원계열이 급등락함. <em>"설 특수"를 "소비 회복"으로 쓰는 기사</em>의 정체가 이것임. → 4주차</li>
+    <li><strong>수출입</strong> — 조업일수와 연휴 배치에 따라 월별 실적이 흔들림. <em>일평균 수출액</em>을 함께 보는 이유임. → 15주차</li>
+    <li><strong>산업생산</strong> — 명절이 낀 달은 가동일수가 줄어 생산이 감소함. 경기와 무관함. → 4주차</li>
+  </ul>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>기저효과 — 증감률이 튀는 이유</h2>
+  <div class="h2rule"></div>
+  <p class="lede">비교 대상인 <strong>작년 값</strong>의 높낮이 때문에 올해 증감률이 부풀거나 쪼그라드는 현상임. <em>올해 값이 똑같아도 제목이 완전히 달라짐.</em></p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">올해 값은 셋 다 105 — 그런데 제목은 완전히 다름</div>
+    </div>
+    <div class="info-b">
+      <div class="tw" style="margin-top:0">
+      <table>
+        <thead><tr><th style="width:22%">시나리오</th><th style="width:16%">작년 값</th><th style="width:16%">올해 값</th><th style="width:20%">전년동월비</th><th>기사 제목</th></tr></thead>
+        <tbody>
+          <tr><td><b>A · 평범</b></td><td class="num">100</td><td class="num">105</td><td class="num">+5.0%</td><td>"5% 증가"</td></tr>
+          <tr><td><b>B · 작년이 바닥</b></td><td class="num">80</td><td class="num">105</td><td class="num" style="color:#0f766e">+31.3%</td><td><b>"31% 급증"</b></td></tr>
+          <tr><td><b>C · 작년이 고점</b></td><td class="num">120</td><td class="num">105</td><td class="num" style="color:#a4303f">−12.5%</td><td><b>"12% 급감"</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="brow">
+        <div class="bl">A · 작년 100</div>
+        <div class="bt2"><div class="bf" style="width:16%"></div></div>
+        <div class="bv">+5.0%</div>
+      </div>
+      <div class="brow">
+        <div class="bl">B · 작년 80</div>
+        <div class="bt2"><div class="bf teal" style="width:100%"></div></div>
+        <div class="bv teal">+31.3%</div>
+      </div>
+      <div class="brow">
+        <div class="bl">C · 작년 120</div>
+        <div class="bt2"><div class="bf rose" style="width:40%"></div></div>
+        <div class="bv rose">−12.5%</div>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft);margin:14px 0 0"><strong>세 경우 모두 올해 실적은 똑같음.</strong> 달라진 것은 <em>작년뿐임.</em> 그런데 독자가 받는 인상은 정반대가 됨.</p>
+    </div>
+    <div class="info-f">
+      막대 길이는 증감률의 <b>절댓값 크기를 시각화한 것</b>이며 실제 비율에 정확히 비례하지는 않음. 표의 수치는 계산으로 확인할 수 있음.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">기자 원칙</span>
+    <ul style="margin-bottom:0">
+      <li><strong>증감률이 유난히 크면 먼저 작년 값을 봄.</strong></li>
+      <li>작년 값이 비정상적으로 낮거나 높지 않았는지 확인함.</li>
+      <li>실무에서는 <b>"기저효과를 감안하면"</b> 한 줄만 넣어도 기사의 격이 달라짐.</li>
+      <li>더 나은 방법 — <em>증감률 대신 수준(레벨)을 함께 제시함.</em> "코로나 이전 대비 얼마"가 훨씬 정확함.</li>
+    </ul>
+  </div>
+
+  <h3>실제로 어디서 나타나는가</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">국면</th><th style="width:34%">무엇이 벌어지는가</th><th>다시 다루는 주차</th></tr></thead>
+    <tbody>
+      <tr><td><b>급락 직후의 반등</b></td><td>작년이 바닥이라 올해 증감률이 크게 부풀음. "V자 반등" 표현이 쏟아짐</td><td>3주차 GDP · 7주차 경제위기</td></tr>
+      <tr><td><b>호황 직후의 둔화</b></td><td>작년이 워낙 좋아서 올해가 나빠 보임. 수출·기업 실적에 흔함</td><td>12~13주차 기업 · 15주차 무역</td></tr>
+      <tr><td><b>물가의 상승률 둔화</b></td><td>작년에 급등했으면 올해 상승률이 낮아짐. 그러나 <b>가격 수준은 계속 오르는 중</b>임</td><td>6주차 물가</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">실제 사례 · 한국은행 실질 GDP</div>
+      <div class="t">2021년 2분기 성장률 +7.0% — 무엇이 좋아진 것인가</div>
+    </div>
+    <div class="case-b">
+      <div class="tw" style="margin-top:0">
+      <table>
+        <thead><tr><th style="width:26%">분기</th><th style="width:37%">전년동기비</th><th style="width:37%">전기비(계절조정)</th></tr></thead>
+        <tbody>
+          <tr><td><b>2020년 2분기</b> <span class="cite">팬데믹 충격</span></td><td class="num" style="color:#a4303f">−2.6%</td><td class="num" style="color:#a4303f">−2.6%</td></tr>
+          <tr><td><b>2021년 2분기</b> <span class="cite">1년 뒤</span></td><td class="num" style="color:#0f766e">+7.0%</td><td class="num">+1.4%</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li>전년동기비로는 <strong>+7.0%</strong>. 당시 <em>"V자 반등"</em>이라는 표현이 쏟아졌음.</li>
+        <li>그러나 같은 분기의 <strong>전기비는 +1.4%</strong>임. 직전 분기보다 특별히 좋아진 것이 아님.</li>
+        <li>+7.0%를 만든 것은 <strong>1년 전의 −2.6%</strong>임. <em>바닥이 낮아서 생긴 숫자임.</em></li>
+        <li>같은 분기를 두고 <b>전년동기비와 전기비가 5배 넘게 차이남.</b> 어느 쪽을 쓰느냐가 기사의 내용을 결정함.</li>
+      </ul>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">이 사례는 속보와 확정의 차이도 보여줌</span>
+        <ul style="margin-bottom:0">
+          <li>2021년 7월 발표된 <b>속보치는 +5.9%</b>였음(당시 2015년 기준년).</li>
+          <li>현재 공식 수치는 <b>+7.0%</b>임. 2020년 기준년 개편을 거친 값임.</li>
+          <li>같은 분기의 성장률이 <strong>1.1%p 달라졌음.</strong> 인용할 때는 <em>어느 시점 기준인지 반드시 밝힐 것.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">전년동월비는 공짜가 아님</span>
+    <p style="margin-bottom:0">전년동월비는 <strong>계절성을 자동으로 없애주는 대신 기저효과를 크게 받음.</strong> 계절조정을 안 해도 되는 편리함의 대가임. <em>두 방식 모두 약점이 있으므로 둘을 함께 보는 것이 정답임.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>지표를 읽을 때 확인할 열 가지</h2>
+  <div class="h2rule"></div>
+  <p class="lede">학기 내내 이 열 줄로 기사를 검증함. <strong>출처는 경제지표 사전 25절 「실무 해석 시 주의할 점」</strong>임.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:6%">#</th><th style="width:26%">확인 항목</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>단일 지표로 결론 내리지 않음</b></td><td>생산·고용·소비·물가·금융을 함께 보고, 선행지표의 신호를 동행·후행지표로 확인함</td></tr>
+      <tr><td class="num">2</td><td><b>증가율 기준을 확인함</b></td><td>전월비는 최근 변화에 민감하고, 전년동월비는 계절성을 줄이지만 기저효과를 크게 받음</td></tr>
+      <tr><td class="num">3</td><td><b>계절조정 여부를 확인함</b></td><td>명절·날씨·조업일수·학기 등 반복 요인을 제거했는지 봄</td></tr>
+      <tr><td class="num">4</td><td><b>명목과 실질을 구분함</b></td><td>매출·수출·GDP 증가가 물가 때문인지 물량 때문인지 분리함</td></tr>
+      <tr><td class="num">5</td><td><b>속보·잠정·확정을 구분함</b></td><td>GDP·고용·산업생산은 후속 자료로 수정될 수 있음</td></tr>
+      <tr><td class="num">6</td><td><b>수준과 변화율을 함께 봄</b></td><td>증가율이 둔화돼도 수준은 높을 수 있고, 감소율이 축소돼도 수준은 여전히 낮을 수 있음</td></tr>
+      <tr><td class="num">7</td><td><b>지수 기준연도 변경을 확인함</b></td><td>기준값 100은 임계치가 아니라 기준시점임. PMI·BSI 같은 확산지수와 구분함</td></tr>
+      <tr><td class="num">8</td><td><b>시장지표는 기대를 반영함</b></td><td>금리·환율·주가는 실제 경제뿐 아니라 정책 기대, 위험선호, 유동성에 움직임</td></tr>
+      <tr><td class="num">9</td><td><b>국가 간 정의 차이를 확인함</b></td><td>실업률·정부부채·주택가격·근원물가는 조사대상과 포괄범위가 나라마다 다름</td></tr>
+      <tr><td class="num">10</td><td><b>폐지·개편 지표에 주의함</b></td><td>LIBOR·TED 스프레드처럼 기초시장이 사라진 지표는 SOFR·OIS 등 대체지표를 함께 봄</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">6번이 기사에서 가장 자주 무너짐</div>
+      <div class="t">"물가 상승세 둔화"와 "물가 여전히 높음"은 동시에 참일 수 있음</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>상승률이 <b>5% → 2%</b>로 떨어져도 <strong>가격 수준 자체는 계속 오르는 중</strong>임.</li>
+        <li>둔화된 것은 <em>속도</em>이지 <em>수준</em>이 아님.</li>
+        <li>이 구별을 못 하면 <b>"물가가 잡혔는데 왜 체감이 안 되냐"</b>는 기사를 매년 반복해서 쓰게 됨.</li>
+        <li>정확한 서술 — <em>"상승 속도는 둔화됐으나 가격 수준은 2년 전보다 ○% 높음."</em></li>
+      </ul>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">스스로 확인해 볼 것</span>
+        <p style="margin-bottom:0">최근 물가 기사를 하나 골라 <strong>상승률만 썼는지, 수준까지 썼는지</strong> 확인해 볼 것. 대부분 상승률만 있음. → 6주차 물가에서 정면으로 다룸.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>어디서 받나</h2>
+  <div class="h2rule"></div>
+  <p class="lede">기사에 나온 숫자는 <strong>반드시 원자료로 되짚음</strong>. 아래는 이 강의에서 가장 자주 쓰는 경로임.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">사이트</th><th>무엇을 받나</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener"><b>ECOS</b></a><br><span class="cite">한국은행 경제통계시스템</span></td><td>GDP, 물가(PPI·수출입물가), 통화, 금리, 국제수지, 가계신용, 기업경영분석. <b>거시의 기본 창구임</b></td></tr>
+      <tr><td><a href="https://kosis.kr" target="_blank" rel="noopener"><b>KOSIS</b></a><br><span class="cite">국가통계포털</span></td><td>고용, 인구, 물가(CPI), 산업활동, 가계. <b>원계열과 계절조정 계열을 각각 받을 수 있음</b></td></tr>
+      <tr><td><a href="https://kosis.kr/visual/nsportalStats/main.do" target="_blank" rel="noopener">KOSIS 100대지표</a></td><td>관심도 높은 대표 통계만 추린 화면. <b>처음 진입할 때 최적임</b></td></tr>
+      <tr><td><a href="https://kosis.kr/visual/bcc/index/index.do?language=kor" target="_blank" rel="noopener">KOSIS 경기순환시계</a></td><td>지표별로 지금 어느 경기 국면에 있는지 시각화함</td></tr>
+      <tr><td><a href="https://snapshot.bok.or.kr/" target="_blank" rel="noopener">한국은행 금융·경제 스냅샷</a></td><td>금융·외환시장과 실물경제 지표를 약 410종의 시각화 콘텐츠로 보여줌</td></tr>
+      <tr><td><a href="https://www.index.go.kr" target="_blank" rel="noopener">지표누리 (e-나라지표)</a></td><td>부처별 정책지표와 그 정의</td></tr>
+      <tr><td><a href="https://mods.go.kr/menu.es?mid=a10504000000" target="_blank" rel="noopener">국가데이터처 통계조사일정</a></td><td><b>다음 달 발표 일정을 미리 확인함</b></td></tr>
+      <tr><td><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener"><b>FRED</b></a></td><td>미국·세계 시계열의 사실상 표준</td></tr>
+      <tr><td><a href="https://alfred.stlouisfed.org/" target="_blank" rel="noopener">ALFRED</a></td><td><b>과거 발표 시점의 값(빈티지)</b>을 그대로 조회함. 속보치가 나중에 얼마나 바뀌었는지 확인할 때 씀</td></tr>
+      <tr><td><a href="https://dart.fss.or.kr" target="_blank" rel="noopener">DART</a></td><td>기업 공시·재무제표</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">전체 목록</span>
+    <p style="margin-bottom:0">국내외 데이터 사이트 전체는 <a href="../data.html"><b>경제 데이터 분석실</b></a>에 정리해 두었음. 지표 발표 일정과 1,000개 경제지표 사전도 그곳에 있음.</p>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">AI에게 지표를 물을 때 주의할 것</span>
+    <ul style="margin-bottom:0">
+      <li>챗봇에 지표를 물으면 즉시 숫자가 나옴. 그러나 <strong>어느 계열(원계열/계절조정), 어느 발표 시점(속보/잠정)의 값인지 밝히지 않는 경우가 많음.</strong></li>
+      <li>오늘 배운 다섯 가지 질문을 <em>그대로 챗봇 답변에 적용해 볼 것.</em> 대부분 답하지 못함.</li>
+      <li>반드시 <b>ECOS·KOSIS 원자료와 대조</b>한 뒤 기사에 씀.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>기관 명칭 — 2025~2026년 개편</h2>
+  <div class="h2rule"></div>
+  <p class="lede">통계를 만드는 기관의 이름이 최근 크게 바뀌었음. <strong>과거 기사와 현재 기사에 다른 이름이 나옴.</strong></p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">이전 명칭</th><th style="width:26%">현재 명칭</th><th style="width:18%">시점</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>통계청</td><td><b>국가데이터처</b></td><td>2025.10.1</td><td>기획재정부 외청 → <b>국무총리 소속</b>으로 승격</td></tr>
+      <tr><td>기획재정부 (그린북)</td><td><b>재정경제부</b></td><td>2026.1.2</td><td>경제정책 총괄, 세제·국고·국제금융</td></tr>
+      <tr><td>기획재정부 (재정동향)</td><td><b>기획예산처</b></td><td>2026.1.2</td><td>예산 편성·재정관리. 국무총리 소속</td></tr>
+      <tr><td>산업통상자원부</td><td><b>산업통상부</b></td><td>2025.10.1</td><td>'자원' 탈락. 에너지 기능은 기후에너지환경부로 이관</td></tr>
+      <tr><td>환경부</td><td><b>기후에너지환경부</b></td><td>2025.10.1</td><td>에너지 기능을 넘겨받음</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">바뀌지 않은 곳</span>
+    <p style="margin-bottom:0">한국은행 · 금융위원회 · 금융감독원 · 고용노동부 · 국토교통부 · 관세청 · 한국거래소 · 한국부동산원은 <strong>명칭이 그대로임.</strong></p>
+  </div>
+
+  <div class="box key">
+    <span class="bt">기사를 읽고 쓸 때 유의할 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>통계 자체는 바뀌지 않았음.</b> KOSIS 주소(kosis.kr)와 통계 계열 코드는 그대로임.</li>
+      <li>구 주소는 대부분 <b>자동 연결됨.</b> 그러나 <em>옛 링크가 살아 있다고 옛 이름을 써도 되는 것은 아님.</em></li>
+      <li><b>2025년 9월 이전 기사</b>에는 '통계청'으로 나옴. 과거 기사를 검색할 때는 <em>그 시점의 이름</em>으로 찾아야 함.</li>
+      <li>지방통계청은 아직 '통계청' 명칭이 남아 있어 <b>지역 기사에는 여전히 '통계청'이 등장함.</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>여는 질문으로 돌아가기</h3>
+  <div class="box note">
+    <span class="bt">다시 묻기 — "3분기 성장률 0.6%"에 무엇이 빠졌는가</span>
+    <ul>
+      <li>① 실질인가 명목인가 &nbsp;② 전기비인가 전년동기비인가 &nbsp;③ 원계열인가 계절조정인가</li>
+      <li>④ 속보치인가 잠정치인가 &nbsp;⑤ 어느 기준년의 실질값인가</li>
+    </ul>
+    <p style="margin-bottom:0"><strong>답은 늘 원문에 있음.</strong> 한국은행 보도자료 제목에는 「실질 국내총생산(<b>속보</b>)」처럼 <em>속보 여부가 적혀 있고</em>, 본문 첫 표에는 <em>전기대비와 전년동기대비가 나란히</em> 실려 있음. <b>기사에 없을 뿐임.</b></p>
+  </div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>명목과 실질</b>
+      "역대 최대"는 대부분 명목임. <em>실질로 바꾸면 이야기가 달라짐.</em></li>
+    <li><b>flow와 stock</b>
+      월급과 통장 잔고. <em>증가액과 잔액을 뒤섞으면 자릿수가 틀림.</em></li>
+    <li><b>원계열과 계절조정</b>
+      전월비는 계절조정, 전년동월비는 원계열. <em>거꾸로 쓰면 매년 1월에 고용 쇼크 기사가 나옴.</em></li>
+    <li><b>기저효과</b>
+      증감률이 유난히 크면 <em>먼저 작년 값을 봄.</em></li>
+    <li><b>속보 → 잠정 → 확정</b>
+      같은 통계가 여러 번 발표됨. <em>속보로 쓴 기사는 나중에 틀린 기사가 될 수 있음.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "전월 대비 감소… 경기 꺾이나"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>원계열을 전월비로 썼음.</strong> 계절 요인이 경기 신호로 둔갑했음.</li>
+      <li><b>확인할 것</b> — 계절조정 여부. 보도자료 표 제목에 <code>(계절조정)</code> 표기가 있음.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "○○% 급증 / 급감"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>기저효과를 검토하지 않았음.</strong></li>
+      <li><b>확인할 것</b> — 작년 같은 기간의 값. 그 값이 비정상적으로 낮거나 높지 않았는지 봄.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "사상 최대 / 역대 최고"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>명목값은 경제가 커지면 거의 매년 최대임.</strong></li>
+      <li><b>확인할 것</b> — 실질 여부, GDP 대비 비율, 실질 증가율. 셋 중 하나로 바꾸면 대개 '역대급'이 사라짐.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>"물가 상승세가 둔화됐다"와 "물가가 여전히 높다"는 동시에 참일 수 있는가?</b><br>그렇다면 기자는 어느 쪽을 제목으로 뽑아야 하는가. 무엇을 기준으로 정하는가.</li>
+    <li><b>속보치로 쓴 기사가 잠정치에서 뒤집혔음. 이것은 오보인가?</b><br>정정 보도의 대상인가, 아니면 통계의 성질상 불가피한 것인가.</li>
+    <li><b>"BSI가 95로 떨어졌다"와 "소비자물가지수가 95로 떨어졌다" — 두 문장의 의미는 어떻게 다른가?</b><br>확산지수의 100과 일반 지수의 100을 구별해 설명해 볼 것.</li>
+    <li><b>기준년 개편으로 과거 성장률이 바뀌었음.</b><br>그때 쓴 "몇 년 만의 최저" 기사는 지금 무엇인가. 언론은 무엇을 해야 하는가.</li>
+    <li><b>"단일 지표로 결론 내리지 않는다"는 원칙과 지면·시간의 제약은 충돌함.</b><br>현실적으로 몇 개의 지표를 함께 써야 하는가. 어떤 조합이 최소한인가.</li>
+  </ol>
+
+  <h3>학기 로드맵 — 오늘 배운 도구가 다시 등장하는 곳</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">도구</th><th>다시 쓰는 주차</th></tr></thead>
+    <tbody>
+      <tr><td><b>원계열 / 계절조정</b></td><td>4주차 경기순환 · <b>5주차 고용</b> · 6주차 물가</td></tr>
+      <tr><td><b>전월비 / 전년동월비</b></td><td>전 주차 공통</td></tr>
+      <tr><td><b>기저효과</b></td><td>6주차 물가 · 12~13주차 기업 실적</td></tr>
+      <tr><td><b>속보 → 잠정 → 확정</b></td><td>3주차 GDP · 15주차 무역</td></tr>
+      <tr><td><b>지표 간 시차(선행·동행·후행)</b></td><td>4주차 경기순환 · <b>5주차 고용</b> · 10주차 금리</td></tr>
+      <tr><td><b>명목 / 실질</b></td><td>3주차 GDP · 6주차 물가 · 14주차 정부재정</td></tr>
+      <tr><td><b>flow / stock</b></td><td>11주차 가계부채 · 14주차 국가채무</td></tr>
+      <tr><td><b>확산지수의 기준선</b></td><td>4주차 경제심리(BSI·CCSI)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>AI가 통계 조회를 쉽게 만들었음.</b> 그러나 계열과 발표 시점을 밝히지 않는 답이 많아 <em>대조 습관이 더 중요해졌음.</em></li>
+      <li><b>국가데이터처 출범 이후</b> 기관 간 데이터 연계·표준화가 강화되고 있음. 출처가 복수인 통계를 읽는 훈련이 앞으로 더 필요해짐.</li>
+      <li>국제적으로는 <b>통계 개정(revision) 자체를 기사화</b>하는 관행이 자리 잡고 있음. 한국 언론에는 아직 약함. <em>좋은 비평 소재임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』 (제10차 개정판).</b> — <b>이 주차의 사실상 원천.</b> 한국은행 홈페이지 &gt; 뉴스/자료 &gt; 간행물 &gt; 단행본에서 <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a>로 받을 수 있음</li>
+      <li><b>경제지표 사전 (1,000개)</b> — 0절 「읽는 법과 범위」, 25절 「실무 해석 시 주의할 점」. <a href="../data.html">경제 데이터 분석실</a>에서 열람</li>
+    </ul>
+
+    <h4>데이터 원천</h4>
+    <ul>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">한국은행 경제통계시스템 ECOS</a> — GDP·물가·통화·금리·국제수지</li>
+      <li><a href="https://kosis.kr" target="_blank" rel="noopener">국가데이터처 국가통계포털 KOSIS</a> — 고용·인구·물가·산업활동</li>
+      <li><a href="https://snapshot.bok.or.kr/" target="_blank" rel="noopener">한국은행 금융·경제 스냅샷</a> — 금융·외환시장과 실물경제 지표를 약 410종의 시각화 콘텐츠로 제공함</li>
+      <li><a href="https://www.index.go.kr" target="_blank" rel="noopener">지표누리 (e-나라지표)</a> — 부처별 정책지표와 정의</li>
+      <li><a href="https://mods.go.kr" target="_blank" rel="noopener">국가데이터처</a> — 통계 용어·지표 해설, 보도자료 원문</li>
+      <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — 미국·세계 시계열의 사실상 표준</li>
+      <li><a href="https://alfred.stlouisfed.org/" target="_blank" rel="noopener">ALFRED</a> — FRED의 자매 서비스. <b>과거 특정 시점에 발표돼 있던 값(빈티지)</b>을 그대로 불러올 수 있음. 속보치와 확정치를 비교할 때 씀</li>
+    </ul>
+
+    <h4>용어와 방법론</h4>
+    <ul>
+      <li><a href="https://eiec.kdi.re.kr" target="_blank" rel="noopener">KDI 경제교육·정보센터 경제용어사전</a></li>
+      <li><a href="https://www.oecd.org/en/publications/handbook-on-constructing-composite-indicators-methodology-and-user-guide_9789264043466-en.html" target="_blank" rel="noopener">OECD, <i>Handbook on Constructing Composite Indicators</i></a> — 합성지표의 구성·정규화·가중 원칙</li>
+    </ul>
+
+    <h4>데이터 저널리즘</h4>
+    <ul>
+      <li><a href="https://datajournalism.com/read/handbook/one/understanding-data/become-data-literate-in-3-simple-steps" target="_blank" rel="noopener">Become Data Literate in 3 Simple Steps</a> — <i>The Data Journalism Handbook</i></li>
+      <li><a href="https://journalistsresource.org/politics-and-government/data-journalism-visualization-mapping-ethics-syllabus/" target="_blank" rel="noopener">Data journalism syllabus</a> — The Journalist's Resource (Harvard Kennedy School)</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 2주차 강의자료</b><br>
+  주 출처: 한국은행 『알기 쉬운 경제지표 해설』</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="01_경제뉴스의성격과역할.html">1주차 강의자료</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

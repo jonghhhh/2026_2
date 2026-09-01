@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10주차 · 금리와 채권 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 10주차 강의자료 — 기사에 나오는 금리 여섯 개, 대출금리 구조, 채권가격과 금리의 반비례, 장단기금리차와 신용스프레드.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">10주차 · 금리와 채권</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">10주차<br>금리와 채권</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 금리를 읽는 법</div>
+    <a href="#s2"><span class="n">02</span><span>금리의 기본</span></a>
+    <a href="#s3"><span class="n">03</span><span>기사에 나오는 금리 여섯 개</span></a>
+    <a href="#s4"><span class="n">04</span><span>내 대출금리는 어떻게 정해지나</span></a>
+    <a href="#s5"><span class="n">05</span><span>금리와 경기의 순환</span></a>
+
+    <div class="sb-label">2회차 · 채권과 스프레드</div>
+    <a href="#s6"><span class="n">06</span><span>채권이란 무엇인가</span></a>
+    <a href="#s7"><span class="n">07</span><span>채권가격과 금리는 반비례</span></a>
+    <a href="#s8"><span class="n">08</span><span>장단기금리차와 신용스프레드</span></a>
+    <a href="#s9"><span class="n">09</span><span>금융기관을 평가하는 세 지표</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>보도자료와 통계</span></a>
+    <a href="#s11"><span class="n">11</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s12"><span class="n">12</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 4. 돈의 가격 — 통화와 금리 · 10주차</div>
+    <h1>금리가 오르면 채권 가격은 내림<br>같은 사건의 두 이름임</h1>
+    <div class="sub">금리와 채권</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">기사에 실제로 나오는 <strong>금리 여섯 개</strong>만 확실히 익힘. 그리고 <strong>채권가격과 금리의 반비례</strong>가 이 주차 최대 난관임.</p>
+
+  <div class="pull">
+    <div class="q">"금리가 오르면 채권 가격은 내림.<br>이 둘은 같은 사건의 두 이름임."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>여는 질문 — 이 한 질문에 이 주차 전체가 들어 있음</h3>
+  <div class="pull" style="background:var(--bg-soft);color:var(--ink)">
+    <div class="q" style="color:var(--navy)">"기준금리는 3.00%인데<br>내 신용대출 금리는 왜 6%인가?"</div>
+    <div class="a" style="color:var(--ink-soft)">기준금리 → 시장금리 → 코픽스 → 가산금리 → 내 대출금리<br>각 단계에서 무엇이 붙는가.</div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">착지점은 다음 주 가계부채임</span>
+    <ul style="margin-bottom:0">
+      <li>이 주차는 <strong>금리가 내 삶에 닿는 지점</strong>으로 이어짐. → 11주차 부동산·가계부채</li>
+      <li>현재 기준금리는 <b>3.00%</b>임(2026년 8월 27일 금통위에서 2.75%에서 인상). <em>강의 시점의 최신 수치를 확인할 것.</em></li>
+      <li>자기 은행 앱을 열어 <b>예금금리와 대출금리</b>를 직접 확인해 볼 것. 오늘 배우는 것이 그 숫자의 정체임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>기준금리 · 시장금리<span class="en">policy rate / market rate</span></dt>
+      <dd><b>기준금리</b>는 중앙은행이 정함. <b>시장금리</b>는 시장에서 수급으로 정해지는 <em>나머지 전부</em>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>국고채 3년 · 10년<span class="en">KTB 3Y / 10Y</span></dt>
+      <dd><b>3년</b>은 국내 채권시장의 대표 벤치마크로 정책금리 기대를 반영함. <b>10년</b>은 장기 성장·물가·재정 전망을 반영함.</dd>
+    </dl>
+    <dl class="term">
+      <dt>표면금리<span class="en">coupon rate</span></dt>
+      <dd>채권에 적혀 있는 약속 이자율. <b>바뀌지 않음.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>만기수익률<span class="en">yield to maturity</span></dt>
+      <dd>지금 이 가격에 사서 만기까지 들고 있을 때의 수익률.
+        <span class="ez">주의 — 뉴스에 나오는 "채권금리"는 이것임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>장단기금리차<span class="en">term spread</span></dt>
+      <dd>10년 − 3년(또는 10년 − 2년). <b>역전은 침체 신호</b>로 읽힘.</dd>
+    </dl>
+    <dl class="term">
+      <dt>신용스프레드<span class="en">credit spread</span></dt>
+      <dd>회사채 금리 − 국고채 금리. <b>부도 위험의 값</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>코픽스<span class="en">COFIX</span></dt>
+      <dd>은행연합회가 은행들의 <b>자금조달비용</b>으로 산출하는 지수.
+        <span class="ez">쉽게 — 변동형 주택담보대출의 기준금리임. 매월 15일경 발표됨.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>가산금리 · 우대금리<span class="en">spread / preferential rate</span></dt>
+      <dd>은행이 <b>얹는 것</b>과 <b>깎아주는 것</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>실질금리<span class="en">real interest rate</span></dt>
+      <dd>명목금리 − 물가상승률.
+        <span class="ez">쉽게 — 명목 3%인데 물가가 4%면 실질은 −1%임. 빌려준 사람이 손해임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>KOFR · SOFR<span class="en">무위험지표금리</span></dt>
+      <dd>LIBOR를 대체한 지표금리임. 한국은 KOFR, 미국은 SOFR임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>예대마진 · NIM<span class="en">net interest margin</span></dt>
+      <dd>은행 수익성을 보는 지표. <b>"은행 이자장사"</b> 기사의 근거가 됨.</dd>
+    </dl>
+    <dl class="term">
+      <dt>BIS 자기자본비율<span class="en">BIS capital ratio</span></dt>
+      <dd>자본 ÷ 위험가중자산. 국제 기준 최소선이 정해져 있음. → 7주차</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>금리의 기본</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><b>금리(이자율)</b> — 돈을 빌린 대가로 지불하는 이자를 원금으로 나눈 백분율임.</li>
+    <li><b>금융시장</b> — 자금공급자와 자금수요자의 의사가 연결되어 금융거래가 이뤄지는 곳임.</li>
+  </ul>
+
+  <div class="duo">
+    <div class="a">
+      <h5>정책금리 (기준금리)</h5>
+      <span class="tag">중앙은행이 정함</span>
+      <ul>
+        <li>중앙은행이 금융기관과 거래하는 금리</li>
+        <li>한국은행 금통위가 <b>연 8회</b> 결정</li>
+        <li><b>딱 하나임</b></li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>시장금리</h5>
+      <span class="tag">시장이 정함</span>
+      <ul>
+        <li>다수 거래당사자가 참가하는 시장에서 <b>자금 수급으로</b> 결정</li>
+        <li>정책금리를 제외한 <b>모든 금리</b></li>
+        <li>국고채·회사채·예금·대출 금리 전부</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 구분이 오늘의 출발점임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>한국은행은 기준금리 하나만 정함.</strong> 나머지는 전부 시장이 정함.</li>
+      <li>그래서 <em>"기준금리를 내렸는데 왜 대출금리는 안 내리냐"</em>는 질문이 성립함.</li>
+      <li>이 질문의 답이 <a href="#s4">04절</a>에 있음.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>기사에 나오는 금리 여섯 개</h2>
+  <div class="h2rule"></div>
+  <p class="lede">금리 용어는 스무 개가 넘지만, <strong>기사에 실제로 나오는 것은 여섯 개</strong>임.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:6%">#</th><th style="width:22%">금리</th><th style="width:42%">무엇을 말하는가</th><th>어디서 보나</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>기준금리</b></td><td>한국은행 금통위가 <b>연 8회</b> 결정하는 정책금리</td><td>한국은행</td></tr>
+      <tr><td class="num">2</td><td><b>국고채 3년</b></td><td>대표적 <b>단기~중기 시장금리.</b> 정책금리 기대를 반영함</td><td>ECOS, 금융투자협회</td></tr>
+      <tr><td class="num">3</td><td><b>국고채 10년</b></td><td><b>장기 시장금리.</b> 기대 인플레이션과 성장 전망을 반영함</td><td>ECOS</td></tr>
+      <tr><td class="num">4</td><td><b>장단기금리차</b></td><td>10년 − 3년(또는 10년 − 2년). <b>축소·역전은 침체의 선행 신호</b></td><td>직접 계산</td></tr>
+      <tr><td class="num">5</td><td><b>신용스프레드</b></td><td>회사채 금리 − 국고채 금리. <b>신용 위험</b>의 크기</td><td>금융투자협회</td></tr>
+      <tr><td class="num">6</td><td><b>코픽스</b></td><td>은행연합회가 은행 자금조달 자료로 산출. <b>대출 기준금리</b></td><td>은행연합회 · 매월 15일경</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">함께 알아둘 것 — 실질금리</span>
+    <ul style="margin-bottom:0">
+      <li><code>실질금리 = 명목금리 − 물가상승률</code> → 6주차 물가와 연결됨.</li>
+      <li>명목금리 3%에 물가가 4%면 <strong>실질금리는 −1%</strong>임. <em>돈을 빌려준 사람이 손해를 봄.</em></li>
+      <li>기사가 "고금리 시대"라고 쓸 때 <b>명목인지 실질인지</b> 확인할 것. 물가가 더 높으면 실질로는 저금리임.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">코픽스가 세 종류라는 사실은 기사에 거의 안 나옴</span>
+    <div class="tw" style="margin:10px 0 0">
+    <table>
+      <thead><tr><th style="width:26%">종류</th><th style="width:40%">무엇을 담는가</th><th>움직임</th></tr></thead>
+      <tbody>
+        <tr><td><b>신규취급액 기준</b></td><td>이번 달 새로 조달한 돈의 비용</td><td><b>가장 민감하게 움직임</b></td></tr>
+        <tr><td><b>잔액 기준</b></td><td>보유 중인 조달자금 전체의 평균</td><td>천천히 움직임</td></tr>
+        <tr><td><b>신잔액 기준</b></td><td>결제성 자금까지 포함해 더 넓게 반영</td><td>가장 낮게 나옴</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="margin:10px 0 0"><strong>어느 코픽스에 연동된 대출인지에 따라 금리 인상 체감이 완전히 달라짐.</strong> <em>대출자에게 가장 직접적인 정보인데 기사에서 거의 다루지 않음.</em></p>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">고정금리와 변동금리</span>
+    <ul style="margin-bottom:0">
+      <li>변동금리는 <b>대개 3~6개월 단위로 갱신됨.</b></li>
+      <li>이 갱신 주기가 <strong>11주차 가계부채의 충격 전달 속도</strong>를 정함.</li>
+      <li>금리가 올라도 <em>변동금리 대출자에게 도달하기까지 시차가 있음.</em> 그래서 "금리 인상 효과가 아직 안 나타났다"는 서술이 가능함.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>내 대출금리는 어떻게 정해지나</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">기준금리에서 내 대출금리까지</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 250" role="img" aria-label="기준금리에서 개인 대출금리까지의 결정 경로 도식">
+          <!-- 흐름 -->
+          <rect x="20" y="24" width="130" height="52" rx="8" fill="#0d2244"/>
+          <text x="85" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">기준금리</text>
+          <text x="85" y="65" text-anchor="middle" font-size="11" fill="#a9c9ee">한국은행</text>
+
+          <rect x="180" y="24" width="130" height="52" rx="8" fill="#e8eef5" stroke="#1a4b8c" stroke-width="1.8"/>
+          <text x="245" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">시장금리</text>
+          <text x="245" y="65" text-anchor="middle" font-size="11" fill="#5a6779">국고채·CD 등</text>
+
+          <rect x="340" y="24" width="130" height="52" rx="8" fill="#e8eef5" stroke="#1a4b8c" stroke-width="1.8"/>
+          <text x="405" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">코픽스</text>
+          <text x="405" y="65" text-anchor="middle" font-size="11" fill="#5a6779">은행 조달비용</text>
+
+          <rect x="500" y="24" width="130" height="52" rx="8" fill="#fdf6ec" stroke="#b45309" stroke-width="1.8"/>
+          <text x="565" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">＋ 가산금리</text>
+          <text x="565" y="65" text-anchor="middle" font-size="11" fill="#5a6779">은행이 정함</text>
+
+          <rect x="660" y="24" width="82" height="52" rx="8" fill="#fdf1f2" stroke="#a4303f" stroke-width="2"/>
+          <text x="701" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#a4303f">내 금리</text>
+          <text x="701" y="65" text-anchor="middle" font-size="11" fill="#5a6779">− 우대금리</text>
+
+          <line x1="154" y1="50" x2="174" y2="50" stroke="#8492a6" stroke-width="2"/><polygon points="178,50 170,46 170,54" fill="#8492a6"/>
+          <line x1="314" y1="50" x2="334" y2="50" stroke="#8492a6" stroke-width="2"/><polygon points="338,50 330,46 330,54" fill="#8492a6"/>
+          <line x1="474" y1="50" x2="494" y2="50" stroke="#8492a6" stroke-width="2"/><polygon points="498,50 490,46 490,54" fill="#8492a6"/>
+          <line x1="634" y1="50" x2="652" y2="50" stroke="#8492a6" stroke-width="2"/><polygon points="656,50 648,46 648,54" fill="#8492a6"/>
+
+          <!-- 공식 -->
+          <rect x="20" y="102" width="722" height="52" rx="9" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="381" y="134" text-anchor="middle" font-size="17" font-weight="800" fill="#0d2244">대출금리 = 기준금리(코픽스 등) ＋ 가산금리 － 우대금리</text>
+
+          <!-- 설명 -->
+          <rect x="20" y="172" width="722" height="60" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="42" y="198" font-size="13.5" font-weight="800" fill="#b45309">가산금리는 은행이 정함 — 신용도·담보·업무원가·목표이익률이 들어감</text>
+          <text x="42" y="221" font-size="13.5" fill="#5a6779">그래서 <tspan font-weight="700" fill="#0d2244">정책금리가 내려도 은행이 가산금리를 올리면 대출금리는 그대로임.</tspan></text>
+        </svg>
+      </figure>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">이 식 하나로 기사를 쓸 수 있음</span>
+        <ul style="margin-bottom:0">
+          <li><strong>"기준금리는 내렸는데 대출금리는 왜 안 내리나"</strong>의 답이 <em>가산금리에 있음.</em></li>
+          <li><b>은행연합회가 은행별 가산금리를 공시함.</b> <strong>취재 가능한 숫자임.</strong></li>
+          <li>함께 볼 것 — <b>예대금리차 공시</b>도 매월 나옴. 은행별 비교가 가능함.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      <b>콜금리</b>(은행끼리 하루짜리로 빌리는 금리)가 기준금리 파급의 첫 출발점임. 여기서 시작해 단계마다 무언가가 더해짐.
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>금리와 경기의 순환</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">금리는 경기의 과열과 침체를 조절함</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0">
+        <svg viewBox="0 0 760 300" role="img" aria-label="경기와 금리의 순환 관계 도식">
+          <path d="M505,50 L640,50 L640,120" fill="none" stroke="#b45309" stroke-width="2.4"/>
+          <polygon points="640,127 635,117 645,117" fill="#b45309"/>
+          <path d="M640,186 L640,252 L487,252" fill="none" stroke="#b45309" stroke-width="2.4"/>
+          <polygon points="480,252 490,247 490,257" fill="#b45309"/>
+          <path d="M275,252 L120,252 L120,186" fill="none" stroke="#1a4b8c" stroke-width="2.4"/>
+          <polygon points="120,179 115,189 125,189" fill="#1a4b8c"/>
+          <path d="M120,120 L120,50 L253,50" fill="none" stroke="#1a4b8c" stroke-width="2.4"/>
+          <polygon points="260,50 250,45 250,55" fill="#1a4b8c"/>
+
+          <rect x="260" y="24" width="245" height="52" rx="9" fill="#eefaf7" stroke="#a5d9d1" stroke-width="2"/>
+          <text x="382" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#0f766e">경기 호황</text>
+          <text x="382" y="65" text-anchor="middle" font-size="11.5" fill="#5a6779">소비·투자 증가 → 돈 수요 증가</text>
+
+          <rect x="555" y="127" width="170" height="58" rx="9" fill="#fdf6ec" stroke="#b45309" stroke-width="2"/>
+          <text x="640" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#b45309">금리 상승</text>
+          <text x="640" y="170" text-anchor="middle" font-size="11.5" fill="#5a6779">이자 부담 · 대출 감소</text>
+
+          <rect x="275" y="226" width="212" height="52" rx="9" fill="#fdf1f2" stroke="#e8b9be" stroke-width="2"/>
+          <text x="381" y="249" text-anchor="middle" font-size="14" font-weight="800" fill="#a4303f">경기 불황</text>
+          <text x="381" y="267" text-anchor="middle" font-size="11.5" fill="#5a6779">소비·투자 감소 → 돈 수요 감소</text>
+
+          <rect x="35" y="127" width="170" height="58" rx="9" fill="#e8eef5" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="120" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1a4b8c">금리 하락</text>
+          <text x="120" y="170" text-anchor="middle" font-size="11.5" fill="#5a6779">소비·투자 증가 · 자산가격 상승</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      이 순환이 4주차에서 배운 <b>화폐적 충격</b>임. 그리고 <b>7주차에서 본 모든 위기의 뼈대</b>이기도 함 — <em>저금리 → 자산버블 → 금리 인상 → 붕괴.</em>
+    </div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">금리는 누가 정하는가 — 두 이론</span>
+    <ul style="margin-bottom:0">
+      <li><b>대부자금설</b> — 저축(공급)과 투자(수요)가 만나는 점에서 균형이자율이 결정됨.</li>
+      <li><b>유동성선호설</b> — 통화 공급은 이자율에 영향받지 않고, <b>투기적 화폐수요가 이자율에 반응</b>함. → 9주차</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>채권이란 무엇인가</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">정부나 기업이 자금조달을 위해 발행한 <strong>차용증서</strong>로, 유통시장에서 자유롭게 매매되는 금융상품임. <em>쉽게 — 빚문서인데 사고팔 수 있음. 이것이 채권의 전부임.</em></p>
+
+  <ul>
+    <li><b>구성요소</b> — 액면가, 상환일(만기), <b>표면금리</b></li>
+    <li><b>발행주체별</b> — <b>국채</b>(국고채, 재정증권, 외국환평형기금채권, 국민주택채권) / 지방채 / 특수채(공공기관) / 금융채 / <b>회사채</b></li>
+    <li><b>만기별</b> — 단기채(1년 이하) / 중기채(1~5년) / 장기채(5년 이상)</li>
+    <li><b>이자지급 방식별</b> — 이표채 / 할인채 / 복리채 / 영구채</li>
+    <li><b>두 가지 수익</b> — <b>이자수익</b>(보유 중 정기 지급)과 <b>자본이익 또는 손실</b>(매입가와 매도가·상환액의 차이)</li>
+  </ul>
+
+  <h3>신용등급</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">구분</th><th style="width:34%">등급</th><th>의미</th></tr></thead>
+    <tbody>
+      <tr><td><b>투자등급</b></td><td>AAA · AA · A · <b>BBB</b></td><td>기관투자자가 담을 수 있는 범위</td></tr>
+      <tr><td><b>투기등급</b></td><td><b>BB</b> · B · CCC · CC · C · D</td><td>고위험. 많은 기관이 담을 수 없음</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">BBB와 BB 사이가 절벽임</span>
+    <ul style="margin-bottom:0">
+      <li>많은 기관투자자가 <strong>투자등급까지만</strong> 살 수 있게 규정돼 있음.</li>
+      <li>그래서 <strong>BBB에서 BB로의 강등은 강제 매도를 부름.</strong> 이런 채권을 <b>fallen angel</b>이라 부름.</li>
+      <li>한 단계 강등인데 <em>가격은 계단식으로 떨어짐.</em> 등급 기사를 쓸 때 <b>어느 경계를 넘었는지</b>가 핵심임.</li>
+      <li>평가기관 — 한국신용평가·한국기업평가·나이스신용평가 / S&amp;P·Moody's·Fitch</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>채권가격과 금리는 반비례 — 최대 난관</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">용어</th><th>뜻</th></tr></thead>
+    <tbody>
+      <tr><td><b>표면금리 (발행금리)</b></td><td>채권 발행 시 증서에 약속한 금리. <b>바뀌지 않음</b></td></tr>
+      <tr><td><b>만기수익률 (시장금리)</b></td><td>유통 중인 채권을 사서 만기까지 보유할 때의 수익률. <b>뉴스의 "채권금리"는 이것임</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">왜 반비례인가 — 숫자로 따라가기</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 300" role="img" aria-label="시장금리 상승이 기존 채권 가격을 떨어뜨리는 과정 도식">
+          <!-- 내 채권 -->
+          <text x="30" y="28" font-size="14" font-weight="800" fill="#0d2244">내가 가진 채권</text>
+          <rect x="30" y="42" width="300" height="76" rx="9" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="50" y="68" font-size="13.5" fill="#5a6779">액면 <tspan font-weight="700" fill="#0d2244">10,000원</tspan> · 표면금리 <tspan font-weight="700" fill="#0d2244">3%</tspan></text>
+          <text x="50" y="94" font-size="13.5" fill="#5a6779">매년 받는 이자 <tspan font-weight="800" fill="#1a4b8c">300원</tspan> — 이 금액은 고정임</text>
+
+          <!-- 새 채권 -->
+          <text x="430" y="28" font-size="14" font-weight="800" fill="#b45309">새로 발행되는 채권</text>
+          <rect x="430" y="42" width="300" height="76" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="450" y="68" font-size="13.5" fill="#5a6779">액면 <tspan font-weight="700" fill="#0d2244">10,000원</tspan> · 표면금리 <tspan font-weight="700" fill="#b45309">5%</tspan></text>
+          <text x="450" y="94" font-size="13.5" fill="#5a6779">매년 받는 이자 <tspan font-weight="800" fill="#b45309">500원</tspan></text>
+
+          <!-- 결론 -->
+          <rect x="30" y="140" width="700" height="140" rx="9" fill="#fdf1f2" stroke="#e8b9be"/>
+          <text x="52" y="168" font-size="14" font-weight="800" fill="#a4303f">내 3%짜리 채권을 아무도 10,000원에 사지 않음</text>
+          <text x="52" y="196" font-size="13.5" fill="#5a6779">값을 깎아야 팔림. <tspan font-weight="700" fill="#0d2244">6,000원까지 깎이면</tspan> 300원 ÷ 6,000원 = <tspan font-weight="800" fill="#a4303f">5%</tspan></text>
+          <text x="52" y="220" font-size="13.5" fill="#5a6779">그래야 새 채권과 조건이 같아짐.</text>
+          <text x="52" y="252" font-size="14" font-weight="800" fill="#0d2244">→ 금리가 오르면 기존 채권 가격이 떨어짐</text>
+          <text x="52" y="272" font-size="14" font-weight="800" fill="#0d2244">→ "가격이 떨어졌다" = "수익률이 올랐다" — 같은 사건의 두 이름임</text>
+        </svg>
+      </figure>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">보조 설명</span>
+        <ul style="margin-bottom:0">
+          <li>은행 예금금리가 오르면 상대적으로 <b>채권의 매력도가 떨어짐.</b></li>
+          <li>경기 기대감이 커지면 안전자산(채권)에서 위험자산(주식)으로 관심이 이동함. <em>불안하면 반대임.</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      6,000원은 <b>계산을 단순화한 값</b>임. 실제로는 남은 만기와 이표 지급 구조에 따라 정확한 가격이 달라짐. 원리는 같음.
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">기사 오독 최다 지점</span>
+    <ul style="margin-bottom:0">
+      <li><strong>"채권금리 급등"과 "채권값 폭락"은 같은 말임.</strong> 기사에서 둘을 <em>반대 현상처럼</em> 쓰면 명백한 오류임.</li>
+      <li><strong>"금리가 올라 채권 투자자가 이익"</strong>이라는 서술도 틀림. <em>새로 사는 사람에게만 유리함.</em> 이미 갖고 있던 사람은 평가손실을 봄.</li>
+      <li>확인법 — 기사 안에서 <b>금리와 가격의 방향이 모순되지 않는지</b> 두 문장을 나란히 놓고 봄.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>장단기금리차와 신용스프레드</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">구분</th><th style="width:39%">단기금리</th><th>장기금리</th></tr></thead>
+    <tbody>
+      <tr><td><b>만기</b></td><td>1년 이내</td><td>1년 이상</td></tr>
+      <tr><td><b>대표</b></td><td>콜금리, RP, CD·CP 유통수익률</td><td><b>국고채 10년</b></td></tr>
+      <tr><td><b>결정 요인</b></td><td><b>중앙은행 통화정책에 직접 영향받음</b></td><td>시장의 <b>기대 인플레이션</b>과 성장 전망</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">경기를 예보하는 지표</div>
+      <div class="t">장단기금리차 역전은 무엇을 뜻하는가</div>
+    </div>
+    <div class="case-b">
+      <p><code>장단기금리 스프레드 = 장기금리 − 단기금리</code></p>
+      <ol class="steps">
+        <li><b>먼저 차이가 좁아짐</b>
+          경기 과열로 중앙은행이 기준금리를 올림 → <b>단기금리 상승</b>. 그런데 시장은 경기 둔화를 예상함 → <b>장기금리는 오히려 눌림</b> → 차이가 축소됨.</li>
+        <li><b>그러다 뒤집힘</b>
+          경기 침체가 예상되면 투자가 줄고 장기 자금 수요가 하락함 → <b>장기금리가 단기 아래로</b> 내려감 → <b>역전</b>.</li>
+      </ol>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">역전이 뜻하는 것</span>
+        <ul style="margin-bottom:0">
+          <li>시장이 <strong>"지금보다 나중에 금리가 더 낮을 것"</strong>이라고 베팅하고 있다는 뜻임.</li>
+          <li>그것은 곧 <strong>"경기가 나빠질 것"</strong>이라는 예측임.</li>
+          <li>미국에서는 <b>10년−2년 스프레드</b> 역전이 역사적으로 침체를 앞서 왔음. <a href="https://fred.stlouisfed.org/series/T10Y2Y" target="_blank" rel="noopener">FRED T10Y2Y</a>에서 <b>NBER 침체 음영과 함께</b> 바로 확인할 수 있음.</li>
+          <li>→ 4주차 경기선행지수와 함께 볼 것.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>신용스프레드</h3>
+  <p><code>신용스프레드 = 회사채 금리 − 국고채 금리</code></p>
+  <ul>
+    <li>신용 위험에 따른 금리 차이임. <b>국고채 3년이 통상 기준</b>임.</li>
+    <li><strong>확대되면</strong> 시장이 <b>기업 부도 위험을 크게 보고 있다</b>는 뜻임 → 7주차 위기의 조기 신호임.</li>
+  </ul>
+
+  <div class="box easy">
+    <span class="bt">등급별로 나눠 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>AA− 스프레드</b> — 우량 회사채.</li>
+      <li><b>BBB− 스프레드</b> — 저신용 회사채. <strong>위험회피 심리에 훨씬 민감함.</strong></li>
+      <li>둘의 격차가 벌어지면 <em>회사채 시장의 양극화가 진행 중</em>이라는 뜻임.</li>
+      <li>함께 볼 것 — <b>미매각 물량</b>. 발행하려 했는데 안 팔린 규모임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>금융기관을 평가하는 세 지표</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">지표</th><th style="width:36%">계산</th><th>무엇을 말하는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>예대마진</b></td><td>대출금리 − 예금금리</td><td>은행 수익의 기본</td></tr>
+      <tr><td><b>순이자마진(NIM)</b></td><td>(운용수익 − 조달비용) ÷ 운용자산 총액</td><td>수익성</td></tr>
+      <tr><td><b>BIS 자기자본비율</b></td><td>자본 ÷ 위험가중자산</td><td>건전성. <b>국제 기준 최소선이 있음</b> → 7주차 1997년 위기의 핵심 변수</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">"은행 이자장사" 기사를 쓸 때</span>
+    <ul style="margin-bottom:0">
+      <li>근거는 <b>예대마진과 NIM</b>임. <em>분기 실적 발표 때 반드시 나옴.</em></li>
+      <li>다만 <strong>분모(운용자산)가 커지면 NIM은 떨어질 수 있음.</strong> <em>이익 규모와 마진율은 다른 이야기임.</em></li>
+      <li>공정한 기사가 되려면 <b>이익 총액과 마진율을 함께</b> 봐야 함.</li>
+      <li>2주차에서 배운 <em>"수준과 변화율을 함께 봄"</em>이 여기서도 적용됨.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">금융시장의 분류 — 간단히</span>
+    <ul style="margin-bottom:0">
+      <li><b>직접 금융시장</b> — 자금 수요자가 직접 주식·채권을 발행함. → 12~13주차</li>
+      <li><b>간접 금융시장</b> — 은행 등이 예금을 받아 대출함.</li>
+      <li><b>단기 금융시장(자금시장)</b> — 만기 1년 미만. 콜, CD, CP, RP.</li>
+      <li><b>장기 금융시장(자본시장)</b> — 만기 1년 이상. 정기예금·대출, 주식, 채권.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <h3>국내</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:24%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td>금통위 통화정책방향 의결문</td><td>한국은행 · 연 8회</td><td>기준금리 결정 → 9주차</td></tr>
+      <tr><td><b>「금융기관 가중평균금리」</b></td><td>한국은행 · 매월 말경</td><td><b>예금·대출 금리, 예대금리차</b></td></tr>
+      <tr><td>「금융시장 동향」</td><td>한국은행 · 매월</td><td>은행 여수신, 채권·주식시장, 회사채 발행</td></tr>
+      <tr><td><b>코픽스(COFIX)</b></td><td>전국은행연합회 · <b>매월 15일경</b></td><td>대출 기준금리 3종</td></tr>
+      <tr><td><b>예대금리차 공시</b></td><td>전국은행연합회 · 매월</td><td>은행별 비교 가능</td></tr>
+      <tr><td>채권 시가평가 수익률</td><td>금융투자협회 · 매일</td><td>국고채·회사채 금리</td></tr>
+      <tr><td>국고채 발행계획</td><td>기획예산처 · 월·연간</td><td><b>국채 물량이 금리에 영향을 줌</b> → 14주차</td></tr>
+      <tr><td>「금융안정보고서」</td><td>한국은행 · 연 2회(6·12월)</td><td>금리 위험, 가계·기업 부채</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>해외</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:24%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td>FOMC 성명·점도표</td><td>미국 Fed · 연 8회 / 분기</td><td>금리 경로 전망</td></tr>
+      <tr><td>미국 국채 수익률 (2년·10년·30년)</td><td>미 재무부 · 매일</td><td>글로벌 금리의 기준</td></tr>
+      <tr><td><b>10년−2년 스프레드</b></td><td><a href="https://fred.stlouisfed.org/series/T10Y2Y" target="_blank" rel="noopener">FRED T10Y2Y</a> · 매일</td><td><b>침체 선행 신호.</b> NBER 음영과 함께 표시됨</td></tr>
+      <tr><td>하이일드 스프레드</td><td>FRED · 매일</td><td>저신용 회사채 위험</td></tr>
+      <tr><td>국가신용등급</td><td>S&amp;P · Moody's · Fitch · 수시</td><td>대외 조달금리에 영향</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">직접 확인해 볼 것 세 가지</span>
+    <ol style="margin-bottom:0">
+      <li><b>「금융기관 가중평균금리」</b>에서 예금금리와 대출금리를 찾아 <b>예대금리차 추이</b>를 그림. 기준금리 변동 시점 대비 <em>어느 쪽이 더 빨리 움직였는지</em> 확인함. <strong>인상기와 인하기에 속도가 다름 — 좋은 기사거리임.</strong></li>
+      <li><b>FRED T10Y2Y</b>를 그림. 지금 역전 상태인가. <em>과거 역전 시점과 실제 침체 시점의 시차</em>는 얼마였는가.</li>
+      <li><b>코픽스 세 종류</b>를 나란히 봄. 세 값이 얼마나 다른가. <em>어느 것에 연동됐는지에 따라 대출자 체감이 달라짐.</em></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>기준금리와 대출금리는 다름</b>
+      <code>코픽스 + 가산금리 − 우대금리</code>임. <em>가산금리는 은행이 정함.</em></li>
+    <li><b>채권가격과 금리는 반비례</b>
+      <em>"채권금리 급등"과 "채권값 폭락"은 같은 말임.</em></li>
+    <li><b>장단기금리차</b>
+      역전은 <em>시장이 경기 악화에 베팅하고 있다</em>는 뜻임. 침체의 선행 신호임.</li>
+    <li><b>신용스프레드</b>
+      확대되면 부도 위험 경계임. <em>BBB−가 AA−보다 훨씬 민감함.</em></li>
+    <li><b>실질금리</b>
+      명목금리에서 물가를 빼야 진짜 이야기가 나옴.</li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "기준금리 내렸는데 대출금리는 그대로"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 기준금리와 대출금리는 다른데 <strong>구조를 설명하지 않았음.</strong></li>
+      <li><b>확인할 것</b> — <b>코픽스 추이</b>(세 종류 중 어느 것인지), <b>은행별 가산금리 공시</b>.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "채권금리 급등, 채권값도 상승"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>방향 착오임.</strong> 둘은 반비례임.</li>
+      <li><b>확인할 것</b> — 금리 상승 = 가격 하락. 기사 안에서 두 문장이 모순되지 않는지 봄.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "장단기금리차 역전, 침체 임박"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 역전과 침체 사이의 <strong>시차</strong>를 무시했음. 과거 사례에서 수개월에서 2년까지 벌어졌음.</li>
+      <li><b>확인할 것</b> — 과거 역전-침체 시차의 분포. 그리고 <em>역전이 풀린 뒤에 침체가 온 사례</em>도 있음.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">금리 기사 추가 점검 세 가지</span>
+    <ul style="margin-bottom:0">
+      <li><b>명목금리인가 실질금리인가</b> — 물가를 뺐는가.</li>
+      <li><b>국고채 3년인가 10년인가</b> — 둘은 <em>다른 이야기를 함.</em></li>
+      <li>예대마진·NIM 기사에서 <b>분모(운용자산)의 변화</b>를 봤는가.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>같은 금리 인상이 대출자에게는 부담, 예금자에게는 수익임.</b><br>그런데 기사는 거의 항상 대출자 시각으로 쓰임. 왜인가.</li>
+    <li><b>금리 전망 기사는 증권사 리서치에 크게 의존함.</b><br>채권 운용을 하는 기관의 이코노미스트는 금리 하락에 이해관계가 있음. 기자는 이를 어떻게 다뤄야 하는가.</li>
+    <li><b>코픽스 발표와 가중평균금리 발표는 거의 기사화되지 않음.</b><br>정작 대출자에게 가장 직접적인 숫자인데 왜 그런가.</li>
+    <li><b>"은행 이자장사" 기사를 쓸 때 필요한 근거는 무엇인가?</b><br>예대마진·NIM 외에 무엇을 더 봐야 공정한가.</li>
+    <li><b>장단기금리차가 역전됐음. 기사 제목을 어떻게 뽑겠는가?</b><br>"침체 임박"은 과장인가, 정당한 경고인가. → 1주차 미디어 맬라디</li>
+    <li><b>금리 인상기와 인하기에 예금금리와 대출금리의 반응 속도가 다르다면 그것은 기사거리인가?</b><br>어떤 데이터로 보여줄 수 있는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>무위험지표금리 전환</b>이 마무리 단계임. 한국 <b>KOFR</b>, 미국 <b>SOFR</b>가 LIBOR를 대체했음. <em>과거 계약·통계와의 단절에 주의할 것.</em></li>
+      <li><b>국채 발행 물량과 금리</b>의 관계가 재정 논쟁과 맞물려 자주 다뤄짐. → 14주차</li>
+      <li><b>장단기금리차의 예측력</b>을 둘러싼 논쟁이 계속됨. 양적완화 이후 장기금리가 정책적으로 눌려 있어 신호가 왜곡됐다는 지적이 있음. <em>"이번엔 다르다"는 주장 자체를 검증하는 것이 좋은 훈련임.</em></li>
+      <li><b>예대금리차 공시 제도</b>가 정착되면서 은행별 비교 기사가 가능해졌음. <em>작년 기사와 비교해 보면 구조가 보임.</em></li>
+      <li><b>회사채 시장 양극화</b>(우량 vs 비우량)가 지속 논점임. BBB− 스프레드와 미매각 물량을 함께 보면 그림이 나옴.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 12 ───────── -->
+<section id="s12">
+  <h2><span class="num">12</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>김의경 (2021). 『나는 금리로 경제를 읽는다』.</b> 위너스북 — <b>이 주차 핵심 교재</b></li>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』</b> — 금리 편. <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a></li>
+      <li><b>경제지표 사전</b> 9절·12절. <a href="../data.html">경제 데이터 분석실</a>에서 열람</li>
+    </ul>
+
+    <h4>데이터</h4>
+    <ul>
+      <li><a href="https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&amp;menuNo=200643" target="_blank" rel="noopener">한국은행 기준금리 추이</a> · <a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — 시장금리 시계열</li>
+      <li>전국은행연합회 소비자포털 — <b>코픽스, 예대금리차 공시, 은행별 가산금리</b></li>
+      <li><a href="https://freesis.kofia.or.kr/" target="_blank" rel="noopener">금융투자협회 종합통계</a> — 채권 금리</li>
+      <li><a href="https://finlife.fss.or.kr" target="_blank" rel="noopener">금융감독원 금융상품 한눈에</a> — 예·적금·대출 금리 비교</li>
+      <li><a href="https://fred.stlouisfed.org/series/T10Y2Y" target="_blank" rel="noopener">FRED T10Y2Y</a> — 미국 10년−2년 스프레드 · <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 10주차 강의자료</b><br>
+  주 출처: 김의경(2021) 『나는 금리로 경제를 읽는다』 · 경제지표 사전 9·12절</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="09_통화.html">9주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4주차 · 경기순환과 경제심리 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 4주차 강의자료 — 경기순환과 기준순환일, 순환변동치, 재고·출하 순환, 경기종합지수, BSI·CCSI·ESI, 그리고 뉴스로 만든 경기지표 NSI.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">4주차 · 경기순환과 경제심리</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">4주차<br>경기순환과 경제심리</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 경기를 측정하는 법</div>
+    <a href="#s2"><span class="n">02</span><span>경기와 경기순환</span></a>
+    <a href="#s3"><span class="n">03</span><span>산업활동동향</span></a>
+    <a href="#s4"><span class="n">04</span><span>재고·출하 순환</span></a>
+
+    <div class="sb-label">2회차 · 종합지수와 심리</div>
+    <a href="#s5"><span class="n">05</span><span>경기종합지수와 순환변동치</span></a>
+    <a href="#s6"><span class="n">06</span><span>심리지표 — BSI·CCSI·ESI</span></a>
+    <a href="#s7"><span class="n">07</span><span>뉴스심리지수 NSI</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s8"><span class="n">08</span><span>보도자료와 통계</span></a>
+    <a href="#s9"><span class="n">09</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s10"><span class="n">10</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 2. 거시 지표 — 생산·경기·고용·물가 · 4주차</div>
+    <h1>경제심리는 경제의<br>결과이면서 원인임</h1>
+    <div class="sub">경기순환과 경제심리</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede"><strong>"경기가 좋다/나쁘다"는 말의 근거를 대는 법</strong>을 배움. 그리고 <strong>BSI·CSI·ESI, 그리고 뉴스심리지수(NSI)</strong>는 1주차의 카토나 가설·미디어 맬라디가 <em>실제 지표로 구현된 것</em>임.</p>
+
+  <div class="pull">
+    <div class="q">"경제심리는 경제의 결과이면서 원인임.<br>그리고 그 심리의 상당 부분을 뉴스가 만듦."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이 강의에서 가장 미디어학과다운 주차임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>심리가 지표가 되고, 지표가 다시 심리를 만듦.</strong></li>
+      <li>1주차에서 이론으로 배운 <a href="01_경제뉴스의성격과역할.html">미디어 맬라디</a>와 <b>카토나 가설</b>이, 여기서는 <em>중앙은행이 공식적으로 만들어 쓰는 지표</em>로 나타남.</li>
+      <li>특히 <a href="#s7">07. 뉴스심리지수</a>는 <strong>경제뉴스 문장 자체가 원자료</strong>인 지표임. 여러분이 앞으로 쓸 문장이 지표의 재료가 됨.</li>
+    </ul>
+  </div>
+
+  <h3>여는 질문 — "경기가 안 좋다"는 누가 하는 말인가</h3>
+
+  <div class="tri c1">
+    <div>
+      <h5>기업</h5>
+      <span class="tag">매출과 채산성으로 체감</span>
+      <ul><li>매출이 줄고 채산성이 나빠졌음</li><li>측정 지표 — <b>BSI</b></li></ul>
+    </div>
+    <div>
+      <h5>가계</h5>
+      <span class="tag">임금과 자산가격으로 체감</span>
+      <ul><li>임금이 안 오르고 자산가격이 떨어졌음</li><li>측정 지표 — <b>CCSI</b></li></ul>
+    </div>
+    <div>
+      <h5>정부 · 한국은행</h5>
+      <span class="tag">통계로 판단</span>
+      <ul><li>실질 GDP가 장기 추세선 아래로 내려갔음</li><li>측정 지표 — <b>경기종합지수 순환변동치</b></li></ul>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">"체감경기"는 기자의 인상이 아니라 측정된 값임</span>
+    <ul style="margin-bottom:0">
+      <li>셋이 <strong>동시에 다른 답</strong>을 낼 수 있음. 기자는 <em>누구의 '경기'를 쓰는가?</em></li>
+      <li>체감경기에는 <b>BSI · CCSI</b>라는 공식 측정값이 있음.</li>
+      <li><strong>측정값을 대지 않고 "체감경기가 나쁘다"고 쓰면 그것은 기자의 인상임.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>경기순환<span class="en">business cycle</span></dt>
+      <dd>실질 GDP·소비·투자·고용 같은 거시변수가 <b>장기 추세선을 중심으로</b> 오르내리기를 반복하는 현상.</dd>
+    </dl>
+    <dl class="term">
+      <dt>선행 · 동행 · 후행<span class="en">leading / coincident / lagging</span></dt>
+      <dd><b>선행</b>은 경기보다 먼저(주문·재고순환·심리), <b>동행</b>은 같이(생산·소매판매), <b>후행</b>은 늦게(<b>고용</b>·금리) 움직임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>기준순환일<span class="en">reference dates</span></dt>
+      <dd>경기 정점과 저점의 공식 날짜. <em>사후에 판정됨.</em>
+        <span class="ez">주의 — 지금이 확장기인지 수축기인지는 몇 년 뒤에 확정됨.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>순환변동치<span class="en">cyclical component</span></dt>
+      <dd>지수에서 <b>장기 추세를 걷어내고</b> 경기 변동만 남긴 값. <b>기준선 100</b>.
+        <span class="ez">쉽게 — 지수는 계단을 오르며 흔들리는 값, 순환변동치는 계단을 없애고 흔들림만 본 값임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>확산지수<span class="en">diffusion index</span></dt>
+      <dd>오른 항목이 얼마나 <b>널리 퍼져 있는지</b>를 측정하는 지수. BSI·CSI는 100, PMI는 50이 기준선임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>BSI<span class="en">Business Survey Index</span></dt>
+      <dd>기업이 <b>체감하는</b> 경기. 한국은행이 매월 조사함. 기업경기실사지수.</dd>
+    </dl>
+    <dl class="term">
+      <dt>CSI · CCSI<span class="en">Consumer Survey / Composite Sentiment Index</span></dt>
+      <dd>가계가 체감하는 경기. <b>CCSI(소비자심리지수)</b>는 6개 항목을 표준화 합성한 값임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>CBSI<span class="en">Composite Business Sentiment Index</span></dt>
+      <dd>기업심리지수. BSI 주요 지수를 합성한 값으로, <b>장기평균이 100</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>ESI<span class="en">Economic Sentiment Index</span></dt>
+      <dd>경제심리지수. BSI와 CSI를 합성한 <b>민간 전체</b>의 심리임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>NSI<span class="en">News Sentiment Index</span></dt>
+      <dd>뉴스심리지수. <b>경제뉴스 문장의 긍정·부정 어조</b>를 기계학습으로 분석해 만든 지수.
+        <span class="ez">쉽게 — 신문 기사로 만든 경기지표임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>EPU<span class="en">Economic Policy Uncertainty</span></dt>
+      <dd>경제정책 불확실성지수. 신문기사에서 '경제·정책·불확실성' 표현의 동시 출현 빈도로 만듦.</dd>
+    </dl>
+    <dl class="term">
+      <dt>야성적 충동<span class="en">animal spirits</span></dt>
+      <dd>케인스의 개념. 계산이 아니라 <b>낙관·비관의 기분</b>이 투자를 움직인다는 것임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>경기와 경기순환</h2>
+  <div class="h2rule"></div>
+
+  <h3>경기란 무엇인가</h3>
+  <ul>
+    <li>일상적으로는 '경제적 형편'임. 정의로는 국민경제의 <strong>총체적인 활동수준</strong>임.</li>
+    <li><b>실물부문</b> — 생산·소비·투자·고용</li>
+    <li><b>금융부문</b> — 통화 수급·금리</li>
+    <li><b>대외부문</b> — 수출입</li>
+    <li>이 셋을 종합한 거시적 흐름임. <em>어느 하나만 보고 판정할 수 없음.</em></li>
+  </ul>
+
+  <h3>한국의 경기순환주기</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">구분</th><th style="width:26%">평균 순환주기</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td><b>한국</b></td><td class="num">약 53개월</td><td>제1~11순환 평균. <b>확장 33개월 · 수축 20개월</b> <span class="cite">국가데이터처 기준순환일</span></td></tr>
+      <tr><td>미국</td><td class="num">약 75개월</td><td>전후(1945년 이후) 평균. 확장 64.2개월 · 수축 10.3개월 <span class="cite">NBER</span></td></tr>
+      <tr><td>일본</td><td class="num">약 60개월</td><td>15개 완전순환 평균 <span class="cite">내각부 ESRI</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">한국은 순환주기가 짧음 — 대외 의존도가 높기 때문임</span>
+    <ul style="margin-bottom:0">
+      <li>그래서 한국 경기 기사에는 <strong>"수출이 어떻다"</strong>가 늘 따라붙음. → 15주차 무역</li>
+      <li>확장기가 수축기보다 김. 11번의 순환 중 <b>10번</b>에서 확장이 수축보다 길었음.</li>
+      <li>현재는 <b>제12순환기</b>임. 저점(2020년 5월)은 잠정 설정됐고 <em>정점은 아직 설정되지 않았음.</em></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">기준순환일은 사후에 판정됨</span>
+    <ul style="margin-bottom:0">
+      <li><strong>지금이 확장기인지 수축기인지는 몇 년 뒤에 확정됨.</strong></li>
+      <li>그래서 <em>"지금이 침체인가"를 둘러싼 논쟁이 반복됨.</em> 판정 기관이 아직 말하지 않았기 때문임.</li>
+      <li>기사가 <b>"경기 수축 국면 진입"</b>이라고 단정하면 <em>그것은 기자나 특정 기관의 판단이지 공식 판정이 아님.</em></li>
+      <li>미국은 <b>NBER</b>이, 한국은 <b>국가데이터처</b>가 기준순환일을 설정함.</li>
+    </ul>
+  </div>
+
+  <h3>경기변동을 일으키는 것들</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">충격</th><th style="width:40%">무엇인가</th><th>다시 다루는 주차</th></tr></thead>
+    <tbody>
+      <tr><td><b>총수요 충격</b></td><td>가계 소비 확대, <b>야성적 충동</b>에 의한 기업 투자 증대</td><td>11주차 가계</td></tr>
+      <tr><td><b>총공급 충격</b></td><td>원자재 가격 급등, 임금 인상, 기술·생산성 혁신</td><td>6주차 물가</td></tr>
+      <tr><td><b>화폐적 충격</b></td><td>금리 인상·인하로 인한 통화량 변동</td><td>9~10주차 통화·금리</td></tr>
+      <tr><td><b>기대 심리</b></td><td>불완전한 정보에 의한 물가·자산가격·금리 기대</td><td>이번 주차 06~07절</td></tr>
+      <tr><td><b>해외부문 충격</b></td><td>수출·수입 변화</td><td>15주차 무역</td></tr>
+      <tr><td><b>정치적 변수</b></td><td>선거, 정책 전환</td><td>1주차 밴드웨건 효과</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">슘페터의 경기순환론 — 기술혁신이 순환을 만듦</span>
+    <ul style="margin-bottom:0">
+      <li>새 기술이 대규모 투자를 부름 → 설비투자가 성장을 끎 → 기존 산업이 밀려남 → 조정이 옴. <b>창조적 파괴</b>임.</li>
+      <li>최근의 AI·반도체 투자 붐을 이 틀로 읽을 수 있음.</li>
+      <li>생각해 볼 것 — <em>지금은 창조 국면인가, 파괴 국면인가?</em> 어느 지표를 보면 알 수 있는가.</li>
+      <li>함께 볼 지표 — 설비투자, 확산지수, <b>고용</b>. 투자가 고용으로 이어지는지가 갈림길임. → 5주차</li>
+    </ul>
+  </div>
+
+  <h3>경기순환시계 — 지금 우리는 어디에 있는가</h3>
+  <ul>
+    <li><a href="https://kosis.kr/visual/bcc/index/index.do?language=kor" target="_blank" rel="noopener"><strong>KOSIS 경기순환시계</strong></a>에서 주요 지표들의 국면상 위치를 시계처럼 표시함.</li>
+    <li>네 사분면 — <b>상승 / 둔화 / 하강 / 회복</b></li>
+    <li>확인할 것 — 지표들이 <b>한 사분면에 모여 있는가, 흩어져 있는가.</b></li>
+    <li>모여 있으면 국면 판단이 쉬움. <strong>흩어져 있으면 "경기가 좋다/나쁘다"를 단정할 수 없음.</strong></li>
+  </ul>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>산업활동동향 — 한 달 중 정보량이 가장 많은 발표</h2>
+  <div class="h2rule"></div>
+  <p class="lede">국가데이터처가 <strong>매월 말경</strong> 공표함. 생산·소비·투자와 <strong>경기종합지수</strong>가 한 자료에 다 들어 있음.</p>
+
+  <h3>생산동향</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">지표</th><th>무엇인가</th></tr></thead>
+    <tbody>
+      <tr><td><b>전산업생산지수</b></td><td><b>2020년 = 100</b> 기준. 광공업·서비스업·건설업·공공행정 등을 종합함. 각 산업의 <b>부가가치를 가중치</b>로 씀. 농림어업은 연간 지수만 공표됨</td></tr>
+      <tr><td>광공업생산·출하지수</td><td>광공업 부문의 생산량과 출하량</td></tr>
+      <tr><td>제조업재고지수</td><td>제품 재고량. 수요·공급 균형을 평가함</td></tr>
+      <tr><td>제조업 생산능력·가동률지수</td><td>설비를 얼마나 활용하고 있는가</td></tr>
+      <tr><td>서비스업생산지수</td><td>비제조업 부문. <b>여행·공연·외식이 여기 잡힘</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>소비동향</h3>
+  <div class="box warn">
+    <span class="bt">소매판매액지수 — 반쪽만 보는 지표임</span>
+    <ul style="margin-bottom:0">
+      <li>약 <b>2,700개 표본 사업체</b>의 판매 총액을 지수화함.</li>
+      <li><strong>소매판매는 재화 중심임.</strong> 여행·공연·외식 같은 <b>서비스 소비는 서비스업생산지수</b> 쪽에 있음.</li>
+      <li>따라서 <em>"소비가 줄었다" 기사가 소매판매만 보고 쓰였다면 반쪽짜리임.</em></li>
+      <li>확인할 것 — <b>서비스업생산지수를 함께 봤는가.</b></li>
+    </ul>
+  </div>
+
+  <h3>투자동향</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>지금 벌어지는 일</h5>
+      <span class="tag">현재 지표</span>
+      <ul>
+        <li><b>설비투자지수</b> — 설비 관련 국산내수출하 + 수입 − 중간수요 − 소비</li>
+        <li><b>건설기성액</b> — 완료된 건설공사 금액. 건설업의 <b>현재</b> 경기</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>앞으로 벌어질 일</h5>
+      <span class="tag">선행 지표</span>
+      <ul>
+        <li><b>국내기계수주액</b> — 설비용 기계류 주문액. <b>설비투자의 선행지표</b></li>
+        <li><b>건설수주액</b> — 향후 프로젝트 수주액. 건설업 <b>미래</b> 신호</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">'수주'와 '기성'의 차이가 기사 품질을 가름</span>
+    <ul style="margin-bottom:0">
+      <li><b>수주</b> = 주문을 받았음 <span class="cite">미래</span></li>
+      <li><b>기성</b> = 공사를 해냈음 <span class="cite">현재</span></li>
+      <li>건설 기사에서 이 둘을 뒤섞으면 <strong>시점이 통째로 어긋남.</strong></li>
+      <li>"건설 경기 회복"이라는 제목이 <em>수주 기준인지 기성 기준인지</em> 확인할 것. 결론이 반대일 수 있음.</li>
+    </ul>
+  </div>
+
+  <h3>확산지수 — 소수 업종이 끌어올린 성장을 잡아냄</h3>
+  <p>오른 항목이 <strong>얼마나 널리 퍼져 있는지</strong>를 측정함. 표준 산식은 다음과 같음.</p>
+  <div class="box note">
+    <span class="bt">확산지수(DI)의 표준 산식</span>
+    <p style="margin-bottom:0"><code>DI = (증가 항목 수 + 보합 항목 수 × 0.5) ÷ 전체 항목 수 × 100</code></p>
+    <ul style="margin:10px 0 0">
+      <li>증가는 1, 보합은 0.5, 감소는 0으로 가중해 평균을 냄.</li>
+      <li>이 방식은 <b>Conference Board</b>와 일본 <b>내각부 ESRI</b>의 경기 확산지수 편제 원칙과 같음.</li>
+      <li>같은 원리가 <b>PMI</b>(기준선 50)에도 쓰임.</li>
+    </ul>
+  </div>
+  <ul>
+    <li>왜 중요한가 — <strong>소수 업종(반도체 등)이 전체 생산을 끌어올리는 상황</strong>을 잡아냄.</li>
+    <li>전체 생산은 늘었는데 확산지수가 낮으면, <em>대부분의 업종은 좋지 않다는 뜻임.</em></li>
+    <li><strong>"성장률은 좋은데 체감은 나쁘다"의 통계적 근거임.</strong> 3주차 성장기여도와 짝을 이룸.</li>
+  </ul>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>재고·출하 순환</h2>
+  <div class="h2rule"></div>
+  <p class="lede">경기 국면에 따라 <strong>출하와 재고의 관계가 달라짐.</strong> 이 절이 이 주차의 숨은 보석임.</p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">"재고가 쌓였다"는 국면에 따라 정반대 의미가 됨</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 330" role="img" aria-label="재고와 출하의 조합에 따른 네 가지 경기 국면 도식">
+          <!-- 축 -->
+          <line x1="380" y1="40" x2="380" y2="290" stroke="#c8d6e5" stroke-width="1.6"/>
+          <line x1="70" y1="165" x2="700" y2="165" stroke="#c8d6e5" stroke-width="1.6"/>
+          <text x="380" y="30" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5a6779">재고 증가</text>
+          <text x="380" y="310" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5a6779">재고 감소</text>
+          <text x="60" y="169" text-anchor="end" font-size="12.5" font-weight="700" fill="#5a6779">출하 감소</text>
+          <text x="710" y="169" text-anchor="start" font-size="12.5" font-weight="700" fill="#5a6779">출하 증가</text>
+
+          <!-- 사분면 박스 -->
+          <rect x="396" y="52" width="290" height="96" rx="9" fill="#eefaf7" stroke="#a5d9d1"/>
+          <text x="414" y="78" font-size="14.5" font-weight="800" fill="#0f766e">확장기</text>
+          <text x="414" y="102" font-size="13" fill="#5a6779">출하 증가 · 재고 증가</text>
+          <text x="414" y="126" font-size="13" font-weight="700" fill="#0d2244">잘 팔려서 더 만듦</text>
+
+          <rect x="84" y="52" width="280" height="96" rx="9" fill="#fdf1f2" stroke="#e8b9be"/>
+          <text x="102" y="78" font-size="14.5" font-weight="800" fill="#a4303f">둔화기</text>
+          <text x="102" y="102" font-size="13" fill="#5a6779">출하 감소 · 재고 증가</text>
+          <text x="102" y="126" font-size="13" font-weight="700" fill="#0d2244">안 팔려서 쌓임</text>
+
+          <rect x="396" y="182" width="290" height="96" rx="9" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="414" y="208" font-size="14.5" font-weight="800" fill="#1a4b8c">회복기</text>
+          <text x="414" y="232" font-size="13" fill="#5a6779">출하 증가 · 재고 감소</text>
+          <text x="414" y="256" font-size="13" font-weight="700" fill="#0d2244">쌓인 물건이 팔려나감</text>
+
+          <rect x="84" y="182" width="280" height="96" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="102" y="208" font-size="14.5" font-weight="800" fill="#b45309">수축기</text>
+          <text x="102" y="232" font-size="13" fill="#5a6779">출하 감소 · 재고 감소</text>
+          <text x="102" y="256" font-size="13" font-weight="700" fill="#0d2244">생산 자체를 줄임</text>
+        </svg>
+      </figure>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">같은 "재고 증가"가 위쪽 두 칸에 다 있음</span>
+        <ul style="margin-bottom:0">
+          <li><b>확장기의 재고 증가</b> — 잘 팔릴 것 같아서 <em>만들어 둔 것임.</em></li>
+          <li><b>둔화기의 재고 증가</b> — 안 팔려서 <em>남은 것임.</em></li>
+          <li><strong>출하를 같이 보지 않으면 구별할 수 없음.</strong> 이것 하나만 짚어도 좋은 기사임.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      네 국면의 이름과 배치는 <b>재고·출하 순환의 표준 도식</b>임. 실제 판정은 재고율(재고÷출하)과 경기종합지수를 함께 봐야 함.
+    </div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">3주차 성장기여도와 이어짐</span>
+    <p style="margin-bottom:0">3주차에서 <strong>재고증감이 성장률을 끌어올린 분기</strong>를 조심해서 읽으라고 했음. 그 판단 기준이 바로 이 도식임. <em>출하가 함께 늘었으면 확장, 출하가 줄었으면 둔화임.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>경기종합지수와 순환변동치</h2>
+  <div class="h2rule"></div>
+
+  <h3>경기종합지수 (CI)</h3>
+  <ul>
+    <li>개별 지표들을 <strong>가공·합성</strong>해 경제 전반의 상황을 파악하는 지수임. 기준년도 = 100.</li>
+    <li>만드는 순서 — 부문별 대표 지표 선정 → <b>계절·불규칙 요인 제거 → 추세 제거 → 진폭 표준화 → 합산</b></li>
+  </ul>
+
+  <div class="tri c1">
+    <div>
+      <h5>선행종합지수</h5>
+      <span class="tag">CLI · 앞을 봄</span>
+      <ul><li>가까운 장래의 경기 동향을 <b>예측</b>함</li><li>재고순환, 기계수주, <b>ESI</b> 등이 들어감</li></ul>
+    </div>
+    <div>
+      <h5>동행종합지수</h5>
+      <span class="tag">CCI · 지금을 봄</span>
+      <ul><li><b>현재</b>의 경기 상태를 판단함</li><li>생산·출하·소매판매 등이 들어감</li></ul>
+    </div>
+    <div>
+      <h5>후행종합지수</h5>
+      <span class="tag">LAGI · 뒤를 봄</span>
+      <ul><li>경기변동을 <b>사후 확인</b>함</li><li><b>고용</b>·금리·재고 등이 들어감</li></ul>
+    </div>
+  </div>
+
+  <h3>순환변동치 — 여기서 오독이 가장 많음</h3>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">"선행지수 상승"과 "선행지수 순환변동치 상승"은 다른 이야기임</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 280" role="img" aria-label="지수 원계열과 순환변동치의 차이를 보여주는 개념 그래프">
+          <!-- 위: 지수 -->
+          <text x="30" y="26" font-size="14" font-weight="800" fill="#0d2244">지수 — 추세 때문에 거의 계속 오름</text>
+          <line x1="60" y1="120" x2="720" y2="120" stroke="#c8d6e5" stroke-width="1.4"/>
+          <polyline points="70,110 150,98 230,104 310,84 390,90 470,68 550,76 630,52 710,58"
+                    fill="none" stroke="#1a4b8c" stroke-width="2.8"/>
+          <text x="726" y="56" font-size="11.5" fill="#8492a6" text-anchor="end"></text>
+          <text x="70" y="140" font-size="12" fill="#8492a6">경제 규모가 커지면 지수 자체는 우상향함</text>
+
+          <!-- 아래: 순환변동치 -->
+          <text x="30" y="180" font-size="14" font-weight="800" fill="#b45309">순환변동치 — 추세를 걷어내고 흔들림만 남김</text>
+          <line x1="60" y1="230" x2="720" y2="230" stroke="#e9c893" stroke-width="2" stroke-dasharray="6 4"/>
+          <text x="52" y="234" text-anchor="end" font-size="12" font-weight="800" fill="#b45309">100</text>
+          <polyline points="70,248 150,240 230,246 310,232 390,238 470,222 550,228 630,212 710,218"
+                    fill="none" stroke="#b45309" stroke-width="2.8"/>
+          <text x="70" y="270" font-size="12" fill="#8492a6">같은 기간인데 계속 100 아래임 — 여전히 평균 이하라는 뜻</text>
+        </svg>
+      </figure>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">"선행지수 5개월 연속 상승"은 경기가 좋아진다는 뜻인가</span>
+        <ul style="margin-bottom:0">
+          <li><strong>지수는 경제가 커지면 추세적으로 거의 계속 오름.</strong> 상승 자체는 뉴스가 아님.</li>
+          <li>경기 판단에는 반드시 <b>순환변동치</b>를 봄.</li>
+          <li>순환변동치가 <b>100 아래에서 오르는 중</b>이라면 <em>여전히 평균 이하임.</em></li>
+          <li>확인할 것 — 기사가 어느 쪽을 썼는지, 그리고 <b>100보다 위인지 아래인지.</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      위 그래프는 <b>지수와 순환변동치의 관계를 보여주는 개념 도식</b>이며 실제 수치가 아님. 실제 계열은 국가데이터처 「산업활동동향」에 함께 실려 있음.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">고용은 후행지표임</span>
+    <ul style="margin-bottom:0">
+      <li>경기가 회복돼도 고용은 <strong>몇 달 뒤에</strong> 따라옴.</li>
+      <li>그래서 <em>"경기는 좋아졌다는데 왜 취업은 안 되나"</em>라는 질문이 성립함. <b>둘 다 사실일 수 있음.</b></li>
+      <li>→ 5주차 고용에서 정면으로 다룸.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>심리지표 — 1주차 이론이 지표가 되는 곳</h2>
+  <div class="h2rule"></div>
+
+  <h3>기업경기실사지수 (BSI)</h3>
+  <ul>
+    <li>기업가들이 <strong>체감하는</strong> 경기 동향·전망을 조사해 지수화함.</li>
+    <li><b>한국은행</b>이 매월 조사함. 조사 대상은 전국 <strong>약 3,700개 법인기업</strong>임. 긍정·보통·부정 <b>3점 척도</b>.</li>
+    <li>조사항목 — 업황, 매출, 채산성, 자금사정, 생산설비, 재고수준, <b>인력사정</b> <span class="cite">→ 5주차 고용과 연결</span></li>
+    <li>범위 <b>0~200</b>. <b>100 초과</b>면 긍정 응답 업체가 부정보다 많다는 뜻임.</li>
+    <li>분류 — 제조업/비제조업, 대기업/중소기업, 수출기업/내수기업, <b>실적지수/전망지수</b></li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">실적 BSI와 전망 BSI를 구별할 것</span>
+    <p style="margin-bottom:0">전망이 실적보다 높으면 <strong>낙관</strong>, 낮으면 <strong>경계</strong>임. <em>두 계열의 격차 자체가 기사거리임.</em> 기사가 어느 쪽을 썼는지 확인할 것.</p>
+  </div>
+
+  <h3>기업심리지수 (CBSI)</h3>
+  <ul>
+    <li>BSI 주요 지수(제조업 5개, 비제조업 4개)로 산출한 심리지표임.</li>
+    <li>한국은행이 <b>2024년 6월 조사분부터</b> 기존 BSI를 보완해 공표하고 있음.</li>
+    <li><strong>장기평균을 100</strong>으로 하여, 100보다 크면 낙관, 작으면 비관임. <em>기준 구간은 매년 갱신됨.</em></li>
+  </ul>
+
+  <div class="box warn">
+    <span class="bt">BSI의 100과 CBSI의 100은 의미가 다름</span>
+    <ul style="margin-bottom:0">
+      <li><b>BSI의 100</b> — 긍정 응답과 부정 응답의 <strong>균형점</strong>임.</li>
+      <li><b>CBSI의 100</b> — 과거 <strong>장기평균</strong>임. 응답의 균형과는 무관함.</li>
+      <li>같은 95라도 <em>BSI 95는 "부정 응답이 더 많다", CBSI 95는 "평소보다 나쁘다"</em>는 뜻임.</li>
+      <li>2주차에서 배운 <a href="02_경제통계와지표.html">100의 두 가지 의미</a>가 여기서 실제로 부딪힘.</li>
+    </ul>
+  </div>
+
+  <h3>소비자동향지수 (CSI) · 소비자심리지수 (CCSI)</h3>
+  <ul>
+    <li><b>한국은행</b>이 매월 전국 도시 <strong>2,500가구</strong>를 조사함. <b>5점 척도</b>.</li>
+    <li><b>CCSI</b>는 이 중 경기 연관성이 높은 <strong>6개 항목을 표준화 합성</strong>한 값임 — 현재생활형편, 생활형편전망, 가계수입전망, 소비지출전망, 현재경기판단, 향후경기전망.</li>
+    <li>장기평균 = 100이며 <em>기준 구간은 매년 갱신됨.</em></li>
+    <li>금리·물가(<b>기대인플레이션율</b> 포함)는 별도 문항으로 조사됨. → 6주차 물가, 10주차 금리</li>
+    <li>관련 지표 — <b>주택가격전망 CSI</b>(→ 11주차), <b>금리수준전망 CSI</b>(→ 10주차)</li>
+  </ul>
+
+  <h3>경제심리지수 (ESI)</h3>
+  <ul>
+    <li>BSI와 CSI를 합성해 <strong>모든 민간 경제주체</strong>의 심리를 종합함.</li>
+    <li><b>경기선행종합지수의 구성 지표</b>로 쓰임.</li>
+    <li>100 상회(하회)는 경제심리가 과거 평균보다 나아짐(나빠짐)을 뜻함.</li>
+  </ul>
+
+  <div class="box note">
+    <span class="bt">민간 조사도 있음 — 같은 달에 엇갈릴 수 있음</span>
+    <ul style="margin-bottom:0">
+      <li>한경협 <b>FKI BSI</b>(대기업 중심), 대한상의 <b>MBSI</b>(제조업)·<b>RBSI</b>(소매유통업)</li>
+      <li>무역협회 <b>EBSI</b>(수출산업), 중소기업중앙회 <b>SBHI</b>(중소기업), 소상공인·전통시장 체감/전망 BSI</li>
+      <li><strong>같은 달에 여러 기관의 심리지표가 엇갈릴 수 있음.</strong> <em>어느 것을 인용하느냐가 기사의 논조를 정함.</em></li>
+      <li>확인할 것 — 조사 대상(대기업인가 중소기업인가), 표본 크기, 조사 시점.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">심리지표는 응답이지 실적이 아님</span>
+    <p style="margin-bottom:0"><strong>"소비 증가"와 "소비하겠다는 응답 증가"는 다름.</strong> 심리지표를 실적처럼 서술한 기사가 흔함. <em>"~할 것으로 조사됐다"와 "~했다"를 구별해 쓸 것.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>뉴스심리지수 (NSI)</h2>
+  <div class="h2rule"></div>
+  <p class="lede"><strong>한국은행이 경제뉴스로 경기지표를 만듦.</strong> 이 강의에서 가장 중요한 절임.</p>
+
+  <div class="box key">
+    <span class="bt">2026년 9월 · 지수가 개편됐음</span>
+    <ul style="margin-bottom:0">
+      <li>한국은행이 <b>2026년 9월 1일</b> BOK이슈노트 「언어모형을 활용한 신(新)뉴스심리지수」를 발표했음.</li>
+      <li>이달부터 <strong>신NSI</strong>를 ECOS에 공표함. <em>여러분은 개편 직후의 지표를 배우는 것임.</em></li>
+    </ul>
+  </div>
+
+  <h3>무엇인가</h3>
+  <ul>
+    <li><b>NSI (News Sentiment Index)</b> — 한국은행이 개발해 <b>2022년</b> 실험적 통계로 공개했음.</li>
+    <li>만드는 법 — 경제분야 뉴스기사에서 <b>표본문장을 무작위 추출</b>하고, 각 문장의 <b>긍정·부정·중립 감성을 기계학습으로 분류</b>한 뒤, <strong>긍정 문장 수에서 부정 문장 수를 뺀 값</strong>을 지수화함.</li>
+    <li>일별 지수는 <b>해당일 포함 최근 7일</b> 기사를 사용하며, 월·분기로도 집계됨.</li>
+    <li>ECOS에서 조회할 수 있음.</li>
+  </ul>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">구 NSI와 신 NSI — 무엇이 달라졌는가</div>
+    </div>
+    <div class="info-b">
+      <div class="tw" style="margin-top:0">
+      <table>
+        <thead><tr><th style="width:22%">항목</th><th style="width:34%">구 NSI <span class="cite">2022~</span></th><th>신 NSI <span class="cite">2026.9~</span></th></tr></thead>
+        <tbody>
+          <tr><td><b>일별 표본문장</b></td><td>10,000개</td><td><b>20,000개</b>로 확대</td></tr>
+          <tr><td><b>기사 선별</b></td><td>수집 기사 전체</td><td>언어모형으로 <b>광고·홍보성 기사를 걸러내고</b> 경제 연관성이 높은 기사만 씀</td></tr>
+          <tr><td><b>시점 구분</b></td><td>없음</td><td>정보의 시점을 <b>현재와 미래로 구분</b>함</td></tr>
+          <tr><td><b>감성 분류</b></td><td>기계학습</td><td><b>한국어에 특화된 사전학습 언어모형</b> 사용</td></tr>
+          <tr><td><b>선행성</b></td><td>주요 지표에 1~2개월</td><td><b>CCSI · ESI에 1개월, CBSI에 2개월</b> 선행</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="box easy" style="margin-bottom:0">
+        <span class="bt">개편이 밝혀낸 것 — 소비자는 '미래 나쁜 뉴스'에 더 민감함</span>
+        <p style="margin-bottom:0">현재와 미래를 나눠 보니, <strong>소비자심리는 "지금 경기가 좋다"는 뉴스보다 "앞으로 나빠질 수 있다"는 뉴스와 더 밀접하게 움직였음.</strong> <em>1주차에서 배운 비대칭 보도가 심리에 미치는 경로를 보여주는 결과임.</em></p>
+      </div>
+    </div>
+    <div class="info-f">
+      한국은행 BOK이슈노트 「언어모형을 활용한 신(新)뉴스심리지수」(2026.9.1) 및 관련 보도 기준임. 세부 사양은 원문으로 확인할 것.
+    </div>
+  </div>
+
+  <h3>왜 중요한가</h3>
+  <ol class="steps">
+    <li><b>뉴스가 경기지표보다 먼저 움직임</b>
+      NSI가 소비자심리지수·경제심리지수보다 <b>1개월</b>, 기업심리지수보다 <b>2개월</b> 앞서 움직임.</li>
+    <li><b>공식 통계보다 빠름</b>
+      일별로 나오므로 월간 공식통계가 나오기 전에 심리 변화를 포착할 수 있음.</li>
+    <li><b>원자료가 기사임</b>
+      여러분이 앞으로 쓸 문장이 <em>경제지표의 재료가 됨.</em></li>
+  </ol>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">1주차 이론의 실증</div>
+      <div class="t">그런데 해석이 갈림 — 오늘의 핵심 질문</div>
+    </div>
+    <div class="case-b">
+      <div class="duo" style="margin-top:0">
+        <div class="a">
+          <h5>해석 A · 거울</h5>
+          <span class="tag">현실반영론</span>
+          <ul>
+            <li>기자들이 현실을 잘 포착해서 <b>뉴스가 먼저 반응</b>하는 것임</li>
+            <li>NSI는 <b>좋은 예보 지표</b>임</li>
+            <li>언론은 경기를 <em>예보</em>함</li>
+          </ul>
+        </div>
+        <div class="b">
+          <h5>해석 B · 구성</h5>
+          <span class="tag">현실구성론</span>
+          <ul>
+            <li>뉴스가 심리를 만들고 <b>그 심리가 경제를 움직인</b> 것임</li>
+            <li>NSI는 <b>자기실현적 예언의 측정치</b>임</li>
+            <li>언론은 경기를 <em>초래</em>함</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">데이터만으로 두 해석을 구별할 수 있는가</span>
+        <p style="margin-bottom:0">이것이 <strong>이 강의 전체의 질문임.</strong> 1주차의 <a href="01_경제뉴스의성격과역할.html">반영론 vs 구성론</a>이 여기서 <em>측정 가능한 형태</em>로 되돌아옴.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>순환 고리 — 1주차 이론이 여기서 닫힘</h3>
+  <div class="info">
+    <div class="info-h">
+      <div class="t">뉴스 → 심리 → 소비 → 경기 → 다시 뉴스</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0">
+        <svg viewBox="0 0 760 300" role="img" aria-label="경제뉴스와 경기의 순환 고리 도식">
+          <!-- 화살표 (직각 경로) -->
+          <path d="M505,45 L645,45 L645,117" fill="none" stroke="#b45309" stroke-width="2.4"/>
+          <polygon points="645,124 640,114 650,114" fill="#b45309"/>
+
+          <path d="M645,183 L645,255 L483,255" fill="none" stroke="#b45309" stroke-width="2.4"/>
+          <polygon points="476,255 486,250 486,260" fill="#b45309"/>
+
+          <path d="M281,255 L115,255 L115,183" fill="none" stroke="#1a4b8c" stroke-width="2.4"/>
+          <polygon points="115,176 110,186 120,186" fill="#1a4b8c"/>
+
+          <path d="M115,117 L115,45 L247,45" fill="none" stroke="#a4303f" stroke-width="2.4" stroke-dasharray="7 4"/>
+          <polygon points="254,45 244,40 244,50" fill="#a4303f"/>
+
+          <!-- 노드 -->
+          <rect x="255" y="20" width="250" height="50" rx="9" fill="#0d2244"/>
+          <text x="380" y="42" text-anchor="middle" font-size="14.5" font-weight="800" fill="#fff">경제뉴스 (부정적 논조)</text>
+          <text x="380" y="60" text-anchor="middle" font-size="11.5" fill="#a9c9ee">NSI로 측정됨</text>
+
+          <rect x="560" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="645" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">소비자심리 하락</text>
+          <text x="645" y="168" text-anchor="middle" font-size="11.5" fill="#5a6779">CCSI</text>
+
+          <rect x="285" y="230" width="190" height="50" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="380" y="252" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">실제 소비 위축</text>
+          <text x="380" y="270" text-anchor="middle" font-size="11.5" fill="#5a6779">소매판매액지수 하락</text>
+
+          <rect x="30" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <text x="115" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">경기 수축</text>
+          <text x="115" y="168" text-anchor="middle" font-size="11.5" fill="#5a6779">동행지수 순환변동치</text>
+
+          <!-- 화살표 라벨 (선 밖에 배치) -->
+          <text x="575" y="34" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">미디어 맬라디</text>
+          <text x="692" y="212" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">카토나 가설</text>
+          <text x="180" y="34" text-anchor="middle" font-size="12.5" font-weight="700" fill="#a4303f">더 부정적으로</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      붉은 점선이 <b>되먹임 고리</b>임. 경기가 나빠지면 뉴스가 더 부정적이 되고, 그것이 다시 심리를 낮춤. 1주차에서 배운 <b>미디어 맬라디</b>(Blood &amp; Phillips, 1995)와 <b>카토나 가설</b>(Katona, 1964)이 이 고리의 두 화살표임.
+    </div>
+  </div>
+
+  <h3>함께 볼 텍스트 기반 지표</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">지표</th><th style="width:38%">무엇으로 만드는가</th><th>어디서 받나</th></tr></thead>
+    <tbody>
+      <tr><td><b>NSI</b><br><span class="cite">뉴스심리지수</span></td><td>경제뉴스 문장의 긍정·부정 감성</td><td>한국은행 ECOS</td></tr>
+      <tr><td><b>EPU</b><br><span class="cite">경제정책 불확실성지수</span></td><td>신문기사에서 <b>불확실성 · 경제 · 정책</b> 관련 표현이 <b>동시에</b> 나오는 기사의 비중 <span class="cite">Baker, Bloom &amp; Davis (2016)</span></td><td><a href="https://www.policyuncertainty.com/korea_monthly.html" target="_blank" rel="noopener">Policy Uncertainty</a> — 한국은 1990년부터</td></tr>
+      <tr><td><b>GPRNK</b><br><span class="cite">북한발 지정학적 위험지수</span></td><td>국내 언론·방송 기사에서 한반도 긴장 관련 표현의 빈도</td><td><a href="https://www.policyuncertainty.com/korea_gpr.html" target="_blank" rel="noopener">Policy Uncertainty</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">세 지표의 공통점을 스스로 말해 볼 것</span>
+    <p style="margin-bottom:0">답 — <strong>셋 다 원자료가 '기사'임.</strong> 즉 <em>여러분이 앞으로 쓸 문장이 경제지표의 원자료가 됨.</em> 미디어학과 수업에서 이보다 직접적인 소재는 없음.</p>
+  </div>
+
+  <h3>생각해 볼 것</h3>
+  <ol class="qs">
+    <li><b>CCSI는 경제를 측정하는 지표인가, 언론 보도를 측정하는 지표인가?</b></li>
+    <li><b>2~4개월 전 경제심리로 실제 성과를 예측할 수 있다면</b> <span class="cite">(Wu et al., 2002)</span><br>언론은 경기를 <em>예보</em>하는가, <em>초래</em>하는가.</li>
+    <li><b>'불황'·'침체' 논조가 소비를 위축시킨다면</b> <span class="cite">(Doms &amp; Morin, 2004)</span><br>기자가 "침체"라는 단어를 쓸 때 져야 할 책임은 무엇인가.</li>
+    <li><b>1주차의 비대칭 보도와 NSI를 겹쳐 그리면 무엇이 보이는가?</b><br>좋을 때는 안 쓰고 나빠지면 집중 보도하는 경향이 지수에 어떻게 나타나겠는가.</li>
+  </ol>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:32%">자료</th><th style="width:22%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>「산업활동동향」</b></td><td>국가데이터처 · 매월 말경</td><td>전산업생산·소매판매·설비투자·건설, <b>경기종합지수 및 순환변동치</b></td></tr>
+      <tr><td><b>「소비자동향조사」</b></td><td>한국은행 · 매월 하순</td><td><b>CCSI</b>, 기대인플레이션율, 주택가격전망 CSI</td></tr>
+      <tr><td><b>「기업경기조사 및 경제심리지수」</b></td><td>한국은행 · 매월 하순</td><td>BSI, <b>CBSI</b>, <b>ESI</b></td></tr>
+      <tr><td><b>뉴스심리지수(NSI)</b></td><td>한국은행 · ECOS</td><td>일별·월별 계열. 별도 보도자료 없이 공표됨</td></tr>
+      <tr><td>「최근 경제동향(그린북)」</td><td>재정경제부 · 매월 중순</td><td><b>정부의 공식 경기 진단</b></td></tr>
+      <tr><td>「경제동향」</td><td>KDI · 매월</td><td><b>정부와 진단이 다를 때가 기사거리임</b></td></tr>
+      <tr><td>「지역경제보고서」</td><td>한국은행 · 분기</td><td>한국판 베이지북. 권역별 경기</td></tr>
+      <tr><td>「경제전망보고서」</td><td>한국은행 · 연 4회</td><td>2·5·8·11월. 성장률·물가 전망</td></tr>
+      <tr><td>「Beige Book」</td><td>미국 Fed · 연 8회</td><td>현장 의견 중심의 질적 분석</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">미국 심리지표 — 비교용</span>
+    <ul style="margin-bottom:0">
+      <li><b>ISM 제조업·서비스업 PMI</b> (매월 초) — <strong>50이 기준선임.</strong> BSI의 100과 혼동하지 말 것.</li>
+      <li>컨퍼런스보드 <b>소비자신뢰지수</b>, 미시간대 <b>소비자심리지수</b></li>
+      <li>미시간대 지수는 1주차에서 배운 <b>카토나</b>가 설계한 조사의 후신임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>경기순환과 기준순환일</b>
+      한국 평균 약 53개월. <em>지금이 어느 국면인지는 사후에 확정됨.</em></li>
+    <li><b>순환변동치</b>
+      지수가 아니라 순환변동치를 봐야 경기를 앎. <em>기준선 100.</em></li>
+    <li><b>재고·출하 순환</b>
+      "재고가 쌓였다"는 <em>국면에 따라 정반대 의미임.</em></li>
+    <li><b>BSI · CCSI · ESI</b>
+      심리도 측정됨. <em>다만 응답이지 실적이 아님.</em></li>
+    <li><b>NSI (뉴스심리지수)</b>
+      경제뉴스로 만든 경기지표임. <em>실물·심리지표에 1~2개월 선행함.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "선행지수 ○개월 연속 상승, 경기 회복"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>지수와 순환변동치를 혼동했음.</strong> 지수는 추세 때문에 계속 오름.</li>
+      <li><b>확인할 것</b> — 순환변동치가 100 위인지 아래인지, 그리고 방향.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "BSI 95, 기업 체감경기 악화"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>100 미만이 곧 '악화'는 아님.</strong> 수준과 방향은 다른 이야기임.</li>
+      <li><b>확인할 것</b> — 전월 대비 방향, 장기평균 기준인 <b>CBSI</b>, 그리고 <b>실적/전망 구분</b>.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "소비 살아나나" (소매판매 전월비 상승)</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>원계열 전월비를 썼음.</strong> 설·추석·연말 효과가 섞임. 게다가 <b>소매판매는 재화만</b>임.</li>
+      <li><b>확인할 것</b> — 계절조정 여부, 전년동월비, <b>서비스업생산지수</b>를 함께 봤는지.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>NSI가 실물지표에 1~2개월 선행한다는 사실은 무엇을 증명하는가?</b><br>기자가 현실을 잘 본다는 뜻인가, 기사가 현실을 만든다는 뜻인가. 데이터만으로 두 해석을 구별할 수 있는가.</li>
+    <li><b>정부(그린북)와 KDI, 한국은행의 경기 진단이 서로 어긋난 달이 있음.</b><br>기자는 어느 쪽을 제목에 쓰는가. 그 선택은 정파적으로 읽힐 수 있는가.</li>
+    <li><b>"체감경기가 나쁘다"를 측정값 없이 쓴 기사와, BSI·CCSI를 대고 쓴 기사의 차이는 무엇인가?</b></li>
+    <li><b>재고가 늘었다는 같은 사실을 확장기 기사와 둔화기 기사로 각각 써 볼 것.</b><br>무엇을 함께 봐야 구별되는가.</li>
+    <li><b>부정적 논조가 소비를 위축시킨다면, "침체"라는 단어의 사용은 윤리적 문제인가?</b><br>그렇다고 쓰지 않으면 1주차에서 배운 <b>환경감시 기능</b>은 어떻게 하는가.</li>
+    <li><b>창조적 파괴로 최근의 AI 투자 붐을 읽으면, 지금은 창조 국면인가 파괴 국면인가?</b><br>어느 지표(설비투자, 확산지수, 고용)를 보면 판단할 수 있는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>텍스트 기반 지표가 정책 분석의 표준 도구가 되었음.</b> 중앙은행·국제기구가 뉴스·SNS 텍스트로 실시간 지표를 만드는 흐름이 확대되고 있음. 2026년 9월 신NSI 개편이 그 흐름의 최신 사례임.</li>
+      <li><b>일별·주별 고빈도 지표</b>(카드 결제, 이동량, 검색량)가 공식 통계를 보완하고 있음. 팬데믹 이후 표준이 되었음.</li>
+      <li><b>기준순환일 판정이 늦어지면서</b> "지금이 침체인가"를 둘러싼 논쟁이 반복됨. 미국 NBER의 판정 방식과 비교하면 좋은 기획이 나옴.</li>
+      <li><b>심리지표와 실물지표의 괴리</b>가 자주 지적됨. 심리는 나쁜데 소비는 유지되는 국면이 있었음. <em>"심리지표를 얼마나 믿을 것인가" 자체가 기사거리임.</em></li>
+      <li><b>민간 조사와 한국은행 조사가 엇갈릴 때</b> 언론이 어느 쪽을 인용하는지 추적하면 좋은 비평 소재가 됨.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>핵심 자료</h4>
+    <ul>
+      <li><b>한국은행. 「기계학습을 이용한 뉴스심리지수(NSI)의 작성과 활용」.</b> 『국민계정리뷰』 2022년 제1호. <a href="https://www.bok.or.kr/portal/bbs/B0000233/view.do?nttId=10070681&amp;menuNo=200707" target="_blank" rel="noopener">원문</a> — <b>이 주차의 핵심 자료</b></li>
+      <li><b>한국은행. 「언어모형을 활용한 신(新)뉴스심리지수」.</b> BOK이슈노트, 2026.9.1. <a href="https://www.bok.or.kr/portal/singl/newsData/list.do?menuNo=200433" target="_blank" rel="noopener">BOK이슈노트 목록</a></li>
+      <li><a href="https://eiec.kdi.re.kr/policy/materialView.do?num=223434" target="_blank" rel="noopener">「뉴스심리지수(NSI) 실험적 통계로 공개」</a> — KDI 경제정보센터</li>
+      <li><a href="https://www.sisain.co.kr/news/articleView.html?idxno=44396" target="_blank" rel="noopener">「딱딱한 경제 기사에서 '감성' 찾아내는 뉴스심리지수」</a> — 시사IN. <b>학부생 읽기용 해설</b></li>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』</b> — 경기·심리지표 편. <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a></li>
+    </ul>
+
+    <h4>데이터</h4>
+    <ul>
+      <li><a href="https://kosis.kr/visual/bcc/index/index.do?language=kor" target="_blank" rel="noopener">KOSIS 경기순환시계</a></li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — BSI · CSI · ESI · NSI 시계열</li>
+      <li><a href="https://snapshot.bok.or.kr/" target="_blank" rel="noopener">한국은행 금융·경제 스냅샷</a></li>
+      <li><a href="https://mods.go.kr" target="_blank" rel="noopener">국가데이터처</a> — 「산업활동동향」, 기준순환일</li>
+      <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — 미국 경기지표. <b>NBER 경기침체 음영 표시</b></li>
+      <li><a href="https://www.policyuncertainty.com/korea_monthly.html" target="_blank" rel="noopener">Korea Economic Policy Uncertainty Index</a> · <a href="https://www.policyuncertainty.com/korea_gpr.html" target="_blank" rel="noopener">GPRNK</a></li>
+    </ul>
+
+    <h4>방법론 · 국제 비교</h4>
+    <ul>
+      <li><a href="https://www.nber.org/research/business-cycle-dating" target="_blank" rel="noopener">NBER Business Cycle Dating</a> — 미국 기준순환일과 판정 방식</li>
+      <li><a href="https://www.esri.cao.go.jp/en/stat/di/rdates.html" target="_blank" rel="noopener">일본 내각부 ESRI 기준순환일</a></li>
+      <li><a href="https://www.conference-board.org/topics/us-leading-indicators/" target="_blank" rel="noopener">The Conference Board U.S. Leading Indicators</a> — LEI·CEI의 구성과 해석</li>
+      <li><a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-17-003" target="_blank" rel="noopener">UN·Eurostat, <i>Handbook on Cyclical Composite Indicators</i></a> — 합성지표 편제 원칙</li>
+      <li>Baker, S. R., Bloom, N., &amp; Davis, S. J. (2016). Measuring economic policy uncertainty. <i>Quarterly Journal of Economics, 131</i>(4), 1593–1636.</li>
+    </ul>
+
+    <h4>1주차 이론 연결</h4>
+    <ul>
+      <li>Katona, G. (1964). <i>The Mass Consumption Society</i>. McGraw-Hill. <span class="cite">카토나 가설</span></li>
+      <li>Blood, D. J., &amp; Phillips, P. C. B. (1995). <span class="cite">미디어 맬라디</span></li>
+      <li>Doms, M., &amp; Morin, N. (2004). Consumer Sentiment, the Economy, and the News Media. <i>FRBSF Working Paper</i> 2004-09.</li>
+      <li>Wu, H. D., Stevenson, R. L., Chen, H.-C., &amp; Güner, Z. N. (2002). The conditioned impact of recession news. <i>IJPOR</i>.</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 4주차 강의자료</b><br>
+  주 출처: 한국은행 『알기 쉬운 경제지표해설』 경기·심리지표 편</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="03_국민생산과소득.html">3주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3주차 · 국민 생산과 소득 (GDP) | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 3주차 강의자료 — 3면 등가의 법칙, 명목과 실질 GDP, GDP디플레이터, 성장기여도, GNI와 교역조건, 잠재 GDP와 산출갭.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">3주차 · 국민 생산과 소득</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">3주차<br>국민 생산과 소득 (GDP)</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · GDP는 무엇을 측정하는가</div>
+    <a href="#s2"><span class="n">02</span><span>국민소득 통계란</span></a>
+    <a href="#s3"><span class="n">03</span><span>3면 등가의 법칙</span></a>
+    <a href="#s4"><span class="n">04</span><span>생산 관련 지표</span></a>
+    <a href="#s5"><span class="n">05</span><span>성장률과 성장기여도</span></a>
+
+    <div class="sb-label">2회차 · 소득 지표</div>
+    <a href="#s6"><span class="n">06</span><span>Y = C + I + G + (X−M)</span></a>
+    <a href="#s7"><span class="n">07</span><span>GNI와 교역조건</span></a>
+    <a href="#s8"><span class="n">08</span><span>보도자료와 통계</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s9"><span class="n">09</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s10"><span class="n">10</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 2. 거시 지표 — 생산·경기·고용·물가 · 3주차</div>
+    <h1>GDP가 늘어도<br>내 소득은 안 늘 수 있음</h1>
+    <div class="sub">국민 생산과 소득 (GDP)</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">경제기사에 가장 자주 등장하는 숫자인 <strong>경제성장률</strong>의 정체를 밝힘. 그리고 <strong>분배국민소득의 피용자보수</strong>가 5주차 고용, 14주차 소득분배로 이어지는 <em>첫 고리</em>임.</p>
+
+  <div class="pull">
+    <div class="q">"GDP가 늘어도 내 소득은 안 늘 수 있음.<br>그 간극이 기사거리임."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>여는 질문 — 같은 날, 다른 숫자</h3>
+
+  <div class="anat">
+    <div class="s">"한국 경제, 3분기 0.6% 성장"</div>
+    <div class="g">
+      <div class="c"><div class="n">확인 1</div><div class="q">0.6%는 무엇 대비인가</div><div class="d">직전 분기인가, 작년 같은 분기인가</div></div>
+      <div class="c"><div class="n">확인 2</div><div class="q">왜 다른 신문은 1.5%라고 썼는가</div><div class="d">전기비 0.6% · 전년동기비 1.5% — 둘 다 맞음</div></div>
+      <div class="c"><div class="n">확인 3</div><div class="q">어느 쪽이 진짜인가</div><div class="d">정답 없음. 전기비는 최근 흐름, 전년동기비는 1년 누적 성과임</div></div>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">2주차 규칙의 첫 실전 적용</span>
+    <ul style="margin-bottom:0">
+      <li>같은 발표에서 <strong>전기비와 전년동기비가 나란히</strong> 나옴. 기자가 하나를 고른 것임.</li>
+      <li>다만 <strong>같은 기사 안에서 두 기준을 섞으면 안 됨.</strong> 실제 기사에 자주 있는 오류임.</li>
+      <li>전기비는 <b>계절조정 계열</b>, 전년동기비는 <b>원계열</b>을 씀. → <a href="02_경제통계와지표.html">2주차</a>에서 배운 규칙 그대로임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+  <p class="lede">낯선 용어부터 먼저 정리함. <strong>각 개념마다 사례 하나씩</strong> 붙여 이해할 것.</p>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>3면 등가의 법칙<span class="en">three approaches to GDP</span></dt>
+      <dd>같은 것을 <b>생산 · 지출 · 분배</b> 세 방향에서 측정하면 값이 같음.
+        <span class="ez">쉽게 — 식당이 10만 원어치 팔았음 = 손님이 10만 원 썼음 = 주인·직원·재료상이 10만 원을 나눠 가졌음.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>명목 GDP · 실질 GDP<span class="en">nominal / real GDP</span></dt>
+      <dd><b>명목</b>은 그 해 가격으로, <b>실질</b>은 기준연도 가격으로 계산함. 실질은 물가 효과가 빠져 있음.</dd>
+    </dl>
+    <dl class="term">
+      <dt>GDP디플레이터<span class="en">GDP deflator</span></dt>
+      <dd>명목 GDP ÷ 실질 GDP × 100. <b>가장 포괄적인 물가지수</b>임. 수출품·투자재까지 포함하므로 CPI보다 범위가 넓음.</dd>
+    </dl>
+    <dl class="term">
+      <dt>잠재 GDP<span class="en">potential GDP</span></dt>
+      <dd>물가를 자극하지 않고 <b>정상적으로</b> 낼 수 있는 생산 수준. 직접 관측되지 않고 <em>추정됨.</em></dd>
+    </dl>
+    <dl class="term">
+      <dt>산출갭 (GDP갭)<span class="en">output gap</span></dt>
+      <dd>실제 GDP − 잠재 GDP. <b>(−)면 침체, (+)면 과열</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>성장기여도<span class="en">contribution to growth</span></dt>
+      <dd>소비·투자·정부·순수출이 전체 성장률에 보탠 <b>퍼센트포인트</b>.
+        <span class="ez">쉽게 — 성장률 2% 중 누가 몇 %p를 끌었는지.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>GNI (국민총소득)<span class="en">Gross National Income</span></dt>
+      <dd>GDP + 국외순수취요소소득. 우리 <b>국민</b>이 국내외에서 번 소득임.
+        <span class="ez">쉽게 — GDP는 '영토' 기준, GNI는 '국적' 기준임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>교역조건<span class="en">terms of trade</span></dt>
+      <dd>수출가격 ÷ 수입가격. 나빠지면 같은 양을 팔아도 <em>손에 쥐는 것이 줄어듦.</em></dd>
+    </dl>
+    <dl class="term">
+      <dt>실질 GDI<span class="en">real Gross Domestic Income</span></dt>
+      <dd>실질 GDP + 교역조건 변화에 따른 실질무역손익. 국내 생산물의 <b>실질 구매력</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>피용자보수<span class="en">compensation of employees</span></dt>
+      <dd>임금·급여 + 고용주 사회부담금. <b>노동에 돌아간 몫</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>노동소득분배율<span class="en">labour income share</span></dt>
+      <dd>창출된 소득 중 노동보수가 차지하는 비중. → 14주차 소득분배로 이어짐.</dd>
+    </dl>
+    <dl class="term">
+      <dt>부가가치<span class="en">value added</span></dt>
+      <dd>산출액에서 중간투입을 뺀 값.
+        <span class="ez">쉽게 — 밀가루 3,000원을 사서 빵을 8,000원에 팔면 부가가치는 5,000원임.</span></dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>국민소득 통계란</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">한 나라의 가계·기업·정부가 <strong>일정 기간에 새로 생산한</strong> 재화·서비스의 가치를 금액으로 평가해 합산한 것임.</p>
+
+  <div class="box key">
+    <span class="bt">"새로 생산한"이 핵심임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>중고 거래는 GDP에 들어가지 않음.</strong> 중고차 판매액은 GDP가 아님.</li>
+      <li>다만 <b>중개 수수료는 GDP임.</b> 그것은 새로 제공된 서비스이기 때문임.</li>
+      <li>주식 매매도 GDP가 아님. 그러나 <b>증권사 수수료는 GDP임.</b></li>
+      <li>확인 요령 — <em>"이번에 새로 만들어진 가치인가?"</em>를 물으면 대부분 판정됨.</li>
+    </ul>
+  </div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">부가가치란 무엇인가 — 이중계산을 피하는 법</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 6px">
+        <svg viewBox="0 0 760 210" role="img" aria-label="밀 재배부터 빵 판매까지 단계별 부가가치 도식">
+          <!-- 단계 상자 -->
+          <rect x="30" y="56" width="150" height="56" rx="8" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="105" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">밀 재배</text>
+          <text x="105" y="100" text-anchor="middle" font-size="13" fill="#5a6779">1,000원에 팖</text>
+
+          <rect x="215" y="56" width="150" height="56" rx="8" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="290" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">제분</text>
+          <text x="290" y="100" text-anchor="middle" font-size="13" fill="#5a6779">3,000원에 팖</text>
+
+          <rect x="400" y="56" width="150" height="56" rx="8" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="475" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">빵 제조·판매</text>
+          <text x="475" y="100" text-anchor="middle" font-size="13" fill="#5a6779">8,000원에 팖</text>
+
+          <!-- 화살표 -->
+          <line x1="182" y1="84" x2="211" y2="84" stroke="#8492a6" stroke-width="2"/>
+          <polygon points="211,84 204,80 204,88" fill="#8492a6"/>
+          <line x1="367" y1="84" x2="396" y2="84" stroke="#8492a6" stroke-width="2"/>
+          <polygon points="396,84 389,80 389,88" fill="#8492a6"/>
+
+          <!-- 부가가치 라벨 -->
+          <text x="105" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#0f766e">부가가치 1,000</text>
+          <text x="290" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#0f766e">부가가치 2,000</text>
+          <text x="475" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#0f766e">부가가치 5,000</text>
+
+          <!-- 합계 -->
+          <rect x="590" y="56" width="140" height="82" rx="8" fill="#eefaf7" stroke="#a5d9d1"/>
+          <text x="660" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#0f766e">GDP에 잡히는 값</text>
+          <text x="660" y="110" text-anchor="middle" font-size="19" font-weight="800" fill="#0f766e">8,000원</text>
+          <text x="660" y="129" text-anchor="middle" font-size="11.5" fill="#5a6779">= 1,000+2,000+5,000</text>
+
+          <!-- 하단 경고 -->
+          <rect x="30" y="158" width="700" height="40" rx="7" fill="#fdf1f2" stroke="#e8b9be"/>
+          <text x="50" y="183" font-size="13.5" fill="#5a6779"><tspan font-weight="800" fill="#a4303f">잘못된 계산</tspan> — 1,000 + 3,000 + 8,000 = 12,000원. 밀가루값이 세 번 계산됨(이중계산).</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      각 단계의 <b>판매액이 아니라 부가가치만</b> 더해야 함. 최종 판매액(8,000원)과 부가가치 합계가 일치하는 것이 <b>3면 등가</b>의 출발점임.
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>3면 등가의 법칙</h2>
+  <div class="h2rule"></div>
+  <p class="lede">같은 국민소득을 <strong>세 방향에서 측정함.</strong> 값은 같지만, <em>기사거리는 세 방향에서 각각 다르게 나옴.</em></p>
+
+  <div class="tri c1">
+    <div>
+      <h5>생산국민소득</h5>
+      <span class="tag">만든 쪽에서 봄</span>
+      <ul>
+        <li>최종 생산물 <b>부가가치의 합</b></li>
+        <li>농림어업, 광업, 제조업, 건설업</li>
+        <li>도소매·숙박음식, 운수, 금융·보험</li>
+        <li>부동산, 정보통신, 사업서비스</li>
+        <li>공공행정·국방, 교육, 보건·복지, 문화</li>
+      </ul>
+    </div>
+    <div>
+      <h5>지출국민소득</h5>
+      <span class="tag">쓴 쪽에서 봄</span>
+      <ul>
+        <li>최종소비지출 (민간 + 정부)</li>
+        <li>총자본형성 = 총고정자본형성 + 재고증감</li>
+        <li>총고정자본형성 = 건설투자 + 설비투자 + <b>지식재산생산물투자</b></li>
+        <li>수출 − 수입</li>
+        <li>통계상 불일치</li>
+      </ul>
+    </div>
+    <div>
+      <h5>분배국민소득</h5>
+      <span class="tag">나눠 가진 쪽에서 봄</span>
+      <ul>
+        <li><b>피용자보수</b> (임금)</li>
+        <li>영업잉여 (이윤)</li>
+        <li>고정자본소모</li>
+        <li>생산 및 수입세, (공제)보조금</li>
+        <li>국외순수취요소소득</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>분배국민소득의 네 몫</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:18%">몫</th><th style="width:32%">누구에게 가는가</th><th>기사에서 어떻게 나타나는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>임금</b></td><td>노동을 제공한 사람</td><td>"임금 상승률", "실질임금 감소" → 5주차 고용</td></tr>
+      <tr><td><b>이자</b></td><td>돈을 빌려준 사람</td><td>"이자 부담 증가", "가계 이자비용" → 10·11주차</td></tr>
+      <tr><td><b>임대료</b></td><td>땅·건물을 빌려준 사람</td><td>"임대료 상승" → 11주차 부동산</td></tr>
+      <tr><td><b>이윤</b></td><td>기업가·자본소유자<br><span class="cite">배당 · 유보이익 · 법인세 포함</span></td><td>"영업이익 사상 최대" → 12~13주차 기업</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">피용자보수가 이 강의의 숨은 축임</span>
+    <ul>
+      <li><b>5주차 고용</b> — 임금 통계, 단위노동비용의 출발점임.</li>
+      <li><b>14주차 소득분배</b> — <strong>노동소득분배율 = 피용자보수 ÷ 국민소득</strong>임.</li>
+    </ul>
+    <p style="margin-bottom:0"><strong>"GDP는 늘었는데 왜 살기 힘든가"</strong>라는 기사의 통계적 근거가 정확히 여기 있음. <em>파이가 커져도 내 몫의 비중이 줄면 내 소득은 늘지 않음.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>생산 관련 지표</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">지표</th><th style="width:38%">무엇인가</th><th>어디에 쓰는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>명목 GDP</b><br><span class="cite">경상가격 GDP</span></td><td>최종생산물 가치를 <b>생산 당시 가격</b>으로 계산함</td><td>경제 규모·구조 파악, 국제 비교</td></tr>
+      <tr><td><b>실질 GDP</b><br><span class="cite">불변가격 GDP</span></td><td>최종생산물 가치를 <b>기준연도 가격</b>으로 측정함</td><td>경제성장·경기변동 분석</td></tr>
+      <tr><td><b>GDP디플레이터</b></td><td>(명목 GDP ÷ 실질 GDP) × 100</td><td>국내 생산물 전체의 <b>가장 포괄적인 물가지수</b></td></tr>
+      <tr><td><b>잠재 GDP</b></td><td>완전고용 수준의 노동력과 정상 가동 자본이 투입될 때의 GDP. <em>추정치임</em></td><td>경기 국면 판단의 기준선</td></tr>
+      <tr><td><b>산출갭</b><br><span class="cite">GDP갭</span></td><td>실제 GDP − 잠재 GDP</td><td>(−) 침체 / (+) 과열·물가 상승 압력</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">GDP디플레이터와 CPI는 무엇이 다른가</span>
+    <ul style="margin-bottom:0">
+      <li><b>CPI</b> — 소비자가 사는 것만 담음. 가계 장바구니 기준임.</li>
+      <li><b>GDP디플레이터</b> — <b>수출품·투자재까지</b> 포함함. 국내에서 생산된 모든 것이 대상임.</li>
+      <li>그래서 <strong>수출 가격이 떨어지면 디플레이터는 낮아지는데 CPI는 그대로</strong>일 수 있음. → 6주차 물가에서 다시 다룸.</li>
+      <li>다만 디플레이터에는 <em>수입품 가격이 빠져 있음.</em> 완벽한 물가지수는 없음.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">기사에서 "GDP"라고만 쓰면 명목인지 실질인지 확인함</span>
+    <ul style="margin-bottom:0">
+      <li><strong>"세계 ○위 경제대국"</strong> → <b>명목 GDP</b>를 달러로 환산한 것임. <em>환율에 따라 순위가 바뀜.</em> 원화가 약해지면 생산이 그대로여도 순위가 내려감.</li>
+      <li><strong>"성장률"</strong> → <b>실질 GDP</b> 증가율임.</li>
+      <li>두 숫자를 한 기사에 섞어 쓰면 <em>성격이 다른 것을 나란히 놓은 것임.</em></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">잠재 GDP는 5주차의 예고편임</span>
+    <ul style="margin-bottom:0">
+      <li>잠재 GDP는 <strong>완전고용</strong>을 전제로 함. 그런데 <em>완전고용은 실업률 0%가 아님.</em> 왜 그런지는 5주차 고용에서 <b>자연실업률</b> 개념으로 다룸.</li>
+      <li>한국의 최근 <b>잠재성장률</b> 추정치는 기관에 따라 <strong>대체로 1%대 후반~2%</strong>임. 한국은행·KDI·OECD가 각각 다른 값을 냄.</li>
+      <li><em>추정치이므로 기관마다 다른 것이 정상임.</em> 기사가 "잠재성장률 ○%"라고 단정하면 <b>어느 기관 추정인지</b> 확인할 것.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>성장률과 성장기여도</h2>
+  <div class="h2rule"></div>
+
+  <h3>경제성장률</h3>
+  <ul>
+    <li>물가 요인을 제거한 <strong>실질 GDP의 증가율</strong>임.</li>
+    <li><b>전년동기비</b>와 <b>전기비</b>를 둘 다 발표함.</li>
+    <li><b>원계열</b>과 <b>계절조정 계열</b>을 함께 발표함. → 2주차 규칙을 그대로 적용함.</li>
+  </ul>
+
+  <h3>성장기여도 — 이 주차에서 가장 중요한 개념</h3>
+  <p>경제활동부문(제조업·서비스업)과 지출부문(소비·투자·수출)이 성장에 <strong>각각 몇 %p 기여했는가</strong>를 나타냄.</p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">같은 2.0% 성장 — 그런데 전혀 다른 두 경제</div>
+    </div>
+    <div class="info-b">
+      <h4 style="margin-top:0">A · 자생적 회복</h4>
+      <div class="brow">
+        <div class="bl">민간소비</div>
+        <div class="bt2"><div class="bf teal" style="width:60%"></div></div>
+        <div class="bv teal">+1.2%p</div>
+      </div>
+      <div class="brow">
+        <div class="bl">설비투자</div>
+        <div class="bt2"><div class="bf teal" style="width:25%"></div></div>
+        <div class="bv teal">+0.5%p</div>
+      </div>
+      <div class="brow">
+        <div class="bl">순수출</div>
+        <div class="bt2"><div class="bf teal" style="width:15%"></div></div>
+        <div class="bv teal">+0.3%p</div>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft);margin:6px 0 22px">사람들이 쓰고 기업이 투자했음. <strong>스스로 굴러가는 성장임.</strong></p>
+
+      <h4>B · 밀어 올린 성장</h4>
+      <div class="brow">
+        <div class="bl">민간소비</div>
+        <div class="bt2"><div class="bf" style="width:5%"></div></div>
+        <div class="bv">+0.1%p</div>
+      </div>
+      <div class="brow">
+        <div class="bl">정부지출</div>
+        <div class="bt2"><div class="bf warm" style="width:45%"></div></div>
+        <div class="bv">+0.9%p</div>
+      </div>
+      <div class="brow">
+        <div class="bl">재고증감</div>
+        <div class="bt2"><div class="bf rose" style="width:50%"></div></div>
+        <div class="bv rose">+1.0%p</div>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft);margin:6px 0 0">정부가 끌어올렸고 <strong>재고가 쌓였음.</strong> <em>재고 증가는 안 팔려서 창고에 남은 것일 수 있음.</em></p>
+    </div>
+    <div class="info-f">
+      두 시나리오는 <b>개념 설명을 위해 구성한 예시</b>이며 특정 분기의 실제 수치가 아님. 실제 기여도는 한국은행 「국민소득(잠정)」 통계표에서 확인할 수 있음.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">재고 기여도는 기사에 거의 나오지 않음</span>
+    <ul style="margin-bottom:0">
+      <li>성장률이 같아도 <strong>누가 끌었느냐가 다르면 완전히 다른 경제임.</strong></li>
+      <li>특히 <b>재고증감</b>이 성장률을 끌어올린 분기는 조심해서 읽어야 함. <em>생산은 했는데 팔리지 않은 것</em>일 수 있기 때문임.</li>
+      <li>재고 기여도를 짚는 기사는 드묾. <b>그래서 그것을 짚으면 즉시 돋보임.</b></li>
+      <li>판단하려면 함께 볼 것 — <em>출하지수, 재고율, 다음 분기 생산 계획.</em> → 4주차 경기순환</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">최근 논점 — 대규모 투자가 끌어올리는 성장</span>
+    <ul style="margin-bottom:0">
+      <li>지출국민소득의 <b>설비투자 · 지식재산생산물투자</b> 항목에 데이터센터·반도체 투자가 잡힘.</li>
+      <li>물어볼 것 — 성장률을 <em>소수의 대규모 투자</em>가 끌어올리는 구조인가?</li>
+      <li>그렇다면 그 성장은 <b>고용으로 이어지는가?</b> → 5주차 고용</li>
+      <li><strong>"성장률 상향"과 "체감경기 악화"가 동시에 성립하는 이유</strong>를 성장기여도로 설명할 수 있음.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>지출 측면 — 항등식 하나</h2>
+  <div class="h2rule"></div>
+
+  <div class="pull">
+    <div class="q">Y = C + I + G + (X − M)</div>
+    <div class="a">이 식 하나로 학기 후반부가 어디에 꽂히는지 설명됨.</div>
+  </div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:10%">기호</th><th style="width:24%">이름</th><th style="width:38%">무엇이 들어가는가</th><th>다시 다루는 주차</th></tr></thead>
+    <tbody>
+      <tr><td class="num">Y</td><td><b>국민소득</b></td><td>GDP. 총부가가치임</td><td>이번 주차</td></tr>
+      <tr><td class="num">C</td><td><b>소비</b></td><td>최종소비지출 (가계 + 민간비영리단체)</td><td>4주차 경제심리 · 11주차 가계</td></tr>
+      <tr><td class="num">I</td><td><b>투자</b></td><td>총자본형성 — 설비투자, 건설투자, 지식재산생산물투자, <b>재고증감</b></td><td>4주차 · 11주차 부동산</td></tr>
+      <tr><td class="num">G</td><td><b>정부지출</b></td><td>정부소비지출</td><td><b>14주차 정부재정</b></td></tr>
+      <tr><td class="num">X−M</td><td><b>순수출</b></td><td>수출 − 수입</td><td><b>15주차 무역과 환율</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">이 식을 기억해두면 좋은 이유</span>
+    <ul style="margin-bottom:0">
+      <li>기사에서 <b>"내수 부진"</b>이라고 하면 C와 I를 말하는 것임.</li>
+      <li><b>"수출로 버텼다"</b>는 (X−M)이 성장기여도를 끌었다는 뜻임.</li>
+      <li><b>"재정이 성장을 지탱했다"</b>는 G의 기여도가 컸다는 뜻임.</li>
+      <li>연결 지표 — <b>순수출(NX)</b>, <b>총고정자본형성(GFCF)</b>, <b>저축·투자 격차(S−I Gap)</b>. S−I Gap은 대체로 <em>경상수지와 연결됨.</em> → 15주차</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>GNI와 교역조건 — 왜 GDP만으로 부족한가</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">지표</th><th style="width:40%">계산</th><th>무엇을 보여주는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>명목 GNI</b></td><td>명목 GDP + 명목 <b>국외순수취요소소득</b></td><td>우리 국민이 국내외에서 벌어들인 총소득</td></tr>
+      <tr><td><b>1인당 GNI</b></td><td>명목 GNI ÷ 인구</td><td>국제비교용. <b>미달러로 표시</b>하므로 환율에 크게 흔들림</td></tr>
+      <tr><td><b>실질 GDI</b></td><td>실질 GDP + <b>교역조건 변화에 따른 실질무역손익</b></td><td>국내 생산물의 <b>실질 구매력</b></td></tr>
+      <tr><td><b>실질 GNI</b></td><td>실질 GDI + 실질 국외순수취요소소득</td><td>국민이 실제로 쓸 수 있는 실질 소득</td></tr>
+      <tr><td><b>GNDI</b><br><span class="cite">국민총처분가능소득</span></td><td>GNI + 국외순수취경상이전</td><td>소비·저축에 자유로이 쓸 수 있는 총소득. <b>총저축률의 분모</b></td></tr>
+      <tr><td><b>PGDI</b><br><span class="cite">가계총처분가능소득</span></td><td>가계 몫만 따로 본 것</td><td><b>가계의 구매력</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">핵심 기사거리</div>
+      <div class="t">GDP는 늘었는데 GNI는 줄 수 있음</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>원자재 가격이 급등해 <strong>교역조건이 나빠지면</strong>(수입 가격 상승) 같은 양을 생산해도 <em>실질 구매력은 줄어듦.</em></li>
+        <li><b>쉬운 비유</b> — 작년에는 반도체 100개를 팔아 기름 100통을 샀음. 올해도 100개를 만들어 팔았는데 기름값이 올라 <b>80통밖에 못 삼.</b></li>
+        <li><strong>생산(GDP)은 그대로인데 실질 소득(GDI)은 줄었음.</strong></li>
+      </ul>
+
+      <div class="info" style="margin:18px 0 0">
+        <div class="info-h">
+          <div class="t">교역조건이 나빠지면 무슨 일이 생기는가</div>
+        </div>
+        <div class="info-b">
+          <figure style="margin:0">
+            <svg viewBox="0 0 760 200" role="img" aria-label="교역조건 악화가 실질 소득을 줄이는 경로 도식">
+              <!-- 작년 -->
+              <text x="30" y="30" font-size="14" font-weight="800" fill="#0d2244">작년</text>
+              <rect x="30" y="44" width="150" height="44" rx="7" fill="#e8eef5" stroke="#c8d6e5"/>
+              <text x="105" y="72" text-anchor="middle" font-size="13.5" fill="#0d2244">반도체 100개 생산</text>
+              <line x1="184" y1="66" x2="228" y2="66" stroke="#8492a6" stroke-width="2"/>
+              <polygon points="228,66 220,61 220,71" fill="#8492a6"/>
+              <rect x="232" y="44" width="150" height="44" rx="7" fill="#eefaf7" stroke="#a5d9d1"/>
+              <text x="307" y="72" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0f766e">기름 100통 구입</text>
+
+              <!-- 올해 -->
+              <text x="30" y="124" font-size="14" font-weight="800" fill="#0d2244">올해</text>
+              <rect x="30" y="138" width="150" height="44" rx="7" fill="#e8eef5" stroke="#c8d6e5"/>
+              <text x="105" y="166" text-anchor="middle" font-size="13.5" fill="#0d2244">반도체 100개 생산</text>
+              <line x1="184" y1="160" x2="228" y2="160" stroke="#8492a6" stroke-width="2"/>
+              <polygon points="228,160 220,155 220,165" fill="#8492a6"/>
+              <rect x="232" y="138" width="150" height="44" rx="7" fill="#fdf1f2" stroke="#e8b9be"/>
+              <text x="307" y="166" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a4303f">기름 80통만 구입</text>
+
+              <!-- 결론 -->
+              <rect x="420" y="44" width="310" height="138" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+              <text x="440" y="72" font-size="13.5" font-weight="800" fill="#b45309">생산량은 똑같음</text>
+              <text x="440" y="98" font-size="13.5" fill="#5a6779">실질 GDP — <tspan font-weight="700" fill="#0d2244">변화 없음</tspan></text>
+              <text x="440" y="122" font-size="13.5" fill="#5a6779">교역조건 — <tspan font-weight="700" fill="#a4303f">악화</tspan></text>
+              <text x="440" y="146" font-size="13.5" fill="#5a6779">실질 GDI · GNI — <tspan font-weight="700" fill="#a4303f">감소</tspan></text>
+              <text x="440" y="170" font-size="12.5" fill="#8492a6">→ "성장했는데 왜 가난해졌나"</text>
+            </svg>
+          </figure>
+        </div>
+        <div class="info-f">
+          <b>교역조건 = 수출가격지수 ÷ 수입가격지수</b>임. 에너지·원자재를 수입에 의존하는 한국은 국제 가격에 특히 민감함. → 15주차에서 본격적으로 다룸.
+        </div>
+      </div>
+
+      <h4>실제로 벌어진 일 — 2022년</h4>
+      <div class="tw">
+      <table>
+        <thead><tr><th style="width:40%">지표</th><th style="width:30%">2022년 증감률</th><th>무엇을 뜻하는가</th></tr></thead>
+        <tbody>
+          <tr><td><b>실질 GDP</b></td><td class="num" style="color:#0f766e">+2.9%</td><td>생산은 늘었음</td></tr>
+          <tr><td><b>실질 GNI</b></td><td class="num" style="color:#a4303f">−0.5%</td><td>실질 소득은 <b>줄었음</b></td></tr>
+          <tr><td>1인당 GNI (달러)</td><td class="num" style="color:#a4303f">−7.0%</td><td>37,927 → 35,284달러. 환율 효과까지 겹쳤음</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <ul style="margin-bottom:0">
+        <li>에너지 가격이 급등해 <strong>교역조건이 크게 나빠진 해</strong>였음.</li>
+        <li><em>같은 해에 "성장했다"와 "소득이 줄었다"가 둘 다 사실이었음.</em></li>
+        <li>기자가 어느 쪽을 쓰느냐에 따라 <b>정반대 기사</b>가 나옴.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">PGDI가 GNI보다 덜 늘면 무슨 뜻인가</span>
+    <ul style="margin-bottom:0">
+      <li>성장의 과실이 <strong>가계에 덜 갔다</strong>는 뜻임.</li>
+      <li>기업(영업잉여)이나 정부(세금) 쪽으로 더 갔을 수 있음.</li>
+      <li>→ 14주차 소득분배와 직결됨. <em>노동소득분배율과 함께 보면 그림이 완성됨.</em></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">달러 표시 지표는 환율 뉴스이기도 함</span>
+    <ul style="margin-bottom:0">
+      <li><b>1인당 GNI</b>는 미달러로 발표됨. 따라서 <em>원·달러 환율이 오르면(원화 약세) 달러 표시 값은 내려감.</em></li>
+      <li>생산이 늘어도 <b>달러 기준으로는 제자리</b>일 수 있음. 반대도 마찬가지임.</li>
+      <li>스스로 확인할 것 — <em>"이 정체는 생산 부진 때문인가, 환율 때문인가?"</em></li>
+      <li>구별법 — <b>원화 기준 GNI</b>와 <b>달러 기준 GNI</b>를 나란히 놓고 증감률을 비교함. 한국은행 보도자료에 둘 다 있음.</li>
+      <li>→ 15주차 환율과 연결해 읽을 것.</li>
+    </ul>
+  </div>
+
+  <h3>숫자로 확인하기 — 1인당 GNI는 왜 제자리처럼 보이는가</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:20%">연도</th><th style="width:30%">1인당 GNI (달러)</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td class="num">2021</td><td class="num">37,927</td><td>원화 강세기</td></tr>
+      <tr><td class="num">2022</td><td class="num" style="color:#a4303f">35,284</td><td><b>−7.0%.</b> 교역조건 악화 + 원화 약세</td></tr>
+      <tr><td class="num">2023</td><td class="num">36,158</td><td>회복</td></tr>
+      <tr><td class="num">2024</td><td class="num">36,857</td><td>+1.9%</td></tr>
+      <tr><td class="num">2025</td><td class="num">36,963</td><td>+0.3%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box key">
+    <span class="bt">이 표에서 읽어야 할 것</span>
+    <ul style="margin-bottom:0">
+      <li><strong>2021년 수준을 아직 회복하지 못했음.</strong> 그런데 그동안 <em>실질 생산은 계속 늘었음.</em></li>
+      <li>차이를 만든 것은 <b>환율과 교역조건</b>임. 생산 부진이 아님.</li>
+      <li>같은 이유로 <b>명목 GDP 세계 순위</b>도 흔들림. 최근 순위 하락은 <em>원화 약세가 주된 원인</em>으로 지목됨.</li>
+      <li>따라서 <strong>"○년째 제자리" 기사는 환율 기사로 읽어야 하는 경우가 많음.</strong></li>
+      <li>수치는 <b>발표 시점(vintage)에 따라 달라짐.</b> 잠정치와 확정치가 다르므로 <em>인용할 때 어느 발표 기준인지 밝힐 것.</em> → 2주차 속보·잠정·확정</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+  <p class="lede">이 주차의 숫자는 전부 <strong>한국은행 보도자료 원문</strong>에 있음. 기사에 안 나올 뿐임.</p>
+
+  <h3>한국은행 국민계정 계열</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">보도자료</th><th style="width:20%">시점</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>「○년 ○분기 실질 국내총생산(속보)」</b></td><td>분기 종료 후 <b>28일 이내</b></td><td>속보 성장률(전기비·전년동기비), 지출부문별</td></tr>
+      <tr><td><b>「○년 ○분기 국민소득(잠정)」</b></td><td>분기 종료 후 <b>70일 이내</b></td><td>잠정 성장률, <b>실질 GNI</b>, GDP디플레이터, <b>성장기여도</b></td></tr>
+      <tr><td>「○년 국민소득(잠정)」 연간</td><td>익년 3월 이내</td><td>연간 GDP, <b>1인당 GNI</b></td></tr>
+      <tr><td>「○년 국민계정(잠정)」</td><td>익년 6월 이내</td><td>연간 확정 직전 계열</td></tr>
+      <tr><td>「○년 국민계정(확정)」</td><td>내후년 6월</td><td>확정치</td></tr>
+      <tr><td><b>국민계정 기준년 개편</b></td><td>약 5년 주기</td><td><b>과거 성장률 계열 전체가 바뀜</b></td></tr>
+      <tr><td>「경제전망보고서」</td><td>연 4회 (2·5·8·11월)</td><td>성장률·물가 전망치</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>함께 보는 자료</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:28%">자료</th><th style="width:20%">기관 · 주기</th><th>왜 함께 보는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>「산업활동동향」</b></td><td>국가데이터처 · 매월 말경</td><td>전산업생산·소매판매·설비투자. <b>GDP의 월별 선행 신호임</b></td></tr>
+      <tr><td>「최근 경제동향(그린북)」</td><td>재정경제부 · 매월 중순</td><td>생산·소비·투자·수출입 종합 진단</td></tr>
+      <tr><td>「경제동향」</td><td>KDI · 매월</td><td>정부와 <b>독립된</b> 분석·전망</td></tr>
+      <tr><td>「Beige Book」</td><td>미국 Fed · 연 8회</td><td>지역별 질적 분석. 숫자가 아닌 서술로 경기를 봄</td></tr>
+      <tr><td>「세계경제전망(WEO)」</td><td>IMF · 본편 연 2회(4·10월)</td><td>중간에 <b>Update</b>가 연 2회(1·7월) 더 나옴. 한국 성장률 전망의 <b>국제 준거</b></td></tr>
+      <tr><td>「Economic Outlook」</td><td>OECD · 본편 연 2회(6·12월)</td><td>회원국 비교 전망. 중간에 <b>Interim Report</b>가 연 2회(3·9월) 더 나옴</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">보도자료 원문에서 직접 찾아볼 다섯 가지</span>
+    <ol style="margin-bottom:0">
+      <li><b>전기비 성장률</b>과 <b>전년동기비 성장률</b> — 두 숫자가 얼마나 다른가.</li>
+      <li><b>지출부문별 성장기여도</b> — 어느 항목이 가장 크게 기여했는가.</li>
+      <li><b>재고증감의 기여도</b> — (+)인가 (−)인가.</li>
+      <li><b>실질 GNI 증가율</b> — 실질 GDP 증가율과 다른가. 다르다면 왜인가.</li>
+      <li><b>GDP디플레이터 상승률</b> — 같은 기간 CPI 상승률과 비교하면 어떤가.</li>
+    </ol>
+    <p style="margin:10px 0 0">이 다섯 중 <strong>기사에 실제로 등장하는 것은 대개 한두 개임.</strong> 나머지가 기사거리임.</p>
+  </div>
+
+  <div class="box note">
+    <span class="bt">보도자료 접근 경로</span>
+    <ul style="margin-bottom:0">
+      <li><b>한국은행</b> — <a href="https://www.bok.or.kr" target="_blank" rel="noopener">bok.or.kr</a> &gt; 뉴스/자료 &gt; 보도자료. 통계는 <a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a>에서 바로 받는 것이 빠름</li>
+      <li><b>국가데이터처</b> — <a href="https://mods.go.kr" target="_blank" rel="noopener">mods.go.kr</a> &gt; 새소식 &gt; 보도자료</li>
+      <li><b>재정경제부</b> — <a href="https://mofe.go.kr" target="_blank" rel="noopener">mofe.go.kr</a> &gt; 보도·참고자료</li>
+      <li><b>KDI</b> — <a href="https://eiec.kdi.re.kr" target="_blank" rel="noopener">eiec.kdi.re.kr</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>3면 등가의 법칙</b>
+      생산 = 지출 = 분배. <em>분배 쪽의 피용자보수가 5·14주차로 이어짐.</em></li>
+    <li><b>명목 · 실질 · GDP디플레이터</b>
+      "세계 ○위"는 명목·달러, "성장률"은 실질임.</li>
+    <li><b>성장기여도</b>
+      성장률이 같아도 누가 끌었느냐가 다르면 다른 경제임. <em>특히 재고를 볼 것.</em></li>
+    <li><b>GNI와 교역조건</b>
+      GDP는 늘었는데 GNI는 줄 수 있음. <em>수입 가격이 오르면 실질 구매력이 줆.</em></li>
+    <li><b>잠재 GDP와 산출갭</b>
+      완전고용은 실업률 0%가 아님. → 5주차</li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "성장률 ○%"만 단독으로 쓴 기사</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>전기비인지 전년동기비인지</strong> 밝히지 않았음. 두 숫자는 크게 다를 수 있음.</li>
+      <li><b>확인할 것</b> — 보도자료의 두 계열을 모두 봄. 기사가 어느 것을 썼는지 표시함.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — 속보치를 확정치처럼 서술한 기사</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 잠정치에서 수정됨. <strong>0.1~0.3%p 수정은 흔함.</strong></li>
+      <li><b>확인할 것</b> — 제목에 (속보)가 있는지, 과거 수정폭이 얼마였는지 봄.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "GDP 세계 ○위"와 "성장률"을 한 기사에 섞어 쓰기</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 앞은 <strong>명목·달러 환산</strong>, 뒤는 <strong>실질</strong>임. 성격이 다른 두 숫자임.</li>
+      <li><b>확인할 것</b> — 순위 변동이 <em>생산 때문인지 환율 때문인지</em> 구별함.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>성장률은 같은데 성장기여도 구성이 전혀 다른 두 분기가 있음.</b><br>기자는 이 차이를 어떻게 제목에 담을 수 있는가. 실제로 그렇게 쓴 기사를 본 적 있는가.</li>
+    <li><b>재고증감이 성장률을 끌어올린 분기는 좋은 분기인가, 나쁜 분기인가?</b><br>판단하려면 무엇을 더 봐야 하는가.</li>
+    <li><b>GDP는 늘었는데 실질 GNI는 줄었음. 이날의 제목을 어떻게 뽑겠는가?</b><br>그리고 그 제목이 정파적으로 읽힐 위험은 없는가.</li>
+    <li><b>1인당 GNI가 몇 년째 제자리라는 기사가 나왔음.</b><br>이것을 성장 부진의 증거로 쓸 수 있는가, 아니면 환율의 문제인가. 어떻게 구별하는가.</li>
+    <li><b>GDP에 들어가지 않는 것들 — 가사노동, 돌봄, 자원봉사, 무료 디지털 서비스.</b><br>AI가 만든 가치는 GDP에 어떻게 잡히는가. 안 잡힌다면 그것은 통계의 실패인가.</li>
+    <li><b>성장률은 정권 평가의 대표 지표임.</b><br>같은 성장률에 대해 매체별 형용사("선방했다" / "부진했다")가 어떻게 다른가. 비교 기준("OECD 평균 대비", "전 정부 대비", "전망치 대비") 중 무엇을 고르느냐가 결론을 어떻게 바꾸는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>1인당 GNI 4만 달러 논쟁</b>이 매년 3월 기사거리가 됨. 한국은행 스스로 <em>"환율 향방에 달렸다"</em>고 밝힌 만큼, <b>생산 지표가 아니라 환율 지표로 읽어야 하는 국면</b>이 있음.</li>
+      <li><b>대규모 투자의 성장기여도</b>가 커지면서 "성장률과 체감경기의 괴리"가 구조적 논점이 되었음. 지식재산생산물투자 비중 변화를 시계열로 보여주면 좋은 그래픽이 나옴.</li>
+      <li><b>GDP가 측정하지 못하는 것</b>에 대한 국제 논의가 이어지고 있음 — 무료 디지털 서비스, 가사·돌봄노동, 환경 훼손. OECD·UN이 <b>위성계정(satellite account)</b> 방식으로 보완하고 있음.</li>
+      <li><b>기준년 개편</b> 때마다 과거 성장률 계열 전체가 바뀜. 개편 자체를 기사화하는 관행이 한국 언론에는 아직 약함. <em>좋은 비평 소재임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』 (제10차 개정판)</b> — 국민계정 편. <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a></li>
+      <li><b>임현우 (2023). 『경제기사를 읽어야 경제가 보인다』.</b> 한국경제신문 — GDP 편</li>
+      <li><b>경제지표 사전</b> 1절 「국민계정·성장·소득·생산성」. <a href="../data.html">경제 데이터 분석실</a>에서 열람</li>
+    </ul>
+
+    <h4>보도자료 · 통계</h4>
+    <ul>
+      <li><a href="https://www.bok.or.kr" target="_blank" rel="noopener">한국은행</a> &gt; 뉴스/자료 &gt; 보도자료 — 「실질 국내총생산(속보)」 · 「국민소득(잠정)」</li>
+      <li><a href="https://eiec.kdi.re.kr/policy/materialList.do" target="_blank" rel="noopener">KDI 경제정책자료</a> — 부처·기관 보도자료가 모여 있어 검색이 편함</li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">한국은행 ECOS</a> — GDP·GNI·디플레이터 시계열</li>
+      <li><a href="https://mods.go.kr" target="_blank" rel="noopener">국가데이터처</a> — 「산업활동동향」</li>
+      <li><a href="https://eiec.kdi.re.kr" target="_blank" rel="noopener">KDI 경제교육·정보센터</a> — 「경제동향」, GDP·GNI 용어 해설</li>
+      <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — 미국 GDP, 국제비교</li>
+    </ul>
+
+    <h4>국제 전망</h4>
+    <ul>
+      <li><a href="https://www.imf.org/en/Publications/WEO" target="_blank" rel="noopener">IMF, <i>World Economic Outlook</i></a> — 국가별 성장률 전망</li>
+      <li><a href="https://www.oecd.org/en/publications/serials/oecd-economic-outlook_g1ghgh13.html" target="_blank" rel="noopener">OECD, <i>Economic Outlook</i></a> — 본편 연 2회(6·12월) + Interim 연 2회(3·9월)</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 3주차 강의자료</b><br>
+  주 출처: 한국은행 『알기 쉬운 경제지표해설』 국민계정 편</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="02_경제통계와지표.html">2주차</a> &nbsp;·&nbsp; <a href="04_경기순환과경제심리.html">4주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

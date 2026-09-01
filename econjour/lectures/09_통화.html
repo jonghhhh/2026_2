@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9주차 · 통화(화폐) | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 9주차 강의자료 — 신용창조, M0·M1·M2, 통화승수와 화폐유통속도, 통화정책 수단, 양적완화, 그리고 금융통화위원회 의결문 읽는 법.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">9주차 · 통화(화폐)</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">9주차<br>통화(화폐)</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 돈은 어떻게 만들어지나</div>
+    <a href="#s2"><span class="n">02</span><span>화폐와 통화</span></a>
+    <a href="#s3"><span class="n">03</span><span>신용창조</span></a>
+    <a href="#s4"><span class="n">04</span><span>M0 · M1 · M2</span></a>
+
+    <div class="sb-label">2회차 · 통화정책</div>
+    <a href="#s5"><span class="n">05</span><span>중앙은행의 도구들</span></a>
+    <a href="#s6"><span class="n">06</span><span>금융통화위원회 읽기</span></a>
+    <a href="#s7"><span class="n">07</span><span>통화 이론 두 갈래</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s8"><span class="n">08</span><span>보도자료와 통계</span></a>
+    <a href="#s9"><span class="n">09</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s10"><span class="n">10</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 4. 돈의 가격 — 통화와 금리 · 9주차</div>
+    <h1>시중의 돈 대부분은 한국은행이 아니라<br>은행이 대출로 만듦</h1>
+    <div class="sub">통화(화폐)</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede"><strong>"돈을 푼다 / 거둬들인다"</strong>는 말의 실체를 밝힘. 그리고 <strong>금융통화위원회 의결문을 읽는 법</strong>이 이 주차의 실무 핵심임.</p>
+
+  <div class="pull">
+    <div class="q">"시중의 돈 대부분은<br>한국은행이 아니라 은행이 대출로 만듦."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>여는 질문</h3>
+  <div class="anat">
+    <div class="s">"한국은행이 돈을 풀었다"</div>
+    <div class="g">
+      <div class="c"><div class="n">질문 1</div><div class="q">한국은행이 진짜 지폐를 찍어 나눠주는가</div><div class="d">아님. 대부분은 그런 방식이 아님</div></div>
+      <div class="c"><div class="n">질문 2</div><div class="q">시중에 도는 돈의 총량은 얼마인가</div><div class="d">어느 지표로 세느냐에 따라 수십 배 다름</div></div>
+      <div class="c"><div class="n">질문 3</div><div class="q">그 돈은 누가 만들었는가</div><div class="d">대부분 <b>시중은행이 대출로 만들었음</b></div></div>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">이어서 생각해 볼 것 — 대출이 줄면 돈이 줄어드는가</span>
+    <ul style="margin-bottom:0">
+      <li><strong>그렇음. 상환은 돈을 없앰.</strong></li>
+      <li>이 감각이 있으면 <b>11주차 가계부채</b>와 <b>10주차 금리</b>가 훨씬 쉬워짐.</li>
+      <li>"가계부채가 줄었다"는 기사는 <em>동시에 "통화량이 줄었다"는 뜻이기도 함.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>본원통화 (M0)<span class="en">monetary base</span></dt>
+      <dd>한국은행이 <b>직접 공급</b>한 돈. 현금 + 지급준비금임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>M1 (협의통화)<span class="en">narrow money</span></dt>
+      <dd>현금 + 요구불예금 + 수시입출식 저축성예금. <b>당장 쓸 수 있는 돈</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>M2 (광의통화)<span class="en">broad money</span></dt>
+      <dd>M1 + 만기 2년 미만 정기예적금 등.
+        <span class="ez">주의 — 뉴스에 나오는 '통화량'은 대개 M2임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>신용창조<span class="en">credit creation</span></dt>
+      <dd>은행이 예금의 일부만 남기고 대출하는 과정이 반복되며 <b>통화량이 불어나는 것</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>지급준비율<span class="en">reserve requirement ratio</span></dt>
+      <dd>예금 중 은행이 반드시 남겨둬야 하는 비율임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>통화승수<span class="en">money multiplier</span></dt>
+      <dd>통화량 ÷ 본원통화. <b>한 번 푼 돈이 몇 배로 불어났는가</b>를 나타냄.</dd>
+    </dl>
+    <dl class="term">
+      <dt>화폐유통속도<span class="en">velocity of money</span></dt>
+      <dd>명목 GDP ÷ 통화량. <b>돈이 얼마나 자주 돌았는가</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>공개시장운영<span class="en">open market operation</span></dt>
+      <dd>중앙은행이 국채·통안증권을 <b>사고팔아</b> 통화량을 조절하는 것임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>기준금리<span class="en">base rate</span></dt>
+      <dd>한국은행과 금융기관 간 거래에 적용되는 정책금리. <b>모든 금리의 출발점</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>양적완화 · 양적긴축<span class="en">QE / QT</span></dt>
+      <dd><b>QE</b>는 채권을 사서 돈을 직접 푸는 것, <b>QT</b>는 보유 자산을 줄여 돈을 흡수하는 것임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>유동성 함정<span class="en">liquidity trap</span></dt>
+      <dd>돈을 아무리 풀어도 <b>실물로 흐르지 않는 상태</b>임. → 7주차 일본 사례</dd>
+    </dl>
+    <dl class="term">
+      <dt>금융상황지수<span class="en">FCI</span></dt>
+      <dd>금리·환율·주가·신용스프레드를 합성해 <b>돈줄이 조였는지 풀렸는지</b> 보는 지표임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>화폐와 통화</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><b>화폐</b> — 상품의 가치를 지녀 지불 기능을 가진 교환 수단임.</li>
+    <li><b>통화</b> — 유통화폐의 준말. 유통·지불 수단으로 기능하는 화폐임.</li>
+    <li><b>물품화폐</b> — 물건 자체의 가치를 지닌 화폐(금·은·쌀·소금).</li>
+    <li><b>법화</b> — 자체 가치는 없으나 <b>정부가 가치를 보증</b>하는 화폐(동전·지폐).</li>
+  </ul>
+
+  <h3>화폐의 세 기능</h3>
+  <div class="tri c1">
+    <div>
+      <h5>교환의 매개</h5>
+      <span class="tag">medium of exchange</span>
+      <ul><li>사는 사람이 파는 사람에게 주는 지불 수단</li></ul>
+    </div>
+    <div>
+      <h5>가치척도</h5>
+      <span class="tag">measure of value</span>
+      <ul><li>가격을 정하고 채무를 기록하는 측정 기준</li></ul>
+    </div>
+    <div>
+      <h5>가치저장</h5>
+      <span class="tag">store of value</span>
+      <ul><li>현재의 구매력을 미래로 이전</li></ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">스테이블코인 · CBDC는 '화폐'인가 — 정의를 따져 묻는 훈련</span>
+    <ul style="margin-bottom:0">
+      <li><b>비트코인</b>은 '가치저장'은 주장하지만 <strong>'가치척도'로는 쓰이지 않음.</strong> <em>비트코인으로 가격을 매기는 상점이 없음.</em> 값이 너무 흔들려 척도가 될 수 없기 때문임.</li>
+      <li><b>스테이블코인</b>은 가치를 고정하려 함 → <b>교환의 매개</b>에 가까움.</li>
+      <li><b>CBDC</b>는 중앙은행이 직접 발행하는 디지털 법화임.</li>
+      <li>기사에서 이들을 <strong>"화폐"라고 부를 수 있는가.</strong> 세 기능 중 무엇을 충족하고 무엇을 못 하는지 따져 볼 것.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>신용창조 — 이 주차의 핵심</h2>
+  <div class="h2rule"></div>
+  <p class="lede">은행이 예금의 일부만 지급준비금으로 남기고 나머지를 대출하는 과정이 반복되며 <strong>시중 통화량이 늘어남.</strong></p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">10만 원이 100만 원이 되는 과정 — 지급준비율 10%일 때</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 280" role="img" aria-label="신용창조 단계별 예금과 대출의 반복 도식">
+          <!-- A은행 -->
+          <text x="30" y="28" font-size="13" font-weight="800" fill="#0d2244">A은행</text>
+          <rect x="30" y="38" width="380" height="34" rx="5" fill="#e8eef5" stroke="#c8d6e5"/>
+          <rect x="30" y="38" width="38" height="34" rx="5" fill="#a4303f"/>
+          <text x="49" y="60" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">지준</text>
+          <text x="240" y="60" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">대출 90,000원</text>
+          <text x="425" y="60" font-size="12.5" fill="#5a6779">예금 100,000원</text>
+
+          <!-- B은행 -->
+          <text x="30" y="100" font-size="13" font-weight="800" fill="#0d2244">B은행</text>
+          <rect x="30" y="110" width="342" height="34" rx="5" fill="#e8eef5" stroke="#c8d6e5"/>
+          <rect x="30" y="110" width="34" height="34" rx="5" fill="#a4303f"/>
+          <text x="47" y="132" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">지준</text>
+          <text x="220" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">대출 81,000원</text>
+          <text x="387" y="132" font-size="12.5" fill="#5a6779">예금 90,000원</text>
+
+          <!-- C은행 -->
+          <text x="30" y="172" font-size="13" font-weight="800" fill="#0d2244">C은행</text>
+          <rect x="30" y="182" width="308" height="34" rx="5" fill="#e8eef5" stroke="#c8d6e5"/>
+          <rect x="30" y="182" width="31" height="34" rx="5" fill="#a4303f"/>
+          <text x="45" y="204" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">지준</text>
+          <text x="205" y="204" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">대출 72,900원</text>
+          <text x="353" y="204" font-size="12.5" fill="#5a6779">예금 81,000원</text>
+
+          <text x="30" y="240" font-size="13" fill="#8492a6">… 이 과정이 계속 반복됨 …</text>
+
+          <!-- 결과 -->
+          <rect x="480" y="88" width="250" height="128" rx="9" fill="#eefaf7" stroke="#a5d9d1"/>
+          <text x="605" y="114" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0f766e">최종 결과</text>
+          <text x="500" y="140" font-size="13" fill="#5a6779">총예금창조액</text>
+          <text x="710" y="140" text-anchor="end" font-size="13.5" font-weight="800" fill="#0d2244">1,000,000원</text>
+          <text x="500" y="164" font-size="13" fill="#5a6779">순예금창조액</text>
+          <text x="710" y="164" text-anchor="end" font-size="13.5" font-weight="800" fill="#0d2244">900,000원</text>
+          <text x="500" y="192" font-size="13" fill="#5a6779">통화승수</text>
+          <text x="710" y="192" text-anchor="end" font-size="17" font-weight="800" fill="#0f766e">10배</text>
+        </svg>
+      </figure>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">계산 공식</span>
+        <ul style="margin-bottom:0">
+          <li><code>총예금창조액 = 본원적예금 ÷ 지급준비율</code></li>
+          <li><code>순예금창조액 = 총예금창조액 − 본원적예금</code></li>
+          <li><code>통화승수 = 통화량 ÷ 본원통화</code> <span class="cite">실제로는 M2 ÷ M0</span></li>
+          <li>통화승수는 <strong>지급준비율과 현금보유비율이 작을수록 커짐.</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      막대 길이는 <b>금액의 상대적 크기를 나타낸 도식</b>임. 실제 지급준비율은 예금 종류별로 다르게 정해져 있음.
+    </div>
+  </div>
+
+  <h3>본원통화의 구성</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">구성</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><b>본원통화</b></td><td>화폐발행액 + 지준예치금</td></tr>
+      <tr><td>화폐발행액</td><td>민간보유현금 + 시재금</td></tr>
+      <tr><td>지급준비금</td><td>지준예치금(중앙은행 예치) + 시재금(은행 금고)</td></tr>
+      <tr><td>지급준비금의 구분</td><td>법정지급준비금 + 초과지급준비금</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">기사 적용 — 오늘의 실무 결론</span>
+    <ul style="margin-bottom:0">
+      <li><strong>"통화승수 하락"</strong>은 은행이 대출을 안 하거나 사람들이 현금을 쥐고 있다는 뜻임 → <b>경기 불안 신호</b>임.</li>
+      <li><b>유동성 함정</b>의 통계적 징후이기도 함.</li>
+      <li>함께 볼 지표 — <b>요구불예금 회전율</b>, <b>화폐유통속도</b>.</li>
+      <li>셋이 동시에 떨어지면 <strong>"돈은 있는데 안 돈다"</strong>는 뜻임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>M0 · M1 · M2 — 뉴스에 나오는 건 M2</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">지표</th><th style="width:42%">구성</th><th>성격</th></tr></thead>
+    <tbody>
+      <tr><td><b>M0 (본원통화)</b></td><td>민간보유 현금 + 지급준비금</td><td>한국은행이 <b>직접 공급</b></td></tr>
+      <tr><td><b>M1 (협의통화)</b></td><td>현금 + 요구불예금 + 수시입출식 저축성예금</td><td><b>당장 현금화 가능</b></td></tr>
+      <tr><td><b>M2 (광의통화)</b></td><td>M1 + 만기 2년 미만 정기예적금 등</td><td><b>뉴스에 주로 등장함</b></td></tr>
+      <tr><td>Lf (금융기관 유동성)</td><td>M2 + 만기 2년 이상 금융상품 등</td><td>더 넓은 개념</td></tr>
+      <tr><td>L (광의 유동성)</td><td>Lf + 국채·회사채 등</td><td>가장 넓은 개념</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>증권사·보험사·자산운용사도 M2·Lf·L에서 통화 발행 주체로 기능함.</p>
+
+  <div class="box warn">
+    <span class="bt">"시중에 돈이 ○○조 원 풀렸다"는 기사는 어느 지표를 말하는가</span>
+    <ul style="margin-bottom:0">
+      <li><strong>M2인지 M1인지 본원통화인지에 따라 규모가 수십 배 다름.</strong></li>
+      <li>보도자료 제목이 「통화 및 유동성」이라면 본문 표에 <b>M1·M2·Lf·L이 모두</b> 들어 있음.</li>
+      <li>기자가 <em>하나를 고른 것</em>임. 어느 것을 골랐는지 확인할 것.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">함께 보는 보조 개념</span>
+    <ul style="margin-bottom:0">
+      <li><b>M1/M2 비율</b> — 대기성 자금 비율임. <em>당장 쓸 수 있는 형태로 얼마나 갖고 있는가.</em> 오르면 "언제든 움직일 준비"로 읽혀 <b>자산시장 진입 신호</b>로 해석되기도 함.</li>
+      <li><b>부동자금</b> — 시장에 유동 중인 대기성 자금.</li>
+      <li><b>머니무브</b> — 저위험 자산(예적금)에서 고위험 자산(부동산·주식)으로 자금이 이동하는 것. 반대는 <b>역머니무브</b>임. → 11주차 부동산, 12~13주차 주식</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>중앙은행의 도구들</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">수단</th><th style="width:40%">어떻게 작동하는가</th><th>실제로 쓰이는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>공개시장 운영</b></td><td>국채·통화안정증권을 <b>사고팔아</b> 통화량 조절</td><td><b>주력 수단</b></td></tr>
+      <tr><td><b>기준금리 조절</b></td><td>정책금리를 올리고 내림. <b>인하</b>하면 돈이 풀리고 <b>인상</b>하면 거둬들여짐</td><td><b>주력 수단</b></td></tr>
+      <tr><td>통화안정증권 발행·환매</td><td>유동성 과다 시 발행해 흡수, 반대면 환매로 공급</td><td>보조 수단</td></tr>
+      <tr><td><b>지급준비율 조정</b></td><td>높이면 통화량 감소, 낮추면 증가</td><td><b>거의 안 씀.</b> 효과가 너무 크고 신용경색 부작용이 큼</td></tr>
+      <tr><td>여수신제도</td><td>재할인율제도 · 자금조정예금제도</td><td>효과 제한적. <em>대출창구 이용이 재무건전성 문제로 인식되는 낙인효과가 있음</em></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>양적완화와 양적긴축</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>양적완화 QE</h5>
+      <span class="tag">돈을 직접 푼다</span>
+      <ul>
+        <li>국채 등 금융자산을 <b>대규모 매입</b>함</li>
+        <li>사례 — 2008 금융위기 후 미 연준의 대규모 국채 매입</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>양적긴축 QT</h5>
+      <span class="tag">돈을 거둬들인다</span>
+      <ul>
+        <li>보유 자산을 매각·축소해 자금을 <b>흡수</b>함</li>
+        <li>사례 — 2022년 연준의 자산 매입 중단·보유 자산 축소</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">왜 QE가 필요했는가</span>
+    <ul style="margin-bottom:0">
+      <li>기준금리를 0까지 내려도 <strong>더 내릴 수 없을 때</strong>(제로금리 하한) 쓰는 비전통적 수단임.</li>
+      <li>→ 7주차 <b>일본의 잃어버린 30년</b>, <b>유동성 함정</b>과 직결됨.</li>
+      <li><em>쉬운 비유 — 금리 인하가 "물길의 경사를 낮추는 것"이라면, QE는 "물을 직접 퍼붓는 것"임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>금융통화위원회 읽기 — 이 주차의 실무 핵심</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li>한국은행 금융통화위원회는 <strong>연 8회</strong> 통화정책방향을 결정함.</li>
+    <li><b>2026년 8월 27일 금통위에서 기준금리를 2.75%에서 3.00%로 0.25%p 인상</b>했음. <em>현재 기준금리는 3.00%임.</em></li>
+    <li><strong>강의 직전 반드시 최신 수치를 확인할 것</strong> — <a href="https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&amp;menuNo=200643" target="_blank" rel="noopener">한국은행 기준금리 추이</a></li>
+  </ul>
+
+  <h3>기자가 읽는 순서 — 여섯 단계</h3>
+  <ol class="steps">
+    <li><b>결정 자체</b>
+      인상인가 동결인가 인하인가, 몇 bp인가. <em>의결문 첫 문단에 있음.</em></li>
+    <li><b>소수의견 유무</b>
+      의결문 하단에 "○○ 위원은 ~ 의견을 개진"으로 나옴. <strong>소수의견이 나오기 시작하면 다음 회의에서 방향이 바뀔 신호</strong>로 읽힘.</li>
+    <li><b>문구 변화</b>
+      직전 의결문과 <b>한 단어씩 비교함.</b> "당분간", "충분히 장기간", "추가 인상 필요성", "상당 기간" 같은 표현이 핵심임.</li>
+    <li><b>총재 기자간담회</b>
+      결정 직후에 열림. <em>시장이 실제로 반응하는 지점임.</em></li>
+    <li><b>의사록</b>
+      약 2주 후 공개됨. <b>위원별 발언 요지</b>가 담김.</li>
+    <li><b>경제전망보고서</b>
+      연 4회(2·5·8·11월) 동시 발표될 때는 <b>성장률·물가 전망 수정 폭</b>이 뉴스임.</li>
+  </ol>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">통화정책 기사의 핵심 기술</div>
+      <div class="t">결정은 대부분 예상돼 있음. 문장이 어떻게 바뀌었는지가 뉴스임</div>
+    </div>
+    <div class="case-b">
+      <ul>
+        <li>그래서 채권시장은 <strong>결정 발표 순간이 아니라 의결문을 읽는 몇십 초 뒤에 움직임.</strong></li>
+        <li>직전 두 개 의결문을 나란히 놓고 <b>바뀐 단어를 찾는 것</b>이 실무의 출발점임.</li>
+        <li>실제로 해 보면 <em>문단 구조는 같고 몇 단어만 바뀌어 있음.</em></li>
+      </ul>
+      <div class="tw" style="margin-bottom:0">
+      <table>
+        <thead><tr><th style="width:46%">이렇게 바뀌면</th><th>무엇을 시사하는가</th></tr></thead>
+        <tbody>
+          <tr><td>"목표수준에서 안정될 것으로" → <b>"당분간 목표수준을 상회할 것으로"</b></td><td>물가 경계 강화. <b>긴축 유지 신호</b></td></tr>
+          <tr><td><b>"충분히 장기간"</b> 삽입 또는 삭제</td><td>현 수준 유지 기간에 대한 신호 변화</td></tr>
+          <tr><td>"추가 인상 필요성" → <b>"당분간 현 수준 유지"</b></td><td>인상 사이클 종료 시사</td></tr>
+          <tr><td>소수의견 <b>0명 → 1명 → 2명</b></td><td>다음 회의에서 방향 전환 가능성</td></tr>
+          <tr><td>경기·물가 진단 문장의 <b>형용사 강도</b> 변화</td><td>"완만한" ↔ "뚜렷한" 같은 미세한 조정도 신호임</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">미국 FOMC는 어떻게 다른가</span>
+    <ul style="margin-bottom:0">
+      <li>연 8회 개최됨. <b>성명서 + 의장 기자회견 + 분기별 경제전망요약(SEP)</b>으로 구성됨.</li>
+      <li><b>점도표(dot plot)</b> — FOMC 위원들이 예상하는 향후 금리 수준임. <em>시장이 가장 민감하게 반응함.</em></li>
+      <li>연준의 <b>이중책무</b> — 물가 안정 + <b>최대 고용</b>. → 5주차에서 배운 대로 <em>고용지표가 금리 뉴스가 되는 이유임.</em></li>
+      <li><a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener"><b>CME FedWatch</b></a> — 연방기금선물 가격으로 계산한 금리 확률임. 기사에서 <em>"시장은 ○% 확률로 인하를 예상"</em>의 출처가 여기임.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">의결문을 직접 비교해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li>가장 최근 의결문과 <b>그 직전 의결문</b>을 나란히 놓음.</li>
+      <li>바뀐 문장·단어를 모두 표시하고, <b>각 변화가 무엇을 시사하는지</b> 해석함.</li>
+      <li>그날 기사 몇 건과 대조함 — <em>몇 개가 결정 자체를, 몇 개가 문구 변화를, 몇 개가 총재 발언을 제목으로 뽑았는가.</em></li>
+      <li>그리고 스스로 확인할 것 — <strong>금통위 기사의 진짜 정보는 어디에 있었는가.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>통화 이론 두 갈래</h2>
+  <div class="h2rule"></div>
+
+  <h3>화폐수량설 — 통화주의 쪽</h3>
+  <div class="pull">
+    <div class="q">M × V = P × Y</div>
+    <div class="a">통화량 × 화폐유통속도 = 물가 × 실질 GDP</div>
+  </div>
+  <ul>
+    <li>V와 Y가 단기적으로 안정적이라면 → <strong>통화량이 늘면 물가가 그만큼 오름.</strong></li>
+    <li><b>마샬 k</b> = M2 ÷ 명목 GDP (화폐유통속도의 역수). <em>"마샬 k가 낮으니 통화량을 더 공급해야 한다"</em>는 주장의 근거로 쓰임.</li>
+    <li><b>한계</b> — 1980년대 이후 금융혁신으로 <em>화폐유통속도가 불안정해지며</em> 이 등식에 대한 믿음이 약해졌음.</li>
+  </ul>
+
+  <h3>유동성선호이론 — 케인스 쪽</h3>
+  <ul>
+    <li>화폐수요의 세 동기 — <b>거래적</b>(일상 지출), <b>예비적</b>(예상치 못한 지출 대비), <b>투기적</b>(자산가치 변동 대응).</li>
+    <li>투기적 수요가 늘면 통화량을 늘려도 <strong>유통속도가 떨어져 물가로 이어지지 않음.</strong></li>
+    <li>따라서 <b>통화정책만으로는 부족하고 재정정책이 필요함.</b> → 14주차</li>
+    <li><b>유동성 함정</b> — 자금을 아무리 공급해도 실물로 흐르지 않는 상황임. <em>불황에 소득이 있어도 소비·투자 대신 현금을 보유함.</em></li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">인용된 전문가의 입장을 읽는 훈련</span>
+    <p style="margin-bottom:0">돈을 풀면 물가가 오른다는 쪽과, 불황엔 돈을 풀어도 안 돌아가니 정부가 써야 한다는 쪽이 오래 대립해 왔음. <strong>통화정책 기사에 인용된 전문가가 어느 쪽인지 보면 결론이 예측됨.</strong> 6주차 물가에서 했던 것과 같은 훈련임.</p>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <h3>국내</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:22%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>금통위 「통화정책방향 의결문」</b></td><td>한국은행 · <b>연 8회</b></td><td>기준금리 결정, 정책 문구, <b>소수의견</b></td></tr>
+      <tr><td><b>총재 기자간담회</b></td><td>금통위 직후</td><td>시장이 실제로 반응하는 지점</td></tr>
+      <tr><td><b>금통위 의사록</b></td><td>약 2주 후</td><td><b>위원별 발언 요지</b></td></tr>
+      <tr><td><b>「통화 및 유동성」</b></td><td>한국은행 · 매월 중순</td><td><b>M1, M2, Lf, L</b></td></tr>
+      <tr><td>「금융시장 동향」</td><td>한국은행 · 매월</td><td>은행 여수신, 채권·주식시장</td></tr>
+      <tr><td>「경제전망보고서」</td><td>한국은행 · 연 4회</td><td>2·5·8·11월. 성장률·물가 전망</td></tr>
+      <tr><td>「금융안정보고서」</td><td>한국은행 · 연 2회</td><td>6월·12월. → 7주차</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>해외</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:22%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>FOMC 성명서 + 의장 기자회견</b></td><td>미국 Fed · 연 8회</td><td>금리 결정과 정책 방향</td></tr>
+      <tr><td><b>경제전망요약(SEP)·점도표</b></td><td>분기 (3·6·9·12월 FOMC)</td><td><b>위원별 금리 전망.</b> 시장이 가장 민감하게 반응함</td></tr>
+      <tr><td>FOMC 의사록</td><td>약 3주 후</td><td>논의 과정</td></tr>
+      <tr><td>Beige Book</td><td>연 8회 · FOMC 2주 전</td><td>지역별 현장 의견</td></tr>
+      <tr><td>ECB 통화정책 결정</td><td>약 6주 간격</td><td>유로존 정책금리</td></tr>
+      <tr><td>일본은행 금융정책결정회합</td><td>연 8회</td><td>일본 정책금리</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">접근 경로</span>
+    <ul style="margin-bottom:0">
+      <li><a href="https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&amp;mtgSe=A" target="_blank" rel="noopener">한국은행 통화정책방향 결정회의 일정 및 자료</a></li>
+      <li><a href="https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&amp;menuNo=200643" target="_blank" rel="noopener">한국은행 기준금리 추이</a></li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — 통화 및 유동성 시계열</li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noopener">미국 Fed 통화정책</a> · <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — M2, 연준 자산 규모</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>신용창조</b>
+      돈의 대부분은 은행이 대출로 만듦. <em>상환하면 사라짐.</em></li>
+    <li><b>M0 · M1 · M2</b>
+      "돈이 풀렸다"는 기사는 <em>어느 지표인지</em> 확인해야 함. 규모가 수십 배 다름.</li>
+    <li><b>통화승수와 화폐유통속도</b>
+      떨어지면 <em>"돈은 있는데 안 돈다"</em>는 신호임. 유동성 함정의 징후임.</li>
+    <li><b>기준금리와 공개시장운영</b>
+      주력 수단은 이 둘임. <em>지급준비율은 사실상 쓰지 않음.</em></li>
+    <li><b>의결문 문구 변화</b>
+      결정은 예상돼 있음. <em>문장이 어떻게 바뀌었는지가 뉴스임.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "돈 풀어 물가 자극"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 통화량 증가 → 물가 상승을 <strong>단순 등식</strong>으로 처리했음.</li>
+      <li><b>확인할 것</b> — <b>화폐유통속도</b>, 통화승수, <b>실제 대출 증감</b>. <em>유동성 함정 국면에서는 이 등식이 성립하지 않음.</em></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — 본원통화와 M2를 혼동한 기사</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — "○○조 원 공급"이 <strong>어느 지표인지 밝히지 않았음.</strong></li>
+      <li><b>확인할 것</b> — 「통화 및 유동성」 보도자료의 <b>어느 표에서 나온 숫자인가.</b></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "금리 동결, 시장 실망"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>결정보다 문구 변화가 뉴스</strong>인데 결정만 다뤘음.</li>
+      <li><b>확인할 것</b> — 직전 의결문 대비 문구, <b>소수의견</b>, 총재 발언, 채권금리 반응.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>금통위 기사의 대부분이 "결정 + 총재 발언 요약"임.</b><br>왜 문구 비교·의사록 분석은 소수 매체만 하는가. 무엇이 필요한가.</li>
+    <li><b>통화정책 기사에 인용되는 증권사 이코노미스트는 이해관계가 있음.</b><br>금리 인하는 채권·주식에 호재임. 기자는 이 이해관계를 어떻게 다뤄야 하는가.</li>
+    <li><b>금리 인상은 "부담", 인하는 "숨통" — 형용사가 자동으로 붙음.</b><br>이것은 누구의 시각인가. 대출자인가, 예금자인가, 기업인가, 연금생활자인가.</li>
+    <li><b>"시중에 돈이 풀렸다"는 기사에서 어느 지표를 쓰는 게 맞는가?</b><br>독자가 이해하기 쉬운 것과 정확한 것이 다르다면 어떻게 하는가.</li>
+    <li><b>스테이블코인·CBDC는 '화폐'인가?</b><br>화폐의 세 기능 중 무엇을 충족하고 무엇을 못 하는가.</li>
+    <li><b>통화정책 독립성 논쟁 — "정부 압박설" 보도의 근거는 무엇인가?</b><br>근거 없이 쓰면 무엇이 문제이고, 근거가 있다면 무엇으로 보여줄 수 있는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li>한국 기준금리는 <b>2026년 8월 27일 3.00%로 인상</b>됐음. 인상 사이클의 지속 여부가 이후 금통위의 최대 관심사임.</li>
+      <li><b>무위험지표금리 전환</b>이 진행됐음. 한국은 <b>KOFR</b>, 미국은 <b>SOFR</b>가 LIBOR를 대체했음. → 2주차에서 배운 <em>폐지·개편 지표 주의</em>의 사례임.</li>
+      <li><b>금융상황지수(FCI)</b> 같은 합성지표가 "돈줄이 조였나 풀렸나"를 판단하는 도구로 자주 인용됨. <em>기준금리 하나만 보면 놓치는 것을 잡아 줌.</em></li>
+      <li><b>중앙은행 커뮤니케이션 연구</b>가 활발함. 의결문·의사록의 <b>어조를 텍스트 분석</b>해 시장 반응을 측정하는 연구가 표준이 됐음. → 4주차 NSI와 같은 계열임.</li>
+      <li><b>CBDC·스테이블코인 제도화</b> 논의가 각국에서 진행 중임. <em>화폐의 정의를 다시 묻게 하는 소재임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>한국은행. 『한국의 통화정책』</b> — 이 주차의 표준 교재. 한국은행 홈페이지에서 무료 PDF로 받을 수 있음</li>
+      <li><b>한국은행 (2023). 『알기 쉬운 경제지표해설』</b> — 통화 편. <a href="https://www.bok.or.kr/portal/bbs/P0000605/list.do?menuNo=200462" target="_blank" rel="noopener">무료 PDF</a></li>
+      <li><b>경제지표 사전</b> 9절 「통화·유동성·신용·금리·통화정책」. <a href="../data.html">경제 데이터 분석실</a>에서 열람</li>
+      <li>김의경 (2021). 『나는 금리로 경제를 읽는다』. 위너스북</li>
+    </ul>
+
+    <h4>통화정책 원문</h4>
+    <ul>
+      <li><a href="https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&amp;mtgSe=A" target="_blank" rel="noopener">한국은행 통화정책방향 결정회의 일정 및 자료</a> — <b>의결문 원문</b></li>
+      <li><a href="https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&amp;menuNo=200643" target="_blank" rel="noopener">한국은행 기준금리 추이</a></li>
+      <li><a href="https://www.bok.or.kr/portal/main/contents.do?menuNo=200721" target="_blank" rel="noopener">한국은행 통화정책</a> · <a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noopener">미국 Fed 통화정책</a> · <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a></li>
+      <li><a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener">CME FedWatch</a> — FOMC 금리 확률</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 9주차 강의자료</b><br>
+  주 출처: 한국은행 『한국의 통화정책』 · 경제지표 사전 9절</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="07_경제위기와극복.html">7주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>13주차 · 기업과 주식 (2) 주가와 기업보도 비평 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 13주차 강의자료 — 주식시장의 구조, PER·PBR·ROE, 매크로 변수의 양방향성, 증자와 감자, 그리고 기업보도 비평.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">13주차 · 주가와 기업보도</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">13주차<br>기업과 주식 (2)<br>주가와 기업보도 비평</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 주식과 주가</div>
+    <a href="#s2"><span class="n">02</span><span>주식 · 상장 · 주주</span></a>
+    <a href="#s3"><span class="n">03</span><span>주식 시장의 구조</span></a>
+    <a href="#s4"><span class="n">04</span><span>ROE · PER · PBR</span></a>
+    <a href="#s5"><span class="n">05</span><span>매크로 변수의 양방향성</span></a>
+
+    <div class="sb-label">2회차 · 기업보도 비평</div>
+    <a href="#s6"><span class="n">06</span><span>증자와 감자</span></a>
+    <a href="#s7"><span class="n">07</span><span>기업보도의 편향</span></a>
+    <a href="#s8"><span class="n">08</span><span>주가 기사의 사후 인과</span></a>
+    <a href="#s9"><span class="n">09</span><span>학기 최대 회수 지점</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>보도자료와 통계</span></a>
+    <a href="#s11"><span class="n">11</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s12"><span class="n">12</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 5. 경제 주체 — 가계·기업·정부 · 13주차</div>
+    <h1>주가 기사는 원인을 설명하는 것이 아니라<br>사후에 만들어내는 경우가 많음</h1>
+    <div class="sub">기업과 주식 (2) — 주가와 기업보도 비평</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">12주차에서 <strong>검증 도구</strong>(DART·재무제표)를 쥐었음. 이제 <strong>주가</strong>를 읽고, <strong>기업 보도 자체를 비평</strong>함. <em>학기 전체를 통틀어 1주차 이론이 가장 정면으로 회수되는 주차임.</em></p>
+
+  <div class="pull">
+    <div class="q">"주가 기사는 원인을 설명하는 것이 아니라<br>사후에 만들어내는 경우가 많음."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <h3>여는 질문 — 같은 날, 세 가지 원인</h3>
+  <div class="anat">
+    <div class="s">"○○기업 주가 상한가… 호재는?"</div>
+    <div class="g">
+      <div class="c"><div class="n">설명 1</div><div class="q">"외국인 매도세"</div><div class="d">그날 실제로 있었던 일임</div></div>
+      <div class="c"><div class="n">설명 2</div><div class="q">"미국 금리 우려"</div><div class="d">이것도 그날 있었던 일임</div></div>
+      <div class="c"><div class="n">설명 3</div><div class="q">"차익 실현 매물"</div><div class="d">이것도 마찬가지임</div></div>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">셋 다 사실인데, 어느 것이 원인인가</span>
+    <ul style="margin-bottom:0">
+      <li>주가가 오르면 <strong>이유가 있어야 한다</strong>는 것이 기사의 전제임. <em>정말 그런가.</em></li>
+      <li>1주차의 <a href="01_경제뉴스의성격과역할.html"><b>현실반영론 vs 현실구성론</b></a>을 주식시장에 적용하면 어떻게 되는가.</li>
+      <li>확인 방법 — 같은 날 지수 마감 기사 몇 건의 <b>원인 설명 문장만 뽑아 나란히 놓아 봄.</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>상장 · IPO<span class="en">listing / initial public offering</span></dt>
+      <dd>거래소 심사를 통과해 주식이 시장에서 매매되는 것, 그리고 주식을 공모하는 것임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>보통주 · 우선주<span class="en">common / preferred</span></dt>
+      <dd><b>우선주는 배당은 우선, 의결권은 없음.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>ROE<span class="en">자기자본이익률</span></dt>
+      <dd>순이익 ÷ 자기자본.
+        <span class="ez">쉽게 — 내 돈으로 얼마나 벌었는가.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>PER<span class="en">주가수익비율</span></dt>
+      <dd>주가 ÷ 주당순이익.
+        <span class="ez">쉽게 — 몇 년치 이익으로 주가를 회수하는가.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>PBR<span class="en">주가순자산비율</span></dt>
+      <dd>주가 ÷ 주당순자산.
+        <span class="ez">쉽게 — 청산가치 대비 얼마인가.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>서킷브레이커 · 사이드카<span class="en">circuit breaker / sidecar</span></dt>
+      <dd>급락 시 거래를 멈추는 장치임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>증자 · 감자<span class="en">capital increase / reduction</span></dt>
+      <dd>유상·무상 네 가지가 있으며 <b>각각 다른 신호</b>를 보냄.</dd>
+    </dl>
+    <dl class="term">
+      <dt>공매도<span class="en">short selling</span></dt>
+      <dd>빌려서 팔고 나중에 사서 갚는 매매. <b>주가 하락 시 이익</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>ETF<span class="en">exchange traded fund</span></dt>
+      <dd>지수를 따라가는 펀드를 주식처럼 거래하는 것임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>VIX<span class="en">변동성지수</span></dt>
+      <dd>S&amp;P500 옵션에서 계산한 향후 30일 변동성 기대. <b>'공포지수'</b>로 불림.</dd>
+    </dl>
+    <dl class="term">
+      <dt>오버행<span class="en">overhang</span></dt>
+      <dd>앞으로 시장에 풀릴 수 있는 <b>잠재 물량 부담</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>컨센서스 · 어닝 서프라이즈<span class="en">consensus / earnings surprise</span></dt>
+      <dd>증권사 전망 평균과, 실제 실적이 그것을 웃돈 정도임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>주식 · 상장 · 주주</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><b>주식</b> — 주식회사의 자본을 구성하는 단위임.</li>
+    <li><b>상장</b> — 거래소 심사기준을 충족해 발행주식이 거래소를 통해 매매되는 것임.</li>
+    <li><b>기업공개(IPO)</b> — 주식시장에서 주식을 공모하는 것임.</li>
+    <li><b>주주의 권리</b> — 배당 · 의결권 · 신주인수권 · 잔여재산청구권</li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">주주환원 지표 세 개</span>
+    <ul style="margin-bottom:0">
+      <li><code>배당성향 = 배당금 ÷ 당기순이익</code></li>
+      <li><code>배당수익률 = 주당배당금 ÷ 주가</code></li>
+      <li><code>주주환원율 = 배당수익률 + 자사주 매입수익률</code></li>
+    </ul>
+    <p style="margin:10px 0 0"><strong>"배당 확대"는 주주에게 좋지만 재투자 여력 감소를 뜻하기도 함.</strong> 행동주의 펀드 기사의 핵심 쟁점이 정확히 여기임. <em>"누구에게 좋은 소식인가"를 묻는 것이 기자의 일임.</em></p>
+  </div>
+
+  <h3>주식의 종류</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">구분</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><b>보통주</b></td><td>배당권 + <b>의결권</b></td></tr>
+      <tr><td><b>우선주</b></td><td>배당 우선, <b>의결권 없음</b></td></tr>
+      <tr><td><b>가치주</b></td><td>저평가돼 수익은 낮지만 장기 안정 <span class="cite">전기·가스·금융</span></td></tr>
+      <tr><td><b>성장주</b></td><td>고평가돼 있지만 미래 가격 상승 기대 <span class="cite">IT·반도체·바이오</span></td></tr>
+      <tr><td><b>경기민감주</b></td><td>경기 흐름에 민감 <span class="cite">IT·반도체·자동차·조선·건설</span></td></tr>
+      <tr><td><b>경기방어주</b></td><td>경기 영향이 적음 <span class="cite">전기·가스·보험·필수소비재·식료품</span></td></tr>
+      <tr><td>테마주</td><td>특별한 이슈에 편승해 갑자기 관심받는 주식</td></tr>
+      <tr><td><b>전환사채(CB)</b></td><td>주식으로 전환할 수 있는 옵션이 달린 채권 → 10주차 채권</td></tr>
+      <tr><td><b>신주인수권부사채(BW)</b></td><td>신주 인수권이 붙은 사채</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">CB·BW는 공시 기사의 단골임</span>
+    <ul style="margin-bottom:0">
+      <li>발행하면 <strong>잠재적 물량 부담(오버행)</strong>이 생겨 주가 하락 요인이 됨.</li>
+      <li><b>전환가액 조정(리픽싱) 조항</b>이 있는지가 특히 중요함 — <em>주가가 떨어지면 더 많은 주식으로 바뀜.</em></li>
+      <li>확인 위치 — DART 주요사항보고서의 발행 조건란.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>주식 시장의 구조</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><b>거래 주체</b> — 개인투자자 / 기관투자자(은행·보험·자산운용사) / 외국인</li>
+    <li><b>한국거래소(KRX)</b> — 코스피·코스닥·선물시장의 개설·운영, 거래, 상장, <b>시장 감시</b></li>
+    <li>정규시장 외 시간대까지 거래할 수 있는 <b>대체거래소(ATS)</b>도 운영되고 있음.</li>
+  </ul>
+
+  <h3>거래를 멈추는 장치</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">장치</th><th style="width:30%">발동 조건</th><th>조치</th></tr></thead>
+    <tbody>
+      <tr><td><b>가격제한폭</b></td><td>개별 종목 하루 <b>±30%</b></td><td>그 이상으로는 움직이지 않음</td></tr>
+      <tr><td rowspan="3"><b>서킷브레이커</b></td><td>지수 <b>8% 하락</b> (1단계)</td><td>20분 매매 정지</td></tr>
+      <tr><td>지수 <b>15% 하락</b> (2단계)</td><td>20분 매매 정지</td></tr>
+      <tr><td>지수 <b>20% 하락</b> (3단계)</td><td><b>당일 거래 종료</b></td></tr>
+      <tr><td><b>사이드카</b></td><td>KOSPI200 선물 <b>±5% 이상</b> 변동</td><td>현물시장 프로그램 매매 5분 정지</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">주가지수와 국제 벤치마크</span>
+    <ul style="margin-bottom:0">
+      <li><code>시가총액 = 주가 × 발행 주식 수</code></li>
+      <li><b>세계 주요 지수</b> — S&amp;P500, 나스닥, 다우, 니케이225, 항셍, DAX, FTSE</li>
+      <li><b>MSCI</b> — 국제 벤치마크 지수. <b>선진(DM) / 신흥(EM) / 프런티어(FM)</b>로 구분함.</li>
+      <li><strong>한국은 신흥국 지수(MSCI EM)에 포함돼 있음.</strong> 그래서 <em>"MSCI 선진지수 편입" 기사가 매년 나옴.</em> 편입되면 <b>글로벌 패시브 자금이 유입됨.</b></li>
+      <li>정기변경은 <b>분기(2·5·8·11월)</b>에 이뤄짐.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>ROE · PER · PBR</h2>
+  <div class="h2rule"></div>
+
+  <div class="tri c1">
+    <div>
+      <h5>ROE</h5>
+      <span class="tag">자기자본이익률</span>
+      <ul>
+        <li>당기순이익 ÷ 자기자본</li>
+        <li><b>수익성</b> — 내 돈으로 얼마나 벌었는가</li>
+      </ul>
+    </div>
+    <div>
+      <h5>PER</h5>
+      <span class="tag">주가수익비율</span>
+      <ul>
+        <li>주가 ÷ 주당순이익(EPS)</li>
+        <li><b>이익 대비 주가</b></li>
+      </ul>
+    </div>
+    <div>
+      <h5>PBR</h5>
+      <span class="tag">주가순자산비율</span>
+      <ul>
+        <li>주가 ÷ 주당순자산(BPS)</li>
+        <li><b>자본 대비 주가</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">세 지표를 읽을 때의 함정 세 가지</span>
+    <ol style="margin-bottom:0">
+      <li><b>PBR 1배 미만</b>은 시장이 회사의 순자산보다 낮게 평가한다는 뜻임. <em>"기업 밸류업" 정책 기사의 출발점임.</em></li>
+      <li><strong>PER은 업종별로 다름.</strong> 성장주(IT·바이오)와 가치주(은행·유틸리티)의 PER을 <em>직접 비교하면 오류임.</em></li>
+      <li><strong>일회성 이익으로 EPS가 부풀면 PER이 낮아 보임.</strong> 12주차에서 배운 영업이익과 순이익의 구별이 여기서 작동함.</li>
+    </ol>
+    <p style="margin:10px 0 0">보완 방법 — <b>선행 PER(Forward P/E)</b>을 함께 봄. 다만 이것은 <em>전망치이므로 누가 만들었는지 확인해야 함.</em> <b>EV/EBITDA, PSR</b>도 함께 보면 더 정확함.</p>
+  </div>
+
+  <div class="box key">
+    <span class="bt">AI 관련주의 PER을 닷컴버블과 비교할 때</span>
+    <ul style="margin-bottom:0">
+      <li>7주차에서 던진 질문 — <b>"AI 붐은 닷컴버블인가."</b> 이 지표들이 <strong>기자가 검증할 수 있는 숫자임.</strong></li>
+      <li>다만 조심할 것 — <b>업종 구성</b>이 다르고, <b>이익의 질</b>이 다르고, <b>금리 수준</b>이 다름.</li>
+      <li><em>단순히 PER 숫자만 비교하면 오류가 됨.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>매크로 변수의 양방향성 — 이 주차의 교육적 핵심</h2>
+  <div class="h2rule"></div>
+  <p class="lede">학기 전체가 여기서 만남. 그리고 <strong>모든 매크로 변수에 정반대 해석이 동시에 성립함.</strong></p>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">같은 변수, 정반대 결론 — 그런데 기사는 한 방향으로 단정함</div>
+    </div>
+    <div class="info-b">
+      <div class="tw" style="margin-top:0">
+      <table>
+        <thead><tr><th style="width:14%">변수</th><th style="width:34%">통상 논리</th><th>그러나 반대도 가능함</th></tr></thead>
+        <tbody>
+          <tr><td><b>경기</b><br><span class="cite">3·4주차</span></td><td>경기가 좋아지면 주가 상승</td><td>이미 주가에 <b>선반영</b>됐다면 되레 하락</td></tr>
+          <tr><td><b>물가</b><br><span class="cite">6주차</span></td><td>안정적이면 주가 상승</td><td>물가가 폭등하면 주가 하락</td></tr>
+          <tr><td><b>금리</b><br><span class="cite">10주차</span></td><td>시장금리 상승 → 경기 상승 예상 → 주가 상승</td><td>시장금리 상승 → <b>차입비용 증가 → 이익 감소 → 주가 하락</b><br>기준금리 인상 → 하락 예상. 그러나 <em>경기 활황 신호로 읽혀 상승도 가능함</em><br><b>장단기 금리차 축소 → 주가 하락</b></td></tr>
+          <tr><td><b>환율</b><br><span class="cite">15주차</span></td><td>원화 약세 → 수출 증가 → 주가 상승</td><td>환율 상승 → <b>외국인 투자 감소 → 주가 하락</b><br>환율 급등 → 국가 위험 상승 → 자금 이탈 → 주가 하락</td></tr>
+          <tr><td><b>고용</b><br><span class="cite">5주차</span></td><td>미국 고용 강세 → 경기 양호 → 주가 상승</td><td><b>금리 인하 지연 신호 → 주가 하락</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="box warn" style="margin-bottom:0">
+        <span class="bt">같은 달에 정반대 기사가 다 나옴</span>
+        <ul style="margin-bottom:0">
+          <li><strong>"환율 상승에 주가 하락"과 "환율 상승에 주가 상승"이 같은 달 두 기사에 다 나옴.</strong></li>
+          <li>실제로 찾아 <b>나란히 붙여 볼 것.</b> <em>이 표가 그 이유를 설명함.</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      이 표는 <b>어느 쪽이 맞다고 말하지 않음.</b> 둘 다 성립한다는 것이 요점임. 그래서 <b>기자가 어느 쪽을 골랐는지</b>가 기사의 내용을 정함.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">그렇다면 기자는 어떻게 써야 하는가</span>
+    <ol class="steps" style="margin-bottom:0">
+      <li><b>나쁜 답 — 원인을 안 씀</b>
+        그러면 기사가 되지 않음.</li>
+      <li><b>좋은 답 — 해석을 병기함</b>
+        <em>"~로 풀이된다"</em>가 아니라 <strong>"시장에서는 ~라는 해석과 ~라는 해석이 함께 나온다"</strong>로 씀.</li>
+      <li><b>더 좋은 답 — 데이터로 확인함</b>
+        <b>투자자별 매매동향</b>으로 <strong>실제로 누가 팔았는지</strong>를 확인함. KRX에서 매일 공표됨.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>증자와 감자 — 공시 기사 빈출</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:18%">항목</th><th style="width:28%">정의</th><th style="width:12%">자본금</th><th style="width:12%">자산</th><th>성격</th></tr></thead>
+    <tbody>
+      <tr><td><b>유상증자</b></td><td>돈 받고 새 주식 발행</td><td>증가</td><td>증가</td><td>실질적 증자</td></tr>
+      <tr><td><b>무상증자</b></td><td>잉여금을 자본금으로 전환해 무료 배분</td><td>증가</td><td><b>변화 없음</b></td><td>형식적 증자</td></tr>
+      <tr><td><b>유상감자</b></td><td>주식 소각하고 주주에게 돈 지급</td><td>감소</td><td>감소</td><td>실질적 감자</td></tr>
+      <tr><td><b>무상감자</b></td><td>돈 지급 없이 주식 병합·소각</td><td>감소</td><td><b>변화 없음</b></td><td><b>결손 보전 목적</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">각각 무엇을 뜻하는가</span>
+    <ul style="margin-bottom:0">
+      <li><b>유상증자 = 돈이 필요함.</b> <strong>왜 필요한가</strong>(투자인가, 부채 상환인가, 운영자금인가)가 기사임. 공시의 <b>자금 사용 목적</b>란을 반드시 확인함. 기존 주주 지분은 <em>희석됨.</em></li>
+      <li><b>무상감자 = 결손이 쌓였음.</b> 부실 신호임. 상장폐지 절차와 함께 나오기도 함.</li>
+      <li><b>무상증자</b>는 실질 가치 변화가 없는데도 <strong>주가가 오르는 경우가 많음.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">무상증자 — 주식시장의 비합리성을 보여주는 교과서적 사례</span>
+    <p style="margin-bottom:0"><strong>피자를 8조각에서 16조각으로 자른 것과 같은데 값이 오름.</strong> 회사의 가치는 하나도 변하지 않았음. <em>이것을 "호재"라고만 쓰면 기사가 시장의 비합리성에 동참하는 것임.</em></p>
+  </div>
+
+  <h3>함께 알아둘 용어</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">용어</th><th>뜻</th></tr></thead>
+    <tbody>
+      <tr><td><b>자본잠식</b></td><td>자본 총계가 자본금보다 작아진 상태. <b>원래 투자 금액을 까먹기 시작한 것</b></td></tr>
+      <tr><td><b>자사주 매입</b></td><td>회사가 자기 주식을 사들이는 것. 주주환원 또는 경영권 방어 목적</td></tr>
+      <tr><td>권리락 · 배당락</td><td>증자·배당 기준일 경과에 따른 인위적 주가 조정</td></tr>
+      <tr><td><b>공매도</b></td><td>주식을 빌려서 팔고 나중에 사서 갚는 매매. <b>주가 하락 시 차익</b></td></tr>
+      <tr><td>숏커버링</td><td>공매도한 주식을 되갚기 위한 환매수</td></tr>
+      <tr><td><b>반대매매</b></td><td>빌린 돈으로 산 주식이 담보 부족이 되면 <b>강제 매도</b>됨</td></tr>
+      <tr><td><b>ETF</b></td><td>인덱스펀드를 거래소에 상장시켜 주식처럼 거래하는 것</td></tr>
+      <tr><td><b>VIX</b></td><td>S&amp;P500 옵션의 향후 30일 변동성 기대. <b>'공포지수'</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">공매도는 한국에서 가장 정치화된 금융 이슈임</span>
+    <ul style="margin-bottom:0">
+      <li>규제·재개 국면마다 대규모 보도가 나옴. <strong>취재원 분석 훈련에 최적임.</strong></li>
+      <li>인용된 취재원은 누구인가 — <b>개인투자자 단체 / 증권업계 / 외국계 기관 / 금융당국 / 학계.</b></li>
+      <li>각각의 <strong>이해관계</strong>는 무엇인가. <em>어느 쪽 목소리가 더 자주 인용되는가.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>기업보도의 편향 — 데이터로 확인함</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">기업 뉴스 154,876건 분석 — 이승윤·백강희·이종혁 (2023)</div>
+    </div>
+    <div class="info-b">
+      <div class="tw" style="margin-top:0">
+      <table>
+        <thead><tr><th style="width:26%">발견</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td><b>논조</b></td><td><b>62.64%가 긍정적</b>이었음</td></tr>
+          <tr><td><b>매체 성향</b></td><td><b>보수 언론이 진보 언론보다 친기업적</b>이었음</td></tr>
+          <tr><td><b>매체 유형</b></td><td><b>신문이 방송보다 친기업적</b>이었음</td></tr>
+          <tr><td><b>의혹-수사 보도</b></td><td>기업의 불법 행위 의혹 보도에서도 <b>보수 언론이 덜 비판적</b>이었음</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:14px;color:var(--ink-soft);margin:6px 0 0"><b>기업 보도의 7가지 차원</b> — 상품-판매 / 경제-정책 / 기술-신제품 / 투자-사업 / 경영-지분 / <b>인사-채용</b> / <b>의혹-수사</b></p>
+    </div>
+    <div class="info-f">
+      1주차에서 소개한 연구가 여기서 <b>본격적으로 회수됨.</b> 거시경제 보도의 부정 편향과 <b>방향이 정반대임.</b>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">1주차의 미해결 질문</div>
+      <div class="t">왜 거시경제는 부정적이고 개별 기업은 긍정적인가</div>
+    </div>
+    <div class="case-b">
+      <ol class="steps">
+        <li><b>광고주 문제</b>
+          기업 광고가 주요 수익원임(이나연·백강희, 2016). 인터넷 신생 언론 출현과 경쟁 심화로 <em>기업의 언론 영향력이 강화됐음</em>(유세경·금희조, 1999).</li>
+        <li><b>취재원 의존</b>
+          기업 기사의 원천이 대부분 <b>회사 보도자료·IR</b>임.</li>
+        <li><b>비판의 비용</b>
+          거시경제 비판은 대상이 추상적임(정부·경기). 그러나 <strong>기업 비판은 구체적 상대가 있고 소송·광고 철회 위험</strong>이 있음.</li>
+        <li><b>뉴스가치 구조</b>
+          신제품·투자·채용은 애초에 <b>'좋은 소식'으로 구조화</b>돼 있음.</li>
+      </ol>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">어느 가설이 맞는지 부분적으로 검증할 수 있음</span>
+        <ul style="margin-bottom:0">
+          <li>4번이 맞다면 <b>'의혹-수사' 차원 기사는 부정적이어야 함.</b></li>
+          <li><strong>차원별로 논조를 나눠 보면</strong> 어느 가설이 작동하는지 보임.</li>
+          <li>확인 방법 — 기업 한 곳의 최근 기사 10건을 <b>7가지 차원</b>으로 분류하고 <b>논조</b>를 긍정/중립/부정으로 판정함. <a href="https://www.bigkinds.or.kr" target="_blank" rel="noopener">빅카인즈</a>로 수집할 수 있음.</li>
+          <li>그리고 스스로 답해 볼 것 — <em>긍정 비율은 62.64%와 비교해 어떤가. <b>DART 원문을 확인한 흔적이 있는 기사는 몇 건인가.</b> 익명 취재원("업계 관계자에 따르면")이 쓰인 기사는 몇 건인가.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>주가 기사의 사후 인과</h2>
+  <div class="h2rule"></div>
+
+  <div class="box key">
+    <span class="bt">같은 날 마감 기사를 나란히 놓고 확인할 것</span>
+    <ul style="margin-bottom:0">
+      <li>지수 등락은 하나인데 <strong>원인 설명이 몇 가지인가.</strong></li>
+      <li><b>"외국인 매도세" / "미국 금리 우려" / "차익 실현 매물"</b> — <em>검증 가능한 서술인가.</em></li>
+      <li><a href="#s5">05절 표</a>를 꺼내, 각 기사가 매크로 변수를 <b>어느 방향으로 단정했는지</b> 표시함.</li>
+      <li><strong>KRX 투자자별 매매동향</strong>으로 "외국인 매도세"가 사실인지 <b>직접 확인함.</b> 매일 공표되는 데이터임.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">자동 생성 기사가 늘고 있음</span>
+    <p style="margin-bottom:0">시황·실적 보도에 <b>알고리즘 생성 기사</b>가 널리 쓰이고 있음. <strong>사후 인과 서술의 자동화</strong>가 무엇을 뜻하는지 생각해 볼 것. → 1주차 <em>이벤트지향 보도의 완성인가, 아니면 기자를 해석에 집중하게 하는가.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>학기 최대 회수 지점</h2>
+  <div class="h2rule"></div>
+  <p class="lede">1주차에서 배운 개념 <strong>거의 전부</strong>가 이 주차에서 다시 나타남.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">1주차 개념</th><th>이 주차 적용</th></tr></thead>
+    <tbody>
+      <tr><td><b>현실반영 vs 현실구성</b></td><td>주가 기사는 시장을 <b>반영</b>하는가, 이유를 <b>만들어내는가</b></td></tr>
+      <tr><td><b>비대칭 보도</b></td><td>거시는 부정적, 기업은 긍정적 — <b>방향이 정반대임</b></td></tr>
+      <tr><td><b>광고주 영향</b><br><span class="cite">이나연·백강희, 2016</span></td><td>기업 광고 의존과 비판 보도의 부실</td></tr>
+      <tr><td><b>정파성</b><br><span class="cite">이승윤 등, 2023</span></td><td>보수 언론이 더 친기업적. <b>의혹-수사에서도 덜 비판적</b></td></tr>
+      <tr><td><b>신문과 방송의 차이</b></td><td>기업 보도에서는 <b>신문이 방송보다</b> 친기업적</td></tr>
+      <tr><td><b>해석 공동체</b><br><span class="cite">Berkowitz &amp; TerKeurst, 1999</span></td><td><b>증권사 리서치가 시장 해석의 사실상 독점 공급자임.</b> 그리고 이해관계가 있음</td></tr>
+      <tr><td><b>이벤트지향 보도</b></td><td>IR 자료 요약. <b>DART 원문 확인 비율이 낮음</b></td></tr>
+      <tr><td><b>미디어 맬라디 · 카토나 가설</b></td><td>증시 비관 보도가 실제 투자 심리를 위축시키는가</td></tr>
+      <tr><td><b>환경감시 실패</b></td><td>분식회계·불공정거래를 언론은 왜 <b>사전에 못 잡는가</b> → 7주차</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">해석 공동체가 가장 선명하게 보이는 시장임</span>
+    <p style="margin-bottom:0">1주차에서 <em>"다른 신문인데 왜 인용되는 전문가 이름이 겹치는가"</em>를 물었음. 주식시장에서는 <strong>증권사 리서치가 해석의 사실상 독점 공급자임.</strong> 그리고 그들에게는 <b>이해관계가 있음</b> — 금리 인하와 주가 상승은 그들의 사업에 유리함.</p>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">자료</th><th style="width:24%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>상장법인 공시</b></td><td>한국거래소 KIND · 상시</td><td>정형 공시, <b>조회공시 요구</b></td></tr>
+      <tr><td><b>주요사항보고서·수시공시</b></td><td>DART · 상시</td><td>증자·CB·자사주·합병·소송</td></tr>
+      <tr><td><b>투자자별 매매동향</b></td><td>KRX · <b>매일</b></td><td>개인·기관·외국인. <b>"외국인 매도세"의 검증 근거</b></td></tr>
+      <tr><td><b>공매도 잔고 공시</b></td><td>한국거래소·금융감독원 · 매일</td><td>종목별 잔고</td></tr>
+      <tr><td>「금융시장 동향」</td><td>한국은행 · 매월</td><td>주식·채권시장 종합</td></tr>
+      <tr><td>자본시장 정책</td><td>금융위원회 · 수시</td><td>공매도, 밸류업, 배당 제도</td></tr>
+      <tr><td><b>불공정거래 조사·제재</b></td><td>금융감독원·거래소 시장감시위 · 수시</td><td><b>'의혹-수사' 차원 기사의 원천임</b></td></tr>
+      <tr><td>기업집단 지정·내부거래</td><td>공정거래위원회 · 연 1회(5월)·수시</td><td>계열사, 내부거래</td></tr>
+      <tr><td><b>MSCI 지수 정기변경</b></td><td>분기(2·5·8·11월)</td><td>편입·편출 종목</td></tr>
+      <tr><td>미국 어닝시즌</td><td>분기(1·4·7·10월)</td><td>주요 기업 실적 발표</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">접근 경로</span>
+    <ul style="margin-bottom:0">
+      <li><a href="https://dart.fss.or.kr" target="_blank" rel="noopener">DART</a> · <a href="https://kind.krx.co.kr" target="_blank" rel="noopener">KIND</a> · <a href="https://data.krx.co.kr" target="_blank" rel="noopener">KRX 정보데이터시스템</a></li>
+      <li><a href="https://www.fsc.go.kr" target="_blank" rel="noopener">금융위원회</a> · <a href="https://www.fss.or.kr" target="_blank" rel="noopener">금융감독원</a> · <a href="https://www.ftc.go.kr" target="_blank" rel="noopener">공정거래위원회</a></li>
+      <li><a href="https://freesis.kofia.or.kr/" target="_blank" rel="noopener">금융투자협회 종합통계</a> · <a href="https://www.bigkinds.or.kr" target="_blank" rel="noopener">빅카인즈</a></li>
+      <li>해외 — <a href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a> · <a href="https://www.cboe.com/en/tradable-products/vix/" target="_blank" rel="noopener">Cboe VIX</a> · <a href="https://www.msci.com/indexes" target="_blank" rel="noopener">MSCI Indexes</a> · <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>매크로 변수의 양방향성</b>
+      <em>같은 변수로 정반대 설명이 가능함.</em> 그런데 기사는 한 방향으로 단정함.</li>
+    <li><b>PER · PBR · ROE</b>
+      PER은 <em>업종별로 다르고</em>, 일회성 이익으로 부풀 수 있음.</li>
+    <li><b>증자·감자의 신호</b>
+      유상증자는 <em>"왜 돈이 필요한가"</em>, 무상감자는 <em>"결손이 쌓였다"</em>임.</li>
+    <li><b>기업뉴스 62.64% 긍정</b>
+      거시경제 보도와 <em>정반대 방향의 편향임.</em></li>
+    <li><b>주가 기사의 사후 인과</b>
+      원인은 설명되는 것이 아니라 <em>선택되는 것</em>일 수 있음.</li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+
+  <div class="box warn">
+    <span class="bt">오해 1 — "○○ 우려에 주가 하락"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>사후 인과 부여.</strong> 같은 변수로 정반대 설명이 가능함(05절 표).</li>
+      <li><b>확인할 것</b> — 그날 다른 매체의 설명, <b>투자자별 매매동향</b> 실제 데이터.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 2 — "PER 낮아 저평가"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>업종별 PER 차이</strong>를 무시했음. 일회성 이익으로 EPS가 부풀었을 수 있음.</li>
+      <li><b>확인할 것</b> — <b>동종업계 PER</b>, 영업이익 기준 지표, 선행 PER.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오해 3 — "컨센서스 상회 서프라이즈"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 컨센서스는 증권사 전망의 <b>평균</b>임. <strong>하향 조정된 뒤에 상회한 것</strong>일 수 있음.</li>
+      <li><b>확인할 것</b> — <b>컨센서스 추이</b>, 몇 개 증권사의 전망인가, <b>분산</b>은 얼마인가.</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>"환율 상승에 주가 하락"과 "환율 상승에 주가 상승" 기사가 같은 달에 다 나옴.</b><br>기자는 어떻게 써야 하는가. 원인을 안 쓰면 기사가 안 되고, 쓰면 단정이 됨.</li>
+    <li><b>기업뉴스 62.64%가 긍정 논조인 이유로 네 가설을 세웠음.</b><br>광고주·취재원·비판 비용·뉴스가치 구조 중 어느 것이 가장 크다고 보는가. 어떻게 검증할 수 있는가.</li>
+    <li><b>공매도 기사에 인용된 취재원의 이해관계를 표로 정리해 볼 것.</b><br>어느 쪽 목소리가 더 자주 인용되는가. 왜인가.</li>
+    <li><b>무상증자는 실질 가치가 변하지 않는데 주가가 오름.</b><br>이것을 기사로 어떻게 써야 하는가. "호재"라고 쓰면 되는가.</li>
+    <li><b>"업계 관계자에 따르면" — 익명 취재원이 기업 기사에 얼마나 쓰이는가?</b><br>어떤 경우에 정당하고 어떤 경우에 문제인가.</li>
+    <li><b>AI 관련주의 PER을 닷컴버블 때와 비교하려면 무엇을 조심해야 하는가?</b><br>업종 구성, 이익의 질, 금리 수준을 함께 생각할 것.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>기업 밸류업</b> 이후 <b>PBR·ROE·주주환원율</b>이 정책 어휘가 되었음. 기업별 계획 공시가 KIND에 올라오므로 <em>공시와 실제 이행을 대조하는 기사가 가능함.</em></li>
+      <li><b>공매도 제도</b>가 반복적으로 바뀌면서 관련 보도량이 급증했음. <b>개인·기관 접근성 차이</b>와 무차입 공매도 적발 통계가 핵심 쟁점임.</li>
+      <li><b>MSCI 선진지수 편입</b> 논의가 매년 반복됨. 요건(외환시장 접근성, 공매도, 배당 절차)을 정리해 두면 기사가 쉬워짐.</li>
+      <li><b>소수 종목 쏠림</b>이 지수 전체를 좌우하는 구조가 이어지고 있음. <em>상위 10종목 시총 비중을 기사에 넣으면 설득력이 크게 오름.</em></li>
+      <li><b>알고리즘 생성 기사</b>가 시황·실적 보도에 널리 쓰임. <em>사후 인과 서술의 자동화가 무엇을 뜻하는지</em>가 토론 소재임.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 12 ───────── -->
+<section id="s12">
+  <h2><span class="num">12</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>지정 리딩</h4>
+    <ul>
+      <li><b>이승윤·백강희·이종혁 (2023).</b> 언론의 정치 성향에 따른 기업 보도 태도의 차이와 기업인 경기평가 심리에 미치는 영향 분석: BERT 기반 딥러닝 모형을 적용한 빅데이터 분석. <b>『한국언론학보』 67(1)</b>, 185–229. <span class="cite">기업뉴스 154,876건 분석 · 긍정 62.64%</span></li>
+    </ul>
+
+    <h4>실무 도구</h4>
+    <ul>
+      <li><a href="https://data.krx.co.kr" target="_blank" rel="noopener">KRX 정보데이터시스템</a> — <b>투자자별 매매동향</b>, 지수·시가총액</li>
+      <li><a href="https://kind.krx.co.kr" target="_blank" rel="noopener">KIND</a> · <a href="https://dart.fss.or.kr" target="_blank" rel="noopener">DART</a></li>
+      <li><a href="https://www.bigkinds.or.kr" target="_blank" rel="noopener">빅카인즈</a> — 기사 논조·키워드 분석</li>
+      <li><a href="https://freesis.kofia.or.kr/" target="_blank" rel="noopener">금융투자협회 종합통계</a></li>
+      <li><b>경제지표 사전</b> 12·13·14절. <a href="../data.html">경제 데이터 분석실</a></li>
+    </ul>
+
+    <h4>해외</h4>
+    <ul>
+      <li><a href="https://www.cboe.com/en/tradable-products/vix/" target="_blank" rel="noopener">Cboe VIX</a> · <a href="https://www.msci.com/indexes" target="_blank" rel="noopener">MSCI Indexes</a></li>
+      <li><a href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a> · <a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a></li>
+    </ul>
+
+    <h4>1주차 이론 연결</h4>
+    <ul>
+      <li>이나연·백강희 (2016). <span class="cite">광고주와 기업 비판 보도</span></li>
+      <li>유세경·금희조 (1999). <span class="cite">언론 시장 경쟁과 기업의 영향력</span></li>
+      <li>Berkowitz, D., &amp; TerKeurst, J. V. (1999). Community as interpretive community. <i>Journal of Communication, 49</i>(3), 125–136. <span class="cite">해석 공동체</span></li>
+      <li>곽해선 (2023). 『경제기사 궁금증 300문 300답』. 혜다 — 증시 편</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 13주차 강의자료</b><br>
+  주 출처: 이승윤·백강희·이종혁(2023) · 경제지표 사전 12·13·14절</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="12_기업과주식_1_재무제표와공시.html">12주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

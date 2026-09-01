@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>11주차 · 가계 — 부동산·전월세·가계부채 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 11주차 강의자료 — 집값 통계 세 종류, 평균과 중위의 함정, 전세와 월세, 가계신용, LTV·DTI·DSR 규제.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">11주차 · 부동산과 가계부채</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">11주차<br>가계 — 부동산·<br>전월세·가계부채</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1회차 · 집값을 측정하는 법</div>
+    <a href="#s2"><span class="n">02</span><span>집값 통계는 하나가 아님</span></a>
+    <a href="#s3"><span class="n">03</span><span>평균과 중위의 함정</span></a>
+    <a href="#s4"><span class="n">04</span><span>그 밖의 부동산 지표</span></a>
+    <a href="#s5"><span class="n">05</span><span>전세와 월세</span></a>
+
+    <div class="sb-label">2회차 · 가계부채</div>
+    <a href="#s6"><span class="n">06</span><span>가계부채를 측정하는 법</span></a>
+    <a href="#s7"><span class="n">07</span><span>LTV · DTI · DSR</span></a>
+    <a href="#s8"><span class="n">08</span><span>금리가 가계에 닿는 경로</span></a>
+    <a href="#s9"><span class="n">09</span><span>부동산 저널리즘</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>보도자료와 통계</span></a>
+    <a href="#s11"><span class="n">11</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s12"><span class="n">12</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="../index.html">← 경제저널리즘 강의 홈</a>
+    <a href="../data.html">경제 데이터 분석실</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 5. 경제 주체 — 가계·기업·정부 · 11주차</div>
+    <h1>집값 기사는 어느 통계를 썼는지<br>밝히지 않으면 검증 불가능함</h1>
+    <div class="sub">가계 — 부동산 · 전월세 · 가계부채</div>
+  </div>
+</header>
+
+<!-- ───────── 00 ───────── -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede"><strong>국내 경제기사에서 조회수가 가장 높고 오독이 가장 심한 영역</strong>임. 그리고 <strong>10주차 금리가 내 삶에 닿는 지점</strong>임.</p>
+
+  <div class="pull">
+    <div class="q">"집값 기사는 어느 통계를 썼는지<br>밝히지 않으면 검증 불가능함."</div>
+    <div class="a">오늘 딱 하나만 가져간다면 이 문장.</div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">6주차의 빈틈이 바로 여기임</span>
+    <ul style="margin-bottom:0">
+      <li>6주차에서 확인했듯 <strong>한국 CPI에는 자가주거비가 기본 지수에 포함되지 않음.</strong></li>
+      <li>그래서 <em>"물가 안정"과 "집값 폭등"이 동시에 성립함.</em></li>
+      <li>그 빈틈을 채우는 것이 이 주차임.</li>
+    </ul>
+  </div>
+
+  <h3>여는 질문 — 세 문장은 각각 다른 숫자임</h3>
+  <div class="anat">
+    <div class="s">"서울 아파트값"을 말하는 세 가지 방식</div>
+    <div class="g">
+      <div class="c"><div class="n">방식 1</div><div class="q">평균 매매가 ○억 돌파</div><div class="d">고가 거래 몇 건에 흔들림</div></div>
+      <div class="c"><div class="n">방식 2</div><div class="q">중위 매매가 ○억</div><div class="d">한가운데 집의 값</div></div>
+      <div class="c"><div class="n">방식 3</div><div class="q">3주 연속 상승</div><div class="d">지수 기준. 어느 기관인지가 중요함</div></div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">셋이 동시에 다른 방향을 가리키는 일이 실제로 자주 있음</span>
+    <p style="margin-bottom:0">각각 <strong>다른 기관, 다른 방법</strong>으로 만든 숫자이기 때문임. <em>내 동네 집값이 오르는지 내리는지 물으면 답이 갈리는 이유도 같음 — 무엇을 봤느냐에 따라 답이 다름.</em></p>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>매매가격지수 · 실거래가 · 호가<span class="en">index / actual price / asking price</span></dt>
+      <dd><b>지수</b>는 표본 주택 가격의 변화, <b>실거래가</b>는 실제 신고된 계약 가격, <b>호가</b>는 팔겠다고 내놓은 값임.
+        <span class="ez">주의 — 호가는 거래가 아님.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>중위가격 · 평균가격<span class="en">median / mean</span></dt>
+      <dd>오늘 최대의 함정임. <b>초고가 거래 몇 건이 평균을 끌어올림.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>전세가율<span class="en">jeonse-to-price ratio</span></dt>
+      <dd>전세가 ÷ 매매가. 높으면 갭투자 유인이 커짐.</dd>
+    </dl>
+    <dl class="term">
+      <dt>전월세전환율<span class="en">conversion rate</span></dt>
+      <dd>전세보증금을 월세로 바꿀 때의 전환 비율. <b>금리와 연동해 움직임.</b></dd>
+    </dl>
+    <dl class="term">
+      <dt>준공 후 미분양<span class="en">unsold after completion</span></dt>
+      <dd>다 지었는데 안 팔린 물량.
+        <span class="ez">주의 — 이것이 '악성 미분양'임. 그냥 미분양과 구별할 것.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>PIR<span class="en">주택가격소득비율</span></dt>
+      <dd>주택가격 ÷ 가구소득.
+        <span class="ez">쉽게 — 몇 년치 소득을 한 푼도 안 쓰고 모아야 집을 사는가.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>K-HAI<span class="en">주택구입부담지수</span></dt>
+      <dd>중간소득 가구의 <b>대출 상환부담</b>이 소득 대비 얼마나 큰가.
+        <span class="ez">금리가 오르면 집값이 그대로여도 K-HAI는 올라감.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>K-HOI<span class="en">주택구입물량지수</span></dt>
+      <dd>중간소득 가구가 <b>살 수 있는 주택이 전체의 몇 %</b>인가.</dd>
+    </dl>
+    <dl class="term">
+      <dt>가계신용<span class="en">household credit</span></dt>
+      <dd>가계대출 + <b>판매신용</b>(카드 할부 등). <b>가장 포괄적인</b> 가계부채 지표임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>LTV · DTI · DSR<span class="en">대출 규제 3종</span></dt>
+      <dd>각각 <b>집값 대비</b>, <b>소득 대비 주담대 원리금+기타 이자</b>, <b>소득 대비 모든 대출 원리금</b>을 제한함.</dd>
+    </dl>
+    <dl class="term">
+      <dt>처분가능소득 대비 가계부채비율<span class="en">debt-to-income</span></dt>
+      <dd>국제비교의 표준 지표임.
+        <span class="ez">주의 — 분모(소득)가 줄어도 비율은 오름.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>신용갭<span class="en">credit-to-GDP gap</span></dt>
+      <dd>민간신용/GDP가 장기 추세에서 얼마나 벗어났는가. <b>국제기구가 위기 예측에 씀.</b></dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>집값 통계는 하나가 아님</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:28%">통계</th><th style="width:20%">기관</th><th style="width:30%">성격</th><th>주기</th></tr></thead>
+    <tbody>
+      <tr><td><b>전국주택가격동향조사</b></td><td>한국부동산원 <span class="cite">공공</span></td><td><b>지수</b> — 표본 주택 조사</td><td><b>주간(목)</b> · 월간</td></tr>
+      <tr><td><b>KB주택가격동향</b></td><td>KB국민은행 <span class="cite">민간</span></td><td><b>지수</b> — 중개업소 시세 기반</td><td>주간 · 월간</td></tr>
+      <tr><td><b>공동주택 실거래가격지수</b></td><td>한국부동산원</td><td><b>실제 거래가</b>를 반복매매 방식으로 지수화</td><td>월간</td></tr>
+      <tr><td><b>실거래가</b></td><td>국토교통부</td><td><b>실제 신고 가격 원자료</b></td><td>상시 <span class="cite">계약 후 신고</span></td></tr>
+      <tr><td>공동주택 공시가격</td><td>국토교통부</td><td><b>과세 기준</b></td><td>연 1회 (3~4월)</td></tr>
+      <tr><td>주택통계 <span class="cite">인허가·착공·분양·미분양</span></td><td>국토교통부</td><td>공급 지표</td><td>매월</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>왜 숫자가 다른가 — 네 가지 이유</h3>
+  <ol class="steps">
+    <li><b>표본이 다름</b>
+      어느 단지, 어느 평형을 넣느냐가 다름.</li>
+    <li><b>방법이 다름</b>
+      부동산원은 조사원 기반 지수, KB는 <b>중개업소 시세</b>로 호가가 반영됨.</li>
+    <li><b>시점이 다름</b>
+      실거래가는 계약 후 신고까지 <b>시차</b>가 있음.</li>
+    <li><b>거래가 없으면 지수는 무엇을 측정하는가</b>
+      거래절벽 국면의 가격 지수는 <strong>사실상 호가를 반영함.</strong> 그래서 <em>거래량 없이 지수만 보는 기사는 위험함.</em></li>
+  </ol>
+
+  <div class="box key">
+    <span class="bt">기자 원칙 두 가지</span>
+    <ul style="margin-bottom:0">
+      <li>집값 기사는 <strong>최소 두 개 통계를 교차 확인</strong>하고, <strong>어느 통계를 썼는지 본문에 밝힘.</strong></li>
+      <li><strong>정부 통계(부동산원)와 민간 통계(KB)가 어긋나는 시점 자체가 좋은 기사거리임.</strong></li>
+      <li>그리고 <b>실거래가격지수</b>를 꼭 함께 볼 것. 표본 조사 지수와 달리 <em>실제 거래된 가격만</em>으로 만듦. 셋을 겹쳐 그리면 그림이 선명해짐.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>평균과 중위의 함정</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">아파트 5채로 보는 평균과 중위</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0 0 14px">
+        <svg viewBox="0 0 760 250" role="img" aria-label="평균과 중위가격의 차이를 보여주는 막대 도식">
+          <!-- 막대 -->
+          <rect x="60" y="152" width="70" height="30" rx="4" fill="#c8d6e5"/>
+          <text x="95" y="173" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">3억</text>
+          <rect x="150" y="142" width="70" height="40" rx="4" fill="#b3c6db"/>
+          <text x="185" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">4억</text>
+          <rect x="240" y="132" width="70" height="50" rx="4" fill="#1a4b8c"/>
+          <text x="275" y="163" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">5억</text>
+          <rect x="330" y="122" width="70" height="60" rx="4" fill="#b3c6db"/>
+          <text x="365" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2244">6억</text>
+          <rect x="420" y="42" width="70" height="140" rx="4" fill="#a4303f"/>
+          <text x="455" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">30억</text>
+
+          <line x1="50" y1="182" x2="510" y2="182" stroke="#c8d6e5" stroke-width="1.5"/>
+          <text x="275" y="204" text-anchor="middle" font-size="12" fill="#8492a6">한가운데 집</text>
+          <text x="455" y="204" text-anchor="middle" font-size="12" font-weight="700" fill="#a4303f">이 한 채가</text>
+          <text x="455" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="#a4303f">평균을 끌어올림</text>
+
+          <!-- 결과 -->
+          <rect x="540" y="42" width="200" height="64" rx="8" fill="#fdf1f2" stroke="#e8b9be"/>
+          <text x="640" y="68" text-anchor="middle" font-size="13" fill="#5a6779">평균</text>
+          <text x="640" y="94" text-anchor="middle" font-size="22" font-weight="800" fill="#a4303f">9.6억</text>
+
+          <rect x="540" y="118" width="200" height="64" rx="8" fill="#e8eef5" stroke="#1a4b8c"/>
+          <text x="640" y="144" text-anchor="middle" font-size="13" fill="#5a6779">중위</text>
+          <text x="640" y="170" text-anchor="middle" font-size="22" font-weight="800" fill="#1a4b8c">5억</text>
+
+          <text x="640" y="206" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0d2244">이 동네에 9.6억짜리</text>
+          <text x="640" y="224" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0d2244">집은 없음</text>
+        </svg>
+      </figure>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">부동산 가격 분포는 오른쪽으로 길게 늘어져 있음</span>
+        <ul style="margin-bottom:0">
+          <li>그래서 <strong>거의 항상 평균이 중위보다 큼.</strong></li>
+          <li><b>기사 제목에 "평균"이 붙으면 반드시 중위값을 찾아볼 것.</b></li>
+          <li>더 좋은 방법 — <b>5분위별 가격</b>을 봄. 1분위는 하위 20%, 5분위는 상위 20%임.</li>
+          <li><em>1분위와 5분위가 반대 방향으로 움직이는 국면이 실제로 있음.</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-f">
+      같은 함정이 <b>소득·자산 통계</b>에도 있음 → 14주차 소득분배에서 다시 적용함. 2주차에서 배운 <b>"수준과 변화율을 함께 봄"</b>이 여기서 실전이 됨.
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>그 밖의 부동산 지표</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">지표</th><th style="width:34%">무엇을 말하는가</th><th>오독 주의</th></tr></thead>
+    <tbody>
+      <tr><td><b>전세가율</b></td><td>높으면 갭투자 유인, 낮으면 매매 대기</td><td>지역·평형별 편차가 큼</td></tr>
+      <tr><td><b>미분양 / 준공 후 미분양</b></td><td>공급 과잉과 건설사 부실 신호</td><td><b>준공 후 미분양이 진짜 신호임</b></td></tr>
+      <tr><td><b>거래량</b></td><td>시장 활력</td><td><b>가격보다 거래량이 먼저 움직임</b></td></tr>
+      <tr><td>주택보급률</td><td>가구 수 대비 주택 수</td><td>100%를 넘어도 주거난은 해소되지 않음 <span class="cite">다주택·1인가구</span></td></tr>
+      <tr><td>인허가 / 착공 / 분양 / 준공</td><td>2~3년 뒤 공급의 <b>선행지표</b></td><td><b>인허가 ≠ 착공 ≠ 준공.</b> 셋을 구분해 쓸 것</td></tr>
+      <tr><td>청약 경쟁률 / 초기분양률</td><td>수요 강도</td><td>특별공급·중복청약으로 부풀 수 있음. <b>초기분양률이 더 정직함</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>부담 능력을 측정하는 세 지표 — 기사에 거의 안 나오는데 가장 유용함</h3>
+  <div class="tri c1">
+    <div>
+      <h5>PIR</h5>
+      <span class="tag">주택가격소득비율</span>
+      <ul>
+        <li>주택가격 ÷ 가구소득</li>
+        <li>몇 년치 소득을 모아야 집을 사는가</li>
+        <li><b>국제 비교가 가능함</b></li>
+      </ul>
+    </div>
+    <div>
+      <h5>K-HAI</h5>
+      <span class="tag">주택구입부담지수</span>
+      <ul>
+        <li>중간소득 가구의 <b>상환부담</b></li>
+        <li><b>금리가 오르면 집값이 그대로여도 올라감</b></li>
+        <li>"집값은 안 올랐는데 왜 더 못 사게 됐나"의 답</li>
+      </ul>
+    </div>
+    <div>
+      <h5>K-HOI</h5>
+      <span class="tag">주택구입물량지수</span>
+      <ul>
+        <li>중간소득 가구가 살 수 있는 주택이</li>
+        <li>전체 재고의 <b>몇 %</b>인가</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box note">
+    <span class="bt">심리 지표도 있음 — 다만 응답이지 실적이 아님</span>
+    <ul style="margin-bottom:0">
+      <li><b>KB 매수우위지수</b> — 매수세와 매도세 중 어느 쪽이 우위인가 <span class="cite">중개업소 설문</span></li>
+      <li><b>주택가격전망 CSI</b> — 소비자가 예상하는 1년 후 집값 방향 <span class="cite">한국은행</span></li>
+      <li><b>주택매매·전세시장 소비심리지수</b> — 국토연구원</li>
+      <li>4주차에서 배운 대로 <strong>이것들은 응답이지 실적이 아님.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">주택 수요는 인구가 아니라 가구 수를 따름</span>
+    <p style="margin-bottom:0"><strong>인구가 줄어도 1인가구가 늘면 주택 수요는 유지됨.</strong> "인구가 주니 집값도 내릴 것"이라는 서술은 <em>가구 수를 보지 않은 것임.</em> → 14주차 인구와 연결됨.</p>
+  </div>
+</section>
+
+<!-- ───────── 05 ───────── -->
+<section id="s5">
+  <h2><span class="num">05</span>전세와 월세</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li><b>전세</b> — 목돈(보증금)을 맡기고 이자 없이 거주하는 제도임. <strong>세계적으로 드문 한국 특유의 제도</strong>임.</li>
+    <li>세입자에게 <b>보증금은 사실상 채권</b>임. 집주인에게는 <b>사실상 무이자 대출</b>임.</li>
+    <li><b>전월세전환율</b> — 전세보증금을 월세로 바꿀 때 적용하는 비율. <b>금리와 연동해 움직임.</b></li>
+  </ul>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">금리가 오르면 왜 월세가 늘어나는가</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0">
+        <svg viewBox="0 0 760 210" role="img" aria-label="금리 상승이 전세의 월세화로 이어지는 경로 도식">
+          <rect x="20" y="26" width="150" height="52" rx="8" fill="#0d2244"/>
+          <text x="95" y="57" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">금리 상승</text>
+
+          <rect x="205" y="26" width="230" height="52" rx="8" fill="#e8eef5" stroke="#1a4b8c" stroke-width="1.8"/>
+          <text x="320" y="49" text-anchor="middle" font-size="13" fill="#0d2244">집주인 계산이 바뀜</text>
+          <text x="320" y="68" text-anchor="middle" font-size="11.5" fill="#5a6779">보증금 이자수익 &lt; 월세 수입</text>
+
+          <rect x="470" y="26" width="150" height="52" rx="8" fill="#fdf6ec" stroke="#b45309" stroke-width="1.8"/>
+          <text x="545" y="57" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">월세 선호</text>
+
+          <rect x="655" y="26" width="87" height="52" rx="8" fill="#fdf1f2" stroke="#a4303f" stroke-width="2"/>
+          <text x="698" y="50" text-anchor="middle" font-size="12.5" font-weight="700" fill="#a4303f">주거비</text>
+          <text x="698" y="67" text-anchor="middle" font-size="12.5" font-weight="700" fill="#a4303f">구조 변화</text>
+
+          <line x1="174" y1="52" x2="197" y2="52" stroke="#8492a6" stroke-width="2"/><polygon points="201,52 193,48 193,56" fill="#8492a6"/>
+          <line x1="439" y1="52" x2="462" y2="52" stroke="#8492a6" stroke-width="2"/><polygon points="466,52 458,48 458,56" fill="#8492a6"/>
+          <line x1="624" y1="52" x2="647" y2="52" stroke="#8492a6" stroke-width="2"/><polygon points="651,52 643,48 643,56" fill="#8492a6"/>
+
+          <rect x="20" y="104" width="722" height="88" rx="9" fill="#eefaf7" stroke="#a5d9d1"/>
+          <text x="42" y="132" font-size="13.5" font-weight="800" fill="#0f766e">6주차 물가와 이어지는 지점</text>
+          <text x="42" y="158" font-size="13.5" fill="#5a6779">월세는 <tspan font-weight="700" fill="#0d2244">CPI 집세지수에 잡히고</tspan>, 전세는 잡히는 방식이 다름.</text>
+          <text x="42" y="180" font-size="13.5" fill="#5a6779">월세화가 진행되면 <tspan font-weight="700" fill="#0d2244">같은 주거비 부담이 통계에 다르게 나타남.</tspan></text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      → 10주차 금리, 6주차 물가와 <b>세 주차가 한 줄로 이어지는 지점</b>임.
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-h">
+      <div class="k">저널리즘 문제</div>
+      <div class="t">전세사기 보도가 다룬 것과 놓친 것</div>
+    </div>
+    <div class="case-b">
+      <div class="duo" style="margin-top:0">
+        <div class="a">
+          <h5>다룬 것</h5>
+          <span class="tag">사건</span>
+          <ul>
+            <li>개별 피해 사례</li>
+            <li>가해자 서사</li>
+            <li>피해 규모</li>
+          </ul>
+        </div>
+        <div class="b">
+          <h5>놓친 것</h5>
+          <span class="tag">구조</span>
+          <ul>
+            <li>보증금 <b>반환 능력 검증 부재</b></li>
+            <li><b>전세보증보험</b> 제도의 설계와 한계</li>
+            <li>등기부로 확인되지 않는 위험 <span class="cite">선순위 임차인, 세금 체납</span></li>
+            <li><b>갭투자 구조</b> 자체</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box key" style="margin-bottom:0">
+        <span class="bt">이 기사는 '사건'인가 '구조'인가</span>
+        <p style="margin-bottom:0"><strong>사건 기사는 읽히고, 구조 기사는 예방함.</strong> 1주차에서 배운 <em>환경감시 기능</em>의 문제임.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 06 ───────── -->
+<section id="s6">
+  <h2><span class="num">06</span>가계부채를 측정하는 법</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">지표</th><th style="width:24%">기관 · 주기</th><th>무엇을 포함하는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>가계신용</b></td><td>한국은행 · <b>분기</b></td><td>가계대출 + <b>판매신용</b>(카드 할부 등). <b>가장 포괄적임</b></td></tr>
+      <tr><td>가계대출 동향</td><td>금융위원회·금융감독원 · 매월</td><td>은행·2금융권 가계대출 증감</td></tr>
+      <tr><td>예금은행 가계대출</td><td>한국은행 「금융시장 동향」 · 매월</td><td>은행 기준</td></tr>
+      <tr><td>가계금융복지조사</td><td>국가데이터처·한국은행·금융감독원 · 연 1회</td><td><b>가구 단위</b> 자산·부채·소득</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">반드시 주의할 것 두 가지</span>
+    <ul style="margin-bottom:0">
+      <li><b>"가계부채 ○○조 원 돌파"</b> 기사는 대부분 <b>가계신용</b>을 씀. 월간 기사(금융위)와 분기 기사(한국은행)가 <strong>다른 계열</strong>을 쓰므로 <em>비교할 때 맞춰야 함.</em></li>
+      <li><strong>전세보증금은 공식 가계부채 통계에 잡히지 않음.</strong> 이것이 한국 가계부채 <b>국제비교의 최대 쟁점</b>임.</li>
+      <li><em>"실질 부채는 통계보다 크다"</em>는 주장의 근거이며, 반대로 <em>"전세는 상환 구조가 다르다"</em>는 반론도 있음. <b>이 논쟁 자체를 기사로 쓸 수 있음.</b></li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">함께 볼 지표</span>
+    <ul style="margin-bottom:0">
+      <li><b>민간신용/GDP 비율</b>, <b>신용갭</b> — 국제기구(BIS)가 위기 예측에 씀. → 7주차</li>
+      <li><b>주택담보대출 잔액 vs 기타대출 잔액</b> — 어느 쪽이 늘고 있는가. <em>기타대출(신용대출) 증가는 더 위험한 신호로 읽힘.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 07 ───────── -->
+<section id="s7">
+  <h2><span class="num">07</span>LTV · DTI · DSR</h2>
+  <div class="h2rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:14%">용어</th><th style="width:34%">무엇을 제한하는가</th><th>계산</th></tr></thead>
+    <tbody>
+      <tr><td><b>LTV</b></td><td><b>집값</b> 대비 대출 한도</td><td>대출액 ÷ 주택가격</td></tr>
+      <tr><td><b>DTI</b></td><td>소득 대비 <b>주담대 원리금 + 기타대출 이자</b></td><td>(주담대 원리금 + 기타대출 이자) ÷ 연소득</td></tr>
+      <tr><td><b>DSR</b></td><td>소득 대비 <b>모든 대출의 원리금</b></td><td>전체 대출 원리금 ÷ 연소득</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">쉬운 비유로 기억할 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>LTV</b> — "이 집을 담보로 얼마까지 빌려줄까"</li>
+      <li><b>DTI</b> — "네 월급으로 이 집 대출 이자를 감당할 수 있나"</li>
+      <li><b>DSR</b> — "네 월급으로 <strong>네가 진 모든 빚</strong>을 감당할 수 있나"</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">DSR이 가장 강한 규제임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>모든 빚의 원리금을 다 더하기 때문임.</strong></li>
+      <li>LTV는 집값만 보고, DTI는 주담대 원리금에 다른 빚의 <b>이자만</b> 봄. DSR은 <b>다른 빚의 원금까지</b> 셈.</li>
+      <li>기사에서 <b>"대출 규제 완화"</b>라고 하면 <strong>셋 중 무엇을 얼마나</strong> 바꾸는지 확인해야 함.</li>
+      <li>지역별(규제지역 지정), 대상별(생애최초·다주택)로 한도가 다름. <em>세부 변경이 잦아 "무엇이 어떻게 바뀌었는지" 특정하는 것이 중요함.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 08 ───────── -->
+<section id="s8">
+  <h2><span class="num">08</span>금리가 가계에 닿는 경로 — 10주차의 착지점</h2>
+  <div class="h2rule"></div>
+
+  <div class="info">
+    <div class="info-h">
+      <div class="t">기준금리 인상이 집값까지 내려오는 길</div>
+    </div>
+    <div class="info-b">
+      <figure style="margin:0">
+        <svg viewBox="0 0 760 340" role="img" aria-label="기준금리 인상이 가계와 금융기관으로 파급되는 경로 도식">
+          <rect x="255" y="14" width="250" height="40" rx="8" fill="#0d2244"/>
+          <text x="380" y="39" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">기준금리 인상</text>
+
+          <rect x="255" y="72" width="250" height="40" rx="8" fill="#e8eef5" stroke="#1a4b8c" stroke-width="1.8"/>
+          <text x="380" y="97" text-anchor="middle" font-size="13.5" fill="#0d2244">코픽스 상승</text>
+
+          <rect x="255" y="130" width="250" height="40" rx="8" fill="#e8eef5" stroke="#1a4b8c" stroke-width="1.8"/>
+          <text x="380" y="155" text-anchor="middle" font-size="13.5" fill="#0d2244">변동금리 주담대 이자 상승</text>
+
+          <rect x="30" y="200" width="320" height="52" rx="8" fill="#fdf6ec" stroke="#b45309" stroke-width="1.8"/>
+          <text x="190" y="223" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">가처분소득 감소</text>
+          <text x="190" y="242" text-anchor="middle" font-size="11.5" fill="#5a6779">→ 소비 감소 → 경기 둔화</text>
+
+          <rect x="410" y="200" width="320" height="52" rx="8" fill="#fdf1f2" stroke="#a4303f" stroke-width="1.8"/>
+          <text x="570" y="223" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a4303f">부동산 수요 감소</text>
+          <text x="570" y="242" text-anchor="middle" font-size="11.5" fill="#5a6779">→ 집값 하락 → 담보가치 하락</text>
+
+          <rect x="240" y="282" width="280" height="44" rx="8" fill="#fdf1f2" stroke="#a4303f" stroke-width="2"/>
+          <text x="380" y="309" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a4303f">금융기관 부실 위험 증가</text>
+
+          <path d="M380,56 L380,68" stroke="#8492a6" stroke-width="2"/><polygon points="380,71 375,62 385,62" fill="#8492a6"/>
+          <path d="M380,114 L380,126" stroke="#8492a6" stroke-width="2"/><polygon points="380,129 375,120 385,120" fill="#8492a6"/>
+          <path d="M330,172 L190,172 L190,196" stroke="#8492a6" stroke-width="2" fill="none"/><polygon points="190,199 185,190 195,190" fill="#8492a6"/>
+          <path d="M430,172 L570,172 L570,196" stroke="#8492a6" stroke-width="2" fill="none"/><polygon points="570,199 565,190 575,190" fill="#8492a6"/>
+          <path d="M570,254 L570,278 L524,278" stroke="#8492a6" stroke-width="2" fill="none"/><polygon points="521,278 530,273 530,283" fill="#8492a6"/>
+
+          <text x="30" y="176" font-size="11.5" fill="#8492a6">→ 3·4주차</text>
+          <text x="655" y="176" font-size="11.5" fill="#8492a6">→ 7주차 위기</text>
+        </svg>
+      </figure>
+    </div>
+    <div class="info-f">
+      <b>2008년 서브프라임이 정확히 이 경로였음</b>(7주차). <b>LTV·DSR 규제가 왜 존재하는지</b>를 이 그림이 설명함.
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">고정금리와 변동금리 비중이 왜 기사거리인가</span>
+    <ul style="margin-bottom:0">
+      <li>변동금리 비중이 높으면 금리 인상 충격이 가계에 <strong>빠르게</strong> 전달됨.</li>
+      <li>한국은 변동금리 비중이 높은 편이라 <em>금리 인상의 체감 속도가 빠름.</em></li>
+      <li>10주차에서 배운 <b>코픽스 세 종류</b>가 여기서 실제로 작동함. 어느 것에 연동됐느냐가 체감을 정함.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">처분가능소득 대비 가계부채 비율 — 분자와 분모를 분리할 것</span>
+    <ul style="margin-bottom:0">
+      <li>국제비교의 표준 지표임.</li>
+      <li>그런데 <strong>분모(처분가능소득)가 줄어도 비율은 오름.</strong></li>
+      <li>즉 <em>빚이 안 늘어도 "부채비율 상승" 기사가 나올 수 있음.</em></li>
+      <li>반드시 <b>두 계열을 분리해서</b> 확인할 것.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 09 ───────── -->
+<section id="s9">
+  <h2><span class="num">09</span>부동산 저널리즘</h2>
+  <div class="h2rule"></div>
+  <p class="lede">1주차에서 배운 개념이 <strong>가장 밀도 높게 적용되는 영역</strong>임.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">1주차 개념</th><th>부동산 보도에서 어떻게 나타나는가</th></tr></thead>
+    <tbody>
+      <tr><td><b>광고주 영향</b><br><span class="cite">이나연·백강희, 2016</span></td><td>부동산 기사의 상당수가 <b>건설사·분양대행사 보도자료</b>에 기반함. <em>분양 광고와 분양 기사의 관계를 짚을 것.</em></td></tr>
+      <tr><td><b>정파성</b><br><span class="cite">김수정·김은이, 2014</span></td><td>조선일보는 부동산 위기를 <b>노무현 정부 때 2배 많이</b>, 한겨레는 반대로 <b>이명박 정부 시기에 2배 넘게</b> 보도했음. <b>같은 시장, 다른 보도량임</b></td></tr>
+      <tr><td><b>자기이행기대</b><br><span class="cite">Katona, 1964</span></td><td>부동산은 <b>카토나 가설이 가장 직접적으로 작동하는 시장</b>임. <em>"지금 안 사면 못 산다"는 기사가 실제 수요를 만듦</em></td></tr>
+      <tr><td><b>비매개 경험 효과</b><br><span class="cite">Zucker, 1978</span></td><td>물가와 함께 <b>돌출성이 가장 높은 영역</b>임. 사람들은 자기 동네 시세를 직접 앎. <em>그래서 통계와 체감이 어긋날 때 언론 신뢰가 무너짐</em></td></tr>
+      <tr><td><b>취재원의 이해관계</b></td><td>인용된 전문가가 <b>부동산 자문사·시행사·중개법인·자산운용사</b> 소속인지 확인했는가</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">1주차 정파성 연구가 여기서 회수됨</span>
+    <p style="margin-bottom:0">1주차에서 소개한 김수정·김은이(2014) 연구가 <strong>바로 이 시장에 대한 것임.</strong> <em>개별 기사만 보면 사실 관계에 문제가 없을 수 있음. 편향은 '기사 하나'가 아니라 '기사의 분포'에 있음.</em> 확인하려면 <b>기간 전체의 보도량</b>을 세어야 함.</p>
+  </div>
+</section>
+
+<!-- ───────── 10 ───────── -->
+<section id="s10">
+  <h2><span class="num">10</span>보도자료와 통계</h2>
+  <div class="h2rule"></div>
+
+  <h3>부동산</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:36%">자료</th><th style="width:24%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>「주간 아파트 가격동향」</b></td><td>한국부동산원 · <b>매주 목요일</b></td><td>주간 매매·전세 가격지수</td></tr>
+      <tr><td>「월간 주택가격동향조사」</td><td>한국부동산원 · 매월 중순</td><td>월간 지수, 지역별</td></tr>
+      <tr><td><b>공동주택 실거래가격지수</b></td><td>한국부동산원 · 월간</td><td>실제 거래가 기반 지수</td></tr>
+      <tr><td>「주간 KB주택시장동향」</td><td>KB국민은행 · 매주</td><td>민간 시세 기반 지수</td></tr>
+      <tr><td><b>실거래가</b></td><td>국토교통부 · 상시</td><td><b>실제 신고 가격 원자료</b></td></tr>
+      <tr><td><b>주택통계</b></td><td>국토교통부 · 매월</td><td>인허가·착공·분양·준공·<b>미분양</b></td></tr>
+      <tr><td>공동주택 공시가격</td><td>국토교통부 · 연 1회(3~4월)</td><td>과세 기준</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>가계부채 · 금융</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:36%">자료</th><th style="width:24%">기관 · 주기</th><th>담긴 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>「가계신용」</b></td><td>한국은행 · <b>분기</b></td><td>가계대출 + 판매신용. <b>가장 포괄적</b></td></tr>
+      <tr><td>가계대출 동향</td><td>금융위원회·금융감독원 · 매월</td><td>은행·2금융권 증감</td></tr>
+      <tr><td><b>「금융안정보고서」</b></td><td>한국은행 · 연 2회(6·12월)</td><td><b>가계부채 위험 진단의 핵심 문서</b></td></tr>
+      <tr><td>「가계금융복지조사」</td><td>국가데이터처·한국은행·금감원 · 연 1회</td><td>가구 단위 자산·부채·소득</td></tr>
+      <tr><td>코픽스 · 가중평균금리</td><td>은행연합회 · 한국은행 · 매월</td><td>대출 기준금리와 실제 적용금리 → 10주차</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">집값 통계 3종 교차검증 — 직접 해 볼 것</span>
+    <ol style="margin-bottom:0">
+      <li>관심 지역 하나를 고름.</li>
+      <li>세 가지를 각각 확인함 — <b>한국부동산원</b> 매매가격지수, <b>KB부동산</b> 시세, <b>국토부 실거래가</b> 최근 3개월 거래 전부.</li>
+      <li><b>세 통계가 같은 방향을 가리키는가.</b> 다르다면 왜인가.</li>
+      <li><b>거래량</b>을 함께 확인함. <em>가격 변동에 신뢰를 줄 만큼 거래가 있었는가.</em></li>
+      <li>이 지역에 대해 <strong>정직한 리드 한 문장</strong>을 씀. <b>통계 출처와 기간을 반드시 명시할 것.</b></li>
+    </ol>
+    <p style="margin:10px 0 0"><em>예 — "국토부 실거래가 기준 ○○동 아파트는 최근 3개월 12건이 거래됐고, 중위 거래가는 ○억 원으로 직전 3개월보다 ○% 낮았음."</em></p>
+    <p style="margin:8px 0 0"><strong>목적 — "집값이 올랐다"를 검증 가능한 문장으로 바꾸는 훈련임.</strong></p>
+  </div>
+
+  <div class="box note">
+    <span class="bt">접근 경로</span>
+    <ul style="margin-bottom:0">
+      <li><a href="https://www.reb.or.kr" target="_blank" rel="noopener">한국부동산원 부동산통계정보 R-ONE</a></li>
+      <li><a href="https://rt.molit.go.kr" target="_blank" rel="noopener">국토교통부 실거래가 공개시스템</a> · <a href="https://stat.molit.go.kr" target="_blank" rel="noopener">국토교통 통계누리</a></li>
+      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — 가계신용 시계열 · <a href="https://www.fsc.go.kr" target="_blank" rel="noopener">금융위원회</a></li>
+      <li><a href="https://kosis.kr" target="_blank" rel="noopener">KOSIS</a> — 주택소유통계, 가계금융복지조사 · <a href="https://www.bis.org/statistics/" target="_blank" rel="noopener">BIS Statistics</a> — 국제비교</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 11 ───────── -->
+<section id="s11">
+  <h2><span class="num">11</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>집값 통계는 최소 세 종류</b>
+      부동산원 지수 / KB 지수 / 실거래가. <em>어느 것을 썼는지 밝혀야 함.</em></li>
+    <li><b>평균과 중위</b>
+      초고가 거래 몇 건이 평균을 끌어올림. <em>중위와 5분위를 봄.</em></li>
+    <li><b>거래량이 먼저 움직임</b>
+      거래 없는 가격 지수는 사실상 호가임.</li>
+    <li><b>가계신용이 가장 포괄적</b>
+      다만 <em>전세보증금은 잡히지 않음.</em></li>
+    <li><b>LTV &lt; DTI &lt; DSR</b>
+      DSR이 가장 강한 규제임. <em>모든 빚의 원리금을 다 셈.</em></li>
+  </ol>
+
+  <h3>흔한 오해 — 가격 편</h3>
+  <div class="box warn">
+    <span class="bt">오해 1 — "서울 아파트 평균 ○억 돌파"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>평균과 중위의 혼동.</strong> 고가 거래 몇 건의 영향임.</li>
+      <li><b>확인할 것</b> — 중위가격, 5분위별 가격.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 2 — "○○단지 신고가, 집값 반등"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>거래 1건</strong>으로 추세를 단정했음.</li>
+      <li><b>확인할 것</b> — 해당 단지 최근 거래 <b>전부</b>, 지수 흐름, <b>거래량</b>.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 3 — "3주 연속 상승"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>거래량 없는 가격 지수</strong>이거나, <em>어느 기관 통계인지 밝히지 않았음.</em></li>
+      <li><b>확인할 것</b> — 거래량, 통계 출처, 다른 기관 통계와 대조.</li>
+    </ul>
+  </div>
+
+  <h3>흔한 오해 — 부채 편</h3>
+  <div class="box warn">
+    <span class="bt">오해 4 — "가계부채 사상 최대"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>명목 총액은 경제 규모가 커지면 거의 매년 최대임.</strong> 3주차에서 배운 "역대 최대"의 함정 그대로임.</li>
+      <li><b>확인할 것</b> — <b>GDP 대비 비율</b>, 증가율, <b>전세보증금 포함 여부</b>.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 5 — "부채비율 상승"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — <strong>분자(부채)가 늘었는지, 분모(소득)가 줄었는지</strong> 구별하지 않았음.</li>
+      <li><b>확인할 것</b> — 두 계열을 분리해서 확인함.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 6 — "영끌·빚투 급증"</span>
+    <ul style="margin-bottom:0">
+      <li><b>무엇이 문제인가</b> — 특정 연령대 사례 몇 건을 <strong>세대 전체로 일반화</strong>했음.</li>
+      <li><b>확인할 것</b> — <b>연령대별 대출 잔액·증감</b>, 표본의 크기, 가계금융복지조사 원자료.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">부동산·가계부채 기사 점검표</span>
+    <ul style="margin-bottom:0">
+      <li>어느 기관의 어느 통계인지 <b>본문에 밝혔는가</b></li>
+      <li><b>평균인가 중위인가</b></li>
+      <li><b>거래량</b>을 함께 봤는가</li>
+      <li>신고가 <b>1건</b>으로 추세를 단정하지 않았는가</li>
+      <li>가계부채는 <b>총액인가 GDP 대비 비율인가</b></li>
+      <li>부채비율 변화에서 <b>분자와 분모</b>를 분리했는가</li>
+      <li>규제 완화 기사에서 <b>LTV/DTI/DSR 중 무엇</b>인지 특정했는가</li>
+      <li><b>준공 후 미분양</b>을 봤는가 (그냥 미분양이 아니라)</li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>부동산원 통계와 KB 통계가 반대 방향을 가리킴. 기자는 어떻게 써야 하는가?</b><br>둘 다 쓰면 기사가 흐려지고, 하나만 쓰면 편향됨.</li>
+    <li><b>전세보증금을 가계부채 통계에 넣어야 하는가?</b><br>넣으면 국제비교가 달라짐. 안 넣으면 실질 부채를 과소평가함.</li>
+    <li><b>"영끌"·"빚투" 같은 단어는 무엇을 보이게 하고 무엇을 감추는가?</b><br>→ 1주차 프레이밍, 7주차 "구조조정"과 같은 문제임.</li>
+    <li><b>전세사기 보도는 사건인가 구조인가?</b><br>구조를 쓰려면 무엇을 취재해야 하는가.</li>
+    <li><b>"지금 안 사면 못 산다"는 기사가 실제 수요를 만드는가?</b><br>→ 1주차 카토나 가설·자기이행기대. <b>부동산은 이 효과가 가장 강한 시장임.</b></li>
+    <li><b>부동산 기사에 인용된 전문가가 부동산 자문사·시행사·중개법인 소속이라면?</b><br>부동산 유튜버·인플루언서는 어떻게 다뤄야 하는가.</li>
+    <li><b>K-HAI(주택구입부담지수)는 기사에 거의 안 나옴. 왜일까?</b><br>이 지표로 기사를 쓴다면 제목은 무엇이 되겠는가.</li>
+  </ol>
+
+  <div class="box note">
+    <span class="bt">최근 동향 — 함께 생각해 볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>가계부채 관리 규제</b>가 반복적으로 조정되고 있음. DSR 적용 범위·스트레스 DSR 등 세부 변경이 잦아, <em>"무엇이 어떻게 바뀌었는지" 특정하는 것</em>이 중요해졌음.</li>
+      <li><b>전세의 월세화</b>가 구조적으로 진행 중임. 금리 수준과 전세사기 여파가 겹쳤음. <b>CPI 집세지수 구성 변화</b>와 함께 보면 좋은 기획이 됨. → 6주차</li>
+      <li><b>준공 후 미분양</b>이 지방을 중심으로 위험 지표로 다뤄짐. 건설사 PF 부실과 연결되는 경로임. → 7주차</li>
+      <li><b>실거래가격지수</b>의 활용도가 높아졌음. 표본 조사 지수와의 괴리를 다루는 기사가 늘고 있음.</li>
+      <li><b>인구 감소와 가구 수 증가</b>의 엇갈림이 주택 수요 논쟁의 핵심이 되었음. → 14주차</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 12 ───────── -->
+<section id="s12">
+  <h2><span class="num">12</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>필독</h4>
+    <ul>
+      <li><b>한국은행 「금융안정보고서」</b> (연 2회, 6·12월) — <b>가계부채 분석의 표준 문서</b></li>
+      <li><b>한국은행 「가계신용」</b> 보도자료 (분기)</li>
+      <li><b>경제지표 사전</b> 7절(주택·부동산·건설) · 9절(가계신용 관련). <a href="../data.html">경제 데이터 분석실</a></li>
+    </ul>
+
+    <h4>데이터</h4>
+    <ul>
+      <li><a href="https://www.reb.or.kr" target="_blank" rel="noopener">한국부동산원 R-ONE</a> — 전국주택가격동향조사, 실거래가격지수</li>
+      <li><a href="https://rt.molit.go.kr" target="_blank" rel="noopener">국토교통부 실거래가 공개시스템</a> · <a href="https://stat.molit.go.kr" target="_blank" rel="noopener">통계누리</a></li>
+      <li>KB부동산 — 주택가격동향, 매수우위지수</li>
+      <li><a href="https://www.fsc.go.kr" target="_blank" rel="noopener">금융위원회</a> — 가계대출 동향, 가계부채 관리방안</li>
+      <li><a href="https://kosis.kr" target="_blank" rel="noopener">KOSIS</a> · <a href="https://www.index.go.kr" target="_blank" rel="noopener">지표누리</a></li>
+      <li><a href="https://www.bis.org/statistics/" target="_blank" rel="noopener">BIS Statistics</a> — 국가별 가계부채·DSR·주택가격 국제비교</li>
+    </ul>
+
+    <h4>1주차 이론 연결</h4>
+    <ul>
+      <li>김수정·김은이 (2014). <span class="cite">부동산 위기 보도의 정파성</span></li>
+      <li>이나연·백강희 (2016). <span class="cite">광고주와 기업 비판 보도의 관계</span></li>
+      <li>Katona, G. (1964). <i>The Mass Consumption Society</i>. McGraw-Hill. <span class="cite">자기이행기대</span></li>
+      <li>Zucker, H. G. (1978). <span class="cite">돌출성과 의제설정</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 11주차 강의자료</b><br>
+  주 출처: 경제지표 사전 7·9절 · 한국은행 「금융안정보고서」</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="../data.html">경제 데이터 분석실</a> &nbsp;·&nbsp; <a href="10_금리와채권.html">10주차</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>
