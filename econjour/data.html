@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경제 데이터 분석실 | 경제저널리즘 2026-2</title>
+<meta name="description" content="경제저널리즘 수업용 자료실 — 경제 뉴스 읽기 경로, 경제 데이터 활용 사이트, 국내외 지표 발표 일정, 1,000개 경제지표 사전.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* ============ 토큰 ============ */
+:root{
+  --navy:#0d2244;
+  --blue:#1a4b8c;
+  --blue-mid:#2f6bb5;
+  --blue-pale:#e8eef5;
+  --border:#c8d6e5;
+  --bg-soft:#f4f7fb;
+  --paper:#ffffff;
+  --ink:#1c2634;
+  --ink-soft:#5a6779;
+  --ink-faint:#8492a6;
+  --amber:#b45309;
+  --amber-bg:#fdf6ec;
+  --amber-bd:#e9c893;
+  --teal:#0f766e;
+  --teal-bg:#eefaf7;
+  --teal-bd:#a5d9d1;
+  --rose:#a4303f;
+  --rose-bg:#fdf1f2;
+  --rose-bd:#e8b9be;
+  --sidebar-w:290px;
+  --maxw:860px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:16.5px;
+  line-height:1.78;
+  -webkit-text-size-adjust:100%;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+
+/* ============ 레이아웃 ============ */
+.layout{display:flex;align-items:flex-start}
+
+#sidebar{
+  width:var(--sidebar-w);
+  flex:0 0 var(--sidebar-w);
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow-y:auto;
+  background:var(--navy);
+  color:#dbe5f2;
+  padding:26px 0 40px;
+}
+#sidebar::-webkit-scrollbar{width:7px}
+#sidebar::-webkit-scrollbar-thumb{background:#2c4a76;border-radius:4px}
+.sb-brand{padding:0 22px 18px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:14px}
+.sb-course{font-size:11.5px;letter-spacing:.14em;color:#7fa7d6;font-weight:700;text-transform:uppercase}
+.sb-title{font-size:19px;font-weight:800;color:#fff;line-height:1.4;margin-top:8px}
+.sb-nav{padding:0 12px}
+.sb-label{font-size:10.5px;letter-spacing:.16em;color:#6d90bd;font-weight:700;padding:14px 10px 7px}
+.sb-nav a{
+  display:flex;gap:9px;align-items:baseline;
+  padding:7px 10px;margin-bottom:1px;
+  color:#c3d3e8;text-decoration:none;
+  font-size:14px;line-height:1.45;
+  border-radius:6px;border-left:3px solid transparent;
+  transition:background .13s,color .13s,border-color .13s;
+}
+.sb-nav a .n{font-size:11px;font-weight:700;color:#6d90bd;min-width:15px;font-variant-numeric:tabular-nums}
+.sb-nav a.sub{font-size:13px;padding:5px 10px 5px 34px;color:#9fb6d4}
+.sb-nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.sb-nav a.active{background:rgba(93,150,220,.2);color:#fff;border-left-color:#5d96dc;font-weight:600}
+.sb-nav a.active .n{color:#9fc4ee}
+.sb-foot{padding:20px 22px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.14);font-size:12.5px}
+.sb-foot a{color:#9fc4ee;text-decoration:none;display:block;padding:3px 0}
+.sb-foot a:hover{text-decoration:underline;color:#fff}
+
+main{flex:1 1 auto;min-width:0;padding:0 40px 100px;display:flex;justify-content:center}
+.wrap{width:100%;max-width:var(--maxw)}
+
+/* ============ 표지 ============ */
+.hero{
+  margin:0 -40px 46px;
+  padding:52px 40px 42px;
+  background:linear-gradient(120deg,#0d2244,#1a4b8c 62%,#2f6bb5);
+  color:#fff;
+}
+.hero-inner{max-width:var(--maxw);margin:0 auto}
+.hero .eyebrow{font-size:12.5px;letter-spacing:.16em;color:#a9c9ee;font-weight:700}
+.hero h1{font-size:clamp(28px,4.6vw,40px);line-height:1.25;margin:14px 0 10px;font-weight:800;letter-spacing:-.02em}
+.hero .sub{font-size:17px;color:#cfe0f5;font-weight:500;line-height:1.6}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.hero-facts span{
+  font-size:13px;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.22);
+  padding:5px 12px;border-radius:20px;color:#e6effa;
+}
+
+/* ============ 섹션 ============ */
+section{scroll-margin-top:24px;margin-bottom:56px}
+h2{
+  font-size:24px;font-weight:800;color:var(--navy);
+  letter-spacing:-.02em;line-height:1.35;
+  margin:0 0 6px;padding-top:6px;
+}
+h2 .num{
+  display:inline-block;font-size:13px;font-weight:800;color:#fff;
+  background:var(--blue);border-radius:5px;
+  padding:2px 8px;margin-right:10px;vertical-align:3px;
+  font-variant-numeric:tabular-nums;
+}
+.h2rule{height:3px;background:linear-gradient(90deg,var(--blue),var(--border) 62%,transparent);margin:12px 0 22px;border-radius:2px}
+h3{font-size:18.5px;font-weight:750;color:var(--navy);margin:34px 0 10px;line-height:1.45;letter-spacing:-.01em;scroll-margin-top:20px}
+h4{font-size:15.5px;font-weight:700;color:var(--blue);margin:22px 0 8px;letter-spacing:-.01em}
+p{margin:0 0 13px}
+.lede{font-size:17.5px;color:var(--ink-soft);line-height:1.72;margin-bottom:22px}
+
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+li>ul,li>ol{margin-top:6px;margin-bottom:4px}
+li::marker{color:var(--blue-mid)}
+ul ul li::marker{color:var(--ink-faint)}
+strong{font-weight:700;color:var(--navy)}
+em{font-style:normal;color:var(--navy);font-weight:650}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid #b9cde6}
+a:hover{border-bottom-color:var(--blue)}
+code{
+  font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,monospace;
+  font-size:.88em;background:var(--blue-pale);color:var(--navy);
+  padding:1.5px 6px;border-radius:4px;
+}
+.cite{font-size:13px;color:var(--ink-faint);font-weight:500}
+
+/* ============ 콜아웃 ============ */
+.box{border-radius:10px;padding:17px 20px;margin:20px 0;border:1px solid;border-left-width:5px}
+.box>*:first-child{margin-top:0}
+.box>*:last-child{margin-bottom:0}
+.box .bt{font-size:12.5px;font-weight:800;letter-spacing:.06em;display:block;margin-bottom:8px}
+.key{background:var(--amber-bg);border-color:var(--amber-bd);border-left-color:var(--amber)}
+.key .bt{color:var(--amber)}
+.easy{background:var(--teal-bg);border-color:var(--teal-bd);border-left-color:var(--teal)}
+.easy .bt{color:var(--teal)}
+.warn{background:var(--rose-bg);border-color:var(--rose-bd);border-left-color:var(--rose)}
+.warn .bt{color:var(--rose)}
+.note{background:var(--bg-soft);border-color:var(--border);border-left-color:var(--blue)}
+.note .bt{color:var(--blue)}
+
+/* ============ 표 ============ */
+.tw{overflow-x:auto;margin:18px 0;border:1px solid var(--border);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;background:#fff;min-width:520px}
+th{background:var(--blue);color:#fff;font-weight:700;text-align:left;padding:11px 14px;line-height:1.45;font-size:14px}
+td{padding:10px 14px;border-top:1px solid var(--border);vertical-align:top;line-height:1.6}
+tbody tr:nth-child(even){background:var(--bg-soft)}
+td.wk{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700;color:var(--blue);text-align:center}
+td.when{white-space:nowrap;color:var(--ink-soft);font-size:13.5px}
+
+/* ============ 링크 카드 ============ */
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px;margin:18px 0}
+.lk{
+  border:1px solid var(--border);border-radius:10px;
+  border-top:3px solid var(--blue-mid);
+  padding:14px 16px;background:#fff;min-width:0;
+}
+.lk.warm{border-top-color:var(--amber)}
+.lk.teal{border-top-color:var(--teal)}
+.lk .t{font-size:15px;font-weight:750;line-height:1.4;margin-bottom:5px}
+.lk .t a{border-bottom:none;color:var(--navy)}
+.lk .t a:hover{color:var(--blue);border-bottom:1px solid var(--blue)}
+.lk .d{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.lk .m{font-size:11.5px;color:var(--ink-faint);font-weight:600;letter-spacing:.03em;margin-top:7px}
+
+/* ============ 대문 카드 ============ */
+.big{
+  display:block;border:1px solid var(--border);border-left:5px solid var(--blue);
+  border-radius:11px;padding:20px 22px;background:var(--bg-soft);
+  margin:20px 0;text-decoration:none;color:inherit;
+  transition:background .15s,box-shadow .15s;
+}
+.big:hover{background:#eaf1f9;box-shadow:0 2px 14px rgba(13,34,68,.09);border-bottom-color:var(--border)}
+.big .t{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.big .d{font-size:14.5px;color:var(--ink-soft);margin-top:6px;line-height:1.65}
+
+/* ============ 상단바 · 진행바 · 맨위로 ============ */
+#topbar{display:none}
+#scrim{display:none}
+#bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#2f6bb5,#7fb0e8);width:0;z-index:60;transition:width .1s linear}
+#totop{
+  position:fixed;right:22px;bottom:22px;width:44px;height:44px;
+  border-radius:50%;border:1px solid var(--border);background:#fff;
+  color:var(--navy);font-size:19px;cursor:pointer;z-index:55;
+  box-shadow:0 3px 14px rgba(13,34,68,.16);
+  opacity:0;pointer-events:none;transition:opacity .2s;
+}
+#totop.on{opacity:1;pointer-events:auto}
+
+@media (max-width:980px){
+  body{font-size:16px}
+  .layout{display:block}
+  #sidebar{
+    position:fixed;left:0;top:0;z-index:70;
+    height:100dvh;width:284px;flex:none;
+    transform:translateX(-100%);transition:transform .24s ease;
+    box-shadow:2px 0 22px rgba(0,0,0,.28);
+  }
+  #sidebar.open{transform:none}
+  #scrim{display:block;position:fixed;inset:0;background:rgba(10,20,38,.5);z-index:65;opacity:0;pointer-events:none;transition:opacity .24s}
+  #scrim.on{opacity:1;pointer-events:auto}
+  #topbar{
+    display:flex;align-items:center;gap:12px;
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);padding:9px 14px;
+  }
+  #burger{
+    display:flex;flex-direction:column;justify-content:center;gap:4.5px;
+    width:38px;height:38px;padding:9px;border:1px solid var(--border);
+    border-radius:8px;background:#fff;cursor:pointer;flex:none;
+  }
+  #burger span{display:block;height:2px;background:var(--navy);border-radius:2px}
+  #topbar .tt{font-size:14px;font-weight:750;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  main{padding:0 18px 80px}
+  .hero{margin:0 -18px 34px;padding:36px 20px 30px}
+  h2{font-size:21px}
+  section{margin-bottom:44px}
+}
+@media print{
+  #sidebar,#topbar,#totop,#bar,#scrim{display:none!important}
+  main{padding:0}
+  .hero{margin:0 0 30px;background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{page-break-inside:auto;margin-bottom:30px}
+  h2,h3{page-break-after:avoid}
+  .box,.lk,.big{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">경제 데이터 분석실</div>
+</div>
+
+<div class="layout">
+
+<!-- ══════════ 사이드바 ══════════ -->
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">경제저널리즘 2026-2</div>
+    <div class="sb-title">경제 데이터 분석실</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">자료실</div>
+    <a href="#s1"><span class="n">01</span><span>📰 뉴스 읽기</span></a>
+
+    <a href="#s2"><span class="n">02</span><span>📊 데이터 활용 사이트</span></a>
+    <a href="#s2a" class="sub">국내 — 공식 통계</a>
+    <a href="#s2b" class="sub">국내 — 기업·시장·부동산</a>
+    <a href="#s2c" class="sub">해외</a>
+
+    <a href="#s3"><span class="n">03</span><span>📅 지표 발표 일정</span></a>
+    <a href="#s3a" class="sub">월간</a>
+    <a href="#s3b" class="sub">주간</a>
+    <a href="#s3c" class="sub">분기</a>
+    <a href="#s3d" class="sub">연간 · 비정기</a>
+
+    <a href="#s4"><span class="n">04</span><span>📚 경제지표 사전</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="./">← 경제저널리즘 강의 홈</a>
+    <a href="https://e-campus.khu.ac.kr" target="_blank" rel="noopener">e-campus</a>
+  </div>
+</aside>
+
+<!-- ══════════ 본문 ══════════ -->
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">경제저널리즘 2026-2 · 학기 상시 자료실</div>
+    <h1>경제 데이터 분석실</h1>
+    <div class="sub">읽고 · 가져오고 · 기다리고 · 찾아보는 네 가지 도구</div>
+    <div class="hero-facts">
+      <span>📰 뉴스 읽기</span>
+      <span>📊 데이터 사이트</span>
+      <span>📅 발표 일정</span>
+      <span>📚 지표 사전 1,000개</span>
+    </div>
+  </div>
+</header>
+
+<section id="s0">
+  <p class="lede">경제 기자는 <strong>발표를 기다리는 사람이 아니라, 무엇이 언제 나오는지 미리 아는 사람</strong>임. 이 페이지는 학기 내내 쓰는 네 가지를 한자리에 모은 것임.</p>
+
+  <div class="box note">
+    <span class="bt">이 페이지를 쓰는 순서</span>
+    <ul style="margin-bottom:0">
+      <li><b>① 어디서 읽는가</b> — 정책·지표 섹션으로 바로 들어가 <b>같은 날 여러 매체</b>를 나란히 봄. <span class="cite">→ 01</span></li>
+      <li><b>② 어디서 가져오는가</b> — 기사의 숫자를 <b>원자료로 되짚음</b>. <span class="cite">→ 02</span></li>
+      <li><b>③ 언제 나오는가</b> — 발표일을 미리 알아야 <b>기다리지 않고 준비함</b>. <span class="cite">→ 03</span></li>
+      <li><b>④ 그 지표가 무엇인가</b> — 정의·발표 주기·흔한 오해를 <b>그 자리에서 확인함</b>. <span class="cite">→ 04</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 01 ───────── -->
+<section id="s1">
+  <h2><span class="num">01</span>📰 경제 정책 및 지표 중심으로 뉴스 읽기</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">종합 뉴스 첫 화면이 아니라 <strong>경제정책 · 경기지표 섹션으로 바로 들어갈 것</strong>. 같은 발표를 매체가 어떻게 다르게 쓰는지가 여기서 드러남.</p>
+
+  <div class="box key">
+    <span class="bt">읽는 방법</span>
+    <ul style="margin-bottom:0">
+      <li>성향이 다른 매체를 <b>최소 3곳</b> 골라 매일 같은 시간에 볼 것.</li>
+      <li>같은 발표를 다룬 기사끼리 <b>제목과 리드 첫 문장</b>을 나란히 붙여 볼 것.</li>
+      <li>세 기사에 <b>같은 문장</b>이 있으면 보도자료를 그대로 받아쓴 것임.</li>
+      <li>기사에 인용된 숫자는 <b>02의 원자료 사이트</b>에서 반드시 되짚을 것.</li>
+    </ul>
+  </div>
+
+  <h4>정책 · 지표 섹션 바로가기</h4>
+  <div class="links">
+    <div class="lk">
+      <div class="t"><a href="https://www.mk.co.kr/news/economy/economic-policy/" target="_blank" rel="noopener">매일경제 · 경제정책</a></div>
+      <div class="d">재정·통화·규제 등 정책 기사가 모임. 정부 발표 당일 반응을 보기 좋음.</div>
+      <div class="m">경제지</div>
+    </div>
+    <div class="lk">
+      <div class="t"><a href="https://www.mk.co.kr/news/economy/business-index/" target="_blank" rel="noopener">매일경제 · 경기지표</a></div>
+      <div class="d">지표 발표 기사만 따로 모인 섹션임. 발표일 확인용으로 유용함.</div>
+      <div class="m">경제지</div>
+    </div>
+    <div class="lk">
+      <div class="t"><a href="https://www.joongang.co.kr/money/economicpolicy" target="_blank" rel="noopener">중앙일보 · 경제정책</a></div>
+      <div class="d">정책 해설과 배경 기사 비중이 큼.</div>
+      <div class="m">종합일간지</div>
+    </div>
+    <div class="lk">
+      <div class="t"><a href="https://www.hani.co.kr/arti/economy/economy_general/" target="_blank" rel="noopener">한겨레 · 경제일반</a></div>
+      <div class="d">분배·노동 관점의 기사가 상대적으로 많음. 논조 비교 대상으로 적합함.</div>
+      <div class="m">종합일간지</div>
+    </div>
+  </div>
+
+  <h4>속보 · 전문 매체</h4>
+  <div class="links">
+    <div class="lk warm">
+      <div class="t"><a href="https://www.yna.co.kr/economy/index" target="_blank" rel="noopener">연합뉴스 · 경제</a></div>
+      <div class="d">발표 직후 <b>가장 먼저</b> 나오는 스트레이트 기사. 다른 매체 기사의 원본인 경우가 많음.</div>
+      <div class="m">통신사</div>
+    </div>
+    <div class="lk warm">
+      <div class="t"><a href="https://www.edaily.co.kr/" target="_blank" rel="noopener">이데일리</a></div>
+      <div class="d">지표·시장 속보가 빠름. 금통위·FOMC 당일 흐름 추적에 유용함.</div>
+      <div class="m">경제 전문</div>
+    </div>
+    <div class="lk warm">
+      <div class="t"><a href="https://news.einfomax.co.kr/" target="_blank" rel="noopener">연합인포맥스</a></div>
+      <div class="d">채권·외환·자금시장 전문. <b>금리와 환율</b> 주차에서 특히 많이 씀.</div>
+      <div class="m">금융 전문</div>
+    </div>
+  </div>
+
+  <h4>영상 · 시황 브리핑</h4>
+  <div class="links">
+    <div class="lk teal">
+      <div class="t"><a href="https://www.youtube.com/@hk_koreamarket" target="_blank" rel="noopener">한경 코리아마켓</a></div>
+      <div class="d">개장 전후 시황 브리핑. 같은 지표를 <b>말로 전할 때</b> 어떻게 달라지는지 비교 대상임.</div>
+      <div class="m">YouTube</div>
+    </div>
+    <div class="lk teal">
+      <div class="t"><a href="https://www.youtube.com/@MKeconomy_TV" target="_blank" rel="noopener">매일경제TV</a></div>
+      <div class="d">경제 뉴스·해설 영상. 방송 문법의 감정적 소구를 확인하기 좋음.</div>
+      <div class="m">YouTube</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 02 ───────── -->
+<section id="s2">
+  <h2><span class="num">02</span>📊 경제 데이터 활용 사이트</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">기사에 나온 숫자는 <strong>반드시 원자료로 되짚을 것</strong>. 기준시점·단위·비교 기준이 기사와 다른 경우가 자주 있음.</p>
+
+  <div class="box key">
+    <span class="bt">먼저 외울 세 곳</span>
+    <ul style="margin-bottom:0">
+      <li><b>ECOS</b> — 거시(GDP·금리·통화·국제수지)는 여기가 기본임.</li>
+      <li><b>KOSIS</b> — 고용·물가·인구·산업활동은 여기가 기본임.</li>
+      <li><b>DART</b> — 기업 숫자는 여기가 유일한 공식 원본임.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">⚠ 2025~2026년 정부조직 개편 — 기사에 나오는 기관명이 바뀌었음</span>
+    <ul style="margin-bottom:0">
+      <li><b>통계청 → 국가데이터처</b> <span class="cite">2025.10.1 · 국무총리 소속으로 승격</span> — 다만 포털 이름 <b>KOSIS 국가통계포털</b>은 그대로임.</li>
+      <li><b>산업통상자원부 → 산업통상부</b> <span class="cite">2025.10.1</span> — 에너지 기능은 <b>기후에너지환경부</b>(구 환경부)로 넘어갔음.</li>
+      <li><b>기획재정부 → 재정경제부 + 기획예산처</b>로 분리됨 <span class="cite">2026.1.2 시행</span> — 예산은 기획예산처, 세제·국고·국제금융은 재정경제부임.</li>
+      <li>과거 기사를 읽을 때는 <em>그 시점의 기관명</em>으로 검색해야 함. 2025년 9월 이전 기사에는 '통계청'으로 나옴.</li>
+    </ul>
+  </div>
+
+  <h3 id="s2a">국내 — 공식 통계</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">사이트</th><th>무엇이 있나</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener"><b>한국은행 ECOS</b></a></td><td>GDP, 물가(PPI·수출입물가), 통화, 금리, 국제수지, 가계신용, 기업경영분석. 국내외 매크로 지표의 기본 창구임</td></tr>
+      <tr><td><a href="https://kosis.kr" target="_blank" rel="noopener"><b>국가데이터처 KOSIS</b></a></td><td>고용, 인구, 물가(CPI), 산업활동, 가계. 재정경제부·산업통상부·관세청(수출입) 통계도 함께 담김</td></tr>
+      <tr><td><a href="https://kosis.kr/visual/bcc/index/index.do?language=kor" target="_blank" rel="noopener">KOSIS 경기순환시계</a></td><td>주요 지표가 지금 어느 경기 국면에 있는지 한눈에 보임</td></tr>
+      <tr><td><a href="https://www.index.go.kr" target="_blank" rel="noopener">지표누리 (e-나라지표)</a></td><td>주요 지표 시계열에 해설이 붙어 있음. 지표를 처음 볼 때 유용함</td></tr>
+      <tr><td><a href="https://mods.go.kr/" target="_blank" rel="noopener"><b>국가데이터처</b></a></td><td>2025년 10월 통계청에서 승격된 국무총리 소속 기관임. 통계 관련 보도자료 원문이 여기 올라옴</td></tr>
+      <tr><td><a href="https://mods.go.kr/menu.es?mid=a10504000000" target="_blank" rel="noopener">└ 통계조사일정</a></td><td><b>다음 달 발표 일정을 미리 확인함.</b> 03의 확정 일자는 여기서 봄</td></tr>
+      <tr><td><a href="https://eiec.kdi.re.kr" target="_blank" rel="noopener">KDI 경제교육·정보센터</a></td><td>경제동향, 정책자료 아카이브, 경제용어사전</td></tr>
+      <tr><td><a href="https://www.kli.re.kr" target="_blank" rel="noopener">한국노동연구원</a></td><td>『노동리뷰』 월간 발행. 무료로 받아 볼 수 있음</td></tr>
+      <tr><td><a href="https://www.nabo.go.kr/" target="_blank" rel="noopener"><b>국회예산정책처 NABO</b></a></td><td>정부와 <b>독립된</b> 경제전망·세수추계·예산안 분석. 정부 발표를 반박할 근거를 찾을 때 씀</td></tr>
+      <tr><td><a href="https://tasis.nts.go.kr/" target="_blank" rel="noopener">국세통계포털 TASIS</a></td><td>소득·법인·부가세·양도세 통계. 소득분위별 신고 현황까지 있어 조세·불평등 기사에 씀</td></tr>
+      <tr><td><a href="https://sgis.mods.go.kr/view/index" target="_blank" rel="noopener">통계지리정보 SGIS</a></td><td>인구·사업체·주택 데이터를 <b>지도로</b> 봄. 행정동 단위까지 내려감</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 id="s2b">국내 — 기업 · 시장 · 부동산</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">사이트</th><th>무엇이 있나</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://dart.fss.or.kr" target="_blank" rel="noopener"><b>DART 전자공시</b></a></td><td>사업보고서, 감사보고서, 재무제표, 주요사항 공시. <b>기업 기사의 원자료임</b></td></tr>
+      <tr><td><a href="https://kind.krx.co.kr" target="_blank" rel="noopener">KIND 한국거래소 공시채널</a></td><td>상장사 공시, 표준 재무제표</td></tr>
+      <tr><td><a href="https://data.krx.co.kr" target="_blank" rel="noopener">KRX 정보데이터시스템</a></td><td>지수, 시가총액, 상장종목 현황</td></tr>
+      <tr><td><a href="https://finance.naver.com" target="_blank" rel="noopener">네이버 증권</a> · <a href="https://m.stock.naver.com/" target="_blank" rel="noopener">모바일</a></td><td>시장 지표, 애널리스트 리포트, 뉴스, 기업 공시를 한 화면에서 봄</td></tr>
+      <tr><td><a href="https://datacenter.hankyung.com" target="_blank" rel="noopener">한국경제 데이터센터</a></td><td>국내외 경제지표. <b>경제캘린더</b>에서 지표 일정을 확인함 (한국 전체 / 미국 중요도 '상' 중심)</td></tr>
+      <tr><td><a href="https://comp.fnguide.com" target="_blank" rel="noopener">FnGuide 기업정보</a></td><td>기업개요, 재무제표, 투자지표, 컨센서스, 지분·업종·경쟁사 분석</td></tr>
+      <tr><td><a href="https://bigfinance.co.kr" target="_blank" rel="noopener">빅파이낸스</a></td><td>시장 지표부터 기업 재무제표·사업부문까지 시계열·섹터별로 비교함</td></tr>
+      <tr><td><a href="https://rt.molit.go.kr" target="_blank" rel="noopener">국토부 실거래가 공개시스템</a></td><td>아파트·주택의 실제 거래가. 호가 기사와 대조할 때 씀</td></tr>
+      <tr><td><a href="https://www.reb.or.kr" target="_blank" rel="noopener">한국부동산원 R-ONE</a></td><td>주택가격동향, 전세가율, 미분양</td></tr>
+      <tr><td><a href="https://fisis.fss.or.kr/" target="_blank" rel="noopener"><b>금융통계정보시스템 FISIS</b></a></td><td>은행·보험·증권 등 전 금융회사의 재무·건전성(BIS비율, 연체율, NIM) 시계열. <b>금융 기사의 원자료임</b></td></tr>
+      <tr><td><a href="https://tradedata.go.kr/" target="_blank" rel="noopener">관세청 수출입무역통계</a></td><td>품목(HS)·국가·기업규모별 수출입 실적. 월별·순별 속보치를 바로 확인함</td></tr>
+      <tr><td><a href="https://finlife.fss.or.kr" target="_blank" rel="noopener">금융감독원 금융상품 한눈에</a></td><td>예·적금·대출 금리 비교</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 id="s2c">해외</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:34%">사이트</th><th>무엇이 있나</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener"><b>FRED (세인트루이스 연준)</b></a></td><td>미국·세계 거시 시계열의 사실상 표준. 그래프를 바로 내려받아 기사에 쓸 수 있음</td></tr>
+      <tr><td><a href="https://www.bls.gov" target="_blank" rel="noopener">미국 BLS</a></td><td>고용보고서, CPI, JOLTS</td></tr>
+      <tr><td><a href="https://www.bea.gov" target="_blank" rel="noopener">미국 BEA</a></td><td>GDP, PCE 물가</td></tr>
+      <tr><td><a href="https://www.census.gov/economic-indicators/" target="_blank" rel="noopener">미국 Census Bureau 경제지표</a></td><td>소매판매·주택착공·내구재주문·무역수지 원문. <b>미국 지표 기사의 1차 출처임</b></td></tr>
+      <tr><td><a href="https://www.federalreserve.gov" target="_blank" rel="noopener">미국 Fed</a></td><td>FOMC 성명·점도표, Beige Book</td></tr>
+      <tr><td><a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener"><b>CME FedWatch</b></a></td><td>선물시장이 반영한 <b>FOMC 회의별 금리 인하·인상 확률</b>. "시장은 ○○%를 반영" 문장의 근거임</td></tr>
+      <tr><td><a href="https://data.ecb.europa.eu/" target="_blank" rel="noopener">ECB Data Portal</a></td><td>유로존 정책금리·HICP 물가·통화량. 한은·연준과 3자 비교할 때 씀</td></tr>
+      <tr><td><a href="https://data.bis.org/" target="_blank" rel="noopener">BIS Data Portal</a></td><td>실질실효환율(REER), 국가별 주택가격지수, 가계·기업 신용 비율. 국제비교용임</td></tr>
+      <tr><td><a href="https://data.oecd.org" target="_blank" rel="noopener">OECD Data</a></td><td>국제비교용 지표 (고용률, 지니계수, 물가)</td></tr>
+      <tr><td><a href="https://www.imf.org" target="_blank" rel="noopener">IMF</a> · <a href="https://data.worldbank.org" target="_blank" rel="noopener">World Bank Data</a></td><td>세계경제전망(WEO), 국가별 개발지표</td></tr>
+      <tr><td><a href="https://investing.com" target="_blank" rel="noopener">Investing.com</a> · <a href="https://kr.investing.com/economic-calendar/" target="_blank" rel="noopener">경제캘린더(한국어)</a></td><td>국가별 경제지표. <b>발표 예정일과 중요도</b>까지 확인함</td></tr>
+      <tr><td><a href="https://tradingeconomics.com" target="_blank" rel="noopener">Trading Economics</a></td><td>국가별 지표 요약과 캘린더</td></tr>
+      <tr><td><a href="https://www.marketwatch.com" target="_blank" rel="noopener">MarketWatch</a></td><td>해외 시장·지표. U.S. Economic Calendar에서 일정을 확인함</td></tr>
+      <tr><td><a href="https://finviz.com" target="_blank" rel="noopener">Finviz</a></td><td>매크로·해외 데이터, 시장 히트맵</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ───────── 03 ───────── -->
+<section id="s3">
+  <h2><span class="num">03</span>📅 국내외 주요 경제지표 — 발표 일정</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">발표일을 미리 알면 <strong>기다리지 않고 준비할 수 있음</strong>. 맨 오른쪽 열은 <strong>이 강의에서 그 지표를 다루는 주차</strong>임.</p>
+
+  <div class="box warn">
+    <span class="bt">⚠ 아래 공표일은 통상적인 시점임</span>
+    <ul style="margin-bottom:0">
+      <li>확정 일자는 반드시 각 기관의 공표일정 페이지에서 확인할 것.</li>
+      <li><a href="https://mods.go.kr/menu.es?mid=a10504000000" target="_blank" rel="noopener">국가데이터처 통계조사일정</a></li>
+      <li><a href="https://www.bok.or.kr" target="_blank" rel="noopener">한국은행 통계공표일정</a> — 홈페이지 &gt; 경제통계 &gt; 통계공표일정</li>
+    </ul>
+  </div>
+
+  <h3 id="s3a">월간 — 한 달의 리듬</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:19%">시점</th><th style="width:22%">자료</th><th style="width:17%">기관</th><th>내용</th><th style="width:8%">주차</th></tr></thead>
+    <tbody>
+      <tr><td class="when"><b>매월 1일</b></td><td><b>수출입 동향</b></td><td>산업통상부 (관세청 통관)</td><td>전월 수출입 실적, 품목별·국가별, <b>무역수지</b></td><td class="wk">15</td></tr>
+      <tr><td class="when">매월 1~2일</td><td><b>소비자물가동향</b></td><td>국가데이터처</td><td>CPI, 근원물가, 생활물가, 신선식품</td><td class="wk">6</td></tr>
+      <tr><td class="when">매월 초</td><td>고용행정통계</td><td>고용노동부</td><td>고용보험 가입자, 구직급여 지급액</td><td class="wk">5</td></tr>
+      <tr><td class="when"><b>매월 첫째 금요일</b></td><td><b>Employment Situation</b></td><td>미국 BLS</td><td>비농업고용(NFP), 실업률, 시간당임금</td><td class="wk">5</td></tr>
+      <tr><td class="when">매월 상순</td><td><b>국제수지</b></td><td>한국은행</td><td>2개월 전 경상수지, 자본수지, 금융계정</td><td class="wk">15</td></tr>
+      <tr><td class="when">매월 중순</td><td><b>최근 경제동향(그린북)</b></td><td>재정경제부</td><td>생산·소비·투자·수출입 종합 진단</td><td class="wk">4</td></tr>
+      <tr><td class="when">매월 중순</td><td><b>월간 재정동향</b></td><td>기획예산처</td><td>총수입·총지출·재정수지·국가채무</td><td class="wk">14</td></tr>
+      <tr><td class="when"><b>매월 중순(10~15일경)</b></td><td><b>고용동향</b></td><td>국가데이터처</td><td>취업자 증감, 실업률, 고용률, 고용보조지표</td><td class="wk">5</td></tr>
+      <tr><td class="when">매월 중순</td><td>생산자물가지수</td><td>한국은행</td><td>PPI, 국내공급물가, 총산출물가</td><td class="wk">6</td></tr>
+      <tr><td class="when">매월 중순</td><td>수출입물가지수·무역지수</td><td>한국은행</td><td>수출입물가, 물량지수, 교역조건</td><td class="wk">15</td></tr>
+      <tr><td class="when">매월 중순</td><td>통화 및 유동성</td><td>한국은행</td><td>M1, M2, Lf, L</td><td class="wk">9</td></tr>
+      <tr><td class="when">매월 하순</td><td>소비자동향조사(CSI)</td><td>한국은행</td><td>소비자심리지수(CCSI), 기대인플레이션율</td><td class="wk">4</td></tr>
+      <tr><td class="when">매월 하순</td><td>기업경기조사(BSI)·경제심리지수(ESI)</td><td>한국은행</td><td>업황·매출·채산성, CBSI, ESI</td><td class="wk">4</td></tr>
+      <tr><td class="when">매월 말</td><td>사업체노동력조사</td><td>고용노동부</td><td>임금, 근로시간, 빈 일자리</td><td class="wk">5</td></tr>
+      <tr><td class="when"><b>매월 말경</b></td><td><b>산업활동동향</b></td><td>국가데이터처</td><td>전산업생산·소매판매·설비투자·건설, <b>경기종합지수</b></td><td class="wk">4</td></tr>
+      <tr><td class="when">매월</td><td>주택통계 (인허가·착공·분양·미분양)</td><td>국토교통부</td><td>공급 선행지표</td><td class="wk">11</td></tr>
+      <tr><td class="when">매월</td><td>가계대출 동향</td><td>금융위원회·금융감독원</td><td>은행·2금융권 가계대출 증감</td><td class="wk">11</td></tr>
+      <tr><td class="when">매월</td><td>월간 주택가격동향</td><td>한국부동산원</td><td>매매·전세 가격지수</td><td class="wk">11</td></tr>
+      <tr><td class="when">매월</td><td>경제동향</td><td>KDI</td><td>국내외 거시 종합 분석·전망</td><td class="wk">4</td></tr>
+      <tr><td class="when">매월</td><td>JOLTS (구인·이직)</td><td>미국 BLS</td><td>구인건수, 자발적 퇴직률</td><td class="wk">5</td></tr>
+      <tr><td class="when">연 8회</td><td>Beige Book</td><td>미국 Fed</td><td>지역별 경제동향, FOMC 참고자료</td><td class="wk">4, 9</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 id="s3b">주간</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:26%">시점</th><th style="width:40%">자료</th><th>기관</th><th style="width:9%">주차</th></tr></thead>
+    <tbody>
+      <tr><td class="when"><b>매주 목요일</b></td><td>주간 아파트 가격동향</td><td>한국부동산원</td><td class="wk">11</td></tr>
+      <tr><td class="when">매주</td><td>주간 KB주택시장동향</td><td>KB국민은행</td><td class="wk">11</td></tr>
+      <tr><td class="when"><b>매주 목요일(미 현지)</b></td><td>신규 실업수당 청구건수</td><td>미국 노동부</td><td class="wk">5</td></tr>
+      <tr><td class="when">매주</td><td>주간 수출입 실적(1~10일, 1~20일)</td><td>관세청</td><td class="wk">15</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 id="s3c">분기</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:22%">시점</th><th style="width:24%">자료</th><th style="width:16%">기관</th><th>내용</th><th style="width:8%">주차</th></tr></thead>
+    <tbody>
+      <tr><td class="when"><b>분기 종료 후 28일 이내</b></td><td><b>실질 국내총생산(속보)</b></td><td>한국은행</td><td>속보 성장률</td><td class="wk">3</td></tr>
+      <tr><td class="when"><b>분기 종료 후 70일 이내</b></td><td><b>국민소득(잠정)</b></td><td>한국은행</td><td>잠정 성장률, GNI, GDP디플레이터</td><td class="wk">3</td></tr>
+      <tr><td class="when">분기</td><td><b>가계신용</b></td><td>한국은행</td><td>가계대출 + 판매신용. 가장 포괄적인 가계부채 지표임</td><td class="wk">11</td></tr>
+      <tr><td class="when">분기</td><td>기업경영분석</td><td>한국은행</td><td>성장성·수익성·안정성 (2만여 기업)</td><td class="wk">12</td></tr>
+      <tr><td class="when">분기</td><td>가계동향조사</td><td>국가데이터처</td><td>가구 소득·지출</td><td class="wk">14</td></tr>
+      <tr><td class="when">분기</td><td>지역경제보고서 (한국판 베이지북)</td><td>한국은행</td><td>권역별 경기</td><td class="wk">4</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 id="s3d">연간 · 비정기</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">시점</th><th style="width:40%">자료</th><th>기관</th><th style="width:10%">주차</th></tr></thead>
+    <tbody>
+      <tr><td class="when">익년 3월 이내</td><td>국민소득(잠정) 연간</td><td>한국은행</td><td class="wk">3</td></tr>
+      <tr><td class="when">익년 6월 이내</td><td>국민계정(잠정)</td><td>한국은행</td><td class="wk">3</td></tr>
+      <tr><td class="when">수년 주기</td><td><b>국민계정 기준년 개편</b></td><td>한국은행</td><td class="wk">2, 3</td></tr>
+      <tr><td class="when">연 1회(통상 12월)</td><td><b>가계금융복지조사</b></td><td>국가데이터처·한국은행·금융감독원</td><td class="wk">14</td></tr>
+      <tr><td class="when">연 1회</td><td>출생·사망통계 / 장래인구추계</td><td>국가데이터처</td><td class="wk">14</td></tr>
+      <tr><td class="when"><b>연 8회</b></td><td><b>금융통화위원회 통화정책방향 결정</b></td><td>한국은행</td><td class="wk">9, 10</td></tr>
+      <tr><td class="when">연 4회(2·5·8·11월)</td><td><b>경제전망보고서</b></td><td>한국은행</td><td class="wk">3, 4</td></tr>
+      <tr><td class="when"><b>연 8회</b></td><td><b>FOMC</b></td><td>미국 Fed</td><td class="wk">9, 10</td></tr>
+      <tr><td class="when">8월 초 고시</td><td>최저임금</td><td>최저임금위원회·고용노동부</td><td class="wk">5</td></tr>
+      <tr><td class="when">9월 3일</td><td>다음 연도 예산안 국회 제출</td><td>기획예산처</td><td class="wk">14</td></tr>
+      <tr><td class="when">12월 2일</td><td>예산안 국회 본회의 의결</td><td>국회</td><td class="wk">14</td></tr>
+      <tr><td class="when">수시</td><td>사업보고서·분기/반기보고서·주요사항보고</td><td>기업 → DART</td><td class="wk">12, 13</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ───────── 04 ───────── -->
+<section id="s4">
+  <h2><span class="num">04</span>📚 경제지표 사전 — 1,000개 지수·지표 탐색기</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">기사에서 처음 보는 지표가 나오면 <strong>여기서 바로 찾아볼 것</strong>. 한국 616개 + 국외·글로벌 384개, 24개 분야를 담았음.</p>
+
+  <a class="big" href="https://jonghhhh.github.io/myhome/economic_indicators_083025.html" target="_blank" rel="noopener">
+    <div class="t">📚 경제지표 사전 열기 →</div>
+    <div class="d">한국 616개 + 국외·글로벌 384개 · 24개 분야 · 검색과 분야별 찾기 지원</div>
+  </a>
+
+  <h4>담긴 것</h4>
+  <ul>
+    <li><strong>검색</strong> — 한글명·영문명·약자·설명 어디에나 걸림. <span class="cite">예 — <code>CPI</code> <code>고용률</code> <code>코픽스</code> <code>PER</code> <code>교역조건</code></span></li>
+    <li><strong>핵심 지표 26개 상세</strong> — 한 줄 정의 / 누가 언제 발표 / 읽는 법 / <b>흔한 오해</b></li>
+    <li><strong>분야별 찾기</strong> — 24개 분야마다 발표 기관·주기와 "이 분야를 읽을 때" 한 줄 팁이 붙음</li>
+    <li><strong>발표 일정 · 해석 원칙 10가지 · 공식 출처 링크</strong></li>
+    <li><strong>「이럴 땐 이 지표」</strong> — 물가·취업·집값·금리·환율·주식·경기·나라살림에서 바로 진입함</li>
+  </ul>
+
+  <div class="box easy">
+    <span class="bt">💡 이렇게 쓸 것</span>
+    <ul style="margin-bottom:0">
+      <li>기사에 나온 지표명을 <b>그대로 검색창에 붙여넣음</b>.</li>
+      <li>정의를 확인한 뒤 <b>「흔한 오해」를 먼저 읽을 것</b>. 기사가 자주 틀리는 지점이 거기임.</li>
+      <li>공식 출처 링크로 넘어가 <b>원자료 수치를 직접 확인함</b>.</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">경제저널리즘 2026-2학기 · 경제 데이터 분석실</b><br>
+  경희대학교 미디어학과 · 이종혁 (<a href="mailto:jonghhhh@khu.ac.kr">jonghhhh@khu.ac.kr</a>) · 정경대 교수회관 620호</p>
+  <p style="margin:12px 0 0"><a href="https://jonghhhh.github.io/2026_2/econjour/">← 경제저널리즘 강의 홈으로</a></p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script>
+(function(){
+  var sidebar = document.getElementById('sidebar');
+  var scrim   = document.getElementById('scrim');
+  var burger  = document.getElementById('burger');
+  var bar     = document.getElementById('bar');
+  var totop   = document.getElementById('totop');
+  var links   = Array.prototype.slice.call(document.querySelectorAll('#nav a'));
+  var secs    = links.map(function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
+
+  /* 모바일 드로어 */
+  function close(){ sidebar.classList.remove('open'); scrim.classList.remove('on'); }
+  burger.addEventListener('click', function(){
+    sidebar.classList.toggle('open');
+    scrim.classList.toggle('on', sidebar.classList.contains('open'));
+  });
+  scrim.addEventListener('click', close);
+  links.forEach(function(a){ a.addEventListener('click', function(){ if(innerWidth<=980) close(); }); });
+  addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  /* 진행바 · 맨위로 */
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var y = scrollY;
+    bar.style.width = (h>0 ? (y/h*100) : 0) + '%';
+    totop.classList.toggle('on', y > 500);
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+  totop.addEventListener('click', function(){ scrollTo({top:0, behavior:'smooth'}); });
+
+  /* 스크롤 스파이 */
+  var ticking = false;
+  function spy(){
+    var y = scrollY + innerHeight*0.28;
+    var idx = 0;
+    for (var i=0;i<secs.length;i++){
+      if (secs[i] && secs[i].offsetTop <= y) idx = i;
+    }
+    links.forEach(function(a,i){ a.classList.toggle('active', i===idx); });
+    if (innerWidth > 980){
+      var a = links[idx];
+      var top = a.offsetTop, bot = top + a.offsetHeight;
+      if (top < sidebar.scrollTop || bot > sidebar.scrollTop + sidebar.clientHeight){
+        sidebar.scrollTop = top - sidebar.clientHeight/2;
+      }
+    }
+    ticking = false;
+  }
+  addEventListener('scroll', function(){
+    if(!ticking){ ticking = true; requestAnimationFrame(spy); }
+  }, {passive:true});
+  spy();
+})();
+</script>
+</body>
+</html>
