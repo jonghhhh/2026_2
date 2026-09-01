@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7주차 · 귄터 안더스 · 하이데거: 팬텀과 매트릭스 | 매체철학 2026-2</title>
+<meta name="description" content="매체철학 7주차 강의자료 — 존재자와 존재, 게슈텔과 부품, 알레테이아, 프로메테우스적 부끄러움, 팬텀과 매트릭스, 객체지향 프로그래밍과 존재론.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">7주차 · 팬텀과 매트릭스</div>
+</div>
+
+<div class="layout">
+
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">매체철학 2026-2</div>
+    <div class="sb-title">7주차<br>귄터 안더스 · 하이데거<br>팬텀과 매트릭스</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1부 · 하이데거</div>
+    <a href="#s2"><span class="n">02</span><span>존재자와 존재</span></a>
+    <a href="#s3"><span class="n">03</span><span>게슈텔과 부품</span></a>
+
+    <div class="sb-label">2부 · 안더스</div>
+    <a href="#s4"><span class="n">04</span><span>프로메테우스적 부끄러움</span></a>
+    <a href="#s5"><span class="n">05</span><span>팬텀의 세계</span></a>
+    <a href="#s6"><span class="n">06</span><span>매트릭스와 대중의 퇴행</span></a>
+
+    <div class="sb-label">3부 · 오늘의 읽기</div>
+    <a href="#s7"><span class="n">07</span><span>지각의 확장과 축소</span></a>
+    <a href="#s8"><span class="n">08</span><span>객체지향 — OOP와 OOO</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s9"><span class="n">09</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s10"><span class="n">10</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="06_아도르노_동일성과문화산업.html">← 6주차 · 아도르노</a>
+    <a href="09_토론토학파_이니스_옹_맥루언.html">9~10주차 · 토론토학파 →</a>
+    <a href="../index.html">매체철학 강의 홈</a>
+  </div>
+</aside>
+
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 3. 20세기 비판이론 · 7주차 <span class="axtag mat" style="color:#a9c9ee">물질성</span></div>
+    <h1>세계가 나에게 배달될 때<br>나는 세계를 겪는가</h1>
+    <div class="sub">귄터 안더스 · 하이데거 — 팬텀과 매트릭스</div>
+  </div>
+</header>
+
+<!-- 00 -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">안더스는 <strong>하이데거와 아도르노를 함께 계승</strong>함. 그래서 오늘은 하이데거를 먼저 세우고 안더스로 넘어감.</p>
+
+  <div class="box note">
+    <span class="bt">여는 질문 — 오늘 아침 무엇을 직접 겪었는가</span>
+    <ul style="margin-bottom:0">
+      <li>날씨 — <b>앱에서</b> 봄.</li>
+      <li>뉴스 — <b>피드에서</b> 봄.</li>
+      <li>친구의 근황 — <b>스토리에서</b> 봄.</li>
+      <li>오는 길 — <b>지도가</b> 알려줌.</li>
+      <li><strong>겪은 것은 세계인가, 세계의 배달본인가.</strong> 그리고 <em>그 둘의 차이를 느낄 수 있는가.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 01 -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>존재자 · 존재<span class="en">Seiendes / Sein</span></dt>
+      <dd><b>존재자</b>는 있는 것들(책상·나무·망치). <b>존재</b>는 그것들이 <b>있다는 것 자체</b>이자 그것들이 갖는 의미임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>도구연관<span class="en">Zeugzusammenhang</span></dt>
+      <dd>망치는 못을 위해, 못은 판자를 위해, 판자는 집을 위해.
+        <span class="ez">도구들이 서로를 가리키며 만드는 의미의 그물.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>알레테이아<span class="en">Aletheia · 비은폐</span></dt>
+      <dd>가려진 것이 드러남.
+        <span class="ez">하이데거의 진리는 "맞음"이 아니라 "드러남"임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>테크네<span class="en">techne</span></dt>
+      <dd>그리스어로 <b>기술과 예술을 함께</b> 뜻했음.
+        <span class="ez">지금의 technology와 art가 원래 한 단어였음.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>게슈텔<span class="en">Gestell · 닦달 · 몰아세움</span></dt>
+      <dd>모든 것을 <b>사용 가능한 자원으로 세워두는</b> 현대 기술의 방식임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>부품<span class="en">Bestand</span></dt>
+      <dd>게슈텔이 만들어낸 존재 방식. <b>언제든 꺼내 쓸 수 있게 대기 중인 것</b>임.
+        <span class="ez">요즘 말로 on-demand.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>팬텀<span class="en">phantom</span></dt>
+      <dd>안더스에게는 <b>존재하면서 동시에 존재하지 않는 것</b>임. 존재론적 모호성.</dd>
+    </dl>
+    <dl class="term">
+      <dt>매트릭스<span class="en">matrix</span></dt>
+      <dd>모체·회로망·행렬·활판. 안더스에게는 <b>실재가 복제되는 틀</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>객체지향 프로그래밍<span class="en">OOP</span></dt>
+      <dd>데이터와 기능을 <b>객체</b>로 묶고, 내부를 감춘 채 서로 <b>메시지만</b> 주고받게 하는 방식임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>객체지향 존재론<span class="en">OOO</span></dt>
+      <dd>그레이엄 하먼 등. <b>모든 객체는 서로에게 완전히 드러나지 않고 물러나 있다</b>는 존재론임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="s2">
+  <h2><span class="num">02</span>존재자와 존재</h2>
+  <div class="h2rule"></div>
+
+  <figure class="photo">
+  <img src="heidegger_portrait.jpg" alt="마르틴 하이데거" loading="lazy">
+  <figcaption>하이데거(1889~1976). 『존재와 시간』, 『예술작품의 근원』, 「기술에 대한 물음」.</figcaption>
+  <div class="credit">Willy Pragher · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Heidegger_2_(1960).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+</figure>
+
+  <div class="duo">
+    <div class="a">
+      <h5>존재자</h5>
+      <span class="tag">Seiendes</span>
+      <ul>
+        <li>이성과 과학의 세계에서 <b>개념화된 물리적 사물</b>임</li>
+        <li>분석하면 나오는 것</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>존재</h5>
+      <span class="tag">Sein</span>
+      <ul>
+        <li><b>생활세계</b>와 <b>도구연관의 세계</b>에서 개별 사물이 갖는 <b>의미</b>임</li>
+        <li>사물이 인간과의 관계에서 만들어내는 <b>삶의 상황</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">망치로 설명하면</span>
+    <ul style="margin-bottom:0">
+      <li>망치를 <b>분석</b>하면 — 쇠 500g, 나무 자루 30cm. 이것이 <b>존재자</b>로서의 망치임.</li>
+      <li>망치를 <b>쓸 때</b> — 나는 망치를 보지 않음. 못을 보고, 판자를 보고, 만들려는 것을 봄.</li>
+      <li>망치는 <strong>손에 잡혀 사라짐.</strong> 이것이 <b>존재</b>로서의 망치임.</li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">1주차 매체의 부정성과 정확히 같은 구조임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>잘 작동하는 도구는 보이지 않음.</strong> 고장 나야 보임.</li>
+      <li>하이데거는 매체철학자가 아니지만, <em>매체철학의 핵심 통찰을 도구론으로 먼저 말했음.</em></li>
+      <li>하나 더 — 초보 운전자는 <b>핸들과 페달을 의식</b>함. 그래서 못 함. 숙련되면 핸들이 사라지고 <b>길만 보임.</b> <strong>도구가 사라지는 순간이 도구가 가장 잘 작동하는 순간임.</strong></li>
+    </ul>
+  </div>
+
+  <h3>예술은 은폐된 존재를 드러내는 활동임</h3>
+  <ul>
+    <li>예술은 <b>존재자의 세계</b>(사물의 의미, 진리)와 <b>대지</b>(사물이 사용되는 생활 터전)의 <b>투쟁</b>을 일으켜, 존재자의 진리가 스스로 작품 안에 정립되게 함.</li>
+    <li><b>알레테이아(비은폐) = 진리</b>임.</li>
+    <li><b>작가성 부정</b> — 작품이 진리를 드러내는 것이지 작가가 만드는 것이 아님.</li>
+  </ul>
+
+  <figure class="photo">
+  <img src="van_gogh_shoes.jpg" alt="반 고흐 한 켤레의 구두" loading="lazy">
+  <figcaption>하이데거는 이 그림에서 <b>농부의 노동, 흙, 계절, 삶 전체</b>가 드러난다고 읽음. 구두라는 <b>존재자</b>가 아니라 그 구두가 속한 <b>세계</b>가 열린다는 것.</figcaption>
+  <div class="credit">Vincent van Gogh · Public domain · <a href="https://commons.wikimedia.org/wiki/File:Schoenen_-_s0011V1962_-_Van_Gogh_Museum.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+</figure>
+
+  <div class="box note">
+    <span class="bt">이 그림을 둘러싼 논쟁</span>
+    <p style="margin-bottom:0">미술사가 <b>마이어 샤피로</b>는 "그 구두는 농부 것이 아니라 <strong>고흐 자신의 것</strong>"이라고 반박했음. <b>데리다</b>가 이 논쟁을 다시 다뤘음. <em>해석이 대상을 만든다는 점에서 그 자체로 좋은 사례임.</em></p>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3">
+  <h2><span class="num">03</span>게슈텔과 부품</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li>기술도 <b>세계와 대지를 매개</b>함. <em>기술은 원래 매체임.</em></li>
+    <li><b>현대 기술의 타락</b> — 예술로부터 분리됨. 테크네는 원래 기술과 예술을 모두 포함하며 <b>알레테이아</b>를 뜻했음.</li>
+    <li>실용적 목적을 위해 인간을 <b>닦달함(gestellen)</b>.</li>
+  </ul>
+
+  <div class="pull">
+    <div class="q">"세계 전체는 이익을 위한 하나의 거대한 공장.<br>모든 존재자는 사용을 위해 조정되고<br>주문 요청되는 <b>부품</b>."</div>
+    <div class="a">강의 슬라이드의 게슈텔 정리.</div>
+  </div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:8%"></th><th>게슈텔이 만드는 세계</th></tr></thead>
+    <tbody>
+      <tr><td><b>1</b></td><td>세계 전체는 <b>이익을 위한 하나의 거대한 공장</b>임</td></tr>
+      <tr><td><b>2</b></td><td>모든 존재자는 사용을 위해 조정되고 <b>주문 요청되는 부품</b>임</td></tr>
+      <tr><td><b>3</b></td><td>물질적 만족을 위한 <b>합리적 계산이 절대적 원칙</b>임</td></tr>
+      <tr><td><b>4</b></td><td>끝없는 만족을 추구하며 <b>끊임없이 재편성</b>됨</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>→ <strong>과학기술에 편입된 인간은 사유를 망각함.</strong></p>
+
+  <div class="box key">
+    <span class="bt">오늘의 핵심은 2번임</span>
+    <p style="margin-bottom:0">"모든 존재자는 사용을 위해 조정되고 <b>주문 요청되는 부품</b>임." <strong>on-demand.</strong> 하이데거가 1950년대에 쓴 말이 <em>지금 클라우드 서비스의 표준 용어임.</em></p>
+  </div>
+
+  <h3>부품화의 계보</h3>
+  <div class="tline">
+    <div class="row">
+      <div class="when">라인강<span>하이데거 자신의 예</span></div>
+      <div class="who">발전소를 통해 <b>전력 자원</b>이 됨</div>
+    </div>
+    <div class="row">
+      <div class="when">숲</div>
+      <div class="who"><b>목재 재고</b>가 됨</div>
+    </div>
+    <div class="row">
+      <div class="when">사람</div>
+      <div class="who"><b>인적 자원(human resource)</b>이 됨</div>
+    </div>
+    <div class="row now">
+      <div class="when">나의 글 · 사진 · 목소리<span>지금</span></div>
+      <div class="who"><b>학습 데이터</b>가 됨</div>
+    </div>
+  </div>
+
+  <div class="box note">
+    <span class="bt">스스로 물어볼 것</span>
+    <p style="margin-bottom:0"><strong>데이터화(datafication)는 게슈텔의 완성인가.</strong> "모든 것이 데이터가 될 수 있다"는 말은 <em>"모든 것이 부품이 될 수 있다"</em>와 같은 말인가.</p>
+  </div>
+
+  <div class="box key">
+    <span class="bt">하이데거의 이중성 — 2주차 파르마콘의 재등장</span>
+    <ul style="margin-bottom:0">
+      <li>기술에 부정적이지만 <b>동시에 가능성을 탐구</b>함.</li>
+      <li><strong>기술의 본성은 악하지 않음.</strong></li>
+      <li><b>예술로서의 기술</b>이 필요함 — 도구적 목적에서 벗어난 기술.</li>
+      <li>그는 횔덜린을 인용함 — <em>"위험이 있는 곳에 구원도 자란다."</em> <b>기술 안에 기술을 넘어설 것이 있다</b>는 구조임.</li>
+      <li>→ <b>15주차 육후이의 코스모테크닉스</b>가 정확히 이 자리에서 출발함.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 04 -->
+<section id="s4">
+  <h2><span class="num">04</span>프로메테우스적 부끄러움</h2>
+  <div class="h2rule"></div>
+
+  <figure class="imgph">
+    <div class="ph">
+      <div class="fn">gunther_anders_portrait.png</div>
+      <div class="hint">귄터 안더스 사진</div>
+      <div class="src">저작권 때문에 자동 수집 제외 — 자유 라이선스 사진이 77×83px뿐 · 사용 불가 크기<br>독일어권 아카이브(Österreichische Mediathek 등)에서 개별 허락을 받는 방법이 있음</div>
+    </div>
+    <figcaption>귄터 안더스(1902~1992). 『인간의 골동품성』, 『팬텀과 매트릭스로서의 세계』. 하이데거의 제자이자 반핵운동가.</figcaption>
+  </figure>
+
+  <h3>기술에 대한 비관</h3>
+  <ul>
+    <li><b>세계는 하나의 거대 기기</b>임.</li>
+    <li><b>기술은 이미 수단이 아님.</b></li>
+    <li><strong>기술이 인간을 소비함</strong> → 주객전도.</li>
+  </ul>
+
+  <h3>프로메테우스적 부끄러움과 격차</h3>
+  <ul>
+    <li><b>호모 파베르</b>(도구적 인간)는 끊임없이 기기를 생산함.</li>
+    <li>인간이 자신이 만들어낸 사물로부터 <b>소외</b>됨. 기기가 점차 <b>거대기기로 체계화</b>됨.</li>
+    <li><b>프로메테우스적 격차</b> — 인간과 생산물 세계 사이의 <b>비동시성.</b> 격차가 증가함. <strong>인간은 자신이 만든 사물의 노예가 됨.</strong></li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">'부끄러움'이 왜 부끄러움인가</span>
+    <ul style="margin-bottom:0">
+      <li>프로메테우스는 인간에게 불을 준 신임. 인간은 만드는 존재임.</li>
+      <li>그런데 안더스가 말하는 부끄러움은 이것임 — <strong>"내가 만든 것이 나보다 낫다."</strong></li>
+      <li>기계는 지치지 않고, 틀리지 않고, 죽지 않음.</li>
+      <li>나는 그 앞에서 <em>내가 태어난(만들어진 것이 아닌) 존재라는 것이 부끄러움.</em></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">스스로 물어볼 것</span>
+    <ul style="margin-bottom:0">
+      <li>AI 초안을 보고 <b>"내가 쓴 것보다 낫네"</b> 하고 느낀 적이 있는가.</li>
+      <li>그때 든 감정은 <b>고마움인가, 안도인가, 부끄러움인가, 화인가.</b></li>
+      <li>안더스는 그것이 <strong>부끄러움</strong>이라고 <b>1956년에</b> 예측했음. <em>맞았는가.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 05 -->
+<section id="s5">
+  <h2><span class="num">05</span>팬텀의 세계</h2>
+  <div class="h2rule"></div>
+
+  <h3>대중매체의 하위문화 생산 비판</h3>
+  <ul>
+    <li>TV와 라디오는 <b>탈문자적 문맹자 집단</b>을 유도함.</li>
+    <li><b>아이콘 매니아</b>를 위한 기계적 이미지를 대량생산함.</li>
+    <li>대중의 교양과 문화 수준이 저하됨.</li>
+  </ul>
+
+  <h3>팬텀이란</h3>
+  <ul>
+    <li><b>존재하지만(현실) 존재하지 않는(가상) 것.</b> <strong>존재론적 모호성</strong>임.</li>
+    <li>TV의 <b>현장 생중계</b>가 그 전형임.</li>
+    <li>팬텀을 통한 <b>세계 체험의 일상화</b>. 가상 세계를 실재 세계로 인식하는 혼란.</li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">팬텀은 '가짜'가 아님</span>
+    <ul style="margin-bottom:0">
+      <li>생중계되는 화면 속 사건은 <strong>실제로 일어나고 있음.</strong></li>
+      <li>그런데 <strong>나는 거기 없음.</strong></li>
+      <li>있는 것도 아니고 없는 것도 아닌 상태 — 그것이 <b>존재론적 모호성</b>임.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">지금의 팬텀들</span>
+    <ul style="margin-bottom:0">
+      <li>재난 생중계를 보며 안전한 방에 앉아 있을 때.</li>
+      <li>지구 반대편 전쟁 영상을 보고 <b>다음 영상으로 넘어갈</b> 때.</li>
+      <li>라이브 커머스에서 "지금 딱 세 개 남았습니다"를 볼 때.</li>
+      <li>→ <strong>나는 그 자리에 있는가, 없는가.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">11주차 보드리야르와 섞지 말 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>보드리야르</b> — 원본이 <b>없음.</b></li>
+      <li><b>안더스</b> — 원본이 <b>있는데 내가 거기 없음.</b></li>
+      <li><strong>다른 이야기임.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 06 -->
+<section id="s6">
+  <h2><span class="num">06</span>매트릭스와 대중의 퇴행</h2>
+  <div class="h2rule"></div>
+
+  <h3>매트릭스란</h3>
+  <ul>
+    <li>모체 · 회로망 · 행렬 · 활판의 뜻임.</li>
+    <li>TV가 실재를 복제하는 방식이 반영되는 <b>구성물</b>임.</li>
+    <li>취재·편집·제작 <b>규칙대로 짜여지는 판</b>임.</li>
+  </ul>
+
+  <div class="chain">
+    <div class="node"><div class="t">실재와 가상의<br>차이 소멸</div><div class="d">구별이 어려워짐</div></div>
+    <div class="arw">→</div>
+    <div class="node"><div class="t">가상이 실재를<br>능가함</div><div class="d">화면이 기준이 됨</div></div>
+    <div class="arw">→</div>
+    <div class="node mid"><div class="t">실재가 가상을<br>따름</div><div class="d">현실이 화면에 맞춰 재편됨</div></div>
+  </div>
+
+  <div class="box note">
+    <span class="bt">"실재가 가상을 따른다"의 사례</span>
+    <ul style="margin-bottom:0">
+      <li>관광지가 <b>사진 잘 나오게</b> 개조됨. <em>포토존이 먼저, 풍경이 나중임.</em></li>
+      <li>음식점이 <b>배달 사진에 맞게</b> 플레이팅을 바꿈.</li>
+      <li>정치인이 <b>짧은 클립에 맞게</b> 말함.</li>
+    </ul>
+  </div>
+
+  <h3>대중의 퇴행 — 세 갈래</h3>
+  <div class="tri c1">
+    <div>
+      <h5>① 수동적 소비자</h5>
+      <span class="tag">주는 것만 봄</span>
+      <ul>
+        <li>정해진 방식으로 제작·제공된 콘텐츠만 소비함</li>
+        <li><b>주체적 생산 참여가 불가능</b>함</li>
+      </ul>
+    </div>
+    <div>
+      <h5>② 몰개성화</h5>
+      <span class="tag">취향이 수렴함</span>
+      <ul>
+        <li>개인적 취향과 개성이 소멸함</li>
+      </ul>
+    </div>
+    <div>
+      <h5>③ 개인화</h5>
+      <span class="tag">혼자 봄</span>
+      <ul>
+        <li><b>사회적 세계를 사적 공간에서 개별적으로 체험함</b></li>
+        <li><b>상호작용이 없음</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">③번이 안더스의 가장 놀라운 예견임</span>
+    <ul style="margin-bottom:0">
+      <li><strong>몰개성화와 개인화가 동시에 일어남</strong> — 모순처럼 보이지만 모순이 아님.</li>
+      <li>각자 <b>다른 것</b>을 봄 (개인화). 각자 <b>혼자</b> 봄 (상호작용 없음). 그런데 결과는 <b>비슷해짐</b> (몰개성화).</li>
+      <li>→ <b>6주차 아도르노의 '유사개인화'와 정확히 같은 구조임.</b> 두 사람 모두 같은 것을 봤음.</li>
+      <li>→ <b>13주차 플루서의 '원형극장형'</b>(참여자 사이 소통 없음, 채널만 존재)이 이것의 도해임.</li>
+    </ul>
+  </div>
+
+  <h3>안더스의 관점과 한계</h3>
+  <div class="duo">
+    <div class="a">
+      <h5>그가 본 것</h5>
+      <span class="tag">종말론적 매체관</span>
+      <ul>
+        <li>TV는 정보 전달 수단이 아니라 <b>인식과 생활에 영향을 미치는 거대한 판이자 세계 자체</b>임</li>
+        <li>생활의 일부라 <b>객관적 거리두기가 불가능</b>함</li>
+        <li>가상이 실재를 잡아먹는 <b>비극적 사건</b>임</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>그가 못 본 것</h5>
+      <span class="tag">슬라이드가 스스로 인정함</span>
+      <ul>
+        <li>실재 조작이라는 <b>부정적 측면에만 초점</b>을 둠</li>
+        <li><b>수용자의 능동성을 무시</b>함. 중독이 아닌 활용도 가능함</li>
+        <li>쌍방향성과 <b>사회적 시청</b>을 보지 못했음</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section id="s7">
+  <h2><span class="num">07</span>지각의 확장과 축소</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">심혜련(2024) II부 3장 1절 「지각의 재평가」 <b>pp.207~212</b> + 3절 「매체에 의한 지각의 확장과 축소」 <b>pp.222~229</b>.</p>
+
+  <ul>
+    <li><b>1절</b> — 지각을 낮은 인식으로 보던 전통에 대한 재평가임. <em>매체철학이 왜 지각을 중심에 놓는지가 여기서 설명됨.</em></li>
+    <li><b>3절</b> — 이 절의 제목이 곧 오늘의 물음임.</li>
+  </ul>
+
+  <div class="tri c1">
+    <div>
+      <h5>맥루언 <span class="cite">9~10주차</span></h5>
+      <span class="tag">확장</span>
+      <ul><li>미디어는 인간의 <b>확장</b>임</li></ul>
+    </div>
+    <div>
+      <h5>안더스 <span class="cite">오늘</span></h5>
+      <span class="tag">축소</span>
+      <ul><li>매체는 인간을 <b>무능력하게</b> 만듦</li></ul>
+    </div>
+    <div>
+      <h5>심혜련</h5>
+      <span class="tag">둘 다</span>
+      <ul><li><b>확장이면서 동시에 축소</b>임</li></ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">스스로 물어볼 것</span>
+    <ul style="margin-bottom:0">
+      <li><strong>개인화 피드는 지각을 확장하는가 축소하는가.</strong></li>
+      <li>확장 — 내가 결코 못 만났을 세계를 만남.</li>
+      <li>축소 — 내가 만날 세계가 <b>미리 걸러짐.</b></li>
+      <li><strong>두 답이 모두 참일 때, 무엇을 판단 기준으로 삼는가.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 08 -->
+<section id="s8">
+  <h2><span class="num">08</span>객체지향 — OOP와 OOO</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">변정수(2025) 4부 6장 「객체지향프로그래밍과 객체지향 철학」.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:24%">원칙</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><b>캡슐화</b></td><td>내부 데이터를 감추고 <b>정해진 인터페이스로만</b> 접근하게 함</td></tr>
+      <tr><td>상속</td><td>기존 객체의 성질을 물려받음</td></tr>
+      <tr><td>다형성</td><td>같은 메시지에 객체마다 다르게 반응함</td></tr>
+      <tr><td>추상화</td><td>필요한 것만 드러내고 나머지는 숨김</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">캡슐화의 일상 비유 — 자판기</span>
+    <p style="margin-bottom:0">나는 자판기 안을 볼 수 없음. <b>볼 필요도 없음.</b> 동전 넣기와 버튼 누르기라는 정해진 통로로만 접근함. 이것이 캡슐화임. <strong>감추는 것이 미덕인 설계임.</strong></p>
+  </div>
+
+  <h3>하이데거 → 하먼 → OOP는 이미 한 줄임</h3>
+  <ul>
+    <li>그레이엄 하먼의 <b>객체지향 존재론</b>은 하이데거의 도구분석에서 직접 나왔음.</li>
+    <li><b>하이데거</b> — 망치는 <b>쓰일 때 물러남(withdraw)</b>.</li>
+    <li><b>하먼</b> — 물러남은 인간과의 관계에서만이 아님. <strong>객체는 다른 객체에게도 완전히 드러나지 않음.</strong></li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">결정적 질문 (1) — 부품과 객체는 같은 것인가</span>
+    <div class="tw" style="margin:12px 0 0">
+    <table>
+      <thead><tr><th style="width:22%">개념</th><th>서술</th></tr></thead>
+      <tbody>
+        <tr><td><b>부품</b> <span class="cite">하이데거</span></td><td>사용을 위해 조정되고 <b>주문 요청되는</b> 것 → 언제든 꺼내 쓸 수 있게 대기</td></tr>
+        <tr><td><b>객체</b> <span class="cite">OOP</span></td><td>인터페이스를 통해 <b>호출되는</b> 것</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="margin:10px 0 0">놀랍게도 <strong>거의 같은 서술임.</strong> 그런데 하이데거에게 부품은 <b>존재 망각의 결과</b>이고, OOP에게 객체는 <b>좋은 설계</b>임. <em>같은 구조에 정반대 가치 평가. 왜 갈리는가.</em></p>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">결정적 질문 (2) — 캡슐화는 하먼의 '물러남'인가</span>
+    <ul style="margin-bottom:0">
+      <li>캡슐화는 <b>설계자가 의도적으로 감춘 것</b>임.</li>
+      <li>하먼의 물러남은 <b>원리적으로 접근 불가능한 것</b>임.</li>
+      <li>→ <strong>의도적 은폐와 존재론적 은폐는 같은가.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">보충 — 세계가 호출 가능한 서비스가 됨</span>
+    <p style="margin-bottom:0">마이크로서비스·API·서버리스는 세계를 <b>호출 가능한 서비스들</b>로 재편했음. 하이데거의 언어로 옮기면 <strong>세계 전체가 on-demand 부품이 되었음.</strong> 그리고 이것은 나쁜 일인가. <em>하이데거는 나쁘다고 하고, 엔지니어는 좋다고 함.</em> 이 대립은 열어둘 것.</p>
+  </div>
+</section>
+
+<!-- 09 -->
+<section id="s9">
+  <h2><span class="num">09</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>존재자 / 존재</b>
+      개념화된 사물과, 그것이 <em>삶의 그물 속에서 갖는 의미.</em></li>
+    <li><b>게슈텔 / 부품</b>
+      모든 것을 <strong>사용 대기 자원으로 세워두는 방식</strong>과 그렇게 된 것.</li>
+    <li><b>알레테이아 / 테크네</b>
+      비은폐로서의 진리와, <em>기술과 예술을 함께 뜻하던 그리스어.</em></li>
+    <li><b>프로메테우스적 부끄러움 · 격차</b>
+      <strong>내가 만든 것이 나보다 낫다</strong>는 부끄러움과, 인간과 생산물 사이의 벌어짐.</li>
+    <li><b>팬텀 / 매트릭스</b>
+      있으면서 없는 것과, <em>실재가 복제되며 짜이는 판.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+  <div class="box warn">
+    <span class="bt">오해 1 — "하이데거는 기술 반대론자"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 하이데거는 <strong>기술의 본성은 악하지 않다</strong>고 명시함.</li>
+      <li>문제는 기술이 아니라 <b>게슈텔이라는 존재 방식</b>임. 그 안에 구원의 가능성도 있다고 봄.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 2 — "팬텀 = 가짜"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 팬텀은 가짜가 아니라 <strong>존재론적으로 모호한 것</strong>임.</li>
+      <li>생중계 속 사건은 실제로 일어남. 문제는 <b>나의 위치</b>임.</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 3 — "개인화 = 몰개성화의 반대"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 안더스의 통찰은 <strong>둘이 함께 온다</strong>는 것임.</li>
+      <li>각자 다른 것을 혼자 보는데 <b>결과는 비슷해짐.</b></li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>안더스는 "세계가 집으로 배달된다"고 했음. 지금은 "세계가 예측되어 배달됨."</b><br>무엇이 달라졌는가. 배달의 <b>수동성</b>과 예측의 <b>선제성</b>. 나는 무엇을 원하는지 알기 전에 이미 받음.</li>
+    <li><b>개인화 피드는 지각을 확장하는가 축소하는가.</b><br>두 답이 모두 참이라면 판단 기준은 무엇인가.</li>
+    <li><b>하이데거의 부품과 OOP의 객체는 같은 것인가.</b><br>캡슐화된 객체는 하먼의 '물러남'인가. 의도적 은폐와 존재론적 은폐는 같은가.</li>
+    <li><b>프로메테우스적 부끄러움은 AI 앞에서 어떤 형태를 취하는가.</b><br>AI가 쓴 글이 내 글보다 나을 때 느끼는 것은 무엇인가.</li>
+    <li><b>데이터화는 게슈텔의 완성인가.</b><br>"모든 것이 데이터가 될 수 있다"는 "모든 것이 부품이 될 수 있다"인가.</li>
+    <li><b>안더스는 수용자의 능동성을 무시했다는 비판을 받음.</b><br>쌍방향성과 사회적 시청은 그의 진단을 무효화하는가. 댓글·라이브채팅·시청 파티는 그가 말한 "상호작용 없음"을 깼는가.</li>
+  </ol>
+</section>
+
+<!-- 10 -->
+<section id="s10">
+  <h2><span class="num">10</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>이번 주 읽기</h4>
+    <ul>
+      <li><b>B</b> 심혜련 (2012). 『20세기의 매체철학』 — 1부 4장</li>
+      <li><b>C</b> 심혜련 (2024). 『21세기의 매체철학』 — II부 3장 1절 pp.207~212 + 3절 pp.222~229</li>
+      <li><b>D</b> 변정수 (2025). 『알고리즘으로 철학하기』 — 4부 6장</li>
+    </ul>
+
+    <h4>원전</h4>
+    <ul>
+      <li>마르틴 하이데거. 「기술에 대한 물음」 — <b>게슈텔·부품 대목만.</b> <span class="cite">어렵지만 그 대목은 읽힘</span></li>
+      <li>마르틴 하이데거. 『예술작품의 근원』 — 고흐의 구두 대목</li>
+      <li>귄터 안더스. 『인간의 골동품성』 — 국역 발췌</li>
+    </ul>
+
+    <h4>보조</h4>
+    <ul>
+      <li>그레이엄 하먼. 『쿼드러플 오브젝트』 또는 『비유물론』 <span class="cite">객체지향 존재론 입문</span></li>
+      <li>이광석 등 (2016). 『현대 기술-미디어 철학의 갈래들』. 그린비 — 하이데거 장</li>
+      <li>김선희 등 (2024). 『인공지능 시대의 철학자들』. 사월의책</li>
+    </ul>
+
+    <h4>이어지는 주차</h4>
+    <ul>
+      <li><a href="09_토론토학파_이니스_옹_맥루언.html"><b>9~10주차 — 토론토 커뮤니케이션학파: 이니스 · 옹 · 맥루언</b></a> <span class="axtag mat">물질성</span><br>안더스가 <b>축소</b>라 본 것을 맥루언은 <b>확장</b>이라 부름. 오늘의 대립이 그대로 이어짐.</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">매체철학 2026-2학기 · 7주차 강의자료</b><br>
+  주 출처: 강의 슬라이드 「안더스」 · 심혜련 『20세기의 매체철학』 1부 4장</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="06_아도르노_동일성과문화산업.html">← 6주차</a> &nbsp;·&nbsp; <a href="09_토론토학파_이니스_옹_맥루언.html">9~10주차 →</a></p>
+</footer>
+
+</div>
+</main>
+</div>
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>11주차 · 장 보드리야르: 시뮬라크르 | 매체철학 2026-2</title>
+<meta name="description" content="매체철학 11주차 강의자료 — 시뮬라크르와 시뮬라시옹, 에이콘과 판타스마타, 4단계, 하이퍼리얼리티, 저지기계, 기호가치, GAN과 적대적 학습.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<div id="topbar">
+  <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
+  <div class="tt">11주차 · 시뮬라크르</div>
+</div>
+
+<div class="layout">
+
+<aside id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-course">매체철학 2026-2</div>
+    <div class="sb-title">11주차<br>장 보드리야르<br>시뮬라크르</div>
+  </div>
+
+  <nav class="sb-nav" id="nav">
+    <div class="sb-label">들어가기</div>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
+
+    <div class="sb-label">1부 · 시뮬라크르의 계보</div>
+    <a href="#s2"><span class="n">02</span><span>원본과 복제의 역전</span></a>
+    <a href="#s3"><span class="n">03</span><span>플라톤의 귀환</span></a>
+    <a href="#s4"><span class="n">04</span><span>시뮬라크르의 4단계</span></a>
+    <a href="#s5"><span class="n">05</span><span>하이퍼리얼리티</span></a>
+
+    <div class="sb-label">2부 · 저지기계와 기호</div>
+    <a href="#s6"><span class="n">06</span><span>저지기계</span></a>
+    <a href="#s7"><span class="n">07</span><span>기호 중심의 소비사회</span></a>
+
+    <div class="sb-label">3부 · 오늘의 읽기</div>
+    <a href="#s8"><span class="n">08</span><span>혼종화와 디지털 페르소나</span></a>
+    <a href="#s9"><span class="n">09</span><span>GAN과 적대적 학습</span></a>
+
+    <div class="sb-label">마무리</div>
+    <a href="#s10"><span class="n">10</span><span>정리 · 오해 · 토론</span></a>
+    <a href="#s11"><span class="n">11</span><span>참고자료</span></a>
+  </nav>
+
+  <div class="sb-foot">
+    <a href="09_토론토학파_이니스_옹_맥루언.html">← 9~10주차 · 토론토학파</a>
+    <a href="12_키틀러_기록체계.html">12주차 · 키틀러 →</a>
+    <a href="../index.html">매체철학 강의 홈</a>
+  </div>
+</aside>
+
+<main>
+<div class="wrap">
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PART 5. 기호·기록·코드 · 11주차 <span class="axtag sym" style="color:#a9c9ee">상징성</span></div>
+    <h1>가짜가 진짜를 흉내 내는 것이 아니라<br>진짜가 없어서 가짜만 남는 것</h1>
+    <div class="sub">장 보드리야르 — 시뮬라크르</div>
+  </div>
+</header>
+
+<!-- 00 -->
+<section id="s0">
+  <h2><span class="num">00</span>이 주차의 위상</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">오늘 <strong>2주차 플라톤이 돌아옴.</strong> 에이콘과 판타스마타가 시뮬라크르가 됨. <em>학기 전반부가 여기서 한 바퀴 돎.</em></p>
+
+  <div class="box note">
+    <span class="bt">여는 질문</span>
+    <ul style="margin-bottom:0">
+      <li>AI로 만든 사람 얼굴이 있음. <b>이 사람은 실제로 존재하지 않음.</b></li>
+      <li>이것은 <b>가짜</b>인가. 가짜라면 <strong>무엇의</strong> 가짜인가.</li>
+      <li>흉내 낼 원본이 없는데 <b>닮았다</b>고 말할 수 있는가.</li>
+      <li>그런데 우리는 그 얼굴을 보고 <strong>사람이라고 지각함.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">위치 확인 — 아도르노와 어디가 다른가</span>
+    <ul style="margin-bottom:0">
+      <li><b>아도르노</b> <span class="cite">6주</span> — 진짜(비동일자)가 <b>억압됐음.</b></li>
+      <li><b>보드리야르</b> — 진짜가 <strong>아예 없음.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 01 -->
+<section id="s1">
+  <h2><span class="num">01</span>오늘 만날 개념</h2>
+  <div class="h2rule"></div>
+
+  <div class="terms">
+    <dl class="term">
+      <dt>시뮬라크르<span class="en">simulacre</span></dt>
+      <dd>원본을 흉내 낸 것 — 인데, 보드리야르에게는 <b>원본이 없는 복제</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>시뮬라시옹<span class="en">simulation</span></dt>
+      <dd>시뮬라크르를 만들어내는 <b>작용·과정</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>하이퍼리얼리티<span class="en">hyper-reality · 초실재</span></dt>
+      <dd><b>실재보다 더 실재 같은</b> 가상임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>에이콘<span class="en">Eikon · 형상</span></dt>
+      <dd>플라톤 용어. 이데아의 <b>본질적 특성을 보존한</b> 복제품이자 현실임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>판타스마타<span class="en">Phantasmata · 환영</span></dt>
+      <dd>실재와의 관계가 <b>모호한 2차 복제</b>임. 곧 시뮬라크르의 조상.</dd>
+    </dl>
+    <dl class="term">
+      <dt>성상파괴<span class="en">iconoclasm</span></dt>
+      <dd>성상(이콘)을 부수는 운동임. <span class="cite">8~9세기 비잔틴에서 실제로 벌어짐</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>저지기계<span class="en">machine de dissuasion</span></dt>
+      <dd>보드리야르의 조어. <b>실재의 부재를 은폐하기 위해 가짜를 전면에 내세우는 장치</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>기호가치<span class="en">sign value</span></dt>
+      <dd>상품의 쓸모(사용가치)나 노동량(교환가치)이 아니라, <b>그것이 나타내는 사회적 의미</b>임.</dd>
+    </dl>
+    <dl class="term">
+      <dt>GAN<span class="en">적대적 생성 신경망</span></dt>
+      <dd><b>생성자</b>와 <b>판별자</b>가 서로 겨루며 학습하는 생성 모델임.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="s2">
+  <h2><span class="num">02</span>원본과 복제의 역전</h2>
+  <div class="h2rule"></div>
+
+  <figure class="photo">
+  <img src="baudrillard_portrait.jpg" alt="장 보드리야르" loading="lazy">
+  <figcaption>장 보드리야르(1929~2007). 『소비의 사회』, 『시뮬라크르와 시뮬라시옹』.</figcaption>
+  <div class="credit">en:User:Europeangraduateschool · CC BY-SA 2.5 · <a href="https://commons.wikimedia.org/wiki/File:WikipediaBaudrillard20040612.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+</figure>
+
+  <div class="duo">
+    <div class="a">
+      <h5>전통적 관점</h5>
+      <span class="tag">미메시스 — 실재의 모방</span>
+      <ul>
+        <li>이미지의 품질은 <b>실재와 닮은 정도</b>로 평가됨</li>
+        <li>이미지는 <b>실재에서 파생되는 부차적 산물</b>임</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>보드리야르의 관점</h5>
+      <span class="tag">시뮬라시옹</span>
+      <ul>
+        <li>실재를 <b>변질시키거나 감추는 방식</b>으로 이미지를 생산함</li>
+        <li>복제 이미지가 <b>실재보다 더 강력한 힘</b>을 발휘함</li>
+        <li><b>원본과 복제의 위상이 뒤집힘</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">4~5주차 벤야민과의 결정적 차이</span>
+    <ul style="margin-bottom:0">
+      <li><b>벤야민</b> — 원본이 <b>있고</b>, 복제가 아우라를 없앰 → <strong>상실의 이야기임.</strong></li>
+      <li><b>보드리야르</b> — 원본이 <b>없음</b> → <strong>상실할 것조차 없다는 이야기임.</strong></li>
+      <li>심혜련의 3단계로 정리하면 — <b>복제</b>(벤야민) → <b>변형</b> → <b>생성</b>(보드리야르의 자리). <em>4~5주차에서 예고한 지점이 오늘 도착함.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3">
+  <h2><span class="num">03</span>플라톤의 귀환</h2>
+  <div class="h2rule"></div>
+
+  <h3>이데아론과 동굴 비유</h3>
+  <ul>
+    <li>인간 세계는 <b>이데아를 모방한 가상</b>임.</li>
+    <li>예술은 <b>가상을 복제한 2차 가상</b>임 → 추방해야 함.</li>
+    <li>순서는 <b>이데아 → 현실 → 가상</b>임.</li>
+  </ul>
+
+  <div class="chain">
+    <div class="node"><div class="t">이데아</div><div class="d">본질</div></div>
+    <div class="arw">→</div>
+    <div class="node"><div class="t">에이콘</div><div class="d">본질을 보존한 복제<br>= 현실</div></div>
+    <div class="arw">→</div>
+    <div class="node mid"><div class="t">판타스마타</div><div class="d">관계가 모호한 2차 복제<br>= 시뮬라크르</div></div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">에이콘과 판타스마타를 쉽게 구별하는 법</span>
+    <ul style="margin-bottom:0">
+      <li>침대를 <b>설계도대로</b> 만든 목수의 침대 = <b>에이콘</b>. 이데아를 담고 있음.</li>
+      <li>그 침대를 <b>비스듬히 그린</b> 화가의 그림 = <b>판타스마타</b>. 한 각도에서만 그럴듯함.</li>
+      <li>플라톤은 화가를 쫓아내려 했음. <em>"보이는 대로 그린 것은 있는 것이 아니다."</em></li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">2,400년의 원환</span>
+    <ul style="margin-bottom:0">
+      <li>2주차 — 플라톤은 <b>문자</b>를 추방하려 했음. <em>기억의 가상.</em></li>
+      <li>오늘 — 플라톤은 <b>판타스마타</b>를 추방하려 했음. <em>실재의 가상.</em></li>
+      <li><strong>같은 몸짓임.</strong> 플라톤은 늘 <b>매개된 것</b>을 의심함.</li>
+      <li>그리고 보드리야르는 이렇게 답함 — <strong>"추방할 원본이 애초에 없음."</strong> <em>플라톤의 이데아 자체가 하나의 시뮬라크르였다면 어떻게 되는가.</em></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">〈매트릭스〉 일화 — 이 하나로 개념이 정확히 전달됨</span>
+    <ul style="margin-bottom:0">
+      <li>〈매트릭스〉(1999)에는 실제로 『시뮬라크르와 시뮬라시옹』 책이 <b>소품으로</b> 나옴. 감독이 배우들에게 읽게 했음.</li>
+      <li>그런데 보드리야르 본인은 <strong>"영화가 내 이론을 오해했다"</strong>고 함.</li>
+      <li><b>왜인가</b> — 영화는 매트릭스 <b>바깥에 진짜 현실(시온)이 있다</b>고 설정함.</li>
+      <li><strong>보드리야르에게는 바깥이 없음.</strong> <em>빨간 약을 먹어도 나올 곳이 없음.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 04 -->
+<section id="s4">
+  <h2><span class="num">04</span>시뮬라크르의 4단계</h2>
+  <div class="h2rule"></div>
+  <p class="lede">오늘의 핵심 도구임.</p>
+
+  <div class="tline">
+    <div class="row">
+      <div class="when">1단계 — 실재의 반영<span>있는 그대로 재현</span></div>
+      <div class="who">전통 — 초상화, 다큐멘터리 사진 / 지금 — <b>무보정 사진</b></div>
+    </div>
+    <div class="row">
+      <div class="when">2단계 — 실재의 변형<span>감추고 변질시킴</span></div>
+      <div class="who">전통 — 미화된 초상화, 수정된 보도사진 / 지금 — <b>보정, 필터</b></div>
+    </div>
+    <div class="row">
+      <div class="when">3단계 — 실재의 은폐<span>관련 없음을 숨김</span></div>
+      <div class="who">전통 — 광고 속 '자연스러운 일상' / 지금 — <b>연출된 브이로그, "협찬 아님" 표시</b></div>
+    </div>
+    <div class="row now">
+      <div class="when">4단계 — 순수 시뮬라크르<span>원본 없는 복제</span></div>
+      <div class="who">전통 — <b>없음</b> / 지금 — <b>생성 이미지, 딥페이크, 버추얼 인플루언서</b></div>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">가장 헷갈리는 지점 — 2·3·4단계의 차이</span>
+    <ul style="margin-bottom:0">
+      <li><b>2단계</b> — 원본이 있는데 <b>바꿨음.</b> 원본이 있음을 앎.</li>
+      <li><b>3단계</b> — 원본이 없는데 <b>있는 척함.</b> 없음을 숨김.</li>
+      <li><b>4단계</b> — 원본이 없고 <strong>숨길 필요도 없음.</strong> 아무도 원본을 찾지 않음.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">하나의 사례로 네 단계 통과하기 — 아이돌 사진</span>
+    <ul style="margin-bottom:0">
+      <li>공연장에서 팬이 찍은 사진 → <b>1단계</b></li>
+      <li>소속사가 보정한 공식 사진 → <b>2단계</b></li>
+      <li>"자연스러운 일상"으로 연출된 셀카 → <b>3단계</b></li>
+      <li>AI로 만든 버추얼 아이돌 → <b>4단계</b></li>
+      <li>→ <strong>같은 장르 안에서 네 단계가 동시에 존재함.</strong> 이것이 지금의 조건임.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">스스로 물어볼 것 — 딥페이크는 몇 단계인가</span>
+    <ul style="margin-bottom:0">
+      <li>실존 인물의 얼굴을 씀 → 원본이 있음 → <b>2단계?</b></li>
+      <li>그 사람이 하지 않은 말을 하게 함 → 실재와 무관 → <b>3단계?</b></li>
+      <li>그런데 그 영상 자체는 <b>아무것도 복제하지 않았음</b> → <b>4단계?</b></li>
+      <li><strong>답이 갈리는 것이 정상임.</strong> <em>갈리는 이유를 설명하는 것이 답임.</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 05 -->
+<section id="s5">
+  <h2><span class="num">05</span>하이퍼리얼리티</h2>
+  <div class="h2rule"></div>
+
+  <ul>
+    <li>시뮬라크르가 지배하는 세계임.</li>
+    <li><strong>실재보다 더 실재 같은 가상</strong>임.</li>
+    <li><b>실재의 소멸</b>이 따라옴. 사례는 리얼리티쇼와 광고임.</li>
+  </ul>
+
+  <div class="box key">
+    <span class="bt">"리얼리티쇼"라는 말 자체가 증거임</span>
+    <p style="margin-bottom:0">왜 현실에 '쇼'를 붙여야 하는가. <strong>현실이 그 자체로는 충분히 현실적이지 않기 때문임.</strong></p>
+  </div>
+
+  <div class="box note">
+    <span class="bt">하이퍼리얼의 일상 사례</span>
+    <ul style="margin-bottom:0">
+      <li>여행지에 갔더니 <b>사진보다 실망스러웠음.</b> <em>무엇이 원본인가.</em></li>
+      <li>음식 사진이 실물보다 맛있어 보임. 그런데 <b>사진에 맞춰 실물을 바꿈.</b></li>
+      <li>"날 것 그대로"를 강조하는 콘텐츠일수록 <strong>편집이 정교함.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 06 -->
+<section id="s6">
+  <h2><span class="num">06</span>저지기계</h2>
+  <div class="h2rule"></div>
+
+  <h3>실재의 가상성</h3>
+  <ul>
+    <li>실재로 믿었던 것의 <b>허구성이 폭로</b>됨. <b>실재의 조작 가능성.</b></li>
+    <li>실재의 가상성을 <b>은폐하기 위해</b> 하이퍼리얼리티를 만들어냄.</li>
+    <li>모든 세상은 환상에 불과함 → <b>허무주의.</b></li>
+  </ul>
+
+  <div class="box easy">
+    <span class="bt">성상파괴 운동을 어떻게 읽는가</span>
+    <ul style="margin-bottom:0">
+      <li>성상을 부수는 사람들은 <em>"이 그림은 신이 아니다"</em>라고 말함.</li>
+      <li>그런데 그렇게 말함으로써 <strong>"그림 너머에 진짜 신이 있다"</strong>는 것을 확인함.</li>
+      <li>보드리야르 — 그들이 진짜로 두려워한 것은 <strong>그림 너머에 아무것도 없다는 것</strong>이었음.</li>
+    </ul>
+  </div>
+
+  <figure class="photo">
+  <img src="disneyland_entrance.jpg" alt="디즈니랜드 입구" loading="lazy">
+  <figcaption>보드리야르가 든 <b>저지기계</b>의 대표 사례.</figcaption>
+  <div class="credit">Patrick Pelletier · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Disneyland_Entrance_Balloons_2014.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+</figure>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:20%">사례</th><th style="width:32%">표면</th><th>실제 기능</th></tr></thead>
+    <tbody>
+      <tr><td><b>디즈니랜드</b></td><td>시뮬라크르의 완벽한 모델</td><td><b>미국 자체가 환상의 디즈니랜드라는 점을 은폐함</b></td></tr>
+      <tr><td><b>워터게이트</b></td><td>추악한 정치적 스캔들</td><td><b>정치 자체가 스캔들이라는 점을 은폐함.</b> 최고 권력자를 탄핵함으로써 <b>"민주주의는 작동한다"</b>는 믿음을 주입함</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">저지기계의 구조 — 정확히 이해할 것</span>
+    <ul style="margin-bottom:0">
+      <li><b>실재가 실제로 등장하는 돌발사태를 저지함.</b> <b>실재의 허구를 미리 역으로 재생함.</b></li>
+      <li>"여기가 가짜다"라고 표시된 구역을 만들면 → <strong>"저기는 진짜다"</strong>라는 믿음이 생김.</li>
+      <li><strong>가짜를 지정하는 것이 진짜를 보증하는 방법임.</strong></li>
+      <li>그리고 보드리야르 — <b>진짜는 없음.</b> 가짜 구역이 바로 그 부재를 감추는 장치임.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">스스로 물어볼 것 — 이것들은 저지기계인가</span>
+    <ul style="margin-bottom:0">
+      <li><b>"광고"라는 표시</b> — 나머지 콘텐츠는 광고가 아니라는 믿음을 만드는가.</li>
+      <li><b>"AI 생성" 워터마크</b> — 워터마크 없는 것은 사람이 만들었다는 믿음을 만드는가.</li>
+      <li><b>공인의 사과 기자회견</b> — 산업 구조는 묻지 않게 하는가.</li>
+      <li><b>표절 검사 프로그램</b> — 검사를 통과하면 정직한 글이라는 믿음을 만드는가.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">오늘의 어려운 물음 — AI 윤리 담론은 저지기계인가</span>
+    <ul style="margin-bottom:0">
+      <li>디즈니랜드가 미국 전체가 환상임을 은폐하듯, <strong>"AI 윤리", "책임 있는 AI", "AI 안전" 담론이 은폐하는 것은 무엇인가.</strong></li>
+      <li>가능한 답 — "여기가 위험 구역"이라고 표시함으로써 <b>나머지는 안전하다</b>는 믿음을 만듦. 가이드라인의 존재가 <b>문제가 관리되고 있다</b>는 인상을 줌. 개별 편향 사례를 다룸으로써 <b>구조 자체는 묻지 않게</b> 함.</li>
+      <li><b>반론도 함께 생각할 것</b> — <em>그렇다면 윤리 논의를 그만두자는 것인가.</em> <strong>보드리야르의 허무주의는 어디로 가는가.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 07 -->
+<section id="s7">
+  <h2><span class="num">07</span>기호 중심의 소비사회</h2>
+  <div class="h2rule"></div>
+
+  <div class="chain">
+    <div class="node"><div class="t">노동가치</div><div class="d">생산</div></div>
+    <div class="arw">→</div>
+    <div class="node"><div class="t">사용가치</div><div class="d">소비</div></div>
+    <div class="arw">→</div>
+    <div class="node mid"><div class="t">기호가치</div><div class="d">과시소비</div></div>
+  </div>
+
+  <ul>
+    <li><b>자신의 포장을 위한 소비</b>임. <strong>상품 자체보다 상품에 덧칠된 의미를 구매함.</strong></li>
+    <li><b>기호로 타인과 구별함</b> — 특정 상품을 소비하며 사회적 지위와 경제력을 드러냄. 집단 소속감과 구분을 위해 기호를 소비함.</li>
+    <li><b>미디어가 기호소비를 촉진함</b> — 광고를 통해 특정 상품의 <b>의미</b>를 전달함.</li>
+  </ul>
+
+  <div class="box warn">
+    <span class="bt">인간의 소외</span>
+    <ul style="margin-bottom:0">
+      <li><strong>존재 가치가 소유한 상품의 기호로 드러남.</strong></li>
+      <li>기호 질서 속에서 <b>내면 성찰이 부족</b>해짐.</li>
+      <li><b>자아의식과 개성이 상실</b>됨.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">지금 적용 — 기호가 된 것들</span>
+    <ul style="margin-bottom:0">
+      <li>프로필 사진, 피드의 미감, 사용하는 앱.</li>
+      <li><strong>"나는 ○○ AI를 쓴다"</strong>가 정체성 표시가 되는 순간, 그것은 기호 소비임.</li>
+      <li>노트북 뚜껑의 로고, 텀블러 브랜드, 읽고 있는 책의 표지.</li>
+      <li>→ 6주차 아도르노의 <b>유사개인화</b>와 겹침. 다만 아도르노는 <b>자본</b>을, 보드리야르는 <b>기호 체계 자체</b>를 지목함.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 08 -->
+<section id="s8">
+  <h2><span class="num">08</span>혼종화와 디지털 페르소나</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">심혜련(2024) I부 3장 「매체 공간의 혼종화」 <b>pp.93~122</b> + I부 4장 4절 「디지털 헤테로토피아에서의 디지털 페르소나」 <b>pp.142~148</b>.</p>
+
+  <ul>
+    <li><b>I부 3장</b> — 물리적 공간과 매체 공간이 뒤섞이는 방식임. <em>실재/가상 이분법의 대안임.</em></li>
+    <li><b>I부 4장 4절</b> — 디지털 공간에서 만들어지는 <b>또 다른 나</b>임.</li>
+  </ul>
+
+  <div class="box easy">
+    <span class="bt">'헤테로토피아'란 — 푸코의 개념</span>
+    <p style="margin-bottom:0">현실 속에 있으면서 현실과 <b>다른 규칙이 작동하는 공간</b>임. 극장, 정원, 묘지, 놀이공원. <strong>가짜가 아니라 다른 규칙의 현실임.</strong> 심혜련은 디지털 공간을 그렇게 봄.</p>
+  </div>
+
+  <div class="duo">
+    <div class="a">
+      <h5>보드리야르</h5>
+      <span class="tag">실재의 소멸</span>
+      <ul>
+        <li>강점 — 구조를 폭로함. <b>저지기계</b> 같은 날카로운 도구를 줌</li>
+        <li>약점 — <b>그래서 무엇을 할 것인가</b>에 답하지 않음. 허무주의로 끝남</li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>심혜련</h5>
+      <span class="tag">혼종화</span>
+      <ul>
+        <li>강점 — <b>실천 가능한 서술</b>을 줌. 실재와 가상이 뒤섞인 새로운 조건</li>
+        <li>약점 — 비판의 날이 무뎌질 수 있음</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">스스로 물어볼 것</span>
+    <p style="margin-bottom:0"><strong>버추얼 인플루언서는 시뮬라크르인가, 디지털 페르소나인가.</strong> 어느 개념이 이 현상을 더 잘 설명하는가. <em>무엇이 달라지는가.</em></p>
+  </div>
+</section>
+
+<!-- 09 -->
+<section id="s9">
+  <h2><span class="num">09</span>GAN과 적대적 학습</h2>
+  <div class="h2rule"></div>
+
+  <p class="lede">변정수(2025) 4부 9장 「GAN 알고리즘과 이드·자아·초자아」.</p>
+
+  <div class="chain">
+    <div class="node"><div class="t">생성자</div><div class="d">가짜 데이터를 만듦<br>판별자를 속이도록 학습</div></div>
+    <div class="arw">⇄</div>
+    <div class="node mid"><div class="t">적대적 학습</div><div class="d">둘이 서로를<br>훈련시킴</div></div>
+    <div class="arw">⇄</div>
+    <div class="node"><div class="t">판별자</div><div class="d">진짜/가짜를 판정<br>속지 않도록 학습</div></div>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">비유 — 위조범과 감정사</span>
+    <p style="margin-bottom:0">위조범이 그림을 만듦. 감정사가 가짜를 골라냄. 위조범은 더 잘 만들고, 감정사는 더 잘 골라냄. <strong>둘이 서로를 훈련시킴.</strong> 결국 감정사도 못 알아보는 그림이 나옴. 그런데 그 그림은 <em>어떤 원작의 위조도 아님.</em></p>
+  </div>
+
+  <h3>프로이트 삼항과의 유비</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">GAN</th><th>프로이트</th></tr></thead>
+    <tbody>
+      <tr><td><b>생성자</b> — 무엇이든 만들어냄</td><td><b>이드</b> — 충동, 검열 없음</td></tr>
+      <tr><td><b>판별자</b> — 통과 여부를 심판함</td><td><b>초자아</b> — 내면화된 금지</td></tr>
+      <tr><td><b>균형점의 출력</b></td><td><b>자아</b> — 둘 사이에서 조정된 결과</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">보드리야르와의 연결 (1) — 원본 없는 복제의 기계화</span>
+    <ul style="margin-bottom:0">
+      <li>GAN에는 <strong>베껴야 할 특정 원본이 없음.</strong></li>
+      <li>학습 분포를 닮되 <b>그중 어느 것도 아닌 것</b>을 만듦.</li>
+      <li>→ <strong>4단계 시뮬라크르의 정확한 기계적 구현임.</strong></li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">보드리야르와의 연결 (2) — 유비는 어디서 깨지는가</span>
+    <ul style="margin-bottom:0">
+      <li>프로이트의 초자아는 <b>사회적 규범</b>을 내면화한 것임.</li>
+      <li>GAN의 판별자는 <b>데이터 분포</b>를 학습한 것임.</li>
+      <li><strong>규범과 분포는 같은 것인가.</strong></li>
+      <li>→ <b>"많이 있는 것"이 "옳은 것"이 되는 구조임.</b></li>
+      <li>→ 6주차 아도르노의 동일성 원칙과 직결됨. <em>다수 분포가 규범이 되면 <b>비동일자는 '가짜'로 판정됨.</b></em></li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">확장 물음</span>
+    <ul style="margin-bottom:0">
+      <li>현행 거대언어모델의 <b>정렬(alignment)</b>은 이 구조의 확장인가.</li>
+      <li><b>생성 → 검열 → 정렬</b>이 GAN의 삼항과 같은 구조인가.</li>
+      <li>그렇다면 '정렬된 모델'의 출력은 <b>자아</b>인가. 그리고 <strong>누구의 초자아를 내면화한 것인가.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 10 -->
+<section id="s10">
+  <h2><span class="num">10</span>정리 · 흔한 오해 · 토론</h2>
+  <div class="h2rule"></div>
+
+  <h3>이번 주 개념 다섯</h3>
+  <ol class="steps">
+    <li><b>시뮬라크르 / 시뮬라시옹</b>
+      원본 없는 복제와, <em>그것을 만들어내는 작용.</em></li>
+    <li><b>4단계</b>
+      반영 → 변형 → 은폐 → <strong>원본 없는 복제.</strong></li>
+    <li><b>하이퍼리얼리티</b>
+      실재보다 더 실재 같은 가상. <em>실재의 소멸.</em></li>
+    <li><b>저지기계</b>
+      <strong>가짜 구역을 지정해 나머지가 진짜라고 믿게 만드는 장치임.</strong></li>
+    <li><b>기호가치</b>
+      상품의 쓸모가 아니라 <em>그것이 나타내는 사회적 의미.</em></li>
+  </ol>
+
+  <h3>흔한 오해 셋</h3>
+  <div class="box warn">
+    <span class="bt">오해 1 — "시뮬라크르 = 가짜"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 시뮬라크르는 가짜가 아님. <strong>가짜는 진짜를 전제함.</strong></li>
+      <li>시뮬라크르는 <b>진짜가 없는 상태</b>임. <em>이 구별을 놓치면 오늘 내용 전체가 무너짐.</em></li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 2 — "하이퍼리얼리티 = 진짜 같은 가짜"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 정확히는 <strong>"진짜보다 더 진짜 같은 것"</strong>임.</li>
+      <li>그래서 <b>진짜가 오히려 초라해짐.</b></li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="bt">오해 3 — "보드리야르는 매트릭스처럼 진실을 깨우라고 했다"</span>
+    <ul style="margin-bottom:0">
+      <li><b>교정</b> — 보드리야르는 <strong>영화가 자기 이론을 오해했다</strong>고 함.</li>
+      <li>매트릭스에는 <b>바깥(시온)</b>이 있지만, 보드리야르에게는 <b>바깥이 없음.</b></li>
+    </ul>
+  </div>
+
+  <h3>토론 질문</h3>
+  <ol class="qs">
+    <li><b>딥페이크는 시뮬라크르 4단계 중 어디인가.</b><br>그리고 생성자/판별자의 적대적 학습은 "원본 없는 복제의 기계화"인가.</li>
+    <li><b>AI 윤리 담론은 저지기계인가.</b><br>디즈니랜드가 미국 전체가 환상임을 은폐하듯, "AI 윤리"가 은폐하는 것은 무엇인가. 그리고 이 물음에 대한 <b>반론</b>은 무엇인가.</li>
+    <li><b>버추얼 인플루언서는 시뮬라크르인가, 디지털 페르소나인가.</b><br>어느 개념이 이 현상을 더 잘 설명하는가.</li>
+    <li><b>프로이트 삼항과 생성-검열-정렬의 유비는 어디서 깨지는가.</b><br>특히 <b>초자아는 규범이고 판별자는 분포임.</b> 이 차이는 결정적인가.</li>
+    <li><b>실재의 소멸인가 혼종화인가.</b><br>각 진단이 우리에게 허락하는 <b>행동</b>은 무엇인가.</li>
+    <li><b>우리는 지금 무엇을 근거로 "이건 가짜다"라고 말하는가.</b><br>팩트체크·워터마크·출처표시는 무엇을 전제하는 실천인가.</li>
+  </ol>
+</section>
+
+<!-- 11 -->
+<section id="s11">
+  <h2><span class="num">11</span>참고자료</h2>
+  <div class="h2rule"></div>
+
+  <div class="refs">
+    <h4>이번 주 읽기</h4>
+    <ul>
+      <li><b>B</b> 심혜련 (2012). 『20세기의 매체철학』 — 2부 2장</li>
+      <li><b>C</b> 심혜련 (2024). 『21세기의 매체철학』 — I부 3장 pp.93~122 / I부 4장 4절 pp.142~148</li>
+      <li><b>D</b> 변정수 (2025). 『알고리즘으로 철학하기』 — 4부 9장</li>
+    </ul>
+
+    <h4>원전</h4>
+    <ul>
+      <li>장 보드리야르. 『시뮬라크르와 시뮬라시옹』 — <b>1장 「시뮬라크르의 자전」과 디즈니랜드 대목만.</b> <span class="cite">짧고 강렬함</span></li>
+      <li>장 보드리야르. 『소비의 사회』 — 기호가치 대목</li>
+      <li>미셸 푸코. 「다른 공간들」 <span class="cite">헤테로토피아. 짧은 강연문</span></li>
+    </ul>
+
+    <h4>영상</h4>
+    <ul>
+      <li>영화 〈매트릭스〉(1999) — 소품으로 등장하는 『시뮬라크르와 시뮬라시옹』</li>
+      <li>영화 〈트루먼쇼〉(1998)</li>
+    </ul>
+
+    <h4>이어지는 주차</h4>
+    <ul>
+      <li><a href="12_키틀러_기록체계.html"><b>12주차 — 프리드리히 키틀러: 기록체계</b></a> <span class="axtag sym">상징성 · 물질성</span><br>보드리야르가 <b>기호</b>를 말했다면, 키틀러는 그 기호를 <b>기록하는 하드웨어</b>를 말함.</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
+  <p style="margin:0"><b style="color:var(--navy)">매체철학 2026-2학기 · 11주차 강의자료</b><br>
+  주 출처: 강의 슬라이드 「보드리야르」 · 심혜련 『20세기의 매체철학』 2부 2장</p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="09_토론토학파_이니스_옹_맥루언.html">← 9~10주차</a> &nbsp;·&nbsp; <a href="12_키틀러_기록체계.html">12주차 →</a></p>
+</footer>
+
+</div>
+</main>
+</div>
+
+<div id="scrim"></div>
+<button id="totop" aria-label="맨 위로">↑</button>
+
+<script src="lecture.js"></script>
+</body>
+</html>
