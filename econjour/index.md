@@ -6,6 +6,7 @@
 **상담 시간** 월·수 16:30~18:00 (사전 약속에 따라 변경 가능 · 620호 연구실 또는 408호 랩)   
 **e-campus** <https://e-campus.khu.ac.kr> — 수업 시간 이외의 경제뉴스 관련 질문·의견 교환과 과제 제출   
 **수업 내 실시간 설문조사** <https://jonghhhh-inclass-poll.hf.space/>     
+**출석점검** [자동출석기](https://jonghhhh.github.io/test/attendance_econjour.html)     
 
 > 📊 **[경제 데이터 분석실](data.html)**
 > 국내외 주요 경제지표의 **발표 일정**, 경제 정책·지표 중심 **뉴스 읽기 경로**, **데이터 사이트**,
@@ -81,7 +82,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의·실습) [경제 통계와 지표](lectures/02_경제통계와지표.html)
+- (강의·실습) **[경제 통계와 지표](lectures/02_경제통계와지표.html)** — 웹 강의자료
 - (보도자료)
 - (뉴스)
 
@@ -94,7 +95,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [국민생산과 소득](03_국민생산과소득.html)
+- (강의) [국민생산과 소득](lectures/03_국민생산과소득.html)
 - (보도자료)
 - (뉴스)
 
@@ -105,7 +106,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [경기순환과 경제심리](04_경기순환과경제심리.html)
+- (강의) [경기순환과 경제심리](lectures/04_경기순환과경제심리.html)
 - (보도자료)
 - (뉴스)
 
@@ -118,7 +119,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [고용과 일자리](05_고용과일자리html)
+- (강의) [고용과 일자리](lectures/05_고용과일자리.html)
 - (보도자료)
 - (뉴스)
 
@@ -129,7 +130,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [물가](06_물가.html)
+- (강의) [물가](lectures/06_물가.html)
 - (보도자료)
 - (뉴스)
 
@@ -142,7 +143,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [경제 위기와 극복](07_경제위기와극복.html)
+- (강의) [경제 위기와 극복](lectures/07_경제위기와극복.html)
 - (보도자료)
 - (뉴스)
 
@@ -159,7 +160,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [통화](09_통화.html)
+- (강의) [통화](lectures/09_통화.html)
 - (보도자료)
 - (뉴스)
 
@@ -170,7 +171,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [금리와 채권](10_금리와채권.html)
+- (강의) [금리와 채권](lectures/10_금리와채권.html)
 - (보도자료)
 - (뉴스)
 
@@ -183,7 +184,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [가계: 부동산과 가계부채](11_가계_부동산과가계부채.html)
+- (강의) [가계: 부동산과 가계부채](lectures/11_가계_부동산과가계부채.html)
 - (보도자료)
 - (뉴스)
 
@@ -194,7 +195,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [기업과 주식 (1): 재무제표와 공시](12_기업과주식_1_재무제표와공시.html)
+- (강의) [기업과 주식 (1): 재무제표와 공시](lectures/12_기업과주식_1_재무제표와공시.html)
 - (보도자료)
 - (뉴스)
 
@@ -205,7 +206,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [기업과 주식 (2): 주가와 기업보도](13_기업과주식_2_주가와기업보도.html)
+- (강의) [기업과 주식 (2): 주가와 기업보도](lectures/13_기업과주식_2_주가와기업보도.html)
 - (보도자료)
 - (뉴스)
 
@@ -216,8 +217,8 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [정부재정](14_정부재정.html)
-- (강의) [소득분배와 인구](14b_소득분배와인구.html)
+- (강의) [정부재정](lectures/14_정부재정.html)
+- (강의) [소득분배와 인구](lectures/14b_소득분배와인구.html)
 - (보도자료)
 - (뉴스)
 
@@ -230,7 +231,7 @@
 <details markdown="1">
 <summary>📖 강의 내용 보기</summary>
 
-- (강의) [무역과 환율](15_무역과환율.html)
+- (강의) [무역과 환율](lectures/15_무역과환율.html)
 - (보도자료)
 - (뉴스)
 

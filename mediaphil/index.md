@@ -6,6 +6,7 @@
 **상담 시간** 월·수 16:30~18:00 (사전 약속에 따라 변경 가능 · 연구실 또는 408호 랩)  
 **e-campus** <https://e-campus.khu.ac.kr> — 수업 시간 이외의 질문·의견 교환과 과제 제출   
 **수업 내 실시간 설문조사** <https://jonghhhh-inclass-poll.hf.space/>    
+**출석점검** [자동출석기](https://jonghhhh.github.io/test/attendance_mediaphil.html)    
 
 ## 수업 개요
 
