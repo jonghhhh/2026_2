@@ -96,8 +96,12 @@
 <summary>📖 강의 내용 보기</summary>
 
 - (강의) [국민생산과 소득](lectures/03_국민생산과소득.html)
-- (보도자료)
+- (보도자료) [한국은행_2026년 24분기 국민소득(잠정)](lectures/한국은행_2026년 24분기 국민소득(잠정).pdf)  
 - (뉴스)
+KBS (2026-09-09) [올해 2분기 GDP 0.6% 성장…명목 GDP 47년 만 최고치](https://news.kbs.co.kr/news/pc/view/view.do?ncd=8658406)  
+매일경제 (2026-09-08) [국민소득 4만달러 고지 보인다…명목GDP 47년만에 최고 상승률](https://stock.mk.co.kr/news/view/1155422)  
+중앙일보 (2026-09-08) [“국민소득 4만달러 유력”…돌파 땐 인구 5000만 이상 국가 중 6번째](https://www.joongang.co.kr/article/25460234)  
+연합인포맥스 (2026-09-08) [韓 2분기 GDP 0.6% 성장·속보치 유지…GNI 3.1%↑(종합)](https://news.einfomax.co.kr/news/articleView.html?idxno=4433887) 
 
 </details>
 
