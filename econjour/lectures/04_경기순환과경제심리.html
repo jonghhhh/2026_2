@@ -349,6 +349,27 @@
   </li>
 </ul>
 
+<div class="box note">
+  <span class="bt">사례 — 광공업 생산확산지수</span>
+  <p>국가데이터처(옛 통계청)는 「광업제조업동향조사」로 <b>광공업 생산확산지수</b>를 작성함. 광공업을 수십 개 업종으로 나눈 뒤 <strong>생산이 전월보다 늘어난 업종이 몇 개인지</strong>를 셈. 업종 수는 기준년도 개편 때 바뀜(80개 → 75개 등).</p>
+  <p style="margin-bottom:6px"><code>생산확산지수 = (증가 업종 수 + 보합 업종 수 × 0.5) ÷ 전체 업종 수 × 100</code></p>
+  <div class="tw" style="margin:8px 0 10px">
+  <table>
+    <thead><tr><th style="width:18%">시점</th><th style="width:30%">업종 집계</th><th style="width:20%">계산</th><th>읽는 법</th></tr></thead>
+    <tbody>
+      <tr><td><b>2016년 12월</b></td><td>80개 중 증가 37 · 감소 43 · 보합 0</td><td>37 ÷ 80 × 100 = <b>46.3</b></td><td>그해 반도체 생산은 전년 대비 21.1% 늘어 광공업생산 전체를 끌어올렸지만, 확산지수는 12개월 중 6번이나 50 미만이었음. <em>"생산은 늘었는데 업종 대부분은 체감 못 함"</em>의 전형.</td></tr>
+      <tr><td><b>2017년 1월</b></td><td>80개 중 증가 59 · 감소 20 · 보합 1</td><td>(59 + 0.5) ÷ 80 × 100 ≈ <b>74.4</b></td><td>3년여 만의 최고치. 반도체 회복세가 <strong>다른 업종으로 번지기 시작</strong>했다는 신호로 읽힘.</td></tr>
+      <tr><td><b>2018년 3월</b></td><td>75개 중 증가 20 · 감소 55 · 보합 0</td><td>20 ÷ 75 × 100 = <b>26.7</b></td><td>3년 5개월 만의 최저치. 5개월 연속 50 미만으로 <em>2008년 금융위기 이후 최장</em>이었음.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul style="margin-bottom:0">
+    <li><b>광공업생산지수와 무엇이 다른가</b> — 생산지수는 업종별 <b>부가가치 가중치</b>를 씀. 반도체처럼 비중이 큰 업종이 크게 늘면 나머지가 줄어도 전체가 오름. 확산지수는 <strong>가중치 없이 업종마다 한 표</strong>이고, 증감 <b>폭</b>이 아니라 <b>방향</b>만 셈.</li>
+    <li><b>기사에서 쓰는 법</b> — "광공업생산 ○% 증가"와 "생산확산지수 50 미만"이 같은 달에 나오면, <em>"성장이 소수 업종에 쏠려 있다"</em>고 쓸 근거가 생김.</li>
+    <li>시계열은 KOSIS 「광업제조업동향조사」에서 찾을 수 있음. 위 수치는 당시 통계청 자료를 인용한 보도 기준임.</li>
+  </ul>
+</div>
+
 <div class="box easy">
   <span class="bt">BSI·CSI는 확산지수가 아님 — 계산 원리만 비슷함</span>
   <p style="margin-bottom:0">
@@ -466,7 +487,7 @@
       <tbody>
         <tr><td>생산</td><td><b>재고순환지표</b></td><td>생산자제품제조업출하 전년동월비 − 생산자제품제조업재고 전년동월비</td><td>국가데이터처</td></tr>
         <tr><td>생산·소비</td><td><b>경제심리지수(ESI)</b></td><td>BSI(32개), CSI(17개) 중 <b>경기대응성이 높은 7개 항목의 가중평균</b> <span class="cite">→ 06절</span></td><td>한국은행</td></tr>
-        <tr><td>투자</td><td><b>기계류내수출하지수</b></td><td>설비용기계류에 해당하는 69개 품목(선박 제외)</td><td>국가데이터처</td></tr>
+        <tr><td>투자</td><td><b>기계류내수출하지수</b></td><td>설비용 기계류 품목의 내수 출하(선박 제외)</td><td>국가데이터처</td></tr>
         <tr><td>투자</td><td><b>건설수주액(실질)</b></td><td>종합건설업체의 국내건설공사 수주액 <span class="cite">기성이 아니라 수주임</span></td><td>국가데이터처</td></tr>
         <tr><td>대외</td><td><b>수출입물가비율</b></td><td>수출물가지수 ÷ 수입물가지수 × 100</td><td>한국은행</td></tr>
         <tr><td>금융</td><td><b>코스피</b></td><td>월평균</td><td>한국거래소</td></tr>
@@ -487,7 +508,7 @@
       <thead><tr><th style="width:14%">경제부문</th><th style="width:26%">지표명</th><th>내용</th><th style="width:16%">작성기관</th></tr></thead>
       <tbody>
         <tr><td>고용</td><td><b>비농림어업취업자수</b></td><td>취업자수 − 농림어업취업자수</td><td>국가데이터처</td></tr>
-        <tr><td>생산</td><td><b>광공업생산지수</b></td><td>광업, 제조업, 전기·가스업(대표품목 485개)</td><td>국가데이터처</td></tr>
+        <tr><td>생산</td><td><b>광공업생산지수</b></td><td>광업, 제조업, 전기·가스업</td><td>국가데이터처</td></tr>
         <tr><td>생산</td><td><b>서비스업생산지수</b></td><td>도소매업 제외</td><td>국가데이터처</td></tr>
         <tr><td>소비</td><td><b>소매판매액지수</b></td><td>소매업, 자동차판매 중 승용차</td><td>국가데이터처</td></tr>
         <tr><td>소비</td><td><b>내수출하지수</b></td><td>광업, 제조업, 전기·가스업(내수용)</td><td>국가데이터처</td></tr>
@@ -509,8 +530,8 @@
       <thead><tr><th style="width:14%">경제부문</th><th style="width:26%">지표명</th><th>내용</th><th style="width:16%">작성기관</th></tr></thead>
       <tbody>
         <tr><td>고용</td><td><b>취업자수</b></td><td>경제활동인구 중 취업자수 <span class="cite">→ 5주차 고용</span></td><td>국가데이터처</td></tr>
-        <tr><td>생산</td><td><b>생산자제품재고지수</b></td><td>광업·제조업(대표품목 417개) <span class="cite">→ 04절 재고·출하 순환</span></td><td>국가데이터처</td></tr>
-        <tr><td>소비</td><td><b>소비자물가지수변화율(서비스)</b></td><td>서비스 152개 품목 물가지수의 전년동월 대비 변화율 <span class="cite">→ 6주차 물가</span></td><td>국가데이터처</td></tr>
+        <tr><td>생산</td><td><b>생산자제품재고지수</b></td><td>광업·제조업의 생산자 제품 재고 <span class="cite">→ 04절 재고·출하 순환</span></td><td>국가데이터처</td></tr>
+        <tr><td>소비</td><td><b>소비자물가지수변화율(서비스)</b></td><td>소비자물가지수 중 서비스 부문의 전년동월 대비 변화율 <span class="cite">→ 6주차 물가</span></td><td>국가데이터처</td></tr>
         <tr><td>대외</td><td><b>소비재수입액(실질)</b></td><td>소비재수입액 ÷ 소비재수입물가지수</td><td>관세청</td></tr>
         <tr><td>금융</td><td><b>CP유통수익률</b></td><td>CP(Commercial Paper, 기업어음) 91일물의 단순평균수익률 <span class="cite">→ 10주차 금리</span></td><td>금융투자협회</td></tr>
       </tbody>
@@ -533,7 +554,9 @@
     <span class="bt">구성지표는 고정된 것이 아님</span>
     <ul style="margin-bottom:0">
       <li>경기종합지수는 몇 년에 한 번씩 <strong>개편</strong>됨. 개편 때 지표가 빠지고 더해지며 <em>과거 시계열도 다시 계산됨.</em></li>
-      <li>위 구성은 현행 기준임. 인용하기 전 <a href="https://kosis.kr/visual/economyBoard/economyDash.do" target="_blank" rel="noopener">KOSIS 경제상황판</a>이나 「산업활동동향」 부록의 <b>작성 방법</b>에서 확인할 것.</li>
+      <li>위 구성은 <b>제10차 개편(2019년 9월)</b> 이후 현행 기준임. 이때 선행지수에서 구인구직비율이 빠지고 소비자기대지수가 <b>ESI</b>로 대체돼 8개 → 7개가 됨. 2026년 현재까지 세 지수의 구성(7·7·5개)은 그대로임.</li>
+      <li>품목 수 같은 세부 내용은 기준년도가 바뀔 때마다 달라지므로 표에 적지 않았음.</li>
+      <li>인용하기 전 <a href="https://kosis.kr/visual/economyBoard/economyDash.do" target="_blank" rel="noopener">KOSIS 경제상황판</a>이나 「산업활동동향」 부록의 <b>작성 방법</b>에서 확인할 것.</li>
       <li>작성기관 이름도 바뀜. 위 표의 <b>국가데이터처</b>는 옛 <b>통계청</b>임. 오래된 자료·기사에는 통계청으로 적혀 있음.</li>
     </ul>
   </div>
@@ -563,22 +586,31 @@
     </div>
     <div class="info-b">
       <figure style="margin:0 0 14px">
-        <svg viewBox="0 0 760 280" role="img" aria-label="지수 원계열과 순환변동치의 차이를 보여주는 개념 그래프">
+        <svg viewBox="0 0 760 310" role="img" aria-label="지수 원계열과 순환변동치의 차이를 보여주는 개념 그래프 — 지수는 계속 오르지만 순환변동치는 100을 중심으로 위아래로 같은 폭으로 출렁임">
+          <!-- 음영: 지수는 오르는데 순환변동치는 하락하는 구간 -->
+          <rect x="150" y="34" width="160" height="244" fill="#a4303f" opacity="0.07"/>
+          <rect x="310" y="34" width="80" height="244" fill="#1a4b8c" opacity="0.07"/>
+          <text x="230" y="48" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">지수 ↑ · 순환변동치 ↓</text>
+          <text x="350" y="48" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1a4b8c">100 아래서 ↑</text>
+
           <!-- 위: 지수 -->
-          <text x="30" y="26" font-size="14" font-weight="800" fill="#0d2244">지수 — 추세 때문에 거의 계속 오름</text>
-          <line x1="60" y1="120" x2="720" y2="120" stroke="#c8d6e5" stroke-width="1.4"/>
-          <polyline points="70,110 150,98 230,104 310,84 390,90 470,68 550,76 630,52 710,58"
-                    fill="none" stroke="#1a4b8c" stroke-width="2.8"/>
-          <text x="726" y="56" font-size="11.5" fill="#8492a6" text-anchor="end"></text>
-          <text x="70" y="140" font-size="12" fill="#8492a6">경제 규모가 커지면 지수 자체는 우상향함</text>
+          <text x="30" y="22" font-size="14" font-weight="800" fill="#0d2244">지수 — 추세 때문에 거의 계속 오름</text>
+          <polyline points="70,120.0 90,115.6 110,111.5 130,107.9 150,105.0 170,102.9 190,101.5 210,100.6 230,100.0 250,99.4 270,98.5 290,97.1 310,95.0 330,92.1 350,88.5 370,84.4 390,80.0 410,75.6 430,71.5 450,67.9 470,65.0 490,62.9 510,61.5 530,60.6 550,60.0 570,59.4 590,58.5 610,57.1 630,55.0 650,52.1 670,48.5 690,44.4 710,40.0"
+                    fill="none" stroke="#1a4b8c" stroke-width="2.8" stroke-linejoin="round"/>
+          <line x1="70" y1="120" x2="710" y2="40" stroke="#1a4b8c" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.55"/>
+          <text x="706" y="26" text-anchor="end" font-size="11.5" fill="#5a6779">점선 = 추세치(T)</text>
+          <text x="70" y="146" font-size="12" fill="#8492a6">경제 규모가 커지면 지수 자체는 우상향함 — 추세보다 빠를 때와 느릴 때만 번갈아 옴</text>
 
           <!-- 아래: 순환변동치 -->
-          <text x="30" y="180" font-size="14" font-weight="800" fill="#b45309">순환변동치 — 추세를 걷어내고 흔들림만 남김</text>
-          <line x1="60" y1="230" x2="720" y2="230" stroke="#e9c893" stroke-width="2" stroke-dasharray="6 4"/>
-          <text x="52" y="234" text-anchor="end" font-size="12" font-weight="800" fill="#b45309">100</text>
-          <polyline points="70,248 150,240 230,246 310,232 390,238 470,222 550,228 630,212 710,218"
-                    fill="none" stroke="#b45309" stroke-width="2.8"/>
-          <text x="70" y="270" font-size="12" fill="#8492a6">같은 기간인데 계속 100 아래임 — 여전히 평균 이하라는 뜻</text>
+          <text x="30" y="184" font-size="14" font-weight="800" fill="#b45309">순환변동치 — 추세를 걷어내면 100을 중심으로 위아래 같은 폭으로 출렁임</text>
+          <line x1="60" y1="240" x2="720" y2="240" stroke="#e9c893" stroke-width="2" stroke-dasharray="6 4"/>
+          <text x="52" y="244" text-anchor="end" font-size="12" font-weight="800" fill="#b45309">100</text>
+          <polyline points="70,240.0 90,230.1 110,221.6 130,216.0 150,214.0 170,216.0 190,221.6 210,230.1 230,240.0 250,249.9 270,258.4 290,264.0 310,266.0 330,264.0 350,258.4 370,249.9 390,240.0 410,230.1 430,221.6 450,216.0 470,214.0 490,216.0 510,221.6 530,230.1 550,240.0 570,249.9 590,258.4 610,264.0 630,266.0 650,264.0 670,258.4 690,249.9 710,240.0"
+                    fill="none" stroke="#b45309" stroke-width="2.8" stroke-linejoin="round"/>
+          <circle cx="150" cy="214" r="4" fill="#b45309"/><text x="150" y="206" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">정점</text>
+          <circle cx="310" cy="266" r="4" fill="#b45309"/><text x="310" y="284" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">저점</text>
+          <text x="726" y="203" font-size="11.5" fill="#5a6779" text-anchor="end">100 위 = 추세보다 빠름 · 100 아래 = 추세보다 느림</text>
+          <text x="70" y="304" font-size="12" fill="#8492a6">같은 기간임 — 지수가 오르는 동안에도 순환변동치는 정점에서 저점으로 떨어질 수 있음</text>
         </svg>
       </figure>
       <div class="box warn" style="margin-bottom:0">
@@ -586,13 +618,14 @@
         <ul style="margin-bottom:0">
           <li><strong>지수는 경제가 커지면 추세적으로 거의 계속 오름.</strong> 상승 자체는 뉴스가 아님.</li>
           <li>경기 판단에는 반드시 <b>순환변동치</b>를 봄.</li>
-          <li>순환변동치가 <b>100 아래에서 오르는 중</b>이라면 <em>여전히 평균 이하임.</em></li>
+          <li><b>붉은 음영 구간</b> — 지수는 계속 올랐지만 순환변동치는 정점에서 저점으로 떨어짐. <em>이 구간의 "선행지수 ○개월 연속 상승" 기사는 경기 둔화를 놓친 기사임.</em></li>
+          <li><b>푸른 음영 구간</b> — 순환변동치가 <b>100 아래에서 오르는 중</b>임. 방향은 개선이지만 <em>수준은 여전히 추세 이하임.</em></li>
           <li>확인할 것 — 기사가 어느 쪽을 썼는지, 그리고 <b>100보다 위인지 아래인지.</b></li>
         </ul>
       </div>
     </div>
     <div class="info-f">
-      위 그래프는 <b>지수와 순환변동치의 관계를 보여주는 개념 도식</b>이며 실제 수치가 아님. 실제 계열은 국가데이터처 「산업활동동향」에 함께 실려 있음.
+      위 그래프는 <b>지수와 순환변동치의 관계를 보여주는 개념 도식</b>이며 실제 수치가 아님. 지수 = 추세(점선) × 순환으로 만들었고, 아래 순환변동치는 위 지수를 점선 추세로 나눈 값임. 실제 순환변동치는 진폭이 매번 다르고 위아래가 대칭이 아닐 수 있음. 실제 계열은 국가데이터처 「산업활동동향」에 함께 실려 있음.
     </div>
   </div>
 
@@ -611,7 +644,7 @@
   <h2><span class="num">06</span>심리지표 — 1주차 이론이 지표가 되는 곳</h2>
   <div class="h2rule"></div>
 
-  <h3>기업경기실사지수 (BSI)</h3>
+  <h3>기업경기실사지수 (BSI: Business Survey Index)</h3>
   <ul>
     <li>기업가들이 <strong>체감하는</strong> 경기 동향·전망을 조사해 지수화함.</li>
     <li><b>한국은행</b>이 매월 조사함. 조사 대상은 전국 <strong>약 3,700개 법인기업</strong>임. 긍정·보통·부정 <b>3점 척도</b>.</li>
@@ -625,7 +658,7 @@
     <p><code>BSI = (긍정 응답 업체 수 − 부정 응답 업체 수) ÷ 전체 응답 업체 수 × 100 + 100</code></p>
     <ul style="margin-bottom:0">
       <li>전부 긍정이면 200, 전부 부정이면 0, 긍정과 부정이 같으면 <b>100</b>임. <em>보통(보합) 응답은 지수를 움직이지 않음.</em></li>
-      <li><b>확산지수와의 유사성</b> — 긍정 1, 보통 0.5, 부정 0으로 가중하면 <b>확산지수(DI)와 같은 계산</b>이 되고, <code>BSI = 2 × DI</code>가 성립함. 그래서 DI의 50과 BSI의 100이 같은 중립점임.</li>
+      <li><b>확산지수와의 유사성</b> — 긍정 1, 보통 0.5, 부정 0으로 가중하면 <b>확산지수(DI: Diffusion Index)와 같은 계산</b>이 되고, <code>BSI = 2 × DI</code>가 성립함. 그래서 DI의 50과 BSI의 100이 같은 중립점임.</li>
       <li>다만 확산지수는 <b>지표 수</b>를, BSI는 <b>응답 기업 비중</b>을 셈. 이름은 달리 불러야 함.</li>
     </ul>
   </div>
@@ -635,7 +668,7 @@
     <p style="margin-bottom:0">전망이 실적보다 높으면 <strong>낙관</strong>, 낮으면 <strong>경계</strong>임. <em>두 계열의 격차 자체가 기사거리임.</em> 기사가 어느 쪽을 썼는지 확인할 것.</p>
   </div>
 
-  <h3>기업심리지수 (CBSI)</h3>
+  <h3>기업심리지수 (CBSI: Composite Business Sentiment Index)</h3>
   <ul>
     <li>BSI 주요 지수(제조업 5개, 비제조업 4개)로 산출한 심리지표임.</li>
     <li>한국은행이 <b>2024년 6월 조사분부터</b> 기존 BSI를 보완해 공표하고 있음.</li>
@@ -652,14 +685,46 @@
     </ul>
   </div>
 
-  <h3>소비자동향지수 (CSI) · 소비자심리지수 (CCSI)</h3>
+  <h3>소비자동향지수 (CSI: Consumer Survey Index) · 소비자심리지수 (CCSI: Composite Consumer Sentiment Index)</h3>
   <ul>
-    <li><b>한국은행</b>이 매월 전국 도시 <strong>2,500가구</strong>를 조사함. <b>5점 척도</b>.</li>
+    <li><b>한국은행</b>이 매월 전국 도시 <strong>2,500가구</strong>를 조사함(2026년 9월 조사 응답 2,226가구). <b>5점 척도</b>.</li>
     <li><b>CCSI</b>는 이 중 경기 연관성이 높은 <strong>6개 항목을 표준화 합성</strong>한 값임 — 현재생활형편, 생활형편전망, 가계수입전망, 소비지출전망, 현재경기판단, 향후경기전망.</li>
     <li>장기평균 = 100이며 <em>기준 구간은 매년 갱신됨.</em></li>
-    <li>금리·물가(<b>기대인플레이션율</b> 포함)는 별도 문항으로 조사됨. → 6주차 물가, 10주차 금리</li>
-    <li>관련 지표 — <b>주택가격전망 CSI</b>(→ 11주차), <b>금리수준전망 CSI</b>(→ 10주차)</li>
+    <li>기대인플레이션율은 CSI가 아니라 <b>% 수치</b>로 따로 묻는 문항임. → 6주차 물가</li>
   </ul>
+
+  <div class="box note">
+    <span class="bt">CSI는 몇 개인가 — 주요 개별 CSI 15개 + 소비지출 세부 9개</span>
+    <p>한국은행 「소비자동향조사」 보도자료는 개별 CSI를 네 묶음으로 나눠 발표함. 여기에 <b>소비지출전망을 품목별로 쪼갠 CSI 9개</b>가 따로 붙음.</p>
+    <div class="tw" style="margin:0 0 10px">
+    <table>
+      <thead><tr><th style="width:22%">묶음</th><th>개별 CSI</th><th style="width:26%">2026년 9월 값</th></tr></thead>
+      <tbody>
+        <tr><td><b>가계 재정상황</b> (4)</td><td>현재생활형편 · 생활형편전망 · 가계수입전망 · 소비지출전망 <span class="cite">4개 모두 CCSI에 들어감</span></td><td>92 · 98 · 102 · 110</td></tr>
+        <tr><td><b>경제상황 인식</b> (4)</td><td>현재경기판단 · 향후경기전망 <span class="cite">CCSI에 들어감</span> · 취업기회전망 · 금리수준전망</td><td>83 · 90 · — · <b>128</b></td></tr>
+        <tr><td><b>저축·부채</b> (4)</td><td>현재가계저축 · 가계저축전망 · 현재가계부채 · 가계부채전망</td><td>—</td></tr>
+        <tr><td><b>물가·가격 전망</b> (3)</td><td>물가수준전망 · 주택가격전망 · 임금수준전망</td><td>— · <b>125</b> · <b>124</b></td></tr>
+        <tr><td><b>소비지출전망 세부</b> (9)</td><td>내구재 · 의류비 · 외식비 · 여행비 · 교육비 · 의료·보건비 · 교양·오락·문화생활비 · 교통·통신비 · 주거비</td><td>—</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <ul style="margin-bottom:0">
+      <li><b>자료마다 개수가 다르게 적힘</b> — 국가데이터처 선행지수 설명표는 "CSI 17개", KDI 해설은 "26개"라고 씀. 세부 품목·분류를 어디까지 세느냐의 차이임. <em>기사에 "CSI ○개 항목"을 쓸 때는 기준을 밝히거나 쓰지 말 것.</em></li>
+      <li>"—"는 이 강의자료에서 확인하지 않은 값임. 한국은행 보도자료 원문 표에서 채워 볼 것(실습 과제로 적합함).</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">사례로 읽는 개별 CSI — 2026년 9월 「소비자동향조사」</span>
+    <ul style="margin-bottom:0">
+      <li><b>CCSI 106.6</b> — 전월보다 2.1p 올라 한 달 만에 반등함. 다만 1년 전(2025년 9월 110.0)보다는 낮음. <em>전월비와 전년동월비가 다른 이야기를 할 수 있음.</em></li>
+      <li><b>현재경기판단 CSI 83</b>(+4p) — 100보다 한참 아래지만 올랐음. <em>"경기 인식 개선"과 "여전히 나쁘다는 응답이 많음"은 둘 다 맞는 문장임.</em></li>
+      <li><b>주택가격전망 CSI 125</b> — 정부 부동산 대책에도 떨어지지 않았고, 장기평균(107)을 크게 웃돔. 개별 CSI는 <b>100(응답 균형)</b>뿐 아니라 <b>항목별 장기평균</b>과도 비교해야 함. → 11주차 부동산</li>
+      <li><b>금리수준전망 CSI 128</b> — 2023년 10월 이후 가장 높음. 금리가 오를 것이라는 응답이 압도적임. → 10주차 금리</li>
+      <li><b>임금수준전망 CSI 124</b> — 최저임금이 크게 오른 2018년 무렵과 비슷한 수준이라는 해석이 붙음.</li>
+      <li><b>분해해서 보기</b> — 월소득 100만 원 미만 가구의 소비지출전망 CSI는 7~9월 평균 92.7로, 2022년 7월 표본 개편 이후 가장 낮았음. <em>전체 평균이 반등해도 저소득층 심리는 반대로 갈 수 있음.</em> 소득·연령별 CSI는 보도자료 부표에 있음.</li>
+    </ul>
+  </div>
 
   <div class="box note">
     <span class="bt">CSI와 CCSI 계산 방식</span>
@@ -678,7 +743,7 @@
     <p style="margin:10px 0 0">그래서 CCSI의 100은 응답 균형이 아니라 <strong>장기평균</strong>임. <em>개별 CSI의 100과 CCSI의 100은 다른 100임.</em></p>
   </div>
 
-  <h3>경제심리지수 (ESI)</h3>
+  <h3>경제심리지수 (ESI: Economic Sentiment Index)</h3>
   <ul>
     <li>BSI와 CSI를 합성해 <strong>모든 민간 경제주체</strong>의 심리를 종합함.</li>
     <li>BSI·CSI의 <b>전체 항목을 쓰지 않음.</b> 수십 개 BSI·CSI 항목 가운데 <strong>경기 대응성이 높은 7개 항목</strong>만 골라 씀.</li>
@@ -720,8 +785,8 @@
   <div class="box note">
     <span class="bt">민간 조사도 있음 — 같은 달에 엇갈릴 수 있음</span>
     <ul style="margin-bottom:0">
-      <li>한경협 <b>FKI BSI</b>(대기업 중심), 대한상의 <b>MBSI</b>(제조업)·<b>RBSI</b>(소매유통업)</li>
-      <li>무역협회 <b>EBSI</b>(수출산업), 중소기업중앙회 <b>SBHI</b>(중소기업), 소상공인·전통시장 체감/전망 BSI</li>
+      <li>한국경제인협회(한경협) <b>FKI BSI</b>(FKI: Federation of Korean Industries · 매출액 600대 기업 대상), 대한상공회의소 <b>MBSI</b>(Manufacturing BSI · 제조업)·<b>RBSI</b>(Retail BSI · 소매유통업)</li>
+      <li>한국무역협회 <b>EBSI</b>(Export BSI, 수출산업경기전망지수), 중소기업중앙회 <b>SBHI</b>(Small Business Health Index, 중소기업경기전망지수), 소상공인시장진흥공단 소상공인·전통시장 체감/전망 BSI</li>
       <li><strong>같은 달에 여러 기관의 심리지표가 엇갈릴 수 있음.</strong> <em>어느 것을 인용하느냐가 기사의 논조를 정함.</em></li>
       <li>확인할 것 — 조사 대상(대기업인가 중소기업인가), 표본 크기, 조사 시점.</li>
     </ul>
