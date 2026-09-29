@@ -72,7 +72,7 @@
   <h2><span class="num">00</span>이 주차의 위상</h2>
   <div class="h2rule"></div>
 
-  <p class="lede">고용은 <strong>이 강의의 접착제</strong>임. 3주차 피용자보수, 4주차 BSI 인력사정, 6주차 물가, 9~10주차 금리, 14주차 재정·인구가 <em>여기서 하나로 묶임.</em></p>
+  <p class="lede">고용은 <strong>이 강의의 접착제</strong>. 3주차 피용자보수, 4주차 BSI 인력사정, 6주차 물가, 9~10주차 금리, 14주차 재정·인구가 <em>여기서 하나로 묶임.</em></p>
 
   <div class="pull">
     <div class="q">"실업률이 좋아지는 가장 쉬운 방법은<br>사람들이 구직을 포기하는 것임."</div>
@@ -139,8 +139,18 @@
       <dd>취업을 원했고 최근 1년 내 구직 경험이 있으나, <b>최근 4주간 구직활동을 하지 않은</b> 사람.</dd>
     </dl>
     <dl class="term">
-      <dt>고용보조지표<span class="en">labour underutilization, LU1~LU3</span></dt>
-      <dd>공식 실업률이 놓치는 사람들까지 넣어 다시 계산한 실업률. <b>LU3이 확장실업률</b>임.</dd>
+      <dt>생산가능인구<span class="en">working age population</span></dt>
+      <dd><b>15세 이상 인구</b>. 일할 수 있는 나이에 든 사람 전부이며, 실제로 일하는지와 무관함.
+        <span class="ez">주의 — 경제활동인구와 다름. 생산가능인구가 더 큰 그릇임.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>고용보조지표<span class="en">labour underutilization, LU1~LU4</span></dt>
+      <dd>공식 실업률이 놓치는 사람들까지 넣어 다시 계산한 실업률.
+        <span class="ez">주의 — 확장실업률은 <b>고용보조지표3 = LU4</b>임. LU3이 아님.</span></dd>
+    </dl>
+    <dl class="term">
+      <dt>확장경제활동인구<span class="en">extended labour force</span></dt>
+      <dd>경제활동인구 + <b>잠재경제활동인구</b>. 고용보조지표2·3의 <b>분모</b>.</dd>
     </dl>
     <dl class="term">
       <dt>오쿤의 법칙<span class="en">Okun's law</span></dt>
@@ -295,31 +305,36 @@
     </div>
     <div class="info-b">
       <figure style="margin:0 0 14px">
-        <svg viewBox="0 0 760 250" role="img" aria-label="구직 포기가 실업률을 낮추는 경로 도식">
+        <svg viewBox="0 0 760 300" role="img" aria-label="구직 포기가 실업률을 낮추지만 고용률은 그대로임을 보여주는 도식">
+          <text x="30" y="20" font-size="12.5" fill="#8492a6">15세 이상 인구 120명으로 가정함 — 두 상황 모두 동일</text>
+
           <!-- A 상황 -->
-          <text x="30" y="28" font-size="14" font-weight="800" fill="#0d2244">A · 처음</text>
-          <rect x="30" y="42" width="300" height="52" rx="8" fill="#e8eef5" stroke="#c8d6e5"/>
-          <text x="50" y="64" font-size="13" fill="#5a6779">경제활동인구 <tspan font-weight="800" fill="#0d2244">100명</tspan> · 취업자 95명 · 실업자 5명</text>
-          <text x="50" y="84" font-size="13.5" font-weight="800" fill="#1a4b8c">실업률 5.0%</text>
+          <text x="30" y="46" font-size="14" font-weight="800" fill="#0d2244">A · 처음</text>
+          <rect x="30" y="58" width="300" height="76" rx="8" fill="#e8eef5" stroke="#c8d6e5"/>
+          <text x="48" y="80" font-size="12.5" fill="#5a6779">경제활동인구 <tspan font-weight="800" fill="#0d2244">100명</tspan> · 비경제활동 20명</text>
+          <text x="48" y="99" font-size="12.5" fill="#5a6779">취업자 95명 · 실업자 5명</text>
+          <text x="48" y="122" font-size="13.5" font-weight="800" fill="#1a4b8c">실업률 5.0%<tspan fill="#0f766e">　고용률 79.2%</tspan></text>
 
           <!-- 화살표 -->
-          <line x1="345" y1="68" x2="395" y2="68" stroke="#a4303f" stroke-width="2.4"/>
-          <polygon points="402,68 392,63 392,73" fill="#a4303f"/>
-          <text x="373" y="52" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">2명이</text>
-          <text x="373" y="90" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">구직 포기</text>
+          <line x1="345" y1="96" x2="395" y2="96" stroke="#a4303f" stroke-width="2.4"/>
+          <polygon points="402,96 392,91 392,101" fill="#a4303f"/>
+          <text x="373" y="80" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">2명이</text>
+          <text x="373" y="118" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">구직 포기</text>
 
           <!-- B 상황 -->
-          <text x="420" y="28" font-size="14" font-weight="800" fill="#0d2244">B · 구직 포기 후</text>
-          <rect x="420" y="42" width="310" height="52" rx="8" fill="#fdf1f2" stroke="#e8b9be"/>
-          <text x="440" y="64" font-size="13" fill="#5a6779">경제활동인구 <tspan font-weight="800" fill="#a4303f">98명</tspan> · 취업자 95명 · 실업자 3명</text>
-          <text x="440" y="84" font-size="13.5" font-weight="800" fill="#a4303f">실업률 3.1%</text>
+          <text x="420" y="46" font-size="14" font-weight="800" fill="#0d2244">B · 구직 포기 후</text>
+          <rect x="420" y="58" width="310" height="76" rx="8" fill="#fdf1f2" stroke="#e8b9be"/>
+          <text x="438" y="80" font-size="12.5" fill="#5a6779">경제활동인구 <tspan font-weight="800" fill="#a4303f">98명</tspan> · 비경제활동 22명</text>
+          <text x="438" y="99" font-size="12.5" fill="#5a6779">취업자 95명 · 실업자 3명</text>
+          <text x="438" y="122" font-size="13.5" font-weight="800" fill="#a4303f">실업률 3.1%<tspan fill="#0f766e">　고용률 79.2%</tspan></text>
 
           <!-- 결론 박스 -->
-          <rect x="30" y="120" width="700" height="112" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
-          <text x="52" y="148" font-size="14" font-weight="800" fill="#b45309">실업률은 5.0%에서 3.1%로 좋아졌음</text>
-          <text x="52" y="176" font-size="13.5" fill="#5a6779">그런데 <tspan font-weight="800" fill="#0d2244">취업자는 95명 그대로임.</tspan> 일자리는 하나도 늘지 않았음.</text>
-          <text x="52" y="200" font-size="13.5" fill="#5a6779">분자(실업자)와 분모(경제활동인구)가 <tspan font-weight="700" fill="#0d2244">함께 줄었기 때문임.</tspan></text>
-          <text x="52" y="222" font-size="13.5" fill="#5a6779">같은 상황에서 <tspan font-weight="800" fill="#0f766e">고용률은 전혀 개선되지 않음.</tspan> 분모가 인구로 고정돼 있기 때문임.</text>
+          <rect x="30" y="158" width="700" height="128" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <text x="52" y="186" font-size="14" font-weight="800" fill="#b45309">실업률은 5.0% → 3.1%로 좋아졌는데, 고용률은 79.2% → 79.2%로 그대로임</text>
+          <text x="52" y="213" font-size="13.5" fill="#5a6779"><tspan font-weight="800" fill="#0d2244">취업자는 95명 그대로임.</tspan> 일자리는 하나도 늘지 않았음.</text>
+          <text x="52" y="237" font-size="13.5" fill="#5a6779">실업률은 분자(실업자)와 분모(경제활동인구)가 <tspan font-weight="700" fill="#0d2244">함께 줄어</tspan> 내려갔음.</text>
+          <text x="52" y="261" font-size="13.5" fill="#5a6779">고용률은 분모가 <tspan font-weight="700" fill="#0f766e">15세 이상 인구 120명으로 고정</tspan>돼 있어 움직이지 않음.</text>
+          <text x="52" y="278" font-size="12.5" fill="#8492a6">95 ÷ 120 = 79.2% — A와 B가 같음</text>
         </svg>
       </figure>
       <div class="box key" style="margin-bottom:0">
@@ -347,32 +362,136 @@
   <table>
     <thead><tr><th style="width:20%">지표</th><th style="width:46%">산식</th><th>다른 이름</th></tr></thead>
     <tbody>
-      <tr><td><b>실업률</b><br><span class="cite">ILO LU1</span></td><td>실업자 ÷ 경제활동인구</td><td>공식 실업률</td></tr>
-      <tr><td><b>고용보조지표1</b><br><span class="cite">ILO LU2</span></td><td>(실업자 + <b>시간관련 추가취업가능자</b>) ÷ 경제활동인구<br><span class="cite">주 36시간 미만으로 일하면서 더 일하고 싶고 가능한 사람</span></td><td>—</td></tr>
-      <tr><td><b>고용보조지표2</b><br><span class="cite">ILO LU3</span></td><td>(실업자 + <b>잠재경제활동인구</b>) ÷ 확장경제활동인구<br><span class="cite">구직 또는 취업가능 조건 중 하나가 부족한 사람</span></td><td>—</td></tr>
-      <tr><td><b>고용보조지표3</b><br><span class="cite">ILO LU4</span></td><td>(실업자 + 시간관련 추가취업가능자 + 잠재경제활동인구) ÷ 확장경제활동인구</td><td><b>확장실업률 · 체감실업률</b></td></tr>
+      <tr><td><b>실업률</b><br><span class="cite">LU1</span></td><td>실업자 ÷ 경제활동인구</td><td>공식 실업률</td></tr>
+      <tr><td><b>고용보조지표1</b><br><span class="cite">LU2</span></td><td>(실업자 + <b>시간관련 추가취업가능자</b>) ÷ 경제활동인구<br><span class="cite">주 36시간 미만으로 일하면서 더 일하고 싶고 가능한 사람</span></td><td>—</td></tr>
+      <tr><td><b>고용보조지표2</b><br><span class="cite">LU3</span></td><td>(실업자 + <b>잠재경제활동인구</b>) ÷ 확장경제활동인구<br><span class="cite">구직 또는 취업가능 조건 중 하나가 부족한 사람</span></td><td>—</td></tr>
+      <tr><td><b>고용보조지표3</b><br><span class="cite">LU4</span></td><td>(실업자 + 시간관련 추가취업가능자 + 잠재경제활동인구) ÷ 확장경제활동인구</td><td>언론에서 <b>확장실업률</b>이라 부름</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">LU는 무엇의 약자인가</span>
+    <ul>
+      <li><b>LU = Labour Underutilization</b>(노동 저활용). 국제노동기구(ILO)가 정한 코드임.</li>
+      <li>"실업이냐 아니냐"의 이분법 대신, <strong>노동력이 얼마나 덜 쓰이고 있는지를 단계적으로</strong> 재는 틀임.</li>
+    </ul>
+    <div class="tw" style="margin:0">
+    <table>
+      <thead><tr><th style="width:12%">코드</th><th style="width:44%">ILO 영문 명칭</th><th>한국 이름</th></tr></thead>
+      <tbody>
+        <tr><td><b>LU1</b></td><td>Unemployment rate</td><td>실업률 <span class="cite">공식 실업률</span></td></tr>
+        <tr><td><b>LU2</b></td><td>Combined rate of time-related underemployment and unemployment</td><td>고용보조지표1</td></tr>
+        <tr><td><b>LU3</b></td><td>Combined rate of unemployment and potential labour force</td><td>고용보조지표2</td></tr>
+        <tr><td><b>LU4</b></td><td>Composite measure of labour underutilization</td><td>고용보조지표3 <span class="cite">확장실업률</span></td></tr>
+      </tbody>
+    </table>
+    </div>
   </div>
 
   <div class="box warn">
     <span class="bt">번호가 한 칸씩 밀려 있음 — 자주 틀리는 지점</span>
     <ul style="margin-bottom:0">
-      <li>한국의 공식 명칭은 <b>고용보조지표1·2·3</b>이고, 국제노동기구(ILO) 코드는 <b>LU1~LU4</b>임.</li>
-      <li>둘이 <strong>한 칸씩 어긋남.</strong> 흔히 말하는 <b>확장실업률은 고용보조지표3이며 ILO 기준으로는 LU4</b>임.</li>
-      <li><em>"LU3 = 확장실업률"이라고 쓰면 틀림.</em> 기사와 해설에서 자주 보이는 오류임.</li>
-      <li>보조지표2·3의 분모는 경제활동인구가 아니라 <b>확장경제활동인구</b>(경제활동인구 + 잠재경제활동인구)임.</li>
+      <li>한국의 공식 명칭은 <b>고용보조지표1·2·3</b>이고 ILO 코드는 <b>LU1~LU4</b>임. <strong>LU는 네 개, 보조지표는 세 개</strong>라서 한 칸씩 어긋남.</li>
+      <li>LU1이 공식 실업률이고 보조지표는 거기서부터 붙기 때문임. <b>고용보조지표1 = LU2, 2 = LU3, 3 = LU4</b>임.</li>
+      <li><em>"LU3 = 확장실업률"이라고 쓰면 틀림.</em> <strong>확장실업률은 고용보조지표3 = LU4</strong>임. 기사와 해설에서 자주 보이는 오류임.</li>
     </ul>
   </div>
 
-  <h3>누가 여기 들어오는가</h3>
-  <ul>
-    <li>단기 아르바이트를 하며 정식 취업을 준비하는 사람</li>
-    <li>아직 원서를 내지 않은 공시생</li>
-    <li>졸업을 미룬 채 준비 중인 학생</li>
-    <li>경력단절 후 재취업을 원하지만 당장 구직활동은 못 하는 사람</li>
-    <li>주 20시간 일하며 풀타임을 원하는 사람</li>
-  </ul>
+  <div class="box key">
+    <span class="bt">'확장실업률'과 '체감실업률'은 같은 것을 가리키나</span>
+    <ul>
+      <li>둘 다 <strong>공식 통계 용어가 아님.</strong> 국가데이터처가 쓰는 이름은 <b>고용보조지표3</b> 하나뿐임.</li>
+      <li><b>확장실업률</b> — 언론에서 고용보조지표3을 부르는 관용어임. 거의 예외 없이 이것을 가리킴.</li>
+      <li><b>체감실업률</b> — 대개 같은 고용보조지표3을 가리키지만, <em>연구기관이 자체 기준으로 계산한 수치</em>를 이렇게 부르는 경우도 있음. 같은 달 기사에서 숫자가 다르게 나오는 이유임.</li>
+      <li>실무 원칙 — 기사에 쓸 때는 <strong>"고용보조지표3(확장실업률)"</strong>처럼 공식 명칭을 함께 적음. 남의 기사를 읽을 때는 <em>'체감실업률'이라는 말이 나오면 출처를 확인함.</em></li>
+    </ul>
+    <p style="margin-bottom:0"><b>확장경제활동인구</b> — 보조지표2·3의 분모임. <code>확장경제활동인구 = 경제활동인구 + 잠재경제활동인구</code>. 잠재적으로 일할 뜻이 있는 사람까지 분모에 넣어 <em>모수 자체를 넓힌 것임.</em> 그래서 이름이 '확장'임.</p>
+  </div>
+
+  <h3>두 집단을 먼저 구별할 것</h3>
+  <p>고용보조지표에 들어오는 사람은 <strong>성격이 전혀 다른 두 무리</strong>임. 이름이 길어서 헷갈리지만 기준은 간단함.</p>
+
+  <div class="duo">
+    <div class="a">
+      <h5>시간관련 추가취업가능자</h5>
+      <span class="tag">이미 일하는 중</span>
+      <ul>
+        <li><b>취업자임.</b> 다만 <b>주 36시간 미만</b>으로 일함</li>
+        <li>더 일하기를 <b>원하고</b>, 당장 <b>가능</b>함</li>
+        <li class="ez">쉽게 — 일은 하는데 <b>일감이 모자란 사람</b></li>
+      </ul>
+    </div>
+    <div class="b">
+      <h5>잠재경제활동인구</h5>
+      <span class="tag">일하지 않는 중</span>
+      <ul>
+        <li><b>비경제활동인구임.</b> 실업자 세 조건 중 <b>하나가 모자람</b></li>
+        <li><b>잠재구직자</b> — 취업 희망·가능하나 <b>구직활동을 안 함</b></li>
+        <li><b>잠재취업가능자</b> — 구직활동은 했으나 <b>당장 취업이 불가능</b>함</li>
+        <li class="ez">쉽게 — 일할 뜻은 있는데 <b>문턱을 못 넘은 사람</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="bt">가르는 질문 하나</span>
+    <p style="margin-bottom:0"><strong>"지금 일을 하고 있는가?"</strong> — 하고 있으면 <b>시간관련 추가취업가능자</b>(모자란 것은 시간), 하고 있지 않으면 <b>잠재경제활동인구</b>(모자란 것은 구직활동 또는 취업가능성)임.</p>
+  </div>
+
+  <h3>누가 여기 들어오는가 — 사례로 확인</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:44%">이 사람은</th><th style="width:26%">어디에 속하는가</th><th>왜</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>편의점에서 <b>주 20시간</b> 일하며 풀타임 자리를 원하는 사람</td>
+        <td><b style="color:#1a4b8c">시간관련 추가취업가능자</b></td>
+        <td>취업자이나 36시간 미만. 더 일하길 원하고 가능함</td>
+      </tr>
+      <tr>
+        <td>주 3일 학원 강사로 일하며 <b>정규직 교사 임용</b>을 준비하는 사람</td>
+        <td><b style="color:#1a4b8c">시간관련 추가취업가능자</b></td>
+        <td>일하는 중이며 시간이 모자람</td>
+      </tr>
+      <tr>
+        <td>배달 일을 <b>주 15시간</b>만 받고 있으나 더 받고 싶은 사람</td>
+        <td><b style="color:#1a4b8c">시간관련 추가취업가능자</b></td>
+        <td>일감 부족. 본인 선택이 아님</td>
+      </tr>
+      <tr>
+        <td>아직 <b>원서를 내지 않은</b> 공시생</td>
+        <td><b style="color:#b45309">잠재경제활동인구</b><br><span class="cite">잠재구직자</span></td>
+        <td>취업 희망·가능하나 구직활동이 없음</td>
+      </tr>
+      <tr>
+        <td><b>졸업을 미룬 채</b> 취업을 준비 중인 학생</td>
+        <td><b style="color:#b45309">잠재경제활동인구</b><br><span class="cite">잠재구직자</span></td>
+        <td>같은 이유. 재학 중이어도 취업 희망이면 포함됨</td>
+      </tr>
+      <tr>
+        <td>경력단절 후 재취업을 원하나 <b>육아로 당장 구직은 못 하는</b> 사람</td>
+        <td><b style="color:#b45309">잠재경제활동인구</b><br><span class="cite">잠재구직자</span></td>
+        <td>희망은 있으나 구직활동을 못 함</td>
+      </tr>
+      <tr>
+        <td><b>원서는 냈으나</b> 부모 간병 때문에 <b>다음 달부터</b> 출근 가능한 사람</td>
+        <td><b style="color:#b45309">잠재경제활동인구</b><br><span class="cite">잠재취업가능자</span></td>
+        <td>구직활동은 했으나 <b>즉시 취업이 불가능</b>함</td>
+      </tr>
+      <tr>
+        <td><b>어제 원서를 낸</b> 취업준비생 <span class="cite">(비교용)</span></td>
+        <td><b style="color:#a4303f">실업자</b></td>
+        <td>세 조건을 모두 만족. <b>공식 실업률에 잡힘</b></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">앞의 02절 표와 이어짐</span>
+    <p style="margin-bottom:0">02절에서 <b>비경제활동인구</b>로 분류했던 공시생·졸업유예생이 여기서 <strong>다시 잡힘.</strong> 공식 실업률은 이들을 놓치지만 <em>고용보조지표는 놓치지 않음.</em> 그래서 두 숫자가 3배 넘게 벌어짐.</p>
+  </div>
 
   <div class="info">
     <div class="info-h">
@@ -389,6 +508,18 @@
         </tbody>
       </table>
       </div>
+      <div class="box note">
+        <span class="bt">청년 수치는 어떻게 만드나 — 별도 조사가 아님</span>
+        <ul style="margin-bottom:0">
+          <li>청년 지표는 <strong>같은 산식을 15~29세에만 적용한 것임.</strong> 조사를 따로 하지 않음.</li>
+          <li><b>청년 실업률</b> = 15~29세 실업자 ÷ <b>15~29세 경제활동인구</b></li>
+          <li><b>청년 고용보조지표3</b> = (15~29세 실업자 + 시간관련 추가취업가능자 + 잠재경제활동인구) ÷ <b>15~29세 확장경제활동인구</b></li>
+          <li>분모가 <b>청년 인구 전체가 아니라 청년 경제활동인구</b>임에 주의. 재학생 대부분은 분모에서 빠짐.</li>
+          <li>그래서 <em>청년 실업률은 '청년 중 몇 %가 논다'는 뜻이 아님.</em> 이 오해가 기사에 자주 나타남.</li>
+          <li>한국이 청년을 <b>15~29세</b>로 보는 것은 <b>학제와 병역</b> 때문임. OECD 표준은 <b>15~24세</b>라서 국제비교 기사에서는 기준을 반드시 밝혀야 함.</li>
+        </ul>
+      </div>
+
       <div class="box key" style="margin-bottom:0">
         <span class="bt">이 표에서 읽어야 할 것</span>
         <ul style="margin-bottom:0">
@@ -428,7 +559,29 @@
       <li>생산가능인구가 감소하는 국면에서는 <strong>고용 상황이 그대로여도 취업자 수가 줄어듦.</strong></li>
       <li>반대로 <b>고령층 인구가 급증하면</b> 60대 취업자 증가만으로 전체 취업자가 늘어남.</li>
       <li>따라서 <em>취업자 증감(명) 하나만으로 기사를 쓰면 거의 틀림.</em> 반드시 <b>고용률(%)</b>로 보정함.</li>
-      <li>→ 14주차 인구 편에서 이 논리를 다시 다룸.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">생산가능인구란 — 경제활동인구와 무엇이 다른가</span>
+    <ul>
+      <li><b>생산가능인구</b>는 <strong>일할 수 있는 나이에 든 사람 전부</strong>임. 실제로 일하는지, 일을 찾는지는 따지지 않음.</li>
+      <li>경제활동인구는 그중에서 <strong>실제로 일하거나 일을 찾는 사람만</strong> 추린 것임. <em>생산가능인구가 더 큰 그릇이고, 경제활동인구는 그 안의 일부임.</em></li>
+      <li>02절 그림으로 말하면 — <b>맨 위 상자가 생산가능인구, 왼쪽 상자가 경제활동인구</b>임.</li>
+    </ul>
+    <div class="tw" style="margin:0">
+    <table>
+      <thead><tr><th style="width:26%">용어</th><th style="width:20%">연령 범위</th><th>어디서 쓰는가</th></tr></thead>
+      <tbody>
+        <tr><td><b>생산가능인구</b><br><span class="cite">노동가능인구</span></td><td><b>15세 이상</b> 전부</td><td>고용통계(경제활동인구조사). <b>고용률의 분모</b>가 이것임</td></tr>
+        <tr><td><b>생산연령인구</b></td><td><b>15~64세</b></td><td>인구추계·부양비. "2072년 생산연령인구 ○○만 명" 류 기사가 이것임</td></tr>
+        <tr><td><b>경제활동인구</b></td><td>나이가 아니라 <b>상태</b>로 가름</td><td>취업자 + 실업자. <b>실업률의 분모</b>임</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <ul style="margin:10px 0 0">
+      <li><strong>'생산활동인구'라는 공식 용어는 없음.</strong> 기사에 나오면 대개 생산연령인구(15~64세)를 잘못 쓴 것임.</li>
+      <li>주의 — 같은 '생산가능인구'라는 말이 <b>기사에서는 15~64세를 뜻하는 경우가 많음.</b> 고용통계(15세 이상)와 인구통계(15~64세)의 용법이 다름. <em>숫자가 안 맞으면 이 차이를 의심할 것.</em></li>
     </ul>
   </div>
 
@@ -458,9 +611,6 @@
           <li>좋은 기사는 <em>둘을 함께 제시하고, 왜 갈리는지를 설명함.</em></li>
         </ul>
       </div>
-    </div>
-    <div class="info-f">
-      <b>2026년 7월 실제 값</b> — 전체 취업자 <b>+10만 8천 명</b>, 15~64세 고용률 <b>70.3%</b>(7월 기준 역대 최고), 그러나 청년 고용률 <b>44.2%</b>(27개월 연속 하락)·청년 취업자 <b>−19만 1천 명</b>(45개월 연속 감소). 제조업 −6만 8천(25개월 연속 감소), 건설업 −5만 7천(27개월 연속 감소). <b>매달 바뀌므로 강의 시점 최신치로 갱신할 것.</b>
     </div>
   </div>
 
@@ -494,7 +644,7 @@
     <tbody>
       <tr><td><b>기관</b></td><td>국가데이터처</td><td>고용노동부</td></tr>
       <tr><td><b>조사 대상</b></td><td><b>가구</b> — 사람에게 물음</td><td><b>사업체</b> — 회사에 물음</td></tr>
-      <tr><td><b>잡히는 것</b></td><td>자영업자, 무급가족종사자, 비공식 취업 포함</td><td>임금근로자 중심, 1인 이상 사업체</td></tr>
+      <tr><td><b>잡히는 것</b></td><td>자영업자, 무급가족종사자, 비공식 취업 포함</td><td>임금근로자 중심. <b>종사자 1인 이상 사업체</b></td></tr>
       <tr><td><b>안 잡히는 것</b></td><td>정확한 임금·근로시간</td><td>자영업자, 농림어업, 영세 사업장 일부</td></tr>
       <tr><td><b>주요 산출</b></td><td>취업자·실업자·<b>고용률</b></td><td><b>임금·근로시간·빈 일자리</b></td></tr>
     </tbody>
@@ -506,8 +656,23 @@
     <ul style="margin-bottom:0">
       <li><strong>취재원이 어느 쪽 숫자를 주느냐에 따라 기사 결론이 달라짐.</strong></li>
       <li><em>둘이 어긋날 때가 오히려 기사거리임.</em></li>
-      <li>여기에 <b>「일자리행정통계」</b>(행정자료 기반)까지 넣으면 <b>세 통계가 서로 다른 숫자</b>를 냄.</li>
+      <li>여기에 <b>국가데이터처</b>의 <b>「일자리행정통계」</b>까지 넣으면 <b>세 통계가 서로 다른 숫자</b>를 냄. 건강보험·국민연금·국세청 등 <b>행정자료를 연계</b>해 만들며, 조사가 아니라서 표본오차가 없는 대신 <em>공표가 1년 이상 늦음.</em></li>
       <li>2주차에서 배운 <a href="02_경제통계와지표.html">"국가 간 정의 차이를 확인함"</a>의 국내판임.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">'1인 이상 사업체'가 정확히 무슨 뜻인가</span>
+    <ul>
+      <li><strong>종사자가 1명이라도 있는 사업체</strong>를 말함. 즉 <b>사업주 혼자인 곳은 빠짐.</b> 직원이 한 명이라도 있으면 들어옴.</li>
+      <li>'1인 기업'이나 '1인 사업자'를 조사한다는 뜻이 <b>아님.</b> 오히려 그 반대로, <em>1인 자영업자는 이 조사에 잡히지 않음.</em></li>
+      <li>제외 산업이 있음 — <b>농업·임업·어업</b>, 가사서비스업 등. 그래서 <em>농어촌 고용은 이 통계로 안 보임.</em></li>
+    </ul>
+    <p style="margin-bottom:6px"><b>임금 기사를 읽을 때 더 중요한 구분</b> — 같은 조사에서 두 가지 기준이 함께 공표됨.</p>
+    <ul style="margin-bottom:0">
+      <li><b>상용근로자 1인 이상</b> — 영세 사업장까지 포함. <b>평균임금이 낮게</b> 나옴.</li>
+      <li><b>상용근로자 5인 이상</b> — 소규모 사업장 제외. <b>평균임금이 높게</b> 나옴.</li>
+      <li>확인할 것 — <strong>"평균임금 ○○○만 원" 기사는 둘 중 어느 기준인지 먼저 봄.</strong> <em>기준만 바꿔도 수십만 원이 달라짐.</em> 기사끼리 숫자가 안 맞는 흔한 이유임.</li>
     </ul>
   </div>
 
@@ -522,29 +687,113 @@
     <li>3주차 <b>피용자보수</b>, 14주차 <b>노동소득분배율</b>과 한 줄로 이어짐.</li>
   </ul>
 
-  <div class="box easy">
-    <span class="bt">임금 통계를 읽을 때 더 볼 것</span>
-    <ul style="margin-bottom:0">
-      <li><b>정액급여 / 초과급여 / 특별급여</b> — 평균임금 상승이 <strong>상여금(특별급여) 때문</strong>인 경우가 흔함. 특별급여는 특정 월에 몰리므로 <em>그 달만 임금이 튐.</em> 전년동월비로 봐야 함.</li>
-      <li><b>노동비용지수(LCI)</b> — 임금 + 사회보험 부담. 기업이 실제로 부담하는 비용임.</li>
-      <li><b>단위노동비용(ULC)</b> — 산출 한 단위당 노동비용. <em>임금발 물가 압력</em>을 보여줌. → 6주차</li>
+  <div class="box note">
+    <span class="bt">임금은 세 덩어리로 나뉨 — 어느 덩어리가 움직였는지가 기사임</span>
+    <div class="tw" style="margin:0">
+    <table>
+      <thead><tr><th style="width:18%">구분</th><th style="width:40%">무엇인가</th><th>예</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>정액급여</b></td>
+          <td>근로계약·취업규칙에 <b>미리 정해진</b> 금액. 일을 더 하든 덜 하든 <b>매달 같음</b></td>
+          <td>기본급, 직책수당, 가족수당, 식대 <span class="cite">매달 300만 원</span></td>
+        </tr>
+        <tr>
+          <td><b>초과급여</b></td>
+          <td><b>정해진 시간을 넘겨 일한 대가.</b> 일한 만큼 <b>달마다 달라짐</b></td>
+          <td>연장·야간·휴일 근로수당 <span class="cite">잔업 20시간 → 40만 원</span></td>
+        </tr>
+        <tr>
+          <td><b>특별급여</b></td>
+          <td><b>비정기적으로</b> 나가는 돈. <b>특정 달에 몰림</b></td>
+          <td>상여금, 성과급, 임금인상 소급분 <span class="cite">설·추석·연말</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <ul style="margin:10px 0 0">
+      <li><b>가르는 기준</b> — 미리 정해져 있으면 <b>정액</b>, 더 일해서 받으면 <b>초과</b>, 어쩌다 받으면 <b>특별</b>임.</li>
+      <li><strong>"평균임금 8% 급등" 기사의 대부분은 특별급여 때문임.</strong> 성과급이 몰린 달에는 임금이 튀어 오르고, 다음 달 급락함. <em>기업 실적이 좋았다는 뜻일 뿐, 월급이 올랐다는 뜻이 아님.</em></li>
+      <li>임금의 <b>추세</b>를 보려면 <b>정액급여</b>를 봄. 근로시간 변화를 보려면 <b>초과급여</b>를 봄. <em>초과급여가 줄면 잔업이 줄었다는 뜻이고, 경기 둔화 신호일 수 있음.</em></li>
+      <li>비교는 반드시 <b>전년동월비</b>로 함. 전월비는 상여금 지급 달 때문에 의미가 없음.</li>
     </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">기업이 부담하는 비용으로 보면 — LCI와 ULC</span>
+    <ul>
+      <li><b>노동비용지수(LCI, Labour Cost Index)</b> — 임금뿐 아니라 <strong>기업이 사람을 쓰는 데 드는 돈 전부</strong>를 지수화한 것임. 4대 보험 사용자 부담금, 퇴직급여, 교육훈련비 등이 들어감.
+        <span class="ez">예 — 월급 300만 원인 직원 한 명에게 회사가 실제로 쓰는 돈은 보험료·퇴직급여까지 더해 <b>360만 원쯤</b>임. 임금은 그대로여도 보험료율이 오르면 LCI는 오름.</span></li>
+      <li><b>단위노동비용(ULC, Unit Labour Cost)</b> — <strong>산출물 한 개를 만드는 데 드는 노동비용</strong>임. <code>ULC = 노동비용 ÷ 산출량</code>, 쉽게는 <code>임금상승률 − 생산성증가율</code>임.
+        <span class="ez">예 — 임금이 5% 올랐는데 생산성도 5% 올랐다면 ULC는 그대로임. 제품값을 올릴 이유가 없음. 반대로 임금만 5% 오르고 생산성이 제자리면 ULC가 5% 올라 <b>가격에 전가될 압력</b>이 생김.</span></li>
+      <li>그래서 <strong>"임금이 올라 물가가 오른다"는 주장은 ULC로 검증해야 함.</strong> 임금상승률만으로는 알 수 없음. <em>생산성을 함께 보지 않은 임금발 인플레 기사는 의심할 것.</em> → 6주차 물가</li>
+    </ul>
+    <p style="margin-bottom:0">두 지표 모두 국제비교에 쓰임. OECD가 회원국 ULC를 공표하므로 <b>한국의 임금 경쟁력</b>을 따지는 기사에서 자주 인용됨.</p>
   </div>
 
   <h3>노동의 질을 보는 눈</h3>
   <div class="tw">
   <table>
-    <thead><tr><th style="width:26%">항목</th><th style="width:38%">구분</th><th>무엇을 읽는가</th></tr></thead>
+    <thead><tr><th style="width:15%">항목</th><th style="width:27%">구분</th><th style="width:30%">사례</th><th>무엇을 읽는가</th></tr></thead>
     <tbody>
-      <tr><td><b>종사상지위</b></td><td>상용(1년 이상) / 임시(1개월~1년) / 일용(1개월 미만)</td><td>취업자가 늘어도 <b>임시·일용만 늘었다면</b> 질이 나빠진 것임</td></tr>
-      <tr><td><b>고용형태</b></td><td>정규직 / 비정규직(한시적·시간제·비전형)</td><td>근로형태별 부가조사에서 확인함</td></tr>
-      <tr><td><b>자영업자</b></td><td>고용원 있는 / <b>고용원 없는</b> / 무급가족종사자</td><td><b>있는 → 없는</b>으로의 이동은 <em>경기 악화 신호임.</em> 직원을 내보냈다는 뜻</td></tr>
-      <tr><td><b>근로시간</b></td><td>주 36시간 미만 취업자 비중</td><td>늘어나면 <b>'일자리 쪼개기'</b> 신호</td></tr>
-      <tr><td><b>빈 일자리</b></td><td>빈 일자리 수 · 빈 일자리율 · 구인배수</td><td>실업자도 많은데 빈 일자리도 많다면 <b>미스매치</b>임</td></tr>
-      <tr><td><b>최저임금</b></td><td>최저임금 · 최저임금 영향률<br><span class="cite">2026년 적용 10,320원 · 2027년 적용 10,700원</span></td><td>매년 <b>6~8월에 집중 보도되는 계절성 이슈.</b> 심의는 6~7월, 고시는 8월 초, 적용은 다음 해 1월</td></tr>
-      <tr><td><b>산업안전</b></td><td>산업재해율 · 노사분규 근로손실일수</td><td>→ 08절 보도 윤리와 연결됨</td></tr>
+      <tr>
+        <td><b>종사상지위</b></td>
+        <td>상용(1년 이상) / 임시(1개월~1년) / 일용(1개월 미만)<br><span class="cite">계약기간 기준임</span></td>
+        <td>정규직 사원은 <b>상용</b>, 6개월 계약직은 <b>임시</b>, 건설 현장 날품은 <b>일용</b></td>
+        <td>취업자가 늘어도 <b>임시·일용만 늘었다면</b> 질이 나빠진 것임</td>
+      </tr>
+      <tr>
+        <td><b>고용형태</b></td>
+        <td>정규직 / 비정규직(한시적·시간제·비전형)</td>
+        <td>2년 계약 연구원은 <b>한시적</b>, 주 20시간 마트 직원은 <b>시간제</b>, 파견·용역·특수형태근로는 <b>비전형</b></td>
+        <td>매년 8월 <b>근로형태별 부가조사</b>로 확인함. 발표 때마다 정규직·비정규직 논쟁이 반복됨</td>
+      </tr>
+      <tr>
+        <td><b>자영업자</b></td>
+        <td>고용원 있는 / <b>고용원 없는</b> / 무급가족종사자</td>
+        <td>알바 2명 쓰던 치킨집 사장이 <b>혼자 가게를 보게 되면</b> '있는'에서 '없는'으로 옮겨감</td>
+        <td><b>있는 → 없는</b>으로의 이동은 <em>경기 악화 신호임.</em> 직원을 내보냈다는 뜻. <b>자영업자 수는 그대로여서 총량만 보면 안 보임</b></td>
+      </tr>
+      <tr>
+        <td><b>근로시간</b></td>
+        <td>주 36시간 미만 취업자 비중</td>
+        <td>풀타임 1명 자리를 <b>주 18시간짜리 2명</b>으로 나누면 취업자는 1명 늘지만 일의 총량은 같음</td>
+        <td>늘어나면 <b>'일자리 쪼개기'</b> 신호. <em>04절 시간관련 추가취업가능자와 함께 봄</em></td>
+      </tr>
+      <tr>
+        <td><b>빈 일자리</b></td>
+        <td>빈 일자리 수 · 빈 일자리율 · 구인배수</td>
+        <td>조선소가 용접공 500명을 구하는데 지원자가 없음. <b>실업자도 있고 빈 자리도 있는</b> 상태</td>
+        <td>실업자도 많은데 빈 일자리도 많다면 <b>미스매치</b>임. <em>일자리가 없는 게 아니라 안 맞는 것</em></td>
+      </tr>
+      <tr>
+        <td><b>최저임금</b></td>
+        <td>최저임금 · 최저임금 영향률<br><span class="cite">2026년 적용 10,320원 · 2027년 적용 10,700원</span></td>
+        <td>영향률 15%는 <b>근로자 100명 중 15명</b>이 새 최저임금 미만을 받고 있어 직접 영향을 받는다는 뜻</td>
+        <td>매년 <b>6~8월에 집중 보도되는 계절성 이슈.</b> 심의는 6~7월, 고시는 8월 초, 적용은 다음 해 1월</td>
+      </tr>
+      <tr>
+        <td><b>산업안전</b></td>
+        <td>산업재해율 · 노사분규 근로손실일수</td>
+        <td>사고가 특정 업종·하청에 몰리는지 확인. <b>총량보다 분포</b>가 중요함</td>
+        <td>→ 08절 보도 윤리와 연결됨</td>
+      </tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">빈 일자리는 어떻게 세는가</span>
+    <ul>
+      <li><b>고용노동부 「사업체노동력조사」</b>에서 매월 나옴. 사업체에 <em>"지금 사람을 못 구한 자리가 몇 개냐"</em>고 직접 묻는 방식임.</li>
+      <li>정의 — <strong>조사 시점에 비어 있거나 1개월 안에 일을 시작할 수 있는 자리로서, 사업체가 실제로 구인활동을 하고 있는 자리.</strong>
+        <span class="ez">주의 — 막연히 "사람이 더 있으면 좋겠다"는 자리는 안 들어감. <b>실제로 공고를 냈어야</b> 함.</span></li>
+      <li><code>빈 일자리율 = 빈 일자리 수 ÷ (현 종사자 수 + 빈 일자리 수) × 100</code>
+        <span class="ez">예 — 종사자 95명인 회사에 빈 자리 5개면 5 ÷ 100 = <b>5%</b>임.</span></li>
+      <li><b>구인배수</b>는 다른 통계임. <code>구인배수 = 구인 인원 ÷ 구직 인원</code>으로, <b>워크넷</b>에 등록된 구인·구직 건수로 계산함(고용행정통계). <em>워크넷을 쓰지 않는 채용은 빠지므로 수준 자체보다 추세를 봄.</em></li>
+      <li>기사에 쓸 때 — <strong>빈 일자리가 늘었다고 곧 "일자리가 늘었다"가 아님.</strong> <em>사람을 못 구하고 있다는 뜻</em>이며, 임금·근로조건 문제일 수도 있음. <b>왜 못 채우는지</b>를 물어야 기사가 됨.</li>
+    </ul>
+    <p style="margin-bottom:0">영어로는 <b>job vacancy</b>이며, 미국의 <b>JOLTS</b>(Job Openings and Labor Turnover Survey)가 같은 성격의 통계임. 연준이 노동시장 과열을 판단할 때 쓰는 지표라 <em>금리 기사에도 등장함.</em> → 9·10주차</p>
   </div>
 </section>
 
@@ -558,34 +807,105 @@
   <table>
     <thead><tr><th style="width:20%">연결</th><th style="width:22%">개념</th><th style="width:36%">내용</th><th>주차</th></tr></thead>
     <tbody>
-      <tr><td><b>성장 ↔ 실업</b></td><td>오쿤의 법칙</td><td>성장률이 떨어지면 실업률이 오름</td><td>3주차</td></tr>
-      <tr><td><b>실업 ↔ 물가</b></td><td>필립스 곡선<br>자연실업률·NAIRU</td><td>실업이 낮으면 임금·물가가 오름. <b>시소 관계</b></td><td>6·7주차</td></tr>
+      <tr><td><b>성장 ↔ 실업</b></td><td>오쿤의 법칙<br><span class="cite">Okun's law</span></td><td>성장률이 떨어지면 실업률이 오름</td><td>3주차</td></tr>
+      <tr><td><b>실업 ↔ 물가</b></td><td>필립스 곡선<br><span class="cite">Phillips curve</span><br>자연실업률·NAIRU</td><td>실업이 낮으면 임금·물가가 오름. <b>시소 관계</b></td><td>6·7주차</td></tr>
       <tr><td><b>고용 ↔ 금리</b></td><td>연준의 이중책무</td><td>고용이 강하면 금리 인하가 늦어짐</td><td>9·10주차</td></tr>
-      <tr><td><b>임금 ↔ 분배</b></td><td>피용자보수<br>노동소득분배율</td><td>GDP 중 노동에 돌아간 몫</td><td>3·14주차</td></tr>
+      <tr><td><b>임금 ↔ 분배</b></td><td>피용자보수<br>노동소득분배율<br><span class="cite">labour income share</span></td><td>GDP 중 노동에 돌아간 몫. <b>낮아지면 성장의 과실이 자본으로</b> 갔다는 뜻</td><td>3·14주차</td></tr>
       <tr><td><b>고용 ↔ 재정</b></td><td>고용보험기금<br>실업급여</td><td>재정의 <b>자동안정화 장치</b> 핵심</td><td>14주차</td></tr>
-      <tr><td><b>고용 ↔ 기업</b></td><td>채용 공시·인건비</td><td>기업 실적과 고용의 시차</td><td>12·13주차</td></tr>
+      <tr><td><b>고용 ↔ 기업</b></td><td>채용 공시·인건비</td><td>기업은 <b>실적이 좋아져도 바로 뽑지 않음.</b> 그 시차가 고용지표의 후행성을 만듦</td><td>12·13주차</td></tr>
       <tr><td><b>고용 ↔ 경기</b></td><td>후행지표</td><td>경기가 회복돼도 <b>몇 달 뒤에</b> 따라옴</td><td>4주차</td></tr>
       <tr><td><b>고용 ↔ 인구</b></td><td>인구효과</td><td>인구가 줄면 취업자도 줆</td><td>14주차</td></tr>
     </tbody>
   </table>
   </div>
 
-  <div class="box key">
-    <span class="bt">필립스 곡선 — 한 문장으로</span>
+  <div class="box easy">
+    <span class="bt">표에서 설명이 필요한 두 가지</span>
     <ul style="margin-bottom:0">
-      <li><strong>실업과 물가는 시소임.</strong> 실업이 낮으면 임금이 오르고, 임금이 오르면 물가가 오름.</li>
-      <li>그런데 <b>1970년대 오일쇼크 때 시소가 깨졌음.</b> 실업과 물가가 <em>동시에</em> 올랐음.</li>
-      <li>그것이 <b>스태그플레이션</b>임. → 6주차 물가, 7주차 경제위기에서 다룸.</li>
+      <li><b>노동소득분배율</b>(labour income share) — <strong>한 해에 생산된 소득 가운데 노동에 돌아간 몫의 비율</strong>임. 나머지는 자본(이윤·이자·임대료)의 몫임.
+        <span class="ez">쉽게 — 나라 전체가 번 돈을 <b>일한 사람과 가진 사람</b>이 나눌 때, 일한 사람 쪽 비율임.</span>
+        <ul style="margin:6px 0 0">
+          <li>대략 <code>피용자보수 ÷ 국민소득 × 100</code>으로 계산함. 3주차 <b>피용자보수</b>가 여기서 분자가 됨.</li>
+          <li>비율이 <b>떨어지면</b> 경제는 성장했는데 <em>그 과실이 임금보다 이윤으로 갔다는 뜻</em>임. 분배 기사의 핵심 지표임.</li>
+          <li>주의 — <b>자영업자 소득</b>을 노동으로 볼지 자본으로 볼지에 따라 값이 크게 달라짐. 한국은 자영업 비중이 높아 <em>계산 방식에 따라 수치가 엇갈림.</em> 인용 시 기준을 밝혀야 함. → 14주차</li>
+        </ul>
+      </li>
+      <li><b>채용 공시·인건비 — 기업 실적과 고용의 시차</b> — 기업은 <strong>실적이 좋아져도 곧바로 사람을 뽑지 않음.</strong> 이 호황이 이어질지 확신이 설 때까지 기다리며, 먼저 <em>기존 직원의 잔업을 늘리거나 계약직으로 메움.</em>
+        <span class="ez">쉽게 — 장사가 잘된다고 바로 직원을 늘리지 않고, 일단 야근으로 버티는 것과 같음.</span>
+        <ul style="margin:6px 0 0">
+          <li>반대 방향도 같음. <b>실적이 나빠져도 해고는 늦게</b> 옴. 뽑고 가르치는 데 든 비용이 아깝기 때문임.</li>
+          <li>그래서 <strong>고용은 경기의 후행지표</strong>가 됨. 4주차에서 본 후행종합지수에 <b>취업자수</b>가 들어 있던 이유임.</li>
+          <li>기자가 볼 것 — 기업의 <b>사업보고서 인건비</b>, <b>채용 공고 수</b>, <b>초과급여</b>. <em>고용통계보다 몇 달 먼저 움직임.</em> → 12·13주차</li>
+        </ul>
+      </li>
     </ul>
   </div>
 
+  <div class="box key">
+    <span class="bt">오쿤의 법칙 (Okun's law) — 성장과 실업을 잇는 경험칙</span>
+    <ul>
+      <li>1962년 미국 경제학자 <b>아서 오쿤(Arthur Okun)</b>이 자료에서 찾아낸 <strong>경험적 관계</strong>임. 이론에서 나온 법칙이 아니라 <em>통계에서 관찰된 규칙성</em>이라 '법칙'이라는 이름이 다소 과함.</li>
+      <li>내용 — <strong>성장률이 잠재성장률보다 낮아지면 실업률이 오름.</strong> 미국에서는 대략 <b>성장률이 잠재보다 2%p 낮으면 실업률이 1%p 오르는</b> 관계로 알려짐.
+        <span class="ez">쉽게 — 경제가 평소만큼 못 자라면 그만큼 사람을 덜 쓴다는 뜻임.</span></li>
+      <li><b>한국에서는 이 관계가 약하게 나타남.</b> 성장률이 떨어져도 실업률이 그만큼 오르지 않음. 이유는 <em>고용 조정 대신 근로시간을 줄이거나, 밀려난 사람이 실업자가 아니라 자영업자·비경제활동인구로 가기 때문임.</em></li>
+      <li>그래서 <strong>한국 기사에 오쿤의 법칙을 그대로 적용하면 틀림.</strong> "성장률이 떨어졌는데 왜 실업률은 그대로인가"라는 질문 자체가 <em>좋은 기사의 출발점임.</em> → 3주차 GDP</li>
+    </ul>
+    <p style="margin-bottom:0">확인할 것 — 실업률이 안 움직였다면 <b>고용률·자영업자 수·'쉬었음'</b>이 대신 움직였는지 봄. 충격은 어딘가에는 나타남.</p>
+  </div>
+
+  <div class="box key">
+    <span class="bt">필립스 곡선 (Phillips curve) — 실업과 물가의 시소</span>
+    <ul>
+      <li>1958년 뉴질랜드 경제학자 <b>윌리엄 필립스(A. W. Phillips)</b>가 영국의 <em>실업률과 임금상승률</em>을 100년 가까이 그려 보니 <strong>반대로 움직이는 관계</strong>가 나왔음. 뒤에 임금 자리에 물가를 넣어 쓰게 됨.</li>
+      <li>작동 경로 — <b>실업이 낮음 → 사람 구하기 어려움 → 임금 올려 부름 → 기업 비용 상승 → 제품값 인상 → 물가 상승.</b> 앞서 본 <b>ULC</b>가 이 경로의 중간 고리임.</li>
+      <li>그런데 <b>1970년대 오일쇼크 때 시소가 깨졌음.</b> 실업과 물가가 <em>동시에</em> 올랐음. 그것이 <b>스태그플레이션</b>임.</li>
+      <li>깨진 이유 — 유가 급등은 <b>수요가 아니라 공급 쪽 충격</b>이라 비용과 실업을 함께 밀어 올림. 또 사람들이 <b>물가가 계속 오를 것이라 기대</b>하기 시작하면 실업과 무관하게 임금·물가가 오름. 이 <b>기대인플레이션</b>이 오늘날 통화정책의 핵심 변수임.</li>
+      <li>그래서 지금은 <strong>"단기에는 시소가 작동하지만 장기에는 작동하지 않는다"</strong>고 봄. → 6주차 물가, 7주차 경제위기</li>
+    </ul>
+    <p style="margin-bottom:0">기사 읽기 — <em>"고용이 좋아서 금리를 못 내린다"</em>는 문장이 바로 필립스 곡선을 전제한 것임. 연준·한국은행 기사에 매번 깔려 있는 논리임. → 9·10주차</p>
+  </div>
+
   <div class="box note">
-    <span class="bt">3주차 잠재 GDP가 여기서 완성됨</span>
-    <ul style="margin-bottom:0">
-      <li>잠재 GDP의 정의에 이미 <strong>"완전고용 수준"</strong>이 들어 있었음.</li>
-      <li>그런데 <strong>완전고용은 실업률 0%가 아님.</strong></li>
-      <li>사람은 늘 직장을 옮기고, <em>그 사이의 기간이 있기 때문임.</em> 그 수준이 <b>자연실업률</b>임.</li>
-      <li>따라서 실업률이 자연실업률보다 <b>낮아지면</b> 물가 상승 압력이 생김. → 6주차</li>
+    <span class="bt">자연실업률과 NAIRU</span>
+    <ul>
+      <li><b>자연실업률</b>(natural rate of unemployment) — 경제가 정상적으로 돌아갈 때도 <strong>어쩔 수 없이 남는 실업률</strong>임. 사람은 늘 직장을 옮기고 그 사이에 빈 기간이 있기 때문임.</li>
+      <li><b>NAIRU</b> — <b>N</b>on-<b>A</b>ccelerating <b>I</b>nflation <b>R</b>ate of <b>U</b>nemployment, 즉 <strong>물가상승률을 더 높이지 않는 실업률</strong>임. 자연실업률과 거의 같은 뜻으로 쓰이지만, <em>물가를 기준으로 정의한다는 점이 다름.</em></li>
+      <li>쓰임 — <b>실제 실업률이 NAIRU보다 낮으면</b> 노동시장이 과열된 것이므로 물가 상승 압력이 생김. <b>높으면</b> 경기가 식은 것임. 중앙은행이 금리를 정할 때 보는 기준선임.</li>
+      <li><strong>직접 관측되지 않음.</strong> 통계로 나오는 숫자가 아니라 <em>모형으로 추정하는 값</em>이며, 기관마다 다르고 나중에 수정됨.</li>
+      <li>그래서 <em>"실업률이 자연실업률을 밑돌았다"는 기사에는 반드시 <b>누구의 추정치인지</b>가 따라붙어야 함.</em> 숫자가 아니라 추정임을 밝히지 않으면 불완전한 기사임.</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="bt">완전고용은 실업률 0%가 아님 — 셋을 구별할 것</span>
+    <div class="tw" style="margin:0">
+    <table>
+      <thead><tr><th style="width:22%">개념</th><th style="width:42%">무슨 뜻인가</th><th>현실에서</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>실업률 0%</b></td>
+          <td>일자리를 찾는 사람이 <b>한 명도 없는</b> 상태</td>
+          <td><strong>달성 불가능하고, 바람직하지도 않음.</strong> 아무도 직장을 옮기지 않는 경제라는 뜻이기 때문임</td>
+        </tr>
+        <tr>
+          <td><b>자연실업률</b></td>
+          <td>경제가 정상일 때도 <b>남아 있는</b> 실업률.<br>이직·구직에 걸리는 시간 때문에 생김</td>
+          <td>나라·시기마다 다름. <b>추정값</b>이며 직접 관측되지 않음</td>
+        </tr>
+        <tr>
+          <td><b>완전고용</b></td>
+          <td>실업률이 <b>자연실업률 수준</b>인 상태.<br>일하고 싶은 사람이 <b>대체로</b> 일하고 있음</td>
+          <td><strong>실업률 0%가 아니라 자연실업률에 도달한 상태</strong>를 말함</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <ul style="margin:10px 0 0">
+      <li>왜 0%가 불가능한가 — <b>마찰적 실업</b>이 늘 있기 때문임. 회사를 옮기는 사이, 졸업 후 첫 직장을 구하는 사이의 기간은 <em>경기가 아무리 좋아도 사라지지 않음.</em>
+        <span class="ez">쉽게 — 이사하는 동안 잠시 집이 없는 것과 비슷함. 집이 부족해서가 아님.</span></li>
+      <li>왜 0%가 바람직하지도 않은가 — 실업률이 <b>자연실업률 아래로</b> 내려가면 기업이 사람을 못 구해 임금을 올리고, <strong>물가 상승 압력</strong>이 생김. 경제가 과열된 상태임.</li>
+      <li>3주차 <b>잠재 GDP</b>의 정의에 들어 있던 <strong>"완전고용 수준"</strong>이 바로 이것임. <em>모두가 일하는 상태가 아니라, 물가를 자극하지 않으면서 도달할 수 있는 최대 고용</em>임.</li>
+      <li>기사 읽기 — <em>"실업률이 사상 최저"</em>는 좋은 소식만은 아님. <strong>자연실업률을 밑돌면 금리 인상 압력</strong>으로 이어짐. → 6·10주차</li>
     </ul>
   </div>
 </section>
