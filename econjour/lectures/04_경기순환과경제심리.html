@@ -281,6 +281,14 @@
     <ul style="margin-bottom:0">
       <li>약 <b>2,700개 표본 사업체</b>의 판매 총액을 지수화함.</li>
       <li><strong>소매판매는 재화 중심임.</strong> 여행·공연·외식 같은 <b>서비스 소비는 서비스업생산지수</b> 쪽에 있음.</li>
+      <li>재화는 <b>얼마나 오래 쓰는가</b>로 셋으로 나눠 발표함.
+        <ul style="margin:6px 0 0">
+          <li><b>내구재</b> — 1년 이상 사용이 가능하고 주로 <b>고가</b>인 상품. 승용차, 가전제품, 가구 등</li>
+          <li><b>준내구재</b> — 1년 이상 사용이 가능하나 주로 <b>저가</b>인 상품. 의복, 신발·가방 등</li>
+          <li><b>비내구재</b> — 주로 <b>1년 미만</b> 사용되는 상품. 음식료품, 차량연료, 화장품 등</li>
+        </ul>
+      </li>
+      <li>읽는 법 — <b>내구재는 경기와 정책에 가장 민감함.</b> 비싸고 미룰 수 있어서임. 개별소비세 인하 종료나 가전 할인행사 같은 일이 있으면 <em>한 달에 크게 튀었다가 다음 달 기저효과로 꺾임.</em> 비내구재는 먹고 쓰는 것이라 잘 안 움직임.</li>
       <li>따라서 <em>"소비가 줄었다" 기사가 소매판매만 보고 쓰였다면 반쪽짜리임.</em></li>
       <li>확인할 것 — <b>서비스업생산지수를 함께 봤는가.</b></li>
     </ul>
@@ -394,30 +402,30 @@
       <figure style="margin:0 0 14px">
         <svg viewBox="0 0 760 330" role="img" aria-label="재고와 출하의 조합에 따른 네 가지 경기 국면 도식">
           <!-- 축 -->
-          <line x1="380" y1="40" x2="380" y2="290" stroke="#c8d6e5" stroke-width="1.6"/>
-          <line x1="70" y1="165" x2="700" y2="165" stroke="#c8d6e5" stroke-width="1.6"/>
+          <line x1="380" y1="40" x2="380" y2="290" stroke="#c8d6e5" stroke-width="1.6"></line>
+          <line x1="70" y1="165" x2="700" y2="165" stroke="#c8d6e5" stroke-width="1.6"></line>
           <text x="380" y="30" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5a6779">재고 증가</text>
           <text x="380" y="310" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5a6779">재고 감소</text>
           <text x="60" y="169" text-anchor="end" font-size="12.5" font-weight="700" fill="#5a6779">출하 감소</text>
           <text x="710" y="169" text-anchor="start" font-size="12.5" font-weight="700" fill="#5a6779">출하 증가</text>
 
           <!-- 사분면 박스 -->
-          <rect x="396" y="52" width="290" height="96" rx="9" fill="#eefaf7" stroke="#a5d9d1"/>
+          <rect x="396" y="52" width="290" height="96" rx="9" fill="#eefaf7" stroke="#a5d9d1"></rect>
           <text x="414" y="78" font-size="14.5" font-weight="800" fill="#0f766e">확장기</text>
           <text x="414" y="102" font-size="13" fill="#5a6779">출하 증가 · 재고 증가</text>
           <text x="414" y="126" font-size="13" font-weight="700" fill="#0d2244">잘 팔려서 더 만듦</text>
 
-          <rect x="84" y="52" width="280" height="96" rx="9" fill="#fdf1f2" stroke="#e8b9be"/>
+          <rect x="84" y="52" width="280" height="96" rx="9" fill="#fdf1f2" stroke="#e8b9be"></rect>
           <text x="102" y="78" font-size="14.5" font-weight="800" fill="#a4303f">둔화기</text>
           <text x="102" y="102" font-size="13" fill="#5a6779">출하 감소 · 재고 증가</text>
           <text x="102" y="126" font-size="13" font-weight="700" fill="#0d2244">안 팔려서 쌓임</text>
 
-          <rect x="396" y="182" width="290" height="96" rx="9" fill="#e8eef5" stroke="#c8d6e5"/>
+          <rect x="396" y="182" width="290" height="96" rx="9" fill="#e8eef5" stroke="#c8d6e5"></rect>
           <text x="414" y="208" font-size="14.5" font-weight="800" fill="#1a4b8c">회복기</text>
           <text x="414" y="232" font-size="13" fill="#5a6779">출하 증가 · 재고 감소</text>
           <text x="414" y="256" font-size="13" font-weight="700" fill="#0d2244">쌓인 물건이 팔려나감</text>
 
-          <rect x="84" y="182" width="280" height="96" rx="9" fill="#fdf6ec" stroke="#e9c893"/>
+          <rect x="84" y="182" width="280" height="96" rx="9" fill="#fdf6ec" stroke="#e9c893"></rect>
           <text x="102" y="208" font-size="14.5" font-weight="800" fill="#b45309">수축기</text>
           <text x="102" y="232" font-size="13" fill="#5a6779">출하 감소 · 재고 감소</text>
           <text x="102" y="256" font-size="13" font-weight="700" fill="#0d2244">생산 자체를 줄임</text>
@@ -588,27 +596,25 @@
       <figure style="margin:0 0 14px">
         <svg viewBox="0 0 760 310" role="img" aria-label="지수 원계열과 순환변동치의 차이를 보여주는 개념 그래프 — 지수는 계속 오르지만 순환변동치는 100을 중심으로 위아래로 같은 폭으로 출렁임">
           <!-- 음영: 지수는 오르는데 순환변동치는 하락하는 구간 -->
-          <rect x="150" y="34" width="160" height="244" fill="#a4303f" opacity="0.07"/>
-          <rect x="310" y="34" width="80" height="244" fill="#1a4b8c" opacity="0.07"/>
+          <rect x="150" y="34" width="160" height="244" fill="#a4303f" opacity="0.07"></rect>
+          <rect x="310" y="34" width="80" height="244" fill="#1a4b8c" opacity="0.07"></rect>
           <text x="230" y="48" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a4303f">지수 ↑ · 순환변동치 ↓</text>
           <text x="350" y="48" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1a4b8c">100 아래서 ↑</text>
 
           <!-- 위: 지수 -->
           <text x="30" y="22" font-size="14" font-weight="800" fill="#0d2244">지수 — 추세 때문에 거의 계속 오름</text>
-          <polyline points="70,120.0 90,115.6 110,111.5 130,107.9 150,105.0 170,102.9 190,101.5 210,100.6 230,100.0 250,99.4 270,98.5 290,97.1 310,95.0 330,92.1 350,88.5 370,84.4 390,80.0 410,75.6 430,71.5 450,67.9 470,65.0 490,62.9 510,61.5 530,60.6 550,60.0 570,59.4 590,58.5 610,57.1 630,55.0 650,52.1 670,48.5 690,44.4 710,40.0"
-                    fill="none" stroke="#1a4b8c" stroke-width="2.8" stroke-linejoin="round"/>
-          <line x1="70" y1="120" x2="710" y2="40" stroke="#1a4b8c" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.55"/>
+          <polyline points="70,120.0 90,115.6 110,111.5 130,107.9 150,105.0 170,102.9 190,101.5 210,100.6 230,100.0 250,99.4 270,98.5 290,97.1 310,95.0 330,92.1 350,88.5 370,84.4 390,80.0 410,75.6 430,71.5 450,67.9 470,65.0 490,62.9 510,61.5 530,60.6 550,60.0 570,59.4 590,58.5 610,57.1 630,55.0 650,52.1 670,48.5 690,44.4 710,40.0" fill="none" stroke="#1a4b8c" stroke-width="2.8" stroke-linejoin="round"></polyline>
+          <line x1="70" y1="120" x2="710" y2="40" stroke="#1a4b8c" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.55"></line>
           <text x="706" y="26" text-anchor="end" font-size="11.5" fill="#5a6779">점선 = 추세치(T)</text>
           <text x="70" y="146" font-size="12" fill="#8492a6">경제 규모가 커지면 지수 자체는 우상향함 — 추세보다 빠를 때와 느릴 때만 번갈아 옴</text>
 
           <!-- 아래: 순환변동치 -->
           <text x="30" y="184" font-size="14" font-weight="800" fill="#b45309">순환변동치 — 추세를 걷어내면 100을 중심으로 위아래 같은 폭으로 출렁임</text>
-          <line x1="60" y1="240" x2="720" y2="240" stroke="#e9c893" stroke-width="2" stroke-dasharray="6 4"/>
+          <line x1="60" y1="240" x2="720" y2="240" stroke="#e9c893" stroke-width="2" stroke-dasharray="6 4"></line>
           <text x="52" y="244" text-anchor="end" font-size="12" font-weight="800" fill="#b45309">100</text>
-          <polyline points="70,240.0 90,230.1 110,221.6 130,216.0 150,214.0 170,216.0 190,221.6 210,230.1 230,240.0 250,249.9 270,258.4 290,264.0 310,266.0 330,264.0 350,258.4 370,249.9 390,240.0 410,230.1 430,221.6 450,216.0 470,214.0 490,216.0 510,221.6 530,230.1 550,240.0 570,249.9 590,258.4 610,264.0 630,266.0 650,264.0 670,258.4 690,249.9 710,240.0"
-                    fill="none" stroke="#b45309" stroke-width="2.8" stroke-linejoin="round"/>
-          <circle cx="150" cy="214" r="4" fill="#b45309"/><text x="150" y="206" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">정점</text>
-          <circle cx="310" cy="266" r="4" fill="#b45309"/><text x="310" y="284" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">저점</text>
+          <polyline points="70,240.0 90,230.1 110,221.6 130,216.0 150,214.0 170,216.0 190,221.6 210,230.1 230,240.0 250,249.9 270,258.4 290,264.0 310,266.0 330,264.0 350,258.4 370,249.9 390,240.0 410,230.1 430,221.6 450,216.0 470,214.0 490,216.0 510,221.6 530,230.1 550,240.0 570,249.9 590,258.4 610,264.0 630,266.0 650,264.0 670,258.4 690,249.9 710,240.0" fill="none" stroke="#b45309" stroke-width="2.8" stroke-linejoin="round"></polyline>
+          <circle cx="150" cy="214" r="4" fill="#b45309"></circle><text x="150" y="206" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">정점</text>
+          <circle cx="310" cy="266" r="4" fill="#b45309"></circle><text x="310" y="284" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">저점</text>
           <text x="726" y="203" font-size="11.5" fill="#5a6779" text-anchor="end">100 위 = 추세보다 빠름 · 100 아래 = 추세보다 느림</text>
           <text x="70" y="304" font-size="12" fill="#8492a6">같은 기간임 — 지수가 오르는 동안에도 순환변동치는 정점에서 저점으로 떨어질 수 있음</text>
         </svg>
@@ -671,9 +677,32 @@
   <h3>기업심리지수 (CBSI: Composite Business Sentiment Index)</h3>
   <ul>
     <li>BSI 주요 지수(제조업 5개, 비제조업 4개)로 산출한 심리지표임.</li>
-    <li>한국은행이 <b>2024년 6월 조사분부터</b> 기존 BSI를 보완해 공표하고 있음.</li>
-    <li><strong>장기평균을 100</strong>으로 하여, 100보다 크면 낙관, 작으면 비관임. <em>기준 구간은 매년 갱신됨.</em></li>
+    <li><strong>장기평균을 100</strong>으로 하여, 100보다 크면 낙관, 작으면 비관임. 장기평균을 내는 기간(<b>기준 구간</b>)은 매년 갱신됨.</li>
   </ul>
+
+  <div class="box note">
+    <span class="bt">기준 구간이란 — 그리고 '기준년도 = 100'과 무엇이 다른가</span>
+    <p><b>기준 구간</b>은 <strong>"평소"를 계산하는 기간</strong>임. 이 기간의 평균을 100으로 놓고, 이번 달 값이 그보다 얼마나 위·아래인지를 봄.</p>
+    <ul>
+      <li>예 — 2026년에 발표되는 <b>CCSI</b>는 <b>2003년 1월~2025년 12월</b>의 평균이 100임. 약 23년치임.</li>
+      <li><b>매년 1월 한 해씩 늘어남.</b> 2027년 1월부터는 2003년 1월~<b>2026년 12월</b>이 기준 구간이 됨. CBSI·ESI도 같은 방식으로 갱신함.</li>
+      <li>기준 구간이 늘면 평균과 표준편차가 조금 바뀌므로 <strong>과거 값까지 다시 계산됨.</strong> <em>작년 기사에 적힌 값과 지금 조회한 같은 달 값이 다를 수 있는 이유임.</em></li>
+    </ul>
+    <div class="tw" style="margin:0">
+    <table>
+      <thead><tr><th style="width:18%">구분</th><th style="width:41%">기준년도 = 100</th><th>장기평균 = 100</th></tr></thead>
+      <tbody>
+        <tr><td><b>100은 무엇</b></td><td><b>특정 한 해</b>의 수준 <span class="cite">예: 2020년</span></td><td><b>긴 기간의 평균</b> 수준 <span class="cite">예: 2003~2025년</span></td></tr>
+        <tr><td><b>쓰는 지표</b></td><td>산업생산지수, 소매판매액지수, 경기종합지수, 물가지수</td><td>CCSI, CBSI, ESI</td></tr>
+        <tr><td><b>계산</b></td><td><code>이번 값 ÷ 기준년도 값 × 100</code><br><span class="cite">비율</span></td><td><code>(이번 값 − 장기평균) ÷ 표준편차 × 10 + 100</code><br><span class="cite">표준화</span></td></tr>
+        <tr><td><b>110의 뜻</b></td><td>기준년도보다 <b>10% 많음</b></td><td>평소보다 <b>표준편차 1개만큼 위</b> — 꽤 좋은 편</td></tr>
+        <tr><td><b>움직임</b></td><td>경제가 커지면 <b>계속 오름.</b> 100을 넘는 것이 당연함</td><td><b>100을 중심으로 오르내림.</b> 100이 '평소'임</td></tr>
+        <tr><td><b>기준 변경</b></td><td>보통 <b>5년마다</b> 기준년도를 바꿈(개편)</td><td><b>매년 1월</b> 기준 구간을 1년 늘림</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="margin:10px 0 0"><strong>"지수가 110"이라는 문장만으로는 좋은지 나쁜지 알 수 없음.</strong> 전산업생산지수 110은 2020년보다 10% 많이 생산했다는 뜻이고, CCSI 110은 소비심리가 평소보다 꽤 낙관적이라는 뜻임. <em>어떤 100인지 먼저 확인할 것.</em></p>
+  </div>
 
   <div class="box warn">
     <span class="bt">BSI의 100과 CBSI의 100은 의미가 다름</span>
@@ -689,7 +718,7 @@
   <ul>
     <li><b>한국은행</b>이 매월 전국 도시 <strong>2,500가구</strong>를 조사함(2026년 9월 조사 응답 2,226가구). <b>5점 척도</b>.</li>
     <li><b>CCSI</b>는 이 중 경기 연관성이 높은 <strong>6개 항목을 표준화 합성</strong>한 값임 — 현재생활형편, 생활형편전망, 가계수입전망, 소비지출전망, 현재경기판단, 향후경기전망.</li>
-    <li>장기평균 = 100이며 <em>기준 구간은 매년 갱신됨.</em></li>
+    <li>CCSI는 장기평균 = 100임. 2026년 발표치의 기준 구간은 <b>2003년 1월~2025년 12월</b>이며, <b>매년 1월 한 해씩 늘어남.</b> <em>기준 구간이 바뀌면 과거 값도 다시 계산됨</em>(위 CBSI의 기준 구간 설명 참조).</li>
     <li>기대인플레이션율은 CSI가 아니라 <b>% 수치</b>로 따로 묻는 문항임. → 6주차 물가</li>
   </ul>
 
@@ -698,31 +727,18 @@
     <p>한국은행 「소비자동향조사」 보도자료는 개별 CSI를 네 묶음으로 나눠 발표함. 여기에 <b>소비지출전망을 품목별로 쪼갠 CSI 9개</b>가 따로 붙음.</p>
     <div class="tw" style="margin:0 0 10px">
     <table>
-      <thead><tr><th style="width:22%">묶음</th><th>개별 CSI</th><th style="width:26%">2026년 9월 값</th></tr></thead>
+      <thead><tr><th style="width:24%">묶음</th><th>개별 CSI</th></tr></thead>
       <tbody>
-        <tr><td><b>가계 재정상황</b> (4)</td><td>현재생활형편 · 생활형편전망 · 가계수입전망 · 소비지출전망 <span class="cite">4개 모두 CCSI에 들어감</span></td><td>92 · 98 · 102 · 110</td></tr>
-        <tr><td><b>경제상황 인식</b> (4)</td><td>현재경기판단 · 향후경기전망 <span class="cite">CCSI에 들어감</span> · 취업기회전망 · 금리수준전망</td><td>83 · 90 · — · <b>128</b></td></tr>
-        <tr><td><b>저축·부채</b> (4)</td><td>현재가계저축 · 가계저축전망 · 현재가계부채 · 가계부채전망</td><td>—</td></tr>
-        <tr><td><b>물가·가격 전망</b> (3)</td><td>물가수준전망 · 주택가격전망 · 임금수준전망</td><td>— · <b>125</b> · <b>124</b></td></tr>
-        <tr><td><b>소비지출전망 세부</b> (9)</td><td>내구재 · 의류비 · 외식비 · 여행비 · 교육비 · 의료·보건비 · 교양·오락·문화생활비 · 교통·통신비 · 주거비</td><td>—</td></tr>
+        <tr><td><b>가계 재정상황</b> (4)</td><td>현재생활형편 · 생활형편전망 · 가계수입전망 · 소비지출전망 <span class="cite">4개 모두 CCSI에 들어감</span></td></tr>
+        <tr><td><b>경제상황 인식</b> (4)</td><td>현재경기판단 · 향후경기전망 <span class="cite">CCSI에 들어감</span> · 취업기회전망 · 금리수준전망</td></tr>
+        <tr><td><b>저축·부채</b> (4)</td><td>현재가계저축 · 가계저축전망 · 현재가계부채 · 가계부채전망</td></tr>
+        <tr><td><b>물가·가격 전망</b> (3)</td><td>물가수준전망 · 주택가격전망 · 임금수준전망</td></tr>
+        <tr><td><b>소비지출전망 세부</b> (9)</td><td>내구재 · 의류비 · 외식비 · 여행비 · 교육비 · 의료·보건비 · 교양·오락·문화생활비 · 교통·통신비 · 주거비</td></tr>
       </tbody>
     </table>
     </div>
     <ul style="margin-bottom:0">
-      <li><b>자료마다 개수가 다르게 적힘</b> — 국가데이터처 선행지수 설명표는 "CSI 17개", KDI 해설은 "26개"라고 씀. 세부 품목·분류를 어디까지 세느냐의 차이임. <em>기사에 "CSI ○개 항목"을 쓸 때는 기준을 밝히거나 쓰지 말 것.</em></li>
-      <li>"—"는 이 강의자료에서 확인하지 않은 값임. 한국은행 보도자료 원문 표에서 채워 볼 것(실습 과제로 적합함).</li>
-    </ul>
-  </div>
-
-  <div class="box easy">
-    <span class="bt">사례로 읽는 개별 CSI — 2026년 9월 「소비자동향조사」</span>
-    <ul style="margin-bottom:0">
-      <li><b>CCSI 106.6</b> — 전월보다 2.1p 올라 한 달 만에 반등함. 다만 1년 전(2025년 9월 110.0)보다는 낮음. <em>전월비와 전년동월비가 다른 이야기를 할 수 있음.</em></li>
-      <li><b>현재경기판단 CSI 83</b>(+4p) — 100보다 한참 아래지만 올랐음. <em>"경기 인식 개선"과 "여전히 나쁘다는 응답이 많음"은 둘 다 맞는 문장임.</em></li>
-      <li><b>주택가격전망 CSI 125</b> — 정부 부동산 대책에도 떨어지지 않았고, 장기평균(107)을 크게 웃돔. 개별 CSI는 <b>100(응답 균형)</b>뿐 아니라 <b>항목별 장기평균</b>과도 비교해야 함. → 11주차 부동산</li>
-      <li><b>금리수준전망 CSI 128</b> — 2023년 10월 이후 가장 높음. 금리가 오를 것이라는 응답이 압도적임. → 10주차 금리</li>
-      <li><b>임금수준전망 CSI 124</b> — 최저임금이 크게 오른 2018년 무렵과 비슷한 수준이라는 해석이 붙음.</li>
-      <li><b>분해해서 보기</b> — 월소득 100만 원 미만 가구의 소비지출전망 CSI는 7~9월 평균 92.7로, 2022년 7월 표본 개편 이후 가장 낮았음. <em>전체 평균이 반등해도 저소득층 심리는 반대로 갈 수 있음.</em> 소득·연령별 CSI는 보도자료 부표에 있음.</li>
+      <li><b>자료마다 개수가 다르게 적힘</b> — 국가데이터처 선행지수 설명표는 "CSI 17개", KDI 해설은 "26개"라고 씀. 세부 품목·분류를 어디까지 세느냐의 차이임.</li>
     </ul>
   </div>
 
@@ -766,8 +782,6 @@
     <ul style="margin-bottom:0">
       <li>계산 — 7개 항목을 각각 <b>표준화</b> → <b>가중평균</b> → 장기평균 100, 표준편차 10으로 환산. CCSI와 같은 방식임.</li>
       <li>고른 항목이 대부분 <b>'전망'</b> 항목임. 그래서 ESI는 선행성을 가지며 선행종합지수에 들어감.</li>
-      <li>기준 구간은 매년 1월 연장되어 <em>과거 시계열 전체가 조금씩 수정됨.</em> 계절·불규칙 변동을 걷어낸 <b>ESI 순환변동치</b>도 함께 공표됨.</li>
-      <li>구성 항목과 가중치는 개편 때 바뀔 수 있음. 인용 전 한국은행 보도자료 부록의 「작성 방법」을 확인할 것.</li>
     </ul>
   </div>
 
@@ -865,32 +879,32 @@
       <figure style="margin:0">
         <svg viewBox="0 0 760 300" role="img" aria-label="경제뉴스와 경기의 순환 고리 도식">
           <!-- 화살표 (직각 경로) -->
-          <path d="M505,45 L645,45 L645,117" fill="none" stroke="#b45309" stroke-width="2.4"/>
-          <polygon points="645,124 640,114 650,114" fill="#b45309"/>
+          <path d="M505,45 L645,45 L645,117" fill="none" stroke="#b45309" stroke-width="2.4"></path>
+          <polygon points="645,124 640,114 650,114" fill="#b45309"></polygon>
 
-          <path d="M645,183 L645,255 L483,255" fill="none" stroke="#b45309" stroke-width="2.4"/>
-          <polygon points="476,255 486,250 486,260" fill="#b45309"/>
+          <path d="M645,183 L645,255 L483,255" fill="none" stroke="#b45309" stroke-width="2.4"></path>
+          <polygon points="476,255 486,250 486,260" fill="#b45309"></polygon>
 
-          <path d="M281,255 L115,255 L115,183" fill="none" stroke="#1a4b8c" stroke-width="2.4"/>
-          <polygon points="115,176 110,186 120,186" fill="#1a4b8c"/>
+          <path d="M281,255 L115,255 L115,183" fill="none" stroke="#1a4b8c" stroke-width="2.4"></path>
+          <polygon points="115,176 110,186 120,186" fill="#1a4b8c"></polygon>
 
-          <path d="M115,117 L115,45 L247,45" fill="none" stroke="#a4303f" stroke-width="2.4" stroke-dasharray="7 4"/>
-          <polygon points="254,45 244,40 244,50" fill="#a4303f"/>
+          <path d="M115,117 L115,45 L247,45" fill="none" stroke="#a4303f" stroke-width="2.4" stroke-dasharray="7 4"></path>
+          <polygon points="254,45 244,40 244,50" fill="#a4303f"></polygon>
 
           <!-- 노드 -->
-          <rect x="255" y="20" width="250" height="50" rx="9" fill="#0d2244"/>
+          <rect x="255" y="20" width="250" height="50" rx="9" fill="#0d2244"></rect>
           <text x="380" y="42" text-anchor="middle" font-size="14.5" font-weight="800" fill="#fff">경제뉴스 (부정적 논조)</text>
           <text x="380" y="60" text-anchor="middle" font-size="11.5" fill="#a9c9ee">NSI로 측정됨</text>
 
-          <rect x="560" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <rect x="560" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"></rect>
           <text x="645" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">소비자심리 하락</text>
           <text x="645" y="168" text-anchor="middle" font-size="11.5" fill="#5a6779">CCSI</text>
 
-          <rect x="285" y="230" width="190" height="50" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <rect x="285" y="230" width="190" height="50" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"></rect>
           <text x="380" y="252" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">실제 소비 위축</text>
           <text x="380" y="270" text-anchor="middle" font-size="11.5" fill="#5a6779">소매판매액지수 하락</text>
 
-          <rect x="30" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"/>
+          <rect x="30" y="125" width="170" height="58" rx="9" fill="#fff" stroke="#1a4b8c" stroke-width="2"></rect>
           <text x="115" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2244">경기 수축</text>
           <text x="115" y="168" text-anchor="middle" font-size="11.5" fill="#5a6779">동행지수 순환변동치</text>
 
@@ -1042,10 +1056,10 @@
     <h4>데이터</h4>
     <ul>
       <li><a href="https://kosis.kr/visual/bcc/index/index.do?language=kor" target="_blank" rel="noopener">KOSIS 경기순환시계</a></li>
-      <li><a href="https://ecos.bok.or.kr" target="_blank" rel="noopener">ECOS</a> — BSI · CSI · ESI · NSI 시계열</li>
+      <li><a href="https://ecos.bok.or.kr/" target="_blank" rel="noopener">ECOS</a> — BSI · CSI · ESI · NSI 시계열</li>
       <li><a href="https://snapshot.bok.or.kr/" target="_blank" rel="noopener">한국은행 금융·경제 스냅샷</a></li>
-      <li><a href="https://mods.go.kr" target="_blank" rel="noopener">국가데이터처</a> — 「산업활동동향」, 기준순환일</li>
-      <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — 미국 경기지표. <b>NBER 경기침체 음영 표시</b></li>
+      <li><a href="https://mods.go.kr/" target="_blank" rel="noopener">국가데이터처</a> — 「산업활동동향」, 기준순환일</li>
+      <li><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a> — 미국 경기지표. <b>NBER 경기침체 음영 표시</b></li>
       <li><a href="https://www.policyuncertainty.com/korea_monthly.html" target="_blank" rel="noopener">Korea Economic Policy Uncertainty Index</a> · <a href="https://www.policyuncertainty.com/korea_gpr.html" target="_blank" rel="noopener">GPRNK</a></li>
     </ul>
 
