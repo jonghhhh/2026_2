@@ -46,6 +46,7 @@
     <div class="sb-label">마무리</div>
     <a href="#s10"><span class="n">10</span><span>정리 · 오해 · 토론</span></a>
     <a href="#s11"><span class="n">11</span><span>참고자료</span></a>
+    <a href="#s12"><span class="n">12</span><span>부록 · 경제학파와 물가</span></a>
   </nav>
 
   <div class="sb-foot">
@@ -158,8 +159,9 @@
       <dd>명목국채와 물가연동국채의 수익률 차이로 추정한 <b>시장의 기대인플레이션</b>임.</dd>
     </dl>
     <dl class="term">
-      <dt>물가확산지수 · 절사평균<span class="en">IDI(Inflation Diffusion Index) / trimmed mean</span></dt>
-      <dd><b>얼마나 넓게 올랐는지</b>, <b>극단값을 빼면 얼마인지</b>를 보는 보조 지표임.</dd>
+      <dt>물가확산지수 · 절사평균<span class="en">IDI, Inflation Diffusion Index / trimmed mean</span></dt>
+      <dd><b>얼마나 넓게 올랐는지</b>, <b>극단값을 빼면 얼마인지</b>를 보는 보조 지표임.
+        <span class="ez">주의 — 물가확산지수는 오른 품목의 '개수'가 아니라 <b>가중치</b>로 셈. 기준선은 <b>50</b>임.</span></dd>
     </dl>
   </div>
 </section>
@@ -170,8 +172,8 @@
   <div class="h2rule"></div>
 
   <ul>
-    <li><strong>물가</strong> — 거래되는 재화·서비스의 요금을 <b>경제생활에서 차지하는 중요도를 고려해 평균</b>한 종합적 가격 수준. 핵심어는 <em>가중평균.</em></li>
-    <li><strong>물가지수</strong> — 기준연도 물가수준을 <b>100</b>으로 해 지수화한 것.</li>
+    <li><strong>물가</strong> — 거래되는 재화·서비스의 요금을 <b>경제생활에서 차지하는 중요도를 고려해 평균</b>한 종합적 가격 수준임. 핵심어는 <em>가중평균.</em></li>
+    <li><strong>물가지수</strong> — 기준연도 물가수준을 <b>100</b>으로 해 지수화한 것임.</li>
     <li><strong>물가지수의 증가율 = 물가상승률 = 인플레이션율</strong></li>
   </ul>
 
@@ -179,9 +181,9 @@
   <table>
     <thead><tr><th style="width:26%">지수</th><th style="width:44%">무엇을 측정하는가</th><th>기관</th></tr></thead>
     <tbody>
-      <tr><td><b>소비자물가지수(CPI, Consumer Price Index)</b></td><td>가계가 구입하는 재화·서비스의 가격수준</td><td>국가데이터처</td></tr>
-      <tr><td><b>생산자물가지수(PPI, Producer Price Index)</b></td><td>국내 생산자가 국내 시장에 출하하는 재화·서비스</td><td>한국은행</td></tr>
-      <tr><td><b>수출입물가지수(Export and Import Price Index)</b></td><td>수출·수입 상품의 가격수준 → <b>교역조건</b></td><td>한국은행</td></tr>
+      <tr><td><b>소비자물가지수(CPI)</b></td><td>가계가 구입하는 재화·서비스의 가격수준</td><td>국가데이터처</td></tr>
+      <tr><td><b>생산자물가지수(PPI)</b></td><td>국내 생산자가 국내 시장에 출하하는 재화·서비스</td><td>한국은행</td></tr>
+      <tr><td><b>수출입물가지수</b></td><td>수출·수입 상품의 가격수준 → <b>교역조건</b></td><td>한국은행</td></tr>
       <tr><td>GDP디플레이터</td><td>국내 생산 전체. <em>수입품 가격은 직접 포함하지 않음</em></td><td>한국은행 <span class="cite">→ 3주차</span></td></tr>
     </tbody>
   </table>
@@ -237,6 +239,29 @@
     <figcaption>같은 달 물가도 <b>어느 변동률을 쓰느냐에 따라 제목이 달라짐</b>. 기여도는 <b>가격 변동 × 가중치</b>이므로, 많이 오른 품목이 아니라 <b>가중치가 큰 품목</b>이 지수를 움직임.</figcaption>
   </figure>
 
+  <div class="box note">
+    <span class="bt">기여도 읽기 — 「소비자물가동향」 지출목적별 표에서</span>
+    <div class="tw" style="margin:0 0 10px">
+    <table>
+      <thead>
+        <tr><th rowspan="2" style="width:24%">지출목적별</th><th rowspan="2">품목 수</th><th rowspan="2">가중치</th><th rowspan="2">지수</th><th colspan="2">등락률(%)</th><th colspan="2">기여도(%p)</th></tr>
+        <tr><th>전월비</th><th>전년동월비</th><th>전월비</th><th>전년동월비</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>총지수</b></td><td class="num">458</td><td class="num">1,000.0</td><td class="num">120.43</td><td class="num">0.3</td><td class="num">2.9</td><td class="num">0.32</td><td class="num">2.88</td></tr>
+        <tr><td>식료품 및 비주류음료</td><td class="num">140</td><td class="num">142.0</td><td class="num">130.09</td><td class="num"><b>1.4</b></td><td class="num">1.0</td><td class="num"><b>0.21</b></td><td class="num">0.15</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <ul style="margin-bottom:0">
+      <li><b>가중치 142.0</b>은 1,000 중 142, 즉 <b>지출의 14.2%</b>임. 기여도는 대략 <code>등락률 × 가중치 비중</code>임 — <code>1.4% × 0.142 ≈ 0.2%p</code>.</li>
+      <li><b>전월비</b> — 한 달 물가 상승 <b>0.32%p 중 0.21%p</b>가 식료품 몫임. <strong>이번 달 상승의 약 3분의 2를 식료품이 만들었음.</strong></li>
+      <li><b>전년동월비</b> — 1년 상승 <b>2.88%p 중 0.15%p</b>뿐임. 약 5%에 불과함. <strong>1년 물가 상승은 식료품이 아닌 다른 항목이 끌어올렸음.</strong></li>
+      <li>그래서 <em>"식료품이 이번 달 물가를 끌어올렸다"는 맞고, "식료품이 올해 물가 상승을 주도했다"는 틀림.</em> 같은 표에서도 <b>비교 기준</b>에 따라 주인공이 바뀜.</li>
+      <li>모든 항목의 기여도를 더하면 총지수 등락률이 됨. 그래서 <b>"무엇이 물가를 끌어올렸나"</b>는 등락률이 아니라 <b>기여도 순서</b>로 써야 함.</li>
+    </ul>
+  </div>
+
   <h3>세 가지 상태</h3>
   <div class="tri c1">
     <div>
@@ -252,7 +277,7 @@
     <div>
       <h5>스태그플레이션</h5>
       <span class="tag">물가 상승 + 경기 침체</span>
-      <ul><li><b>필립스 곡선이 깨진 상태</b>임</li><li>정책 수단(긴축 vs. 확장)이 서로 충돌.</li></ul>
+      <ul><li><b>필립스 곡선이 깨진 상태</b>임</li><li>정책 수단이 서로 충돌함</li></ul>
     </div>
   </div>
 </section>
@@ -301,10 +326,47 @@
   <div class="box key">
     <span class="bt">어느 쪽인지 판별하는 힌트</span>
     <ul style="margin-bottom:0">
-      <li><b>물가확산지수(IDI, inflation Diffusion Index )</b>를 봄 — 전체 품목 중 <em>가격이 오른 품목의 비중</em>.</li>
+      <li><b>물가확산지수(IDI, Inflation Diffusion Index)</b>를 봄 — 가격이 오른 품목이 <em>소비 지출에서 차지하는 무게</em>가 얼마나 되는지 보는 지수임.</li>
       <li><strong>넓게 올랐음</strong> → 수요견인 쪽에 가까움.</li>
       <li><strong>몇몇 품목만 폭등</strong> → 비용인상·공급충격 쪽에 가까움.</li>
-      <li>함께 볼 것 — <b>절사평균(TMI)</b>과 <b>가중중위수(WMI)</b>. 극단값을 걷어낸 숫자나 전체 순위에서 중앙값을 보여줌.</li>
+      <li>함께 볼 것 — <b>절사평균(TMI)</b>과 <b>가중중위수(WMI)</b>. 극단값을 걷어내면 얼마인지 보여줌.</li>
+    </ul>
+  </div>
+
+  <div class="box note">
+    <span class="bt">물가확산지수 계산법 — 개수가 아니라 가중치로 셈</span>
+    <p><code>물가확산지수 = 상승 품목의 가중 비중(%) + 보합 품목의 가중 비중(%) × 0.5</code></p>
+    <ul style="margin-bottom:0">
+      <li><b>가중 비중</b> — 품목 수가 아니라 <b>CPI 가중치</b>로 잼. 휘발유처럼 지출 비중이 큰 품목 하나가 오르면, 지출 비중이 작은 품목 여러 개가 오른 것보다 지수가 더 움직임.</li>
+      <li>상승은 1, 보합은 0.5, 하락은 0으로 쳐서 가중평균한 것과 같음. 그래서 <b>범위는 0~100</b>임.</li>
+      <li><b>기준선은 50</b> — 오른 품목과 내린 품목의 가중 비중이 같으면 50임. <strong>50을 넘을수록 상승이 넓게 퍼진 것</strong>임.</li>
+      <li class="ez">주의 — "물가확산지수 70"은 "품목의 70%가 올랐다"는 뜻이 아님. 보합 품목이 절반씩 더해지고, 품목마다 무게가 다르기 때문임.</li>
+    </ul>
+  </div>
+
+  <div class="box easy">
+    <span class="bt">물가확산지수 사례 — 같은 3%, 다른 진단</span>
+    <p style="margin-bottom:6px">헤드라인 CPI가 똑같이 3.0%인 두 달을 비교함. <span class="cite">설명용 가상 사례</span></p>
+    <div class="tw" style="margin:0 0 10px">
+    <table>
+      <thead><tr><th style="width:10%"></th><th style="width:30%">가중 비중 (상승 · 보합 · 하락)</th><th style="width:22%">물가확산지수</th><th>읽는 법</th></tr></thead>
+      <tbody>
+        <tr><td><b>A달</b></td><td>70% · 10% · 20%</td><td><code>70 + 10 × 0.5</code> = <b>75</b></td><td>외식·의류·서비스까지 <b>두루</b> 오름 → <b>수요견인·기조적 압력.</b> 금리 대응이 들음</td></tr>
+        <tr><td><b>B달</b></td><td>35% · 15% · 50%</td><td><code>35 + 15 × 0.5</code> = <b>42.5</b></td><td>절반은 내렸는데 석유류·농산물 <b>몇 품목이 폭등</b>해 평균을 끌어올림 → <b>공급충격.</b> 금리로는 잘 안 잡힘</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="margin-bottom:0"><strong>헤드라인 숫자가 같아도 처방은 정반대임.</strong> 4주차에서 본 <b>확산지수</b>와 같은 원리임 — 평균이 아니라 <em>얼마나 넓게 퍼졌는가</em>를 봄.</p>
+  </div>
+
+  <div class="box note">
+    <span class="bt">같은 원리 — 미국 ISM 제조업 PMI</span>
+    <ul style="margin-bottom:0">
+      <li>미국 공급관리협회(<a href="https://en.wikipedia.org/wiki/ISM_Report_On_Business" target="_blank" rel="noopener">ISM</a>, Institute for Supply Management)의 <b>제조업 구매관리자지수(PMI, Purchasing Managers' Index)</b>도 <strong>같은 계산 구조</strong>임.</li>
+      <li>구매 담당자에게 신규주문·생산·고용 등이 전월보다 <b>나아졌나 · 같나 · 나빠졌나</b>를 묻고, <code>"나아짐" 응답 비중 + "같음" 응답 비중 × 0.5</code>로 항목별 지수를 만듦. 다섯 항목(신규주문·생산·고용·공급업체 배송·재고)을 평균한 것이 PMI임.</li>
+      <li>그래서 <b>기준선도 50</b>임. 50을 넘으면 제조업 확장, 밑돌면 위축임.</li>
+      <li>차이 — 물가확산지수는 <b>실제 가격 자료</b>를 <b>CPI 가중치</b>로 셈. PMI는 <b>설문 응답</b>을 <b>응답자 비중</b>으로 셈. 4주차 BSI처럼 <em>심리·체감</em> 쪽 지표임.</li>
+      <li>물가 기사와의 연결 — ISM 보고서의 <b>가격지수(Prices)</b>는 PMI 합성에는 들어가지 않지만, <em>기업이 원자재 값을 더 내고 있는지</em>를 보여줘 미국 물가 기사에 자주 인용됨. → 07절 미국 물가</li>
     </ul>
   </div>
 </section>
@@ -332,14 +394,15 @@
     <ul style="margin-bottom:0">
       <li>기사가 <b>"근원물가"</b>라고만 쓰면 <strong>어느 쪽인지 알 수 없음.</strong> 두 숫자는 다름.</li>
       <li>국제 비교를 할 때는 <b>OECD 기준(식료품·에너지 제외)</b>을 써야 함.</li>
+      <li>확인 위치 — 소비자물가동향 보도자료에 <em>두 지수가 나란히</em> 실려 있음.</li>
     </ul>
   </div>
 
   <h3>분류 성격별</h3>
   <ul>
     <li><b>지출목적별</b> — 교통·오락·보건 등 소비 지출 목적에 따라 나눔.</li>
-    <li><b>품목성질별</b> — 농축수산물(쌀, 채소, 돼지고기, 고등어 등) · 공업제품(석유류, 가공식품, 의류, 가전제품 등) · 개인서비스(외식비,  학원비, 숙박료, 헬스장 이용료 등) · 공공서비스(버스 요금, 진료비, 공립유치원비, 여권 발급 수수료 등) · 집세(월세, 전세 등)</li>
-    <li><b>자가주거비 포함 지수</b> — 내 집에 살면서 누리는 주거 서비스의 가치(비용). 별도로 작성되며, 기본 지수에는 포함되지 않음.</li>
+    <li><b>품목성질별</b> — 농축수산물 · 공업제품 · <b>개인서비스</b> · <b>공공서비스</b> · 집세</li>
+    <li><b>자가주거비 포함 지수</b> — 별도로 작성됨. 기본 지수에는 포함되지 않음.</li>
   </ul>
 
   <div class="case">
@@ -350,8 +413,9 @@
     <div class="case-b">
       <ul>
         <li>그래서 <strong>집값이 올라도 헤드라인 CPI는 잘 오르지 않음.</strong></li>
-        <li>한국 CPI에 들어가는 주거 관련 항목은 주로 <b>집세지수(전세·월세)</b>.</li>
-        <li><b>미국 CPI는 자가주거비(OER, Owner's Equivalent Rent)가 큰 비중</b>을 차지.</li>
+        <li>한국 CPI에 들어가는 주거 관련 항목은 주로 <b>집세지수(전세·월세)</b>임.</li>
+        <li><b>미국 CPI는 자가주거비(OER)가 큰 비중</b>을 차지함.</li>
+        <li>따라서 <strong>한미 CPI를 직접 비교하면 안 됨.</strong> 2주차에서 배운 <em>"국가 간 정의 차이를 확인함"</em>의 대표 사례임.</li>
       </ul>
       <div class="box key" style="margin-bottom:0">
         <span class="bt">"물가 안정"과 "집값 폭등"이 동시에 성립하는 이유</span>
@@ -360,14 +424,14 @@
     </div>
   </div>
 
-  <h3>기조적 물가(Underlying Inflation, Trend Inflation)를 보는 보조 지표</h3>
+  <h3>기조적 물가를 보는 보조 지표</h3>
   <div class="tw">
   <table>
     <thead><tr><th style="width:30%">지표</th><th style="width:36%">어떻게 계산하는가</th><th>무엇을 알려주는가</th></tr></thead>
     <tbody>
-      <tr><td><b>물가확산지수(IDI, Inflation Diffusion Index)</b></td><td>전체 품목 중 <b>가격이 오른 품목의 비중</b></td><td>상승이 얼마나 <b>넓게</b> 퍼졌는가</td></tr>
-      <tr><td><b>절사평균(TMI, , Trimmed Mean Inflation)</b></td><td>극단적으로 오르내린 품목을 <b>양쪽에서 잘라내고</b> 계산</td><td>극단값을 뺀 기조적 상승률</td></tr>
-      <tr><td><b>가중중위수(WMI, , Weighted Median Inflation)</b></td><td>가중치 누적의 <b>중앙에 있는 품목</b>의 변동률</td><td>가운데 품목이 얼마나 올랐는가</td></tr>
+      <tr><td><b>물가확산지수(IDI)</b></td><td><b>상승 품목의 가중 비중 + 보합 품목의 가중 비중 × 0.5</b> <span class="cite">기준선 50</span></td><td>상승이 얼마나 <b>넓게</b> 퍼졌는가</td></tr>
+      <tr><td><b>절사평균(TMI)</b></td><td>극단적으로 오르내린 품목을 <b>양쪽에서 잘라내고</b> 계산</td><td>극단값을 뺀 기조적 상승률</td></tr>
+      <tr><td><b>가중중위수(WMI)</b></td><td>가중치 누적의 <b>중앙에 있는 품목</b>의 변동률</td><td>가운데 품목이 얼마나 올랐는가</td></tr>
     </tbody>
   </table>
   </div>
@@ -397,7 +461,7 @@
     <li><b>누적과 증가율을 혼동함</b>
       <strong>"상승률 둔화"는 가격이 내렸다는 뜻이 아님.</strong> 여전히 오르는 중이고 속도만 줄었음.</li>
     <li><b>품질조정 때문</b>
-      성능이 좋아진 제품은 가격이 올라도 지수상 상승분이 작게 잡힘. <em>스마트폰(성능 업그레이드) 값이 올라도 더 좋은 제품 값을 낸 것으로 처리해 가격 상승률을 낮춤.</em></li>
+      성능이 좋아진 제품은 가격이 올라도 지수상 상승분이 작게 잡힘. <em>스마트폰 값이 올라도 성능 향상분을 빼면 '가격 상승'이 줄어듦.</em></li>
   </ol>
 
   <div class="info">
@@ -447,6 +511,7 @@
         <ul style="margin-bottom:0">
           <li><strong>누적 물가 수준(지수 자체)을 함께 보여주는 것</strong>이 정직한 보도임.</li>
           <li>한 줄이면 됨 — <em>"○○년을 100으로 하면 지금은 ○○임."</em></li>
+          <li>이 한 줄로 <b>독자의 체감과 통계가 만남.</b></li>
         </ul>
       </div>
     </div>
@@ -462,7 +527,7 @@
   <div class="h2rule"></div>
 
   <ul>
-    <li><strong>생산자물가지수(PPI)</strong> — 국내 생산자가 국내 시장에 공급하는 재화·서비스의 가격 변동.</li>
+    <li><strong>생산자물가지수(PPI)</strong> — 국내 생산자가 국내 시장에 공급하는 재화·서비스의 가격 변동임.</li>
     <li><b>한국은행</b>이 조사하며, <em>CPI보다 조사 품목이 많음.</em></li>
     <li><strong>CPI에 선행하는 경향</strong>이 있음 → 기사거리 — <em>"생산자물가 상승, 소비자물가로 전이될까"</em></li>
   </ul>
@@ -479,10 +544,40 @@
     </tbody>
   </table>
   </div>
-  <ul>
-    <li><b>국내공급물가지수(DSPI, Domestic Supply Price Index)</b> — 국내 출하품 + 수입품을 가공 단계별(원재료·중간재·최종재)로 분류한 지수. 물가 파급 과정을 추적할 수 있음. 수입품도 포함하므로 수입 원자재 충격을 잡아냄.</li>
-    <li><b>총산출물가지수(TOPI, Total Output Price Index)</b> — : 국내 출하품 + 수출품을 국내 생산자 관점에서 분류한 지수.</li>
-  </ul>
+  <h3>PPI의 두 친척 — 국내공급물가와 총산출물가</h3>
+  <p>세 지수는 <strong>무엇을 바구니에 넣느냐</strong>가 다름. 모두 한국은행 「생산자물가지수」 보도자료에 함께 실림.</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:30%">지수</th><th style="width:34%">무엇을 담는가</th><th>무엇을 보여주나</th></tr></thead>
+    <tbody>
+      <tr><td><b>생산자물가지수</b><br><span class="cite">PPI, Producer Price Index</span></td><td>국내 출하품 <span class="cite">국내에서 만들어 국내에 판 것</span></td><td>기본형</td></tr>
+      <tr><td><b>국내공급물가지수</b><br><span class="cite">DSPI, Domestic Supply Price Index</span></td><td>국내 출하품 + <b>수입품</b><br>원재료 → 중간재 → 최종재 <b>단계별</b>로 나눔</td><td>국내 시장에 풀리는 모든 것의 가격. <b>비용이 단계를 따라 내려오는 과정</b></td></tr>
+      <tr><td><b>총산출물가지수</b><br><span class="cite">TOPI, Total Output Price Index</span></td><td>국내 출하품 + <b>수출품</b></td><td>국내에서 만든 모든 것의 가격. <b>생산자가 실제로 받는 값</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box note">
+    <span class="bt">사례 — 2026년 6월 「생산자물가지수」</span>
+    <ul>
+      <li><b>PPI</b> — 전월 대비 <b>0.0%</b>(보합), 전년동월 대비 <b>8.6%</b></li>
+      <li><b>국내공급물가</b> — 전월 대비 <b>0.7%</b>. 원재료 <b>2.1%</b>, 중간재 0.5%, 최종재 0.5%</li>
+      <li><b>총산출물가</b> — 전월 대비 0.4%, 전년동월 대비 <b>17.6%</b></li>
+    </ul>
+    <ul style="margin-bottom:0">
+      <li><b>PPI만 보면</b> "생산자물가 상승 멈춤"임. 그런데 <strong>수입품을 넣은 국내공급물가는 0.7% 올랐고, 원재료 단계가 2.1%로 가장 많이 올랐음.</strong> 비용 압력이 사슬의 맨 앞에 쌓이고 있다는 신호임.</li>
+      <li><b>총산출물가 17.6%는 PPI 8.6%의 두 배임.</b> 국내 출하품보다 <b>수출품 값이 훨씬 많이 올랐다</b>는 뜻임. 수출 주력품 가격이 올라 <em>생산자의 수취 가격과 채산성이 좋아졌음</em>을 보여줌.</li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <span class="bt">왜 필요하고, 언제 앞세워 보도해야 하나</span>
+    <ul style="margin-bottom:0">
+      <li><b>국내공급물가</b> — PPI는 수입품을 빼므로 <em>수입 원자재 충격을 늦게, 일부만</em> 보여줌. <strong>환율 급등·국제유가 급등 때</strong> 앞세울 것. 원재료 → 중간재 → 최종재 순으로 상승이 내려오는지 보면 <b>몇 달 뒤 CPI 전이를 예고</b>할 수 있음.</li>
+      <li><b>총산출물가</b> — PPI는 수출품을 빼므로 <em>수출 가격이 급변해도 잘 안 보임.</em> <strong>반도체 등 수출품 가격이 크게 오르거나 떨어질 때</strong> 앞세울 것. 기업 채산성, 수출 경기, 교역조건 기사와 함께 씀.</li>
+      <li>원칙 — <strong>PPI 헤드라인 하나로 "생산자물가 안정"이라고 쓰기 전에 두 지수를 확인할 것.</strong> 위 6월처럼 결론이 달라질 수 있음.</li>
+    </ul>
+  </div>
 
   <div class="info">
     <div class="info-h">
@@ -534,8 +629,13 @@
   <ul>
     <li>수출·수입 상품의 가격 변동을 측정함. <b>한국은행</b>이 조사함.</li>
     <li>용도별 분류 — <b>원재료</b>(원유·철광석), <b>중간재</b>(반도체 칩·철강), <b>자본재</b>(기계 설비·서버), <b>소비재</b>(스마트폰·가전·의류)</li>
-    <li>활용 — 수입원가 부담(Import Cost Burden), <b>교역조건(Terms of Trade)</b>, 수출채산성(Export Profitability). → 3주차 실질 GNI, 15주차 무역</li>
-    <li>관련 지표 — <b>순상품교역조건지수(NBTT, Net Barter Terms of Trade)</b>, <b>소득교역조건지수(ITT, Income Terms of Trade)</b></li>
+    <li>활용 — 수입원가 부담, <b>교역조건</b>, 수출채산성. → 3주차 실질 GNI, 15주차 무역</li>
+    <li>관련 지표 — <b>순상품교역조건지수(NBTT, Net Barter Terms of Trade)</b>, <b>소득교역조건지수(ITT, Income Terms of Trade)</b> → 15주차 무역
+      <ul style="margin:6px 0 0">
+        <li><b>순상품교역조건</b> — <code>수출가격 ÷ 수입가격 × 100</code>. 수출품 1단위를 팔아 수입품을 몇 단위 살 수 있는가.</li>
+        <li><b>소득교역조건</b> — <code>순상품교역조건 × 수출물량 ÷ 100</code>. 수출 <b>전체</b>로 수입품을 얼마나 살 수 있는가. 값이 불리해져도 물량이 늘면 개선될 수 있음.</li>
+      </ul>
+    </li>
   </ul>
 </section>
 
@@ -547,9 +647,9 @@
 
   <div class="tw">
   <table>
-    <thead><tr><th style="width:22%">구분</th><th style="width:39%">CPI(소비자물가지수, Consumer Price Index)</th><th>PCE (개인소비지출 물가지수, Personal Consumption Expenditures Price Index)</th></tr></thead>
+    <thead><tr><th style="width:22%">구분</th><th style="width:39%">CPI</th><th>PCE (개인소비지출 물가지수)</th></tr></thead>
     <tbody>
-      <tr><td><b>기관</b></td><td>미국 BLS(Bureau of Labor Statistics, 미 노동부 노동통계국)</td><td>미국 BEA( Bureau of Economic Analysis, 미 상무부 경제분석국) </td></tr>
+      <tr><td><b>기관</b></td><td>미국 BLS</td><td>미국 BEA</td></tr>
       <tr><td><b>대상</b></td><td>소비자가 <b>직접 구매</b>한 상품·서비스</td><td>가정·비영리단체를 <b>위해</b> 구매된 상품·서비스</td></tr>
       <tr><td><b>간접 지출</b></td><td>미포함</td><td><b>포함</b> — 고용주가 낸 의료보험료 등</td></tr>
       <tr><td><b>관점</b></td><td>by consumers</td><td>on behalf of consumers</td></tr>
@@ -575,7 +675,7 @@
     <ul style="margin-bottom:0">
       <li><b>미국 CPI</b> — 매월 중순 (미 동부 오전)</li>
       <li><b>미국 PCE</b> — 매월 말. 개인소득·지출 보고서에 포함됨</li>
-      <li><b>유로존 HICP(Harmonized Index of Consumer Prices)</b> — 매월. 속보치 → 확정치 순으로 나옴</li>
+      <li><b>유로존 HICP</b> — 매월. 속보치 → 확정치 순으로 나옴</li>
     </ul>
   </div>
 </section>
@@ -596,7 +696,7 @@
   <h3>기대인플레이션의 고착</h3>
   <ul>
     <li><strong>기대가 고착되면 실제 물가가 따라감.</strong> 임금 협상과 가격 책정에 반영되기 때문임.</li>
-    <li>측정 두 가지 — <b>설문</b>(한국은행 소비자동향조사의 기대인플레이션율), <b>시장</b>(BEI, Break-even Inflation, 물가와 국채수익률 비교 측정)</li>
+    <li>측정 두 가지 — <b>설문</b>(한국은행 소비자동향조사의 기대인플레이션율), <b>시장</b>(BEI)</li>
     <li>→ 4주차 심리지표, 10주차 금리와 연결됨.</li>
   </ul>
 
@@ -620,7 +720,7 @@
 
   <div class="box easy">
     <span class="bt">인용된 전문가의 입장을 읽는 훈련</span>
-    <p style="margin-bottom:0">물가를 두고 <em>"돈을 많이 풀면 물가가 오른다"</em>는 쪽과 <em>"수요가 부족한 게 문제니 정부가 써야 한다"</em>는 쪽이 오래 대립해 왔음. <strong>물가 기사에 인용되는 전문가가 어느 쪽인지 보면 결론이 예측됨.</strong> 학파 논쟁의 실제 장면은 7주차 경제위기에서 사례로 다룸.</p>
+    <p style="margin-bottom:0">물가를 두고 <em>"돈을 많이 풀면 물가가 오른다"</em>는 쪽과 <em>"수요가 부족한 게 문제니 정부가 써야 한다"</em>는 쪽이 오래 대립해 왔음. <strong>물가 기사에 인용되는 전문가가 어느 쪽인지 보면 결론이 예측됨.</strong> 학파별 입장은 <a href="#s12">12. 부록 — 경제학파와 물가</a>에 정리했고, 논쟁의 실제 장면은 7주차 경제위기에서 사례로 다룸.</p>
   </div>
 </section>
 
@@ -776,6 +876,80 @@
       <li><a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener">미국 BLS · CPI</a> · <a href="https://www.bea.gov" target="_blank" rel="noopener">미국 BEA · PCE</a></li>
       <li><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED</a> — CPI, core PCE, <b>5년 BEI(기대인플레이션)</b></li>
       <li><a href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener">Eurostat Euro Indicators</a> — HICP</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 12 부록 ───────── -->
+<section id="s12">
+  <h2><span class="num">12</span>부록 — 경제학파와 물가</h2>
+  <div class="h2rule"></div>
+  <p class="lede">물가 기사에 인용되는 전문가의 말은 대개 <strong>어느 학파의 시각</strong>에서 나옴. 학파별로 <em>물가가 왜 오르고 무엇으로 잡는지</em>를 한 표로 정리함.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:13%">학파</th><th style="width:15%">시기 · 인물</th><th style="width:21%">핵심 생각</th><th style="width:17%">인플레이션</th><th style="width:16%">디플레이션</th><th>스태그플레이션</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>고전학파</b><br><span class="cite">Classical Economics</span></td>
+        <td>18세기 후반~19세기 중반<br>애덤 스미스, 데이비드 리카도, 장바티스트 세</td>
+        <td>보이지 않는 손. 시장은 스스로 균형을 찾음. <b>세이의 법칙</b>(공급이 수요를 창출). 화폐는 실물에 영향을 주지 않음(<b>고전적 이분법</b>)</td>
+        <td><b>화폐량이 늘어서</b> 생김(화폐수량설). 실물경제와는 무관함</td>
+        <td>화폐량이 줄면 물가가 내림. 가격·임금이 신축적이어서 실물은 <b>저절로 회복</b>됨</td>
+        <td>당시엔 없던 개념임</td>
+      </tr>
+      <tr>
+        <td><b>신고전학파</b><br><span class="cite">Neoclassical Economics</span></td>
+        <td>19세기 후반~20세기 초반<br>앨프리드 마셜, 레옹 발라, 윌리엄 스탠리 제번스</td>
+        <td><b>한계효용</b>(추가 소비의 만족은 점점 줄어듦). 효용·이윤 극대화. 수요와 공급의 <b>균형</b></td>
+        <td><b>통화량 증가</b>가 원인. 피셔의 교환방정식(MV=PT), 마셜의 현금잔고설로 정식화됨</td>
+        <td>가격·임금 조정으로 균형이 회복됨. 정부 개입은 필요 없음</td>
+        <td>당시엔 없던 개념임</td>
+      </tr>
+      <tr>
+        <td><b>케인스학파</b><br><span class="cite">Keynesian Economics</span></td>
+        <td>1930년대(대공황 이후)<br>존 메이너드 케인스</td>
+        <td><b>유효수요</b>(총수요가 생산·고용을 결정). 임금·가격은 <b>경직적</b>이라 시장이 저절로 회복되지 않음. 정부의 재정·통화정책 필요</td>
+        <td>총수요가 생산능력을 넘을 때 생김(<b>수요견인</b>). 정부 지출 축소·증세로 대응</td>
+        <td><b>수요 부족</b>으로 생긴 침체. 임금을 깎아도 수요가 줄어 회복되지 않음 → <b>정부 지출 확대</b></td>
+        <td>1970년대 필립스 곡선으로 설명하기 어려웠음. 이후 <b>공급 충격(비용인상)</b>으로 해석하고 소득정책(임금·가격 억제) 등을 제시함</td>
+      </tr>
+      <tr>
+        <td><b>통화주의</b><br><span class="cite">Monetarism</span></td>
+        <td>1960년대<br>밀턴 프리드먼</td>
+        <td>통화량이 명목 경제를 좌우함. <b>단기엔 실물에도 영향, 장기엔 물가에만 영향</b>(장기 중립성). <b>자연실업률</b>. 일정한 통화 증가 준칙</td>
+        <td>"인플레이션은 언제 어디서나 <b>화폐적 현상</b>." 통화량 과잉이 원인 → 통화 공급 억제</td>
+        <td><b>통화량 감소</b>가 원인(대공황 해석) → 통화 공급 확대</td>
+        <td>통화정책으로 실업을 자연실업률 아래로 끌어내리려 한 결과임. <b>기대인플레이션이 올라 필립스 곡선이 위로 이동</b> → 통화 증가율을 낮춰야 함</td>
+      </tr>
+      <tr>
+        <td><b>새고전학파</b><br><span class="cite">New Classical Economics</span></td>
+        <td>1970년대<br>로버트 루커스, 토머스 사전트</td>
+        <td><b>합리적 기대</b>(↔ 적응적 기대). 예상된 정책은 실물에 효과 없음(<b>정책무력성</b>). <b>실물경기변동이론</b> — 기술 같은 실물 충격이 경기를 움직임</td>
+        <td><b>예상된</b> 인플레이션은 실물에 영향 없음. 예상 못 한 통화 충격만 일시적으로 산출을 흔듦 → <b>신뢰할 수 있는 정책</b>이 중요</td>
+        <td>시장의 자율 조정으로 균형이 회복됨</td>
+        <td>공급(생산성) 충격에 대한 시장의 반응임. <b>기대를 무시한 재량 정책</b>이 문제를 키웠다고 봄</td>
+      </tr>
+      <tr>
+        <td><b>새케인스학파</b><br><span class="cite">New Keynesian Economics</span></td>
+        <td>1980년대<br>그레고리 맨큐, 데이비드 로머</td>
+        <td>합리적 기대는 받아들이되, <b>가격 경직성</b>(메뉴 비용 등)과 불완전 경쟁·불완전 정보 때문에 단기엔 시장이 바로 조정되지 않음. 안정화 정책 필요</td>
+        <td>가격이 <b>천천히</b> 조정돼 물가에 관성이 생김. <b>중앙은행이 금리</b>(물가안정목표)로 대응</td>
+        <td>수요 부진 + 가격 경직 → 산출·고용 감소. <b>금리 인하</b>가 1차 수단, 금리가 0에 가까우면 <b>재정 확대</b></td>
+        <td>공급 충격이 오면 <b>물가 안정과 경기 안정이 충돌</b>함. 기대인플레이션을 묶어 두는 것이 관건</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="bt">표를 읽는 요령</span>
+    <ul style="margin-bottom:0">
+      <li><b>가장 큰 갈림길은 "시장이 스스로 회복하는가"</b>임. 고전·신고전·새고전학파는 '예', 케인스·새케인스학파는 '단기엔 아니오'임.</li>
+      <li><b>두 번째 갈림길은 "물가의 원인이 돈인가 수요인가"</b>임. 고전·통화주의는 돈, 케인스학파는 수요를 앞세움. 03절의 <b>수요견인 · 비용인상</b> 구분이 여기서 나왔음.</li>
+      <li>오늘날 중앙은행의 사고방식은 <b>새고전학파의 합리적 기대와 새케인스학파의 가격 경직성을 합친 것</b>임(새 신고전파 종합). 그래서 <em>기대인플레이션 관리와 금리 정책</em>이 물가 대응의 중심에 있음.</li>
+      <li>스태그플레이션은 <b>1970년대 이후의 개념</b>임. 고전·신고전학파 칸이 비어 있는 것은 그 때문임.</li>
+      <li>주의 — 학파 구분은 <b>단순화한 것</b>임. 같은 학파 안에도 이견이 크고, 실제 전문가는 여러 시각을 섞어 씀.</li>
     </ul>
   </div>
 </section>
