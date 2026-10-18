@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>학파별 총수요·총공급 곡선</title>
+<style>
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+:root { --ink:#1f2937; --muted:#6b7280; --navy:#0d2244; --line:#e5e7eb; --soft:#f5f7fa; }
+* { box-sizing: border-box; }
+body { font-family: "Noto Sans CJK KR", sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.62; margin: 0; background:#fff; }
+h1 { font-size: 21pt; color: var(--navy); margin: 0 0 4px; line-height: 1.3; }
+.sub { color: var(--muted); font-size: 10.5pt; margin-bottom: 14px; }
+h2 { font-size: 14.5pt; color: var(--navy); margin: 26px 0 8px; padding-bottom: 5px; border-bottom: 2px solid var(--navy); break-after: avoid; }
+h3 { font-size: 11.8pt; color: var(--navy); margin: 18px 0 6px; break-after: avoid; }
+p { margin: 6px 0; }
+ul, ol { margin: 6px 0; padding-left: 20px; }
+li { margin: 3px 0; }
+b, strong { color: #111827; }
+.box { border: 1px solid var(--line); border-left: 4px solid var(--navy); background: var(--soft); padding: 9px 13px; margin: 10px 0; break-inside: avoid; border-radius: 4px; }
+.box.q { border-left-color: #c2410c; background: #fff7f2; }
+.box.k { border-left-color: #0d9488; background: #f0fbf9; }
+.box .t { font-weight: 800; color: var(--navy); margin-bottom: 3px; }
+figure { margin: 12px 0; text-align: center; break-inside: avoid; }
+figure .chart { width: 100%; max-width: 400px; height: auto; }
+figure.pair .row { display: flex; gap: 10px; justify-content: center; }
+figure.pair .chart { width: 50%; max-width: 330px; }
+figure.trio .row { display: flex; gap: 6px; justify-content: center; }
+figure.trio .chart { width: 33%; }
+figcaption { font-size: 9.4pt; color: var(--muted); margin-top: 4px; text-align: left; line-height: 1.55; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 9.4pt; break-inside: auto; }
+th, td { border: 1px solid var(--line); padding: 5px 7px; vertical-align: top; text-align: left; }
+th { background: #eef2f7; color: var(--navy); }
+tr { break-inside: avoid; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 9.4pt; margin: 6px 0 12px; }
+.legend i { display: inline-block; width: 22px; height: 3px; vertical-align: middle; margin-right: 5px; border-radius: 2px; }
+.legend i.dash { background: repeating-linear-gradient(90deg, #6b7280 0 6px, transparent 6px 10px); }
+.school { break-before: page; }
+.tag { display:inline-block; font-size: 9pt; background: var(--navy); color:#fff; border-radius: 3px; padding: 0 7px; margin-right: 6px; }
+code { font-family: "Noto Sans Mono CJK KR", monospace; background:#eef2f7; padding: 0 4px; border-radius: 3px; font-size: 9.4pt; }
+.small { font-size: 9.2pt; color: var(--muted); }
+</style></head><body>
+
+<h1>학파별 총수요·총공급(AD-AS) 곡선</h1>
+<div class="sub">경제저널리즘 2026-2 · 6주차 「부록 — 경제학파와 물가」 보충자료</div>
+
+<div class="box">
+  <div class="t">이 자료를 읽는 순서</div>
+  <ol style="margin:0">
+    <li><b>그래프 읽는 법</b> — 곡선 위의 이동과 곡선 자체의 이동</li>
+    <li><b>총수요(AD)</b> — 왜 우하향하고, 무엇이 옮기는가</li>
+    <li><b>총공급(AS)</b> — 왜 단기엔 우상향이고 <b>장기엔 수직</b>인가</li>
+    <li><b>학파별 그림</b> — 같은 그래프에서 AS 모양을 어떻게 다르게 그리는가</li>
+    <li><b>비교표 · 기사 읽기 · 용어 풀이</b></li>
+  </ol>
+</div>
+<p class="small">주의 — AD-AS 그래프는 제2차 세계대전 이후 교과서가 정리한 틀임. 고전학파·신고전학파·케인스가 직접 이 그림을 그린 것은 아니며, <b>그들의 생각을 오늘날의 틀로 옮겨 그린 것</b>임.</p>
+
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+
+<h2>1. 그래프 읽는 법</h2>
+<ul>
+  <li><b>세로축은 물가 수준(P)</b>, 가로축은 <b>실질 GDP(Y)</b>, 즉 경제 전체가 생산·구매하는 재화와 서비스의 양임.</li>
+  <li><b>곡선 위의 이동</b> — 물가가 바뀌어 같은 곡선 위의 다른 점으로 옮겨 가는 것. 곡선은 그대로임.</li>
+  <li><b>곡선 자체의 이동</b> — 물가가 아닌 다른 이유(통화량, 정부지출, 유가, 기술 등)로 곡선 전체가 옮겨 가는 것.</li>
+</ul>
+<figure class="pair"><div class="row"><svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-adm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-adm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(가) 곡선 위의 이동</text>
+<line x1="50.0" y1="250.0" x2="342.0" y2="250.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-adm)"/>
+<line x1="50.0" y1="250.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-adm)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="278.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="135.8" y="266.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₁</text>
+<text x="221.6" y="266.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₂</text>
+<text x="44.0" y="114.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="174.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<line x1="135.8" y1="110.0" x2="135.8" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="135.8" y1="110.0" x2="50.0" y2="110.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="221.6" y1="170.0" x2="221.6" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="221.6" y1="170.0" x2="50.0" y2="170.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="92.9,80.0 293.1,220.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="295.96000000000004" y="212.0" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+<line x1="147.24" y1="118.00000000000003" x2="210.16" y2="162.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-adm)"/>
+<circle cx="135.8" cy="110.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="143.8" y="104.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="221.6" cy="170.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="229.6" y="164.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+</svg><svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-ads" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-ads" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(나) 곡선 자체의 이동</text>
+<line x1="50.0" y1="250.0" x2="342.0" y2="250.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ads)"/>
+<line x1="50.0" y1="250.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ads)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="278.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<polyline points="78.6,100.0 264.5,230.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="267.36" y="222.0" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="121.5,70.0 307.4,200.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="310.26" y="192.0" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₂</text>
+<line x1="164.4" y1="160.0" x2="213.02" y2="126.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-ads)"/>
+</svg></div><figcaption>(가) 물가가 P₁에서 P₂로 내리면 사람들이 더 많이 삼 → 같은 AD 위에서 A에서 B로 이동함. (나) 정부가 지출을 늘리거나 통화량이 늘면 <b>같은 물가에서도</b> 더 많이 사려 함 → AD 자체가 오른쪽(AD₁ → AD₂)으로 이동함.</figcaption></figure>
+<div class="box q"><div class="t">이 구분이 왜 중요한가</div>
+기사에서 "물가가 올라 소비가 줄었다"는 <b>곡선 위의 이동</b>이고, "소비심리가 나빠져 소비가 줄었다"는 <b>곡선 자체의 이동</b>임. 원인이 다르면 처방도 다름.</div>
+
+<h2>2. 총수요(AD) 곡선</h2>
+<p><b>총수요</b>(Aggregate Demand)는 <b>각 물가 수준에서 경제 전체가 사려는 재화·서비스의 양</b>임. 사는 주체별로 나누면 <code>AD = 소비(C) + 투자(I) + 정부지출(G) + 순수출(NX)</code>임. 3주차 GDP의 지출 구성과 같음.</p>
+
+<h3>왜 오른쪽 아래로 내려가는가 — 물가가 내리면 왜 더 많이 사나</h3>
+<table>
+<tr><th style="width:22%">효과</th><th>물가가 내리면 일어나는 일</th><th style="width:28%">쉽게</th></tr>
+<tr><td><b>재산 효과</b><br><span class="small">실질잔고 효과, 피구 효과</span></td><td>같은 예금·현금으로 더 많은 물건을 살 수 있음 → 부자가 된 느낌 → 소비 증가</td><td>통장 잔고는 그대로인데 살 수 있는 게 늘어남</td></tr>
+<tr><td><b>이자율 효과</b><br><span class="small">케인스 효과</span></td><td>장 보는 데 필요한 현금이 줄어 남는 돈을 예금·채권에 넣음 → 금리 하락 → 대출받아 하는 투자·소비 증가</td><td>돈이 남으니 이자가 싸짐</td></tr>
+<tr><td><b>환율 효과</b><br><span class="small">먼델-플레밍 효과</span></td><td>국내 물가가 외국보다 싸짐 → 수출 증가, 수입 감소 → 순수출 증가</td><td>우리 물건이 외국에서 싸짐</td></tr>
+</table>
+
+<h3>무엇이 AD 자체를 옮기나</h3>
+<table>
+<tr><th style="width:24%"></th><th>AD가 오른쪽으로 (수요 증가)</th><th>AD가 왼쪽으로 (수요 감소)</th></tr>
+<tr><td><b>통화정책</b></td><td>통화량 증가, 기준금리 인하</td><td>통화량 감소, 기준금리 인상</td></tr>
+<tr><td><b>재정정책</b></td><td>정부지출 확대, 감세</td><td>정부지출 축소, 증세</td></tr>
+<tr><td><b>심리·기대</b></td><td>소비심리·기업심리 개선, 자산가격 상승</td><td>미래 불안, 자산가격 하락</td></tr>
+<tr><td><b>해외</b></td><td>세계 경기 호조로 수출 증가</td><td>세계 경기 둔화, 수출 감소</td></tr>
+</table>
+
+<h2>3. 총공급(AS) 곡선 — 단기와 장기</h2>
+<p><b>총공급</b>(Aggregate Supply)은 <b>각 물가 수준에서 기업들이 생산하려는 양</b>임. 학파 간 논쟁의 대부분은 <b>이 곡선의 모양</b>, 특히 <b>"단기에 얼마나 기울어져 있는가"</b>를 두고 벌어짐.</p>
+<figure class="pair"><div class="row"><svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-sras" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-sras" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(가) 단기: 물가가 오르면 더 생산함</text>
+<line x1="50.0" y1="250.0" x2="342.0" y2="250.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-sras)"/>
+<line x1="50.0" y1="250.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-sras)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="278.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="164.4" y="266.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₁</text>
+<text x="221.6" y="266.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₂</text>
+<text x="44.0" y="174.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="134.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<line x1="164.4" y1="170.0" x2="164.4" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="164.4" y1="170.0" x2="50.0" y2="170.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="221.6" y1="130.0" x2="221.6" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="221.6" y1="130.0" x2="50.0" y2="130.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="92.9,220.0 293.1,80.0" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="295.96000000000004" y="81.99999999999997" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS</text>
+<line x1="175.84000000000003" y1="162.0" x2="210.16" y2="138.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-sras)"/>
+<circle cx="164.4" cy="170.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="148.4" y="164.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="221.6" cy="130.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="205.6" y="124.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+</svg><svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-lras" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-lras" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(나) 장기: 물가와 상관없이 Y*</text>
+<line x1="50.0" y1="250.0" x2="342.0" y2="250.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-lras)"/>
+<line x1="50.0" y1="250.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-lras)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="278.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="193.0" y="266.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="44.0" y="194.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="114.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<line x1="193.0" y1="190.0" x2="193.0" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="193.0" y1="190.0" x2="50.0" y2="190.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="193.0" y1="110.0" x2="193.0" y2="250.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="193.0" y1="110.0" x2="50.0" y2="110.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="193.0,238.0 193.0,62.0" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="198.72" y="66.0" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<line x1="207.3" y1="182.0" x2="207.3" y2="118.00000000000003" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-lras)"/>
+<text x="221.6" y="150.0" text-anchor="start" font-size="11.5" fill="#6b7280">물가만 바뀌고</text>
+<text x="221.6" y="164.0" text-anchor="start" font-size="11.5" fill="#6b7280">생산은 그대로</text>
+<circle cx="193.0" cy="190.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="202.0" y="194.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="193.0" cy="110.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="202.0" y="114.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+</svg></div><figcaption>(가) 단기 총공급(SRAS)은 오른쪽 위로 올라감. (나) 장기 총공급(LRAS)은 잠재 GDP(Y*) 위에 선 수직선임. P₁이든 P₂든 장기 생산량은 Y*로 같음.</figcaption></figure>
+
+<h3>단기에는 왜 우상향인가 — 빵집으로 보기</h3>
+<ul>
+  <li>빵값이 10% 올랐음. 그런데 직원 월급, 가게 임대료, 밀가루 납품가는 <b>계약으로 묶여 있어</b> 당장 오르지 않음.</li>
+  <li>그러면 빵 하나를 더 만들 때 남는 이윤이 커짐 → 사장은 <b>직원에게 연장근무를 시키고 더 많이 구움</b>.</li>
+  <li>경제 전체로 보면 <b>물가가 오르자 생산이 늘어남</b> → 물가(세로)와 생산(가로)이 함께 움직이는 우상향 곡선이 됨.</li>
+  <li>핵심은 <b>"판매 가격은 먼저 오르고, 비용은 늦게 따라온다"</b>는 시차임. 이 시차를 만드는 것이 임금·가격의 <b>경직성</b>이고, 학파마다 그 원인을 다르게 봄(계약, 착각, 메뉴 비용 등).</li>
+</ul>
+
+<h3>장기에는 왜 수직인가 — "어떻게 수직이 되는가"</h3>
+<div class="box k"><div class="t">한 문장으로</div>
+시간이 지나 <b>임금·임대료·원재료값까지 모두 물가만큼 따라 오르면</b>, 기업이 더 생산할 이유가 사라짐. 그때 생산량을 정하는 것은 물가가 아니라 <b>일할 사람·기계·기술</b>, 즉 생산능력뿐임. 생산능력은 물가와 무관하므로, 어떤 물가 수준에서도 생산량이 같은 <b>수직선</b>이 됨.</div>
+<ol>
+  <li>빵값이 두 배가 되었음. 1년 뒤 계약이 갱신되면서 월급·임대료·밀가루값도 두 배가 됨.</li>
+  <li>이제 빵 하나를 더 만들 때 남는 이윤의 <b>비율</b>은 처음과 똑같음. 숫자만 두 배로 커졌을 뿐 실질적으로 달라진 게 없음.</li>
+  <li>그러면 사장은 원래대로 생산함. 생산량을 늘리려면 <b>직원을 더 뽑거나 오븐을 더 들이거나 기술을 개선해야</b> 함.</li>
+  <li>경제 전체도 같음. 장기 생산량은 노동·자본·기술로 정해지는 <b>잠재 GDP(Y*)</b>에 머묾. 물가가 P₁이든 P₂든 Y*가 같으므로, 점들을 이으면 <b>Y* 위의 수직선</b>이 됨.</li>
+</ol>
+<p><b>비유</b> — 모든 가격 뒤에 0을 하나씩 더 붙인다고 해 봄(월급 300만 원 → 3,000만 원, 빵 3천 원 → 3만 원). 숫자는 열 배가 되었지만 <b>내가 일해서 살 수 있는 빵의 개수는 그대로</b>임. 물가는 결국 '단위'이고, 단위를 바꿔도 실제로 만드는 양은 바뀌지 않음. 이것이 <b>화폐 중립성</b>이고, LRAS가 수직인 이유임.</p>
+
+<h3>균형</h3>
+<figure class=""><svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-eq" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-eq" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="210.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">장기 균형: 세 곡선이 한 점에서 만남</text>
+<line x1="50.0" y1="260.0" x2="402.0" y2="260.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-eq)"/>
+<line x1="50.0" y1="260.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-eq)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="400.0" y="288.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="223.0" y="276.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="44.0" y="159.0" text-anchor="end" font-size="11.5" fill="#1f2937">P*</text>
+<line x1="223.0" y1="155.0" x2="223.0" y2="260.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="223.0" y1="155.0" x2="50.0" y2="155.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="223.0,247.4 223.0,62.6" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="229.92000000000002" y="66.80000000000001" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<polyline points="101.9,228.5 344.1,81.5" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="347.56" y="83.6" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS</text>
+<polyline points="101.9,81.5 344.1,228.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="347.56" y="220.1" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+<circle cx="223.0" cy="155.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="232.0" y="149.0" font-size="13" font-weight="800" fill="#1f2937">E</text>
+</svg><figcaption>AD와 SRAS가 만나는 점이 지금의 물가와 생산을 정함. 그 점이 LRAS 위에도 있으면(E) 경제가 생산능력만큼 생산하는 <b>장기 균형</b>임. AD나 AS가 이동하면 이 점이 옮겨 가고, 학파마다 <b>어디로, 얼마나 빨리</b> 옮겨 가는지를 다르게 봄.</figcaption></figure>
+
+<table>
+<tr><th style="width:30%">무엇이 움직였나</th><th style="width:22%">물가 P</th><th style="width:22%">생산 Y</th><th>예</th></tr>
+<tr><td>AD 오른쪽 이동 (수요 증가)</td><td>↑</td><td>↑ (단기)</td><td>금리 인하, 재정 확대, 수출 호조</td></tr>
+<tr><td>AD 왼쪽 이동 (수요 감소)</td><td>↓</td><td>↓ (단기)</td><td>금리 인상, 소비 위축, 금융위기</td></tr>
+<tr><td>SRAS 왼쪽 이동 (공급 충격)</td><td>↑</td><td>↓ → <b>스태그플레이션</b></td><td>유가 급등, 공급망 붕괴</td></tr>
+<tr><td>SRAS 오른쪽 이동</td><td>↓</td><td>↑</td><td>유가 하락, 기술 혁신</td></tr>
+</table>
+
+<h2>4. 학파가 갈리는 지점 한눈에</h2>
+<p>모든 학파가 같은 그래프를 쓰지만 <b>AS의 모양</b>을 다르게 그림. 그래서 <b>같은 AD 증가(돈 풀기·재정 확대)가 물가를 올리는지, 생산을 늘리는지</b>에 대한 결론이 갈림.</p>
+<figure class="trio"><div class="row"><svg viewBox="0 0 250 230" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-ov1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-ov1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="125.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">고전·신고전: 수직</text>
+<line x1="50.0" y1="190.0" x2="232.0" y2="190.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov1)"/>
+<line x1="50.0" y1="190.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov1)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="230.0" y="218.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="138.0" y="206.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<polyline points="138.0,181.6 138.0,58.4" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="141.52" y="61.20000000000002" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AS</text>
+<polyline points="99.3,65.0 102.2,72.1 105.2,78.4 108.1,84.0 111.1,89.1 114.0,93.8 117.0,98.0 119.9,101.9 122.9,105.5 125.8,108.7 128.8,111.8 131.7,114.6 134.7,117.2 137.6,119.7 140.6,122.0 143.5,124.1 146.4,126.1 149.4,128.0 152.3,129.8 155.3,131.5 158.2,133.1 161.2,134.6 164.1,136.0 167.1,137.4 170.0,138.7 173.0,139.9 175.9,141.1 178.9,142.2 181.8,143.3 184.8,144.3 187.7,145.3 190.7,146.2 193.6,147.1 196.6,148.0 199.5,148.8 202.5,149.6 205.4,150.4 208.4,151.1 211.3,151.8 214.3,152.5 217.2,153.2" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="208.4" y="145.2" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+</svg><svg viewBox="0 0 250 230" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-ov2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-ov2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="125.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">케인스: 불황엔 수평</text>
+<line x1="50.0" y1="190.0" x2="232.0" y2="190.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov2)"/>
+<line x1="50.0" y1="190.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov2)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="230.0" y="218.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="182.0" y="206.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<polyline points="60.6,148.0 142.4,147.5 146.8,145.8 151.2,143.1 155.6,139.3 160.0,134.4 164.4,128.5 168.8,121.4 173.2,113.3 177.6,104.1 182.0,93.8 182.0,58.4" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="185.52" y="61.20000000000002" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AS</text>
+<polyline points="64.1,117.2 146.8,183.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="148.56" y="177.4" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+</svg><svg viewBox="0 0 250 230" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-ov3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-ov3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="125.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">통화주의·새케인스: 단기 우상향</text>
+<line x1="50.0" y1="190.0" x2="232.0" y2="190.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov3)"/>
+<line x1="50.0" y1="190.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ov3)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="230.0" y="218.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="138.0" y="206.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<polyline points="138.0,181.6 138.0,58.4" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="141.52" y="61.20000000000002" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<polyline points="76.4,169.0 199.6,71.0" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="201.35999999999999" y="75.2" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS</text>
+<polyline points="76.4,71.0 199.6,169.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="201.35999999999999" y="163.4" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+</svg></div>
+<figcaption>왼쪽 — AS가 늘 수직이면 AD가 늘어도 물가만 오름. 가운데 — 불황에서 AS가 수평이면 AD가 늘 때 생산만 늘어남. 오른쪽 — 단기엔 우상향이라 둘 다 조금씩, 장기엔 수직이라 물가만 오름.</figcaption></figure>
+<div class="box"><div class="t">논쟁의 핵심 질문 두 가지</div>
+<ol style="margin:0">
+<li><b>단기 AS가 얼마나 평평한가</b> — 경제에 놀고 있는 설비와 실업자가 얼마나 있는가. 많을수록 평평함.</li>
+<li><b>단기에서 장기로 얼마나 빨리 가는가</b> — 임금·가격이 얼마나 빨리 따라 조정되는가. 빠를수록 정책 효과가 짧음.</li>
+</ol></div>
+
+<!-- ═══════ 학파별 ═══════ -->
+<div class="school">
+<h2>5. 고전학파 · 신고전학파 — "AS는 언제나 수직"</h2>
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+<figure class=""><svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-cl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-cl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="220.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">고전·신고전학파: 통화량이 늘면 물가만 오름</text>
+<line x1="50.0" y1="280.0" x2="422.0" y2="280.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-cl)"/>
+<line x1="50.0" y1="280.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-cl)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="420.0" y="308.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="233.0" y="296.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="44.0" y="169.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="100.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<line x1="233.0" y1="165.0" x2="233.0" y2="280.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="165.0" x2="50.0" y2="165.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="96.0" x2="233.0" y2="280.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="96.0" x2="50.0" y2="96.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="233.0,266.2 233.0,63.8" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="240.32" y="66.1" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AS (단기 = 장기)</text>
+<polyline points="148.8,67.0 155.0,79.7 161.3,90.9 167.5,100.9 173.7,109.9 179.9,118.0 186.2,125.4 192.4,132.2 198.6,138.4 204.8,144.1 211.0,149.3 217.3,154.2 223.5,158.7 229.7,162.9 235.9,166.8 242.2,170.5 248.4,173.9 254.6,177.1 260.8,180.2 267.0,183.0 273.3,185.7 279.5,188.3 285.7,190.7 291.9,193.0 298.1,195.2 304.4,197.3 310.6,199.2 316.8,201.1 323.0,202.9 329.3,204.6 335.5,206.3 341.7,207.9 347.9,209.4 354.1,210.8 360.4,212.2 366.6,213.5 372.8,214.8 379.0,216.0 385.3,217.2 391.5,218.4 397.7,219.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="401.36" y="217.9" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="207.4,66.0 212.1,72.3 216.9,78.2 221.7,83.8 226.4,89.1 231.2,94.1 235.9,98.9 240.7,103.4 245.4,107.7 250.2,111.8 255.0,115.7 259.7,119.4 264.5,123.0 269.2,126.4 274.0,129.7 278.8,132.8 283.5,135.8 288.3,138.7 293.0,141.4 297.8,144.1 302.5,146.7 307.3,149.1 312.1,151.5 316.8,153.8 321.6,156.0 326.3,158.1 331.1,160.2 335.8,162.2 340.6,164.1 345.4,166.0 350.1,167.8 354.9,169.6 359.6,171.3 364.4,172.9 369.2,174.5 373.9,176.0 378.7,177.6 383.4,179.0 388.2,180.4 392.9,181.8 397.7,183.2" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="401.36" y="181.10000000000002" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₂</text>
+<line x1="284.24" y1="190.3" x2="317.18" y2="153.5" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-cl)"/>
+<text x="339.14" y="105.19999999999999" text-anchor="middle" font-size="11.5" fill="#6b7280">통화량 증가</text>
+<text x="339.14" y="121.29999999999998" text-anchor="middle" font-size="11.5" fill="#6b7280">→ AD 오른쪽 이동</text>
+<circle cx="233.0" cy="165.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="215.0" y="181.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="233.0" cy="96.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="215.0" y="90.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+</svg><figcaption>AS가 Y* 위에 수직으로 서 있음. 통화량이 늘어 AD가 AD₁에서 AD₂로 이동하면 균형은 A에서 B로 <b>바로 위로만</b> 옮겨 감 — 물가는 P₁에서 P₂로 오르고 생산은 Y* 그대로임. AD 곡선은 <code>P = MV ÷ Y</code>에서 나와 부드럽게 휜 모양(직각쌍곡선)임.</figcaption></figure>
+
+<h3><span class="tag">고전학파</span>18세기 후반~19세기 중반 · 애덤 스미스, 데이비드 리카도, 장바티스트 세</h3>
+<ul>
+  <li><b>보이지 않는 손</b> — 각자 자기 이익을 좇아도 시장 가격이 신호 역할을 해 사회 전체가 잘 굴러간다는 생각. 정부가 끼어들지 않아도 됨.</li>
+  <li><b>세이의 법칙</b> — "공급이 스스로 수요를 만든다". 물건을 만들어 팔면 그 대금이 누군가의 소득이 되고, 그 소득이 다시 다른 물건을 사는 데 쓰임 → 경제 전체로 <b>팔리지 않는 물건이 오래 쌓일 수 없음</b>. 그래서 생산량은 수요가 아니라 <b>공급 능력</b>이 정함.</li>
+  <li><b>고전적 이분법</b> — 경제를 <b>실물</b>(생산량·고용·실질임금)과 <b>화폐</b>(물가·명목임금)로 나눠 보고, 화폐는 실물에 영향을 주지 않는다고 봄.</li>
+</ul>
+<p><b>왜 AS가 단기에도 수직인가</b> — 고전학파는 가격과 임금이 <b>즉시, 완전히</b> 움직인다고 봄. 앞 3절의 빵집에서 월급·임대료가 빵값과 <b>같은 날</b> 함께 오르는 세상임. 시차가 없으니 '단기'가 따로 없고, 처음부터 장기와 같은 수직선임.</p>
+<ul>
+  <li><b>인플레이션</b> — 화폐량이 늘어서 생김(<b>화폐수량설</b>). 그림에서 AD가 오른쪽으로 가도 AS가 수직이라 물가만 오름. 실물경제와는 무관함.</li>
+  <li><b>디플레이션</b> — 화폐량이 줄면 AD가 왼쪽으로 가 물가가 내림. 임금·가격이 같이 내려가므로 생산·고용은 그대로이고, 실물은 <b>저절로 회복</b>된 상태가 유지됨.</li>
+  <li><b>스태그플레이션</b> — 당시엔 없던 개념임. 1970년대에 처음 크게 문제가 됨.</li>
+</ul>
+
+<h3><span class="tag">신고전학파</span>19세기 후반~20세기 초반 · 앨프리드 마셜, 레옹 발라, 윌리엄 스탠리 제번스</h3>
+<ul>
+  <li><b>한계효용</b> — 같은 것을 하나 더 소비할 때 늘어나는 만족(한계효용)은 점점 줄어든다는 생각. 배고플 때 첫 빵은 아주 맛있지만 다섯 번째 빵은 덜 반가움. 가격은 이 '마지막 하나'의 가치로 정해진다고 봄(한계혁명).</li>
+  <li><b>효용·이윤 극대화</b> — 소비자는 만족을, 기업은 이윤을 최대로 하는 선택을 함.</li>
+  <li><b>균형</b> — 수요와 공급이 만나는 가격에서 시장이 청산됨. 발라는 모든 시장이 <b>동시에</b> 균형을 이루는 일반균형을 정식화했음. 노동시장도 청산되므로 실업은 오래가지 않음 → AS는 고전학파처럼 수직.</li>
+  <li><b>피셔의 교환방정식</b> <code>MV = PT</code> — 통화량(M) × 돈이 도는 횟수(V) = 물가(P) × 거래량(T). V와 T가 안정적이면 <b>M이 늘어난 만큼 P가 오름</b>. 9주차 부록 C의 <code>MV = PY</code>와 같은 생각임(T 대신 생산량 Y를 씀).</li>
+  <li><b>마셜의 현금잔고설</b> <code>M = kPY</code> — 사람들이 소득(PY)의 일정 비율(k)만큼을 현금으로 쥐고 있으려 한다는 설명. 돈이 그보다 많이 풀리면 남는 돈을 써 버리므로 물가가 오름. 교환방정식을 <b>사람들의 화폐 수요</b>로 다시 쓴 것임.</li>
+  <li>그림은 고전학파와 같음 — <b>인플레이션은 통화량 증가 탓</b>, 디플레이션은 가격·임금 조정으로 회복, 정부 개입 불필요, 스태그플레이션 개념 없음.</li>
+</ul>
+<div class="box q"><div class="t">이 그림의 한계 — 대공황</div>
+1929년 대공황 때 물가와 임금이 크게 떨어졌는데도 실업률이 20%를 넘는 상태가 몇 년이나 이어졌음. "AS가 수직이고 시장이 저절로 회복된다"는 그림으로는 설명하기 어려웠음 → 케인스의 등장.</div>
+</div>
+
+<div class="school">
+<h2>6. 케인스학파 — "불황에서는 AS가 수평"</h2>
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+<figure class=""><svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-ky" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-ky" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="220.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">케인스학파: 불황에서는 수요를 늘려도 물가가 안 오름</text>
+<line x1="50.0" y1="280.0" x2="422.0" y2="280.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ky)"/>
+<line x1="50.0" y1="280.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-ky)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="420.0" y="308.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="159.8" y="296.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₁</text>
+<text x="233.0" y="296.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₂</text>
+<text x="324.5" y="296.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="44.0" y="215.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="111.5" text-anchor="end" font-size="11.5" fill="#1f2937">P₃</text>
+<line x1="324.5" y1="107.5" x2="324.5" y2="280.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="324.5" y1="107.5" x2="50.0" y2="107.5" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="72.0,211.0 242.2,210.1 251.3,207.4 260.4,203.0 269.6,196.7 278.8,188.7 287.9,178.9 297.1,167.3 306.2,154.0 315.3,138.8 324.5,121.9 324.5,61.5" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="333.65000000000003" y="68.4" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AS</text>
+<polyline points="79.3,160.4 251.3,268.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="254.95999999999998" y="261.6" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="141.5,153.5 324.5,268.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="328.16" y="261.6" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₂</text>
+<polyline points="240.3,54.6 408.7,160.4" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="394.04" y="144.29999999999998" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₃</text>
+<line x1="174.44" y1="224.8" x2="218.35999999999999" y2="224.8" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-ky)"/>
+<text x="145.16" y="243.2" text-anchor="middle" font-size="11.5" fill="#6b7280">불황 구간: 산출만↑</text>
+<text x="313.52" y="73.0" text-anchor="end" font-size="11.5" fill="#6b7280">완전고용 구간: 물가만↑</text>
+<circle cx="159.8" cy="211.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="153.8" y="201.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="233.0" cy="211.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="227.0" y="201.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+<circle cx="324.5" cy="107.5" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="304.5" y="111.5" font-size="13" font-weight="800" fill="#1f2937">C</text>
+</svg><figcaption>AS가 불황 구간에서는 수평이고 완전고용(Y*)에 가까워질수록 가팔라지다가 수직이 됨(역L자). 불황에서 AD가 AD₁ → AD₂로 늘면 A → B로 <b>옆으로만</b> 이동 — 물가는 그대로, 생산만 늘어남. 완전고용 근처에서 AD가 AD₃까지 커지면 C처럼 <b>물가만</b> 오름(인플레이션 갭).</figcaption></figure>
+<h3><span class="tag">케인스학파</span>1930년대(대공황 이후) · 존 메이너드 케인스</h3>
+<ul>
+  <li><b>유효수요</b> — 실제로 돈을 쓸 능력과 의사가 있는 수요. 케인스는 <b>생산과 고용을 정하는 것은 공급 능력이 아니라 유효수요</b>라고 봄. 세이의 법칙을 뒤집은 것임 — 사람들이 소득을 쓰지 않고 쌓아 두면 물건이 팔리지 않고, 기업은 생산과 고용을 줄임.</li>
+  <li><b>임금·가격의 경직성</b> — 임금은 계약·관행 때문에 쉽게 내려가지 않음. 그래서 수요가 줄어도 가격이 내려가 시장을 청산하지 못하고 <b>실업으로</b> 조정됨 → 시장이 저절로 회복되지 않음.</li>
+  <li><b>정부의 재정·통화정책 필요</b> — 민간 수요가 모자라면 정부가 대신 써서 AD를 오른쪽으로 옮겨야 함.</li>
+</ul>
+<p><b>왜 AS가 불황에서 수평인가</b> — 공장 절반이 놀고 실업자가 넘쳐나는 상황을 생각해 봄. 주문이 늘면 기업은 <b>놀던 기계를 돌리고 쉬던 사람을 다시 부르면</b> 됨. 임금을 올리지 않아도 일할 사람이 있으므로 비용이 오르지 않고, 그래서 값을 올리지 않고도 생산을 늘릴 수 있음. 물가는 그대로인데 생산만 늘어나니 <b>수평선</b>이 됨. 남는 설비와 인력이 바닥나는 완전고용(Y*)에 이르면 더는 생산을 늘릴 수 없어 수직이 됨.</p>
+<ul>
+  <li><b>인플레이션</b> — 총수요가 생산능력을 넘을 때 생김(<b>수요견인 인플레이션</b>). 그림의 C. 정부 지출을 줄이거나 세금을 올려 AD를 왼쪽으로 돌려놓음.</li>
+  <li><b>디플레이션</b> — 수요 부족으로 생긴 침체임. 고전학파는 "임금을 깎으면 고용이 회복된다"고 봤지만, 케인스는 <b>임금을 깎으면 노동자의 소득이 줄어 수요가 더 줄어든다</b>고 반박함 → 정부 지출 확대로 AD를 직접 늘려야 함.</li>
+  <li><b>스태그플레이션</b> — 이 그림에서는 AD만 움직이므로 물가와 실업이 <b>함께</b> 오르는 상황을 설명하기 어려웠음. 1970년대 석유파동 때 바로 그 일이 일어남. 이후 케인스학파는 원인을 <b>공급 충격(비용인상)</b>, 즉 AS가 위로 이동한 것으로 해석하고, 임금·가격 상승을 억누르는 <b>소득정책</b>(임금·가격 가이드라인이나 통제)을 제시했음. 예 — 1971년 미국 닉슨 정부의 임금·가격 동결.</li>
+</ul>
+</div>
+
+<div class="school">
+<h2>7. 통화주의 — "단기엔 우상향, 장기엔 수직"</h2>
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+<figure class=""><svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-mo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-mo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="220.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">통화주의: 단기엔 산출, 장기엔 물가만</text>
+<line x1="50.0" y1="290.0" x2="422.0" y2="290.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-mo)"/>
+<line x1="50.0" y1="290.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-mo)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="420.0" y="318.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="233.0" y="306.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="269.6" y="306.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₂</text>
+<text x="44.0" y="198.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="174.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<text x="44.0" y="150.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₃</text>
+<line x1="233.0" y1="194.0" x2="233.0" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="194.0" x2="50.0" y2="194.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="269.6" y1="170.0" x2="269.6" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="269.6" y1="170.0" x2="50.0" y2="170.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="146.0" x2="233.0" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="146.0" x2="50.0" y2="146.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="233.0,275.6 233.0,64.4" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="240.32" y="66.79999999999998" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<polyline points="123.2,266.0 397.7,86.0" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="401.36" y="90.79999999999998" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₁</text>
+<polyline points="86.6,242.0 353.8,66.8" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="342.8" y="59.60000000000002" text-anchor="end" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₂</text>
+<polyline points="104.9,110.0 361.1,278.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="364.76" y="270.8" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="159.8,98.0 397.7,254.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="401.36" y="251.6" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₂</text>
+<line x1="242.15" y1="188.0" x2="260.45" y2="176.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-mo)"/>
+<line x1="260.45" y1="164.0" x2="242.15" y2="152.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-mo)"/>
+<text x="60.980000000000004" y="64.39999999999998" text-anchor="start" font-size="11.5" fill="#6b7280">① 단기 A→B: 산출↑</text>
+<text x="60.980000000000004" y="81.20000000000002" text-anchor="start" font-size="11.5" fill="#6b7280">② 장기 B→C: 물가만↑</text>
+<circle cx="233.0" cy="194.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="215.0" y="210.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="269.6" cy="170.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="278.6" y="184.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+<circle cx="233.0" cy="146.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="213.0" y="142.0" font-size="13" font-weight="800" fill="#1f2937">C</text>
+</svg><figcaption>① 통화량이 늘어 AD₁ → AD₂. 노동자가 물가 상승을 아직 모르는 단기에는 SRAS₁을 따라 A → B로 이동 — 생산이 Y*보다 늘고 물가도 조금 오름. ② 노동자가 물가가 오른 것을 알아차리고 임금 인상을 요구하면 SRAS가 SRAS₂로 위로 올라감 → B → C. 결국 생산은 Y*로 돌아오고 <b>물가만 P₁에서 P₃로</b> 오름.</figcaption></figure>
+<h3><span class="tag">통화주의</span>1960년대 · 밀턴 프리드먼</h3>
+<ul>
+  <li><b>통화량이 명목 경제를 좌우함</b> — 명목 GDP(물가 × 생산)의 변동은 대부분 통화량 변동에서 나온다고 봄. AD를 움직이는 주된 힘이 통화량임.</li>
+  <li><b>장기 중립성</b> — 단기에는 통화량이 생산·고용에도 영향을 주지만, <b>장기에는 물가에만</b> 영향을 줌. 그림의 A → B(단기)와 B → C(장기)가 바로 이것임.</li>
+  <li><b>자연실업률</b> — 경제가 정상적으로 돌아갈 때도 남는 실업률. 생산이 Y*일 때의 실업률임. 통화정책으로 실업률을 이보다 오래 낮게 유지할 수는 없다고 봄. 5주차 참조.</li>
+  <li><b>일정한 통화 증가 준칙</b> — 중앙은행이 경기에 따라 재량으로 돈을 풀고 조이면 오히려 경기를 흔든다고 봄. 그래서 "통화량을 매년 일정한 비율(예: 연 3~5%)로만 늘려라"는 <b>규칙(준칙)</b>을 주장함.</li>
+</ul>
+<p><b>왜 단기엔 우상향인가 — 적응적 기대와 '착각'</b> — 노동자는 <b>과거 물가를 보고</b> 앞으로의 물가를 예상함(적응적 기대). 통화량이 늘어 물가가 오르기 시작해도 노동자는 한동안 이를 모르고 기존 임금을 받아들임. 기업 입장에선 제품값은 올랐는데 실질임금은 내려간 셈이라 고용과 생산을 늘림 → 단기 우상향. 노동자가 물가 상승을 알아차리고 임금 인상을 요구하면 착각이 풀리며 SRAS가 위로 이동하고, 생산은 Y*로 돌아감 → 장기 수직.</p>
+<ul>
+  <li><b>인플레이션</b> — "인플레이션은 언제 어디서나 <b>화폐적 현상</b>"(프리드먼). 통화량 과잉이 원인이므로 처방은 통화 공급 억제임.</li>
+  <li><b>디플레이션</b> — 통화량 감소가 원인임. 프리드먼과 슈워츠는 대공황 때 미국 통화량이 약 3분의 1 줄어든 것을 핵심 원인으로 지목했음 → 처방은 통화 공급 확대.</li>
+  <li><b>스태그플레이션</b> — 정부가 실업을 자연실업률 <b>아래로</b> 끌어내리려고 돈을 계속 풀면, 노동자의 <b>기대인플레이션이 계속 올라</b> SRAS가 거듭 위로 이동함. 그 결과 생산은 늘지 않는데 물가만 오름. 5주차의 <b>필립스 곡선이 위로 이동</b>한다는 것과 같은 이야기임. 처방은 통화 증가율을 낮춰 기대인플레이션을 꺾는 것임(1979년 이후 미국 볼커 연준의 긴축이 대표 사례).</li>
+</ul>
+</div>
+
+<div class="school">
+<h2>8. 새고전학파 — "예상된 정책에는 단기에도 수직"</h2>
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+<figure class="pair"><div class="row"><svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-nc1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-nc1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(가) 예상된 정책 vs 예상 못 한 정책</text>
+<line x1="50.0" y1="260.0" x2="342.0" y2="260.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nc1)"/>
+<line x1="50.0" y1="260.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nc1)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="288.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="193.0" y="276.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<polyline points="193.0,247.4 193.0,62.6" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="198.72" y="64.69999999999999" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<polyline points="107.2,239.0 321.7,81.5" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="324.56" y="85.69999999999999" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₁</text>
+<polyline points="78.6,218.0 287.4,64.7" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="278.8" y="58.400000000000006" text-anchor="end" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₂</text>
+<polyline points="92.9,102.5 293.1,249.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="295.96000000000004" y="243.2" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="135.8,92.0 321.7,228.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="324.56" y="226.4" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₂</text>
+<line x1="200.15" y1="170.75" x2="214.45" y2="160.25" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-nc1)"/>
+<line x1="185.85" y1="169.7" x2="185.85" y2="140.29999999999998" stroke="#1f2937" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah-nc1)"/>
+<text x="58.58" y="62.599999999999994" text-anchor="start" font-size="11.5" fill="#6b7280">실선: 예상 못 함</text>
+<text x="58.58" y="77.30000000000001" text-anchor="start" font-size="11.5" fill="#6b7280">점선: 예상함</text>
+<circle cx="193.0" cy="176.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="175.0" y="192.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="221.6" cy="155.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="230.6" y="169.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+<circle cx="193.0" cy="134.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="173.0" y="130.0" font-size="13" font-weight="800" fill="#1f2937">C</text>
+</svg><svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-nc2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-nc2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="180.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">(나) 실물경기변동: 공급 자체가 이동</text>
+<line x1="50.0" y1="260.0" x2="342.0" y2="260.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nc2)"/>
+<line x1="50.0" y1="260.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nc2)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="340.0" y="288.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="150.1" y="276.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*₂</text>
+<text x="193.0" y="276.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*₁</text>
+<text x="44.0" y="180.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="148.5" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<line x1="193.0" y1="176.0" x2="193.0" y2="260.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="193.0" y1="176.0" x2="50.0" y2="176.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="150.1" y1="144.5" x2="150.1" y2="260.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="150.1" y1="144.5" x2="50.0" y2="144.5" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="193.0,247.4 193.0,62.6" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="198.72" y="64.69999999999999" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS₁</text>
+<polyline points="150.1,247.4 150.1,62.6" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="144.38" y="64.69999999999999" text-anchor="end" font-size="12.5" font-weight="700" fill="#1f2937">LRAS₂</text>
+<polyline points="92.9,102.5 293.1,249.5" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="295.96000000000004" y="243.2" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD</text>
+<line x1="188.71" y1="94.1" x2="154.39" y2="94.1" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-nc2)"/>
+<text x="201.58" y="97.25" text-anchor="start" font-size="11.5" fill="#6b7280">생산성 하락</text>
+<circle cx="193.0" cy="176.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="202.0" y="180.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="150.1" cy="144.5" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="130.1" y="140.5" font-size="13" font-weight="800" fill="#1f2937">B</text>
+</svg></div><figcaption>(가) 같은 통화 확대라도 <b>예상하지 못하면</b> 통화주의처럼 A → B(생산 증가)로 갔다가 돌아옴. 그러나 사람들이 미리 <b>예상하면</b> 임금·가격이 곧바로 조정돼 SRAS가 AD와 <b>동시에</b> 이동함 → 점선 화살표처럼 A에서 C로 곧장 감. 생산은 그대로, 물가만 오름. (나) 실물경기변동이론은 경기 변동의 원인을 AD가 아니라 <b>생산능력 자체의 이동</b>으로 봄. 생산성이 떨어지면 LRAS가 왼쪽으로 이동해 생산은 줄고 물가는 오름.</figcaption></figure>
+<h3><span class="tag">새고전학파</span>1970년대 · 로버트 루커스, 토머스 사전트</h3>
+<ul>
+  <li><b>합리적 기대 ↔ 적응적 기대</b> — 적응적 기대는 과거만 보고 예상하는 것(통화주의의 노동자). <b>합리적 기대</b>는 지금 쓸 수 있는 모든 정보(중앙은행 발표, 정부 예산, 경제 이론)를 써서 예상하는 것임. 사람들이 바보가 아니라면 "돈을 풀겠다"는 발표를 듣는 순간 물가가 오를 것을 알고 미리 임금을 올려 달라고 함.</li>
+  <li><b>정책무력성</b> — 그래서 <b>예상된 정책은 실물에 효과가 없음</b>. 그림 (가)에서 A → C로 곧장 가는 것임. 정책이 생산을 바꾸는 것은 사람들이 <b>예상하지 못했을 때</b>(A → B)뿐이고, 그것도 잠깐임.</li>
+  <li><b>루커스 공급함수</b> <code>Y = Y* + α(P − Pᵉ)</code> — 생산은 실제 물가(P)가 예상 물가(Pᵉ)와 <b>다를 때만</b> Y*에서 벗어남. 예상이 맞으면 P − Pᵉ = 0이라 Y = Y*.</li>
+  <li><b>실물경기변동이론</b>(RBC, Real Business Cycle) — 핀 키들랜드·에드워드 프레스콧 등. 경기 변동은 돈이 아니라 <b>기술 발전, 생산성 변화, 유가 같은 실물 충격</b>이 생산능력(LRAS) 자체를 움직여 생긴다고 봄. 그림 (나).</li>
+</ul>
+<ul>
+  <li><b>인플레이션</b> — 예상된 인플레이션은 실물에 영향이 없음. 예상 못 한 통화 충격만 일시적으로 생산을 흔듦 → 중앙은행은 <b>사람들이 믿을 수 있는, 예측 가능한 정책</b>을 펴야 함. 이것이 오늘날 중앙은행 <b>독립성</b>과 <b>물가안정목표</b>의 이론적 바탕 중 하나임.</li>
+  <li><b>디플레이션</b> — 시장의 자율 조정으로 균형이 회복됨. 정부가 개입할 이유가 적음.</li>
+  <li><b>스태그플레이션</b> — 그림 (나)처럼 생산성·유가 충격으로 공급 자체가 줄어든 것에 대한 시장의 반응임. 여기에 <b>기대를 무시하고 돈을 푼 재량 정책</b>이 물가만 더 올려 문제를 키웠다고 봄.</li>
+</ul>
+</div>
+
+<div class="school">
+<h2>9. 새케인스학파 — "합리적 기대 + 가격 경직성 = 단기 우상향"</h2>
+<div class="legend">
+<span><i style="background:#1d4ed8"></i>총수요 AD</span>
+<span><i style="background:#c2410c"></i>단기 총공급 SRAS (학파에 따라 AS)</span>
+<span><i style="background:#0d9488"></i>장기 총공급 LRAS</span>
+<span><i class="dash"></i>점선 = 이동하기 전 곡선</span>
+</div>
+<figure class=""><svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg" role="img" class="chart">
+<defs>
+<marker id="ah-nk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+<marker id="ax-nk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+</defs>
+<text x="220.0" y="16" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">새케인스학파: 공급 충격과 중앙은행의 딜레마</text>
+<line x1="50.0" y1="290.0" x2="422.0" y2="290.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nk)"/>
+<line x1="50.0" y1="290.0" x2="50.0" y2="44.0" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ax-nk)"/>
+<text x="44.0" y="40.0" text-anchor="start" font-size="12" font-weight="700" fill="#1f2937">물가 P</text>
+<text x="420.0" y="318.0" text-anchor="end" font-size="12" font-weight="700" fill="#1f2937">실질 GDP Y</text>
+<text x="187.25" y="306.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y₂</text>
+<text x="233.0" y="306.0" text-anchor="middle" font-size="11.5" fill="#1f2937">Y*</text>
+<text x="44.0" y="198.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₁</text>
+<text x="44.0" y="168.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₂</text>
+<text x="44.0" y="138.0" text-anchor="end" font-size="11.5" fill="#1f2937">P₃</text>
+<line x1="233.0" y1="194.0" x2="233.0" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="194.0" x2="50.0" y2="194.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="187.25" y1="164.0" x2="187.25" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="187.25" y1="164.0" x2="50.0" y2="164.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="134.0" x2="233.0" y2="290.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="233.0" y1="134.0" x2="50.0" y2="134.0" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="3 3"/>
+<polyline points="233.0,275.6 233.0,64.4" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round"/>
+<text x="240.32" y="66.79999999999998" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">LRAS</text>
+<polyline points="123.2,266.0 397.7,86.0" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="401.36" y="90.79999999999998" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₁</text>
+<polyline points="79.3,234.8 342.8,62.0" fill="none" stroke="#c2410c" stroke-width="2.4" stroke-linecap="round"/>
+<text x="335.48" y="57.20000000000002" text-anchor="end" font-size="12.5" font-weight="700" fill="#1f2937">SRAS₂</text>
+<polyline points="104.9,110.0 361.1,278.0" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round"/>
+<text x="364.76" y="270.8" text-anchor="start" font-size="12.5" font-weight="700" fill="#1f2937">AD₁</text>
+<polyline points="196.4,110.0 401.4,244.4" fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5" opacity="0.75"/>
+<text x="192.74" y="100.39999999999998" text-anchor="end" font-size="12.5" font-weight="700" fill="#1f2937">AD₂ (수용할 때)</text>
+<line x1="223.85" y1="186.8" x2="196.4" y2="170.0" stroke="#1f2937" stroke-width="1.6" marker-end="url(#ah-nk)"/>
+<line x1="200.06" y1="158.0" x2="222.02" y2="141.2" stroke="#1f2937" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah-nk)"/>
+<circle cx="233.0" cy="194.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="242.0" y="208.0" font-size="13" font-weight="800" fill="#1f2937">A</text>
+<circle cx="187.25" cy="164.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="167.25" y="160.0" font-size="13" font-weight="800" fill="#1f2937">B</text>
+<circle cx="233.0" cy="134.0" r="5" fill="#1f2937" stroke="#fff" stroke-width="2"/>
+<text x="242.0" y="130.0" font-size="13" font-weight="800" fill="#1f2937">C</text>
+</svg><figcaption>유가 급등 같은 공급 충격으로 SRAS₁ → SRAS₂로 위로 이동하면 균형이 A → B로 옮겨 감 — <b>물가는 오르고(P₂) 생산은 줄어듦(Y₂)</b>. 이것이 스태그플레이션임. 중앙은행이 생산을 지키려고 돈을 풀어 AD₂로 옮기면(수용) 생산은 Y*로 돌아오지만 물가는 P₃까지 더 오름(C). 그대로 두면(비수용) 물가는 덜 오르지만 침체가 더 오래감.</figcaption></figure>
+<h3><span class="tag">새케인스학파</span>1980년대 · 그레고리 맨큐, 데이비드 로머</h3>
+<ul>
+  <li><b>합리적 기대는 받아들임</b> — 새고전학파의 비판을 수용해, 사람들이 정보를 다 쓴다고 인정함.</li>
+  <li><b>그래도 가격은 천천히 움직임</b> — 이유를 '착각'이 아니라 <b>현실의 마찰</b>에서 찾음.
+    <ul>
+      <li><b>메뉴 비용</b> — 식당이 가격을 바꾸려면 메뉴판을 새로 찍고 손님에게 알려야 함. 그 비용 때문에 조금 오른 원가는 한동안 버팀. 기업마다 이런 이유로 가격 조정을 미룸.</li>
+      <li><b>엇갈린 계약</b> — 임금 계약은 회사마다 갱신 시기가 달라 한꺼번에 조정되지 않음.</li>
+      <li><b>불완전 경쟁</b> — 많은 기업이 어느 정도 가격을 정할 힘이 있어, 수요가 줄면 값을 내리기보다 생산을 줄이는 쪽을 택하기도 함.</li>
+      <li><b>불완전 정보</b> — 모든 사람이 모든 가격 정보를 즉시 알지는 못함.</li>
+    </ul></li>
+  <li>그래서 예상된 정책이라도 <b>단기에는 SRAS가 우상향</b>이고, AD 충격이 생산·고용을 실제로 흔듦 → <b>안정화 정책이 필요함</b>. 장기에는 가격이 다 조정되므로 LRAS는 수직임.</li>
+  <li>오늘날 교과서판 모형은 AD를 <b>중앙은행의 금리 결정</b>(물가가 오르면 금리를 올린다는 테일러 준칙)에서 끌어내고, 세로축에 물가 수준 대신 <b>인플레이션율</b>을 두기도 함. 오늘날 대부분의 중앙은행이 쓰는 사고방식임.</li>
+</ul>
+<ul>
+  <li><b>인플레이션</b> — 가격이 천천히 조정되므로 물가 상승에 <b>관성</b>이 생김. 한번 오르기 시작하면 쉽게 멈추지 않음. 중앙은행이 <b>금리</b>로 대응하고, <b>물가안정목표</b>(한국 연 2%)를 공표해 기대를 붙잡음.</li>
+  <li><b>디플레이션</b> — 수요 부진 + 가격 경직 → 가격이 빨리 내려가지 못하는 사이 생산·고용이 줄어듦. <b>금리 인하</b>가 1차 수단이고, 금리가 0에 가까워 더 내릴 수 없으면 <b>재정 확대</b>(와 양적완화)를 씀.</li>
+  <li><b>스태그플레이션</b> — 그림처럼 공급 충격이 오면 물가 안정과 경기 안정이 <b>충돌</b>함. 수용하면 물가가, 비수용하면 경기가 희생됨. 그래서 평소에 <b>기대인플레이션을 단단히 묶어 두는 것</b>이 관건임. 기대가 안정돼 있으면 충격이 와도 SRAS가 덜 이동해 딜레마가 작아짐.</li>
+</ul>
+</div>
+
+<div class="school">
+<h2>10. 한눈에 비교</h2>
+<table>
+<tr><th style="width:13%">학파</th><th style="width:15%">AD를 움직이는 것</th><th style="width:15%">단기 AS</th><th style="width:9%">장기 AS</th><th style="width:20%">AD가 늘면</th><th>스태그플레이션(공급 충격)</th></tr>
+<tr><td><b>고전학파</b></td><td>통화량 <code>P=MV/Y</code></td><td><b>수직</b> (가격 즉시 조정)</td><td>수직</td><td><b>물가만</b> ↑</td><td>개념 없음</td></tr>
+<tr><td><b>신고전학파</b></td><td>통화량 (교환방정식·현금잔고설)</td><td><b>수직</b> (모든 시장 청산)</td><td>수직</td><td><b>물가만</b> ↑</td><td>개념 없음</td></tr>
+<tr><td><b>케인스학파</b></td><td><b>지출</b> C+I+G+NX</td><td><b>불황엔 수평</b> → 완전고용에서 수직</td><td>—</td><td>불황이면 <b>생산만</b> ↑</td><td>처음엔 설명 못 함 → 비용인상·소득정책</td></tr>
+<tr><td><b>통화주의</b></td><td>주로 통화량</td><td><b>우상향</b> (적응적 기대·착각)</td><td>수직</td><td>단기 생산 ↑, <b>장기 물가만</b> ↑</td><td>기대인플레이션 상승으로 SRAS 위로 이동</td></tr>
+<tr><td><b>새고전학파</b></td><td>통화량·정책</td><td><b>예상된 정책엔 수직</b></td><td>수직 (그 자체가 이동)</td><td>예상된 것은 <b>물가만</b>, 예상 못 한 것만 일시적 생산 ↑</td><td>생산성 충격으로 공급 자체 이동</td></tr>
+<tr><td><b>새케인스학파</b></td><td>지출 + 중앙은행 금리</td><td><b>우상향</b> (가격 경직성)</td><td>수직</td><td>단기 생산 ↑, 장기 물가 ↑</td><td>SRAS 위로 이동 → 물가 안정과 경기 안정 충돌</td></tr>
+</table>
+
+<h3>기사 읽기에 쓰는 법</h3>
+<table>
+<tr><th style="width:38%">기사 속 주장</th><th style="width:30%">깔려 있는 그림</th><th>확인할 것</th></tr>
+<tr><td>"재정을 풀면 경기가 산다"</td><td>AS가 평평함 — 케인스</td><td>지금 놀고 있는 설비·인력이 정말 많은가</td></tr>
+<tr><td>"돈을 풀면 물가만 오른다"</td><td>AS가 (장기에) 수직 — 고전·통화주의</td><td>경제가 이미 완전고용 근처인가</td></tr>
+<tr><td>"공급 충격이라 금리로는 못 잡는다"</td><td>AD가 아니라 <b>AS가 이동</b></td><td>물가확산지수 — 일부 품목만 올랐나(6주차 03절)</td></tr>
+<tr><td>"한은이 예고했으니 시장은 이미 반영"</td><td>합리적 기대 — 새고전·새케인스</td><td>발표가 예상과 달랐는가(9주차 의결문 문구)</td></tr>
+<tr><td>"기대인플레이션을 잡아야 한다"</td><td>기대가 SRAS를 움직임 — 통화주의·새케인스</td><td>소비자동향조사의 기대인플레이션율 추이</td></tr>
+</table>
+<div class="box k"><div class="t">결국 하나의 질문</div>
+전문가들의 결론이 갈리면 <b>"지금 단기 AS가 얼마나 평평하다고 보는가"</b>, 즉 <b>경제에 남는 생산능력이 얼마나 있다고 보는가</b>를 물어볼 것. 그 전제가 결론을 거의 정함.</div>
+</div>
+
+<div class="school">
+<h2>11. 용어 풀이</h2>
+<table>
+<tr><th style="width:22%">용어</th><th>쉬운 뜻</th></tr>
+<tr><td>잠재 GDP (Y*)</td><td>노동·자본·기술을 무리 없이 다 쓸 때 생산할 수 있는 양. LRAS가 서 있는 자리</td></tr>
+<tr><td>보이지 않는 손</td><td>각자 이익을 좇아도 가격 신호 덕분에 사회 전체가 조율된다는 애덤 스미스의 비유</td></tr>
+<tr><td>세이의 법칙</td><td>공급이 수요를 만든다. 생산이 곧 소득이 되므로 전체적으로 팔리지 않는 물건은 오래 쌓이지 않는다는 생각</td></tr>
+<tr><td>고전적 이분법</td><td>실물(생산·고용)과 화폐(물가)를 따로 보며, 화폐는 실물에 영향을 주지 않는다는 생각</td></tr>
+<tr><td>화폐 중립성 · 장기 중립성</td><td>통화량이 바뀌어도 실물은 그대로라는 성질. 통화주의는 '장기에만' 성립한다고 봄</td></tr>
+<tr><td>화폐수량설</td><td>물가 수준이 통화량에 비례해 정해진다는 이론</td></tr>
+<tr><td>교환방정식 MV = PT</td><td>통화량 × 유통속도 = 물가 × 거래량. 피셔가 정리</td></tr>
+<tr><td>현금잔고설 M = kPY</td><td>사람들이 소득의 일정 비율(k)을 현금으로 쥐려 한다는 설명. 마셜 등 케임브리지학파</td></tr>
+<tr><td>한계효용</td><td>하나 더 소비할 때 늘어나는 만족. 갈수록 줄어듦(한계효용 체감)</td></tr>
+<tr><td>일반균형</td><td>모든 시장이 동시에 수요와 공급이 맞는 상태. 발라가 정식화</td></tr>
+<tr><td>유효수요</td><td>돈을 쓸 능력과 의사가 함께 있는 실제 수요. 케인스는 이것이 생산·고용을 정한다고 봄</td></tr>
+<tr><td>임금·가격의 경직성</td><td>수요가 변해도 임금과 가격이 바로 따라 움직이지 않는 성질</td></tr>
+<tr><td>수요견인 · 비용인상 인플레이션</td><td>수요가 많아 오르는 물가(AD 이동) · 원가가 올라 오르는 물가(AS 이동). 6주차 03절</td></tr>
+<tr><td>인플레이션 갭</td><td>총수요가 잠재 GDP를 넘어선 만큼의 차이. 물가 상승 압력이 됨</td></tr>
+<tr><td>소득정책</td><td>임금과 가격의 상승 폭을 정부가 가이드라인이나 통제로 직접 억누르는 정책</td></tr>
+<tr><td>자연실업률</td><td>경제가 정상일 때도 남는 실업률. 생산이 Y*일 때의 실업률. 5주차</td></tr>
+<tr><td>준칙(규칙) vs 재량</td><td>정해진 공식대로 하는 정책 vs 상황마다 판단하는 정책</td></tr>
+<tr><td>적응적 기대</td><td>과거 경험을 보고 미래를 예상하는 방식. 예상이 늦게 따라감</td></tr>
+<tr><td>합리적 기대</td><td>쓸 수 있는 모든 정보로 미래를 예상하는 방식. 체계적으로 틀리지 않음</td></tr>
+<tr><td>정책무력성</td><td>예상된 정책은 실물에 효과가 없다는 새고전학파의 명제</td></tr>
+<tr><td>루커스 공급함수</td><td>생산은 실제 물가가 예상과 다를 때만 Y*에서 벗어난다는 식</td></tr>
+<tr><td>실물경기변동이론 (RBC)</td><td>기술·생산성 같은 실물 충격이 경기 변동의 주원인이라는 이론</td></tr>
+<tr><td>메뉴 비용</td><td>가격을 바꾸는 데 드는 비용. 작은 원가 변동에는 가격을 그대로 두게 만듦</td></tr>
+<tr><td>불완전 경쟁 · 불완전 정보</td><td>기업이 가격을 정할 힘이 있고, 모두가 정보를 다 알지는 못하는 현실의 조건</td></tr>
+<tr><td>테일러 준칙</td><td>물가와 생산 갭에 따라 정책금리를 정하는 공식. 물가가 목표보다 높으면 금리를 더 많이 올림</td></tr>
+<tr><td>물가안정목표</td><td>중앙은행이 공표하는 목표 물가상승률. 한국은 연 2%</td></tr>
+<tr><td>기대인플레이션</td><td>사람들이 예상하는 앞으로의 물가상승률. SRAS 위치를 정하는 핵심 변수</td></tr>
+<tr><td>스태그플레이션</td><td>물가는 오르는데 경기는 침체되는 상태. SRAS가 위로 이동할 때 나타남</td></tr>
+<tr><td>공급 충격</td><td>유가 급등·자연재해·공급망 붕괴처럼 생산 비용이나 생산능력을 갑자기 바꾸는 사건</td></tr>
+</table>
+<p class="small" style="margin-top:12px">그림은 개념을 설명하기 위한 도식이며 실제 수치가 아님. 학파 구분은 단순화한 것으로, 같은 학파 안에도 이견이 있음.</p>
+</div>
+
+</body></html>
