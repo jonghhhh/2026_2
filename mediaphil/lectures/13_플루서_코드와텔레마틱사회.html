@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0170)https://jonghhhh.github.io/2026_2/mediaphil/lectures/13_%ED%94%8C%EB%A3%A8%EC%84%9C_%EC%BD%94%EB%93%9C%EC%99%80%ED%85%94%EB%A0%88%EB%A7%88%ED%8B%B1%EC%82%AC%ED%9A%8C.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>13주차 · 빌렘 플루서: 코드와 텔레마틱 사회 | 매체철학 2026-2</title>
 <meta name="description" content="매체철학 13주차 강의자료 — 코드 3시대와 0차원, 커뮤니케이션 구조 6종과 네트워크 토폴로지, 원형극장형, 텔레마틱 사회, 피상성 예찬과 호모 루덴스.">
-<link rel="stylesheet" href="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/lecture.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="lecture.css">
 <style>
 .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:18px 0}
 .flow .st{border:1px solid var(--border,#d9dee6);border-radius:8px;padding:7px 10px;text-align:center;background:#fff;line-height:1.35;min-width:96px}
@@ -15,16 +14,23 @@
 .flow .st.hl{background:var(--navy,#1f3a5f)}.flow .st.hl b,.flow .st.hl small{color:#fff}
 .flow .ar{color:var(--ink-faint,#9aa3af);font-weight:700}
 .flow .base{flex-basis:100%;margin-top:4px;padding:8px 10px;border:1px dashed var(--border,#cfd6e0);border-radius:8px;background:#f6f8fb;font-size:13.5px;text-align:center}
-.poem{border-left:4px solid var(--navy,#1f3a5f);background:#fafaf6;padding:14px 18px;margin:16px 0;border-radius:0 8px 8px 0}
-.poem .pt{font-weight:700;font-size:17px;margin-bottom:8px}.poem .pt span{font-weight:400;font-size:13px;color:var(--ink-faint,#6b7280);margin-left:6px}
-.poem .pbody{font-family:"Nanum Myeongjo","Noto Serif KR",serif;line-height:1.9;margin-bottom:10px;white-space:pre-line}
-.poem .pmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px;font-size:13.5px}
-.poem .pmap span{background:#fff;border:1px solid var(--border,#e2e6ec);border-radius:6px;padding:6px 8px}
+.poem{border-left:4px solid var(--navy,#1f3a5f);background:#fafaf6;padding:12px 16px;margin:14px 0;border-radius:0 8px 8px 0}
+.poem .pt{font-weight:700;font-size:16px;margin-bottom:6px}.poem .pt span{font-weight:400;font-size:13px;color:var(--ink-faint,#6b7280);margin-left:6px}
+.poem .pbody{font-family:"Nanum Myeongjo","Noto Serif KR",serif;font-size:14.5px;line-height:1.5;margin-bottom:8px;columns:2;column-gap:28px;column-rule:1px solid #e4e6de}
+.poem .pbody p{margin:0 0 .55em;break-inside:avoid}
+.poem .pbody p:last-child{margin-bottom:0}
+@media (max-width:640px){.poem .pbody{columns:1;column-rule:none}}
+.poem .pmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px;font-size:13px}
+.poem .pmap span{background:#fff;border:1px solid var(--border,#e2e6ec);border-radius:6px;padding:5px 8px;line-height:1.4}
+
+/* 목록 항목 안의 중간 강조가 줄바꿈되지 않도록 — 맨 앞 굵은체만 제목(블록) */
+ol.steps li b,ol.qs li b{display:inline}
+ol.steps li>b:first-child,ol.qs li>b:first-child{display:block}
 </style>
 </head>
 <body>
 
-<div id="bar" style="width: 0%;"></div>
+<div id="bar"></div>
 
 <div id="topbar">
   <button id="burger" aria-label="목차 열기"><span></span><span></span><span></span></button>
@@ -41,7 +47,7 @@
 
   <nav class="sb-nav" id="nav">
     <div class="sb-label">들어가기</div>
-    <a href="#s0" class="active"><span class="n">00</span><span>이 주차의 위상</span></a>
+    <a href="#s0"><span class="n">00</span><span>이 주차의 위상</span></a>
     <a href="#s1"><span class="n">01</span><span>오늘 만날 개념</span></a>
     <a href="#s2"><span class="n">02</span><span>현상학과 매체현상학</span></a>
 
@@ -65,13 +71,12 @@
     <div class="sb-label">마무리</div>
     <a href="#s12"><span class="n">12</span><span>정리 · 오해 · 토론</span></a>
     <a href="#s13"><span class="n">13</span><span>참고자료</span></a>
-    <a href="#s14"><span class="n">14</span><span>부록 · 「꽃」의 라디오 버전</span></a>
   </nav>
 
   <div class="sb-foot">
-    <a href="https://jonghhhh.github.io/2026_2/mediaphil/lectures/12_%ED%82%A4%ED%8B%80%EB%9F%AC_%EA%B8%B0%EB%A1%9D%EC%B2%B4%EA%B3%84.html">← 12주차 · 키틀러</a>
-    <a href="https://jonghhhh.github.io/2026_2/mediaphil/lectures/14_%EB%B9%84%EB%A6%B4%EB%A6%AC%EC%98%A4_%EC%86%8D%EB%8F%84%EC%99%80%EC%A7%88%EC%A3%BC%ED%95%99.html">14주차 · 비릴리오 →</a>
-    <a href="https://jonghhhh.github.io/2026_2/mediaphil/index.html">매체철학 강의 홈</a>
+    <a href="12_키틀러_기록체계.html">← 12주차 · 키틀러</a>
+    <a href="14_비릴리오_속도와질주학.html">14주차 · 비릴리오 →</a>
+    <a href="../index.html">매체철학 강의 홈</a>
   </div>
 </aside>
 
@@ -105,7 +110,7 @@
   </div>
 
   <figure class="photo">
-  <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/flusser_portrait.jpg" alt="빌렘 플루서" loading="lazy">
+  <img src="flusser_portrait.jpg" alt="빌렘 플루서" loading="lazy">
   <figcaption>빌렘 플루서(1920~1991). 프라하 태생 유대인. 나치를 피해 브라질로 망명함. <b>여러 언어로 자기 글을 스스로 번역하며 매번 다르게 썼음</b> — 그 자체가 매체론적 실천.</figcaption>
   <div class="credit">Nitram Regnal · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Vil%C3%A9m_Flusser_an_der_FH_Bielefeld,_1984.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
 </figure>
@@ -190,7 +195,7 @@
   <p class="lede">플루서의 책 제목이 이미 답을 말함 — <strong>『피상성 예찬: 매체 현상학을 위하여』</strong>.</p>
 
 <figure class="imgph" style="text-align:center; margin:20px auto;">
-  <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/Edmund_Husserl_1910s.jpg" alt="에드문트 후설(Edmund Husserl, 1859–1938)" loading="lazy" style="width:220px; max-width:100%; height:auto; object-fit:contain; border-radius:6px;">
+  <img src="Edmund_Husserl_1910s.jpg" alt="에드문트 후설(Edmund Husserl, 1859–1938)" loading="lazy" style="width:220px; max-width:100%; height:auto; object-fit:contain; border-radius:6px;">
   <figcaption style="font-size:0.9em; margin-top:8px;">
     <b>에드문트 후설(Edmund Husserl, 1859–1938)</b><br>
     현상학의 창시자이자 하이데거의 스승.
@@ -266,9 +271,6 @@
   <div class="poem">
     <div class="pt">꽃 <span>김춘수 (1952)</span></div>
     <div class="pbody">
-  <h3>꽃</h3>
-  <p>― 김춘수</p>
-
   <p>
     내가 그의 이름을 불러주기 전에는<br>
     그는 다만<br>
@@ -400,7 +402,7 @@
   </div>
 
   <figure class="photo">
-    <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/flusser_images.png" alt="같은 소를 세 코드로 — 동굴벽화, 도감, 캐릭터" loading="lazy" style="width:min(100%,900px);height:auto;display:block;margin:0 auto">
+    <img src="flusser_images.png" alt="같은 소를 세 코드로 — 동굴벽화, 도감, 캐릭터" loading="lazy" style="width:min(100%,900px);height:auto;display:block;margin:0 auto">
     <figcaption><strong>같은 소, 세 가지 코드.</strong>
       알타미라의 들소(평면·마술적 이미지) → 동물 도감의 소(선·개념으로 분류됨) →
       캐릭터로 그려진 소(점·픽셀로 배열됨).
@@ -424,7 +426,7 @@
   </div>
 
   <figure class="photo">
-    <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/code_eras_alienation.png" alt="소이 — 세계에서 한 걸음씩 멀어지는 도식" loading="lazy" style="width:min(100%,860px);height:auto;display:block;margin:0 auto">
+    <img src="code_eras_alienation.png" alt="소이 — 세계에서 한 걸음씩 멀어지는 도식" loading="lazy" style="width:min(100%,860px);height:auto;display:block;margin:0 auto">
     <figcaption>한 단계 물러날 때마다 <b>마술 · 역사 · ???</b>가 생김.
       <em>세 번째 칸이 비어 있는 것이 플루서의 물음.</em></figcaption>
     <div class="credit">강의 슬라이드 「플루서」에서 발췌 · 출처 Flusser(1996b); 김성재 역(2001), p.115</div>
@@ -471,7 +473,7 @@
   </div>
 
   <figure class="photo">
-    <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/discourse_structures.png" alt="담론형 네 구조의 도해" loading="lazy" style="width:min(100%,860px);height:auto;display:block;margin:0 auto">
+    <img src="discourse_structures.png" alt="담론형 네 구조의 도해" loading="lazy" style="width:min(100%,860px);height:auto;display:block;margin:0 auto">
     <figcaption>네 구조 모두 <b>송신자가 고정</b>되어 있음. 달라지는 것은
       <strong>수신자가 되돌아올 길이 있는가</strong>.</figcaption>
     <div class="credit">강의 슬라이드 「플루서」에서 발췌 · 재구성</div>
@@ -503,7 +505,7 @@
   </div>
 
   <figure class="photo">
-    <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/dialogue_structures.png" alt="대화형 두 구조의 도해" loading="lazy" style="width:min(100%,720px);height:auto;display:block;margin:0 auto">
+    <img src="dialogue_structures.png" alt="대화형 두 구조의 도해" loading="lazy" style="width:min(100%,720px);height:auto;display:block;margin:0 auto">
     <figcaption>둘 다 <b>송신자와 수신자의 자리가 고정되지 않음</b>.
       원형은 닫혀 있고 망형은 열려 있음.</figcaption>
     <div class="credit">강의 슬라이드 「플루서」에서 발췌 · 재구성</div>
@@ -669,7 +671,7 @@
   </ul>
 
   <figure class="photo">
-  <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/matisse_la_danse.jpg" alt="마티스 춤" loading="lazy">
+  <img src="matisse_la_danse.jpg" alt="마티스 춤" loading="lazy">
   <figcaption>깊이 없이 평면 위에서 이어지는 원무. 플루서가 말한 <b>피상성</b>과 <b>유희</b>의 회화적 사례.</figcaption>
   <div class="credit">Henri Matisse · Public domain · <a href="https://commons.wikimedia.org/wiki/File:La_Danse_II,_par_Henri_Matisse.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
 </figure>
@@ -728,7 +730,7 @@
   </div>
 
   <figure class="photo">
-    <img src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/her_rousseau.png" alt="영화 her 포스터와 루소 〈잠자는 집시〉·크수리 알고리즘 버전" loading="lazy" style="width:min(100%,900px);height:auto;display:block;margin:0 auto">
+    <img src="her_rousseau.png" alt="영화 her 포스터와 루소 〈잠자는 집시〉·크수리 알고리즘 버전" loading="lazy" style="width:min(100%,900px);height:auto;display:block;margin:0 auto">
     <figcaption>두 사례 모두 <strong>가리킬 원본이 없음</strong>.
       사만다에게는 몸이 없고, 크수리의 화면에는 집시가 없음.</figcaption>
     <div class="credit">강의 슬라이드 「플루서」에서 발췌 · 재구성</div>
@@ -959,7 +961,7 @@
 
     <h4>이어지는 주차</h4>
     <ul>
-      <li><a href="https://jonghhhh.github.io/2026_2/mediaphil/lectures/14_%EB%B9%84%EB%A6%B4%EB%A6%AC%EC%98%A4_%EC%86%8D%EB%8F%84%EC%99%80%EC%A7%88%EC%A3%BC%ED%95%99.html"><b>14주차 — 폴 비릴리오: 속도와 질주학</b></a> <span class="axtag con">연결성</span><br>플루서가 <b>구조</b>를 말했다면, 비릴리오는 그 구조를 <b>가로지르는 속도</b>를 말함.</li>
+      <li><a href="14_비릴리오_속도와질주학.html"><b>14주차 — 폴 비릴리오: 속도와 질주학</b></a> <span class="axtag con">연결성</span><br>플루서가 <b>구조</b>를 말했다면, 비릴리오는 그 구조를 <b>가로지르는 속도</b>를 말함.</li>
     </ul>
   </div>
 </section>
@@ -968,7 +970,7 @@
 <footer style="border-top:1px solid var(--border);padding-top:22px;margin-top:50px;font-size:13.5px;color:var(--ink-faint);line-height:1.7">
   <p style="margin:0"><b style="color:var(--navy)">매체철학 2026-2학기 · 13주차 강의자료</b><br>
   주 출처: 강의 슬라이드 「플루서」 · 심혜련 『20세기의 매체철학』 2부 3장</p>
-  <p style="margin:12px 0 0"><a href="https://jonghhhh.github.io/2026_2/mediaphil/index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="https://jonghhhh.github.io/2026_2/mediaphil/lectures/12_%ED%82%A4%ED%8B%80%EB%9F%AC_%EA%B8%B0%EB%A1%9D%EC%B2%B4%EA%B3%84.html">← 12주차</a> &nbsp;·&nbsp; <a href="https://jonghhhh.github.io/2026_2/mediaphil/lectures/14_%EB%B9%84%EB%A6%B4%EB%A6%AC%EC%98%A4_%EC%86%8D%EB%8F%84%EC%99%80%EC%A7%88%EC%A3%BC%ED%95%99.html">14주차 →</a></p>
+  <p style="margin:12px 0 0"><a href="../index.html">← 강의 홈으로</a> &nbsp;·&nbsp; <a href="12_키틀러_기록체계.html">← 12주차</a> &nbsp;·&nbsp; <a href="14_비릴리오_속도와질주학.html">14주차 →</a></p>
 </footer>
 
 </div>
@@ -978,7 +980,7 @@
 <div id="scrim"></div>
 <button id="totop" aria-label="맨 위로">↑</button>
 
-<script src="./13주차 · 빌렘 플루서_ 코드와 텔레마틱 사회 _ 매체철학 2026-2_files/lecture.js.다운로드"></script>
+<script src="lecture.js"></script>
 
 
 </body></html>
